@@ -1,0 +1,148 @@
+import styled from "styled-components";
+import {theme} from "./Theme";
+import BlueArrow from "../assets/ArrowBlue.png"
+import WhiteArrow from "../assets/ArrowWhite.png"
+import {Link} from "react-router-dom";
+
+const  color = theme.color
+
+
+export const PrimaryButton = ({to, buttText}) => {
+    return (
+        <StyledPrimaryButton>
+        <Link to={to}>
+                <span>{buttText}</span>
+                <img src={BlueArrow} alt=""/>
+        </Link>
+        </StyledPrimaryButton>
+    )
+}
+
+
+
+export const SecondaryButton = ({to, buttText}) => {
+    return (
+        <StyledSecondaryButton>
+            <Link to={to}>
+                <span>{buttText}</span>
+                <img src={WhiteArrow} alt=""/>
+            </Link>
+        </StyledSecondaryButton>
+    )
+}
+
+export const TertiaryButton = ({to, buttText}) => {
+    return (
+        <StyledTertiaryButton>
+        <Link to={to}>
+                <span>{buttText}</span>
+                <img src={BlueArrow} alt=""/>
+        </Link>
+        </StyledTertiaryButton>
+    )
+}
+
+export const MainButton = ({props}) => {
+    return (
+        <StyledMainButton>
+            <Link to="/">
+                <span>Learn More</span>
+                <img src={props === BlueArrow ? BlueArrow : WhiteArrow} alt=""/>
+            </Link>
+        </StyledMainButton>
+    )
+}
+
+
+const StyledPrimaryButton = styled.div`  
+    a{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid ${color.primary};
+        padding:  1rem 1.25rem;
+        text-decoration: none;
+        background-color: ${color.light};
+        color: ${color.primary};
+        font-size: 1rem;
+        img{
+            width: 1.9rem;
+            height: 0.5rem;
+            margin-left: 0.5rem;
+            @media(max-width: 768px){
+            width: 1.5rem;        
+            }
+        }
+        @media(max-width: 768px){
+            font-size: 0.8rem;
+            padding: 0.6rem 1rem; 
+        }
+    }
+`
+const StyledTertiaryButton = styled.div`  
+    a{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid ${color.primary};
+        padding:  1rem 1.25rem;
+        text-decoration: none;
+        background-color: ${color.quaternary};
+        color: ${color.primary};
+        font-size: 1rem;
+        img{
+            width: 1.9rem;
+            height: 0.5rem;
+            margin-left: 0.5rem;
+            @media(max-width: 768px){
+            width: 1.5rem;        
+            }
+        }
+        @media(max-width: 768px){
+            font-size: 0.8rem;
+            padding: 0.6rem 1rem; 
+        }
+    }
+`
+
+const StyledSecondaryButton = styled.div`
+    display: flex;
+    background-color: ${color.primary};
+    border: 1px solid ${color.primary};
+    a{
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: ${color.light};
+        font-size: 1rem;
+        padding:  1rem 1.25rem;
+        img{
+            width: 2rem;
+            height: 0.8rem;
+            margin-left: 0.5rem;
+            @media(max-width: 768px){
+            width: 1.5rem;        
+            }
+        }
+        @media(max-width: 768px){
+            font-size: 0.8rem;
+            padding: 0.6rem 1rem;         
+        }
+    }
+`
+export const StyledMainButton = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ${props => props.backgroundColor || color.primary};
+    border: 1px solid ${props => props.borderColor || color.primary};
+    a{
+        text-decoration: none;
+        color: ${props => props.color || color.light};
+        font-size: 1rem;
+        img{
+            width: 1.5rem;
+            margin-left: 0.5rem;
+        }
+    }
+`

@@ -1,0 +1,77 @@
+import React from 'react'
+import styled from 'styled-components'
+import {H4, H3} from '../../Utils/Typograpyhy'
+import {theme} from '../../Utils/Theme'
+import { SecondaryButton } from '../../Utils/Buttons'
+import bulb from '../../assets/bulb.png'
+import percent from '../../assets/percent.png'
+import headphone from '../../assets/headphone.png'
+import people from '../../assets/people.png'
+import time from '../../assets/time.png'
+import cert from '../../assets/cert.png'
+import WhyCard from './WhyCard'
+
+const Why = () => {
+  return (
+    <StyledWhy>
+        <div className="why-container">
+            <div className="why-text-container">
+            <H4 textAlign="left" color={theme.color.dark} fontWeight="400">
+            Live Product Classes
+            </H4>
+            <H3 textAlign="left" color={theme.color.dark} fontWeight="400">
+            Why Learn Virtually with enoverlab?
+            </H3>
+            <H4 textAlign="left" color={theme.color.dark} fontWeight="400">
+          <span>7</span> out of every <span>10</span> enoverlab trained PM gets  engaged within 3-6 months after their training
+            </H4>
+            <div className="button-container">
+            <SecondaryButton to="/" buttText="Start Learning"/>
+            </div>
+            </div>
+           
+           <div className="why-card-container">
+           <WhyCard title={"In-depth training and mentorships"}  content={"with a structured syllabus taught by experienced product managers"} imgSrc={percent} bgColor="#E9F4FE" />
+           <WhyCard title={"Project Based Learning"}  content={"We offer a smooth blend of theory and practicals. As our students learn by doing. That way you get to learn faster."} imgSrc={bulb} />
+           <WhyCard title={"Guaranteed Internship Placement "}  content={"6 weeks Internship after the 10 weeks Advanced training program to build a live product"} imgSrc={cert} />
+           <WhyCard title={"Practical and Interactive Live Classes"}  content={"Hands on training with real life cases and examples"} imgSrc={headphone} bgColor="#E9F4FE" />
+           <WhyCard title={"Strong Community"}  content={"We have a strong community base that supports product managers in different sphere of industry. Everyday we aim to foster growth and  inclusivity"} imgSrc={people}  bgColor="#E9F4FE" />
+           <WhyCard title={"Flexible Payment Options"}  content={"We offer flexible  payment options as our students have the opportunity to pay installments."} imgSrc={time}  />
+           </div>
+        </div>
+    </StyledWhy>
+  )
+}
+
+export default Why
+
+const StyledWhy = styled.div`
+    padding: 5% 10%;
+    min-height: 100vh;
+    margin-top: 5%;
+    position: relative;
+    background: #F5FCFF;
+    @media (max-width: 768px) {
+        padding: 25% 5%;
+    }
+    .why-text-container{
+        max-width: 40%;
+        @media(max-width: 768px){
+            max-width: 100%;
+        }
+    }
+    .button-container{
+        width: 50%;
+        margin-top: 1.5rem;
+    }
+    .why-card-container{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        grid-gap: 3rem;
+        margin-top: 3rem;
+        @media(max-width: 768px){
+            grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+        }
+    }   
+`
