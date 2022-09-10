@@ -5,6 +5,7 @@ import Header from '../Components/Header'
 import PricingAbout from '../Components/Pricing/PricingAbout'
 import Testimonies from '../Components/Pricing/Testimonies'
 import SuccessStories from '../Components/Pricing/SuccessStories'
+import Footer from '../Components/Footer'
 
 
 const Pricing = () => {
@@ -15,6 +16,7 @@ const Pricing = () => {
         <PricingAbout/>
         <Testimonies/>
         <SuccessStories/>
+        <Footer/>
     </StyledPricing>
   )
 }

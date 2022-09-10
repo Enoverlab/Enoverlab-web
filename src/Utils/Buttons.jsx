@@ -42,11 +42,11 @@ export const TertiaryButton = ({to, buttText}) => {
     )
 }
 
-export const MainButton = ({props}) => {
+export const MainButton = ({props, buttText}) => {
     return (
         <StyledMainButton>
             <Link to="/">
-                <span>Learn More</span>
+                <span>{buttText}</span>
                 <img src={props === BlueArrow ? BlueArrow : WhiteArrow} alt=""/>
             </Link>
         </StyledMainButton>
@@ -57,10 +57,10 @@ export const MainButton = ({props}) => {
 const StyledPrimaryButton = styled.div`  
     a{  
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         border: 1px solid ${color.primary};
-        padding:  1rem 1.25rem;
+        padding:  1rem 1rem;
         text-decoration: none;
         background-color: ${color.light};
         color: ${color.primary};
@@ -133,6 +133,7 @@ const StyledSecondaryButton = styled.div`
 export const StyledMainButton = styled.div`
     display: flex;
     justify-content: center;
+    padding:  1rem 1.25rem;
     align-items: center;
     background-color: ${props => props.backgroundColor || color.primary};
     border: 1px solid ${props => props.borderColor || color.primary};
@@ -141,7 +142,7 @@ export const StyledMainButton = styled.div`
         color: ${props => props.color || color.light};
         font-size: 1rem;
         img{
-            width: 1.5rem;
+            width: 1.9rem;
             margin-left: 0.5rem;
         }
     }

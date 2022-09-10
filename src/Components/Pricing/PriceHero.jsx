@@ -9,6 +9,7 @@ import Jira from '../../assets/Jira.png'
 import productPlan from '../../assets/productPlan.png'
 import slack from '../../assets/slackIcon.png'
 import trello from '../../assets/trello.png'
+import { MainButton } from '../../Utils/Buttons'
 import { theme } from '../../Utils/Theme'
 import { H1, H4, P } from '../../Utils/Typograpyhy'
 import PricingCard from './PricingCard'
@@ -164,6 +165,9 @@ const PriceHero = () => {
                 </div>
                 </div>
             </div>
+            <div className="button-container">
+            <MainButton buttText="Register Now" to="/"/>
+            </div>
             </PricingCard>
 
             <PricingCard backgroundColor={theme.color.tertiary}
@@ -218,6 +222,9 @@ const PriceHero = () => {
                     Product Plan
                 </div>
                 </div>
+            </div>
+            <div className="button-container">
+            <MainButton buttText="Register Now" to="/"/>
             </div>
             </PricingCard>
         </div>
@@ -279,5 +286,13 @@ const StyledPriceHero = styled.div`
           }
         }
     }
- 
+    .button-container{
+        width: 40%;
+        position: absolute;
+        bottom: 5%;
+        @media (max-width: 768px){
+            position: relative;
+            width: 70%;
+        }
+    }
 `

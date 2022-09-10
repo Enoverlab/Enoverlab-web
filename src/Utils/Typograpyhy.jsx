@@ -40,7 +40,7 @@ export const H2 = styled.h2`
 export const H3 = styled.h3`
     font-size: ${fontSize.m};
     color: ${props => props.color || color.primary};
-    font-weight: ${props => props.fontWeight || fontSize.m};
+    font-weight: ${props => props.fontWeight || "500"};
     text-align: ${props => props.textAlign || "center"};
     margin: ${props => props.margin || "0"};
     padding: ${props => props.padding || "0"};
@@ -72,7 +72,7 @@ export const H4 = styled.h4`
 export const P = styled.p`
     font-size: ${props => props.fontSize || fontSize.sm};
     color: ${props => props.color || color.primary};
-    font-weight: ${props => props.fontWeight || fontSize.sm};
+    font-weight: ${props => props.fontWeight || "400"};
     text-align: ${props => props.textAlign || "center"};
     margin: ${props => props.margin || "0"};
     padding: ${props => props.padding || "0"};

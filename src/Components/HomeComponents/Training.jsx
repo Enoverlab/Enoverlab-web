@@ -8,10 +8,10 @@ import { H3, H4 } from '../../Utils/Typograpyhy'
 const Training = () => {
   return (
     <StyledTraining>
-       <H3 fontWeight={"400"} color={theme.color.dark}>
+       <H3 fontWeight={"500"} color={theme.color.dark}>
        Our Training Programs
        </H3>
-       <H4 fontWeight={"400"} color={theme.color.dark}>
+       <H4 fontWeight={"300"} color={theme.color.dark}>
        to become a skilled product manager
        </H4>
         <div className="cardContainer">
@@ -23,7 +23,9 @@ const Training = () => {
         </HomeCard>
      
         
-        <HomeCard cardTitle={"Advanced Class"} textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.tertiary}>
+        <HomeCard cardTitle={"Advanced Class"} textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.tertiary}
+        backLeft="20px"
+        >
         <div className="button-container">
         <PrimaryButton to="/" buttText="View Advanced Class"/>
         </div>
@@ -60,6 +62,6 @@ const StyledTraining = styled.div`
     }
     .button-container{
         margin-top: 3rem;
-        width: 75%;
+        width: 50%;
     }
 `

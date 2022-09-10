@@ -3,18 +3,18 @@ import styled from 'styled-components'
 import {theme} from '../../Utils/Theme'
 import { H3, P } from '../../Utils/Typograpyhy'
 
-const HomeCard = ({children, cardTitle, cardText, backgroundColor, textColor}) => {
+const HomeCard = ({children, cardTitle, cardText, backgroundColor, textColor, backLeft}) => {
   return (
-    <StyledHomeCard backgroundColor={backgroundColor}>
+    <StyledHomeCard backgroundColor={backgroundColor} backLeft={backLeft}>
         <div className="home-card-container">
             <div className="card-container-back">
             </div>
             <div className="card-container-front">
                 <div className="card-front-text">
-                    <H3 textAlign={"left"} fontWeight={"400"} color={textColor} paddingBottom={"1rem"}>
+                    <H3 textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"1rem"}>
                         {cardTitle}
                     </H3>
-                    <P textAlign={"left"} color={textColor}>
+                    <P textAlign={"left"} color={textColor} fontWeight={300}>
                         {cardText}
                     </P>
 
@@ -37,7 +37,7 @@ const StyledHomeCard = styled.div`
         .card-container-back{
             position: absolute;
             top: -20px;
-            left: -20px;
+            left: ${props => props.backLeft ?  props.backLeft : "-20px"};
             width: 90%;
             height: 20rem;
             z-index: 1;

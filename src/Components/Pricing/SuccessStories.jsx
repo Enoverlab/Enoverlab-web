@@ -140,7 +140,7 @@ const StyledSuccessStories = styled.div`
         }
 
         .success-stories-slider{
-            display: none !important;
+            display: none;
             @media(max-width: 768px){
                 display: block;
                 

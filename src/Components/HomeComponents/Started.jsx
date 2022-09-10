@@ -24,6 +24,9 @@ export default Started
 const StyledStarted = styled.div`
     padding: 5%;
     min-height: 70vh;
+    @media(max-width: 768px){
+        min-height: 40vh;
+    }
     .started-container{
         background-image: url(${startedBg});
         background-size: cover;

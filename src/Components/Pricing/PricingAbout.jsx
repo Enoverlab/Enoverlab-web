@@ -5,6 +5,7 @@ import { theme } from '../../Utils/Theme'
 import { H2, P } from '../../Utils/Typograpyhy'
 import PricingAboutList from './PricingAboutList'
 import PricingAboutCorner from '../../assets/pricingAboutCorner.png'
+import { MainButton } from '../../Utils/Buttons'
 
 const aboutList = [
   {
@@ -50,6 +51,9 @@ const PricingAbout = () => {
                )
             })
           }
+            </div>
+            <div className="button-container">
+              <MainButton buttText="Register Now" to="" />
             </div>
           </div>
             <div className="pricing-about-image">
@@ -100,8 +104,15 @@ const StyledPricingAbout = styled.div`
             height: 100%;
           }
         }
-      .pricing-about-list-container{
-       
+      .pricing-about-list-container{ 
+    }
+    .button-container{
+        width: 40%;
+        margin: 0 auto; 
+        @media (max-width: 768px){
+            position: relative;
+            width: 70%;
+        }
     }
     }
   }
