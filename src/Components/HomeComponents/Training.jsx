@@ -63,5 +63,9 @@ const StyledTraining = styled.div`
     .button-container{
         margin-top: 3rem;
         width: 50%;
+
+        @media(max-width: 768px){
+          width:70%;
+        }
     }
 `

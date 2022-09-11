@@ -18,7 +18,7 @@ const Home = () => {
         <Training/>
         <Why/>
         <Testimonials/>
-        {/* <Sessions/> */}
+        <Sessions/>
         <Started/>
         <Footer/>
     </div>

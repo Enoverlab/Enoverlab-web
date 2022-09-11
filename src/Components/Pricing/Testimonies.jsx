@@ -32,13 +32,12 @@ const Testimonies = () => {
                         fontSize="1rem"
                         paddingBottom="0.5rem"
                         mobileFontSize="0.8rem"
-                        >Testimonials</P>
+                        >Project Presentation</P>
                         <H3 textAlign="left" color={theme.color.dark} fontWeight={500}
                         paddingBottom="0.5rem"
                         
                         >
-                        Hear what our trained PMs have to say
-                        about their experience learning at Enoverlab
+                       Here are video snippets of what our students are able to do after their training
                         </H3>
                         <P textAlign="left" color={theme.color.dark}
                         mobileFontSize="0.8rem"

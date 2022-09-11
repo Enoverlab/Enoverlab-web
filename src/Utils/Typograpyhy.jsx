@@ -52,7 +52,7 @@ export const H3 = styled.h3`
     }
 `
 export const H4 = styled.h4`
-    font-size: ${fontSize.sm};
+    font-size: ${props => props.fontSize || fontSize.sm};
     color: ${props => props.color || color.primary};
     font-weight: ${props => props.fontWeight || fontSize.sm};
     text-align: ${props => props.textAlign || "center"};

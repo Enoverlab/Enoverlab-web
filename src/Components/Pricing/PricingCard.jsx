@@ -16,20 +16,20 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                     <H3  textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"0.5rem"}>
                         {cardTitle}
                     </H3>
-                    <P mobileFontSize="1rem" textAlign={"left"} color={textColor} >
+                    <P mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" >
                         {cardText}
                     </P>
                     <div className="fees">
                         <div className="fee">
-                          <H4 color={theme.color.dark} fontWeight={"500"} textAlign={"left"} fontSize={theme.fontSize.sm}>
-                            TUITION
+                          <H4 fontSize="1rem" color={theme.color.dark} fontWeight={"500"} textAlign={"left"}>
+                            TUITION FEE
                           </H4>
                            <H3 color={theme.color.dark} textAlign={"left"} fontSize={theme.fontSize.m}>
                                {tuitionFee}
                             </H3>    
                         </div>
                         <div className="fee">
-                            <H4 color={theme.color.dark}fontWeight={"500"} textAlign={"left"} fontSize={theme.fontSize.sm}>
+                            <H4 fontSize="1rem" color={theme.color.dark}fontWeight={"500"} textAlign={"left"}>
                                 DURATION
                             </H4>
                             <H3 color={theme.color.dark} textAlign={"left"} fontSize={theme.fontSize.m}>

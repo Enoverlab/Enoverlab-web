@@ -16,13 +16,13 @@ const Why = () => {
     <StyledWhy>
         <div className="why-container">
             <div className="why-text-container">
-            <H4 textAlign="left" color={theme.color.dark} fontWeight="400">
+            <H4 mobileFontSize="0.75rem"  textAlign="left" color={theme.color.dark} fontWeight="400">
             Live Product Classes
             </H4>
-            <H3 textAlign="left" color={theme.color.dark} fontWeight="400">
+            <H3 mobileFontSize="1.3rem" textAlign="left" color={theme.color.dark} fontWeight="500">
             Why Learn Virtually with enoverlab?
             </H3>
-            <H4 textAlign="left" color={theme.color.dark} fontWeight="400">
+            <H4 mobileFontSize="0.75rem" textAlign="left" color={theme.color.dark} fontWeight="400">
           <span>7</span> out of every <span>10</span> enoverlab trained PM gets  engaged within 3-6 months after their training
             </H4>
             <div className="button-container">
@@ -55,14 +55,17 @@ const StyledWhy = styled.div`
         padding: 25% 5%;
     }
     .why-text-container{
-        max-width: 40%;
+        max-width: 60%;
         @media(max-width: 768px){
             max-width: 100%;
         }
     }
     .button-container{
-        width: 50%;
+        width: 30%;
         margin-top: 1.5rem;
+        @media (max-width: 768px) {
+            width: 40%;
+        }
     }
     .why-card-container{
         position: relative;

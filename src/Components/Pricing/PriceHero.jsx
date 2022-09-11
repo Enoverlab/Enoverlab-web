@@ -113,7 +113,7 @@ const PriceHero = () => {
                 Management Career
                 </H1>
                 <div className="p-container">
-                <P fontWeight={400} color="#4B4B4B">
+                <P fontWeight={300} color="#4B4B4B">
                 Get the knowledge, skills and tools you need  to function  effectively in the role of a product manager 
                 </P>
                 </div>

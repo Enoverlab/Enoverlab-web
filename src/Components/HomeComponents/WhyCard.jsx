@@ -8,10 +8,10 @@ const WhyCard = ({bgColor, title, content, imgSrc}) => {
   return (
      <StyledWhyCard bgColor={bgColor}>
     <div className="card-container">
-        <H3 textAlign="left" fontWeight="400">
+        <H3 textAlign="left" fontWeight="500">
         {title}
         </H3>
-        <P textAlign="left" fontWeight="400" color={theme.color.dark}>
+        <P textAlign="left" fontWeight="300" color={theme.color.dark}>
         {content}
         </P>
         <div className="card-img">
