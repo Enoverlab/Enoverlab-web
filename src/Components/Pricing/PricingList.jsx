@@ -38,6 +38,9 @@ const StyledPricingList = styled.div`
         display: flex;
         column-gap: 2.375rem;
         margin-bottom: 1rem;
+        @media (max-width: 768px) {
+          column-gap: 1rem;
+        }
       }
     }
   }

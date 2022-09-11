@@ -5,9 +5,9 @@ import {H3, P, H4} from '../../Utils/Typograpyhy'
 
 
 
-const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight}) => {
+const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft}) => {
   return (
-    <StyledPricingCard backgroundColor={backgroundColor} height={height} mobileHeight={mobileHeight}>
+    <StyledPricingCard backgroundColor={backgroundColor} height={height} mobileHeight={mobileHeight} backLeft={backLeft}>
         <div className="pricing-card-container">
         <div className="card-container-back">
             </div>
@@ -21,7 +21,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                     </P>
                     <div className="fees">
                         <div className="fee">
-                          <H4 fontSize="1rem" color={theme.color.dark} fontWeight={"500"} textAlign={"left"}>
+                          <H4 mobileFontSize="0.8rem" fontSize="1rem" color={theme.color.dark} fontWeight={"500"} textAlign={"left"}>
                             TUITION FEE
                           </H4>
                            <H3 color={theme.color.dark} textAlign={"left"} fontSize={theme.fontSize.m}>
@@ -29,7 +29,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                             </H3>    
                         </div>
                         <div className="fee">
-                            <H4 fontSize="1rem" color={theme.color.dark}fontWeight={"500"} textAlign={"left"}>
+                            <H4 mobileFontSize="0.8rem" fontSize="1rem" color={theme.color.dark}fontWeight={"500"} textAlign={"left"}>
                                 DURATION
                             </H4>
                             <H3 color={theme.color.dark} textAlign={"left"} fontSize={theme.fontSize.m}>
@@ -56,7 +56,7 @@ const StyledPricingCard = styled.div`
             .card-container-back{
                 position: absolute;
                 top: -20px;
-                left: -20px;
+                left: ${props => props.backLeft ?  props.backLeft : "-20px"};
                 width: 90%;
                 height: ${props => props.height ? props.height : "150rem"};
                 z-index: 1;

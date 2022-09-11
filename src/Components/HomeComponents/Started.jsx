@@ -25,7 +25,7 @@ const StyledStarted = styled.div`
     padding: 5%;
     min-height: 70vh;
     @media(max-width: 768px){
-        min-height: 40vh;
+        min-height: 35vh;
     }
     .started-container{
         background-image: url(${startedBg});

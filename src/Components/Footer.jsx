@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <hr/>
         <div className="footer-bottom">
-            <P paddingTop="1rem" color={theme.color.light} textAlign="center">
+            <P mobileFontSize="0.7rem" paddingTop="1rem" color={theme.color.light} textAlign="center">
             Copyright @ enoverlab 2022. All Rights Reserved.
             </P>
         </div>

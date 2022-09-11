@@ -65,7 +65,7 @@ const StyledTraining = styled.div`
         width: 50%;
 
         @media(max-width: 768px){
-          width:70%;
+          width:75%;
         }
     }
 `

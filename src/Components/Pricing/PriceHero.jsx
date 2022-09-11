@@ -177,6 +177,7 @@ const PriceHero = () => {
             tuitionFee={"N100,000"}
             duration={"4 Weeks"}
             mobileHeight={"100%"}
+            backLeft={"20px"}
             >
                 {
                     AdvancedData.map((item, index) => {
@@ -236,8 +237,12 @@ export default PriceHero
 
 const StyledPriceHero = styled.div`
     padding: 2% 5% 2% 10%;
+   @media (max-width: 768px) {
+    padding: 0% 10% 5% 10%;
+   }
     .price-hero-container{
         margin-bottom: 5.5rem;
+       
     }
  .price-hero-head{
         display: flex;
@@ -279,11 +284,24 @@ const StyledPriceHero = styled.div`
           gap: 3.5625rem;
           display: flex;
           flex-direction: column;
+          @media(max-width: 768px){
+            gap: 1.75rem;
+          }
           .class-tools-icon{
             display: flex;
             align-items: center;
             column-gap: 1rem;
+            @media(max-width: 768px){
+            gap: 0.3rem; 
+            font-size: 0.7rem;
+            img{
+                width: 1.9rem;
+            }
+          }    
           }
+        }
+        @media (max-width: 768px){
+            max-width: 90%;
         }
     }
     .button-container{

@@ -41,12 +41,12 @@ const Testimonials = () => {
         <img className='bottomCorner' src={bottomCornerStripe} alt="bottom corner stripe" />
         <div className="testimonials-container">
             <div className="testimonials-text-container">
-            <P color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>Testimonial</P>    
-            <H3 color={theme.color.dark} fontWeight={500}>
+            <P mobileFontSize="0.6875rem" color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>Project Presentation</P>    
+            <H3 mobileFontSize="1.554375rem" color={theme.color.dark} fontWeight={500}>
             See the results of our training
             </H3>
-            <P color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>
-            We are not all talk, hear from some of our graduates and see how they transformed their careers
+            <P mobileFontSize="0.6875rem" color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>
+            Here are video snippets of what our students are able to do after their training
             </P>
             </div>
             <div className="testi-slider">

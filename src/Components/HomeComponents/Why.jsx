@@ -64,7 +64,7 @@ const StyledWhy = styled.div`
         width: 30%;
         margin-top: 1.5rem;
         @media (max-width: 768px) {
-            width: 40%;
+            width: 50%;
         }
     }
     .why-card-container{
