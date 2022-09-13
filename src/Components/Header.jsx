@@ -31,7 +31,7 @@ const Header = () => {
                     Pricing
                     </P>
                     </Link>
-                    <Link to="/">
+                    <Link to="/blog">
                     <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={400}>
                     Blog
                     </P>
