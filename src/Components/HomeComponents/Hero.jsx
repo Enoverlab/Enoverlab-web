@@ -1,11 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
 import HeroImg from '../../assets/heroImage.png'
+import HeroImg1 from '../../assets/heroImage1.png'
+import HeroImg2 from '../../assets/heroImage2.png'
 import { PrimaryButton, SecondaryButton } from '../../Utils/Buttons'
 import { theme } from '../../Utils/Theme'
 import { H1, H4 } from '../../Utils/Typograpyhy'
+import Slider from 'react-slick'
+
 
 const Hero = () => {
+    const settings = {
+        dots: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                
+            }
+        ]
+    }
   return (
     <StyledHero>
         <div className="hero-container">
@@ -16,12 +36,17 @@ const Hero = () => {
             Get the knowledge, skills and tools  you need to function effectively in the  role of a product manager
             </H4>
             <div className="button-container">             
-                <SecondaryButton  to="/" buttText="Apply Now"/>
+                <SecondaryButton  to="/" buttText="Start Now"/>
                 <PrimaryButton to="/" buttText="Join our Community" />  
             </div>
         </div>
         <div className="hero-img">
+            <Slider {...settings}>
             <img src={HeroImg} alt=""/>
+            <img src={HeroImg2} alt=""/>
+            <img src={HeroImg1} alt=""/>
+            </Slider>
+          
         </div>
     </StyledHero>
   )

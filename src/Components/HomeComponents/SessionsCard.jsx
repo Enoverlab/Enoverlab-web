@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {theme} from '../../Utils/Theme' 
 import { P } from '../../Utils/Typograpyhy'
-import sessionPic from '../../assets/sessionPic.png'
 
 const SessionsCard = ({guestJob, guestName, bgUrl}) => {
   return (

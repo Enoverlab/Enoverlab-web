@@ -60,12 +60,13 @@ export const H4 = styled.h4`
     padding: ${props => props.padding || "0"};
     padding-top: ${props => props.paddingTop || "0"};
     padding-bottom: ${props => props.paddingBottom || "0"};
-    line-height: 120%;
+    line-height: ${props => props.lineHeight || "120%"};
     span{
         font-weight: 500;
     }
     @media (max-width: 768px) {
         font-size: ${props => props.mobileFontSize || fontSize.sm};
+        line-height: ${props => props.mobileLineHeight || "150%"};
     }
 `
 

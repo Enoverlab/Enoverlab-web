@@ -78,6 +78,12 @@ const StyledPrimaryButton = styled.div`
             padding: 0.6rem 1rem; 
         }
     }
+    &:hover{
+            box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            -webkit-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            -moz-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            transition: box-shadow 0.3s ease-in-out;
+        }
 `
 const StyledTertiaryButton = styled.div`  
     a{  
@@ -103,6 +109,12 @@ const StyledTertiaryButton = styled.div`
             padding: 0.6rem 1rem; 
         }
     }
+    &:hover{
+            box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            -webkit-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            -moz-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            transition: box-shadow 0.3s ease-in-out;
+        }
 `
 
 const StyledSecondaryButton = styled.div`
@@ -127,8 +139,14 @@ const StyledSecondaryButton = styled.div`
         @media(max-width: 768px){
             font-size: 0.8rem;
             padding: 0.6rem 1rem;         
-        }
+        }   
     }
+    &:hover{
+            box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            -webkit-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            -moz-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            transition: box-shadow 0.3s ease-in-out;
+        }
 `
 export const StyledMainButton = styled.div`
     display: flex;
@@ -146,4 +164,10 @@ export const StyledMainButton = styled.div`
             margin-left: 0.5rem;
         }
     }
+    &:hover{
+            box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            -webkit-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            -moz-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            transition: box-shadow 0.3s ease-in-out;
+        }
 `

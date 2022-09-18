@@ -175,7 +175,7 @@ const PriceHero = () => {
             textColor={theme.color.dark}
             cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}
             tuitionFee={"N100,000"}
-            duration={"4 Weeks"}
+            duration={"10 Weeks"}
             mobileHeight={"100%"}
             backLeft={"20px"}
             >
@@ -237,6 +237,8 @@ export default PriceHero
 
 const StyledPriceHero = styled.div`
     padding: 2% 5% 2% 10%;
+    margin-bottom: 10%;
+    background-color: #FFFDF7;
    @media (max-width: 768px) {
     padding: 0% 10% 5% 10%;
    }
@@ -265,12 +267,12 @@ const StyledPriceHero = styled.div`
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 1rem;
         margin-top: 2rem;
 
         @media (max-width: 768px){
             grid-template-columns: 1fr;
-
+            grid-gap: 5rem;
         }
  }    
 

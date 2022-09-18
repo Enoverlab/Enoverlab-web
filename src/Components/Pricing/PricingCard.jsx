@@ -16,7 +16,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                     <H3  textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"0.5rem"}>
                         {cardTitle}
                     </H3>
-                    <P mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" >
+                    <P lineHeight="2rem" mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" >
                         {cardText}
                     </P>
                     <div className="fees">
@@ -55,7 +55,7 @@ const StyledPricingCard = styled.div`
 
             .card-container-back{
                 position: absolute;
-                top: -20px;
+                top: -40px;
                 left: ${props => props.backLeft ?  props.backLeft : "-20px"};
                 width: 90%;
                 height: ${props => props.height ? props.height : "150rem"};

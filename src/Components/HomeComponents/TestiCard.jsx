@@ -9,7 +9,7 @@ const TestiCard = () => {
     <StyledTestiCard>
         <div className="testi-card-container">
                 <div className="testi-img-container">
-                    <img src={testiMan} alt="testi" />
+                    <img className="testi-man" src={testiMan} alt="testi" />
                    <div className="play-icon-container">
                    <img src={playIcon} alt="" className="play-icon" />
                    </div>
@@ -36,6 +36,14 @@ const StyledTestiCard = styled.div`
             position: relative;
             max-width: 20rem;
             height: auto;
+           .testi-man{
+            &:hover{
+                box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+                -webkit-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+                -moz-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+            transition: box-shadow 0.3s ease-in-out;
+            }
+           }
             img{
                 width: 100%;
                 height: 100%;
@@ -48,6 +56,11 @@ const StyledTestiCard = styled.div`
                 z-index: 2;
             }
         }
+
+        .testi-text-container{
+            margin-top: 1.375rem;
+        }
+       
     }
 `
 

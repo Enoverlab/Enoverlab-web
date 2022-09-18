@@ -45,11 +45,11 @@ const StyledTraining = styled.div`
     position: relative;
     padding: 5% 0% 5% 0%;
     @media (max-width: 768px){
-      padding-bottom: 20%;
+      margin-bottom: 30%;
     }
     .cardContainer{
       position: relative;
-      padding: 5rem 5% 5rem 15%;
+      padding: 5rem 5% 5rem 10%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       position: relative;

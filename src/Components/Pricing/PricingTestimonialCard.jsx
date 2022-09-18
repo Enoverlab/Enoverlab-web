@@ -35,18 +35,29 @@ const StyledPricingTestimonialCard = styled.div`
             position: relative;
             max-width: 20rem;
             height: auto;
-            
+           
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
                 border: 2px solid ${theme.color.dark};
+                &:hover{
+                box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+                -webkit-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+                -moz-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+            transition: box-shadow 0.3s ease-in-out;
+            }
             }
             .play-icon-container{
                 position: absolute;
                 bottom: 45%;
                 right: 40%;
                 z-index: 2;
+
+                img{
+                    border: 0px solid ${theme.color.dark};
+                    box-shadow: 0px 0px 0px 0px;
+                }
         }
     } 
   }

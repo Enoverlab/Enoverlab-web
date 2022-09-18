@@ -39,7 +39,7 @@ const StyledHomeCard = styled.div`
             top: -20px;
             left: ${props => props.backLeft ?  props.backLeft : "-20px"};
             width: 90%;
-            height: 20rem;
+            height: 26.625rem;
             z-index: 1;
             border: 1px solid ${theme.color.dark};
             background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
@@ -51,7 +51,7 @@ const StyledHomeCard = styled.div`
         .card-container-front{
             position: relative; 
             width: 90%;
-            height: 20rem;
+            height: 26.625rem;
             z-index: 2;
             padding: 1.5rem;
             border: 1px solid ${theme.color.dark};

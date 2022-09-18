@@ -42,7 +42,12 @@ const StyledSuccessCard = styled.div`
         @media(max-width: 768px){
             margin-bottom: 1rem;
         }
-
+        &:hover{
+                box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+                -webkit-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+                -moz-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
+            transition: box-shadow 0.3s ease-in-out;
+            }
         .success-card-profile{
             display: flex;
             align-items: center;

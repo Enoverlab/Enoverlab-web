@@ -1,5 +1,6 @@
 import Home from "./Pages/Home";
 import Pricing from "./Pages/Pricing";
+import About from "./Pages/About";
 import Blog from "./Pages/Blog";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "slick-carousel/slick/slick.css"; 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       </BrowserRouter>
     </ThemeProvider>

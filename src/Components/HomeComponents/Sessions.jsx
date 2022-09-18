@@ -128,17 +128,22 @@ export default Sessions
 
 const StyledSession = styled.div`
     padding: 5% 2% 5% 5%;
-    height: 160vh;
+    position: relative;
+    /* height: 100%; */
     @media (max-width: 768px) {
         padding: 5% 2% 5% 5%;
-        max-height: 60vh;
+        max-height: 80vh;
+        margin-bottom: 10%;
     }
     background-color: ${theme.color.quaternary};
     .session-contaner{
         position: relative;
-
+        margin-top: 5%;
+        height: 70.8125rem;
         .session-text-container{
+            margin-bottom: 5rem;
             @media (max-width: 768px) {
+                margin-bottom: 2rem;
                P{
                 text-align: left;
                 font-size: 0.8rem;
@@ -176,6 +181,7 @@ const StyledSession = styled.div`
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        height: 70.8125rem;
         @media (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(12, 1fr);

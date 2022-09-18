@@ -32,6 +32,7 @@ const Testimonies = () => {
                         fontSize="1rem"
                         paddingBottom="0.5rem"
                         mobileFontSize="0.8rem"
+                       
                         >Project Presentation</P>
                         <H3 textAlign="left" color={theme.color.dark} fontWeight={500}
                         paddingBottom="0.5rem"
@@ -41,6 +42,7 @@ const Testimonies = () => {
                         </H3>
                         <P textAlign="left" color={theme.color.dark}
                         mobileFontSize="0.8rem"
+                        lineHeight="1.575rem"
                         >
                         We are glad to equip individuals with the digital skills to  accelerate their career as certified product managers that are competent . Learn how product managers enjoyed learning with enoverlab.
                         </P>
@@ -77,6 +79,7 @@ export const StyledTestimonies = styled.div`
         @media (max-width: 768px){
             padding: 10% 5%;
         }
+        
         .testimonies-header{
             max-width: 60%;
             margin-bottom: 2rem;

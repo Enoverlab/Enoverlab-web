@@ -6,9 +6,16 @@ import { PrimaryButton, TertiaryButton } from '../Utils/Buttons'
 import logo from '../assets/enovLogo.png'
 import mobileLogo from '../assets/mobileLogo.png'
 import menu from '../assets/menu.png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, NavLink } from 'react-router-dom'
 const Header = () => {
   const [active, setActive] = React.useState(false)
+  const [weightHome, setWeightHome] = React.useState('bold')
+  const [weightPricing, setWeightPricing] = React.useState('normal')
+  const [weightBlog, setWeightBlog] = React.useState('normal')
+
+
+
+
   return (
     <StyledHeader>
         <div className="header-container">
@@ -21,21 +28,33 @@ const Header = () => {
                     <div className="mobile-logo-container">
                     <img src={mobileLogo} alt="logo" />
                     </div>
-                    <Link to="/">
-                    <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={400}>
+                    <NavLink 
+                    style = {({isActive}) => ({
+                        fontWeight: isActive ? setWeightHome("600") : setWeightHome("normal")
+                    })}
+                    to="/">
+                    <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightHome}>
                     Home
                     </P>
-                    </Link>
-                    <Link to="/pricing">
-                    <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={400}>
+                    </NavLink>
+                    <NavLink
+                     style = {({isActive}) => ({
+                      fontWeight: isActive ? setWeightPricing("600") : setWeightPricing("normal")
+                  })}
+                    to="/pricing">
+                    <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightPricing}>
                     Pricing
                     </P>
-                    </Link>
-                    <Link to="/blog">
-                    <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={400}>
+                    </NavLink>
+                    <NavLink 
+                      style = {({isActive}) => ({
+                      fontWeight: isActive ? setWeightBlog("600") : setWeightBlog("normal")
+                      })}
+                    to="/blog">
+                    <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightBlog}>
                     Blog
                     </P>
-                    </Link>
+                    </NavLink>
                     <div className="mobile-button-container">
                       <PrimaryButton to="/" buttText="Apply Now"/>
                     </div>
@@ -87,6 +106,11 @@ const StyledHeader = styled.div`
             .menu-container{
             a{
               text-decoration: none;
+              P{
+                &:hover{
+                  color: ${theme.color.primary};
+                }
+              }
               }
                 .menu-item{
                   display: flex;

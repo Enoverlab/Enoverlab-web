@@ -14,7 +14,7 @@ const BlogHead = () => {
                 <div className="blog-head-container-front">
                     <div className="blog-head-container-front-text">
                     <H1 fontWeight={300}>
-                            Products Blog
+                            Product Blog
                     </H1>
                     </div>
 
@@ -35,6 +35,7 @@ export default BlogHead
 const StyledBlogHead = styled.div`
     position: relative;
     width: 100%;
+    padding: 5% 5% 5% 10%;
     .blog-head-container{
         position: relative;
 
@@ -63,6 +64,10 @@ const StyledBlogHead = styled.div`
             }
 
             .searchbar-container{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                transform: translate(0%, 70%);
                 .searchbar{
                     position: relative;
                     display: flex;
@@ -78,6 +83,11 @@ const StyledBlogHead = styled.div`
                         border: none;
                         outline: none;
                         font-size: 1.25rem;
+                    }
+                    .search-icon{
+                        font-size: 1.5rem;
+                        color: ${theme.color.dark};
+                        font-weight: 300;
                     }
                 }
             }

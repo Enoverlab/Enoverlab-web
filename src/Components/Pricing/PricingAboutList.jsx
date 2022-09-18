@@ -11,7 +11,7 @@ const PricingAboutList = ({listText, key}) => {
             <img src={check} alt="check" />
           </div>
           <div className="list-text">
-            <P color="#4B4B4B" textAlign="left" mobileFontSize="0.8rem">{listText}</P>
+            <P lineHeight="2.0625em" color="#4B4B4B" textAlign="left" mobileFontSize="0.8rem">{listText}</P>
           </div>
         </div>
     </StyledPricingAboutList>
