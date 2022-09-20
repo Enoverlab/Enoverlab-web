@@ -9,11 +9,13 @@ const SessionsCard = ({guestJob, guestName, bgUrl}) => {
                 <P fontSize="0.8rem" 
                     fontWeight="400"
                     color="#fff"
-                    mobileFontSize="0.5rem"
+                    lineHeight="0.8rem"
+                    mobileFontSize="0.7rem"
                     className='text'>{guestName}</P>
                 <P fontSize="0.4rem"
                     color='#fff' 
-                    mobileFontSize='0.3rem'
+                    mobileFontSize='0.4rem'
+                    lineHeight="0.4rem"
                  className='text'>{guestJob}</P>
                 </div>    
     </StyledSessionCard>
@@ -54,7 +56,7 @@ const StyledSessionCard = styled.div`
       transform: translate(1rem, 80%);
 
       @media (max-width: 768px){
-        transform: translate(0.5rem, 75%);
+        transform: translate(0.5rem, 70%);
       }
     }
 `

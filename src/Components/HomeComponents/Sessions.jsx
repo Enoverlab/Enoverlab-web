@@ -18,6 +18,7 @@ import SessionImage9 from '../../assets/SessionImages/SessionImage9.png'
 import SessionImage10 from '../../assets/SessionImages/SessionImage10.png'
 import SessionImage11 from '../../assets/SessionImages/SessionImage11.png'
 import SessionImage12 from '../../assets/SessionImages/SessionImage12.png'
+import topCornerSessions from '../../assets/topCornerSessions.png'
 
     const Sessions = () => {
         const slider = useRef(null)
@@ -26,9 +27,9 @@ import SessionImage12 from '../../assets/SessionImages/SessionImage12.png'
         speed: 500,
         slidesToShow: 2,
         rows: 2,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 1000,
         cssEase: "linear",
         arrows: false,
         responsive: [
@@ -47,6 +48,7 @@ import SessionImage12 from '../../assets/SessionImages/SessionImage12.png'
     }
   return (
     <StyledSession>
+                    <img src={topCornerSessions} className="topCorner" alt="" />
         <div className="session-contaner">
             <div className="session-text-container">
                 <P color={theme.color.dark} textAlign="center"  fontSize={"1rem"} fontWeight={300}>
@@ -55,7 +57,7 @@ import SessionImage12 from '../../assets/SessionImages/SessionImage12.png'
                 <H3 color={theme.color.dark} fontSize={"1.5rem"} textAlign="center" fontWeight={500}>
                 Our Product Heroes
                 </H3>
-                <P color={theme.color.dark} textAlign="center"  fontSize={"1rem"} fontWeight={300}>
+                <P  lineHeight="1.5125rem" color={theme.color.dark} textAlign="center"  fontSize={"1rem"} fontWeight={300}>
                 The amazing product managers from tech companies all over the world who have been part of our product sessions
                 </P>
             </div>
@@ -136,10 +138,20 @@ const StyledSession = styled.div`
         margin-bottom: 10%;
     }
     background-color: ${theme.color.quaternary};
+    .topCorner{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        z-index: 1; 
+        filter: grayscale(100%);
+        opacity: 100%;
+        }
     .session-contaner{
         position: relative;
         margin-top: 5%;
         height: 70.8125rem;
+       
         .session-text-container{
             margin-bottom: 5rem;
             @media (max-width: 768px) {
@@ -195,7 +207,7 @@ const StyledSession = styled.div`
         }
 
         .column1{
-      transform: translate(0px, 5%);
+      /* transform: translate(0px, 5%); */
 
       @media(max-width: 768px){
         transform: translate(0px, 0px);
@@ -203,7 +215,7 @@ const StyledSession = styled.div`
     }
 
     .column2{
-      transform: translate(0px, 10%);
+      /* transform: translate(0px, 10%); */
 
       @media(max-width: 768px){
         transform: translate(0px, 0px);
@@ -211,7 +223,7 @@ const StyledSession = styled.div`
     }
 
     .column3{
-      transform: translate(0px, 15%);
+      /* transform: translate(0px, 15%); */
 
       @media(max-width: 768px){
         transform: translate(0px, 0px);
@@ -219,7 +231,7 @@ const StyledSession = styled.div`
     }
 
     .column4{
-        transform: translate(0px, 20%);
+        /* transform: translate(0px, 20%); */
         @media(max-width: 768px){
         transform: translate(0px, 0px);
         }

@@ -66,7 +66,7 @@ const SuccessStories = () => {
         slidesToShow: 1,
         rows: 2,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         cssEase: "linear",
         arrows: false,
@@ -118,10 +118,10 @@ export default SuccessStories
 
 const StyledSuccessStories = styled.div`
     background-color: ${theme.color.quaternary};
-
+  
     .success-stories-container{
         padding: 5% 5%;
-       
+    
         .text-head{
             margin-bottom: 3rem;
         }

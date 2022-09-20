@@ -26,7 +26,9 @@ export const StyledPricingAboutList = styled.div`
         align-items: center;
         column-gap: 0.98125rem;
         margin-bottom: 1.5rem;
-        
+        @media(max-width: 768px){
+          margin-bottom: 0.75rem;
+        }
         .check-container{
           width: 1.575rem;
           height: 1.575rem;

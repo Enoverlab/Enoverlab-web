@@ -33,7 +33,7 @@ const SuccessCard = ({notes, flag, name, avatar, role}) => {
 export default SuccessCard
 
 const StyledSuccessCard = styled.div`
-
+    
     .success-card-container{
         background-color: ${theme.color.light};
         padding: 2.125rem;
@@ -41,13 +41,17 @@ const StyledSuccessCard = styled.div`
 
         @media(max-width: 768px){
             margin-bottom: 1rem;
+            padding: 1rem;
+            height: 19.75rem;
         }
+
         &:hover{
                 box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
                 -webkit-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
                 -moz-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
             transition: box-shadow 0.3s ease-in-out;
             }
+       
         .success-card-profile{
             display: flex;
             align-items: center;
@@ -58,11 +62,12 @@ const StyledSuccessCard = styled.div`
                 height: 3rem;
                 border-radius: 50%;
                 overflow: hidden;
+                border: 1px solid ${theme.color.primary};
+
                 img{
                     width: 100%;
                     height: 100%;
-                    object-fit: conver;
-
+                    object-fit: contain;
                 }
             }
         }

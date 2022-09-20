@@ -14,7 +14,7 @@ const HomeCard = ({children, cardTitle, cardText, backgroundColor, textColor, ba
                     <H3 textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"1rem"}>
                         {cardTitle}
                     </H3>
-                    <P textAlign={"left"} color={textColor} fontWeight={300}>
+                    <P mobileFontSize="1.125rem" mobileLineHeight="1.6875rem" textAlign={"left"} lineHeight={"2.375rem"} color={textColor} fontWeight={300}>
                         {cardText}
                     </P>
 
@@ -53,12 +53,13 @@ const StyledHomeCard = styled.div`
             width: 90%;
             height: 26.625rem;
             z-index: 2;
-            padding: 1.5rem;
+            padding: 2rem;
             border: 1px solid ${theme.color.dark};
             background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
             @media(max-width: 768px){
                 height: 25rem;
                 width: 100%;
+                padding: 1.5rem;
             }
         }
     }

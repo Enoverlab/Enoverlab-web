@@ -30,7 +30,7 @@ const Header = () => {
                     </div>
                     <NavLink 
                     style = {({isActive}) => ({
-                        fontWeight: isActive ? setWeightHome("600") : setWeightHome("normal")
+                        fontWeight: isActive ? setWeightHome("600") : setWeightHome("300")
                     })}
                     to="/">
                     <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightHome}>
@@ -39,7 +39,7 @@ const Header = () => {
                     </NavLink>
                     <NavLink
                      style = {({isActive}) => ({
-                      fontWeight: isActive ? setWeightPricing("600") : setWeightPricing("normal")
+                      fontWeight: isActive ? setWeightPricing("600") : setWeightPricing("300")
                   })}
                     to="/pricing">
                     <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightPricing}>
@@ -48,7 +48,7 @@ const Header = () => {
                     </NavLink>
                     <NavLink 
                       style = {({isActive}) => ({
-                      fontWeight: isActive ? setWeightBlog("600") : setWeightBlog("normal")
+                      fontWeight: isActive ? setWeightBlog("600") : setWeightBlog("300")
                       })}
                     to="/blog">
                     <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightBlog}>
@@ -94,7 +94,8 @@ const StyledHeader = styled.div`
             .logo-container{
               max-width: 14.0625rem;
               img{
-                width: 10rem;
+                width: 14.0625rem;
+                height: 2.4375rem;
               }
               @media (max-width: 768px){
                   max-width: 5rem;

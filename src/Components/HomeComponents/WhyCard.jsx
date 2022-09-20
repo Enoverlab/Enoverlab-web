@@ -11,7 +11,7 @@ const WhyCard = ({bgColor, title, content, imgSrc}) => {
         <H3 textAlign="left" fontWeight="500">
         {title}
         </H3>
-        <P mobileFontSize="0.875rem" textAlign="left" fontWeight="300" color={theme.color.dark}>
+        <P mobileFontSize="0.875rem" lineHeight="1.875rem" textAlign="left" fontWeight="300" color={theme.color.dark}>
         {content}
         </P>
         <div className="card-img">
@@ -28,8 +28,12 @@ export default WhyCard
 const StyledWhyCard = styled.div`
     position: relative;
     background: ${props => props.bgColor ? props.bgColor : theme.color.quaternary};
-    padding: 2rem;
+    padding: 3rem;
     border: 0.0625rem solid ${theme.color.primary}; 
+    @media(max-width: 768px){
+        margin: 1rem 0rem;
+        padding: 2rem;
+    }
     .card-container{
         height: 30.875em;
         .card-img{

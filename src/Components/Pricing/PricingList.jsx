@@ -33,6 +33,9 @@ export default PricingList
 const StyledPricingList = styled.div`
   .pricing-list-container {
     margin-top: 2.375rem;
+    @media screen {
+     margin-top: 1.175rem;
+    }
     .pricing-list{
       .pricing-list-item{
         display: flex;

@@ -4,8 +4,8 @@ import {H3, P} from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 import topCornerStripe from '../../assets/topCornerStripes.png'
 import bottomCornerStripe from '../../assets/bottomCornerStripes.png'
-import arrowWhite from '../../assets/slidArrowRight.png'
-import arrowWhiteLeft from '../../assets/arrowWhiteLeft.png'
+import arrowWhite from '../../assets/BlackArrow.png'
+import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
 import TestiCard from './TestiCard'
 import Slider from 'react-slick'
 
@@ -45,7 +45,7 @@ const Testimonials = () => {
             <H3 mobileFontSize="1.554375rem" color={theme.color.dark} fontWeight={500}>
             See the results of our training
             </H3>
-            <P mobileFontSize="0.6875rem" color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>
+            <P lineHeight="1.5125rem" mobileFontSize="0.6875rem" color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>
             Here are video snippets of what our students are able to do after their training
             </P>
             </div>
@@ -107,6 +107,9 @@ const StyledTestimonials = styled.div`
     }
     .testimonials-text-container{
         margin-bottom: 4.9375rem;
+        @media (max-width: 768px) {
+            margin-bottom: 1.9375rem;
+        }
     }
     .testi-slider{
         padding: 0 0% 0 7%;
@@ -122,6 +125,11 @@ const StyledTestimonials = styled.div`
         .slide-arrow{
             display: flex;
             column-gap: 1rem;
+            img{
+                cursor: pointer;
+                width:3.5rem;
+                height: 1rem;
+            }
             .arrow{
                 cursor: pointer;
             }

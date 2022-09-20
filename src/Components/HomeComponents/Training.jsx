@@ -16,14 +16,14 @@ const Training = () => {
        </H4>
         <div className="cardContainer">
         
-        <HomeCard cardTitle={"Basic Class"} textColor={theme.color.dark} cardText={"To understand the fundamentals of product management and kickstart your product manager career"}>
+        <HomeCard cardTitle={"Basic Program"} textColor={theme.color.dark} cardText={"To understand the fundamentals of product management and kickstart your product manager career"}>
         <div className="button-container">
         <SecondaryButton to="/" buttText="View Basic Class"/>
         </div>
         </HomeCard>
      
         
-        <HomeCard cardTitle={"Advanced Class"} textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.tertiary}
+        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.tertiary}
         backLeft="20px"
         >
         <div className="button-container">
@@ -39,13 +39,14 @@ const Training = () => {
 export default Training
 
 const StyledTraining = styled.div`
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     background-color: #FFFDF7;
     min-height: 100vh;
     position: relative;
-    padding: 5% 0% 5% 0%;
+    padding: 10% 0% 5% 0%;
     @media (max-width: 768px){
-      margin-bottom: 30%;
+      margin-bottom: 15%;
+      padding-bottom: 15%;
     }
     .cardContainer{
       position: relative;
@@ -61,9 +62,10 @@ const StyledTraining = styled.div`
       }
     }
     .button-container{
+        position: absolute;
+        bottom: 3.84375rem;
         margin-top: 3rem;
         width: 50%;
-
         @media(max-width: 768px){
           width:75%;
         }

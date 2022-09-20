@@ -83,7 +83,7 @@ export default Footer
 
 const StyledFooter = styled.div`
     background-color: ${theme.color.primary};
-    padding: 5% 5%;
+    padding: 10% 10% 5% 10%;
     @media  (max-width: 768px) {
         padding: 10% 10%;
     }

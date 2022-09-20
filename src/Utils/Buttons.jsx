@@ -66,22 +66,23 @@ const StyledPrimaryButton = styled.div`
         color: ${color.primary};
         font-size: 1rem;
         img{
-            width: 1.9rem;
-            height: 0.5rem;
+            width: 2.875rem;
+            height: 1rem;
             margin-left: 0.5rem;
             @media(max-width: 768px){
-            width: 1.5rem;        
+                width: 1.5rem;   
+            height: 0.7rem;       
             }
         }
         @media(max-width: 768px){
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             padding: 0.6rem 1rem; 
         }
     }
     &:hover{
-            box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
-            -webkit-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
-            -moz-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+            -webkit-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+            -moz-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
             transition: box-shadow 0.3s ease-in-out;
         }
 `
@@ -97,22 +98,24 @@ const StyledTertiaryButton = styled.div`
         color: ${color.primary};
         font-size: 1rem;
         img{
-            width: 1.9rem;
-            height: 0.5rem;
+            width: 2.875rem;
+            height: 1rem;
             margin-left: 0.5rem;
+            object-fit: contain;
             @media(max-width: 768px){
-            width: 1.5rem;        
+                width: 1.5rem;   
+            height: 0.7rem;       
             }
         }
         @media(max-width: 768px){
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             padding: 0.6rem 1rem; 
         }
     }
     &:hover{
-            box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
-            -webkit-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
-            -moz-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+            box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+            -webkit-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+            -moz-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
             transition: box-shadow 0.3s ease-in-out;
         }
 `
@@ -129,22 +132,24 @@ const StyledSecondaryButton = styled.div`
         font-size: 1rem;
         padding:  1rem 1.25rem;
         img{
-            width: 2rem;
-            height: 0.8rem;
+            width: 2.875rem;
+            height: 1rem;
             margin-left: 0.5rem;
+
             @media(max-width: 768px){
-            width: 1.5rem;        
+            width: 1.5rem;   
+            height: 0.7rem;     
             }
         }
         @media(max-width: 768px){
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             padding: 0.6rem 1rem;         
         }   
     }
     &:hover{
-            box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
-            -webkit-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
-            -moz-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+        box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+        -webkit-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+        -moz-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
             transition: box-shadow 0.3s ease-in-out;
         }
 `
@@ -165,9 +170,9 @@ export const StyledMainButton = styled.div`
         }
     }
     &:hover{
-            box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
-            -webkit-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
-            -moz-box-shadow: 12px 7px 0px 1px rgba(0,0,0,0.96);
+        box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+        -webkit-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+        -moz-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
             transition: box-shadow 0.3s ease-in-out;
         }
 `

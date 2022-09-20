@@ -33,7 +33,7 @@ export const H2 = styled.h2`
     padding-top:    ${props => props.paddingTop || "0"};
     padding-bottom: ${props => props.paddingBottom || "0"};
     @media (max-width: 768px) {
-        font-size: ${fontSize.m};
+        font-size: ${props => props.mobileFontSize || fontSize.m};
     }
 `
 
@@ -82,5 +82,6 @@ export const P = styled.p`
     line-height: ${props => props.lineHeight || "120%"};
     @media (max-width: 768px) {
         font-size: ${props => props.mobileFontSize || fontSize.sm};
+        line-height: ${props => props.mobileLineHeight || "150%"};
     }
 `

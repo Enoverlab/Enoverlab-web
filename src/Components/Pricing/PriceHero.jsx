@@ -240,7 +240,7 @@ const StyledPriceHero = styled.div`
     margin-bottom: 10%;
     background-color: #FFFDF7;
    @media (max-width: 768px) {
-    padding: 0% 10% 5% 10%;
+    padding: 0% 8% 5% 8%;
    }
     .price-hero-container{
         margin-bottom: 5.5rem;
