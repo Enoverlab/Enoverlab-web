@@ -12,7 +12,7 @@ const SuccessCard = ({notes, flag, name, avatar, role}) => {
                     <img src={avatar} alt="" />
                 </div>
                 <div className="success-card-text">
-                    <P fontSize="1.25rem" textAlign="left" color={theme.color.dark}>
+                    <P fontSize="1.25rem" textAlign="left" color={theme.color.dark} >
                         {name} {flag} 
                     </P>
                     <P fontSize="1rem" textAlign="left" color={theme.color.dark}>
@@ -21,7 +21,7 @@ const SuccessCard = ({notes, flag, name, avatar, role}) => {
                 </div>
             </div>
             <div className="success-card-text">
-                <P fontSize="1rem" textAlign="left" color={theme.color.dark}>
+                <P fontSize="1rem" textAlign="left" lineHeight="1.8rem" color={theme.color.dark}>
                {notes}
                 </P>
             </div>

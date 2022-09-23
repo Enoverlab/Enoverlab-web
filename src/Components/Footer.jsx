@@ -62,7 +62,7 @@ const Footer = () => {
                     <P fontSize="1.3125rem" color={theme.color.light} textAlign="left" paddingBottom="0.58rem">
                         Launch your PM Career
                     </P>
-                    <input type="text" name="" id="" />
+                    <input type="text" name="" id="" placeholder='Email Address' />
                     <button type="submit">Subscribe</button>
                 </div>
                 <P color={theme.color.light} textAlign="left" fontSize="1rem" paddingTop="0.58rem">Receive important product management info weekly</P>
@@ -177,6 +177,9 @@ const StyledFooter = styled.div`
                  }
                 }
         }
+    }
+    p{
+        margin-bottom: 0.75rem;
     }
     }
 `

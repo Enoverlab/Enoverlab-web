@@ -9,7 +9,7 @@ import Jira from '../../assets/Jira.png'
 import productPlan from '../../assets/productPlan.png'
 import slack from '../../assets/slackIcon.png'
 import trello from '../../assets/trello.png'
-import { MainButton } from '../../Utils/Buttons'
+import { MainButton, PrimaryButton } from '../../Utils/Buttons'
 import { theme } from '../../Utils/Theme'
 import { H1, H4, P } from '../../Utils/Typograpyhy'
 import PricingCard from './PricingCard'
@@ -133,7 +133,7 @@ const PriceHero = () => {
                 {
                     BasicData.map((item, index) => {
                         return (
-                            <PricingList index={index} listText={item.listText} />
+                            <PricingList index={index} listText={item.listText} textColor={theme.color.dark} />
                         )
                     })
                 }            
@@ -170,9 +170,9 @@ const PriceHero = () => {
             </div>
             </PricingCard>
 
-            <PricingCard backgroundColor={theme.color.tertiary}
+            <PricingCard backgroundColor={theme.color.primary}
             cardTitle={"Advance Program"}
-            textColor={theme.color.dark}
+            textColor={theme.color.light}
             cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}
             tuitionFee={"N100,000"}
             duration={"10 Weeks"}
@@ -182,20 +182,24 @@ const PriceHero = () => {
                 {
                     AdvancedData.map((item, index) => {
                         return (
-                            <PricingList index={index} listText={item.listText} listSubText={item.listSubText} />
+                            <PricingList index={index} listText={item.listText} listSubText={item.listSubText} textColor={theme.color.light} />
                         )
                     })
                 }
 
             <div className="class-tools-container">
-                <H4 textAlign="left" color={theme.color.dark}>Class Tools</H4>
-                <P textAlign="left" color={theme.color.dark} mobileFontSize="1rem">
+                <H4 textAlign="left" color={theme.color.light}>Class Tools</H4>
+                <P textAlign="left" color={theme.color.light} mobileFontSize="1rem">
                 Our online classes are designed around the latest  remote product management tools to keep you inline with the latest industry standards
                 </P>
             </div>
 
             <div className="class-tools-icon-container">
-                <div className="class-tools-icon-vert">
+                <div className="class-tools-icon-vert"
+                style={{
+                    color: theme.color.light
+                }}
+                >
                 <div className="class-tools-icon">
                     <img src={googleAnalytics} alt="gmail-icon" />
                     Google Analytics
@@ -209,7 +213,11 @@ const PriceHero = () => {
                     Hot Jar
                 </div>
                 </div>
-                <div className="class-tools-icon-vert">
+                <div className="class-tools-icon-vert"
+                style={{
+                    color: theme.color.light
+                }}
+                >
                 <div className="class-tools-icon">
                     <img src={Jira} alt="slack-icon" />
                     Jira Software
@@ -225,7 +233,7 @@ const PriceHero = () => {
                 </div>
             </div>
             <div className="button-container">
-            <MainButton buttText="Register Now" to="/"/>
+            <PrimaryButton to="/" buttText="Register Now"/>
             </div>
             </PricingCard>
         </div>
@@ -312,7 +320,7 @@ const StyledPriceHero = styled.div`
         bottom: 5%;
         @media (max-width: 768px){
             position: relative;
-            width: 70%;
+            width: 60%;
         }
     }
 `

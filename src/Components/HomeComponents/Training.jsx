@@ -18,16 +18,16 @@ const Training = () => {
         
         <HomeCard cardTitle={"Basic Program"} textColor={theme.color.dark} cardText={"To understand the fundamentals of product management and kickstart your product manager career"}>
         <div className="button-container">
-        <SecondaryButton to="/" buttText="View Basic Class"/>
+        <SecondaryButton to="/" buttText="Learn More"/>
         </div>
         </HomeCard>
      
         
-        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.tertiary}
+        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.light} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.primary}
         backLeft="20px"
         >
         <div className="button-container">
-        <PrimaryButton to="/" buttText="View Advanced Class"/>
+        <PrimaryButton to="/" buttText="Learn More"/>
         </div>
         </HomeCard>
         </div>
@@ -65,9 +65,9 @@ const StyledTraining = styled.div`
         position: absolute;
         bottom: 3.84375rem;
         margin-top: 3rem;
-        width: 50%;
+        width: 35%;
         @media(max-width: 768px){
-          width:75%;
+          width:40%;
         }
     }
 `

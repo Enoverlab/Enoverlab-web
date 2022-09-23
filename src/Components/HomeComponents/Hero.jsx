@@ -32,12 +32,12 @@ const Hero = () => {
             <H1 color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem">
             Launch your <span>Product Management </span> Career
             </H1>
-            <H4 mobileFontSize="0.875rem" mobileLineHeight="1.3125rem" color={theme.color.dark} fontWeight={"300"} textAlign={"left"}>
+            <H4 mobileFontSize="0.875rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} textAlign={"left"}>
             Get the knowledge, skills and tools  you need to function effectively in the  role of a product manager
             </H4>
             <div className="button-container">             
-                <SecondaryButton  to="/" buttText="Start Now"/>
-                <PrimaryButton to="/" buttText="Join our Community" />  
+                <SecondaryButton  to="/" buttText="Start Here"/>
+                {/* <PrimaryButton to="/" buttText="Join our Community" />   */}
             </div>
         </div>
         <div className="hero-img">
@@ -46,7 +46,6 @@ const Hero = () => {
             <img src={HeroImg2} alt=""/>
             <img src={HeroImg1} alt=""/>
             </Slider>
-          
         </div>
     </StyledHero>
   )
@@ -68,6 +67,9 @@ const StyledHero = styled.div`
     .hero-container{
         max-width: 60%;
         margin-top: 4rem;
+        H4{
+            max-width: 37.75rem;
+        }
         @media(max-width: 768px){
             max-width: 100%;
             margin-top: 0rem;

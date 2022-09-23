@@ -112,7 +112,7 @@ const StyledTestimonials = styled.div`
         }
     }
     .testi-slider{
-        padding: 0 0% 0 7%;
+        padding: 0 0% 0 0%;
     }
     .slide-container{
         position: absolute;

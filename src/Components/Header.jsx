@@ -7,7 +7,7 @@ import logo from '../assets/enovLogo.png'
 import mobileLogo from '../assets/mobileLogo.png'
 import menu from '../assets/menu.png'
 import { Link, useLocation, NavLink } from 'react-router-dom'
-const Header = () => {
+const Header = ({bgColor}) => {
   const [active, setActive] = React.useState(false)
   const [weightHome, setWeightHome] = React.useState('bold')
   const [weightPricing, setWeightPricing] = React.useState('normal')
@@ -17,10 +17,10 @@ const Header = () => {
 
 
   return (
-    <StyledHeader>
+    <StyledHeader bgColor={bgColor}>
         <div className="header-container">
            <div className="header-left">
-           <div className="logo-container">
+            <div className="logo-container">
                 <img src={logo} alt="logo" />
             </div>
             <div className="menu-container">
@@ -56,14 +56,14 @@ const Header = () => {
                     </P>
                     </NavLink>
                     <div className="mobile-button-container">
-                      <PrimaryButton to="/" buttText="Apply Now"/>
+                      <PrimaryButton to="/" buttText="Join Our Community"/>
                     </div>
                  </div>
            </div>
             </div>
             <div className="header-right">
                 <div className="header-button-container">
-                <TertiaryButton to="/" buttText="Apply Now"/>
+                <TertiaryButton to="/" buttText="Join Our Community"/>
                 </div>
                 <div className="menu-icon-container">
                     <img onClick={() => setActive(!active)}  src={menu} alt="menu"/>
@@ -78,6 +78,7 @@ const Header = () => {
 export default Header
 
 const StyledHeader = styled.div`
+  background-color: ${props => props ? props.bgColor : theme.color.light};
    .header-container{
         display: flex;
         width: 99%;
@@ -96,11 +97,14 @@ const StyledHeader = styled.div`
               img{
                 width: 14.0625rem;
                 height: 2.4375rem;
+                object-fit: contain;
               }
               @media (max-width: 768px){
                   max-width: 5rem;
                   img{
                       width: 8.75rem;
+                      height: 1.5rem;
+                      object-fit: contain;
                   }
                 }
             }
@@ -120,11 +124,14 @@ const StyledHeader = styled.div`
                   .mobile-logo-container{
                     display: none;
                     @media (max-width: 768px){
-                        display: block;
-                        max-width: 7.125rem;
-                        margin-right: -0.5rem;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        max-width: 100%;
+                        /* margin-right: -0.5rem; */
                         img{
-                            width: 7.125rem;
+                            width: 9.125rem;
+                            align-self: flex-end;
                         }
                     }
                   }
@@ -132,8 +139,10 @@ const StyledHeader = styled.div`
                     display: none;
                    
                     @media (max-width: 768px){
-                        display: block;
-                        max-width: 8.5125rem;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        max-width: 14.5125rem;
                         margin-top: 1rem;
                     }
                   }
@@ -144,7 +153,7 @@ const StyledHeader = styled.div`
                       position: fixed;
                       width: 60%;
                       top: 0;
-                      left: 0;
+                      right: 0;
                       width: 6  0%;
                       height: 100vh;
                       background-color: ${theme.color.tertiary};
@@ -165,9 +174,9 @@ const StyledHeader = styled.div`
 
         }
       .header-right{
-        width: 14%;
+        width: 20%;
         @media (max-width: 768px){
-          width: 6%;
+          width: 10%;
         }
           .header-button-container{
             width: 100%;
@@ -205,6 +214,13 @@ const StyledHeader = styled.div`
                 display: block;
             }
         }
+    }
+    P{
+      @media (max-width: 768px){
+        text-align: right;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
     }
  
 `

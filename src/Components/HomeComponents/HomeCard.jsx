@@ -46,6 +46,7 @@ const StyledHomeCard = styled.div`
             @media (max-width: 768px){
                 width: 100%;
                 height: 25rem;
+                left: -20px;
             }
         }
         .card-container-front{

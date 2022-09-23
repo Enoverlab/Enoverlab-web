@@ -11,7 +11,7 @@ import Footer from '../Components/Footer'
 const Pricing = () => {
   return (
     <StyledPricing>
-          <Header/>
+          <Header bgColor="#FFFDF7"/>
         <PriceHero/>
         <PricingAbout/>
         <Testimonies/>

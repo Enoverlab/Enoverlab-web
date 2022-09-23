@@ -21,18 +21,18 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                     </P>
                     <div className="fees">
                         <div className="fee">
-                          <H4 mobileFontSize="0.8rem" fontSize="1rem" color={theme.color.dark} fontWeight={"500"} textAlign={"left"}>
+                          <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"500"} textAlign={"left"}>
                             TUITION FEE
                           </H4>
-                           <H3 color={theme.color.dark} textAlign={"left"} fontSize={theme.fontSize.m}>
+                           <H3 color={textColor} textAlign={"left"} fontSize={theme.fontSize.m}>
                                {tuitionFee}
                             </H3>    
                         </div>
                         <div className="fee">
-                            <H4 mobileFontSize="0.8rem" fontSize="1rem" color={theme.color.dark}fontWeight={"500"} textAlign={"left"}>
+                            <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor}fontWeight={"500"} textAlign={"left"}>
                                 DURATION
                             </H4>
-                            <H3 color={theme.color.dark} textAlign={"left"} fontSize={theme.fontSize.m}>
+                            <H3 color={textColor} textAlign={"left"} fontSize={theme.fontSize.m}>
                                 {duration}
                             </H3>
                     </div>
@@ -64,7 +64,8 @@ const StyledPricingCard = styled.div`
                 background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
                 @media (max-width: 768px){
                     width: 100%;
-                    height:  ${props => props.mobileHeight ? props.mobileHeight : "150rem"};;
+                    height:  ${props => props.mobileHeight ? props.mobileHeight : "150rem"};
+                    left: 20px;
                 }
             }
             .card-container-front{
@@ -78,6 +79,7 @@ const StyledPricingCard = styled.div`
                 @media(max-width: 768px){
                     height:  ${props => props.mobileHeight ? props.mobileHeight : "150rem"};
                     width: 100%;
+
                 }
             }
 

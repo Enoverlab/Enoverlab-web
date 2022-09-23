@@ -30,11 +30,12 @@ const TestiCard = () => {
 export default TestiCard
 
 const StyledTestiCard = styled.div`
-    max-width: 20rem;
+    max-width: 26.75rem;
+    padding: 0rem 1rem;
     .testi-card-container{
         .testi-img-container{
             position: relative;
-            max-width: 20rem;
+            max-width: 28.75rem;
             height: auto;
            .testi-man{
             &:hover{
@@ -59,6 +60,12 @@ const StyledTestiCard = styled.div`
 
         .testi-text-container{
             margin-top: 1.375rem;
+
+            @media(max-width: 768px){
+                P{
+                    text-align: center;
+                }
+            }
         }
        
     }

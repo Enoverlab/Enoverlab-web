@@ -27,24 +27,13 @@ import topCornerSessions from '../../assets/topCornerSessions.png'
         speed: 500,
         slidesToShow: 2,
         rows: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 4000,
         cssEase: "linear",
         arrows: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    rows: 2,
-                    dots: false,
-                    arrows: false,
-                    infinite: true,
-                }
-            }
-        ]
+        infinite: true,
+        
     }
   return (
     <StyledSession>
@@ -104,19 +93,16 @@ import topCornerSessions from '../../assets/topCornerSessions.png'
                 <SessionsCard bgUrl={SessionImage10} guestName="Favour Olusoji" guestJob="Product owner, Takeaway.com" />
                 <SessionsCard bgUrl={SessionImage11} guestName="Favour Olusoji" guestJob="Product Manager, SeamlessHR" />
                 <SessionsCard bgUrl={SessionImage12} guestName="Olabanji Ewenla" guestJob="Founder, enoverlab" />
-        
+                </Slider>    
+       
 
-        <div className="session-grid">
-
-        </div>
-
-        </Slider>
-        <div className="slide-container">
+      
+        {/* <div className="slide-container">
            <div className="slide-arrow">
                 <img src={arrowLeft} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickPrev()} />
                 <img src={arrowRight} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickNext()} />
             </div>
-           </div>
+           </div> */}
        </div>
         
         

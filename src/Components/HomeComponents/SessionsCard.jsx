@@ -12,9 +12,9 @@ const SessionsCard = ({guestJob, guestName, bgUrl}) => {
                     lineHeight="0.8rem"
                     mobileFontSize="0.7rem"
                     className='text'>{guestName}</P>
-                <P fontSize="0.4rem"
+                <P fontSize="0.6rem"
                     color='#fff' 
-                    mobileFontSize='0.4rem'
+                    mobileFontSize='0.6rem'
                     lineHeight="0.4rem"
                  className='text'>{guestJob}</P>
                 </div>    
@@ -36,7 +36,7 @@ const StyledSessionCard = styled.div`
 
     @media (max-width: 768px){
         max-width: 10.625rem;
-        height: 9.6875rem;
+        height: 10.6875rem;
     }
     /* border: 1px solid #0000FF; */
     ::before{
