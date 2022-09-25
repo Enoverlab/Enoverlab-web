@@ -37,9 +37,9 @@ const Why = () => {
             <H4 lineHeight="1.875rem" mobileFontSize="0.75rem" textAlign="left" color={theme.color.dark} fontWeight="400">
           <span>7</span> out of every <span>10</span> enoverlab trained PM gets  engaged within 3-6 months after their training
             </H4>
-            <div className="button-container">
+            {/* <div className="button-container">
             <SecondaryButton to="/" buttText="Start Learning"/>
-            </div>
+            </div> */}
             </div>
            
            <div className="why-card-container">

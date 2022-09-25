@@ -72,7 +72,7 @@ const StyledHero = styled.div`
         }
         @media(max-width: 768px){
             max-width: 100%;
-            margin-top: 0rem;
+            margin-bottom: 1.5rem;
             H1{
                 line-height: 3rem;
             }

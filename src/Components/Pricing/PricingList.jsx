@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../Utils/Theme'
 import { H3, P, H4, H1 } from '../../Utils/Typograpyhy'
-const PricingList = ({index, listText, listSubText, textColor}) => {
+import {AiOutlineCheckCircle} from 'react-icons/ai'
+const PricingList = ({ listText, listSubText, textColor}) => {
   return (
     <StyledPricingList>
       <div className="pricing-list-container">
@@ -10,7 +11,7 @@ const PricingList = ({index, listText, listSubText, textColor}) => {
           <div className="pricing-list-item">
             <div className="list-bullet">
             <H4 textAlign="left" color={textColor} mobileFontSize="1rem">
-              {index + 1}
+               <AiOutlineCheckCircle/>  
             </H4>
             </div>
             <div className="text-container">

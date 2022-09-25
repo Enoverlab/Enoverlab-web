@@ -166,7 +166,7 @@ const PriceHero = () => {
                 </div>
             </div>
             <div className="button-container">
-            <MainButton buttText="Register Now" to="/"/>
+            <PrimaryButton to="/" buttText="Register Now"/>
             </div>
             </PricingCard>
 
@@ -174,7 +174,7 @@ const PriceHero = () => {
             cardTitle={"Advance Program"}
             textColor={theme.color.light}
             cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}
-            tuitionFee={"N100,000"}
+            tuitionFee={"N120,00"}
             duration={"10 Weeks"}
             mobileHeight={"100%"}
             backLeft={"20px"}
@@ -182,7 +182,7 @@ const PriceHero = () => {
                 {
                     AdvancedData.map((item, index) => {
                         return (
-                            <PricingList index={index} listText={item.listText} listSubText={item.listSubText} textColor={theme.color.light} />
+                            <PricingList key={index} listText={item.listText} listSubText={item.listSubText} textColor={theme.color.light} />
                         )
                     })
                 }

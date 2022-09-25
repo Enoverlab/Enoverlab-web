@@ -120,8 +120,11 @@ const StyledSession = styled.div`
     /* height: 100%; */
     @media (max-width: 768px) {
         padding: 5% 2% 5% 5%;
-        max-height: 80vh;
+        max-height: 70vh;
         margin-bottom: 10%;
+    }
+    @media(max-height: 667px){
+        max-height: 90vh;
     }
     background-color: ${theme.color.quaternary};
     .topCorner{
@@ -177,8 +180,8 @@ const StyledSession = styled.div`
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        /* grid-column-gap: 1px; */
+        /* grid-row-gap: 1px; */
         height: 70.8125rem;
         @media (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);
@@ -189,7 +192,7 @@ const StyledSession = styled.div`
         .session-column{
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
         .column1{
