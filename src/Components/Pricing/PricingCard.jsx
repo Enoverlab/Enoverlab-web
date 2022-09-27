@@ -55,7 +55,7 @@ const StyledPricingCard = styled.div`
 
             .card-container-back{
                 position: absolute;
-                top: -40px;
+                top: -50px;
                 left: ${props => props.backLeft ?  props.backLeft : "-20px"};
                 width: 90%;
                 height: ${props => props.height ? props.height : "150rem"};

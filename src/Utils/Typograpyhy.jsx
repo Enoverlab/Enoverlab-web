@@ -18,9 +18,7 @@ export const H1 = styled.h1`
         font-size: ${props => props.mobileFontSize || fontSize.xl};
         line-height: ${props => props.mobileLineHeight || "3rem"};
     }
-    span{
-        color: ${color.primary};
-    }
+   
 `
 
 export const H2 = styled.h2`

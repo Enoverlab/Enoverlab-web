@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Home from "./Pages/Home";
 import Pricing from "./Pages/Pricing";
 import About from "./Pages/About";
@@ -7,9 +8,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ThemeProvider } from "styled-components";
 import {theme} from "./Utils/Theme";
-
+import AOS from "aos";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>

@@ -33,8 +33,7 @@ const aboutList = [
 
 const PricingAbout = () => {
   return (
-    <StyledPricingAbout>
-      
+    <StyledPricingAbout> 
         <div className="pricing-about-container">
             <div className="pricing-about-text-container">
               <div className="pricingCorner">
@@ -67,6 +66,7 @@ const PricingAbout = () => {
 export default PricingAbout
 
 const StyledPricingAbout = styled.div`
+   
   .pricing-about-container{
     display: flex;
     @media (max-width: 768px){

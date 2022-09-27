@@ -126,6 +126,7 @@ const PriceHero = () => {
             cardText={"To understand the fundamentals of product management and kickstart your product manager career"}
             tuitionFee={"N40,000"}
             duration={"4 Weeks"}
+            height={"103.75rem"}
             mobileHeight={"100%"}
             >
            
@@ -177,6 +178,7 @@ const PriceHero = () => {
             tuitionFee={"N120,00"}
             duration={"10 Weeks"}
             mobileHeight={"100%"}
+            height={"149.4375rem"}
             backLeft={"20px"}
             >
                 {
@@ -244,8 +246,8 @@ const PriceHero = () => {
 export default PriceHero
 
 const StyledPriceHero = styled.div`
-    padding: 2% 5% 2% 10%;
-    margin-bottom: 10%;
+    padding: 2% 5% 12% 10%;
+    /* margin-bottom: 10%; */
     background-color: #FFFDF7;
    @media (max-width: 768px) {
     padding: 0% 8% 5% 8%;
@@ -317,7 +319,7 @@ const StyledPriceHero = styled.div`
     .button-container{
         width: 40%;
         position: absolute;
-        bottom: 5%;
+        bottom: 8%;
         @media (max-width: 768px){
             position: relative;
             width: 60%;

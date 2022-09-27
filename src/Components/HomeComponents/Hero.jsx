@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import HeroImg from '../../assets/heroImage.png'
 import HeroImg1 from '../../assets/heroImage1.png'
 import HeroImg2 from '../../assets/heroImage2.png'
-import { PrimaryButton, SecondaryButton } from '../../Utils/Buttons'
+import {  SecondaryButton } from '../../Utils/Buttons'
 import { theme } from '../../Utils/Theme'
 import { H1, H4 } from '../../Utils/Typograpyhy'
 import Slider from 'react-slick'
@@ -29,8 +29,22 @@ const Hero = () => {
   return (
     <StyledHero>
         <div className="hero-container">
-            <H1 color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem">
-            Launch your <span>Product Management </span> Career
+            <H1 
+            
+            color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem">
+           <span
+           data-aos="fade-up"
+           data-aos-duration="1000"
+           data-aos-delay="100"
+           > Launch your</span> <span 
+           data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+           className='blue-span'>Product Management </span> <span
+           data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+           > Career</span>
             </H1>
             <H4 mobileFontSize="0.875rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} textAlign={"left"}>
             Get the knowledge, skills and tools  you need to function effectively in the  role of a product manager
@@ -40,7 +54,12 @@ const Hero = () => {
                 {/* <PrimaryButton to="/" buttText="Join our Community" />   */}
             </div>
         </div>
-        <div className="hero-img">
+        <div className="hero-img"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="100"
+        
+        >
             <Slider {...settings}>
             <img src={HeroImg} alt=""/>
             <img src={HeroImg2} alt=""/>
@@ -67,6 +86,11 @@ const StyledHero = styled.div`
     .hero-container{
         max-width: 60%;
         margin-top: 4rem;
+        H1{
+            .blue-span{
+        color: ${theme.color.primary};
+            }
+        }
         H4{
             max-width: 37.75rem;
         }
