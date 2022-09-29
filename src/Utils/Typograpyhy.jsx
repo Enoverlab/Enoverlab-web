@@ -9,7 +9,7 @@ export const H1 = styled.h1`
     color: ${props => props.color || color.primary};
     font-weight: ${props => props.fontWeight || fontSize.xxl};
     text-align: ${props => props.textAlign || "center"};
-    line-height: 5.75rem;
+    line-height: ${props => props.lineHeight || "5.75rem"};
     margin: ${props => props.margin || "0"};
     padding: ${props => props.padding || "0"};
     padding-top: ${props => props.paddingTop || "0"};

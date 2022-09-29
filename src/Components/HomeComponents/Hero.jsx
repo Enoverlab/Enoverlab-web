@@ -30,7 +30,7 @@ const Hero = () => {
     <StyledHero>
         <div className="hero-container">
             <H1 
-            
+            lineHeight="5.75rem"
             color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem">
            <span
            data-aos="fade-up"
