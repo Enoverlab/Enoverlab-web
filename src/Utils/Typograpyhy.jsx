@@ -28,6 +28,7 @@ export const H2 = styled.h2`
     text-align: ${props => props.textAlign || "center"};
     margin: ${props => props.margin || "0"};
     padding: ${props => props.padding || "0"};
+    line-height: ${props => props.lineHeight || "120%"};
     padding-top:    ${props => props.paddingTop || "0"};
     padding-bottom: ${props => props.paddingBottom || "0"};
     @media (max-width: 768px) {

@@ -21,12 +21,16 @@ const Header = ({bgColor}) => {
         <div className="header-container">
            <div className="header-left">
             <div className="logo-container">
+                <Link to="/">
                 <img src={logo} alt="logo" />
+                </Link>
             </div>
             <div className="menu-container">
                 <div className={active ? "menu-item active" : "menu-item"}>
                     <div className="mobile-logo-container">
+                    <Link to="/">
                     <img src={mobileLogo} alt="logo" />
+                    </Link>
                     </div>
                     <NavLink 
                     style = {({isActive}) => ({
@@ -93,10 +97,13 @@ const StyledHeader = styled.div`
             align-items: center;
             column-gap: 7.875rem;
             .logo-container{
+              display: flex;
               max-width: 14.0625rem;
+              height: 2.0rem;
+              align-items: center;
               img{
-                width: 14.0625rem;
-                height: 2.4375rem;
+                width: 13.0625rem;
+                height: 2.015rem;
                 object-fit: contain;
               }
               @media (max-width: 768px){

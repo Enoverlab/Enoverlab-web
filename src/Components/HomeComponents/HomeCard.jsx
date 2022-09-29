@@ -45,7 +45,7 @@ const StyledHomeCard = styled.div`
             background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
             @media (max-width: 768px){
                 width: 100%;
-                height: 25rem;
+                height: 17.75rem;
                 left: -20px;
             }
         }
@@ -58,7 +58,7 @@ const StyledHomeCard = styled.div`
             border: 1px solid ${theme.color.dark};
             background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
             @media(max-width: 768px){
-                height: 25rem;
+                height: 17.75rem;
                 width: 100%;
                 padding: 1.5rem;
             }

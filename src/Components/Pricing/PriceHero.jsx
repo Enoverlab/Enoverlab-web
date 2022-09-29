@@ -102,6 +102,8 @@ const AdvancedData = [
     }
 ]
 
+
+
 const PriceHero = () => {
   return (
     <StyledPriceHero>
@@ -113,7 +115,7 @@ const PriceHero = () => {
                 Management Career
                 </H1>
                 <div className="p-container">
-                <P fontWeight={300} color="#4B4B4B">
+                <P fontSize="1.5rem" lineHeight="2.25rem" fontWeight={300} color="#4B4B4B">
                 Get the knowledge, skills and tools you need  to function  effectively in the role of a product manager 
                 </P>
                 </div>
@@ -126,7 +128,7 @@ const PriceHero = () => {
             cardText={"To understand the fundamentals of product management and kickstart your product manager career"}
             tuitionFee={"N40,000"}
             duration={"4 Weeks"}
-            height={"103.75rem"}
+            height={"90.75rem"}
             mobileHeight={"100%"}
             >
            
@@ -141,7 +143,7 @@ const PriceHero = () => {
             </div>            
             <div className="class-tools-container">
                 <H4 textAlign="left" color={theme.color.dark}>Class Tools</H4>
-                <P textAlign="left" color={theme.color.dark} mobileFontSize="1rem">
+                <P paddingTop="1rem" fontSize="1.125rem" fontWeight={300} textAlign="left" color={theme.color.dark} mobileFontSize="1rem">
                 Our online classes are designed around the latest  remote 
                 product management tools to keep you inline with the latest
                 industry standards
@@ -175,10 +177,10 @@ const PriceHero = () => {
             cardTitle={"Advance Program"}
             textColor={theme.color.light}
             cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}
-            tuitionFee={"N120,00"}
+            tuitionFee={"N120,000"}
             duration={"10 Weeks"}
             mobileHeight={"100%"}
-            height={"149.4375rem"}
+            height={"130.4375rem"}
             backLeft={"20px"}
             >
                 {
@@ -191,7 +193,9 @@ const PriceHero = () => {
 
             <div className="class-tools-container">
                 <H4 textAlign="left" color={theme.color.light}>Class Tools</H4>
-                <P textAlign="left" color={theme.color.light} mobileFontSize="1rem">
+                <P fontSize="1.125rem" textAlign="left" color={theme.color.light}
+                paddingTop="1rem"
+                mobileFontSize="1rem" fontWeight={300}>
                 Our online classes are designed around the latest  remote product management tools to keep you inline with the latest industry standards
                 </P>
             </div>
@@ -246,15 +250,17 @@ const PriceHero = () => {
 export default PriceHero
 
 const StyledPriceHero = styled.div`
-    padding: 2% 5% 12% 10%;
+    padding: 3% 10% 12% 10%;
+    position: relative;
     /* margin-bottom: 10%; */
     background-color: #FFFDF7;
    @media (max-width: 768px) {
-    padding: 0% 8% 5% 8%;
+    padding: 3% 8% 5% 8%;
    }
     .price-hero-container{
-        margin-bottom: 5.5rem;
-       
+        position: relative;
+        margin-bottom: 8.5rem;
+    
     }
  .price-hero-head{
         display: flex;
@@ -276,10 +282,9 @@ const StyledPriceHero = styled.div`
  .pricing-card{
         position: relative;
         display: grid;
+        justify-items: center;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-        margin-top: 2rem;
-
+        grid-gap: 2.3125rem;
         @media (max-width: 768px){
             grid-template-columns: 1fr;
             grid-gap: 5rem;
@@ -293,7 +298,7 @@ const StyledPriceHero = styled.div`
         max-width: 80%;
         margin: 2rem 0;
         .class-tools-icon-vert{
-          gap: 3.5625rem;
+          gap: 2.5625rem;
           display: flex;
           flex-direction: column;
           @media(max-width: 768px){
@@ -319,7 +324,7 @@ const StyledPriceHero = styled.div`
     .button-container{
         width: 40%;
         position: absolute;
-        bottom: 8%;
+        bottom: 5%;
         @media (max-width: 768px){
             position: relative;
             width: 60%;

@@ -16,8 +16,10 @@ const light = {
     primary: "#FFFFFF",
 }
 
+
+
 const fontSize = {
-    xxl : "4.5rem",
+    xxl : "4rem",
     xl : "3.25rem",
     m : "2.25rem",
     sm : "1.25rem"

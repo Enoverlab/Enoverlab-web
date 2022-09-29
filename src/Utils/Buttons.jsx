@@ -75,8 +75,8 @@ const StyledPrimaryButton = styled.div`
             }
         }
         @media(max-width: 768px){
-            font-size: 0.7rem;
-            padding: 0.6rem 1rem; 
+            font-size: 0.9rem;
+            padding: 0.7rem 1rem; 
         }
     }
     &:hover{
@@ -108,8 +108,8 @@ const StyledTertiaryButton = styled.div`
             }
         }
         @media(max-width: 768px){
-            font-size: 0.7rem;
-            padding: 0.6rem 1rem; 
+            font-size: 0.9rem;
+            padding: 0.7rem 1rem; 
         }
     }
     &:hover{
@@ -142,8 +142,8 @@ const StyledSecondaryButton = styled.div`
             }
         }
         @media(max-width: 768px){
-            font-size: 0.7rem;
-            padding: 0.6rem 1rem;         
+            font-size: 0.9rem;
+            padding: 0.7rem 1rem;      
         }   
     }
     &:hover{

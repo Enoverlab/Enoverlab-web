@@ -66,7 +66,7 @@ import topCornerSessions from '../../assets/topCornerSessions.png'
                 </div>
 
                 <div className="session-column column3">
-                <SessionsCard bgUrl={SessionImage7} guestName="Evelyn EBO" guestJob="" />
+                <SessionsCard bgUrl={SessionImage7} guestName="Evelyn EBO" guestJob="“33” Product Tekkies" />
                 <SessionsCard bgUrl={SessionImage8} guestName="Bridget Iyere" guestJob="Product owner, Elimu" />
                 <SessionsCard bgUrl={SessionImage9} guestName="Tomisin Agbaje" guestJob="Product Manager" />
                 </div>
@@ -87,7 +87,7 @@ import topCornerSessions from '../../assets/topCornerSessions.png'
                 <SessionsCard bgUrl={SessionImage4} guestName="Oluwatayo Winkunle" guestJob="Snr  Product Manager, Vendease" />
                 <SessionsCard bgUrl={SessionImage5} guestName="Obiajulu Anayo" guestJob="Chief Product Officer, Roots" />
                 <SessionsCard bgUrl={SessionImage6} guestName="Wale Ajiboye" guestJob="Scrum Master, Inter-Bank Settlement" />
-                <SessionsCard bgUrl={SessionImage7} guestName="Evelyn EBO" guestJob="" />
+                <SessionsCard bgUrl={SessionImage7} guestName="Evelyn EBO" guestJob="“33” Product Tekkies" />
                 <SessionsCard bgUrl={SessionImage8} guestName="Bridget Iyere" guestJob="Product owner, Elimu" />
                 <SessionsCard bgUrl={SessionImage9} guestName="Tomisin Agbaje" guestJob="Product Manager" />
                 <SessionsCard bgUrl={SessionImage10} guestName="Favour Olusoji" guestJob="Product owner, Takeaway.com" />
@@ -120,7 +120,7 @@ const StyledSession = styled.div`
     /* height: 100%; */
     @media (max-width: 768px) {
         padding: 5% 2% 5% 5%;
-        max-height: 70vh;
+        max-height: 80vh;
         margin-bottom: 10%;
     }
     @media(max-height: 667px){
@@ -195,37 +195,10 @@ const StyledSession = styled.div`
             gap: 1rem;
         }
 
-        .column1{
-      /* transform: translate(0px, 5%); */
 
-      @media(max-width: 768px){
-        transform: translate(0px, 0px);
-      }
+
     }
-
-    .column2{
-      /* transform: translate(0px, 10%); */
-
-      @media(max-width: 768px){
-        transform: translate(0px, 0px);
-      }
-    }
-
-    .column3{
-      /* transform: translate(0px, 15%); */
-
-      @media(max-width: 768px){
-        transform: translate(0px, 0px);
-      }
-    }
-
-    .column4{
-        /* transform: translate(0px, 20%); */
-        @media(max-width: 768px){
-        transform: translate(0px, 0px);
-        }
-    }
-    }
+     
 
    
 `

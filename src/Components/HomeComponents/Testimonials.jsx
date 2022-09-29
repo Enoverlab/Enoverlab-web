@@ -57,12 +57,12 @@ const Testimonials = () => {
                 <TestiCard/>
                 <TestiCard/>
             </Slider>
-           <div className="slide-container">
+           {/* <div className="slide-container">
            <div className="slide-arrow">
                 <img src={arrowWhiteLeft} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickPrev()} />
                 <img src={arrowWhite} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickNext()} />
             </div>
-           </div>
+           </div> */}
        </div>
         </div>
      
@@ -116,11 +116,11 @@ const StyledTestimonials = styled.div`
     }
     .slide-container{
         position: absolute;
-        top: 2.8rem;
-        right: 6.5rem;
+        bottom: -4rem;
+        right: 45%;
         @media (max-width: 768px){
-            top: -1rem;
-            right: 2rem;
+            bottom: -4rem;
+            right: 35%;
         }
         .slide-arrow{
             display: flex;

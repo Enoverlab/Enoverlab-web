@@ -3,15 +3,16 @@ import styled from 'styled-components'
 import check from '../../assets/darkMark.svg'
 import { theme } from '../../Utils/Theme'
 import { P } from '../../Utils/Typograpyhy'
+import { AiOutlineCheck } from 'react-icons/ai'
 const PricingAboutList = ({listText, key}) => {
   return (
     <StyledPricingAboutList key={key}>
         <div className="pricing-about-list-container">
           <div className="check-container">
-            <img src={check} alt="check" />
+            <AiOutlineCheck className='check-icon' />
           </div>
           <div className="list-text">
-            <P lineHeight="2.0625em" color="#4B4B4B" textAlign="left" mobileFontSize="0.8rem">{listText}</P>
+            <P lineHeight="2.0625rem" fontSIze="1.375rem" color="#4B4B4B" textAlign="left" mobileFontSize="0.8rem">{listText}</P>
           </div>
         </div>
     </StyledPricingAboutList>
@@ -23,27 +24,23 @@ export default PricingAboutList
 export const StyledPricingAboutList = styled.div`
     .pricing-about-list-container{
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         column-gap: 0.98125rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         @media(max-width: 768px){
           margin-bottom: 0.75rem;
+          column-gap: 0.53125rem;
         }
         .check-container{
-          width: 1.575rem;
-          height: 1.575rem;
-          /* margin-top: 2rem; */
-          img{
-            width: 1.5rem;
-            height: 1.575rem;
-          }
-          @media(max-width: 768px){
-             
-              img{
-                width: 1.0rem;
-                height: 1.0rem;
-                object-fit: contain;
-              }
+          margin-top: 0.4rem;
+          .check-icon{
+            font-size: 1.6875rem;
+            /* line-height: 2.6625rem; */
+            color: ${theme.color.dark};
+
+            @media(max-width: 768px){
+              font-size: 1rem;
+            }
           }
         }
     }

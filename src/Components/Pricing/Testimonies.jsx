@@ -48,15 +48,15 @@ const Testimonies = () => {
                         </P>
                     </div>
                     <div className="testimonies-flex">
-                        <PricingTestimonialCard imgSrc={testImage}/>
-                        <PricingTestimonialCard imgSrc={testImage2}/>
-                        <PricingTestimonialCard imgSrc={testImage3}/>
+                        <PricingTestimonialCard imgSrc={testImage} flag="🇳🇬"/>
+                        <PricingTestimonialCard imgSrc={testImage2} flag="🇬🇧"/>
+                        <PricingTestimonialCard imgSrc={testImage3} flag="🇺🇸"/>
                     </div>
                         <div className="testimonial-slider">
                         <Slider {...settings} ref={slider}>
-                        <PricingTestimonialCard imgSrc={testImage}/>
-                        <PricingTestimonialCard imgSrc={testImage2}/>
-                        <PricingTestimonialCard imgSrc={testImage3}/>
+                        <PricingTestimonialCard imgSrc={testImage} flag="🇳🇬"/>
+                        <PricingTestimonialCard imgSrc={testImage2} flag="🇬🇧"/>
+                        <PricingTestimonialCard imgSrc={testImage3} flag=""/>
                         </Slider>
                         <div className="slide-arrow-container">
                             <img src={arrowLeft} alt="arrow" className="arrow"  onClick={()=> slider?.current?.slickPrev()} />

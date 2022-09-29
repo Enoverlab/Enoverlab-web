@@ -4,7 +4,7 @@ import PriceTestimonialImage from '../../assets/PricingTestimonial1.png'
 import playIcon from '../../assets/playIcon.png'
 import { P } from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
-const PricingTestimonialCard = ({imgSrc}) => {
+const PricingTestimonialCard = ({imgSrc, flag}) => {
   return (
     <StyledPricingTestimonialCard>
         <div className="pricing-testimonial-card-container">
@@ -19,7 +19,7 @@ const PricingTestimonialCard = ({imgSrc}) => {
                 Kemi Ademide
                 </P>
                 <P color={theme.color.dark} textAlign="left" fontSize={"1.125rem"} fontWeight={500}>
-                Nigeria 
+                Nigeria {flag}
                 </P>
             </div>
         </div>
@@ -33,7 +33,7 @@ const StyledPricingTestimonialCard = styled.div`
     .pricing-testimonial-card-container{
         .price-image-container{
             position: relative;
-            max-width: 20rem;
+            max-width: 26.0625rem;
             height: auto;
            
             img{

@@ -57,7 +57,7 @@ const StyledPricingCard = styled.div`
                 position: absolute;
                 top: -50px;
                 left: ${props => props.backLeft ?  props.backLeft : "-20px"};
-                width: 90%;
+                width: 100%;
                 height: ${props => props.height ? props.height : "150rem"};
                 z-index: 1;
                 border: 1px solid ${theme.color.dark};
@@ -70,7 +70,7 @@ const StyledPricingCard = styled.div`
             }
             .card-container-front{
                 position: relative;
-                width: 90%;
+                width: 100%;
                 height:  ${props => props.height ? props.height : "150rem"};
                 z-index: 2;
                 padding: 1.5rem;
@@ -86,7 +86,7 @@ const StyledPricingCard = styled.div`
             .fees{
                 display: flex;
                 justify-content: space-between;
-                margin-top: 2rem;
+                margin: 2rem 0;
             }
         }
 `

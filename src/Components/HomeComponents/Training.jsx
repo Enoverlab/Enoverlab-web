@@ -41,16 +41,15 @@ export default Training
 const StyledTraining = styled.div`
     /* margin-top: 3rem; */
     background-color: #FFFDF7;
-    min-height: 100vh;
+    max-height: 100vh;
     position: relative;
     padding: 10% 0% 5% 0%;
     @media (max-width: 768px){
-      margin-bottom: 15%;
-      padding-bottom: 15%;
+      max-height: 100vh;
     }
     .cardContainer{
       position: relative;
-      padding: 5rem 5% 5rem 10%;
+      padding: 5rem 10% 5rem 10%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       position: relative;
@@ -58,7 +57,7 @@ const StyledTraining = styled.div`
         grid-template-columns: 1fr;
         height: 100vh;
         grid-gap: 3rem;
-        padding: 5rem 10%;
+        padding: 5rem 5% 0rem 9%;
       }
     }
     .button-container{
