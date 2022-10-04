@@ -18,16 +18,14 @@ const Training = () => {
         
         <HomeCard cardTitle={"Basic Program"} textColor={theme.color.dark} cardText={"To understand the fundamentals of product management and kickstart your product manager career"}>
         <div className="button-container">
-        <SecondaryButton to="/" buttText="Learn More"/>
+        <SecondaryButton to="/pricing" buttText="Learn More"/>
         </div>
-        </HomeCard>
-     
-        
+        </HomeCard>   
         <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.light} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.primary}
         backLeft="20px"
         >
         <div className="button-container">
-        <PrimaryButton to="/" buttText="Learn More"/>
+        <PrimaryButton to="/pricing" buttText="Learn More"/>
         </div>
         </HomeCard>
         </div>
@@ -39,13 +37,14 @@ const Training = () => {
 export default Training
 
 const StyledTraining = styled.div`
-    /* margin-top: 3rem; */
     background-color: #FFFDF7;
-    max-height: 100vh;
+    height: 120vh;
+    min-height: 100%;
     position: relative;
     padding: 10% 0% 5% 0%;
     @media (max-width: 768px){
-      max-height: 100vh;
+      height: 90vh;
+      min-height: 100%;
     }
     .cardContainer{
       position: relative;
@@ -67,6 +66,7 @@ const StyledTraining = styled.div`
         width: 35%;
         @media(max-width: 768px){
           width:45%;
+          bottom: 1.7rem;
         }
     }
 `

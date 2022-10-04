@@ -88,9 +88,9 @@ const StyledHeader = styled.div`
         width: 99%;
         justify-content: space-between;
         align-items: center;
-        padding: 2.625rem 5%;
+        padding: 2.625rem 4%;
         @media (max-width: 768px){
-          padding: 1.25rem 5%;
+          padding: 1.25rem 4%;
         }
         .header-left{
             display: flex;
@@ -160,11 +160,10 @@ const StyledHeader = styled.div`
                       position: fixed;
                       width: 60%;
                       top: 0;
-                      right: 0;
                       width: 6  0%;
                       height: 100vh;
                       background-color: ${theme.color.tertiary};
-                      z-index: 3;
+                      z-index: 4;
                       overflow-x: hidden;
                       display: none;
                       padding: 1.7rem 1.3rem;
@@ -174,6 +173,8 @@ const StyledHeader = styled.div`
                   }
                   &.active{
                   display: block;
+                  right: ${({active}) => (!active ? "-0px" : "0")};
+                  transition: right ease-in-out 900ms;
                 }
                 }
               
@@ -214,7 +215,7 @@ const StyledHeader = styled.div`
             height: 100vh;
             background: rgba(0, 0, 0, .4);
             cursor: pointer;
-            z-index: 1;
+            z-index: 3;
             display: none;
 
             &.active {

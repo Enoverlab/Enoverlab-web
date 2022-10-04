@@ -49,7 +49,7 @@ const BlogHero = () => {
         <div className="blog-hero-container">
         <MainBlogCard/>        
 
-          <div className="blog-card-grid">
+         <div className="blog-card-grid">
            {
               BlogData.map((item) => {
                 return (
@@ -66,7 +66,7 @@ const BlogHero = () => {
                 )
               })
            }
-          </div>
+          </div> 
         </div>
     </StyledBlogHero>
   )
@@ -85,7 +85,7 @@ const StyledBlogHero = styled.div`
 
       @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
-
+        gap: 3rem;
       }
 
     }

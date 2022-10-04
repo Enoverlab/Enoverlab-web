@@ -57,12 +57,12 @@ const Testimonials = () => {
                 <TestiCard/>
                 <TestiCard/>
             </Slider>
-           {/* <div className="slide-container">
+           <div className="slide-container">
            <div className="slide-arrow">
                 <img src={arrowWhiteLeft} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickPrev()} />
                 <img src={arrowWhite} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickNext()} />
             </div>
-           </div> */}
+           </div>
        </div>
         </div>
      
@@ -77,7 +77,7 @@ const StyledTestimonials = styled.div`
     position: relative;
     background-color: ${theme.color.tertiary};
     z-index: 1;
-    height: 100vh;
+    height: 120vh;
     @media (max-width: 768px) {
         height: 80vh;
     }
@@ -118,7 +118,9 @@ const StyledTestimonials = styled.div`
         position: absolute;
         bottom: -4rem;
         right: 45%;
+        display: none;
         @media (max-width: 768px){
+            display: block;
             bottom: -4rem;
             right: 35%;
         }

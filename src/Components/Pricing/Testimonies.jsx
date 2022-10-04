@@ -58,10 +58,10 @@ const Testimonies = () => {
                         <PricingTestimonialCard imgSrc={testImage2} flag="🇬🇧"/>
                         <PricingTestimonialCard imgSrc={testImage3} flag=""/>
                         </Slider>
-                        <div className="slide-arrow-container">
+                        {/* <div className="slide-arrow-container">
                             <img src={arrowLeft} alt="arrow" className="arrow"  onClick={()=> slider?.current?.slickPrev()} />
                             <img src={arrowRight} alt="arrow" className="arrow"  onClick={()=> slider?.current?.slickNext()} />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </StyledTestimonies>    

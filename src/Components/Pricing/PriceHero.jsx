@@ -255,7 +255,7 @@ const StyledPriceHero = styled.div`
     /* margin-bottom: 10%; */
     background-color: #FFFDF7;
    @media (max-width: 768px) {
-    padding: 3% 8% 5% 8%;
+    padding: 3% 10% 5% 5%;
    }
     .price-hero-container{
         position: relative;

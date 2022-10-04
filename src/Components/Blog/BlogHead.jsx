@@ -13,7 +13,10 @@ const BlogHead = () => {
                 </div>
                 <div className="blog-head-container-front">
                     <div className="blog-head-container-front-text">
-                    <H1 fontWeight={300}>
+                    <H1 
+                    mobileFontSize="2.5rem"
+                    fontSize="4rem"
+                    fontWeight={300}>
                             Product Blog
                     </H1>
                     </div>
@@ -36,6 +39,9 @@ const StyledBlogHead = styled.div`
     position: relative;
     width: 100%;
     padding: 5% 5% 5% 10%;
+    @media(max-width: 768px){
+        padding: 5% 2% 5% 5%;
+    }
     .blog-head-container{
         position: relative;
 
@@ -68,6 +74,9 @@ const StyledBlogHead = styled.div`
                 display: flex;
                 justify-content: center;
                 transform: translate(0%, 70%);
+                @media (max-width: 768px){
+                    transform: translate(0%, 90%);
+                }
                 .searchbar{
                     position: relative;
                     display: flex;
@@ -76,6 +85,10 @@ const StyledBlogHead = styled.div`
                     border: 1px solid ${theme.color.dark};
                     width: 60%;
                     padding: 1.25rem 1.35rem ;
+
+                    @media (max-width: 768px){
+                        width: 85%;
+                    }
                     input{
                         width: 100%;
                         height: 100%;

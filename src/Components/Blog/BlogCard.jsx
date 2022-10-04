@@ -15,7 +15,6 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                     <P textAlign="left"
                     fontSize="1rem"
                     color="#7080A1"
-                    paddingBottom="0.5rem"
                     >
                       {category}
                     </P>
@@ -81,8 +80,17 @@ const StyledBlogCard = styled.div`
     }
     .blog-card-content{
       margin-top: 1.5rem;
+      
+      .category{
+        padding-bottom: 0.5rem;
+      }
+
+      .blog-title{
+        padding-bottom: 1rem;
+      }
+
       .blog-text{
-        padding: 2% 0;
+        padding-bottom: 1rem;
       }
     }
     .blog-author{

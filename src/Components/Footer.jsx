@@ -15,7 +15,7 @@ const Footer = () => {
                     enoverlab
                 </P>
                 <P lineHeight="28px" color={theme.color.light} textAlign="left" fontSize="1rem" mobileFontSize="0.8rem">
-                Building product managers today,tomorrow nd the future
+                Building product managers today,tomorrow and the future
                 </P>
                 <div className="icon-container">
                     <div className="social-icon">
@@ -157,7 +157,7 @@ const StyledFooter = styled.div`
                     background-color: ${theme.color.tertiary};
                     color: ${theme.color.light};
                     @media (max-width: 768px){
-                        width: 80%;
+                        width: 100%;
                     }
                 }
                 @media (max-width: 768px){

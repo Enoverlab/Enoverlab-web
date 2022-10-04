@@ -7,6 +7,7 @@ import {  SecondaryButton } from '../../Utils/Buttons'
 import { theme } from '../../Utils/Theme'
 import { H1, H4 } from '../../Utils/Typograpyhy'
 import Slider from 'react-slick'
+import HeroText from './HeroText'
 
 
 const Hero = () => {
@@ -29,28 +30,21 @@ const Hero = () => {
   return (
     <StyledHero>
         <div className="hero-container">
-            <H1 
+            <HeroText/>
+            {/* <H1
+             display="inline"
             lineHeight="5.75rem"
             color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem">
            <span
-           data-aos="fade-up"
-           data-aos-duration="1000"
-           data-aos-delay="100"
+           className='span1'
            > Launch your</span> <span 
-           data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="200"
-           className='blue-span'>Product Management </span> <span
-           data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="300"
-           > Career</span>
-            </H1>
+           className='blue-span span2'>Product Management </span> <span className='span3'> Career</span>
+            </H1> */}
             <H4 mobileFontSize="0.875rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} textAlign={"left"}>
             Get the knowledge, skills and tools  you need to function effectively in the  role of a product manager
             </H4>
             <div className="button-container">             
-                <SecondaryButton  to="/" buttText="Start Here"/>
+                <SecondaryButton  to="/pricing" buttText="Start Here"/>
                 {/* <PrimaryButton to="/" buttText="Join our Community" />   */}
             </div>
         </div>
@@ -73,6 +67,19 @@ const Hero = () => {
 export default Hero
 
 const StyledHero = styled.div`
+    @keyframes slide-top {
+        0% {
+            -webkit-transform: translateY(100px);
+                    transform: translateY(100px);
+        }
+        100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+        }
+    }
+
+
+
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
@@ -87,8 +94,21 @@ const StyledHero = styled.div`
         max-width: 60%;
         margin-top: 4rem;
         H1{
+           
             .blue-span{
         color: ${theme.color.primary};
+            }
+            .span1{
+                animation: slide-top 1s ease-in both;
+                display: inline-block;
+            }
+            .span2{
+                animation: slide-top 1s ease-in 0.5s both;
+                display: inline-block;
+            }
+            .span3{
+                animation: slide-top 1s ease-in 1s both;
+                display: inline-block;
             }
         }
         H4{

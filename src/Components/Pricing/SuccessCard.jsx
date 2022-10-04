@@ -45,13 +45,13 @@ const StyledSuccessCard = styled.div`
             height: 19.75rem;
         }
 
-        &:hover{
+        /* &:hover{
                 box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
                 -webkit-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
                 -moz-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
             transition: box-shadow 0.3s ease-in-out;
             }
-       
+        */
         .success-card-profile{
             display: flex;
             align-items: center;

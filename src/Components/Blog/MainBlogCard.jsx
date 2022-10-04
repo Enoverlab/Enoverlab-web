@@ -16,7 +16,6 @@ const MainBlogCard = () => {
                     <P textAlign="left"
                     fontSize="1.25rem"
                     color="#7080A1"
-                    paddingBottom="0.5rem"
                     >Collaboration</P>
                 </div>
                 <div className="blog-title">
@@ -67,9 +66,16 @@ const StyledMainBlogCard = styled.div`
     .main-blog-card-container{
         display: flex;
         gap: 15%;
+        @media (max-width: 768px){
+            flex-direction: column;
+            margin-top: 7.8125rem;
+        }
     .image-container{
         width: 40%;
         height: auto;
+        @media (max-width: 768px){
+            width: 100%;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -79,7 +85,16 @@ const StyledMainBlogCard = styled.div`
     }
     .blog-card-content{
         width: 50%;
-
+        @media (max-width: 768px){
+            width: 100%;
+        }
+        .category{
+            padding-bottom: 0.5rem;
+        }
+        .blog-title{
+            padding-bottom: 1rem;
+        }
+        
         .blog-text{
             padding: 2% 0;
         }
