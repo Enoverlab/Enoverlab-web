@@ -31,15 +31,6 @@ const Hero = () => {
     <StyledHero>
         <div className="hero-container">
             <HeroText/>
-            {/* <H1
-             display="inline"
-            lineHeight="5.75rem"
-            color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem">
-           <span
-           className='span1'
-           > Launch your</span> <span 
-           className='blue-span span2'>Product Management </span> <span className='span3'> Career</span>
-            </H1> */}
             <H4 mobileFontSize="0.875rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} textAlign={"left"}>
             Get the knowledge, skills and tools  you need to function effectively in the  role of a product manager
             </H4>
