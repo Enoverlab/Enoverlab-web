@@ -32,6 +32,7 @@ const StyledHero = styled.div`
         margin-bottom: 8.5rem;
         @media(max-width: 768px){
             margin-bottom: 3rem;
+            padding-top: 25%;
         }
     }
 

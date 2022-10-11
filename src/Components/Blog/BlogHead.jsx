@@ -40,7 +40,7 @@ const StyledBlogHead = styled.div`
     width: 100%;
     padding: 5% 5% 5% 10%;
     @media(max-width: 768px){
-        padding: 5% 2% 5% 5%;
+        padding: 30% 2% 5% 5%;
     }
     .blog-head-container{
         position: relative;

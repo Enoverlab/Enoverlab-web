@@ -82,7 +82,13 @@ const Header = ({bgColor}) => {
 export default Header
 
 const StyledHeader = styled.div`
+  position: relative;
+  width: 100%;
+  z-index: 5;
   background-color: ${props => props ? props.bgColor : theme.color.light};
+  @media(max-width: 768px){
+    position: fixed;
+  }
    .header-container{
         display: flex;
         width: 99%;

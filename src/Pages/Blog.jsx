@@ -8,7 +8,7 @@ import Footer from '../Components/Footer'
 const Blog = () => {
   return (
     <StyledBlog>
-        <Header/>
+        <Header bgColor="#fff"/>
         <BlogHead/>
         <BlogHero/>
         <Footer/>

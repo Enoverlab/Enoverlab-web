@@ -6,9 +6,9 @@ import gsap from 'gsap'
 
 const HeroText = () => {
     useEffect(() => {
-        let from = gsap.from(['.hero-text1', '.hero-text2', '.hero-text3', '.hero-text4'], 1, {
+        let from = gsap.from(['.hero-text1', '.hero-text2', '.hero-text3', '.hero-text4'], 5, {
             opacity: 0,
-            duration: 6,
+            duration: 5,
             y: 80,
             ease: 'power3.out',
             stagger: {

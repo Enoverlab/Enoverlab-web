@@ -7,7 +7,7 @@ import Footer from '../Components/Footer'
 const About = () => {
   return (
     <StyledAbout>
-       <Header/>
+       <Header bgColor="#fff"/>
        <Hero/>
        <AboutContent/>
        <Footer/>

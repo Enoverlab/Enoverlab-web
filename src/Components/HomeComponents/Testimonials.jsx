@@ -57,12 +57,12 @@ const Testimonials = () => {
                 <TestiCard/>
                 <TestiCard/>
             </Slider>
-           <div className="slide-container">
+           {/* <div className="slide-container">
            <div className="slide-arrow">
                 <img src={arrowWhiteLeft} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickPrev()} />
                 <img src={arrowWhite} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickNext()} />
             </div>
-           </div>
+           </div> */}
        </div>
         </div>
      

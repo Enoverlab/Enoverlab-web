@@ -4,6 +4,7 @@ import {theme} from '../Utils/Theme'
 import { P } from '../Utils/Typograpyhy'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {FaFacebookMessenger, FaTwitter} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -19,29 +20,43 @@ const Footer = () => {
                 </P>
                 <div className="icon-container">
                     <div className="social-icon">
+                     <a href="https://www.linkedin.com/company/enoverlab/">
                         <AiFillLinkedin/>
+                        </a>
                     </div>
                     <div className="social-icon">
+                        <a href="https://twitter.com/enoverlab">
                         <FaFacebookMessenger/>
+                        </a>
                     </div>
                     <div className="social-icon">
+                        <a href="https://twitter.com/enoverlabng">
                         <FaTwitter/>
+                        </a>
                     </div>
                 </div>
             </div>
             <div className="container-left-2">
+                <a href="/#">
                 <P fontSize="1.3125rem" color={theme.color.light} textAlign="left" lineHeight="28px">
                     Company
                 </P>
+                </a>
+                <Link to="/pricing">
                 <P color={theme.color.light} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     Programs
                 </P>
+                </Link>
+                <Link to="/blog">
                 <P color={theme.color.light} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     Blog
                 </P>
+                </Link>
+                <Link to="/about">
                 <P color={theme.color.light} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     About us
                 </P>
+                </Link>
             </div>
             </div>
             <div className="footer-right">
@@ -110,6 +125,10 @@ const StyledFooter = styled.div`
                     display: flex;
                     column-gap: 1rem;
                     margin-top: 0.8rem;
+                    a{
+                        color: ${theme.color.light};
+                        text-decoration: none;
+                    }
                     .social-icon{
                         color: ${theme.color.light};
                     }
@@ -181,5 +200,8 @@ const StyledFooter = styled.div`
     p{
         margin-bottom: 0.75rem;
     }
+    }
+    a{
+        text-decoration: none;
     }
 `

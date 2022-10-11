@@ -58,59 +58,24 @@ const Hero = () => {
 export default Hero
 
 const StyledHero = styled.div`
-    @keyframes slide-top {
-        0% {
-            -webkit-transform: translateY(100px);
-                    transform: translateY(100px);
-        }
-        100% {
-            -webkit-transform: translateY(0);
-                    transform: translateY(0);
-        }
-    }
-
-
-
+   
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    padding: 2rem 5%;
+    padding: 5rem 5%;
     @media (max-width: 768px) {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 4.4375rem;
+        gap: 1.4375rem;
     }
     .hero-container{
         max-width: 60%;
         margin-top: 4rem;
-        H1{
-           
-            .blue-span{
-        color: ${theme.color.primary};
-            }
-            .span1{
-                animation: slide-top 1s ease-in both;
-                display: inline-block;
-            }
-            .span2{
-                animation: slide-top 1s ease-in 0.5s both;
-                display: inline-block;
-            }
-            .span3{
-                animation: slide-top 1s ease-in 1s both;
-                display: inline-block;
-            }
-        }
-        H4{
-            max-width: 37.75rem;
-        }
         @media(max-width: 768px){
             max-width: 100%;
-            margin-bottom: 1.5rem;
-            H1{
-                line-height: 3rem;
-            }
+            margin-bottom: 1rem;
+            margin-top: 1rem;
         }
         .button-container{
             display: flex;

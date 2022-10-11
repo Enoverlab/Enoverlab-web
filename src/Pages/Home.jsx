@@ -8,7 +8,7 @@ import Sessions from '../Components/HomeComponents/Sessions'
 import Started from '../Components/HomeComponents/Started'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-
+import { theme } from '../Utils/Theme'
 const Home = () => {
   return (
     <div
@@ -16,7 +16,7 @@ const Home = () => {
       backgroundColor: "#FFFDF7"
     }}
     >
-       <Header/>
+       <Header bgColor={theme.color.light}/>
         <Hero/>
         <About/>
         <Training/>
