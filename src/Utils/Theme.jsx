@@ -4,7 +4,8 @@ const color = {
     tertiary: "#0088FF",
     quaternary: "#BAEAFA",
     light: "#FFFFFF",
-    dark: "#333333"
+    dark: "#333333",
+    lightBlue: "#F5FCFF"
 }
 
 const dark = {

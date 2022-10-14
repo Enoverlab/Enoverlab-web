@@ -16,7 +16,7 @@ const Home = () => {
       backgroundColor: "#FFFDF7"
     }}
     >
-       <Header bgColor={theme.color.light}/>
+       <Header bgColor="#FFFDF7"/>
         <Hero/>
         <About/>
         <Training/>
