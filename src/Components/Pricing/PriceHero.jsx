@@ -128,7 +128,7 @@ const PriceHero = () => {
             cardText={"To understand the fundamentals of product management and kickstart your product manager career"}
             tuitionFee={"N40,000"}
             duration={"4 Weeks"}
-            height={"90.75rem"}
+            height={"68.676875rem"}
             mobileHeight={"100%"}
             >
            
@@ -142,8 +142,8 @@ const PriceHero = () => {
                 }            
             </div>            
             <div className="class-tools-container">
-                <H4 textAlign="left" color={theme.color.dark}>Class Tools</H4>
-                <P paddingTop="1rem" fontSize="1.125rem" fontWeight={300} textAlign="left" color={theme.color.dark} mobileFontSize="1rem">
+                <H4 fontSize="0.993125rem" textAlign="left" color={theme.color.dark}>Class Tools</H4>
+                <P paddingTop="0.6625rem" fontSize="0.745rem"  fontWeight={300} textAlign="left" color={theme.color.dark} mobileFontSize="1rem">
                 Our online classes are designed around the latest  remote 
                 product management tools to keep you inline with the latest
                 industry standards
@@ -180,7 +180,7 @@ const PriceHero = () => {
             tuitionFee={"N120,000"}
             duration={"10 Weeks"}
             mobileHeight={"100%"}
-            height={"130.4375rem"}
+            height={"98.875rem"}
             backLeft={"20px"}
             >
                 {
@@ -192,9 +192,9 @@ const PriceHero = () => {
                 }
 
             <div className="class-tools-container">
-                <H4 textAlign="left" color={theme.color.light}>Class Tools</H4>
-                <P fontSize="1.125rem" textAlign="left" color={theme.color.light}
-                paddingTop="1rem"
+                <H4 fontSize="0.993125rem" textAlign="left" color={theme.color.light}>Class Tools</H4>
+                <P fontSize="0.745rem" textAlign="left" color={theme.color.light}
+                paddingTop="0.6625rem"
                 mobileFontSize="1rem" fontWeight={300}>
                 Our online classes are designed around the latest  remote product management tools to keep you inline with the latest industry standards
                 </P>
@@ -242,6 +242,57 @@ const PriceHero = () => {
             <PrimaryButton to="/" buttText="Register Now"/>
             </div>
             </PricingCard>
+
+            <PricingCard cardTitle={"LevelUP Program"} 
+            textColor={theme.color.dark}
+            cardText={"To understand the fundamentals of product management and kickstart your product manager career"}
+            tuitionFee={"N40,000"}
+            duration={"4 Weeks"}
+            height={"98rem"}
+            mobileHeight={"100%"}
+            >
+           
+            <div className="container-list">
+                {
+                    BasicData.map((item, index) => {
+                        return (
+                            <PricingList index={index} listText={item.listText} textColor={theme.color.dark} />
+                        )
+                    })
+                }            
+            </div>            
+            <div className="class-tools-container">
+                <H4 fontSize="0.993125rem" textAlign="left" color={theme.color.dark}>Class Tools</H4>
+                <P paddingTop="0.6625rem" fontSize="0.745rem"  fontWeight={300} textAlign="left" color={theme.color.dark} mobileFontSize="1rem">
+                Our online classes are designed around the latest  remote 
+                product management tools to keep you inline with the latest
+                industry standards
+                </P>
+            </div>
+
+            <div className="class-tools-icon-container">
+                <div className="class-tools-icon-vert">
+                <div className="class-tools-icon">
+                    <img src={gmailIcon} alt="gmail-icon" />
+                    Google Meet
+                </div>
+                <div className="class-tools-icon">
+                    <img src={googleDocs} alt="google-docs-icon" />
+                    Google Docs
+                </div>
+                </div>
+                <div className="class-tools-icon-vert">
+                <div className="class-tools-icon">
+                    <img src={slack} alt="slack-icon" />
+                    Slack
+                </div>
+                </div>
+            </div>
+            <div className="button-container">
+            <PrimaryButton to="/" buttText="Register Now"/>
+            </div>
+            </PricingCard>
+
         </div>
     </StyledPriceHero>
   )
@@ -250,7 +301,7 @@ const PriceHero = () => {
 export default PriceHero
 
 const StyledPriceHero = styled.div`
-    padding: 3% 10% 12% 10%;
+    padding: 3% 5% 12% 5%;
     position: relative;
     /* margin-bottom: 10%; */
     background-color: #FFFDF7;
@@ -283,8 +334,8 @@ const StyledPriceHero = styled.div`
         position: relative;
         display: grid;
         justify-items: center;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2.3125rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5.3125rem;
         @media (max-width: 768px){
             grid-template-columns: 1fr;
             grid-gap: 5rem;
@@ -298,7 +349,7 @@ const StyledPriceHero = styled.div`
         max-width: 80%;
         margin: 2rem 0;
         .class-tools-icon-vert{
-          gap: 2.5625rem;
+          gap: 2.125rem;
           display: flex;
           flex-direction: column;
           @media(max-width: 768px){
@@ -308,6 +359,7 @@ const StyledPriceHero = styled.div`
             display: flex;
             align-items: center;
             column-gap: 1rem;
+            font-size: 0.69rem;
             @media(max-width: 768px){
             gap: 0.3rem; 
             font-size: 0.7rem;
@@ -322,7 +374,7 @@ const StyledPriceHero = styled.div`
         }
     }
     .button-container{
-        width: 40%;
+        width: 60%;
         position: absolute;
         bottom: 5%;
         @media (max-width: 768px){

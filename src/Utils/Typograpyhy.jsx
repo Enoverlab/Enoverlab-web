@@ -37,7 +37,7 @@ export const H2 = styled.h2`
 `
 
 export const H3 = styled.h3`
-    font-size: ${fontSize.m};
+    font-size: ${props => props.fontSize || fontSize.m};
     color: ${props => props.color || color.primary};
     font-weight: ${props => props.fontWeight || "500"};
     text-align: ${props => props.textAlign || "center"};

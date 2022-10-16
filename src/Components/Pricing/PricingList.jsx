@@ -10,15 +10,15 @@ const PricingList = ({ listText, listSubText, textColor}) => {
         <div className="pricing-list">
           <div className="pricing-list-item">
             <div className="list-bullet">
-            <H4 textAlign="left" color={textColor} mobileFontSize="1rem">
+            <H4 textAlign="left" color={textColor} mobileFontSize="1rem" fontSize="0.8125rem">
                <AiOutlineCheckCircle/>  
             </H4>
             </div>
             <div className="text-container">
-            <H4 textAlign="left" color={textColor}  mobileFontSize="1rem">
+            <H4 fontSize="0.8275rem" textAlign="left" color={textColor}  mobileFontSize="0.8rem">
               {listText} 
             </H4>
-            <P paddingTop="0.25rem" fontSize="1rem" textAlign="left" color={textColor} mobileFontSize= "0.8rem" fontWeight={300}>
+            <P paddingTop="0.25rem" fontSize="0.825rem" textAlign="left" color={textColor} mobileFontSize= "0.8rem" fontWeight={300}>
               {listSubText}
             </P>
             </div>
@@ -40,10 +40,10 @@ const StyledPricingList = styled.div`
     .pricing-list{
       .pricing-list-item{
         display: flex;
-        column-gap: 2.375rem;
-        margin-bottom: 2rem;
+        column-gap: 1rem;
+        margin-bottom: 1.205625rem;
         @media (max-width: 768px) {
-          column-gap: 1rem;
+          column-gap: 0.5rem;
         }
       }
     }

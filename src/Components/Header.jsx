@@ -2,11 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import {theme} from '../Utils/Theme'
 import { P } from '../Utils/Typograpyhy'
-import { PrimaryButton, TertiaryButton } from '../Utils/Buttons'
+import { PrimaryButton, SecondaryButton, TertiaryButton } from '../Utils/Buttons'
 import logo from '../assets/enovLogo.png'
 import mobileLogo from '../assets/mobileLogo.png'
 import menu from '../assets/menu.png'
 import { Link, useLocation, NavLink } from 'react-router-dom'
+import { FaTimes } from 'react-icons/fa'
+import {HiOutlineChevronRight} from 'react-icons/hi'
 const Header = ({bgColor}) => {
   const [active, setActive] = React.useState(false)
   const [weightHome, setWeightHome] = React.useState('bold')
@@ -29,9 +31,11 @@ const Header = ({bgColor}) => {
                 <div className={active ? "menu-item active" : "menu-item"}>
                     <div className="mobile-logo-container">
                     <Link to="/">
-                    <img src={mobileLogo} alt="logo" />
+                    <img src={logo} alt="logo" />
                     </Link>
+                    <FaTimes   onClick={() => setActive(!active)}/>
                     </div>
+                    <div className="menu-item-container">
                     <NavLink 
                     style = {({isActive}) => ({
                         fontWeight: isActive ? setWeightHome("600") : setWeightHome("300")
@@ -40,7 +44,10 @@ const Header = ({bgColor}) => {
                     <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightHome}>
                     Home
                     </P>
+                      <HiOutlineChevronRight className='icon'/>
                     </NavLink>
+                    </div>
+                    <div className="menu-item-container">
                     <NavLink
                      style = {({isActive}) => ({
                       fontWeight: isActive ? setWeightPricing("600") : setWeightPricing("300")
@@ -49,7 +56,10 @@ const Header = ({bgColor}) => {
                     <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightPricing}>
                     Pricing
                     </P>
+                      <HiOutlineChevronRight className='icon'/>
                     </NavLink>
+                    </div>
+                    <div className="menu-item-container">
                     <NavLink 
                       style = {({isActive}) => ({
                       fontWeight: isActive ? setWeightBlog("600") : setWeightBlog("300")
@@ -58,9 +68,11 @@ const Header = ({bgColor}) => {
                     <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightBlog}>
                     Blog
                     </P>
+                      <HiOutlineChevronRight className='icon'/>
                     </NavLink>
+                    </div>
                     <div className="mobile-button-container">
-                      <PrimaryButton to="/" buttText="Join Our Community"/>
+                      <SecondaryButton textAlign="center" to="/" buttText="Join Our Community"/>
                     </div>
                  </div>
            </div>
@@ -124,12 +136,26 @@ const StyledHeader = styled.div`
             .menu-container{
             a{
               text-decoration: none;
+              display: block;
+              
               P{
                 &:hover{
                   color: ${theme.color.primary};
                 }
               }
+              .icon{
+                display: none;
+
+                @media (max-width: 768px){
+                  display: block;
+                }
               }
+              @media (max-width: 768px){
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0;
+              }
+            }
                 .menu-item{
                   display: flex;
                   align-items: center;
@@ -138,13 +164,13 @@ const StyledHeader = styled.div`
                     display: none;
                     @media (max-width: 768px){
                         display: flex;
-                        align-items: flex-end;
-                        justify-content: flex-end;
+                        align-items: center;
+                        justify-content: space-between;
                         max-width: 100%;
                         /* margin-right: -0.5rem; */
                         img{
                             width: 9.125rem;
-                            align-self: flex-end;
+                            /* align-self: flex-end; */
                         }
                     }
                   }
@@ -152,10 +178,10 @@ const StyledHeader = styled.div`
                     display: none;
                    
                     @media (max-width: 768px){
-                        display: flex;
-                        align-items: flex-end;
-                        justify-content: flex-end;
-                        max-width: 14.5125rem;
+                        display: block;
+                        /* align-items: flex-end; */
+                        /* justify-content: flex-end; */
+                        width: 100%;
                         margin-top: 1rem;
                     }
                   }
@@ -163,18 +189,19 @@ const StyledHeader = styled.div`
                       flex-direction: column;
                       align-items: center;
                       justify-content: center;
+                     
                       position: fixed;
-                      width: 60%;
+                      width: 100%;
                       top: 0;
-                      width: 6  0%;
-                      height: 100vh;
-                      background-color: ${theme.color.tertiary};
+                      width: 100%;
+                      height: 50vh;
+                      background-color: ${props => props ? props.bgColor : theme.color.light};
                       z-index: 4;
                       overflow-x: hidden;
                       display: none;
                       padding: 1.7rem 1.3rem;
                     P{
-                      color: ${theme.color.light};
+                      color: ${theme.color.dark};
                     }
                   }
                   &.active{
@@ -182,7 +209,7 @@ const StyledHeader = styled.div`
                   right: ${({active}) => (!active ? "-0px" : "0")};
                   transition: right ease-in-out 900ms;
                 }
-                }
+              }
               
             }
 
@@ -219,7 +246,6 @@ const StyledHeader = styled.div`
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: rgba(0, 0, 0, .4);
             cursor: pointer;
             z-index: 3;
             display: none;

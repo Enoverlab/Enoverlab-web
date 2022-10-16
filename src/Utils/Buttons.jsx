@@ -20,9 +20,9 @@ export const PrimaryButton = ({to, buttText}) => {
 
 
 
-export const SecondaryButton = ({to, buttText}) => {
+export const SecondaryButton = ({to, buttText, textAlign}) => {
     return (
-        <StyledSecondaryButton>
+        <StyledSecondaryButton  textAlign={textAlign}>
             <Link to={to}>
                 <span>{buttText}</span>
                 <img src={WhiteArrow} alt=""/>
@@ -124,6 +124,7 @@ const StyledSecondaryButton = styled.div`
     display: flex;
     background-color: ${color.primary};
     border: 1px solid ${color.primary};
+    justify-content: ${props => props.textAlign ? props.textAlign : "flex-start"};
     a{
         justify-content: center;
         align-items: center;
@@ -131,6 +132,8 @@ const StyledSecondaryButton = styled.div`
         color: ${color.light};
         font-size: 1rem;
         padding:  1rem 1.25rem;
+        text-align: center;
+
         img{
             width: 2.875rem;
             height: 1rem;

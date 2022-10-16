@@ -8,6 +8,7 @@ import arrowWhite from '../../assets/BlackArrow.png'
 import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
 import TestiCard from './TestiCard'
 import Slider from 'react-slick'
+import TestiVideo from './TestiVideo'
 
 
 const Testimonials = () => {
@@ -49,7 +50,7 @@ const Testimonials = () => {
             Here are video snippets of what our students are able to do after their training
             </P>
             </div>
-            <div className="testi-slider">
+            {/* <div className="testi-slider">
             <Slider {...Settings} ref={slider}>
                 <TestiCard/>
                 <TestiCard/>
@@ -57,13 +58,14 @@ const Testimonials = () => {
                 <TestiCard/>
                 <TestiCard/>
             </Slider>
-           {/* <div className="slide-container">
+           <div className="slide-container">
            <div className="slide-arrow">
                 <img src={arrowWhiteLeft} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickPrev()} />
                 <img src={arrowWhite} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickNext()} />
             </div>
-           </div> */}
-       </div>
+           </div>
+       </div> */}
+       <TestiVideo/>
         </div>
      
     </StyledTestimonials>
@@ -73,11 +75,11 @@ const Testimonials = () => {
 export default Testimonials
 
 const StyledTestimonials = styled.div`
-    padding: 10% 2% 10% 2%;
+    padding: 5% 0% 10% 0%;
     position: relative;
     background-color: ${theme.color.tertiary};
     z-index: 1;
-    height: 120vh;
+    height: 150vh;
     @media (max-width: 768px) {
         height: 80vh;
     }
@@ -106,7 +108,7 @@ const StyledTestimonials = styled.div`
       
     }
     .testimonials-text-container{
-        margin-bottom: 4.9375rem;
+        /* margin-bottom: 4.9375rem; */
         @media (max-width: 768px) {
             margin-bottom: 1.9375rem;
         }
@@ -114,7 +116,7 @@ const StyledTestimonials = styled.div`
     .testi-slider{
         padding: 0 0% 0 0%;
     }
-    .slide-container{
+    /* .slide-container{
         position: absolute;
         bottom: -4rem;
         right: 45%;
@@ -136,5 +138,5 @@ const StyledTestimonials = styled.div`
                 cursor: pointer;
             }
         }
-    }
+    } */
 `

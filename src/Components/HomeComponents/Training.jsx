@@ -44,6 +44,37 @@ const Training = () => {
         </HomeCard>
         
         </div>
+
+        <div className="mobile-container">
+      
+        <HomeCard cardTitle={"Basic Program" }  textColor={theme.color.dark} cardText={"To understand the fundamentals of product management and kickstart your product manager career"}  backLeft="20px"
+        >
+        <div className="button-container">
+        <SecondaryButton to="/pricing" buttText="Learn More"/>
+        </div>
+        </HomeCard>
+
+        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.light} cardText={ "To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.primary} >
+        <div className="button-container">
+        <PrimaryButton to="/pricing" buttText="Learn More"/>
+        </div>
+        </HomeCard> 
+
+        
+        <HomeCard cardTitle={"LevelUP Program"} textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}>
+        <div className="button-container">
+        <SecondaryButton to="/pricing" buttText="Learn More"/>
+        </div>
+        </HomeCard> 
+
+        <HomeCard cardTitle={"Cooperate Training"} textColor={theme.color.light} cardText={"To understand the fundamentals of product management and kickstart your product manager career"} backgroundColor={theme.color.primary} backLeft="20px"
+        >
+        <div className="button-container">
+        <PrimaryButton to="/pricing" buttText="Learn More"/>
+        </div>
+        </HomeCard>
+        
+        </div>
        
     </StyledTraining>
   )
@@ -59,7 +90,11 @@ const StyledTraining = styled.div`
     padding: 10% 0% 5% 0%;
     @media (max-width: 768px){
       height: 100%;
-      min-height: 100%;
+      min-height: 155vh;
+      padding-bottom: 25%;
+    }
+    @media (max-height: 667px){
+      min-height: 200vh;
     }
     .cardContainer{
       position: relative;
@@ -69,16 +104,22 @@ const StyledTraining = styled.div`
       row-gap: 4.4375rem;
       position: relative;
       @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .mobile-container{
+      display: none;
+      @media (max-width: 768px){
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         height: 100vh;
         grid-gap: 3rem;
         padding: 5rem 5% 0rem 9%;
-        
-      }
-      &:nth-child(2){
-        display: none;
+       
       }
     }
+
     .button-container{
         position: absolute;
         bottom: 3.84375rem;

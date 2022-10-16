@@ -12,10 +12,10 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-left">
             <div className="container-left-1">
-            <P fontSize="1.3125rem" color={theme.color.light} textAlign="left" mobilefontSize="1rem">
+            <P fontSize="1.3125rem" color={theme.color.dark} textAlign="left" mobilefontSize="1rem">
                     enoverlab
                 </P>
-                <P lineHeight="28px" color={theme.color.light} textAlign="left" fontSize="1rem" mobileFontSize="0.8rem">
+                <P lineHeight="28px" color={theme.color.dark} textAlign="left" fontSize="1rem" mobileFontSize="0.8rem">
                 Building product managers today,tomorrow and the future
                 </P>
                 <div className="icon-container">
@@ -38,22 +38,22 @@ const Footer = () => {
             </div>
             <div className="container-left-2">
                 <a href="/#">
-                <P fontSize="1.3125rem" color={theme.color.light} textAlign="left" lineHeight="28px">
+                <P fontSize="1.3125rem" color={theme.color.dark} textAlign="left" lineHeight="28px">
                     Company
                 </P>
                 </a>
                 <Link to="/pricing">
-                <P color={theme.color.light} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
+                <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     Programs
                 </P>
                 </Link>
                 <Link to="/blog">
-                <P color={theme.color.light} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
+                <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     Blog
                 </P>
                 </Link>
                 <Link to="/about">
-                <P color={theme.color.light} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
+                <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     About us
                 </P>
                 </Link>
@@ -61,32 +61,32 @@ const Footer = () => {
             </div>
             <div className="footer-right">
             <div className="container-right-1">
-                <P fontSize="1.3125rem" color={theme.color.light} textAlign="left" lineHeight="28px" >
+                <P fontSize="1.3125rem" color={theme.color.dark} textAlign="left" lineHeight="28px" >
                     Support
                 </P>
-                <P color={theme.color.light} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
+                <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     Community
                 </P>
-                <P color={theme.color.light} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
+                <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     Resources
                 </P>
             </div>
 
             <div className="container-right-2">
                 <div className='form'>
-                    <P fontSize="1.3125rem" color={theme.color.light} textAlign="left" paddingBottom="0.58rem">
+                    <P fontSize="1.3125rem" color={theme.color.dark} textAlign="left" paddingBottom="0.58rem">
                         Launch your PM Career
                     </P>
                     <input type="text" name="" id="" placeholder='Email Address' />
                     <button type="submit">Subscribe</button>
                 </div>
-                <P color={theme.color.light} textAlign="left" fontSize="1rem" paddingTop="0.58rem">Receive important product management info weekly</P>
+                <P color={theme.color.dark} textAlign="left" fontSize="1rem" paddingTop="0.58rem">Receive important product management info weekly</P>
             </div>
             </div>
         </div>
         <hr/>
         <div className="footer-bottom">
-            <P mobileFontSize="0.7rem" paddingTop="1rem" color={theme.color.light} textAlign="center">
+            <P mobileFontSize="0.7rem" paddingTop="1rem" color={theme.color.dark} textAlign="center">
             Copyright @ enoverlab 2022. All Rights Reserved.
             </P>
         </div>
@@ -97,7 +97,7 @@ const Footer = () => {
 export default Footer
 
 const StyledFooter = styled.div`
-    background-color: ${theme.color.primary};
+    background-color: ${theme.color.lightBlue};
     padding: 10% 10% 5% 10%;
     @media  (max-width: 768px) {
         padding: 10% 10%;
@@ -126,11 +126,11 @@ const StyledFooter = styled.div`
                     column-gap: 1rem;
                     margin-top: 0.8rem;
                     a{
-                        color: ${theme.color.light};
+                        color: ${theme.color.dark};
                         text-decoration: none;
                     }
                     .social-icon{
-                        color: ${theme.color.light};
+                        color: ${theme.color.dark};
                     }
                 }
 
@@ -174,7 +174,7 @@ const StyledFooter = styled.div`
                     width: 30%;
                     outline: none;
                     background-color: ${theme.color.tertiary};
-                    color: ${theme.color.light};
+                    color: ${theme.color.dark};
                     @media (max-width: 768px){
                         width: 100%;
                     }

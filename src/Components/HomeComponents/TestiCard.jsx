@@ -4,22 +4,22 @@ import testiMan from '../../assets/testiMan.png'
 import playIcon from '../../assets/playIcon.png'
 import {P} from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
-const TestiCard = () => {
+const TestiCard = ({testImg, testName, testRole}) => {
   return (
     <StyledTestiCard>
         <div className="testi-card-container">
                 <div className="testi-img-container">
-                    <img className="testi-man" src={testiMan} alt="testi" />
+                    <img className="testi-man" src={testImg} alt="testi" />
                    <div className="play-icon-container">
                    <img src={playIcon} alt="" className="play-icon" />
                    </div>
                 </div>
                 <div className="testi-text-container">
-                    <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={400}>
-                    Kemi Ademide
+                    <P color={theme.color.light} textAlign="center" fontSize={"1.25rem"} fontWeight={400}>
+                  {testName}
                     </P>
-                    <P color={theme.color.dark} textAlign="left" fontSize={"1.125rem"} fontWeight={500}>
-                    Product Manger,Omnipresent
+                    <P color={theme.color.light} textAlign="center" fontSize={"1.125rem"} fontWeight={500}>
+                   {testRole}
                     </P>
                 </div>
         </div>
@@ -30,37 +30,35 @@ const TestiCard = () => {
 export default TestiCard
 
 const StyledTestiCard = styled.div`
-    max-width: 26.75rem;
-    padding: 0rem 1rem;
+    width: 100%;
+    padding: 0rem 0%;
     .testi-card-container{
+        padding: 0 0%;
         .testi-img-container{
             position: relative;
-            max-width: 28.75rem;
+            width: 100%;
+            max-width: 94.5rem;
             height: auto;
-           .testi-man{
-            &:hover{
-                box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
-                -webkit-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
-                -moz-box-shadow: 5px 4px 0px 1px rgba(0,0,0,0.96);
-            transition: box-shadow 0.3s ease-in-out;
-            }
-           }
             img{
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
             .play-icon-container{
                 position: absolute;
-                bottom: 30%;
-                right: 40%;
+                bottom: 45%;
+                right: 45%;
                 z-index: 2;
+
+                @media (max-width: 768px) {
+                    bottom: 40%;
+                    right: 40%;
+                }
             }
         }
 
         .testi-text-container{
             margin-top: 1.375rem;
-
             @media(max-width: 768px){
                 P{
                     text-align: center;

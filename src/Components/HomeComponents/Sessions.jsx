@@ -126,7 +126,7 @@ const StyledSession = styled.div`
     @media(max-height: 667px){
         max-height: 90vh;
     }
-    background-color: ${theme.color.quaternary};
+    background-color: ${theme.color.lightBlue};
     .topCorner{
         position: absolute;
         top: 0;

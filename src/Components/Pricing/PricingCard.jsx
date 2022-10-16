@@ -13,26 +13,26 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
             </div>
             <div className="card-container-front">
                 <div className="card-front-text">
-                    <H3  textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"0.5rem"}>
+                    <H3  fontSize="1.49rem"  textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"0.5rem"}>
                         {cardTitle}
                     </H3>
-                    <P lineHeight="2rem" mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" >
+                    <P lineHeight="1.49rem" mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" fontSize="0.993125rem" >
                         {cardText}
                     </P>
                     <div className="fees">
                         <div className="fee">
-                          <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"500"} textAlign={"left"}>
+                          <H4 mobileFontSize="0.8rem" fontSize="0.662225rem" color={textColor} fontWeight={"500"} textAlign={"left"}>
                             TUITION FEE
                           </H4>
-                           <H3 color={textColor} textAlign={"left"} fontSize={theme.fontSize.m}>
+                           <H3 color={textColor} textAlign={"left"} fontSize={"1.49rem"}>
                                {tuitionFee}
                             </H3>    
                         </div>
                         <div className="fee">
-                            <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor}fontWeight={"500"} textAlign={"left"}>
+                            <H4 mobileFontSize="0.8rem" fontSize="0.662225rem" color={textColor}fontWeight={"500"} textAlign={"left"}>
                                 DURATION
                             </H4>
-                            <H3 color={textColor} textAlign={"left"} fontSize={theme.fontSize.m}>
+                            <H3 color={textColor} textAlign={"left"} fontSize={"1.49rem"}>
                                 {duration}
                             </H3>
                     </div>
