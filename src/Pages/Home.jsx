@@ -13,10 +13,10 @@ const Home = () => {
   return (
     <div
     style={{
-      backgroundColor: "#FFFDF7"
+      backgroundColor: "#FFFFFF"
     }}
     >
-       <Header bgColor="#FFFDF7"/>
+       <Header bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
         <Hero/>
         <About/>
         <Training/>

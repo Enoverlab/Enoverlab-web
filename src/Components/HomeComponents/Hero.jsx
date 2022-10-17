@@ -63,6 +63,7 @@ const StyledHero = styled.div`
     /* align-items: center; */
     justify-content: space-between;
     padding: 5rem 5%;
+    background-color: #FFFFFF;
     @media (max-width: 768px) {
         flex-direction: column;
         justify-content: flex-start;

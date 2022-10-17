@@ -42,11 +42,11 @@ const Testimonials = () => {
         <img className='bottomCorner' src={bottomCornerStripe} alt="bottom corner stripe" />
         <div className="testimonials-container">
             <div className="testimonials-text-container">
-            <P mobileFontSize="0.6875rem" color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>Project Presentation</P>    
-            <H3 mobileFontSize="1.554375rem" color={theme.color.dark} fontWeight={500}>
+            <P mobileFontSize="0.6875rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={500}>Project Presentation</P>    
+            <H3 mobileFontSize="1.554375rem" color={theme.color.light} fontWeight={500}>
             See the results of our training
             </H3>
-            <P lineHeight="1.5125rem" mobileFontSize="0.6875rem" color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>
+            <P lineHeight="1.5125rem" mobileFontSize="0.6875rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={500}>
             Here are video snippets of what our students are able to do after their training
             </P>
             </div>

@@ -304,7 +304,7 @@ const StyledPriceHero = styled.div`
     padding: 3% 5% 12% 5%;
     position: relative;
     /* margin-bottom: 10%; */
-    background-color: #FFFDF7;
+    background-color:  #FFFDF7;
    @media (max-width: 768px) {
     padding: 25% 10% 5% 5%;
    }

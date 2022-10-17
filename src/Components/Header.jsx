@@ -9,7 +9,7 @@ import menu from '../assets/menu.png'
 import { Link, useLocation, NavLink } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
 import {HiOutlineChevronRight} from 'react-icons/hi'
-const Header = ({bgColor}) => {
+const Header = ({bgColor, bgColorMobile}) => {
   const [active, setActive] = React.useState(false)
   const [weightHome, setWeightHome] = React.useState('bold')
   const [weightPricing, setWeightPricing] = React.useState('normal')
@@ -19,7 +19,7 @@ const Header = ({bgColor}) => {
 
 
   return (
-    <StyledHeader bgColor={bgColor}>
+    <StyledHeader bgColor={bgColor} bgColorMobile={bgColorMobile}>
         <div className="header-container">
            <div className="header-left">
             <div className="logo-container">
@@ -33,7 +33,7 @@ const Header = ({bgColor}) => {
                     <Link to="/">
                     <img src={logo} alt="logo" />
                     </Link>
-                    <FaTimes   onClick={() => setActive(!active)}/>
+                    <FaTimes  className='times'  onClick={() => setActive(!active)}/>
                     </div>
                     <div className="menu-item-container">
                     <NavLink 
@@ -148,6 +148,7 @@ const StyledHeader = styled.div`
 
                 @media (max-width: 768px){
                   display: block;
+                
                 }
               }
               @media (max-width: 768px){
@@ -172,10 +173,15 @@ const StyledHeader = styled.div`
                             width: 9.125rem;
                             /* align-self: flex-end; */
                         }
+                        .times{
+                          font-size: 1.5rem;
+                          color:  #4B4B4B;;
+                        }
                     }
                   }
                   .mobile-button-container{
                     display: none;
+                    padding-bottom: 3rem;
                    
                     @media (max-width: 768px){
                         display: block;
@@ -194,9 +200,10 @@ const StyledHeader = styled.div`
                       width: 100%;
                       top: 0;
                       width: 100%;
-                      height: 50vh;
-                      background-color: ${props => props ? props.bgColor : theme.color.light};
-                      z-index: 4;
+                      
+                      height: 55vh;
+                      background-color: ${props => props ? props.bgColorMobile : theme.color.light};
+                      z-index: 99;
                       overflow-x: hidden;
                       display: none;
                       padding: 1.7rem 1.3rem;
