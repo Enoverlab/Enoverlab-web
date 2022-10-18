@@ -31,11 +31,11 @@ const Hero = () => {
     <StyledHero>
         <div className="hero-container">
             <HeroText/>
-            <H4 mobileFontSize="0.875rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} textAlign={"left"}>
+            <H4 mobileFontSize="1rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} textAlign={"left"}>
             Get the knowledge, skills and tools  you need to function effectively in the  role of a product manager
             </H4>
             <div className="button-container">             
-                <SecondaryButton  to="/pricing" buttText="Start Here"/>
+                <SecondaryButton  to="/programs" buttText="Start Here"/>
                 {/* <PrimaryButton to="/" buttText="Join our Community" />   */}
             </div>
         </div>
@@ -73,6 +73,9 @@ const StyledHero = styled.div`
     .hero-container{
         max-width: 60%;
         margin-top: 4rem;
+        H4{
+            max-width: 37.75rem;
+        }
         @media(max-width: 768px){
             max-width: 100%;
             margin-bottom: 1rem;

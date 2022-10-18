@@ -18,7 +18,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Routes>
         <Route index path="/" element={<Home />} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/programs" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
       </Routes>

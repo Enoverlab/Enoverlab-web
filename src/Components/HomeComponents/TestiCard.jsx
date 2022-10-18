@@ -53,7 +53,15 @@ const StyledTestiCard = styled.div`
                 @media (max-width: 768px) {
                     bottom: 40%;
                     right: 40%;
+
+                   
                 }
+                .play-icon{
+                       @media (max-width: 768px) {
+                            width: 2rem;
+                            height: 2rem;
+                       }
+                    }
             }
         }
 

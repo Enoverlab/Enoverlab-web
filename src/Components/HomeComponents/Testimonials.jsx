@@ -47,7 +47,7 @@ const Testimonials = () => {
             See the results of our training
             </H3>
             <P lineHeight="1.5125rem" mobileFontSize="0.6875rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={500}>
-            Here are video snippets of what our students are able to do after their training
+            Hear what the trained PMs have been able to achieve
             </P>
             </div>
             {/* <div className="testi-slider">
@@ -111,6 +111,7 @@ const StyledTestimonials = styled.div`
         /* margin-bottom: 4.9375rem; */
         @media (max-width: 768px) {
             margin-bottom: 1.9375rem;
+            padding: 0 1.5rem;
         }
     }
     .testi-slider{

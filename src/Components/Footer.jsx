@@ -42,7 +42,7 @@ const Footer = () => {
                     Company
                 </P>
                 </a>
-                <Link to="/pricing">
+                <Link to="/programs">
                 <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
                     Programs
                 </P>

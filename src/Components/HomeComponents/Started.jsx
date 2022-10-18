@@ -11,7 +11,7 @@ const Started = () => {
            <H1 mobileFontSize="1.2rem" color= {theme.color.light} fontSize="3.25rem" fontWeight={400} >
            Launch  your Product <br/> Managment career today</H1>
             <div className="button-container">
-                <SecondaryButton to="/pricing" buttText="Get Started"  />
+                <SecondaryButton to="/programs" buttText="Get Started"  />
             </div>
         </div>
     </StyledStarted>

@@ -44,7 +44,7 @@ import topCornerSessions from '../../assets/topCornerSessions.png'
                     Learn from the best
                 </P>
                 <H3 color={theme.color.dark} fontSize={"1.5rem"} textAlign="center" fontWeight={500}>
-                Our Product Heroes
+                Our Product Mentors
                 </H3>
                 <P  lineHeight="1.5125rem" color={theme.color.dark} textAlign="center"  fontSize={"1rem"} fontWeight={300}>
                 The amazing product managers from tech companies all over the world who have been part of our product sessions

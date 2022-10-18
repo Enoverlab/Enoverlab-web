@@ -29,7 +29,7 @@ const AboutContent = () => {
           Empowering the next generation of product manger through hands on learning
           </H2>
           <div className="button-container">
-          <SecondaryButton to="/pricing" buttText="Learn More" />
+          <SecondaryButton to="/programs" buttText="Learn More" />
           </div>
         </div>
         <div className="about-text-right">

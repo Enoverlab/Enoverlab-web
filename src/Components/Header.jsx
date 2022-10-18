@@ -14,7 +14,7 @@ const Header = ({bgColor, bgColorMobile}) => {
   const [weightHome, setWeightHome] = React.useState('bold')
   const [weightPricing, setWeightPricing] = React.useState('normal')
   const [weightBlog, setWeightBlog] = React.useState('normal')
-
+  const [weightResource, setWeightResource] = React.useState('normal')
 
 
 
@@ -52,9 +52,9 @@ const Header = ({bgColor, bgColorMobile}) => {
                      style = {({isActive}) => ({
                       fontWeight: isActive ? setWeightPricing("600") : setWeightPricing("300")
                   })}
-                    to="/pricing">
+                    to="/programs">
                     <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightPricing}>
-                    Pricing
+                    Programs
                     </P>
                       <HiOutlineChevronRight className='icon'/>
                     </NavLink>
@@ -71,15 +71,27 @@ const Header = ({bgColor, bgColorMobile}) => {
                       <HiOutlineChevronRight className='icon'/>
                     </NavLink>
                     </div>
+                    <div className="menu-item-container">
+                    <NavLink 
+                      style = {({isActive}) => ({
+                      fontWeight: isActive ? setWeightResource("600") : setWeightResource("300")
+                      })}
+                    to="/resource">
+                    <P color={theme.color.dark} textAlign="left" fontSize={"1.25rem"} fontWeight={weightResource}>
+                    Free  Resources
+                    </P>
+                      <HiOutlineChevronRight className='icon'/>
+                    </NavLink>
+                    </div>
                     <div className="mobile-button-container">
-                      <SecondaryButton textAlign="center" to="/" buttText="Join Our Community"/>
+                      <SecondaryButton textAlign="center" to="/" buttText="Contact Us"/>
                     </div>
                  </div>
            </div>
             </div>
             <div className="header-right">
                 <div className="header-button-container">
-                <TertiaryButton to="/" buttText="Join Our Community"/>
+                <TertiaryButton to="/" buttText="Contact Us"/>
                 </div>
                 <div className="menu-icon-container">
                     <img onClick={() => setActive(!active)}  src={menu} alt="menu"/>

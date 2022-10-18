@@ -39,26 +39,26 @@ const StyledHomeCard = styled.div`
             top: -20px;
             left: ${props => props.backLeft ?  props.backLeft : "-20px"};
             width: 90%;
-            height: 26.625rem;
+            height: 24.625rem;
             z-index: 1;
             border: 1px solid ${theme.color.dark};
             background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
             @media (max-width: 768px){
                 width: 100%;
-                height: 17.75rem;
+                height: 20.75rem;
                 left: -20px;
             }
         }
         .card-container-front{
             position: relative; 
             width: 90%;
-            height: 26.625rem;
+            height: 24.625rem;
             z-index: 2;
             padding: 2rem;
             border: 1px solid ${theme.color.dark};
             background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
             @media(max-width: 768px){
-                height: 17.75rem;
+                height: 20.75rem;
                 width: 100%;
                 padding: 1.5rem;
             }

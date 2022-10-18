@@ -32,10 +32,10 @@ const Why = () => {
             Live Product Classes
             </H4>
             <H3 mobileFontSize="1.3rem" textAlign="left" color={theme.color.dark} fontWeight="500">
-            Why Learn Virtually with enoverlab?
+            Why Learn at enoverlab?
             </H3>
             <H4 lineHeight="1.875rem" mobileFontSize="0.75rem" textAlign="left" color={theme.color.dark} fontWeight="400">
-          <span>7</span> out of every <span>10</span> enoverlab trained PM gets  engaged within 3-6 months after their training
+          <span>7</span> out of every <span>10</span> enoverlab trained PM gets  engaged within 3 months after their training
             </H4>
             {/* <div className="button-container">
             <SecondaryButton to="/" buttText="Start Learning"/>

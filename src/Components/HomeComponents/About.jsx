@@ -15,7 +15,7 @@ const About = () => {
                 <H2 mobileFontSize="1.8rem"  color={theme.color.dark} fontWeight={"400"} textAlign={"left"}>
                 Be empowered to build impactful products to the world
                 </H2>
-                <P mobileLineHeight="1.25rem" mobileFontSize="0.8625rem"  lineHeight="2.15625rem" paddingTop="0.5rem" color={theme.color.dark} textAlign={"left"} fontWeight={300}>
+                <P mobileLineHeight="1.45rem" mobileFontSize="1rem"  lineHeight="2.15625rem" paddingTop="0.5rem" color={theme.color.dark} textAlign={"left"} fontWeight={300}>
                 With a structured syllabus, practical training and exposure to real  life projects, you will be groomed with the knowledge, skills and tools to build and manage products that will deliver increasing value to users while also driving business value for organizations.
                 </P>
             </div>

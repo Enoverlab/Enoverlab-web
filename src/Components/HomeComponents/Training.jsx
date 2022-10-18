@@ -16,65 +16,36 @@ const Training = () => {
        </H4>
         <div className="cardContainer">
         
-        <HomeCard cardTitle={"Basic Program"} textColor={theme.color.light} cardText={"To understand the fundamentals of product management and kickstart your product manager career"} backgroundColor={theme.color.primary} >
+        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.light} cardText={"If you have taken any basic online product management training and you are looking to upskill and be better equipped to take up a product manager role,this program is for you"} backgroundColor={theme.color.primary} >
         <div className="button-container">
-        <PrimaryButton to="/pricing" buttText="Learn More"/>
+        <PrimaryButton to="/programs" buttText="Learn More"/>
         </div>
         </HomeCard> 
 
-        <HomeCard cardTitle={"Advanced Program"}  textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}  backLeft="20px"
+        <HomeCard cardTitle={"LevelUP Program"}  textColor={theme.color.dark} cardText={"This program is for you if you are just starting out and want to get all the required knowledge, skills, tools and experience you need to fully take up the role of a product manager globally"}  backLeft="20px"
         >
         <div className="button-container">
-        <SecondaryButton to="/pricing" buttText="Learn More"/>
+        <SecondaryButton to="/programs" buttText="Learn More"/>
         </div>
         </HomeCard>
 
         
-        <HomeCard cardTitle={"LevelUP Program"} textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}>
+        <HomeCard cardTitle={"Executive Program"} textColor={theme.color.dark} cardText={"This is a personalized training for senior level professionals and experienced product managers looking to expand their product management skills to become product leaderss"}>
         <div className="button-container">
-        <SecondaryButton to="/pricing" buttText="Learn More"/>
+        <SecondaryButton to="/programs" buttText="Learn More"/>
         </div>
         </HomeCard> 
 
-        <HomeCard cardTitle={"Cooperate Training"} textColor={theme.color.light} cardText={"To understand the fundamentals of product management and kickstart your product manager career"} backgroundColor={theme.color.primary} backLeft="20px"
+        <HomeCard cardTitle={"Corperate Training"} textColor={theme.color.light} cardText={"To equip a company’s product team with the specific product management skills to build and deliver their products successfully and achieve their business goals"} backgroundColor={theme.color.primary} backLeft="20px"
         >
         <div className="button-container">
-        <PrimaryButton to="/pricing" buttText="Learn More"/>
+        <PrimaryButton to="/programs" buttText="Learn More"/>
         </div>
         </HomeCard>
         
         </div>
 
-        <div className="mobile-container">
-      
-        <HomeCard cardTitle={"Basic Program" }  textColor={theme.color.dark} cardText={"To understand the fundamentals of product management and kickstart your product manager career"}  backLeft="20px"
-        >
-        <div className="button-container">
-        <SecondaryButton to="/pricing" buttText="Learn More"/>
-        </div>
-        </HomeCard>
-
-        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.light} cardText={ "To learn the required knowledge, skills and tools to fully take up the role of a product manager"} backgroundColor={theme.color.primary} >
-        <div className="button-container">
-        <PrimaryButton to="/pricing" buttText="Learn More"/>
-        </div>
-        </HomeCard> 
-
-        
-        <HomeCard cardTitle={"LevelUP Program"} textColor={theme.color.dark} cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}>
-        <div className="button-container">
-        <SecondaryButton to="/pricing" buttText="Learn More"/>
-        </div>
-        </HomeCard> 
-
-        <HomeCard cardTitle={"Cooperate Training"} textColor={theme.color.light} cardText={"To understand the fundamentals of product management and kickstart your product manager career"} backgroundColor={theme.color.primary} backLeft="20px"
-        >
-        <div className="button-container">
-        <PrimaryButton to="/pricing" buttText="Learn More"/>
-        </div>
-        </HomeCard>
-        
-        </div>
+       
        
     </StyledTraining>
   )
@@ -87,7 +58,7 @@ const StyledTraining = styled.div`
     height: 100%;
     min-height: 100%;
     position: relative;
-    padding: 10% 0% 5% 0%;
+    padding: 10% 0 5% 0;
     @media (max-width: 768px){
       height: 100%;
       min-height: 155vh;
@@ -98,27 +69,20 @@ const StyledTraining = styled.div`
     }
     .cardContainer{
       position: relative;
-      padding: 5rem 10% 5rem 10%;
+      padding: 5rem 5% 5rem 15%;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       row-gap: 4.4375rem;
       position: relative;
       @media (max-width: 768px) {
-        display: none;
+        grid-template-columns: 1fr;
+        padding: 5rem 5% 5rem 10%;
+        row-gap: 2.4375rem;
+        
       }
     }
 
-    .mobile-container{
-      display: none;
-      @media (max-width: 768px){
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        height: 100vh;
-        grid-gap: 3rem;
-        padding: 5rem 5% 0rem 9%;
-       
-      }
-    }
+    
 
     .button-container{
         position: absolute;
