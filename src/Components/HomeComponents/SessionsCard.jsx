@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { P } from '../../Utils/Typograpyhy'
 
-const SessionsCard = ({guestJob, guestName, bgUrl}) => {
+const SessionsCard = ({guestJob, guestName, bgUrl, logo}) => {
   return (
     <StyledSessionCard bgUrl={bgUrl}>
         <div className="cardText">
@@ -19,7 +19,10 @@ const SessionsCard = ({guestJob, guestName, bgUrl}) => {
                     mobileFontSize='0.6rem'
                     lineHeight="0.8rem"
                  className='text'>{guestJob}</P>
-                </div>    
+                 <div className="logo-container">
+                  <img className='logo' src={logo} alt="" />
+                 </div>
+          </div>    
     </StyledSessionCard>
   )
 }
@@ -35,7 +38,7 @@ const StyledSessionCard = styled.div`
     height: 15.25rem;
     border-radius: 0em 0em 0.625rem 0.625rem;
     aspect-ratio: 1/1;
-
+    margin-bottom: 1.5rem;
     @media (max-width: 768px){
         max-width: 10.625rem;
         height: 10.6875rem;
@@ -47,22 +50,42 @@ const StyledSessionCard = styled.div`
         position: absolute;
         background-color: #0046FF;
         width: 100%;
-        height: 20%;
+        height: 25%;
         bottom: 0px;
         opacity: .8;
         /* border-radius: 0em 0em 0.625rem 0.625rem; */
         @media (max-width: 768px){
-          bottom: 1px
+          bottom: 1px;
+          height: 30%;
         }
     }
 
     .cardText{
       height: 100%;
       position: absolute;
-      transform: translate(1rem, 85%);
-
+      transform: translate(1rem, 78%);
+     .logo-container{
+      position: relative;
+      max-width: 5.3375rem;
+      min-width: 2.125rem;
+      /* width: 2rem; */
+      height: 1.428125rem;
+      @media screen {
+        max-width: 5.3375rem;
+        min-width: 2.125rem;
+        /* width: 2rem; */
+        height: 1rem; 
+      }
+      .logo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: left center;
+        /* margin-top: 0.5rem; */
+      }
+     }
       @media (max-width: 768px){
-        transform: translate(0.5rem, 80%);
+        transform: translate(0.5rem, 70%);
       }
     }
 `

@@ -6,27 +6,16 @@ import Slider from 'react-slick'
 import SessionsCard from './SessionsCard'
 import arrowLeft from '../../assets/slideArrowLeft.png'
 import arrowRight from '../../assets/slideArrowBlue.png'
-import SessionImage1 from '../../assets/SessionImages/SessionImage1.png'
-import SessionImage2 from '../../assets/SessionImages/SessionImage2.png'
-import SessionImage3 from '../../assets/SessionImages/SessionImage3.png'
-import SessionImage4 from '../../assets/SessionImages/SessionImage4.png'
-import SessionImage5 from '../../assets/SessionImages/SessionImage5.png'
-import SessionImage6 from '../../assets/SessionImages/SessionImage6.png'
-import SessionImage7 from '../../assets/SessionImages/SessionImage7.png'
-import SessionImage8 from '../../assets/SessionImages/SessionImage8.png'
-import SessionImage9 from '../../assets/SessionImages/SessionImage9.png'
-import SessionImage10 from '../../assets/SessionImages/SessionImage10.png'
-import SessionImage11 from '../../assets/SessionImages/SessionImage11.png'
-import SessionImage12 from '../../assets/SessionImages/SessionImage12.png'
 import topCornerSessions from '../../assets/topCornerSessions.png'
+import { SessionObject } from './SessionObjects'
 
     const Sessions = () => {
         const slider = useRef(null)
     const Settings = {
         dots: false,
         speed: 500,
-        slidesToShow: 2,
-        rows: 2,
+        slidesToShow: 4,
+        rows: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
@@ -34,6 +23,37 @@ import topCornerSessions from '../../assets/topCornerSessions.png'
         arrows: false,
         infinite: true,
         
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false,
+                    infinite: true,
+                    cssEase: "linear",
+                    autoplay: true,
+                    row: 3
+            },
+        },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+                    infinite: true,
+                    dots: false,
+                    arrows: false,
+                    infinite: true,
+                    cssEase: "linear",
+                    autoplay: true,
+                    row: 2
+                }
+            }
+        ]
     }
   return (
     <StyledSession>
@@ -51,58 +71,19 @@ import topCornerSessions from '../../assets/topCornerSessions.png'
                 </P>
             </div>
 
-
-            <div className="SessionGrid">
-                <div className="session-column column1">
-                <SessionsCard bgUrl={SessionImage1} guestName="Bola Afuye" guestJob="Head,TPay Mobile" />
-                <SessionsCard bgUrl={SessionImage2} guestName="James Amattey" guestJob="Product Manager, Megabit" />
-                <SessionsCard bgUrl={SessionImage3} guestName="Moshe Mikanovsky" guestJob="Product Manager, RiskThing.ai" />
-                </div>
-
-                <div className="session-column column2">
-                <SessionsCard bgUrl={SessionImage4} guestName="Oluwatayo Winkunle" guestJob="Snr  Product Manager, Vendease" />
-                <SessionsCard bgUrl={SessionImage5} guestName="Obiajulu Anayo" guestJob="Chief Product Officer, Roots" />
-                <SessionsCard bgUrl={SessionImage6} guestName="Wale Ajiboye" guestJob="Scrum Master, Inter-Bank Settlement" />
-                </div>
-
-                <div className="session-column column3">
-                <SessionsCard bgUrl={SessionImage7} guestName="Evelyn EBO" guestJob="“33” Product Tekkies" />
-                <SessionsCard bgUrl={SessionImage8} guestName="Bridget Iyere" guestJob="Product owner, Elimu" />
-                <SessionsCard bgUrl={SessionImage9} guestName="Tomisin Agbaje" guestJob="Product Manager" />
-                </div>
-
-                <div className="session-column column4">
-                <SessionsCard bgUrl={SessionImage10} guestName="Favour Olusoji" guestJob="Product owner, Takeaway.com" />
-                <SessionsCard bgUrl={SessionImage11} guestName="Favour Olusoji" guestJob="Product Manager, SeamlessHR" />
-                <SessionsCard bgUrl={SessionImage12} guestName="Olabanji Ewenla" guestJob="Founder, enoverlab" />
-                </div>
-            </div>
+             <div>
+                <Slider ref={slider} {...Settings}>
+                    {SessionObject.map((item, index) => {
+                        return(
+                            <SessionsCard key={index} guestName={item.name} guestJob={item.role} logo={item.company} bgUrl={item.bgImage} />
+                        )
+                    })
+                    }
+                </Slider>
+            </div> 
 
         <div className='session-slider-container'>
-        <Slider {...Settings} ref={slider}>
-       
-                <SessionsCard bgUrl={SessionImage1} guestName="Bola Afuye" guestJob="Head,TPay Mobile" />
-                <SessionsCard bgUrl={SessionImage2} guestName="James Amattey" guestJob="Product Manager, Megabit" />
-                <SessionsCard bgUrl={SessionImage3} guestName="Moshe Mikanovsky" guestJob="Product Manager, RiskThing.ai" />
-                <SessionsCard bgUrl={SessionImage4} guestName="Oluwatayo Winkunle" guestJob="Snr  Product Manager, Vendease" />
-                <SessionsCard bgUrl={SessionImage5} guestName="Obiajulu Anayo" guestJob="Chief Product Officer, Roots" />
-                <SessionsCard bgUrl={SessionImage6} guestName="Wale Ajiboye" guestJob="Scrum Master, Inter-Bank Settlement" />
-                <SessionsCard bgUrl={SessionImage7} guestName="Evelyn EBO" guestJob="“33” Product Tekkies" />
-                <SessionsCard bgUrl={SessionImage8} guestName="Bridget Iyere" guestJob="Product owner, Elimu" />
-                <SessionsCard bgUrl={SessionImage9} guestName="Tomisin Agbaje" guestJob="Product Manager" />
-                <SessionsCard bgUrl={SessionImage10} guestName="Favour Olusoji" guestJob="Product owner, Takeaway.com" />
-                <SessionsCard bgUrl={SessionImage11} guestName="Favour Olusoji" guestJob="Product Manager, SeamlessHR" />
-                <SessionsCard bgUrl={SessionImage12} guestName="Olabanji Ewenla" guestJob="Founder, enoverlab" />
-                </Slider>    
-       
-
-      
-        {/* <div className="slide-container">
-           <div className="slide-arrow">
-                <img src={arrowLeft} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickPrev()} />
-                <img src={arrowRight} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickNext()} />
-            </div>
-           </div> */}
+        
        </div>
         
         
@@ -115,7 +96,7 @@ import topCornerSessions from '../../assets/topCornerSessions.png'
 export default Sessions
 
 const StyledSession = styled.div`
-    padding: 5% 2% 5% 5%;
+    padding: 5% 10% 5% 15%;
     position: relative;
     /* height: 100%; */
     @media (max-width: 768px) {
@@ -180,8 +161,6 @@ const StyledSession = styled.div`
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        /* grid-column-gap: 1px; */
-        /* grid-row-gap: 1px; */
         height: 70.8125rem;
         @media (max-width: 768px) {
             grid-template-columns: repeat(1, 1fr);
