@@ -174,13 +174,13 @@ export const SessionObject = [
     },
     {
         bgImage: SessionImage22,
-        name: "Joy Chukwukere",
+        name: "Oluwatayo Winkunle",
         role: "Product Manager",
         company: vandease
     },
     {
         bgImage: SessionImage23,
-        name: "Oluwatayo Winkunle",
+        name: "Joy Chukwukere",
         role: "Product Manager",
         company: maxNg
 

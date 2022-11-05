@@ -30,13 +30,15 @@ const Training = () => {
         </HomeCard>
 
         
-        <HomeCard cardTitle={"Executive Program"} textColor={theme.color.dark} cardText={"This is a personalized training for senior level professionals and experienced product managers looking to expand their product management skills to become product leaderss"}>
+        <HomeCard cardTitle={"Executive Program"} textColor={theme.color.dark} cardText={"This is a personalized training for senior level professionals and experienced product managers looking to expand their product management skills to become product leaderss"}
+        backLeft="20px"
+        >
         <div className="button-container">
         <SecondaryButton to="/programs" buttText="Learn More"/>
         </div>
         </HomeCard> 
 
-        <HomeCard cardTitle={"Corperate Training"} textColor={theme.color.light} cardText={"To equip a company’s product team with the specific product management skills to build and deliver their products successfully and achieve their business goals"} backgroundColor={theme.color.primary} backLeft="20px"
+        <HomeCard cardTitle={"Corperate Training"} textColor={theme.color.light} cardText={"To equip a company’s product team with the specific product management skills to build and deliver their products successfully and achieve their business goals"} backgroundColor={theme.color.primary} 
         >
         <div className="button-container">
         <PrimaryButton to="/programs" buttText="Learn More"/>
@@ -69,7 +71,7 @@ const StyledTraining = styled.div`
     }
     .cardContainer{
       position: relative;
-      padding: 5rem 5% 5rem 15%;
+      padding: 5rem 1% 5rem 5%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       row-gap: 4.4375rem;

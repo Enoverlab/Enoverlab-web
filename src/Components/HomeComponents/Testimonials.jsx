@@ -50,21 +50,7 @@ const Testimonials = () => {
             Hear what the trained PMs have been able to achieve
             </P>
             </div>
-            {/* <div className="testi-slider">
-            <Slider {...Settings} ref={slider}>
-                <TestiCard/>
-                <TestiCard/>
-                <TestiCard/>
-                <TestiCard/>
-                <TestiCard/>
-            </Slider>
-           <div className="slide-container">
-           <div className="slide-arrow">
-                <img src={arrowWhiteLeft} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickPrev()} />
-                <img src={arrowWhite} alt="arrow" className="arrow" onClick={()=> slider?.current?.slickNext()} />
-            </div>
-           </div>
-       </div> */}
+           
        <TestiVideo/>
         </div>
      

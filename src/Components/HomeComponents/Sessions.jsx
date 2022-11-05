@@ -32,10 +32,9 @@ import { SessionObject } from './SessionObjects'
                     infinite: true,
                     dots: false,
                     arrows: false,
-                    infinite: true,
                     cssEase: "linear",
                     autoplay: true,
-                    row: 3
+                    rows: 3
             },
         },
             {
@@ -44,13 +43,54 @@ import { SessionObject } from './SessionObjects'
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     initialSlide: 2,
-                    infinite: true,
                     dots: false,
                     arrows: false,
                     infinite: true,
                     cssEase: "linear",
                     autoplay: true,
-                    row: 2
+                    rows: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+                    dots: false,
+                    arrows: false,
+                    infinite: true,
+                    cssEase: "linear",
+                    autoplay: true,
+                    rows: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+                    infinite: true,
+                    dots: false,
+                    arrows: false,
+                    cssEase: "linear",
+                    autoplay: true,
+                    rows: 2
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+                    infinite: true,
+                    dots: false,
+                    arrows: false,
+                    cssEase: "linear",
+                    autoplay: true,
+                    rows: 2
                 }
             }
         ]
@@ -71,7 +111,7 @@ import { SessionObject } from './SessionObjects'
                 </P>
             </div>
 
-             <div>
+             <div className='slider-container'>
                 <Slider ref={slider} {...Settings}>
                     {SessionObject.map((item, index) => {
                         return(
@@ -96,7 +136,7 @@ import { SessionObject } from './SessionObjects'
 export default Sessions
 
 const StyledSession = styled.div`
-    padding: 5% 10% 5% 15%;
+    padding: 5% 0% 5% 0%;
     position: relative;
     /* height: 100%; */
     @media (max-width: 768px) {
@@ -120,7 +160,6 @@ const StyledSession = styled.div`
     .session-contaner{
         position: relative;
         margin-top: 5%;
-        height: 70.8125rem;
        
         .session-text-container{
             margin-bottom: 5rem;
@@ -143,18 +182,8 @@ const StyledSession = styled.div`
             display: block;
         }
     }
-    .slide-container{
-        position: absolute;
-        top: 3rem;
-        right: 6rem;
-        @media(max-width: 768px){
-        top: 0.8rem;
-        right: 0.8rem;
-        }
-        .slide-arrow{
-            display: flex;
-            column-gap: 1rem;
-        }
+    .slider-container{
+    padding: 0rem 10% 0rem 12%;
     }
 
     .SessionGrid{

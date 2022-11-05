@@ -30,7 +30,7 @@ const SessionsCard = ({guestJob, guestName, bgUrl, logo}) => {
 export default SessionsCard
 
 const StyledSessionCard = styled.div`
-    max-width: 19.625rem;
+    max-width: 20rem;
     background-image: url(${({bgUrl}) => bgUrl});
     position: relative;
     background-size: cover;
@@ -39,6 +39,7 @@ const StyledSessionCard = styled.div`
     border-radius: 0em 0em 0.625rem 0.625rem;
     aspect-ratio: 1/1;
     margin-bottom: 1.5rem;
+    border: #0046FF 1px solid;
     @media (max-width: 768px){
         max-width: 10.625rem;
         height: 10.6875rem;

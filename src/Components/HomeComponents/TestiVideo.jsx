@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import styled from 'styled-components'
-import Slider from 'react-slick'
+import Slick from 'react-slick'
 import testiImage1 from '../../assets/TestiVideo.png'
 import testiImage2 from '../..//assets/TestiVideo2.png'
 import testiImage3 from '../../assets/TestiVideo3.png'
@@ -65,12 +65,15 @@ const TestiVideo = () => {
         slidesToScroll: 1,
         focusOnSelect: true,
         arrows: false,
-        
+        adaptiveHeight: true,
+        // centerMode: true,
+        // centerPadding: "5%",
+        // className:"center"
     }
   return (
     <TestiVideoStyled>
         <div className='top-slider-container'>
-        <Slider asNavFor={nav2}
+        <Slick asNavFor={nav2}
         ref={slider => {(slider1 = slider); slideRef.current = slider}} {...settings}
         >
             {TestiData.map((slider, index) => (
@@ -79,7 +82,7 @@ const TestiVideo = () => {
                     </div>
             ))}
        
-        </Slider>
+        </Slick>
         <div className="slide-top">
            <div className="slide-arrow">
                 <img src={arrowWhiteLeft} alt="arrow" className="arrowLeft" onClick={()=> slideRef?.current?.slickPrev()} />
@@ -89,12 +92,13 @@ const TestiVideo = () => {
     </div>
 
     <div className='bottom-slider-container'>
-        <Slider asNavFor={nav1} 
-        ref={slider => {(slider2 = slider); slideRef.current = slider} } {...bottomSetting}
-        >
+        <Slick asNavFor={nav1} 
+        ref={slider => {(slider2 = slider); slideRef.current = slider} } {...bottomSetting}>
             {TestiData.map((slider, index) => (
                     <div key={index} className="bottom-container">
-                    <img src={slider.imgLink} alt="" className='mini' />
+                        <div className="bottomImg-container">
+                        <img src={slider.imgLink} alt="" className='mini' />
+                        </div>
                     <H4 textAlign="left" fontWeight="400" color='#FFF' fontSize="1rem" lineHeight="1.625rem">
                         {slider.name}
                     </H4>
@@ -103,7 +107,7 @@ const TestiVideo = () => {
                     </P>
                     </div>
             ))}
-        </Slider>
+        </Slick>
         <div className="slide-containers">
            <div className="slide-arrow">
                 <img src={arrowWhiteLeft} alt="arrow" className="arrowLeft" onClick={()=> slideRef?.current?.slickPrev()} />
@@ -130,25 +134,50 @@ const TestiVideoStyled = styled.div`
         }
     }
     .bottom-slider-container{
-        padding: 0% 20% 0 25%;
+        padding: 0% 15% 0 20%;
         position: relative;
+        width: 100vw;
         @media(max-width: 768px) {
             display: none;
         }
+
+        /* .slick-slider{
+            .slick-list{
+     
+                .slick-track{
+                    .slick-center{
+                        .bottom-container{
+                            padding: 3rem 0rem;
+                            height: 17.625rem;
+                            transform: scale(1.6, 1.6);
+                        }
+                    }
+                }
+            }
+        } */
     }
     .bottom-container{
-        max-width: 14.6875rem;
-        display: flex;
+        /*  */
+        /* display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 8.625rem;
+        align-items: center; */
+       .bottomImg-container{
+        max-width: 14.6875rem;
+
         img{
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
+       }
 
-      
+        &.slick-center{
+            transform: translate(20px, 100%);
+            img{
+                width: 120%;
+                height: 120%;
+            }
+        }
     }
 
      .slide-containers{

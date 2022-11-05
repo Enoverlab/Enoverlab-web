@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import HeroImg from '../../assets/heroImage.png'
 import HeroImg1 from '../../assets/heroImage1.png'
 import HeroImg2 from '../../assets/heroImage2.png'
@@ -36,7 +36,6 @@ const Hero = () => {
             </H4>
             <div className="button-container">             
                 <SecondaryButton  to="/programs" buttText="Start Here"/>
-                {/* <PrimaryButton to="/" buttText="Join our Community" />   */}
             </div>
         </div>
         <div className="hero-img"
@@ -56,6 +55,16 @@ const Hero = () => {
 }
 
 export default Hero
+
+const animate = keyframes`
+    from {
+        transform: scale(.95);
+    }
+
+    to {
+        transform: scale(1);
+    }
+`
 
 const StyledHero = styled.div`
    
@@ -85,6 +94,9 @@ const StyledHero = styled.div`
             display: flex;
             column-gap: 2rem;
             margin-top: 2rem;
+            animation: ${animate} 1s ease-in-out infinite; 
+       
+           
         }
     }
     .hero-img{
@@ -99,4 +111,8 @@ const StyledHero = styled.div`
             object-fit: contain;
         }
     }
+
+            ${SecondaryButton}{
+                animation: ${animate} 1s ease-in-out infinite; 
+            }
 `
