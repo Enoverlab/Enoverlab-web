@@ -136,7 +136,7 @@ const TestiVideoStyled = styled.div`
     .bottom-slider-container{
         padding: 0% 15% 0 20%;
         position: relative;
-        width: 100vw;
+        /* width: 100vw; */
         @media(max-width: 768px) {
             display: none;
         }

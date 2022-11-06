@@ -12,7 +12,7 @@ const About = () => {
                <img src={enovAbout} alt=""/>
             </div>
             <div className="about-text">
-                <H2 mobileFontSize="1.8rem"  color={theme.color.dark} fontWeight={"400"} textAlign={"left"}>
+                <H2 mobileFontSize="1.8rem"  color={theme.color.dark} fontWeight={"500"} textAlign={"left"}>
                 Be empowered to build impactful products to the world
                 </H2>
                 <P mobileLineHeight="1.45rem" mobileFontSize="1rem"  lineHeight="2.15625rem" paddingTop="0.5rem" color={theme.color.dark} textAlign={"left"} fontWeight={300}>

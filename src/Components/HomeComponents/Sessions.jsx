@@ -136,7 +136,7 @@ import { SessionObject } from './SessionObjects'
 export default Sessions
 
 const StyledSession = styled.div`
-    padding: 5% 0% 5% 0%;
+    padding: 5% 0% 2% 0%;
     position: relative;
     /* height: 100%; */
     @media (max-width: 768px) {
@@ -176,14 +176,14 @@ const StyledSession = styled.div`
         }
     }
     .session-slider-container{
-        padding: 2rem 0rem 2rem 0rem;
+        padding: 2rem 0rem 0rem 0rem;
         display: none;
         @media (max-width: 768px) {
             display: block;
         }
     }
     .slider-container{
-    padding: 0rem 10% 0rem 12%;
+    padding: 0rem 2% 0rem 5%;
     }
 
     .SessionGrid{

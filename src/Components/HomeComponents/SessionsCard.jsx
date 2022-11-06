@@ -6,7 +6,8 @@ const SessionsCard = ({guestJob, guestName, bgUrl, logo}) => {
   return (
     <StyledSessionCard bgUrl={bgUrl}>
         <div className="cardText">
-                <P fontSize="0.8rem" 
+                  <div className="name-role">
+                  <P fontSize="0.8rem" 
                     fontWeight="400"
                     color="#fff"
                     textAlign="left"
@@ -19,9 +20,10 @@ const SessionsCard = ({guestJob, guestName, bgUrl, logo}) => {
                     mobileFontSize='0.6rem'
                     lineHeight="0.8rem"
                  className='text'>{guestJob}</P>
-                 <div className="logo-container">
+                  </div>
+                 {/* <div className="logo-container">
                   <img className='logo' src={logo} alt="" />
-                 </div>
+                 </div> */}
           </div>    
     </StyledSessionCard>
   )
@@ -30,13 +32,13 @@ const SessionsCard = ({guestJob, guestName, bgUrl, logo}) => {
 export default SessionsCard
 
 const StyledSessionCard = styled.div`
-    max-width: 20rem;
+    width: 20rem; 
     background-image: url(${({bgUrl}) => bgUrl});
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     height: 15.25rem;
-    border-radius: 0em 0em 0.625rem 0.625rem;
+    /* border-radius: 0em 0em 0.625rem 0.625rem; */
     aspect-ratio: 1/1;
     margin-bottom: 1.5rem;
     border: #0046FF 1px solid;
@@ -62,26 +64,30 @@ const StyledSessionCard = styled.div`
     }
 
     .cardText{
+      padding: 0 0.5em; 
       height: 100%;
+      width: 100%;
       position: absolute;
-      transform: translate(1rem, 78%);
+      transform: translate(1rem, 82%);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
      .logo-container{
       position: relative;
-      max-width: 5.3375rem;
-      min-width: 2.125rem;
+      max-width: 6.0375rem;
+      max-height: 4.1875rem;
       /* width: 2rem; */
-      height: 1.428125rem;
-      @media screen {
-        max-width: 5.3375rem;
-        min-width: 2.125rem;
+     
+   
         /* width: 2rem; */
-        height: 1rem; 
-      }
+        /* height: 1rem;  */  
       .logo{
         width: 100%;
         height: 100%;
         object-fit: contain;
-        object-position: left center;
+        transform: translate(-2rem, -0.8rem);
+        /* aspect-ratio: calc(1/2); */
+        object-position: bottom center;
         /* margin-top: 0.5rem; */
       }
      }
