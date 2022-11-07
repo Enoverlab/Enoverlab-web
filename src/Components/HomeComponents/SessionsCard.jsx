@@ -43,8 +43,8 @@ const StyledSessionCard = styled.div`
     margin-bottom: 1.5rem;
     border: #0046FF 1px solid;
     @media (max-width: 768px){
-        max-width: 10.625rem;
-        height: 10.6875rem;
+        width: 9.625rem;
+        height: 9.6875rem;
         margin-bottom: 1rem;
     }
     /* border: 1px solid #0000FF; */

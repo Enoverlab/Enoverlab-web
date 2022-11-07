@@ -13,26 +13,26 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
             </div>
             <div className="card-container-front">
                 <div className="card-front-text">
-                    <H3  fontSize="1.49rem"  textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"0.5rem"}>
+                    <H3  fontSize="2.25rem"  textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"0.5rem"}>
                         {cardTitle}
                     </H3>
-                    <P lineHeight="1.49rem" mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" fontSize="0.993125rem" >
+                    <P lineHeight="1.5rem" mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" fontSize="0.993125rem" >
                         {cardText}
                     </P>
                     <div className="fees">
                         <div className="fee">
-                          <H4 mobileFontSize="0.8rem" fontSize="0.662225rem" color={textColor} fontWeight={"500"} textAlign={"left"}>
+                          <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
                             TUITION FEE
                           </H4>
-                           <H3 color={textColor} textAlign={"left"} fontSize={"1.49rem"}>
+                           <H3 color={textColor} textAlign={"left"} fontSize={"2.25rem"}>
                                {tuitionFee}
                             </H3>    
                         </div>
                         <div className="fee">
-                            <H4 mobileFontSize="0.8rem" fontSize="0.662225rem" color={textColor}fontWeight={"500"} textAlign={"left"}>
+                            <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor}fontWeight={"700"} textAlign={"left"}>
                                 DURATION
                             </H4>
-                            <H3 color={textColor} textAlign={"left"} fontSize={"1.49rem"}>
+                            <H3 color={textColor} textAlign={"left"} fontSize={"2.25rem"}>
                                 {duration}
                             </H3>
                     </div>
@@ -73,7 +73,7 @@ const StyledPricingCard = styled.div`
                 width: 100%;
                 height:  ${props => props.height ? props.height : "150rem"};
                 z-index: 2;
-                padding: 1.5rem;
+                padding: 3rem;
                 border: 1px solid ${theme.color.dark};
                 background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
                 @media(max-width: 768px){

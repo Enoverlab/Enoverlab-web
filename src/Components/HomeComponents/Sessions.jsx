@@ -183,7 +183,7 @@ const StyledSession = styled.div`
         }
     }
     .slider-container{
-    padding: 0rem 2% 0rem 5%;
+    padding: 0rem 2% 0rem 0%;
     }
 
     .SessionGrid{

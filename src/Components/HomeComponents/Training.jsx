@@ -63,8 +63,8 @@ const StyledTraining = styled.div`
     padding: 10% 0 5% 0;
     @media (max-width: 768px){
       height: 100%;
-      min-height: 155vh;
-      padding-bottom: 25%;
+      min-height: 120vh;
+      /* padding-bottom: 10%; */
     }
     @media (max-height: 667px){
       min-height: 200vh;

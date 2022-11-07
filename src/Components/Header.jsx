@@ -91,7 +91,7 @@ const Header = ({bgColor, bgColorMobile}) => {
             </div>
             <div className="header-right">
                 <div className="header-button-container">
-                <TertiaryButton to="/" buttText="Contact Us"/>
+                <TertiaryButton to="/" buttText="Contact Us" fontWeight={500}/>
                 </div>
                 <div className="menu-icon-container">
                     <img onClick={() => setActive(!active)}  src={menu} alt="menu"/>

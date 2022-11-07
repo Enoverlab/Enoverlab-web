@@ -76,7 +76,7 @@ const StyledWhy = styled.div`
     background: #F5FCFF;
     @media (max-width: 768px) {
         padding: 25% 5%;
-        margin-top: 60%;
+      
     }
     .why-text-container{
         max-width: 60%;

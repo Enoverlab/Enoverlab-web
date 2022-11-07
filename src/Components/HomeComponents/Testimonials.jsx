@@ -67,7 +67,7 @@ const StyledTestimonials = styled.div`
     z-index: 1;
     height: 150vh;
     @media (max-width: 768px) {
-        height: 80vh;
+        height: 85vh;
     }
        .topCorner{
         position: absolute;

@@ -21,7 +21,7 @@ const SuccessCard = ({notes, flag, name, avatar, role}) => {
                 </div>
             </div>
             <div className="success-card-text">
-                <P fontSize="1rem" textAlign="left" lineHeight="1.8rem" color={theme.color.dark}>
+                <P fontWeight={300} fontSize="1rem" textAlign="left" lineHeight="1.8rem" color={theme.color.dark}>
                {notes}
                 </P>
             </div>

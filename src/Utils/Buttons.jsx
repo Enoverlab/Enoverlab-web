@@ -31,9 +31,9 @@ export const SecondaryButton = ({to, buttText, textAlign}) => {
     )
 }
 
-export const TertiaryButton = ({to, buttText}) => {
+export const TertiaryButton = ({to, buttText, fontWeight}) => {
     return (
-        <StyledTertiaryButton>
+        <StyledTertiaryButton fontWeight={fontWeight}>
         <Link to={to}>
                 <span>{buttText}</span>
                 <img src={BlueArrow} alt=""/>
@@ -97,6 +97,7 @@ const StyledTertiaryButton = styled.div`
         background-color: ${color.quaternary};
         color: ${color.primary};
         font-size: 1rem;
+        font-weight: ${props => props.fontWeight ? props.fontWeight : "normal"};
         img{
             width: 2.875rem;
             height: 1rem;

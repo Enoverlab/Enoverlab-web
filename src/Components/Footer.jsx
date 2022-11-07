@@ -74,7 +74,7 @@ const Footer = () => {
 
             <div className="container-right-2">
                 <div className='form'>
-                    <P fontSize="1.3125rem" color={theme.color.dark} textAlign="left" paddingBottom="0.58rem">
+                    <P fontSize="1.3125rem" color={theme.color.dark} textAlign="left" paddingBottom="0.58rem" fontWeight={700}>
                         Launch your PM Career
                     </P>
                     <input type="text" name="" id="" placeholder='Email Address' />
