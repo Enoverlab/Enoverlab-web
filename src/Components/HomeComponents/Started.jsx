@@ -23,6 +23,7 @@ export default Started
 const StyledStarted = styled.div`
     padding: 5% 10% 5% 10%;
     position: relative;
+    /* height: 150vh; */
     /* min-height: 70vh; */
     @media(max-width: 768px){
         min-height: 35vh;

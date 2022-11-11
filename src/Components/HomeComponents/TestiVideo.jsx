@@ -127,8 +127,8 @@ const TestiVideoStyled = styled.div`
     position: relative;
     .top-slider-container{
         position: relative;
-        padding: 3.25rem 15%;
-
+        padding: 3.25rem 15% 1.25rem 15%;
+        box-sizing: border-box;
         @media (max-width: 768px){
             padding: 3.25rem 5%;
         }

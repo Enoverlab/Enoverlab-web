@@ -97,8 +97,8 @@ import { SessionObject } from './SessionObjects'
     }
   return (
     <StyledSession>
-                    <img src={topCornerSessions} className="topCorner" alt="" />
-        <div className="session-contaner">
+        <img src={topCornerSessions} className="topCorner" alt="" />
+        <div className="session-container">
             <div className="session-text-container">
                 <P color={theme.color.dark} textAlign="center"  fontSize={"1rem"} fontWeight={300}>
                     Learn from the best
@@ -122,11 +122,8 @@ import { SessionObject } from './SessionObjects'
                 </Slider>
             </div> 
 
-        <div className='session-slider-container'>
-        
-       </div>
-        
-        
+       
+     
         </div>
    
     </StyledSession>
@@ -138,15 +135,16 @@ export default Sessions
 const StyledSession = styled.div`
     padding: 5% 0% 2% 0%;
     position: relative;
-    /* height: 100%; */
+    height: 150%;
+    box-sizing: border-box;
     @media (max-width: 768px) {
         padding: 5% 2% 5% 5%;
         max-height: 80vh;
         margin-bottom: 10%;
     }
-    @media(max-height: 667px){
-        max-height: 90vh;
-    }
+    /* @media(max-height: 667px){
+        max-height: 100vh;
+    } */
     background-color: ${theme.color.lightBlue};
     .topCorner{
         position: absolute;
@@ -157,7 +155,7 @@ const StyledSession = styled.div`
         filter: grayscale(100%);
         opacity: 100%;
         }
-    .session-contaner{
+    .session-container{
         position: relative;
         margin-top: 5%;
        
@@ -175,37 +173,17 @@ const StyledSession = styled.div`
             }
         }
     }
-    .session-slider-container{
-        padding: 2rem 0rem 0rem 0rem;
-        display: none;
-        @media (max-width: 768px) {
-            display: block;
-        }
-    }
+   
     .slider-container{
-    padding: 0rem 2% 0rem 0%;
+        position: relative !important; 
+    padding: 0rem 2% 0rem 3%;
+    
+    @media (max-width: 768px) {
+        padding: 0rem 2% 0rem 0rem;
+    }
     }
 
-    .SessionGrid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        height: 70.8125rem;
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(12, 1fr);
-            display: none;
-        }
-
-        .session-column{
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-
-
-    }
+   
      
 
    

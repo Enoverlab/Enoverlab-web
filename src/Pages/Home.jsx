@@ -13,7 +13,8 @@ const Home = () => {
   return (
     <div
     style={{
-      backgroundColor: "#FFFFFF"
+      backgroundColor: "#FFFFFF",
+      position: "relative"
     }}
     >
        <Header bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>

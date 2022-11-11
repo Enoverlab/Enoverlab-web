@@ -50,8 +50,10 @@ const Testimonials = () => {
             Hear what the trained PMs have been able to achieve
             </P>
             </div>
-           
-       <TestiVideo/>
+         <>
+         <TestiVideo/>
+         </>  
+       
         </div>
      
     </StyledTestimonials>
@@ -61,13 +63,14 @@ const Testimonials = () => {
 export default Testimonials
 
 const StyledTestimonials = styled.div`
-    padding: 5% 0% 10% 0%;
+    padding: 5% 0% 1% 0%;
     position: relative;
     background-color: ${theme.color.tertiary};
     z-index: 1;
-    height: 150vh;
+    /* height: 150vh; */
+    
     @media (max-width: 768px) {
-        height: 85vh;
+        height: 80vh;
     }
        .topCorner{
         position: absolute;

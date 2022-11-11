@@ -38,7 +38,7 @@ const StyledHomeCard = styled.div`
             position: absolute;
             top: -20px;
             left: ${props => props.backLeft ?  props.backLeft : "-20px"};
-            width: 90%;
+            width: 100%;
             height: 24.625rem;
             z-index: 1;
             border: 1px solid ${theme.color.dark};
@@ -51,7 +51,7 @@ const StyledHomeCard = styled.div`
         }
         .card-container-front{
             position: relative; 
-            width: 90%;
+            width: 100%;
             height: 24.625rem;
             z-index: 2;
             padding: 2rem;
