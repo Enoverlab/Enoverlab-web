@@ -8,7 +8,7 @@ import blogImg2 from '../../assets/blogImage2.png'
 import blogImg3 from '../../assets/blogImage3.png'
 import blogImg4 from '../../assets/blogImage4.png'
 import BlogCard from './BlogCard'
-
+import { Article } from './BlogContent'
 
 const BlogData = [
   {
@@ -51,17 +51,18 @@ const BlogHero = () => {
 
          <div className="blog-card-grid">
            {
-              BlogData.map((item) => {
+             Article.map((item) => {
                 return (
                   <BlogCard
                   key={item.id}
                   category={item.category}
-                  contentTitle={item.contentTitle}
-                  contentText={item.contentText}
+                  contentTitle={item.title}
+                  contentText={item.content1}
                   authorName={item.authorName}
                   cardImg={item.cardImg}
                   thumbImg={item.thumbImg}
                   date={item.date}
+                  id={item.id}
                   />
                 )
               })

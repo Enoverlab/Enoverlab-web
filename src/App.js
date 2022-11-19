@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ThemeProvider } from "styled-components";
 import {theme} from "./Utils/Theme";
+import BlogContentPage from "./Pages/BlogContentPage";
 import AOS from "aos";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/pay" element={<Pay />} />
+        <Route path="/blog/:id" element={<BlogContentPage />} />
       </Routes>
     </ThemeProvider>
     );

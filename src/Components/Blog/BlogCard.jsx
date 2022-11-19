@@ -2,11 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { P } from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
-
-const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, authorName, imgSrc, date}) => {
+import { Link } from 'react-router-dom'
+const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, authorName, imgSrc, date, id}) => {
   return (
     <StyledBlogCard>
-       <div className="blog-card-container">
+       <div className="blog-card-container"
+       >
+        <Link to={`${id}`}>
+       
             <div className="blog-card-image">
                 <img src={cardImg} alt="blog"/>
             </div>
@@ -57,6 +60,7 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                 </div>
             </div>
           </div>
+          </Link>
        </div>
     </StyledBlogCard>
   )
