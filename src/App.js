@@ -11,6 +11,7 @@ import { ThemeProvider } from "styled-components";
 import {theme} from "./Utils/Theme";
 import BlogContentPage from "./Pages/BlogContentPage";
 import AOS from "aos";
+import CheckoutPage from "./Pages/CheckoutPage";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/pay" element={<Pay />} />
         <Route path="/blog/:id" element={<BlogContentPage />} />
+        <Route path="/pay/:id" element={<CheckoutPage/>} />
       </Routes>
     </ThemeProvider>
     );

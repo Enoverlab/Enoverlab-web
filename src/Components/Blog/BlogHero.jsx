@@ -76,6 +76,9 @@ const BlogHero = () => {
 export default BlogHero
 
 const StyledBlogHero = styled.div`
+  a{
+    text-decoration: none;
+  }
   .blog-hero-container {
     padding: 5% 10% 5% 10%;
     .blog-card-grid{
