@@ -14,7 +14,7 @@ const BlogContentPage = () => {
   console.log(article);
   return (
     <>
-    <Header/>
+    <Header  bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
     <ImageContainer>
       <div className="img-container">
         <img src={BlogPageImg} alt="blog page" />
@@ -27,6 +27,7 @@ const BlogContentPage = () => {
         color="#0F2A65"
         fontSize="3rem"
         lineHeight="3.881875rem"
+        mobileFontSize="2rem"
       >
         {article[0]?.title}{" "}
       </H1>
@@ -123,7 +124,9 @@ export default BlogContentPage;
 
 const StyledBlogContent = styled.div`
   padding: 2rem 16%;
-
+  @media (max-width: 768px) {
+    padding: 2rem 5%;
+  }
   .head-container {
     margin-bottom: 2.375rem;
   }

@@ -6,7 +6,7 @@ import Checkout from '../Components/Pay/Checkout'
 const CheckoutPage = () => {
   return (
     <div>
-        <Header/>
+        <Header  bgColor="#FFFDF7"  bgColorMobile="#FFFDF7"/>
             <Checkout/>
         <Footer/>
     </div>

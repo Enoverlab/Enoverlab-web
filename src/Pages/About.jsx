@@ -7,7 +7,7 @@ import Footer from '../Components/Footer'
 const About = () => {
   return (
     <StyledAbout>
-       <Header bgColor="#ffff"  bgColorMobile="#FFF" />
+       <Header bgColor="#FFFDF7"  bgColorMobile="#FFFDF7" />
        <Hero/>
        <AboutContent/>
        <Footer/>
@@ -17,4 +17,6 @@ const About = () => {
 
 export default About
 
-const StyledAbout = styled.div``
+const StyledAbout = styled.div`
+background-color: #FFFDF7;
+`

@@ -95,6 +95,7 @@ const StyledBlogCard = styled.div`
 
       .blog-text{
         padding-bottom: 1rem;
+        
       }
     }
     .blog-author{

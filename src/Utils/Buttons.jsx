@@ -54,7 +54,7 @@ export const MainButton = ({props, buttText}) => {
 }
 
 
-const StyledPrimaryButton = styled.div`  
+export const StyledPrimaryButton = styled.div`  
     a{  
         display: flex;
         justify-content: flex-start;
@@ -121,7 +121,7 @@ const StyledTertiaryButton = styled.div`
         }
 `
 
-const StyledSecondaryButton = styled.div`
+export const StyledSecondaryButton = styled.div`
     display: flex;
     background-color: ${color.primary};
     border: 1px solid ${color.primary};

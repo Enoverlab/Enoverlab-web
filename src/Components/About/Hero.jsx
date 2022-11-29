@@ -27,6 +27,7 @@ export default Hero
 
 const StyledHero = styled.div`
   padding: 0 10%;
+  background-color: #FFFDF7;
     .about-hero-container{
         position: relative;
         margin-bottom: 8.5rem;
