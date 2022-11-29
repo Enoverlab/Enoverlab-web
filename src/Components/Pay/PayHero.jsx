@@ -46,7 +46,7 @@ const PayHero = () => {
            <PriceTag tuitionFee={"₦120,000"} duration={"10 Weeks"} textColor={theme.color.light} />
 
             <div className="button-container">
-              <PrimaryButton to="/programs" buttText="Make Payment" />
+              <PrimaryButton to="1" buttText="Make Payment" />
             </div>
           </HomeCard>
 
@@ -60,7 +60,7 @@ const PayHero = () => {
           >
               <PriceTag tuitionFee={"₦150,000"} duration={"10 Weeks"} textColor={theme.color.dark} />
             <div className="button-container">
-              <SecondaryButton to="/programs" buttText="Make Payment" />
+              <SecondaryButton to="2" buttText="Make Payment" />
             </div>
           </HomeCard>
 
@@ -75,7 +75,7 @@ const PayHero = () => {
               <PriceTag tuitionFee={"₦300,000"} duration={"6 Weeks"} textColor={theme.color.dark} />
 
             <div className="button-container">
-              <SecondaryButton to="/programs" buttText="Make Payment" />
+              <SecondaryButton to="3" buttText="Make Payment" />
             </div>
           </HomeCard>
 
@@ -125,7 +125,7 @@ const StyledPayHero = styled.div`
     margin-top: 3rem;
     width: 35.5%;
     @media (max-width: 768px) {
-      width: 50%;
+      width: 59%;
       bottom: 1.7rem;
     }
   }
