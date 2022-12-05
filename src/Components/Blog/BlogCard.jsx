@@ -26,6 +26,7 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                     <P textAlign="left"
                     fontSize="1.5rem"
                     color={theme.color.dark}
+                    lineHeight="1.9rem"
                     >
                       {contentTitle}
                     </P>
@@ -36,6 +37,7 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                   fontWeight="300"
                   color="#4B4B4B"
                   textAlign="left"
+                  lineHeight="1.8125rem"
                   >
                     {contentText}
                   </P>

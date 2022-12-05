@@ -12,19 +12,21 @@ const AboutContent = () => {
         </div>
         <div className="about-text-container">
           <div className="about-text-left">
-            <H1 textAlign="left" fontSize="4rem" fontWeight="300" mobileFontSize="1.5rem">
+            <H1 textAlign="left" fontSize="3.75rem" fontWeight="300" mobileFontSize="1.5rem">
               Our Mission
             </H1>
             <H2
               textAlign="left"
-              fontSize="3rem"
+              fontSize="2.5rem"
               color="#4B4B4B"
               fontWeight="500"
               paddingBottom="1rem"
               mobileFontSize="2rem"
+              lineHeight="3.75rem"
+              mobileLineHeight="2.9rem"
             >
-              Empowering the next generation of product manger through hands on
-              learning
+             Building product managers who will lead the development and delivery of impactful products to the world.
+
             </H2>
             {/* <div className="button-container">
               <SecondaryButton to="/programs" buttText="Learn More" />
@@ -77,17 +79,20 @@ const AboutContent = () => {
 
         <div className="about-text-container">
           <div className="about-text-left">
-            <H1 textAlign="left" fontSize="4rem" fontWeight="300" mobileFontSize="1.5rem">
+            <H1 textAlign="left" fontSize="3.75rem" fontWeight="300" mobileFontSize="1.5rem">
               Our core Values
             </H1>
            <div className="sub-head">
            <H2
               textAlign="left"
-              fontSize="3rem"
+              fontSize="2rem"
               color="#4B4B4B"
               fontWeight="500"
               paddingBottom="1rem"
               mobileFontSize="2rem"
+              lineHeight="3rem"
+              
+              
             >
               Human focused <br/> Impact driven education <br/> Making the world a better
               place

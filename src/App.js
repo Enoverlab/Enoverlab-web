@@ -4,6 +4,7 @@ import Pricing from "./Pages/Pricing";
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
 import Pay from "./Pages/Pay";
+import Resources from "./Pages/Resources";
 import { Routes, Route} from "react-router-dom";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/pay" element={<Pay />} />
         <Route path="/blog/:id" element={<BlogContentPage />} />
         <Route path="/pay/:id" element={<CheckoutPage/>} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
     </ThemeProvider>
     );

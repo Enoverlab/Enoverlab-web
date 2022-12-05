@@ -5,7 +5,7 @@ const fontSize = theme.fontSize
 const color = theme.color
 
 export const H1 = styled.h1`
-    font-size: ${fontSize.xxl};
+    font-size: ${props => props.fontSize || fontSize.xxl};
     color: ${props => props.color || color.primary};
     font-weight: ${props => props.fontWeight || fontSize.xxl};
     text-align: ${props => props.textAlign || "center"};
@@ -22,7 +22,7 @@ export const H1 = styled.h1`
 `
 
 export const H2 = styled.h2`
-    font-size: ${fontSize.xl};
+    font-size: ${props => props.fontSize || fontSize.xl};
     color: ${props => props.color || color.primary};
     font-weight: ${props => props.fontWeight || fontSize.xl};
     text-align: ${props => props.textAlign || "center"};
@@ -33,6 +33,7 @@ export const H2 = styled.h2`
     padding-bottom: ${props => props.paddingBottom || "0"};
     @media (max-width: 768px) {
         font-size: ${props => props.mobileFontSize || fontSize.m};
+        line-height: ${props => props.mobileLineHeight || "120%"};
     }
 `
 
