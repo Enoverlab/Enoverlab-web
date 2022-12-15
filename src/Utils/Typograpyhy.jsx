@@ -62,6 +62,7 @@ export const H4 = styled.h4`
     padding-bottom: ${props => props.paddingBottom || "0"};
     line-height: ${props => props.lineHeight || "120%"};
     span{
+        
         font-weight: 500;
     }
     @media (max-width: 768px) {
