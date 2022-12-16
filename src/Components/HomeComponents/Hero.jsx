@@ -31,7 +31,7 @@ const Hero = () => {
     <StyledHero>
         <div className="hero-container">
             <HeroText/>
-            <H4 mobileFontSize="1rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} textAlign={"left"}>
+            <H4 fontSize='1.75rem' mobileFontSize="1rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} lineHeight="2.264375rem" textAlign={"left"}>
             Get the knowledge, skills and tools  you need to function effectively in the  role of a product manager
             </H4>
             <div className="button-container">             
@@ -83,7 +83,7 @@ const StyledHero = styled.div`
         max-width: 60%;
         margin-top: 4rem;
         H4{
-            max-width: 37.75rem;
+            max-width: 44.0625rem;
         }
         @media(max-width: 768px){
             max-width: 100%;

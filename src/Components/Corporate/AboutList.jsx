@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import {AiOutlineCheck} from 'react-icons/ai'
-const AboutList = ({listText}) => {
+const AboutList = ({listText, marginBottom}) => {
   return (
-    <StyledAboutList>
+    <StyledAboutList marginBottom={marginBottom}>
         <div className="container">
             <div className="list">
                 <div className="list-item">
@@ -28,7 +28,7 @@ const StyledAboutList = styled.div`
     .list{
       .list-item{
         display: flex;
-        margin-bottom: 1.5rem;
+        margin-bottom: ${props => props.marginBottom ? props.marginBottom : '1.5rem'};
         column-gap: 1.75rem;
         @media (max-width: 768px) {
           column-gap: 1.25rem;

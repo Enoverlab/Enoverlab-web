@@ -9,11 +9,13 @@ import {
 } from "../Utils/Buttons";
 import logo from "../assets/enovLogo.png";
 import mobileLogo from "../assets/mobileLogo.png";
+import blueLogo from "../assets/blueLogo.png";
 import menu from "../assets/menu.png";
+import menuWhite from "../assets/menuWhite.png";
 import { Link, useLocation, NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { HiOutlineChevronRight } from "react-icons/hi";
-const Header = ({ bgColor, bgColorMobile }) => {
+const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
   const [active, setActive] = React.useState(false);
   const [weightHome, setWeightHome] = React.useState("bold");
   const [weightPricing, setWeightPricing] = React.useState("normal");
@@ -21,13 +23,21 @@ const Header = ({ bgColor, bgColorMobile }) => {
   const [weightResource, setWeightResource] = React.useState("normal");
 
   return (
-    <StyledHeader bgColor={bgColor} bgColorMobile={bgColorMobile}>
+    <StyledHeader bgColor={bgColor} bgColorMobile={bgColorMobile} navColor={navColor}>
       <div className="header-container">
         <div className="header-left">
           <div className="logo-container">
-            <Link to="/">
-              <img src={logo} alt="logo" />
-            </Link>
+           {
+              !blueProps ? (
+                <Link to="/">
+                <img src={logo} alt="logo" />
+              </Link>
+              ): (
+                <Link to="/">
+                <img src={blueLogo} alt="logo" />
+              </Link>
+              )
+           }
           </div>
           <div className="menu-container">
             <div className={active ? "menu-item active" : "menu-item"}>
@@ -47,7 +57,7 @@ const Header = ({ bgColor, bgColorMobile }) => {
                   to="/"
                 >
                   <P
-                    color={theme.color.dark}
+                    color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark }
                     textAlign="left"
                     fontSize={"1.25rem"}
                     fontWeight={weightHome}
@@ -67,7 +77,7 @@ const Header = ({ bgColor, bgColorMobile }) => {
                   to="/programs"
                 >
                   <P
-                    color={theme.color.dark}
+                    color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark}
                     textAlign="left"
                     fontSize={"1.25rem"}
                     fontWeight={weightPricing}
@@ -87,7 +97,7 @@ const Header = ({ bgColor, bgColorMobile }) => {
                   to="/blog"
                 >
                   <P
-                    color={theme.color.dark}
+                    color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark}
                     textAlign="left"
                     fontSize={"1.25rem"}
                     fontWeight={weightBlog}
@@ -107,7 +117,7 @@ const Header = ({ bgColor, bgColorMobile }) => {
                   to="/resource"
                 >
                   <P
-                    color={theme.color.dark}
+                    color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark}
                     textAlign="left"
                     fontSize={"1.25rem"}
                     fontWeight={weightResource}
@@ -132,7 +142,15 @@ const Header = ({ bgColor, bgColorMobile }) => {
             <TertiaryButton to="/" buttText="Contact Us" fontWeight={500} />
           </div>
           <div className="menu-icon-container">
-            <img onClick={() => setActive(!active)} src={menu} alt="menu" />
+           {
+            !blueProps ?
+            (
+              <img onClick={() => setActive(!active)} src={menu} alt="menu" />
+            ): 
+            (
+              <img onClick={() => setActive(!active)} src={menuWhite} alt="menu" />
+            )
+           }
           </div>
         </div>
       </div>

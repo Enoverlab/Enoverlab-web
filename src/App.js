@@ -14,6 +14,7 @@ import { theme } from "./Utils/Theme";
 import BlogContentPage from "./Pages/BlogContentPage";
 import AOS from "aos";
 import CheckoutPage from "./Pages/CheckoutPage"
+import Executive from "./Pages/Executive";
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/pay/:id" element={<CheckoutPage />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/corporate" element={<Corporate />} />
+        <Route path="/executive" element={<Executive/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </ThemeProvider>
