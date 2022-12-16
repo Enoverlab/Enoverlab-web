@@ -5,19 +5,20 @@ import About from "./Pages/About";
 import Blog from "./Pages/Blog";
 import Pay from "./Pages/Pay";
 import Resources from "./Pages/Resources";
-import { Routes, Route} from "react-router-dom";
-import "slick-carousel/slick/slick.css"; 
+import Corporate from "./Pages/Corporate";
+import { Routes, Route } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ThemeProvider } from "styled-components";
-import {theme} from "./Utils/Theme";
+import { theme } from "./Utils/Theme";
 import BlogContentPage from "./Pages/BlogContentPage";
 import AOS from "aos";
-import CheckoutPage from "./Pages/CheckoutPage";
+import CheckoutPage from "./Pages/CheckoutPage"
 
 function App() {
   useEffect(() => {
     AOS.init();
-  })
+  });
   return (
     <ThemeProvider theme={theme}>
       <Routes>
@@ -27,11 +28,13 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/pay" element={<Pay />} />
         <Route path="/blog/:id" element={<BlogContentPage />} />
-        <Route path="/pay/:id" element={<CheckoutPage/>} />
+        <Route path="/pay/:id" element={<CheckoutPage />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/corporate" element={<Corporate />} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </ThemeProvider>
-    );
+  );
 }
 
 export default App;

@@ -57,11 +57,13 @@ const StyledResourceHero = styled.div`
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+   
     .resource-content{
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+        z-index: 2;
         H3 {
       max-width: 50%;
       @media (max-width: 768px){
@@ -121,7 +123,7 @@ const StyledResourceHero = styled.div`
         position: absolute;
         top: 30%;
         left: 10%;
-
+        z-index: 1;
         @media (max-width: 768px) {
             top: 30%;
             left: 5%;
@@ -137,7 +139,7 @@ const StyledResourceHero = styled.div`
         position: absolute;
         top: 60%;
         left: 20%;
-
+        z-index: 1;
         @media (max-width: 768px) {
             top: 15%;
             left: 10%;
@@ -153,7 +155,7 @@ const StyledResourceHero = styled.div`
         position: absolute;
         top: 10%;
         right: 5%;
-
+        z-index: 1;
         @media (max-width: 768px) {
             top: 15%;
             right: 5%;
@@ -168,6 +170,7 @@ const StyledResourceHero = styled.div`
         position: absolute;
         top: 30%;
         right: 10%;
+        z-index: 1;
         @media (max-width: 768px) {
             top: 30%;
             right: 10%;
