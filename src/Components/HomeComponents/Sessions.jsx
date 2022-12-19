@@ -115,7 +115,7 @@ import { SessionObject } from './SessionObjects'
                 <Slider ref={slider} {...Settings}>
                     {SessionObject.map((item, index) => {
                         return(
-                            <SessionsCard key={index} guestName={item.name} guestJob={item.role} logo={item.company} bgUrl={item.bgImage} />
+                            <SessionsCard key={index} guestName={item.name} guestJob={item.role} logo={item.company} bgUrl={item.bgImage} logoWidth={item.width}/>
                         )
                     })
                     }

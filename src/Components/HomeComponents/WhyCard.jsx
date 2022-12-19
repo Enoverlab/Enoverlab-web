@@ -38,14 +38,14 @@ const StyledWhyCard = styled.div`
         height: 30.875em;
         .card-img{
             z-index: 2;
-            margin: 1rem;
+            margin: 0.5rem;
             @media (max-width: 768px){
                 width: 50%;
                 height: auto;
             }
             img{
                 position: absolute;
-                right: 0rem;
+                right: -5rem;
                 /* background-color: red; */
                 bottom: 0;
                 height: 50%;

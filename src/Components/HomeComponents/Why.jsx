@@ -69,9 +69,9 @@ const Why = () => {
 export default Why
 
 const StyledWhy = styled.div`
-    padding: 5% 10%;
+    padding: 5% 6%;
     min-height: 100vh;
-    margin-top: 0%;
+   
     position: relative;
     background: #F5FCFF;
     @media (max-width: 768px) {

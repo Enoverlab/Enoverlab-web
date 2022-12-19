@@ -39,7 +39,7 @@ const StyledHomeCard = styled.div`
             top: -20px;
             left: ${props => props.backLeft ?  props.backLeft : "-20px"};
             width: 100%;
-            height: 28.375rem;
+            height: ${props => props.height ? props.height : "28.375rem"};
             z-index: 1;
             border: 1px solid ${theme.color.dark};
             background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
@@ -48,13 +48,13 @@ const StyledHomeCard = styled.div`
                 height: 22.9375rem;
                 left: -20px;
             }
-        }
+    }
         .card-container-front{
             position: relative; 
             width: 100%;
-            height: 28.375rem;
+            height: ${props => props.height ? props.height : "28.375rem"};
             z-index: 2;
-            padding: 2rem;
+            padding: 3rem;
             border: 1px solid ${theme.color.dark};
             background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
             @media(max-width: 768px){
@@ -63,5 +63,6 @@ const StyledHomeCard = styled.div`
                 padding: 1.5rem;
             }
         }
+        
     }
 `   

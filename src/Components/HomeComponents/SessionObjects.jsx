@@ -50,139 +50,162 @@ export const SessionObject = [
         bgImage: SessionImage1,
         name: "Ndukwe Igbokwe",
         role: " Senior Product Manager",
-        company: maxNg
+        company: maxNg,
+        width: "5.4375em"
     },
     {
         bgImage: SessionImage2,
         name: "Moshe Mikanovsky",
         role: "Product Manager",
-        company: riskthinkingai
+        company: riskthinkingai,
+        width: "7.5rem"
     },
     {
         bgImage: SessionImage3,
         name: "Damilola Olayode",
         role: "Product Manager",
-        company: microsoft
+        company: microsoft,
+        width: "7.5rem"
     },
     {
         bgImage: SessionImage4,
         name: "Yewande Oyebo ",
         role: "Product Owner, JustEatTakeaway.com",
-        company: takeAway
+        company: takeAway,
+        width: "4.4375rem"
     },
     {
         bgImage: SessionImage5,
         name: "Theodora Chimonez ",
         role: "Head of Product",
-        company: salad
+        company: salad,
+        width: "7.5rem"
     },
     {
         bgImage: SessionImage6,
         name: "Tochi Emewulu ",
         role: "Product Manager",
-        company: amazon
+        company: amazon,
+        width: "6rem"
     },
     {
         bgImage: SessionImage7,
         name: "Obiajulu Anayo",
         role: "Product Manager",
-        company: mouvebetter
+        company: mouvebetter,
+        width: "7.5rem"
     },
     {
         bgImage: SessionImage8,
         name: "Kehinde Olukoga",
         role: "Product Manager",
-        company: primeramfb
+        company: primeramfb,
+        width: "8.9375rem"
     },
     {
         bgImage: SessionImage9,
         name: "Fumnanya Okeleke-Kooper",
         role: "Product Manager",
-        company: seamlessHr
+        company: seamlessHr,
+        width: "6.25rem"
     },
     {
         bgImage: SessionImage10,
         name: "Ewerechukwu Asaka ",
         role: "Product Manager",
-        company: spotify
+        company: spotify,
+        width: "4.6875rem"
     },
     {
         bgImage: SessionImage11,
         name: "Oluwaseun Agboola",
         role: "Product Manager",
-        company: africanFounders
+        company: africanFounders,
+        width: "5.1875rem"
     },
     {
         bgImage: SessionImage12,
         name: "Emilia Korczynska ",
         role: "Product Manager",
-        company: userpilot
+        company: userpilot,
+        width: "6.4375rem"
     },
     {
         bgImage: SessionImage13,
         name: "Micheal Oragwa ",
         role: "Product Manager",
-        company: tandf
+        company: tandf,
+        width: "2.5375rem"
     },
     {
         bgImage: SessionImage14,
         name: "Tobi Adesanya ",
         role: "Product Manager",
-        company: mkopa
+        company: mkopa,
+        width: "4.4375rem"
     },
     {
         bgImage: SessionImage15,
         name: "Joshua",
         role: "Product Manager",
-        company: flutterWave
+        company: flutterWave,
+        width: "3.4375rem"
     },
     {
         bgImage: SessionImage16,
         name: "Omojo Anwuzia",
         role: "Product Manager",
-        company: microsoft
+        company: microsoft,
+        width: "7.5rem"
     },
     {
         bgImage: SessionImage17,
         name: "Bridget Iyere ",
         role: "Head of Product",
-        company: elimu
+        company: elimu,
+        width: "7.5rem"
     },
     {
         bgImage: SessionImage18,
         name: "Grace Omole",
         role: "Product Manager",
-        company: niyo
+        company: niyo,
+        width: "6.4375rem"
     },
     {
         bgImage: SessionImage19,
         name: "James Amattey",
         role: "Product Manager",
-        company: kidsreadart
+        company: kidsreadart,
+        width: "6.4375rem"
     },
     {
         bgImage: SessionImage20,
         name: "Oluwatobi Bamidele",
         role: "Product Owner,Polaris",
-        company: polaris
+        company: polaris,
+        width: "5.5rem"
     },
     {
         bgImage: SessionImage21,
         name: "Oluwaseun Kayode",
         role: "Product Manager",
-        company: schoolQ
+        company: schoolQ,
+        width: "5.4375rem"
     },
     {
         bgImage: SessionImage22,
         name: "Oluwatayo Winkunle",
         role: "Product Manager",
-        company: vandease
+        company: vandease,
+        width: "6.4375rem"
     },
     {
         bgImage: SessionImage23,
         name: "Joy Chukwukere",
         role: "Product Manager",
-        company: maxNg
-
+        company: maxNg,
+        width: "5.4375rem"
+        
     }
 ]

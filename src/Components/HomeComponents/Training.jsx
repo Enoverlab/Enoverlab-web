@@ -16,13 +16,13 @@ const Training = () => {
         </H4>
         <div className="cardContainer">
         
-        <HomeCard cardTitle={"LevelUp Program"} textColor={theme.color.light} cardText={"If you have taken any basic online product management training and you are looking to upskill and be better equipped to take up a product manager role,this program is for you"} backgroundColor={theme.color.primary} >
+        <HomeCard cardTitle={"LevelUp Program"} textColor={theme.color.light} cardText={"If you have taken any basic online product management training and you are looking to upskill and be better equipped to take up a product manager role,this program is for you"} backgroundColor={theme.color.primary} height="26.625rem">
         <div className="button-container">
         <PrimaryButton to="/programs" buttText="Learn More"/>
         </div>
         </HomeCard> 
 
-        <HomeCard cardTitle={"Advanced Program"}  textColor={theme.color.dark} cardText={"This program is for you if you are just starting out and want to get all the required knowledge, skills, tools and experience you need to fully take up the role of a product manager globally"}  backLeft="20px"
+        <HomeCard cardTitle={"Advanced Program"}  textColor={theme.color.dark} cardText={"This program is for you if you are just starting out and want to get all the required knowledge, skills, tools and experience you need to fully take up the role of a product manager globally"}  backLeft="20px" height="26.625rem"
         >
         <div className="button-container">
         <SecondaryButton to="/programs" buttText="Learn More"/>
@@ -31,17 +31,17 @@ const Training = () => {
 
         
         <HomeCard cardTitle={"Executive Program"} textColor={theme.color.dark} cardText={"This is a personalized training for senior level professionals and experienced product managers looking to expand their product management skills to become product leaderss"}
-        backLeft="20px"
+        backLeft="20px" height="26.625rem"
         >
         <div className="button-container">
-        <SecondaryButton to="/programs" buttText="Learn More"/>
+        <SecondaryButton to="/executive" buttText="Learn More"/>
         </div>
         </HomeCard> 
 
-        <HomeCard cardTitle={"Corperate Training"} textColor={theme.color.light} cardText={"To equip a company’s product team with the specific product management skills to build and deliver their products successfully and achieve their business goals"} backgroundColor={theme.color.primary} 
+        <HomeCard cardTitle={"Corporate Training"} textColor={theme.color.light} cardText={"To equip a company’s product team with the specific product management skills to build and deliver their products successfully and achieve their business goals"} backgroundColor={theme.color.primary} height="26.625rem"
         >
         <div className="button-container">
-        <PrimaryButton to="/programs" buttText="Learn More"/>
+        <PrimaryButton to="/corporate" buttText="Learn More"/>
         </div>
         </HomeCard>
         

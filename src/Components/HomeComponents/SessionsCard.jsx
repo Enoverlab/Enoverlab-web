@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { P } from '../../Utils/Typograpyhy'
 
-const SessionsCard = ({guestJob, guestName, bgUrl, logo}) => {
+const SessionsCard = ({guestJob, guestName, bgUrl, logo, logoWidth}) => {
   return (
-    <StyledSessionCard bgUrl={bgUrl}>
+    <StyledSessionCard bgUrl={bgUrl} logoWidth={logoWidth}>
         <div className="cardText">
                   <div className="name-role">
                   <P fontSize="0.8rem" 
@@ -21,9 +21,9 @@ const SessionsCard = ({guestJob, guestName, bgUrl, logo}) => {
                     lineHeight="0.8rem"
                  className='text'>{guestJob}</P>
                   </div>
-                 {/* <div className="logo-container">
+                 <div className="logo-container">
                   <img className='logo' src={logo} alt="" />
-                 </div> */}
+                 </div>
           </div>    
     </StyledSessionCard>
   )
@@ -74,8 +74,8 @@ const StyledSessionCard = styled.div`
       align-items: flex-start;
      .logo-container{
       position: relative;
-      max-width: 6.0375rem;
-      max-height: 4.1875rem;
+      max-width: ${(props) => props ? props.logoWidth : '5.4rem'};
+      height: auto;
       /* width: 2rem; */
      
    
@@ -89,10 +89,14 @@ const StyledSessionCard = styled.div`
         /* aspect-ratio: calc(1/2); */
         object-position: bottom center;
         /* margin-top: 0.5rem; */
+        @media (max-width: 768px){
+          display: none;
+        }
       }
      }
       @media (max-width: 768px){
         transform: translate(0.5rem, 70%);
+        
       }
     }
 `
