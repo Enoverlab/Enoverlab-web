@@ -1,9 +1,11 @@
+import thumbImg1 from '../../assets/BlogImages/thumbnail.png'
 import thumbImg2 from '../../assets/BlogImages/thumbnail2.png'
 import thumbImg3 from '../../assets/BlogImages/thumbnail3.png'
 import thumbImg4 from '../../assets/BlogImages/thumbnail4.png'
-import blogImg2 from '../../assets/blogImage2.png' 
-import blogImg3 from '../../assets/blogImage3.png'
-import blogImg4 from '../../assets/blogImage4.png'
+import blogImg1 from '../../assets/blog/blogImage1.png'
+import blogImg2 from '../../assets/blog/blogImage2.png' 
+import blogImg3 from '../../assets/blog/blogImage3.png'
+import blogImg4 from '../../assets/blog/blogImage4.png'
 
 export const Article = [
     {
@@ -19,8 +21,8 @@ export const Article = [
         content8: "However, the average salary range are the first figures I shared earlier.",
         content9: "Note: These figures don't apply to companies based outside Nigeria.",
         content10:"Now you know how much a Product Manager earns and can potentially earn as you grow in the career path. I hope this helps you to make a good decision on the next phase of your career.",
-        cardImg: blogImg2,
-        thumbImg: thumbImg2,
+        cardImg: blogImg1,
+        thumbImg: thumbImg1,
         date: "June 25,2022",
         category: "Softskills",
         authorName: "Juila Austin",
@@ -73,8 +75,8 @@ export const Article = [
         }
         ],
         content3:"Again, the responsibilities of a PM can vary between different companies, however, the ones we’ve shared above are what every PM would most likely be involved in an average organization. ",
-        cardImg: blogImg2,
-        thumbImg: thumbImg2,
+        cardImg: blogImg3,
+        thumbImg: thumbImg3,
         date: "June 25,2022",
         category: "Softskills",
         authorName: "Juila Austin",
@@ -95,8 +97,8 @@ export const Article = [
         content6:"Working in the product manager role gives you the opportunity to practically build high level leadership skills without having to go to a high end leadership training program or school. This is because product managers are placed with the responsibility of building products without being given direct authority to lead the team. PM’s have to rely on soft influence, communication and people management skills to lead the development and delivery of products. The leadership skills you will build as a PM can be valuable in any field outside tech.",
         content7:"By coming into product management, you get to transition into tech without having to be technically driven or understand the technicalities of building tech products. A lot of times, people who don’t have flair for writing codes can easily come into tech via the product management route. Now this doesn’t mean that product management is easier than coding - coding is a lot more technical; however, it doesn’t necessarily require coding skills except if you want to be a Technical Product Manager.",
         content8:"Product Mas3fe5tynagement is a high income skill. Experienced PMs who know their craft earn high 6 - 7 figures monthly, sometimes working remotely with added perks etc. Product Managers are well paid for the value they bring to every organization.",
-        cardImg: blogImg2,
-        thumbImg: thumbImg2,
+        cardImg: blogImg4,
+        thumbImg: thumbImg4,
         date: "June 25,2022",
         category: "Softskills",
         authorName: "Juila Austin",

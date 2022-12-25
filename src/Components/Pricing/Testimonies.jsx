@@ -33,19 +33,20 @@ const Testimonies = () => {
                         paddingBottom="0.5rem"
                         mobileFontSize="0.8rem"
                        
-                        >Project Presentation</P>
+                        >Our Training Result</P>
                         <H3 textAlign="left" color={theme.color.dark} fontWeight={500}
                         paddingBottom="0.5rem"
                         
                         >
-                       Here are video snippets of what our students are able to do after their training
+                     Listen to some of our trained Product Manager’s 
+showcase their skills
                         </H3>
-                        <P textAlign="left" color={theme.color.dark}
+                        {/* <P textAlign="left" color={theme.color.dark}
                         mobileFontSize="0.8rem"
                         lineHeight="1.575rem"
                         >
                         We are glad to equip individuals with the digital skills to  accelerate their career as certified product managers that are competent . Learn how product managers enjoyed learning with enoverlab.
-                        </P>
+                        </P> */}
                     </div>
                     <div className="testimonies-flex">
                         <PricingTestimonialCard imgSrc={testImage} flag="🇳🇬"/>

@@ -79,7 +79,7 @@ const StyledWhy = styled.div`
       
     }
     .why-text-container{
-        max-width: 60%;
+        max-width: 45%;
         @media(max-width: 768px){
             max-width: 100%;
         }
@@ -96,7 +96,7 @@ const StyledWhy = styled.div`
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
         grid-gap: 3rem;
-        margin-top: 3rem;
+        margin-top: 5.875rem;
         @media(max-width: 768px){
             display: none;
             grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));

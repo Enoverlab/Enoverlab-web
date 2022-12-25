@@ -94,6 +94,8 @@ const StyledTestimonials = styled.div`
         position: relative;
         margin-bottom: 7.5rem;
         z-index: 3;
+
+
       
     }
     .testimonials-text-container{
@@ -101,6 +103,12 @@ const StyledTestimonials = styled.div`
         @media (max-width: 768px) {
             margin-bottom: 1.9375rem;
             padding: 0 1.5rem;
+        }
+        P{
+            margin-bottom: 0.5rem;
+        }
+        H3{
+            margin-bottom: 0.5rem;
         }
     }
     .testi-slider{

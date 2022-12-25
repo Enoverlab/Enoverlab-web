@@ -11,18 +11,18 @@ const Training = () => {
        <H3 fontWeight={"500"} color={theme.color.dark}>
        Our Training Programs
        </H3>
-       <H4 fontWeight={"300"} color={theme.color.dark}>
+       <H4 fontWeight={"300"} color={theme.color.dark} paddingTop="1rem">
        to become a skilled product manager
         </H4>
         <div className="cardContainer">
         
-        <HomeCard cardTitle={"LevelUp Program"} textColor={theme.color.light} cardText={"If you have taken any basic online product management training and you are looking to upskill and be better equipped to take up a product manager role,this program is for you"} backgroundColor={theme.color.primary} height="26.625rem">
+        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.light} cardText={"This program is for anyone just starting out in product management to learn the required knowledge, skills & tools to become a skilled Product Manager"} backgroundColor={theme.color.primary} height="26.625rem">
         <div className="button-container">
         <PrimaryButton to="/programs" buttText="Learn More"/>
         </div>
         </HomeCard> 
 
-        <HomeCard cardTitle={"Advanced Program"}  textColor={theme.color.dark} cardText={"This program is for you if you are just starting out and want to get all the required knowledge, skills, tools and experience you need to fully take up the role of a product manager globally"}  backLeft="20px" height="26.625rem"
+        <HomeCard cardTitle={"LevelUP Program"}  textColor={theme.color.dark} cardText={"This program is for working product managers looking to LevelUP their product management skills to scale products to the next level"}  backLeft="20px" height="26.625rem"
         >
         <div className="button-container">
         <SecondaryButton to="/programs" buttText="Learn More"/>
@@ -30,7 +30,7 @@ const Training = () => {
         </HomeCard>
 
         
-        <HomeCard cardTitle={"Executive Program"} textColor={theme.color.dark} cardText={"This is a personalized training for senior level professionals and experienced product managers looking to expand their product management skills to become product leaderss"}
+        <HomeCard cardTitle={"Executive Program"} textColor={theme.color.dark} cardText={"This is for senior level professionals looking to get high-level product management knowledge to lead product teams, scale products and grow companies"}
         backLeft="20px" height="26.625rem"
         >
         <div className="button-container">
@@ -38,7 +38,7 @@ const Training = () => {
         </div>
         </HomeCard> 
 
-        <HomeCard cardTitle={"Corporate Training"} textColor={theme.color.light} cardText={"To equip a company’s product team with the specific product management skills to build and deliver their products successfully and achieve their business goals"} backgroundColor={theme.color.primary} height="26.625rem"
+        <HomeCard cardTitle={"Corporate Training"} textColor={theme.color.light} cardText={"This is for companies looking to train their internal team with the product management skills to build and deliver their products successfully and achieve their business objectives"} backgroundColor={theme.color.primary} height="26.625rem"
         >
         <div className="button-container">
         <PrimaryButton to="/corporate" buttText="Learn More"/>
@@ -75,7 +75,7 @@ const StyledTraining = styled.div`
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       row-gap: 4.4375rem;
-      column-gap: 5rem;
+      column-gap: 3.5625rem;
       position: relative;
       @media (max-width: 768px) {
         grid-template-columns: 1fr;

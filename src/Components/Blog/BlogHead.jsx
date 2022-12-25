@@ -52,7 +52,7 @@ const StyledBlogHead = styled.div`
             width: 90%;
             height: 14.625rem;
             background: ${theme.color.quaternary};
-            border: 1px solid ${theme.color.dark};
+            border: 2px solid ${theme.color.dark};
         }
         .blog-head-container-front{
             position: relative;
@@ -63,7 +63,7 @@ const StyledBlogHead = styled.div`
             background-position: center;
             height: 14.625rem;
             background-color: ${theme.color.quaternary};
-            border: 1px solid ${theme.color.dark};
+            border: 2px solid ${theme.color.dark};
             padding: 1.5rem;
             @media (max-width: 768px){
                 

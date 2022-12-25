@@ -75,12 +75,12 @@ const StyledBlogCard = styled.div`
     .blog-card-image{
         width: 100%;
         max-width: 23.875rem;
-        height: auto;
+        height: 18.75rem;
         background-color: #F2F2F2;
         img{
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             border: 1px solid #0000FF;
         }
     }

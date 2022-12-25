@@ -114,7 +114,7 @@ const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
                       ? setWeightResource("600")
                       : setWeightResource("300"),
                   })}
-                  to="/resource"
+                  to="/resources"
                 >
                   <P
                     color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark}

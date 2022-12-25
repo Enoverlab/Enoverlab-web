@@ -39,22 +39,27 @@ const Footer = () => {
             <div className="container-left-2">
                 <a href="/#">
                 <P fontSize="1.3125rem" color={theme.color.dark} textAlign="left" lineHeight="28px">
-                    Company
+                Training Programs
                 </P>
                 </a>
                 <Link to="/programs">
                 <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
-                    Programs
+                Advanced Program
                 </P>
                 </Link>
-                <Link to="/blog">
+                <Link to="/programs">
                 <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
-                    Blog
+                LevelUP Program
                 </P>
                 </Link>
-                <Link to="/about">
+                <Link to="/executive">
                 <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
-                    About us
+                Executive Program
+                </P>
+                </Link>
+                <Link to="/">
+                <P color={theme.color.dark} textAlign="left" fontSize="1rem" lineHeight="28px" mobileFontSize="0.8rem">
+                Corporate Training
                 </P>
                 </Link>
             </div>
@@ -131,6 +136,8 @@ const StyledFooter = styled.div`
                     }
                     .social-icon{
                         color: ${theme.color.dark};
+                        font-size: 1.25rem;
+                        cursor: pointer;
                     }
                 }
 
@@ -174,7 +181,7 @@ const StyledFooter = styled.div`
                     width: 30%;
                     outline: none;
                     background-color: ${theme.color.tertiary};
-                    color: ${theme.color.dark};
+                    color: ${theme.color.light};
                     @media (max-width: 768px){
                         width: 100%;
                     }

@@ -161,6 +161,12 @@ const StyledSession = styled.div`
        
         .session-text-container{
             margin-bottom: 5rem;
+            P{
+                margin-bottom: 0.5rem;
+            }
+            H3{
+                margin-bottom: 1rem;
+            }
             @media (max-width: 768px) {
                 margin-bottom: 2rem;
                P{

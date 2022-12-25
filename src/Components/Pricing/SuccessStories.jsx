@@ -77,16 +77,17 @@ const SuccessStories = () => {
         <div className="success-stories-container">
             <div className="text-head">
             <P textAlign="left" color={theme.color.dark}>
-            Testimonials
+            Reviews and Feedback
             </P>
 
             <H4 fontSize="2.25rem" mobileFontSize="1.875rem" textAlign="left" fontWeight={500} color={theme.color.dark}>
-            Success Stories
+            Hear what people like you have to say 
+about their experience with Enoverlab
             </H4>
 
-            <P textAlign="left" color={theme.color.dark}>
+            {/* <P textAlign="left" color={theme.color.dark}>
             Look at what our community of PMs are sharing online
-            </P>
+            </P> */}
             </div>
 
             <div className="success-stories-cards">
@@ -124,6 +125,11 @@ const StyledSuccessStories = styled.div`
     
         .text-head{
             margin-bottom: 3rem;
+            max-width: 55%;
+
+            @media(max-width: 768px){
+                max-width: 100%;
+            }
         }
         .success-stories-cards{
             display: grid;

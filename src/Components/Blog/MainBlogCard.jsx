@@ -28,9 +28,11 @@ const MainBlogCard = () => {
                 <div className="blog-text">
                     <P 
                     fontSize="1.1rem"
-                    fontWeight="400"
+                    fontWeight="300"
                     color="#4B4B4B"
-                    textAlign="left">
+                    textAlign="left"
+                    lineHeight="1.6875rem"
+                    >
                     Great product teams must see the business customer relationship as a collaborative back and forth to build a greater product.With the input from your customers, your product is better positioned to continually drive value for customers.
                     </P>
                 </div>
@@ -65,13 +67,13 @@ const StyledMainBlogCard = styled.div`
    
     .main-blog-card-container{
         display: flex;
-        gap: 15%;
+        gap: 5%;
         @media (max-width: 768px){
             flex-direction: column;
             margin-top: 7.8125rem;
         }
     .image-container{
-        width: 40%;
+        width: 55%;
         height: auto;
         @media (max-width: 768px){
             width: 100%;

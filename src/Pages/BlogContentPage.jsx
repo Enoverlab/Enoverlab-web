@@ -17,7 +17,7 @@ const BlogContentPage = () => {
     <Header  bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
     <ImageContainer>
       <div className="img-container">
-        <img src={BlogPageImg} alt="blog page" />
+        <img src={article[0]?.cardImg} alt="blog page" />
       </div>
     </ImageContainer>
     <StyledBlogContent>
