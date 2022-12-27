@@ -79,6 +79,7 @@ const StyledPricingCard = styled.div`
                 @media(max-width: 768px){
                     height:  ${props => props.mobileHeight ? props.mobileHeight : "150rem"};
                     width: 100%;
+                    padding: 3rem 1.3rem;
                 }
             }
 

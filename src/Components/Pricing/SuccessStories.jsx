@@ -80,7 +80,7 @@ const SuccessStories = () => {
             Reviews and Feedback
             </P>
 
-            <H4 fontSize="2.25rem" mobileFontSize="1.875rem" textAlign="left" fontWeight={500} color={theme.color.dark}>
+            <H4 fontSize="2.25rem" mobileFontSize="1.25rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%">
             Hear what people like you have to say 
 about their experience with Enoverlab
             </H4>

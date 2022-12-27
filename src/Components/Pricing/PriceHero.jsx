@@ -139,8 +139,7 @@ const PriceHero = () => {
               fontWeight={300}
               color="#4B4B4B"
             >
-              Get the knowledge, skills and tools you need to function
-              effectively in the role of a product manager
+             For anyone just starting out to learn the required skills to become a Product Manager
             </P>
           </div>
         </div>
@@ -238,10 +237,10 @@ const PriceHero = () => {
           cardTitle={"LevelUP Program"}
           textColor={theme.color.dark}
           cardText={
-            "To understand the fundamentals of product management and kickstart your product manager career"
+            "For working Product Managers looking to LevelUp their product management skills"
           }
-          tuitionFee={"N40,000"}
-          duration={"4 Weeks"}
+          tuitionFee={"N150,000"}
+          duration={"7 Weeks"}
           height={"110rem"}
           mobileHeight={"100%"}
           backLeft={"20px"}
@@ -388,7 +387,7 @@ const StyledPriceHero = styled.div`
     bottom: 5%;
     @media (max-width: 768px) {
       position: relative;
-      width: 60%;
+      width: 70%;
     }
   }
 `;
