@@ -18,9 +18,9 @@ const PricingList = ({ listText, listSubText, textColor}) => {
             <H4 fontSize="1.25rem" textAlign="left" color={textColor}  mobileFontSize="0.8rem" >
               {listText} 
             </H4>
-            <P paddingTop="0.25rem" fontSize="1rem" textAlign="left" color={textColor} mobileFontSize= "0.8rem" fontWeight={300} lineHeight="1.3125rem">
+            {/* <P paddingTop="0.25rem" fontSize="1rem" textAlign="left" color={textColor} mobileFontSize= "0.8rem" fontWeight={300} lineHeight="1.3125rem">
               {listSubText}
-            </P>
+            </P> */}
             </div>
           </div>
         </div>
@@ -44,6 +44,7 @@ const StyledPricingList = styled.div`
         margin-bottom: 2.1475rem;
         @media (max-width: 768px) {
           column-gap: 0.5rem;
+          margin-bottom: 1rem;
         }
       }
     }

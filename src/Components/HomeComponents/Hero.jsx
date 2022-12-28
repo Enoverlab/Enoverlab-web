@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="hero-container">
             <HeroText/>
             <H4 fontSize='1.75rem' mobileFontSize="1rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} lineHeight="2.264375rem" textAlign={"left"}>
-            Get the knowledge, skills and tools  you need to function effectively in the  role of a product manager
+            Get the knowledge and skills you need to become an impactful product manager
             </H4>
             <div className="button-container">             
                 <SecondaryButton  to="/programs" buttText="Start Here"/>
