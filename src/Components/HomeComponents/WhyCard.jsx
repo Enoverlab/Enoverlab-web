@@ -27,7 +27,7 @@ export default WhyCard
 
 const StyledWhyCard = styled.div`
     position: relative;
-    background: ${props => props.bgColor ? props.bgColor : theme.color.quaternary};
+    background: ${props => props.bgColor ? props.bgColor : '#DBF5FF'};
     padding: 3rem;
     border: 0.0625rem solid ${theme.color.primary}; 
     @media(max-width: 768px){
@@ -57,6 +57,7 @@ const StyledWhyCard = styled.div`
                 @media (max-width: 768px) {
                     width: 80%;
                     height: 40%;
+                    right: -3rem;
                 }
                 
             }

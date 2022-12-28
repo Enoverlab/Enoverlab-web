@@ -61,7 +61,7 @@ const StyledPricingCard = styled.div`
                 height: ${props => props.height ? props.height : "150rem"};
                 z-index: 1;
                 border: 1px solid ${theme.color.dark};
-                background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
+                background-color: ${props => props.backgroundColor ? props.backgroundColor : '#DBF5FF'};
                 @media (max-width: 768px){
                     width: 100%;
                     height:  ${props => props.mobileHeight ? props.mobileHeight : "150rem"};
@@ -75,7 +75,7 @@ const StyledPricingCard = styled.div`
                 z-index: 2;
                 padding: 3rem;
                 border: 1px solid ${theme.color.dark};
-                background-color: ${props => props.backgroundColor ? props.backgroundColor : theme.color.quaternary};
+                background-color: ${props => props.backgroundColor ? props.backgroundColor : '#DBF5FF'};
                 @media(max-width: 768px){
                     height:  ${props => props.mobileHeight ? props.mobileHeight : "150rem"};
                     width: 100%;

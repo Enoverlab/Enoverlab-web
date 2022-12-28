@@ -194,6 +194,8 @@ const TestiVideoStyled = styled.div`
                 cursor: pointer;
                 width:3.5rem;
                 height: 1rem;
+
+               
             }
             .arrowLeft{
                position: absolute;

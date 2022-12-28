@@ -42,12 +42,12 @@ const Testimonials = () => {
         <img className='bottomCorner' src={bottomCornerStripe} alt="bottom corner stripe" />
         <div className="testimonials-container">
             <div className="testimonials-text-container">
-            <P mobileFontSize="0.6875rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={500}>Project Presentation</P>    
+            {/* <P mobileFontSize="0.6875rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={500}>Project Presentation</P>     */}
             <H3 mobileFontSize="1.554375rem" color={theme.color.light} fontWeight={500}>
             See the results of our training
             </H3>
             <P lineHeight="1.5125rem" mobileFontSize="0.6875rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={500}>
-            Hear what the trained PMs have been able to achieve
+            Hear what our trained PMs have to say
             </P>
             </div>
          <>
@@ -101,7 +101,7 @@ const StyledTestimonials = styled.div`
     .testimonials-text-container{
         /* margin-bottom: 4.9375rem; */
         @media (max-width: 768px) {
-            margin-bottom: 1.9375rem;
+            /* margin-bottom: 1.9375rem; */
             padding: 0 1.5rem;
         }
         P{

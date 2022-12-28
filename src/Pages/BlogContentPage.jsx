@@ -152,9 +152,15 @@ const StyledBlogContent = styled.div`
 
 const ImageContainer = styled.div`
   padding: 2rem 10%;
+  @media (max-width: 768px) {
+    padding: 6rem 5% 2rem 5%;
+  }
   .img-container{
     width: 100%;
-    height: auto;
+    height: 29rem;
+    @media (max-width: 768px) {
+      height: auto;
+    }
     img{
       width: 100%;
       height: 100%;

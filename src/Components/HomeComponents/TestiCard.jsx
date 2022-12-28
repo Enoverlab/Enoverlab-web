@@ -15,10 +15,14 @@ const TestiCard = ({testImg, testName, testRole}) => {
                    </div>
                 </div>
                 <div className="testi-text-container">
-                    <P color={theme.color.light} textAlign="center" fontSize={"1.25rem"} fontWeight={400}>
+                    <P color={theme.color.light} textAlign="center" fontSize={"1.   5rem"} fontWeight={400}
+                    mobileFontSize="1.1rem"
+                    >
                   {testName}
                     </P>
-                    <P color={theme.color.light} textAlign="center" fontSize={"1.125rem"} fontWeight={500}>
+                    <P color={theme.color.light} textAlign="center" fontSize={"1.125rem"} fontWeight={500}
+                    mobileFontSize="0.8rem"
+                    >
                    {testRole}
                     </P>
                 </div>

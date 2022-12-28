@@ -51,9 +51,9 @@ const PricingAbout = () => {
             })
           }
             </div>
-            <div className="button-container">
+            {/* <div className="button-container">
               <MainButton buttText="Register Now" to="" />
-            </div>
+            </div> */}
           </div>
             <div className="pricing-about-image">
                 <img src={PricingImage} alt="pricing about" />
