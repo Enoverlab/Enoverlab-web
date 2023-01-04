@@ -1,27 +1,16 @@
 
-import SessionImage1 from '../../assets/SessionImages/SessionImage1.png'
-import SessionImage2 from '../../assets/SessionImages/SessionImage2.png'
-import SessionImage3 from '../../assets/SessionImages/SessionImage3.png'
-import SessionImage4 from '../../assets/SessionImages/SessionImage4.png'
-import SessionImage5 from '../../assets/SessionImages/SessionImage5.png'
-import SessionImage6 from '../../assets/SessionImages/SessionImage6.png'
-import SessionImage7 from '../../assets/SessionImages/SessionImage7.png'
-import SessionImage8 from '../../assets/SessionImages/SessionImage8.png'
-import SessionImage9 from '../../assets/SessionImages/SessionImage9.png'
-import SessionImage10 from '../../assets/SessionImages/SessionImage10.png'
-import SessionImage11 from '../../assets/SessionImages/SessionImage11.png'
-import SessionImage12 from '../../assets/SessionImages/SessionImage12.png'
-import SessionImage13 from '../../assets/SessionImages/SessionImage13.png'
-import SessionImage14 from '../../assets/SessionImages/SessionImage14.png'
-import SessionImage15 from '../../assets/SessionImages/SessionImage15.png'
-import SessionImage16 from '../../assets/SessionImages/SessionImage16.png'
-import SessionImage17 from '../../assets/SessionImages/SessionImage17.png'
-import SessionImage18 from '../../assets/SessionImages/SessionImage18.png'
-import SessionImage19 from '../../assets/SessionImages/SessionImage19.png'
-import SessionImage20 from '../../assets/SessionImages/SessionImage20.png'
-import SessionImage21 from '../../assets/SessionImages/SessionImage21.png'
-import SessionImage22 from '../../assets/SessionImages/SessionImage22.png'
-import SessionImage23 from '../../assets/SessionImages/SessionImage23.png'
+import SessionImage1 from '../../assets/SessionImages/SessionCard/Image1.png'
+import SessionImage2 from '../../assets/SessionImages/SessionCard/Image2.png'
+import SessionImage3 from '../../assets/SessionImages/SessionCard/Image3.png'
+import SessionImage4 from '../../assets/SessionImages/SessionCard/Image4.png'
+import SessionImage5 from '../../assets/SessionImages/SessionCard/Image5.png'
+import SessionImage6 from '../../assets/SessionImages/SessionCard/Image6.png'
+import SessionImage7 from '../../assets/SessionImages/SessionCard/Image7.png'
+import SessionImage8 from '../../assets/SessionImages/SessionCard/Image8.png'
+import SessionImage9 from '../../assets/SessionImages/SessionCard/Image9.png'
+import SessionImage10 from '../../assets/SessionImages/SessionCard/Image10.png'
+import SessionImage11 from '../../assets/SessionImages/SessionCard/Image11.png'
+import SessionImage12 from '../../assets/SessionImages/SessionCard/Image12.png'
 
 import africanFounders from '../../assets/SessionImages/africanfounders.png'
 import amazon from '../../assets/SessionImages/amazon.png'
@@ -49,78 +38,78 @@ export const SessionObject = [
     {
         bgImage: SessionImage1,
         name: "Ndukwe Igbokwe",
-        role: " Senior Product Manager, Max.ng",
+        role: " Senior Product Manager",
         company: maxNg,
         width: "5.4375em"
     },
     {
         bgImage: SessionImage2,
-        name: "Moshe Mikanovsky",
-        role: "Product Manager, Risk Thinking AI",
-        company: riskthinkingai,
-        width: "7.5rem"
+        name: "Yewande Oyebo ",
+        role: "Product Owner",
+        company: takeAway,
+        width: "5.2375rem"
     },
     {
         bgImage: SessionImage3,
-        name: "Damilola Olayode",
-        role: "Product Manager, Microsoft",
-        company: microsoft,
-        width: "7.5rem"
+        name: "Obiajulu Anayo",
+        role: "Product Manager",
+        company: mouvebetter,
+        width: "8.978125rem"
     },
     {
         bgImage: SessionImage4,
-        name: "Yewande Oyebo ",
-        role: "Product Owner, JustEatTakeaway.com",
-        company: takeAway,
-        width: "4.4375rem"
+        name: "Ewerechukwu Asaka",
+        role: "Product Manager",
+        company: spotify,
+        width: "4.7125rem"
     },
     {
         bgImage: SessionImage5,
-        name: "Theodora Chimonez ",
-        role: "Head of Product,  Salad Africa",
-        company: salad,
-        width: "7.5rem"
+        name: "Oluwaseun Agboola",
+        role: " Product Manager",
+        company: africanFounders,
+        width: "5.1875rem"
     },
     {
         bgImage: SessionImage6,
-        name: "Tochi Emewulu ",
-        role: "Product Manager, Amazon",
-        company: amazon,
+        name: "Moshe Mikanovsky",
+        role: "Product Manager",
+        company: riskthinkingai,
         width: "6rem"
     },
     {
         bgImage: SessionImage7,
-        name: "Obiajulu Anayo",
-        role: "Product Manager, Mouvèbetter",
-        company: mouvebetter,
-        width: "7.5rem"
+        name: "Bridget Iyere ",
+        role: "Product Manager",
+        company: elimu,
+        width: "5.8325rem"
     },
     {
         bgImage: SessionImage8,
         name: "Kehinde Olukoga",
-        role: "Product Manager, Primeramfb",
+        role: "Product Manager",
         company: primeramfb,
         width: "8.9375rem"
     },
     {
         bgImage: SessionImage9,
-        name: "Fumnanya Okeleke-Kooper",
-        role: "Product Manager, SeamlessHR",
-        company: seamlessHr,
-        width: "6.25rem"
+        name: "Damilola Olayode",
+        role: "Product Manager",
+        company: microsoft,
+        width: "6.4325rem"
     },
     {
         bgImage: SessionImage10,
-        name: "Ewerechukwu Asaka ",
-        role: "Product Manager, Spotify",
-        company: spotify,
-        width: "4.6875rem"
+        name: "Tochi Emewulu",
+        role: "Product Manager",
+        company: amazon,
+        width: "5.4375rem"
     },
     {
         bgImage: SessionImage11,
-        name: "Oluwaseun Agboola",
-        role: "Product Manager, African Founders",
-        company: africanFounders,
+        name: "Fumnanya Okeleke-Kooper",
+        role: "Product Manager",
+        company: seamlessHr,
         width: "5.1875rem"
     },
     {
@@ -129,83 +118,6 @@ export const SessionObject = [
         role: "Product Manager, Userpilot",
         company: userpilot,
         width: "6.4375rem"
-    },
-    {
-        bgImage: SessionImage13,
-        name: "Micheal Oragwa ",
-        role: "Product Manager, Topflight Apps",
-        company: tandf,
-        width: "2.5375rem"
-    },
-    {
-        bgImage: SessionImage14,
-        name: "Tobi Adesanya ",
-        role: "Product Manager, Mkopa",
-        company: mkopa,
-        width: "4.4375rem"
-    },
-    {
-        bgImage: SessionImage15,
-        name: "Joshua",
-        role: "Product Manager, Flutterwave",
-        company: flutterWave,
-        width: "3.4375rem"
-    },
-    {
-        bgImage: SessionImage16,
-        name: "Omojo Anwuzia",
-        role: "Product Manager, Microsoft",
-        company: microsoft,
-        width: "7.5rem"
-    },
-    {
-        bgImage: SessionImage17,
-        name: "Bridget Iyere ",
-        role: "Head of Product, Elimu",
-        company: elimu,
-        width: "7.5rem"
-    },
-    {
-        bgImage: SessionImage18,
-        name: "Grace Omole",
-        role: "Product Manager, Niyo",
-        company: niyo,
-        width: "6.4375rem"
-    },
-    {
-        bgImage: SessionImage19,
-        name: "James Amattey",
-        role: "Product Manager, Kidsreadart",
-        company: kidsreadart,
-        width: "6.4375rem"
-    },
-    {
-        bgImage: SessionImage20,
-        name: "Oluwatobi Bamidele",
-        role: "Product Owner,Polaris",
-        company: polaris,
-        width: "5.5rem"
-    },
-    {
-        bgImage: SessionImage21,
-        name: "Oluwaseun Kayode",
-        role: "Product Manager, SchoolQ",
-        company: schoolQ,
-        width: "5.4375rem"
-    },
-    {
-        bgImage: SessionImage22,
-        name: "Oluwatayo Winkunle",
-        role: "Product Manager, Vandease",
-        company: vandease,
-        width: "6.4375rem"
-    },
-    {
-        bgImage: SessionImage23,
-        name: "Joy Chukwukere",
-        role: "Product Manager, Max.ng",
-        company: maxNg,
-        width: "5.4375rem"
-        
     }
+    
 ]

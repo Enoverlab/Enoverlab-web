@@ -68,6 +68,7 @@ const StyledMainBlogCard = styled.div`
     .main-blog-card-container{
         display: flex;
         gap: 5%;
+        align-items: center;
         @media (max-width: 768px){
             flex-direction: column;
             margin-top: 7.8125rem;

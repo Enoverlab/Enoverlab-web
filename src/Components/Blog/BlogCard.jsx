@@ -77,11 +77,19 @@ const StyledBlogCard = styled.div`
         max-width: 23.875rem;
         height: 18.75rem;
         background-color: #F2F2F2;
+        overflow: hidden;
+        border: 1px solid #0000FF;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border: 1px solid #0000FF;
+           
+            transition: transform .5s ease;
+
+            &:hover{
+                transform: scale(1.1);
+               
+            }
         }
     }
     .blog-card-content{

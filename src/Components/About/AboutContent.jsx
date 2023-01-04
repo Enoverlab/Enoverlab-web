@@ -41,10 +41,11 @@ const AboutContent = () => {
               lineHeight="160%"
               paddingTop="1rem"
             >
-              Traditional models of learning no longer support product managers
-              for the modern tech world. We create enoverlab as an innovative
-              laboratory to groom skilled product managers who will create great
-              products via product thinking.
+             Enoverlab is a training institute that provides product 
+management training to individuals and corporate
+organizations.
+
+
             </P>
             <P
               color="#333333"
@@ -54,12 +55,11 @@ const AboutContent = () => {
               lineHeight="160%"
               paddingTop="1rem"
             >
-              Grooming talents with the product management skill set to build
-              thriving products. Enoverlab is building product managers who will
-              innovate products to deliver increasing value to users and drive
-              business growth for organisations. Our mission is to groom talents
-              with the skill set to build products that will thrive into the
-              future.
+             At Enoverlab, we groom talents with the knowledge, skills, 
+tools and experience they need to function effectively in the
+role of a  product manager.
+
+
             </P>
             <P
               color="#333333"
@@ -69,10 +69,26 @@ const AboutContent = () => {
               lineHeight="160%"
               paddingTop="1rem"
             >
-              Our Mission is to help you get started on the career you want.
-              Whether your seeking extra education, or want to transition to a
-              career in tech, We will give you the skills and insight to achieve
-              the success you desire.
+            Every single day, our mission is to build product managers 
+who will lead the development and delivery of impactful 
+products to the world.
+
+            </P>
+            <P
+             color="#333333"
+             fontSize="1.5rem"
+             fontWeight="300"
+             textAlign="left"
+             lineHeight="160%"
+             paddingTop="1rem"
+            >
+            We have a vision to <span
+            style={{fontWeight: "bold"}}
+            > “Move millions of lives forward from 
+where they are to where they want to be through impactful products they use.”</span>
+So we are committed to empowering the product talents 
+that will make this possible today, tomorrow and the future.
+Join us and let’s Move Lives Forward🚀
             </P>
           </div>
         </div>
@@ -87,7 +103,7 @@ const AboutContent = () => {
               textAlign="left"
               fontSize="2rem"
               color="#4B4B4B"
-              fontWeight="500"
+              fontWeight="700"
               paddingBottom="1rem"
               mobileFontSize="2rem"
               lineHeight="3rem"
@@ -106,7 +122,7 @@ const AboutContent = () => {
             <P
               color="#333333"
               fontSize="1.5rem"
-              fontWeight="500"
+              fontWeight="700"
               textAlign="left"
               lineHeight="160%"
               paddingTop="1rem"
@@ -129,7 +145,7 @@ const AboutContent = () => {
             <P
               color="#333333"
               fontSize="1.5rem"
-              fontWeight="500"
+              fontWeight="700"
               textAlign="left"
               lineHeight="160%"
               paddingTop="1rem"
@@ -155,7 +171,7 @@ const AboutContent = () => {
             <P
               color="#333333"
               fontSize="1.5rem"
-              fontWeight="500"
+              fontWeight="700"
               textAlign="left"
               lineHeight="160%"
               paddingTop="1rem"

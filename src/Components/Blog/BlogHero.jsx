@@ -80,11 +80,12 @@ const StyledBlogHero = styled.div`
     text-decoration: none;
   }
   .blog-hero-container {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 8% 5% 8%;
     .blog-card-grid{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2rem;
+      grid-column-gap: 2rem;
+      grid-row-gap: 4rem;
       margin-top: 8.1875rem;
 
       @media screen and (max-width: 768px) {

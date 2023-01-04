@@ -123,7 +123,8 @@ const BlogContentPage = () => {
 export default BlogContentPage;
 
 const StyledBlogContent = styled.div`
-  padding: 2rem 16%;
+  padding: 2rem 25%;
+  
   @media (max-width: 768px) {
     padding: 2rem 5%;
   }

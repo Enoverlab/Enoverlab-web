@@ -100,9 +100,7 @@ import { SessionObject } from './SessionObjects'
         <img src={topCornerSessions} className="topCorner" alt="" />
         <div className="session-container">
             <div className="session-text-container">
-                <P color={theme.color.dark} textAlign="center"  fontSize={"1rem"} fontWeight={300}>
-                    Learn from the best
-                </P>
+               
                 <H3 color={theme.color.dark} fontSize={"1.5rem"} textAlign="center" fontWeight={500}>
                 Our Product Mentors
                 </H3>
@@ -111,15 +109,14 @@ import { SessionObject } from './SessionObjects'
                 </P>
             </div>
 
-             <div className='slider-container'>
-                <Slider ref={slider} {...Settings}>
+             <div className='session-image-grid'>
+              
                     {SessionObject.map((item, index) => {
                         return(
-                            <SessionsCard key={index} guestName={item.name} guestJob={item.role} logo={item.company} bgUrl={item.bgImage} logoWidth={item.width}/>
+                            <SessionsCard key={index} name={item.name} role={item.role} logo={item.company} bgUrl={item.bgImage} logoWidth={item.width}/>
                         )
                     })
                     }
-                </Slider>
             </div> 
 
        
@@ -139,7 +136,7 @@ const StyledSession = styled.div`
     box-sizing: border-box;
     @media (max-width: 768px) {
         padding: 5% 2% 5% 5%;
-        max-height: 80vh;
+        /* max-height: 80vh; */
         margin-bottom: 10%;
     }
     /* @media(max-height: 667px){
@@ -163,6 +160,7 @@ const StyledSession = styled.div`
             margin-bottom: 5rem;
             P{
                 margin-bottom: 0.5rem;
+               
             }
             H3{
                 margin-bottom: 1rem;
@@ -172,6 +170,7 @@ const StyledSession = styled.div`
                P{
                 text-align: left;
                 font-size: 0.8rem;
+                margin-bottom: 0rem;
                }
                H3{
                 text-align: left;
@@ -180,17 +179,18 @@ const StyledSession = styled.div`
         }
     }
    
-    .slider-container{
-        position: relative !important; 
-    padding: 0rem 2% 0rem 3%;
-    
-    @media (max-width: 768px) {
-        padding: 0rem 2% 0rem 0rem;
+    .session-image-grid{
+        padding: 0 5%;
+    /* padding: 0 10%; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+      
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
     }
     }
-
-   
-     
-
-   
 `
