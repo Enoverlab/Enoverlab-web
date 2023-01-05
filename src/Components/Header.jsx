@@ -296,7 +296,7 @@ const StyledHeader = styled.div`
         width: 10%;
       }
       .header-button-container {
-        width: 100%;
+        width: 75%;
         @media (max-width: 768px) {
           display: none;
         }

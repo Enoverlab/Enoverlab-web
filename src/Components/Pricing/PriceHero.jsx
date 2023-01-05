@@ -229,7 +229,7 @@ const PriceHero = () => {
             </div>
           </div>
           <div className="button-container">
-            <PrimaryButton to="/" buttText="Register Now" />
+            <PrimaryButton to="/" buttText="Enrol Now" />
           </div>
         </PricingCard>
 
@@ -293,7 +293,7 @@ const PriceHero = () => {
             </div>
           </div>
           <div className="button-container">
-            <PrimaryButton to="/" buttText="Register Now" />
+            <PrimaryButton to="/" buttText="Enrol Now" />
           </div>
         </PricingCard>
 
@@ -305,7 +305,7 @@ const PriceHero = () => {
 export default PriceHero;
 
 const StyledPriceHero = styled.div`
-  padding: 3% 5% 12% 5%;
+  padding: 3% 8% 12% 8%;
   position: relative;
   /* margin-bottom: 10%; */
   background-color: #fffdf7;
@@ -382,12 +382,12 @@ const StyledPriceHero = styled.div`
     }
   }
   .button-container {
-    width: 35%;
+    width: 30%;
     position: absolute;
     bottom: 5%;
     @media (max-width: 768px) {
       position: relative;
-      width: 70%;
+      width: 55%;
     }
   }
 `;

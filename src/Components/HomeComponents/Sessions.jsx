@@ -76,7 +76,8 @@ import { SessionObject } from './SessionObjects'
                     arrows: false,
                     cssEase: "linear",
                     autoplay: true,
-                    rows: 2
+                    rows: 2,
+                    gap: "2rem",
                 }
             },
             {
@@ -109,16 +110,18 @@ import { SessionObject } from './SessionObjects'
                 </P>
             </div>
 
-             <div className='session-image-grid'>
-              
+            <div className="slider-container">
+
+           
+            <Slider ref={slider} {...Settings}>  
                     {SessionObject.map((item, index) => {
                         return(
                             <SessionsCard key={index} name={item.name} role={item.role} logo={item.company} bgUrl={item.bgImage} logoWidth={item.width}/>
                         )
                     })
                     }
-            </div> 
-
+            </Slider> 
+            </div>
        
      
         </div>
@@ -130,12 +133,12 @@ import { SessionObject } from './SessionObjects'
 export default Sessions
 
 const StyledSession = styled.div`
-    padding: 5% 0% 2% 0%;
+    padding: 5% 7% 2% 7%;
     position: relative;
     height: 150%;
     box-sizing: border-box;
     @media (max-width: 768px) {
-        padding: 5% 2% 5% 5%;
+        padding: 5% 2% 5% 2%;
         /* max-height: 80vh; */
         margin-bottom: 10%;
     }
@@ -154,16 +157,13 @@ const StyledSession = styled.div`
         }
     .session-container{
         position: relative;
-        margin-top: 5%;
-       
         .session-text-container{
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
             P{
-                margin-bottom: 0.5rem;
-               
+                margin-bottom: 0.5rem;       
             }
             H3{
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
             }
             @media (max-width: 768px) {
                 margin-bottom: 2rem;
@@ -193,4 +193,5 @@ const StyledSession = styled.div`
         grid-gap: 0.5rem;
     }
     }
+    
 `

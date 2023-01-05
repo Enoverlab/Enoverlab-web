@@ -3,14 +3,15 @@ import React, {useState} from 'react'
  import { H4, P } from '../../Utils/Typograpyhy'
  const SessionsCard = ({bgUrl, logo, logoWidth, role, name}) => {
     const [isHover, setIsHover] = useState(false)
+    const mobileView = window.matchMedia('(max-width: 768px)').matches
   return (
     <SessionsCardContainer bgUrl={bgUrl} logoWidth={logoWidth}>
-        <div className={`sessions-card-${isHover ? 'hover' : 'not-hover'}`}
+        <div className={`sessions-card-${isHover || mobileView ? 'hover' : 'not-hover'}`}
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
         >
             {
-                isHover ? (
+                isHover || mobileView  ? (
                     <div className="sessions-card-content">
                         <div className="overlay" />
                        <div className="details-container">
@@ -61,6 +62,9 @@ const SessionsCardContainer = styled.div`
 
         @media (max-width: 768px){
             height: 15.445rem;
+            filter: grayscale(0);
+            width: 95%;
+            margin: 0.5rem 0;
         }
         @media screen and (min-width: 2560px) {
             height: 40.625rem;
@@ -79,8 +83,10 @@ const SessionsCardContainer = styled.div`
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        @media (max-width: 768px){
+        @media screen and (max-width: 768px){
             height: 15.445rem;
+            width: 95%;
+            margin: 0.5rem 0;
         }
         @media screen and (min-width: 2560px) {
             height: 40.625rem;
@@ -125,4 +131,5 @@ const SessionsCardContainer = styled.div`
             }
         }
     }
+   
 `

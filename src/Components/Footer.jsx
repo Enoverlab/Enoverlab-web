@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { theme } from "../Utils/Theme";
 import { P } from "../Utils/Typograpyhy";
 import { AiFillLinkedin } from "react-icons/ai";
-import { FaFacebookMessenger, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitter, FaYoutube, FaInstagramSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/enovLogo.png";
 const Footer = () => {
@@ -19,22 +19,23 @@ const Footer = () => {
               lineHeight="28px"
               color={theme.color.dark}
               textAlign="left"
-              fontSize="1rem"
+              fontSize="0.9rem"
               mobileFontSize="0.8rem"
             >
               Building product managers today,tomorrow and the future
             </P>
             <div className="icon-container">
+            <div className="social-icon">
+                <a href="https://www.linkedin.com/company/enoverlab/">
+                  <FaFacebookSquare />
+                </a>
+              </div>
               <div className="social-icon">
                 <a href="https://www.linkedin.com/company/enoverlab/">
                   <AiFillLinkedin />
                 </a>
               </div>
-              <div className="social-icon">
-                <a href="https://twitter.com/enoverlab">
-                  <FaFacebookMessenger />
-                </a>
-              </div>
+          
               <div className="social-icon">
                 <a href="https://twitter.com/enoverlabng">
                   <FaTwitter />
@@ -43,6 +44,11 @@ const Footer = () => {
               <div className="social-icon">
                 <a href="https://twitter.com/enoverlabng">
                   <FaYoutube />
+                </a>
+              </div>
+              <div className="social-icon">
+                <a href="https://twitter.com/enoverlabng">
+                  <FaInstagramSquare/>
                 </a>
               </div>
             </div>
@@ -62,7 +68,7 @@ const Footer = () => {
               <P
                 color={theme.color.dark}
                 textAlign="left"
-                fontSize="1rem"
+                fontSize="0.9rem"
                 paddingTop="0.58rem"
               >
                 Receive important product management info weekly
@@ -72,7 +78,7 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <div className="container-left-2">
-            <a href="/#">
+          
               <P
                 fontSize="1.3125rem"
                 color={theme.color.dark}
@@ -83,7 +89,7 @@ const Footer = () => {
               >
                 Programs
               </P>
-            </a>
+            
             <Link to="/programs">
               <P
                 color={theme.color.dark}
@@ -91,6 +97,7 @@ const Footer = () => {
                 fontSize="1rem"
                 lineHeight="28px"
                 mobileFontSize="0.8rem"
+                fontWeight="300"
               >
                 Advanced Program
               </P>
@@ -102,6 +109,7 @@ const Footer = () => {
                 fontSize="1rem"
                 lineHeight="28px"
                 mobileFontSize="0.8rem"
+                fontWeight="300"
               >
                 LevelUP Program
               </P>
@@ -113,6 +121,7 @@ const Footer = () => {
                 fontSize="1rem"
                 lineHeight="28px"
                 mobileFontSize="0.8rem"
+                fontWeight="300"
               >
                 Executive Program
               </P>
@@ -124,13 +133,26 @@ const Footer = () => {
                 fontSize="1rem"
                 lineHeight="28px"
                 mobileFontSize="0.8rem"
+                fontWeight="300"
               >
                 Corporate Training
               </P>
             </Link>
+            <Link to="/">
+              <P
+                color={theme.color.dark}
+                textAlign="left"
+                fontSize="1rem"
+                lineHeight="28px"
+                mobileFontSize="0.8rem"
+                fontWeight="300"
+              >
+                Onsite Training
+              </P>
+            </Link>
           </div>
           <div className="container-left-2">
-            <a href="/#">
+            
               <P
                 fontSize="1.3125rem"
                 color={theme.color.dark}
@@ -141,7 +163,7 @@ const Footer = () => {
               >
                 Free Resource
               </P>
-            </a>
+            
             <Link to="/blog">
               <P
                 color={theme.color.dark}
@@ -149,6 +171,7 @@ const Footer = () => {
                 fontSize="1rem"
                 lineHeight="28px"
                 mobileFontSize="0.8rem"
+                fontWeight="300"
               >
                 Blog
               </P>
@@ -160,6 +183,7 @@ const Footer = () => {
                 fontSize="1rem"
                 lineHeight="28px"
                 mobileFontSize="0.8rem"
+                fontWeight="300"
               >
                 E-books
               </P>
@@ -171,6 +195,7 @@ const Footer = () => {
                 fontSize="1rem"
                 lineHeight="28px"
                 mobileFontSize="0.8rem"
+                fontWeight="300"
               >
                 Product Sessions
               </P>
@@ -182,6 +207,7 @@ const Footer = () => {
                 fontSize="1rem"
                 lineHeight="28px"
                 mobileFontSize="0.8rem"
+                fontWeight="300"
               >
                 Career Advisor
               </P>
@@ -205,7 +231,7 @@ const Footer = () => {
               fontSize="1rem"
               lineHeight="28px"
               mobileFontSize="0.8rem"
-             
+              fontWeight="300"
             >
               About Us
             </P>
@@ -217,6 +243,7 @@ const Footer = () => {
               fontSize="1rem"
               lineHeight="28px"
               mobileFontSize="0.8rem"
+              fontWeight="300"
             >
               Our Team
             </P>
@@ -229,6 +256,7 @@ const Footer = () => {
               fontSize="1rem"
               lineHeight="28px"
               mobileFontSize="0.8rem"
+              fontWeight="300"
             >
               Reviews
             </P>
@@ -240,6 +268,7 @@ const Footer = () => {
               fontSize="1rem"
               lineHeight="28px"
               mobileFontSize="0.8rem"
+              fontWeight="300"
             >
               Community
             </P>
@@ -272,6 +301,7 @@ const Footer = () => {
           paddingTop="1rem"
           color={theme.color.dark}
           textAlign="center"
+          fontSize="1rem"
         >
           Copyright @ enoverlab 2022. All Rights Reserved.
         </P>
@@ -284,7 +314,7 @@ export default Footer;
 
 const StyledFooter = styled.div`
   background-color: ${theme.color.lightBlue};
-  padding: 10% 10% 5% 10%;
+  padding: 4% 5% 5% 5%;
   @media (max-width: 768px) {
     padding: 10% 5%;
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {H3, P} from '../../Utils/Typograpyhy'
+import {H4, P} from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 import Slider from 'react-slick'
 import testImage from '../../assets/PricingTestimonial1.png'
@@ -28,19 +28,14 @@ const Testimonies = () => {
             <StyledTestimonies>
                 <div className="testimonies-container">
                     <div className="testimonies-header">
-                        <P textAlign="left" color={theme.color.dark}
-                        fontSize="1rem"
-                        paddingBottom="0.5rem"
-                        mobileFontSize="0.8rem"
+                        <P textAlign="left" color={theme.color.dark}>
                        
-                        >Our Training Result</P>
-                        <H3 textAlign="left" color={theme.color.dark} fontWeight={500}
-                        paddingBottom="0.5rem"
-                        
+                        Our Training Result</P>
+                        <H4 fontSize="2.25rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%"
                         >
                      Listen to some of our trained Product Manager’s 
 showcase their skills
-                        </H3>
+                        </H4>
                         {/* <P textAlign="left" color={theme.color.dark}
                         mobileFontSize="0.8rem"
                         lineHeight="1.575rem"
