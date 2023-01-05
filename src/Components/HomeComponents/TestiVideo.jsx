@@ -25,11 +25,6 @@ const TestiData = [
         name: "Buchi Abubakre",
         role: "Product Manger,Skype"
     },
-    {
-        imgLink: testiImage3,
-        name: "Buchi Abubakre",
-        role: "Product Manger,Skype"
-    }
 ]
 
 
@@ -41,9 +36,58 @@ const TestiVideo = () => {
     let slider1 = []
     let slider2 = []
 
+    const [slideIndex, setSlideIndex] = useState(0)
+    const [slideIndex1, setSlideIndex1] = useState(1)
+    const [slideIndex2, setSlideIndex2] = useState(2)
    
 
-    
+    const handleCarousel = (index) => {
+        if(index === 0){
+            setSlideIndex(0)
+            setSlideIndex1(1)
+            setSlideIndex2(2)
+        }else if(index === 1){
+            setSlideIndex(1)
+            setSlideIndex1(2)
+            setSlideIndex2(0)
+        }else if(index === 2){
+            setSlideIndex(2)
+            setSlideIndex1(0)
+            setSlideIndex2(1)
+        }
+    }
+
+    const handleNext = (index) => {
+        if(slideIndex === 0){
+            setSlideIndex(1)
+            setSlideIndex1(2)
+            setSlideIndex2(0)
+        }else if(slideIndex === 1){
+            setSlideIndex(2)
+            setSlideIndex1(0)
+            setSlideIndex2(1)
+        }else if(slideIndex === 2){
+            setSlideIndex(0)
+            setSlideIndex1(1)
+            setSlideIndex2(2)
+        }
+    }
+
+    const handlePrev = () => {
+        if(slideIndex === 0){
+            setSlideIndex(2)
+            setSlideIndex1(0)
+            setSlideIndex2(1)
+        }else if(slideIndex === 1){
+            setSlideIndex(0)
+            setSlideIndex1(1)
+            setSlideIndex2(2)
+        }else if(slideIndex === 2){
+            setSlideIndex(1)
+            setSlideIndex1(2)
+            setSlideIndex2(0)
+        }
+    }
     
 
     React.useEffect(() => {
@@ -73,8 +117,14 @@ const TestiVideo = () => {
   return (
     <TestiVideoStyled>
         <div className='top-slider-container'>
-        <Slick asNavFor={nav2}
-        ref={slider => {(slider1 = slider); slideRef.current = slider}} {...settings}
+        {
+            <div className="testi-desktop">
+             <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role} />
+            </div>
+        }
+        <div className="testi-mobile">
+        <Slick 
+        ref={slideRef} {...settings}
         >
             {TestiData.map((slider, index) => (
                     <div key={index}>
@@ -89,29 +139,30 @@ const TestiVideo = () => {
                 <img src={arrowWhite} alt="arrow" className="arrowRight" onClick={()=> slideRef?.current?.slickNext()} />
             </div>
         </div>
-    </div>
+        </div>
+      
+    </div> 
 
     <div className='bottom-slider-container'>
-        <Slick asNavFor={nav1} 
-        ref={slider => {(slider2 = slider); slideRef.current = slider} } {...bottomSetting}>
-            {TestiData.map((slider, index) => (
-                    <div key={index} className="bottom-container">
-                        <div className="bottomImg-container">
-                        <img src={slider.imgLink} alt="" className='mini' />
-                        </div>
-                    <H4 textAlign="left" fontWeight="400" color='#FFF' fontSize="1rem" lineHeight="1.625rem">
-                        {slider.name}
-                    </H4>
-                    <P textAlign="left" fontWeight="800" color='#FFF' fontSize="0.75rem" lineHeight="1.125rem">
-                        {slider.role}
-                    </P>
-                    </div>
-            ))}
-        </Slick>
+        <div className="bottom-carousel-container">
+        {/* box1 */}
+            <div className="slideboxInactive" onClick={() =>handleCarousel(slideIndex1)}>
+                <TestiCard testImg={TestiData[slideIndex1].imgLink} testName={TestiData[slideIndex1].name} testRole={TestiData[slideIndex1].role}  />
+            </div>
+            {/* box2 */}
+            <div className="slideboxActive" onClick={() =>handleCarousel(slideIndex)}>
+                <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role}  />
+            </div>
+            {/* box3 */}
+            <div className="slideboxInactive" onClick={() =>handleCarousel(slideIndex2)}>
+                <TestiCard testImg={TestiData[slideIndex2].imgLink} testName={TestiData[slideIndex2].name} testRole={TestiData[slideIndex2].role}  />
+            </div>
+        </div>
+
         <div className="slide-containers">
            <div className="slide-arrow">
-                <img src={arrowWhiteLeft} alt="arrow" className="arrowLeft" onClick={()=> slideRef?.current?.slickPrev()} />
-                <img src={arrowWhite} alt="arrow" className="arrowRight" onClick={()=> slideRef?.current?.slickNext()} />
+                <img src={arrowWhiteLeft} alt="arrow" className="arrowLeft" onClick={()=> handleNext()} />
+                <img src={arrowWhite} alt="arrow" className="arrowRight" onClick={()=> handlePrev()} />
             </div>
         </div>
     </div>
@@ -133,10 +184,41 @@ const TestiVideoStyled = styled.div`
             padding: 3.25rem 5%;
         }
     }
+
+    .testi-mobile{
+        display: none;
+        @media (max-width: 768px){
+            display: block;
+        }
+    }
+    .testi-desktop{
+        display: block;
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
     .bottom-slider-container{
-        padding: 0% 15% 0 20%;
+        padding: 0% 10% 0 10%;
         position: relative;
+        display: flex;
+        justify-content: center;
         /* width: 100vw; */
+        .bottom-carousel-container{
+            display: flex;
+            align-items: center;
+            column-gap: 1rem;
+            .slideboxInactive{
+                width: 14.6875rem;
+                height: 17.625rem;
+                transform: translateY(3rem);
+            }
+            .slideboxActive{
+                width: 18.125rem;
+                height: 13.5rem;
+            }
+        }
+
+
         @media(max-width: 768px) {
             display: none;
         }
