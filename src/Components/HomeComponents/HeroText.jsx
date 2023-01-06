@@ -28,14 +28,14 @@ const HeroText = () => {
         <div className="hero-text-container">
             <div className="hero-row">
             <div className="hero-text1">
-            <H1 lineHeight="5.75rem"
+            <H1 lineHeight="4.5rem"
             color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem">
            Launch your &nbsp; 
             </H1>
             </div>
             <div className="hero-text2">
             <H1 
-            lineHeight="5.75rem"
+            lineHeight="4.5rem"
             color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem"
             >
             <span className="blue-span">
@@ -47,7 +47,7 @@ const HeroText = () => {
             <div className="hero-row">
             <div className="hero-text3">
             <H1 
-            lineHeight="5.75rem"
+            lineHeight="4.5rem"
             color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem"
             >
             <span className="blue-span">
@@ -57,7 +57,7 @@ const HeroText = () => {
             </div>
             <div className="hero-text4">
            <H1
-            lineHeight="5.75rem"
+            lineHeight="4.5rem"
             color="#4B4B4B;" fontSize="4.5rem" fontWeight={"400"} textAlign={"left"} mobileFontSize="2rem"
             >
             <span className=''>

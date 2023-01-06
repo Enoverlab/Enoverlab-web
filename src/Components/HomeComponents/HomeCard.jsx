@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import {theme} from '../../Utils/Theme'
 import { H3, P } from '../../Utils/Typograpyhy'
 
-const HomeCard = ({children, cardTitle, cardText, backgroundColor, textColor, backLeft}) => {
+const HomeCard = ({children, cardTitle, cardText, backgroundColor, textColor, backLeft, height}) => {
   return (
-    <StyledHomeCard backgroundColor={backgroundColor} backLeft={backLeft}>
+    <StyledHomeCard backgroundColor={backgroundColor} backLeft={backLeft} height={height}>
         <div className="home-card-container">
             <div className="card-container-back">
             </div>

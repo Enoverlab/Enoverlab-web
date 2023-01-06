@@ -16,9 +16,9 @@ import { SessionObject } from './SessionObjects'
         speed: 500,
         slidesToShow: 4,
         rows: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 5000,
         cssEase: "linear",
         arrows: false,
         infinite: true,
@@ -28,7 +28,7 @@ import { SessionObject } from './SessionObjects'
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 1,
+                    slidesToScroll: 3,
                     infinite: true,
                     dots: false,
                     arrows: false,
@@ -41,7 +41,7 @@ import { SessionObject } from './SessionObjects'
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                     initialSlide: 2,
                     dots: false,
                     arrows: false,
@@ -55,7 +55,7 @@ import { SessionObject } from './SessionObjects'
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                     initialSlide: 2,
                     dots: false,
                     arrows: false,
@@ -102,12 +102,13 @@ import { SessionObject } from './SessionObjects'
         <div className="session-container">
             <div className="session-text-container">
                
-                <H3 color={theme.color.dark} fontSize={"1.5rem"} textAlign="center" fontWeight={500}>
-                Our Product Mentors
-                </H3>
-                <P  lineHeight="1.5125rem" color={theme.color.dark} textAlign="center"  fontSize={"1rem"} fontWeight={300}>
-                The amazing product managers from tech companies all over the world who have been part of our product sessions
-                </P>
+            <H3 mobileFontSize="1.554375rem" color={theme.color.dark} fontWeight={500}>
+            Our Product Mentors
+            </H3>
+            <P lineHeight="1.5125rem" mobileFontSize="0.6875rem" color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>
+            The Amazing Product Managers who have been part of our sessions
+            </P>
+
             </div>
 
             <div className="slider-container">
@@ -133,7 +134,7 @@ import { SessionObject } from './SessionObjects'
 export default Sessions
 
 const StyledSession = styled.div`
-    padding: 5% 7% 2% 7%;
+    padding: 5% 7% 10% 7%;
     position: relative;
     height: 150%;
     box-sizing: border-box;
@@ -160,11 +161,11 @@ const StyledSession = styled.div`
         .session-text-container{
             margin-bottom: 3rem;
             P{
-                margin-bottom: 0.5rem;       
-            }
-            H3{
-                margin-bottom: 0.5rem;
-            }
+            margin-bottom: 0.5rem;
+        }
+        H3{
+            margin-bottom: 0.5rem;
+        }
             @media (max-width: 768px) {
                 margin-bottom: 2rem;
                P{

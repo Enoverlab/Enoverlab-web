@@ -28,9 +28,7 @@ const Why = () => {
     <StyledWhy>
         <div className="why-container">
             <div className="why-text-container">
-            <H4 mobileFontSize="0.75rem"  textAlign="left" color={theme.color.dark} fontWeight="400">
-            Live Product Classes
-            </H4>
+            
             <H3 mobileFontSize="1.3rem" textAlign="left" color={theme.color.dark} fontWeight="500">
             Why Learn at enoverlab?
             </H3>

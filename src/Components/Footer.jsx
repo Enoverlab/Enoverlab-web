@@ -15,15 +15,19 @@ const Footer = () => {
            <div className="logo-container">
               <img src={logo} alt="logo" />
            </div>
-            <P
+           <div className="slogan">
+           <P
               lineHeight="28px"
               color={theme.color.dark}
               textAlign="left"
               fontSize="0.9rem"
               mobileFontSize="0.8rem"
             >
-              Building product managers today,tomorrow and the future
+              Building product managers for today,
+          tomorrow and the future
             </P>
+           </div>
+            
             <div className="icon-container">
             <div className="social-icon">
                 <a href="https://www.linkedin.com/company/enoverlab/">
@@ -32,23 +36,23 @@ const Footer = () => {
               </div>
               <div className="social-icon">
                 <a href="https://www.linkedin.com/company/enoverlab/">
-                  <AiFillLinkedin />
+                  <AiFillLinkedin classname="icon" />
                 </a>
               </div>
           
               <div className="social-icon">
                 <a href="https://twitter.com/enoverlabng">
-                  <FaTwitter />
+                  <FaTwitter classname="icon"/>
                 </a>
               </div>
               <div className="social-icon">
                 <a href="https://twitter.com/enoverlabng">
-                  <FaYoutube />
+                  <FaYoutube classname="icon"/>
                 </a>
               </div>
               <div className="social-icon">
                 <a href="https://twitter.com/enoverlabng">
-                  <FaInstagramSquare/>
+                  <FaInstagramSquare classname="icon"/>
                 </a>
               </div>
             </div>
@@ -298,7 +302,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <P
           mobileFontSize="0.7rem"
-          paddingTop="1rem"
+          paddingTop="2.5rem"
           color={theme.color.dark}
           textAlign="center"
           fontSize="1rem"
@@ -314,14 +318,14 @@ export default Footer;
 
 const StyledFooter = styled.div`
   background-color: ${theme.color.lightBlue};
-  padding: 4% 5% 5% 5%;
+  padding: 4% 8% 4% 8%;
   @media (max-width: 768px) {
     padding: 10% 5%;
   }
   .footer-container {
     display: flex;
     justify-content: space-between;
-    padding: 0% 0% 5% 0%;
+    padding: 0% 0% 8% 0%;
     /* align-items: center; */
     @media (max-width: 768px) {
       flex-direction: column;
@@ -329,7 +333,7 @@ const StyledFooter = styled.div`
     .footer-left {
       display: flex;
       justify-content: space-between;
-      width: 40%;
+      width: 45%;
       @media (max-width: 768px) {
         width: 70%;
         /* justify-content: flex-start; */
@@ -355,6 +359,7 @@ const StyledFooter = styled.div`
             margin-bottom: 0.5rem;
             
            }
+          
         }
         .icon-container {
           display: flex;
@@ -369,7 +374,14 @@ const StyledFooter = styled.div`
             font-size: 1.25rem;
             cursor: pointer;
           }
+          
         }
+        .slogan{
+            P{
+              max-width: 16.25rem;
+            }
+        }
+       
       }
 
       .footer-form {
@@ -419,7 +431,7 @@ const StyledFooter = styled.div`
     .footer-right {
       display: flex;
       justify-content: space-between;
-      width: 55%;
+      width: 50%;
 
       @media (max-width: 768px) {
         width: 100%;
@@ -456,6 +468,7 @@ const StyledFooter = styled.div`
             width: 100%;
           }
         }
+        
         @media (max-width: 768px) {
           display: flex;
           flex-direction: column;
@@ -486,4 +499,7 @@ const StyledFooter = styled.div`
   a {
     text-decoration: none;
   }
+  .icon{
+          font-size: 2rem;
+        }
 `;

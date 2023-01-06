@@ -165,7 +165,7 @@ const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
 export default Header;
 
 const StyledHeader = styled.div`
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 5;
   background-color: ${(props) => (props ? props.bgColor : theme.color.light)};
@@ -297,6 +297,8 @@ const StyledHeader = styled.div`
       }
       .header-button-container {
         width: 75%;
+       
+
         @media (max-width: 768px) {
           display: none;
         }

@@ -57,7 +57,7 @@ const SessionsCardContainer = styled.div`
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        filter: grayscale(100%);
+        filter: grayscale(0);
         transition: all 0.5s ease-in-out;
 
         @media (max-width: 768px){

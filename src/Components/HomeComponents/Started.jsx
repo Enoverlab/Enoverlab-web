@@ -8,7 +8,7 @@ const Started = () => {
   return (
     <StyledStarted>
         <div className="started-container">
-           <H1 mobileFontSize="1.2rem" color= {theme.color.light} fontSize="3.25rem" fontWeight={400} >
+           <H1 mobileFontSize="1.2rem" color= {theme.color.light} fontSize="3.25rem" fontWeight={500} >
            Launch  your Product <br/> Managment career today</H1>
             <div className="button-container">
                 <SecondaryButton to="/programs" buttText="Get Started"  />
@@ -21,7 +21,7 @@ const Started = () => {
 export default Started
 
 const StyledStarted = styled.div`
-    padding: 5% 10% 5% 10%;
+    padding: 5% 12% 5% 12%;
     position: relative;
     /* height: 150vh; */
     /* min-height: 70vh; */
@@ -34,9 +34,10 @@ const StyledStarted = styled.div`
         background-position: center;
         background-repeat: no-repeat;
         padding: 5% 5% 5% 5%;
-        border-radius: 0.5rem;
+        border-radius:1.25rem;
         /* width: 100%; */
         H1{
+            line-height: 4rem;
             @media(max-width: 768px){
                 line-height: 2rem;
             }
