@@ -14,7 +14,7 @@ import arrowRight from '../../assets/slideArrowBlue.png'
 const Testimonies = () => {
     const slider = React.useRef(null)
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -28,7 +28,7 @@ const Testimonies = () => {
             <StyledTestimonies>
                 <div className="testimonies-container">
                     <div className="testimonies-header">
-                        <P textAlign="left" color={theme.color.dark} mobileFontSize="0.8rem" fontWeight={300}>
+                        <P textAlign="left" color={theme.color.dark} mobileFontSize="0.9rem" fontWeight={300}>
                         Our Training Result</P>
                         <H4 fontSize="1.8rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%"
                         >
@@ -72,7 +72,7 @@ export const StyledTestimonies = styled.div`
         padding: 5% 5%; 
         background-color: ${theme.color.tertiary};
         @media (max-width: 768px){
-            padding: 10% 5%;
+            padding: 10% 5% 15% 5%;
         }
         
         .testimonies-header{
@@ -106,6 +106,11 @@ export const StyledTestimonies = styled.div`
             }
         }
 
+        .slick-slider{
+            .slick-dots{
+                bottom: -2rem;
+            }
+        }
       
     }
 `

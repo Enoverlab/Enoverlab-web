@@ -60,7 +60,7 @@ const SuccessData = [
 const SuccessStories = () => {
     const slider = useRef(null)
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -70,13 +70,14 @@ const SuccessStories = () => {
         autoplaySpeed: 4000,
         cssEase: "linear",
         arrows: false,
+
     }
 
   return (
     <StyledSuccessStories>
         <div className="success-stories-container">
             <div className="text-head">
-            <P textAlign="left" color={theme.color.dark} mobileFontSize="0.8rem" fontWeight={300}>
+            <P textAlign="left" color={theme.color.dark} mobileFontSize="0.9rem" fontWeight={300}>
             Reviews and Feedback
             </P>
 
@@ -122,6 +123,9 @@ const StyledSuccessStories = styled.div`
   
     .success-stories-container{
         padding: 5% 5%;
+        @media (max-width: 768px){
+            padding: 5% 5% 15% 5%;
+        }
     
         .text-head{
             margin-bottom: 3rem;

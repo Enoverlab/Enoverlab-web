@@ -15,7 +15,7 @@ const PricingList = ({ listText, listSubText, textColor}) => {
             </H4>
             </div>
             <div className="text-container">
-            <H4 fontSize="1.25rem" textAlign="left" color={textColor}  mobileFontSize="0.8rem" >
+            <H4 fontSize="1.25rem" textAlign="left" color={textColor}  mobileFontSize="0.875rem" >
               {listText} 
             </H4>
             {/* <P paddingTop="0.25rem" fontSize="1rem" textAlign="left" color={textColor} mobileFontSize= "0.8rem" fontWeight={300} lineHeight="1.3125rem">
