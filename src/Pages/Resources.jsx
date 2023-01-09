@@ -14,7 +14,7 @@ const Resources = () => {
         <ResourceHero/>
         <Ebooks/>
         <Events/>
-        <Training/>
+        {/* <Training/> */}
         <Started/>
         <Footer/>
     </div>

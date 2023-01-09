@@ -4,14 +4,17 @@ import blogImage from '../../assets/blogImage.png'
 import { P, H3 } from '../../Utils/Typograpyhy'
 import thumbnailProfile from '../../assets/BlogImages/thumbnail.png'
 import {theme} from '../../Utils/Theme'
+import { Article } from './BlogContent'
+import { Link } from 'react-router-dom'
 const MainBlogCard = () => {
   return (
     <StyledMainBlogCard>
          <div className="main-blog-card-container">
             <div className="image-container">
-                <img src={blogImage} alt="blogImage" />
+                <img src={Article[3].cardImg} alt="blogImage" />
             </div>
             <div className="blog-card-content">
+                <Link to={`${Article[3].id}`}>
                 <div className="category">
                     <P textAlign="left"
                     fontSize="1.25rem"
@@ -23,9 +26,14 @@ const MainBlogCard = () => {
                 fontSize="2rem"
                 color={theme.color.dark}
 
-                >How teamwork fosters your growth as a product manager</H3>
+                >{
+                    Article[3].title
+                }
+                </H3>
                 </div>
+              
                 <div className="blog-text">
+                   
                     <P 
                     fontSize="1.1rem"
                     fontWeight="300"
@@ -33,7 +41,9 @@ const MainBlogCard = () => {
                     textAlign="left"
                     lineHeight="1.6875rem"
                     >
-                    Great product teams must see the business customer relationship as a collaborative back and forth to build a greater product.With the input from your customers, your product is better positioned to continually drive value for customers.
+                    {
+                        Article[3].content1
+                    }
                     </P>
                 </div>
                 <div className="blog-author">
@@ -55,7 +65,9 @@ const MainBlogCard = () => {
                     </P>
                     </div>
                 </div>
+                </Link>
             </div>
+           
         </div>
     </StyledMainBlogCard>
   )

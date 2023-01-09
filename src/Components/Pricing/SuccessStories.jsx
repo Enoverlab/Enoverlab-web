@@ -80,7 +80,7 @@ const SuccessStories = () => {
             Reviews and Feedback
             </P>
 
-            <H4 fontSize="2.25rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%">
+            <H4 fontSize="1.8rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%">
             Hear what people like you have to say 
 about their experience with Enoverlab
             </H4>
@@ -125,7 +125,7 @@ const StyledSuccessStories = styled.div`
     
         .text-head{
             margin-bottom: 3rem;
-            max-width: 55%;
+            max-width: 45%;
 
             @media(max-width: 768px){
                 max-width: 100%;

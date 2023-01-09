@@ -12,30 +12,6 @@ import TestiVideo from './TestiVideo'
 
 
 const Testimonials = () => {
-    const slider = useRef(null)
-   
-    const Settings = {
-        dots: false,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false,
-                    arrows: false,
-
-                }
-            }
-        ]
-    }
   return (
     <StyledTestimonials>
         <img className='topCorner' src={topCornerStripe} alt="top corner stripe" />

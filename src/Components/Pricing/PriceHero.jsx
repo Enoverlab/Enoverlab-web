@@ -147,9 +147,9 @@ const PriceHero = () => {
 
       <div className="pricing-card">
         <PricingCard
-          backgroundColor={theme.color.primary}
+         
           cardTitle={"Advance Program"}
-          textColor={theme.color.light}
+          textColor={theme.color.dark}
           cardText={
             "To learn the required knowledge, skills and tools to fully take up the role of a product manager"
           }
@@ -165,19 +165,19 @@ const PriceHero = () => {
                 key={index}
                 listText={item.listText}
                 listSubText={item.listSubText}
-                textColor={theme.color.light}
+                textColor={theme.color.dark}
               />
             );
           })}
 
           <div className="class-tools-container">
-            <H4 fontSize="1.5rem" textAlign="left" color={theme.color.light}>
+            <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
               Class Tools
             </H4>
             <P
               fontSize="1.125rem"
               textAlign="left"
-              color={theme.color.light}
+              color={theme.color.dark}
               paddingTop="0.6625rem"
               mobileFontSize="1rem"
               fontWeight={300}
@@ -192,7 +192,7 @@ const PriceHero = () => {
             <div
               className="class-tools-icon-vert"
               style={{
-                color: theme.color.light,
+                color: theme.color.dark,
               }}
             >
               <div className="class-tools-icon">
@@ -211,7 +211,7 @@ const PriceHero = () => {
             <div
               className="class-tools-icon-vert"
               style={{
-                color: theme.color.light,
+                color: theme.color.dark,
               }}
             >
               <div className="class-tools-icon">
@@ -234,8 +234,9 @@ const PriceHero = () => {
         </PricingCard>
 
         <PricingCard
+         backgroundColor={theme.color.primary}
           cardTitle={"LevelUP Program"}
-          textColor={theme.color.dark}
+          textColor={theme.color.light}
           cardText={
             "For working Product Managers looking to LevelUp their product management skills"
           }
@@ -251,7 +252,7 @@ const PriceHero = () => {
                 <PricingList
                   index={index}
                   listText={item.listText}
-                  textColor={theme.color.dark}
+                  textColor={theme.color.light}
                 />
               );
             })}
@@ -265,7 +266,7 @@ const PriceHero = () => {
               fontSize="1.125rem"
               fontWeight={300}
               textAlign="left"
-              color={theme.color.dark}
+              color={theme.color.light}
               mobileFontSize="1rem"
             >
               Our online classes are designed around the latest remote product

@@ -72,6 +72,7 @@ const StyledBlogHead = styled.div`
             .searchbar-container{
                 margin: 0 auto;
                 display: flex;
+               
                 justify-content: center;
                 transform: translate(0%, 70%);
                 @media (max-width: 768px){
@@ -81,6 +82,7 @@ const StyledBlogHead = styled.div`
                     position: relative;
                     display: flex;
                     align-items: center;
+                    flex-direction: row-reverse;
                     background-color: ${theme.color.light};
                     border: 1px solid ${theme.color.dark};
                     width: 60%;

@@ -101,7 +101,7 @@ export const SessionObject = [
         name: "Bridget Iyere ",
         role: "Product Manager",
         company: elimu,
-        width: "5.8325rem"
+        width: "7.8325rem"
     },
     {
         bgImage: SessionImage11,

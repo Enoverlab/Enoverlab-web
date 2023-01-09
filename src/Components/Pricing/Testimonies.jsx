@@ -31,9 +31,9 @@ const Testimonies = () => {
                         <P textAlign="left" color={theme.color.dark}>
                        
                         Our Training Result</P>
-                        <H4 fontSize="2.25rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%"
+                        <H4 fontSize="1.8rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%"
                         >
-                     Listen to some of our trained Product Manager’s 
+                     Listen to some of our trained Product Managers
 showcase their skills
                         </H4>
                         {/* <P textAlign="left" color={theme.color.dark}
@@ -77,7 +77,7 @@ export const StyledTestimonies = styled.div`
         }
         
         .testimonies-header{
-            max-width: 60%;
+            max-width: 45%;
             margin-bottom: 2rem;
             @media (max-width: 768px){
                 max-width: 100%;

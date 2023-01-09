@@ -4,9 +4,9 @@ import testiMan from '../../assets/testiMan.png'
 import playIcon from '../../assets/playIcon.png'
 import {P} from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
-const TestiCard = ({testImg, testName, testRole, showButton}) => {
+const TestiCard = ({testImg, testName, testRole, showButton, nameFontSize, nameMobileFontSize, roleFontSize, roleMobileFontSize, textAlign, filterImg}) => {
   return (
-    <StyledTestiCard>
+    <StyledTestiCard filterImg={filterImg}>
         <div className="testi-card-container">
                 <div className="testi-img-container">
                     <img className="testi-man" src={testImg} alt="testi" />
@@ -19,13 +19,13 @@ const TestiCard = ({testImg, testName, testRole, showButton}) => {
                   }
                 </div>
                 <div className="testi-text-container">
-                    <P color={theme.color.light} textAlign="center" fontSize={"1.   5rem"} fontWeight={400}
-                    mobileFontSize="1.1rem"
+                    <P color={theme.color.light} textAlign={textAlign} fontSize={nameFontSize} fontWeight={500}
+                    mobileFontSize={nameMobileFontSize}
                     >
                   {testName}
                     </P>
-                    <P color={theme.color.light} textAlign="center" fontSize={"1.125rem"} fontWeight={500}
-                    mobileFontSize="0.8rem"
+                    <P color={theme.color.light} textAlign={textAlign} fontSize={roleFontSize} fontWeight={400}
+                    mobileFontSize={roleMobileFontSize}
                     >
                    {testRole}
                     </P>
@@ -51,6 +51,7 @@ const StyledTestiCard = styled.div`
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+               opacity: ${props => props.filterImg ? '0.5' : '1'};
             }
             .play-icon-container{
                 position: absolute;
@@ -74,10 +75,11 @@ const StyledTestiCard = styled.div`
         }
 
         .testi-text-container{
-            margin-top: 1.375rem;
+            margin-top: 0.5rem;
             @media(max-width: 768px){
                 P{
                     text-align: center;
+                    opacity: ${props => props.filterImg ? '0.5' : '1'};
                 }
             }
         }

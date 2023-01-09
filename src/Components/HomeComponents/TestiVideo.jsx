@@ -119,7 +119,7 @@ const TestiVideo = () => {
         <div className='top-slider-container'>
         {
             <div className="testi-desktop">
-             <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role} showButton/>
+             <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role} showButton nameFontSize={"2rem"} nameMobileFontSize={"1.5rem"} roleFontSize="1.5rem" roleMobileFontSize={"1rem"}/>
             </div>
         }
         <div className="testi-mobile">
@@ -128,7 +128,7 @@ const TestiVideo = () => {
         >
             {TestiData.map((slider, index) => (
                     <div key={index}>
-                       <TestiCard testImg={slider.imgLink} testName={slider.name} testRole={slider.role} showButton/>
+                       <TestiCard testImg={slider.imgLink} testName={slider.name} testRole={slider.role} showButton nameFontSize={"2rem"} nameMobileFontSize={"1.5rem"} roleFontSize="1.5rem" roleMobileFontSize={"1rem"}/>
                     </div>
             ))}
        
@@ -147,15 +147,15 @@ const TestiVideo = () => {
         <div className="bottom-carousel-container">
         {/* box1 */}
             <div className="slideboxInactive" onClick={() =>handleCarousel(slideIndex1)}>
-                <TestiCard testImg={TestiData[slideIndex1].imgLink} testName={TestiData[slideIndex1].name} testRole={TestiData[slideIndex1].role}  />
+                <TestiCard testImg={TestiData[slideIndex1].imgLink} testName={TestiData[slideIndex1].name} testRole={TestiData[slideIndex1].role} nameFontSize={"0.8rem"} nameMobileFontSize={"0.8rem"} roleFontSize="0.55rem" roleMobileFontSize={"0.55rem"} textAlign="left" filterImg />
             </div>
             {/* box2 */}
             <div className="slideboxActive" onClick={() =>handleCarousel(slideIndex)}>
-                <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role}  />
+                <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role} nameFontSize={"1rem"} nameMobileFontSize={"0.8rem"} roleFontSize="0.75rem" roleMobileFontSize={"0.65rem"} textAlign="left" />
             </div>
             {/* box3 */}
             <div className="slideboxInactive" onClick={() =>handleCarousel(slideIndex2)}>
-                <TestiCard testImg={TestiData[slideIndex2].imgLink} testName={TestiData[slideIndex2].name} testRole={TestiData[slideIndex2].role}  />
+                <TestiCard testImg={TestiData[slideIndex2].imgLink} testName={TestiData[slideIndex2].name} testRole={TestiData[slideIndex2].role} nameFontSize={"0.8rem"} nameMobileFontSize={"0.8rem"} roleFontSize="0.55rem" roleMobileFontSize={"0.55rem"} textAlign="left"  filterImg/>
             </div>
         </div>
 

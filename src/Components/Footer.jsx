@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../Utils/Theme";
-import { P } from "../Utils/Typograpyhy";
+import { P, H4 } from "../Utils/Typograpyhy";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaFacebookSquare, FaTwitter, FaYoutube, FaInstagramSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -83,7 +83,7 @@ const Footer = () => {
         <div className="footer-right">
           <div className="container-left-2">
           
-              <P
+              <H4
                 fontSize="1.3125rem"
                 color={theme.color.dark}
                 textAlign="left"
@@ -92,7 +92,7 @@ const Footer = () => {
                 mobileFontSize="1rem"
               >
                 Programs
-              </P>
+              </H4>
             
             <Link to="/programs">
               <P
@@ -157,7 +157,7 @@ const Footer = () => {
           </div>
           <div className="container-left-2">
             
-              <P
+              <H4
                 fontSize="1.3125rem"
                 color={theme.color.dark}
                 textAlign="left"
@@ -166,7 +166,7 @@ const Footer = () => {
                 mobileFontSize="1rem"
               >
                 Free Resource
-              </P>
+              </H4>
             
             <Link to="/blog">
               <P
@@ -218,7 +218,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="container-right-1">
-            <P
+            <H4
               fontSize="1.3125rem"
               color={theme.color.dark}
               textAlign="left"
@@ -227,7 +227,7 @@ const Footer = () => {
                 mobileFontSize="1rem"
             >
               Company
-            </P>
+            </H4>
             <Link to="/about">
             <P
               color={theme.color.dark}
@@ -383,6 +383,7 @@ const StyledFooter = styled.div`
         }
        
       }
+     
 
       .footer-form {
         margin-top: 1.5rem;
@@ -440,8 +441,7 @@ const StyledFooter = styled.div`
         grid-row-gap: 3.125rem;
         margin-top: 4rem;
       }
-      .container-right-1 {
-      }
+     
       .footer-form {
         margin-top: 1.5rem;
         display: none;
@@ -491,6 +491,14 @@ const StyledFooter = styled.div`
           }
         }
     }
+    .container-left-2, .container-right-1{
+        P{
+          &:hover{
+            color: ${theme.color.primary};
+          }
+        }
+      }
+     
     }
     p {
       margin-bottom: 0.75rem;

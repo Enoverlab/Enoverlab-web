@@ -25,8 +25,9 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                <div className="blog-title">
                     <P textAlign="left"
                     fontSize="1.5rem"
-                    color={theme.color.dark}
+                    color={"#0D2A57"}
                     lineHeight="1.9rem"
+                    fontWeight={500}
                     >
                       {contentTitle}
                     </P>
