@@ -31,7 +31,9 @@ const Hero = () => {
     <StyledHero>
         <div className="hero-container">
             <HeroText/>
-            <H4 fontSize='1.75rem' mobileFontSize="1rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} lineHeight="2.264375rem" textAlign={"left"}>
+            <H4 fontSize='1.75rem' mobileFontSize="1rem" mobileLineHeight="1.3125rem" color={"#4B4B4B"} fontWeight={"300"} lineHeight="2.264375rem" textAlign={"left"}
+            paddingTop="0.5rem"
+            >
             Get the knowledge and skills you need to become an impactful product manager
             </H4>
             <div className="button-container">             
@@ -71,7 +73,7 @@ const StyledHero = styled.div`
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    padding: 10rem 5% 5rem 5%;
+    padding: 12rem 5% 5rem  5%;
     background-color: #FFFFFF;
     @media (max-width: 768px) {
         flex-direction: column;

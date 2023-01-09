@@ -5,6 +5,7 @@ import { P } from "../Utils/Typograpyhy";
 import {
   PrimaryButton,
   SecondaryButton,
+  StyledSecondaryButton,
   TertiaryButton,
 } from "../Utils/Buttons";
 import logo from "../assets/enovLogo.png";
@@ -177,7 +178,7 @@ const StyledHeader = styled.div`
     width: 99%;
     justify-content: space-between;
     align-items: center;
-    padding: 2.625rem 4%;
+    padding: 1rem 4%;
     @media (max-width: 768px) {
       padding: 1.25rem 4%;
     }
@@ -296,11 +297,12 @@ const StyledHeader = styled.div`
         width: 10%;
       }
       .header-button-container {
-        width: 75%;
-       
+        width: 100%;
+        padding-left: 4rem;
 
         @media (max-width: 768px) {
           display: none;
+          padding-left: 0;
         }
       }
       .menu-icon-container {

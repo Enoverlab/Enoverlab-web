@@ -38,7 +38,7 @@ export default BlogHead
 const StyledBlogHead = styled.div`
     position: relative;
     width: 100%;
-    padding: 5% 5% 5% 10%;
+    padding: 12% 5% 5% 10%;
     @media(max-width: 768px){
         padding: 30% 2% 5% 5%;
     }

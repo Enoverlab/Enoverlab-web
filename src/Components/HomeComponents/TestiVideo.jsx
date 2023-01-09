@@ -119,7 +119,7 @@ const TestiVideo = () => {
         <div className='top-slider-container'>
         {
             <div className="testi-desktop">
-             <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role} />
+             <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role} showButton/>
             </div>
         }
         <div className="testi-mobile">
@@ -128,7 +128,7 @@ const TestiVideo = () => {
         >
             {TestiData.map((slider, index) => (
                     <div key={index}>
-                       <TestiCard testImg={slider.imgLink} testName={slider.name} testRole={slider.role} />
+                       <TestiCard testImg={slider.imgLink} testName={slider.name} testRole={slider.role} showButton/>
                     </div>
             ))}
        
@@ -283,6 +283,7 @@ const TestiVideoStyled = styled.div`
                position: absolute;
                 left: 15%;
                 bottom: 50%;
+               opacity: 0.5;
             }
             .arrowRight{
                 position: absolute;
@@ -314,6 +315,7 @@ const TestiVideoStyled = styled.div`
                position: absolute;
                 left: 10%;
                 bottom: 0;
+                opacity: 0.5;
             }
             .arrowRight{
                 position: absolute;

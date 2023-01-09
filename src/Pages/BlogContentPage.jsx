@@ -32,10 +32,10 @@ const BlogContentPage = () => {
         {article[0]?.title}{" "}
       </H1>
      </div>
-      <P textAlign="left" fontSize="1.125rem" color="#4B4B4B">
+      <P textAlign="left" fontSize="1.125rem" color="#4B4B4B" lineHeight="1.9rem">
         {article[0]?.content1}
       </P>
-      <P textAlign="left" fontSize="1.125rem" color="#4B4B4B">
+      <P textAlign="left" fontSize="1.125rem" color="#4B4B4B" lineHeight="1.9rem">
         {article[0]?.content2}
       </P>
       <div className="contentList">
@@ -49,7 +49,8 @@ const BlogContentPage = () => {
         textAlign="left"
         fontSize="1.125rem"
         color="#4B4B4B"
-        lineHeight={"27px"}
+        lineHeight={"1.6875em"}
+      
       >
         {article[0]?.content3}
       </P>
@@ -58,7 +59,8 @@ const BlogContentPage = () => {
         textAlign="left"
         fontSize="1.125rem"
         color="#4B4B4B"
-        lineHeight={"27px"}
+        lineHeight="1.9rem"
+       
       >
         {article[0]?.content4}
       </P>
@@ -67,7 +69,7 @@ const BlogContentPage = () => {
         textAlign="left"
         fontSize="1.125rem"
         color="#4B4B4B"
-        lineHeight={"27px"}
+        lineHeight="1.9rem"
       >
         {article[0]?.content5}
       </P>
@@ -76,7 +78,8 @@ const BlogContentPage = () => {
         textAlign="left"
         fontSize="1.125rem"
         color="#4B4B4B"
-        lineHeight={"27px"}
+        lineHeight="1.9rem"
+        
       >
         {article[0]?.content6}
       </P>
@@ -85,7 +88,8 @@ const BlogContentPage = () => {
         textAlign="left"
         fontSize="1.125rem"
         color="#4B4B4B"
-        lineHeight={"27px"}
+        lineHeight="1.9rem"
+      
       >
         {article[0]?.content7}
       </P>
@@ -94,7 +98,7 @@ const BlogContentPage = () => {
         textAlign="left"
         fontSize="1.125rem"
         color="#4B4B4B"
-        lineHeight={"27px"}
+        lineHeight={"1.9rem"}
       >
         {article[0]?.content8}
       </P>
@@ -102,7 +106,7 @@ const BlogContentPage = () => {
         textAlign="left"
         fontSize="1.125rem"
         color="#4B4B4B"
-        lineHeight={"27px"}
+        lineHeight={"1.9rem"}
       >
         {article[0]?.content9}
       </P>
@@ -110,7 +114,7 @@ const BlogContentPage = () => {
         textAlign="left"
         fontSize="1.125rem"
         color="#4B4B4B"
-        lineHeight={"27px"}
+        lineHeight={"1.9rem"}
       >
         {article[0]?.content10}
       </P>

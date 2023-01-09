@@ -55,53 +55,11 @@ export const SessionObject = [
         width: "5.4375em"
     },
     {
-        bgImage: SessionImage2,
-        name: "Yewande Oyebo ",
-        role: "Product Owner",
-        company: takeAway,
-        width: "5.2375rem"
-    },
-    {
-        bgImage: SessionImage3,
-        name: "Obiajulu Anayo",
-        role: "Product Manager",
-        company: mouvebetter,
-        width: "8.978125rem"
-    },
-    {
-        bgImage: SessionImage4,
-        name: "Ewerechukwu Asaka",
-        role: "Product Manager",
-        company: spotify,
-        width: "4.7125rem"
-    },
-    {
         bgImage: SessionImage5,
         name: "Oluwaseun Agboola",
         role: " Product Manager",
         company: africanFounders,
         width: "5.1875rem"
-    },
-    {
-        bgImage: SessionImage6,
-        name: "Moshe Mikanovsky",
-        role: "Product Manager",
-        company: riskthinkingai,
-        width: "6rem"
-    },
-    {
-        bgImage: SessionImage7,
-        name: "Bridget Iyere ",
-        role: "Product Manager",
-        company: elimu,
-        width: "5.8325rem"
-    },
-    {
-        bgImage: SessionImage8,
-        name: "Kehinde Olukoga",
-        role: "Product Manager",
-        company: primeramfb,
-        width: "8.9375rem"
     },
     {
         bgImage: SessionImage9,
@@ -111,6 +69,20 @@ export const SessionObject = [
         width: "6.4325rem"
     },
     {
+        bgImage: SessionImage2,
+        name: "Yewande Oyebo ",
+        role: "Product Owner",
+        company: takeAway,
+        width: "5.2375rem"
+    },
+    {
+        bgImage: SessionImage6,
+        name: "Moshe Mikanovsky",
+        role: "Product Manager",
+        company: riskthinkingai,
+        width: "6rem"
+    },
+    {
         bgImage: SessionImage10,
         name: "Tochi Emewulu",
         role: "Product Manager",
@@ -118,11 +90,39 @@ export const SessionObject = [
         width: "5.4375rem"
     },
     {
+        bgImage: SessionImage3,
+        name: "Obiajulu Anayo",
+        role: "Product Manager",
+        company: mouvebetter,
+        width: "8.978125rem"
+    },
+    {
+        bgImage: SessionImage7,
+        name: "Bridget Iyere ",
+        role: "Product Manager",
+        company: elimu,
+        width: "5.8325rem"
+    },
+    {
         bgImage: SessionImage11,
         name: "Fumnanya Okeleke-Kooper",
         role: "Product Manager",
         company: seamlessHr,
         width: "5.1875rem"
+    },
+    {
+        bgImage: SessionImage4,
+        name: "Ewerechukwu Asaka",
+        role: "Product Manager",
+        company: spotify,
+        width: "4.7125rem"
+    },
+    {
+        bgImage: SessionImage8,
+        name: "Kehinde Olukoga",
+        role: "Product Manager",
+        company: primeramfb,
+        width: "8.9375rem"
     },
     {
         bgImage: SessionImage12,

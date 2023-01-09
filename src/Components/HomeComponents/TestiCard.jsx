@@ -4,15 +4,19 @@ import testiMan from '../../assets/testiMan.png'
 import playIcon from '../../assets/playIcon.png'
 import {P} from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
-const TestiCard = ({testImg, testName, testRole}) => {
+const TestiCard = ({testImg, testName, testRole, showButton}) => {
   return (
     <StyledTestiCard>
         <div className="testi-card-container">
                 <div className="testi-img-container">
                     <img className="testi-man" src={testImg} alt="testi" />
-                   <div className="play-icon-container">
-                   <img src={playIcon} alt="" className="play-icon" />
-                   </div>
+                  {
+                    showButton  && (
+                        <div className="play-icon-container">
+                        <img src={playIcon} alt="" className="play-icon" />
+                        </div>
+                    )
+                  }
                 </div>
                 <div className="testi-text-container">
                     <P color={theme.color.light} textAlign="center" fontSize={"1.   5rem"} fontWeight={400}
