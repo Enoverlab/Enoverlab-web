@@ -28,8 +28,7 @@ const Testimonies = () => {
             <StyledTestimonies>
                 <div className="testimonies-container">
                     <div className="testimonies-header">
-                        <P textAlign="left" color={theme.color.dark}>
-                       
+                        <P textAlign="left" color={theme.color.dark} mobileFontSize="0.8rem" fontWeight={300}>
                         Our Training Result</P>
                         <H4 fontSize="1.8rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%"
                         >

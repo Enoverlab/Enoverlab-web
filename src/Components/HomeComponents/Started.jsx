@@ -4,6 +4,7 @@ import startedBg from '../../assets/startedBg.png'
 import { H1 } from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 import { SecondaryButton } from '../../Utils/Buttons'
+import { StyledSecondaryButton } from '../../Utils/Buttons'
 const Started = () => {
   return (
     <StyledStarted>
@@ -46,6 +47,16 @@ const StyledStarted = styled.div`
             display: flex;
             justify-content: center;
             margin-top: 4.9375rem;
+
+            ${StyledSecondaryButton}{
+                @media(max-width: 768px){
+                    a{
+                        span{
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
             @media(max-width: 768px){
                 margin-top: 2rem;
             }

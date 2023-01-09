@@ -8,10 +8,10 @@ import HomeCard from './HomeCard'
 const Training = () => {
   return (
     <StyledTraining>
-       <H3 fontWeight={"500"} color={theme.color.dark}>
+       <H3 fontWeight={"500"} color={theme.color.dark} mobileLineHeight="100%">
        Our Training Programs
        </H3>
-       <H4 fontWeight={"300"} color={theme.color.dark} paddingTop="1rem">
+       <H4 fontWeight={"300"} color={theme.color.dark} paddingTop="0.5rem" mobileFontSize="1.125rem" mobileLineHeight="100%">
        to become a skilled product manager
         </H4>
         <div className="cardContainer">

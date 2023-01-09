@@ -76,7 +76,7 @@ const SuccessStories = () => {
     <StyledSuccessStories>
         <div className="success-stories-container">
             <div className="text-head">
-            <P textAlign="left" color={theme.color.dark}>
+            <P textAlign="left" color={theme.color.dark} mobileFontSize="0.8rem" fontWeight={300}>
             Reviews and Feedback
             </P>
 

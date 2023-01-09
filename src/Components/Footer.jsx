@@ -503,6 +503,9 @@ const StyledFooter = styled.div`
     p {
       margin-bottom: 0.75rem;
     }
+    H4{
+      margin-bottom: 1.2rem;
+    }
   }
   a {
     text-decoration: none;

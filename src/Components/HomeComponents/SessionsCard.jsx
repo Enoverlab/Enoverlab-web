@@ -114,6 +114,9 @@ const SessionsCardContainer = styled.div`
                 justify-content: space-between;
                 align-items: center;
                 z-index: 1;
+                @media (max-width: 768px){
+                    padding: 0.5rem 0.2rem 0.2875rem 0.5rem;
+                }
                 .details-text{
 
                 }

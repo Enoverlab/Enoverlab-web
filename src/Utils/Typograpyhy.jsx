@@ -49,6 +49,7 @@ export const H3 = styled.h3`
     line-height: 120%;
     @media (max-width: 768px) {
         font-size: ${props => props.mobileFontSize || fontSize.sm};
+        line-height: ${props => props.mobileLineHeight || "120%"};
     }
 `
 export const H4 = styled.h4`

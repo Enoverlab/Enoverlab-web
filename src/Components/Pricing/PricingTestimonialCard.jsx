@@ -60,5 +60,11 @@ const StyledPricingTestimonialCard = styled.div`
                 }
         }
     } 
+    .price-text-container{
+        margin-top: 1.125rem;
+        @media (max-width: 768px){
+            margin-top:1rem;
+        }
+    }
   }
 `

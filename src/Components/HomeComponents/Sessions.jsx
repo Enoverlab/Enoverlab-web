@@ -34,7 +34,8 @@ import { SessionObject } from './SessionObjects'
                     arrows: false,
                     cssEase: "linear",
                     autoplay: true,
-                    rows: 3
+                    rows: 3,
+                  
             },
         },
             {
@@ -43,7 +44,7 @@ import { SessionObject } from './SessionObjects'
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     initialSlide: 2,
-                    dots: false,
+                    dots: true,
                     arrows: false,
                     infinite: true,
                     cssEase: "linear",
@@ -57,12 +58,12 @@ import { SessionObject } from './SessionObjects'
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     initialSlide: 2,
-                    dots: false,
+                    dots: true,
                     arrows: false,
                     infinite: true,
                     cssEase: "linear",
                     autoplay: true,
-                    rows: 2
+                    rows: 3
                 }
             },
             {
@@ -72,11 +73,11 @@ import { SessionObject } from './SessionObjects'
                     slidesToScroll: 1,
                     initialSlide: 2,
                     infinite: true,
-                    dots: false,
+                    dots: true,
                     arrows: false,
                     cssEase: "linear",
                     autoplay: true,
-                    rows: 2,
+                    rows: 3,
                     gap: "2rem",
                 }
             },
@@ -87,11 +88,11 @@ import { SessionObject } from './SessionObjects'
                     slidesToScroll: 1,
                     initialSlide: 2,
                     infinite: true,
-                    dots: false,
+                    dots: true,
                     arrows: false,
                     cssEase: "linear",
                     autoplay: true,
-                    rows: 2
+                    rows: 3
                 }
             }
         ]
@@ -139,7 +140,7 @@ const StyledSession = styled.div`
     height: 150%;
     box-sizing: border-box;
     @media (max-width: 768px) {
-        padding: 5% 2% 5% 2%;
+        padding: 5% 2% 15% 2%;
         /* max-height: 80vh; */
         margin-bottom: 10%;
     }
@@ -176,6 +177,14 @@ const StyledSession = styled.div`
                H3{
                 text-align: left;
                }
+            }
+        }
+    }
+
+    .slider-container{
+        .slick-slider{
+            .slick-dots{
+                bottom: -35px;
             }
         }
     }

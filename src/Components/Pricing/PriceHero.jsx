@@ -138,6 +138,7 @@ const PriceHero = () => {
               lineHeight="2.25rem"
               fontWeight={300}
               color="#4B4B4B"
+              
             >
              For anyone just starting out to learn the required skills to become a Product Manager
             </P>
@@ -156,7 +157,7 @@ const PriceHero = () => {
           tuitionFee={"N120,000"}
           duration={"10 Weeks"}
           mobileHeight={"100%"}
-          height={"123.4375rem"}
+          height={"120.4375rem"}
          
         >
           {AdvancedData.map((item, index) => {
@@ -174,7 +175,7 @@ const PriceHero = () => {
             <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
               Class Tools
             </H4>
-            <P
+            {/* <P
               fontSize="1.125rem"
               textAlign="left"
               color={theme.color.dark}
@@ -185,7 +186,7 @@ const PriceHero = () => {
               Our online classes are designed around the latest remote product
               management tools to keep you inline with the latest industry
               standards
-            </P>
+            </P> */}
           </div>
 
           <div className="class-tools-icon-container">
@@ -258,10 +259,10 @@ const PriceHero = () => {
             })}
           </div>
           <div className="class-tools-container">
-            <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
+            <H4 fontSize="1.5rem" textAlign="left" color={theme.color.light}>
               Class Tools
             </H4>
-            <P
+            {/* <P
               paddingTop="0.6625rem"
               fontSize="1.125rem"
               fontWeight={300}
@@ -272,10 +273,14 @@ const PriceHero = () => {
               Our online classes are designed around the latest remote product
               management tools to keep you inline with the latest industry
               standards
-            </P>
+            </P> */}
           </div>
 
-          <div className="class-tools-icon-container">
+          <div className="class-tools-icon-container"
+           style={{
+            color: theme.color.light,
+          }}
+          >
             <div className="class-tools-icon-vert">
               <div className="class-tools-icon">
                 <img src={gmailIcon} alt="gmail-icon" />
@@ -316,6 +321,9 @@ const StyledPriceHero = styled.div`
   .price-hero-container {
     position: relative;
     margin-bottom: 8.5rem;
+    @media (max-width: 768px) {
+      margin-bottom: 6rem;
+    }
   }
   .price-hero-head {
     display: flex;
@@ -328,7 +336,7 @@ const StyledPriceHero = styled.div`
       @media (max-width: 768px) {
         width: 100%;
         P {
-          font-size: 0.8rem;
+          font-size: 1rem;
           line-height: 110%;
         }
       }

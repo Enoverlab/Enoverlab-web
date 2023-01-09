@@ -80,6 +80,7 @@ const StyledHero = styled.div`
         justify-content: flex-start;
         align-items: flex-start;
         gap: 1.4375rem;
+        padding: 6rem 5% 5rem  5%;
     }
     .hero-container{
         max-width: 60%;

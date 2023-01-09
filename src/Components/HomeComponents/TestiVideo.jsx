@@ -101,6 +101,8 @@ const TestiVideo = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        dots: true,
+        autoplay: true,
      
     }
     const bottomSetting = {
@@ -128,17 +130,12 @@ const TestiVideo = () => {
         >
             {TestiData.map((slider, index) => (
                     <div key={index}>
-                       <TestiCard testImg={slider.imgLink} testName={slider.name} testRole={slider.role} showButton nameFontSize={"2rem"} nameMobileFontSize={"1.5rem"} roleFontSize="1.5rem" roleMobileFontSize={"1rem"}/>
+                       <TestiCard testImg={slider.imgLink} testName={slider.name} testRole={slider.role} showButton nameFontSize={"2rem"} nameMobileFontSize={"1.2rem"} roleFontSize="0.8rem" roleMobileFontSize={"1rem"}/>
                     </div>
             ))}
        
         </Slick>
-        <div className="slide-top">
-           <div className="slide-arrow">
-                <img src={arrowWhiteLeft} alt="arrow" className="arrowLeft" onClick={()=> slideRef?.current?.slickPrev()} />
-                <img src={arrowWhite} alt="arrow" className="arrowRight" onClick={()=> slideRef?.current?.slickNext()} />
-            </div>
-        </div>
+       
         </div>
       
     </div> 
@@ -181,7 +178,7 @@ const TestiVideoStyled = styled.div`
         padding: 3.25rem 15% 1.25rem 15%;
         box-sizing: border-box;
         @media (max-width: 768px){
-            padding: 3.25rem 5%;
+            padding: 3.25rem 5% 1.25rem 5%;
         }
     }
 
@@ -189,6 +186,11 @@ const TestiVideoStyled = styled.div`
         display: none;
         @media (max-width: 768px){
             display: block;
+        }
+        .slick-slider{
+            .slick-dots{
+                bottom: -38px;
+            }
         }
     }
     .testi-desktop{

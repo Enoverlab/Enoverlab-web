@@ -12,16 +12,16 @@ const SuccessCard = ({notes, flag, name, avatar, role}) => {
                     <img src={avatar} alt="" />
                 </div>
                 <div className="success-card-text">
-                    <P fontSize="1.25rem" textAlign="left" color={theme.color.dark} >
+                    <P fontSize="1.25rem" textAlign="left" color={theme.color.dark} fontWeight={600}>
                         {name} {flag} 
                     </P>
-                    <P fontSize="1rem" textAlign="left" color={theme.color.dark}>
+                    <P fontSize="1rem" textAlign="left" color={theme.color.dark} mobileFontSize="1rem">
                    {role}
                     </P>
                 </div>
             </div>
             <div className="success-card-text">
-                <P fontWeight={300} fontSize="1rem" textAlign="left" lineHeight="1.8rem" color={theme.color.dark}>
+                <P fontWeight={300} fontSize="1rem" textAlign="left" lineHeight="1.8rem" color={theme.color.dark} mobileFontSize="1rem">
                {notes}
                 </P>
             </div>
@@ -42,7 +42,7 @@ const StyledSuccessCard = styled.div`
         @media(max-width: 768px){
             margin-bottom: 1rem;
             padding: 1rem;
-            height: 19.75rem;
+            height: 15.75rem;
         }
 
         /* &:hover{

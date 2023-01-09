@@ -56,14 +56,14 @@ const StyledWhyCard = styled.div`
                 opacity: 70%;
                 @media (max-width: 768px) {
                     width: 80%;
-                    height: 40%;
-                    right: -3rem;
+                    height: 55%;
+                    right: -2rem;
                 }
                 
             }
         }
         @media (max-width: 768px){
-            height: 23rem;
+            height: 15rem;
         }
     }
 `

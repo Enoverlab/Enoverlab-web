@@ -19,10 +19,10 @@ const Testimonials = () => {
         <div className="testimonials-container">
             <div className="testimonials-text-container">
             {/* <P mobileFontSize="0.6875rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={500}>Project Presentation</P>     */}
-            <H3 mobileFontSize="1.554375rem" color={theme.color.light} fontWeight={500}>
+            <H3 mobileFontSize="1.5rem" color={theme.color.light} fontWeight={500}>
             See the results of our training
             </H3>
-            <P lineHeight="1.5125rem" mobileFontSize="0.6875rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={500}>
+            <P lineHeight="1.5125rem" mobileFontSize="1rem" color={theme.color.light} fontSize={"1.25rem"} fontWeight={400}>
             Hear what our trained PMs have to say
             </P>
             </div>
@@ -46,7 +46,7 @@ const StyledTestimonials = styled.div`
     /* height: 150vh; */
     
     @media (max-width: 768px) {
-        height: 80vh;
+        height: 100%;
     }
        .topCorner{
         position: absolute;
@@ -71,7 +71,9 @@ const StyledTestimonials = styled.div`
         margin-bottom: 7.5rem;
         z-index: 3;
 
-
+        @media (max-width: 768px) {
+            margin-bottom: 3rem;
+        }
       
     }
     .testimonials-text-container{

@@ -66,6 +66,7 @@ const StyledPricingCard = styled.div`
                     width: 100%;
                     height:  ${props => props.mobileHeight ? props.mobileHeight : "150rem"};
                     left: 20px;
+                    top: -30px;
                 }
             }
             .card-container-front{

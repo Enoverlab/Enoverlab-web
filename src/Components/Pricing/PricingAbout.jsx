@@ -40,8 +40,8 @@ const PricingAbout = () => {
               <img src={PricingAboutCorner} alt=""  />
               </div>
         
-            <H2 paddingBottom="2rem" fontSize="2.75rem" fontWeight={400}>Important Information</H2>
-            <P paddingBottom={"2rem"} textAlign="left" color={theme.color.dark}>These are few things to keep in mind while registering for the classes</P>
+            <H2 mobileFontSize="1.8rem" paddingBottom="2rem" fontSize="2.75rem" fontWeight={400}>Important Information</H2>
+            <P paddingBottom={"2rem"} textAlign="left" color={theme.color.dark} mobileFontSize="1rem">These are few things to keep in mind while registering for the classes</P>
             <div className="pricing-about-list-container">
           {
             aboutList.map((item, index) => {
