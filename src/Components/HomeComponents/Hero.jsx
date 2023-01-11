@@ -73,14 +73,14 @@ const StyledHero = styled.div`
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    padding: 12rem 5% 5rem  5%;
+    padding: 6rem 5% 5rem  5%;
     background-color: #FFFFFF;
     @media (max-width: 768px) {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 1.4375rem;
-        padding: 6rem 5% 5rem  5%;
+        padding: 1rem 5% 5rem  5%;
     }
     .hero-container{
         max-width: 60%;

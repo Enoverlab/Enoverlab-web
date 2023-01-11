@@ -15,19 +15,24 @@ const Training = () => {
        to become a skilled product manager
         </H4>
         <div className="cardContainer">
-        
-        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.light} cardText={"This program is for anyone just starting out in product management to learn the required knowledge, skills & tools to become a skilled Product Manager"} backgroundColor={theme.color.primary} height="26.625rem">
+        <HomeCard cardTitle={"Basic Program"}  textColor={theme.color.light} cardText={"This is an introductory training for anyone trying to understand the basics of product management"}   height="26.625rem"
+        backgroundColor={theme.color.primary}
+        >
         <div className="button-container">
         <PrimaryButton to="/programs" buttText="Learn More"/>
         </div>
-        </HomeCard> 
+        </HomeCard>
 
-        <HomeCard cardTitle={"LevelUP Program"}  textColor={theme.color.dark} cardText={"This program is for working product managers looking to LevelUP their product management skills to scale products to the next level"}  backLeft="20px" height="26.625rem"
+        <HomeCard cardTitle={"Advanced Program"} textColor={theme.color.dark} cardText={"This program is for anyone just starting out in product management to learn the required knowledge, skills & tools to become a skilled Product Manager"}  height="26.625rem"
+        backLeft="20px"
         >
         <div className="button-container">
         <SecondaryButton to="/programs" buttText="Learn More"/>
+       
         </div>
-        </HomeCard>
+        </HomeCard> 
+
+       
 
         
         <HomeCard cardTitle={"Executive Program"} textColor={theme.color.dark} cardText={"This is for senior level professionals looking to get high-level product management knowledge to lead product teams, scale products and grow companies"}

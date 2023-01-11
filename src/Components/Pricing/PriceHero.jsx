@@ -16,50 +16,36 @@ import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
 const BasicData = [
   {
-    listText: "Product Management Fundamentals",
+    listText: "Introduction to Product Management",
   },
   {
-    listText: "Customer Journey Map; to learn more about customers, connect, understand & deliver better value to them",
+    listText: "Product Thinking",
   },
   {
-    listText: "UX design: designing experiences beyond the product",
+    listText: "Understanding Product Life Cycle",
   },
   {
-    listText: "Market Leading Strategy",
+    listText: "Conducting User Research",
   },
   {
-    listText: "Metrics for product success",
+    listText: "User Segmentation & Personas",
   },
   {
-    listText: "Building platform products",
+    listText: "Writing User Stories",
   },
   {
-    listText: "Understanding network effects",
+    listText: "Competitive Market Analysis",
   },
   {
-    listText: "Mock Interviews: showcasing your skills",
+    listText: "Minimum Viable Product",
   },
   {
-    listText: "Positioning yourself for internships and APM roles",
+    listText: "Product Terminologies",
   },
   {
-    listText: "Prioritization",
+    listText: "Certificate of Completion",
   },
-  {
-    listText: "Product-Led Growth",
-  },
-  {
-    listText: "Product Analytics",
-  },
-  {
-    listText: "Innovation for Product Managers",
-  },
-  {
-    listText: "Stakeholder Management",
-  },
-  {
-    listText: "Team Leadership",
-  }
+  
 ];
 
 const AdvancedData = [
@@ -148,104 +134,17 @@ const PriceHero = () => {
 
       <div className="pricing-card">
         <PricingCard
-         
-          cardTitle={"Advance Program"}
+       
+          cardTitle={"Basic Program"}
           textColor={theme.color.dark}
           cardText={
-            "To learn the required knowledge, skills and tools to fully take up the role of a product manager"
+            "This is an introductory training for anyone trying to understand the basics of product management"
           }
-          tuitionFee={"N120,000"}
-          duration={"10 Weeks"}
+          tuitionFee={"N50,000"}
+          duration={"4 Weeks"}
+          height={"80rem"}
           mobileHeight={"100%"}
-          height={"120.4375rem"}
-         
-        >
-          {AdvancedData.map((item, index) => {
-            return (
-              <PricingList
-                key={index}
-                listText={item.listText}
-                listSubText={item.listSubText}
-                textColor={theme.color.dark}
-              />
-            );
-          })}
-
-          <div className="class-tools-container">
-            <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
-              Class Tools
-            </H4>
-            {/* <P
-              fontSize="1.125rem"
-              textAlign="left"
-              color={theme.color.dark}
-              paddingTop="0.6625rem"
-              mobileFontSize="1rem"
-              fontWeight={300}
-            >
-              Our online classes are designed around the latest remote product
-              management tools to keep you inline with the latest industry
-              standards
-            </P> */}
-          </div>
-
-          <div className="class-tools-icon-container">
-            <div
-              className="class-tools-icon-vert"
-              style={{
-                color: theme.color.dark,
-              }}
-            >
-              <div className="class-tools-icon">
-                <img src={googleAnalytics} alt="gmail-icon" />
-                Google Analytics
-              </div>
-              <div className="class-tools-icon">
-                <img src={Figma} alt="google-docs-icon" />
-                Figma
-              </div>
-              <div className="class-tools-icon">
-                <img src={hotJar} alt="google-docs-icon" />
-                Hot Jar
-              </div>
-            </div>
-            <div
-              className="class-tools-icon-vert"
-              style={{
-                color: theme.color.dark,
-              }}
-            >
-              <div className="class-tools-icon">
-                <img src={Jira} alt="slack-icon" />
-                Jira Software
-              </div>
-              <div className="class-tools-icon">
-                <img src={trello} alt="slack-icon" />
-                Trello
-              </div>
-              <div className="class-tools-icon">
-                <img src={productPlan} alt="slack-icon" />
-                Product Plan
-              </div>
-            </div>
-          </div>
-          <div className="button-container">
-            <PrimaryButton to="/" buttText="Enrol Now" />
-          </div>
-        </PricingCard>
-
-        <PricingCard
-         backgroundColor={theme.color.primary}
-          cardTitle={"LevelUP Program"}
-          textColor={theme.color.light}
-          cardText={
-            "For working Product Managers looking to LevelUp their product management skills"
-          }
-          tuitionFee={"N150,000"}
-          duration={"7 Weeks"}
-          height={"110rem"}
-          mobileHeight={"100%"}
-          backLeft={"20px"}
+          // backLeft={"20px"}
         >
           <div className="container-list">
             {BasicData.map((item, index) => {
@@ -253,32 +152,21 @@ const PriceHero = () => {
                 <PricingList
                   index={index}
                   listText={item.listText}
-                  textColor={theme.color.light}
+                  textColor={theme.color.dark}
                 />
               );
             })}
           </div>
           <div className="class-tools-container">
-            <H4 fontSize="1.5rem" textAlign="left" color={theme.color.light}>
+            <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
               Class Tools
             </H4>
-            {/* <P
-              paddingTop="0.6625rem"
-              fontSize="1.125rem"
-              fontWeight={300}
-              textAlign="left"
-              color={theme.color.light}
-              mobileFontSize="1rem"
-            >
-              Our online classes are designed around the latest remote product
-              management tools to keep you inline with the latest industry
-              standards
-            </P> */}
+           
           </div>
 
           <div className="class-tools-icon-container"
            style={{
-            color: theme.color.light,
+            color: theme.color.dark,
           }}
           >
             <div className="class-tools-icon-vert">
@@ -303,6 +191,82 @@ const PriceHero = () => {
           </div>
         </PricingCard>
 
+        <PricingCard
+          backgroundColor={theme.color.primary}
+         cardTitle={"Advance Program"}
+         textColor={theme.color.light}
+         cardText={
+           "To learn the required knowledge, skills and tools to fully take up the role of a product manager"
+         }
+         tuitionFee={"N120,000"}
+         duration={"10 Weeks"}
+         mobileHeight={"100%"}
+         height={"120.4375rem"}
+         backLeft={"20px"}
+       >
+         {AdvancedData.map((item, index) => {
+           return (
+             <PricingList
+               key={index}
+               listText={item.listText}
+               listSubText={item.listSubText}
+               textColor={theme.color.light}
+              
+             />
+           );
+         })}
+
+         <div className="class-tools-container">
+           <H4 fontSize="1.5rem" textAlign="left" color={theme.color.light}>
+             Class Tools
+           </H4>
+         
+         </div>
+
+         <div className="class-tools-icon-container">
+           <div
+             className="class-tools-icon-vert"
+             style={{
+               color: theme.color.light,
+             }}
+           >
+             <div className="class-tools-icon">
+               <img src={googleAnalytics} alt="gmail-icon" />
+               Google Analytics
+             </div>
+             <div className="class-tools-icon">
+               <img src={Figma} alt="google-docs-icon" />
+               Figma
+             </div>
+             <div className="class-tools-icon">
+               <img src={hotJar} alt="google-docs-icon" />
+               Hot Jar
+             </div>
+           </div>
+           <div
+             className="class-tools-icon-vert"
+             style={{
+               color: theme.color.light,
+             }}
+           >
+             <div className="class-tools-icon">
+               <img src={Jira} alt="slack-icon" />
+               Jira Software
+             </div>
+             <div className="class-tools-icon">
+               <img src={trello} alt="slack-icon" />
+               Trello
+             </div>
+             <div className="class-tools-icon">
+               <img src={productPlan} alt="slack-icon" />
+               Product Plan
+             </div>
+           </div>
+         </div>
+         <div className="button-container">
+           <PrimaryButton to="/" buttText="Enrol Now" />
+         </div>
+       </PricingCard>
       </div>
     </StyledPriceHero>
   );
@@ -311,12 +275,12 @@ const PriceHero = () => {
 export default PriceHero;
 
 const StyledPriceHero = styled.div`
-  padding: 10% 8% 12% 8%;
+  padding: 5% 8% 12% 8%;
   position: relative;
   /* margin-bottom: 10%; */
   background-color: #fffdf7;
   @media (max-width: 768px) {
-    padding: 25% 10% 15% 5%;
+    padding: 5% 10% 15% 5%;
   }
   .price-hero-container {
     position: relative;

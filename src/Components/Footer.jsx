@@ -41,17 +41,17 @@ const Footer = () => {
               </div>
           
               <div className="social-icon">
-                <a href="https://twitter.com/enoverlabng">
+                <a href="https://twitter.com/enoverlab">
                   <FaTwitter classname="icon"/>
                 </a>
               </div>
               <div className="social-icon">
-                <a href="https://twitter.com/enoverlabng">
+                <a href=" https://www.youtube.com/@enoverlab7773">
                   <FaYoutube classname="icon"/>
                 </a>
               </div>
               <div className="social-icon">
-                <a href="https://twitter.com/enoverlabng">
+                <a href=" https://www.instagram.com/enoverlabng/">
                   <FaInstagramSquare classname="icon"/>
                 </a>
               </div>

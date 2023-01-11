@@ -169,6 +169,7 @@ const StyledSession = styled.div`
         }
             @media (max-width: 768px) {
                 margin-bottom: 2rem;
+                width: 80%;
                P{
                 text-align: left;
                 font-size: 0.8rem;

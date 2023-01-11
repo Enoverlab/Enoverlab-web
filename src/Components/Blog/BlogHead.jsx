@@ -38,9 +38,9 @@ export default BlogHead
 const StyledBlogHead = styled.div`
     position: relative;
     width: 100%;
-    padding: 12% 5% 5% 10%;
+    padding: 6% 5% 5% 10%;
     @media(max-width: 768px){
-        padding: 30% 2% 5% 5%;
+        padding: 6% 2% 5% 5%;
     }
     .blog-head-container{
         position: relative;
@@ -76,7 +76,7 @@ const StyledBlogHead = styled.div`
                 justify-content: center;
                 transform: translate(0%, 70%);
                 @media (max-width: 768px){
-                    transform: translate(0%, 90%);
+                    transform: translate(0%, 130%);
                 }
                 .searchbar{
                     position: relative;
@@ -90,6 +90,7 @@ const StyledBlogHead = styled.div`
 
                     @media (max-width: 768px){
                         width: 85%;
+                        padding: 1rem 1rem ;
                     }
                     input{
                         width: 100%;
@@ -98,11 +99,18 @@ const StyledBlogHead = styled.div`
                         border: none;
                         outline: none;
                         font-size: 1.25rem;
+                        @media (max-width: 768px){
+                            font-size: 1rem;
+                            padding: 0.8rem;
+                        }
                     }
                     .search-icon{
                         font-size: 1.5rem;
                         color: ${theme.color.dark};
                         font-weight: 300;
+                        @media (max-width: 768px){
+                            font-size: 1.25rem;
+                        }
                     }
                 }
             }

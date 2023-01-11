@@ -16,6 +16,7 @@ import menuWhite from "../assets/menuWhite.png";
 import { Link, useLocation, NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { HiOutlineChevronRight } from "react-icons/hi";
+
 const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
   const [active, setActive] = React.useState(false);
   const [weightHome, setWeightHome] = React.useState("bold");
@@ -128,7 +129,11 @@ const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
                   <HiOutlineChevronRight className="icon" />
                 </NavLink>
               </div>
-              <div className="mobile-button-container">
+              <div className="mobile-button-container"
+                onClick={()=> {
+                  window.open("tel:09063124595")
+                }}
+              >
                 <SecondaryButton
                   textAlign="center"
                   to="/"
@@ -139,7 +144,11 @@ const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
           </div>
         </div>
         <div className="header-right">
-          <div className="header-button-container">
+          <div className="header-button-container"
+           onClick={()=> {
+            window.open("tel:09063124595")
+          }}
+          >
             <TertiaryButton to="/" buttText="Contact Us" fontWeight={500} />
           </div>
           <div className="menu-icon-container">
@@ -166,12 +175,14 @@ const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
 export default Header;
 
 const StyledHeader = styled.div`
-  position: fixed;
+  position: sticky;
   width: 100%;
   z-index: 5;
+  top: 0;
   background-color: ${(props) => (props ? props.bgColor : theme.color.light)};
   @media (max-width: 768px) {
-    position: fixed;
+    position: sticky;
+    top: 0;
   }
   .header-container {
     display: flex;
