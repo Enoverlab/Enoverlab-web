@@ -142,7 +142,7 @@ const PriceHero = () => {
           }
           tuitionFee={"N50,000"}
           duration={"4 Weeks"}
-          height={"80rem"}
+          height={"75rem"}
           mobileHeight={"100%"}
           // backLeft={"20px"}
         >
@@ -201,7 +201,7 @@ const PriceHero = () => {
          tuitionFee={"N120,000"}
          duration={"10 Weeks"}
          mobileHeight={"100%"}
-         height={"120.4375rem"}
+         height={"112.4375rem"}
          backLeft={"20px"}
        >
          {AdvancedData.map((item, index) => {
