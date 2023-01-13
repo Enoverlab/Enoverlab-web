@@ -13,7 +13,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
             </div>
             <div className="card-container-front">
                 <div className="card-front-text">
-                    <H3  fontSize="2.25rem"  textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"0.5rem"}>
+                    <H3  fontSize="2rem"  textAlign={"left"} fontWeight={"500"} color={textColor} paddingBottom={"0.5rem"}>
                         {cardTitle}
                     </H3>
                     <P lineHeight="1.5rem" mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" fontSize="0.993125rem" >
@@ -24,7 +24,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                           <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
                             TUITION FEE
                           </H4>
-                           <H3 color={textColor} textAlign={"left"} fontSize={"2.25rem"}>
+                           <H3 color={textColor} textAlign={"left"} fontSize={"2rem"}>
                                {tuitionFee}
                             </H3>    
                         </div>
@@ -32,7 +32,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                             <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor}fontWeight={"700"} textAlign={"left"}>
                                 DURATION
                             </H4>
-                            <H3 color={textColor} textAlign={"left"} fontSize={"2.25rem"}>
+                            <H3 color={textColor} textAlign={"left"} fontSize={"2rem"}>
                                 {duration}
                             </H3>
                     </div>

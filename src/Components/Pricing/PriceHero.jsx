@@ -1,113 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Figma from "../../assets/figma.png";
-import gmailIcon from "../../assets/gmailIcon.png";
-import googleAnalytics from "../../assets/googleAnalytics.png";
-import googleDocs from "../../assets/googleDocs.png";
-import hotJar from "../../assets/hotJar.png";
-import Jira from "../../assets/Jira.png";
-import productPlan from "../../assets/productPlan.png";
-import slack from "../../assets/slackIcon.png";
-import trello from "../../assets/trello.png";
+
 import { MainButton, PrimaryButton } from "../../Utils/Buttons";
 import { theme } from "../../Utils/Theme";
 import { H1, H4, P } from "../../Utils/Typograpyhy";
-import PricingCard from "./PricingCard";
-import PricingList from "./PricingList";
-const BasicData = [
-  {
-    listText: "Introduction to Product Management",
-  },
-  {
-    listText: "Product Thinking",
-  },
-  {
-    listText: "Understanding Product Life Cycle",
-  },
-  {
-    listText: "Conducting User Research",
-  },
-  {
-    listText: "User Segmentation & Personas",
-  },
-  {
-    listText: "Writing User Stories",
-  },
-  {
-    listText: "Competitive Market Analysis",
-  },
-  {
-    listText: "Minimum Viable Product",
-  },
-  {
-    listText: "Product Terminologies",
-  },
-  {
-    listText: "Certificate of Completion",
-  },
-  
-];
-
-const AdvancedData = [
-  {
-    listText: "Introduction to Product Management",
-  },
-  {
-    listText: "Product Thinking",
-  },
-  {
-    listText: "Conducting User Research",
-  },
-  {
-    listText: "Understanding Product Life Cycle",
-  },
-  {
-    listText: "User Segmentation & Personas",
-  },
-  {
-    listText: "Writing User Stories",
-  },
-  {
-    listText: "Creating Userflows, Prototypes & Wireframes",
-  },
-  {
-    listText: "Agile Product Development",
-  },
-  {
-    listText: "Product Roadmap",
-    // listSubText:
-    //   "Understanding the basics of UX/UI designConnect the product vision,strategy, and development process in line with metrics",
-  },
-  {
-    listText: "Competitive Analysis",
-  },
-  {
-    listText: "Product Metrics",
-  },
-  {
-    listText: "Prioritization frameworks",
-  },
-  {
-    listText: "Product Strategy",
-  },
-  {
-    listText: "Minimum Viable Product",
-  },
-  {
-    listText: "Product Launch; Go - to - market strategy",
-  },
-  {
-    listText: "Tracking & analyzing product data",
-  },
-  {
-    listText: "Certificate of Completion",
-  },
-  {
-    listText: "6 weeks Internship placement",
-  }
- 
-];
-
+import { AdvancedCard, BasicCard, Executive, OnsiteCard } from "./ProgramCards";
 const PriceHero = () => {
   return (
     <StyledPriceHero>
@@ -124,149 +21,35 @@ const PriceHero = () => {
               lineHeight="2.25rem"
               fontWeight={300}
               color="#4B4B4B"
-              
             >
-             For anyone just starting out to learn the required skills to become a Product Manager
+              For anyone just starting out to learn the required skills to
+              become a Product Manager
             </P>
           </div>
         </div>
       </div>
 
       <div className="pricing-card">
-        <PricingCard
-       
-          cardTitle={"Basic Program"}
-          textColor={theme.color.dark}
-          cardText={
-            "This is an introductory training for anyone trying to understand the basics of product management"
-          }
-          tuitionFee={"N50,000"}
-          duration={"4 Weeks"}
-          height={"75rem"}
-          mobileHeight={"100%"}
-          // backLeft={"20px"}
-        >
-          <div className="container-list">
-            {BasicData.map((item, index) => {
-              return (
-                <PricingList
-                  index={index}
-                  listText={item.listText}
-                  textColor={theme.color.dark}
-                />
-              );
-            })}
+        <div className="card-block">
+          <div className="desktop-view">
+          <BasicCard/>
+          <OnsiteCard/>
           </div>
-          <div className="class-tools-container">
-            <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
-              Class Tools
-            </H4>
-           
+          <div className="mobile-view">
+            <BasicCard/>
+            <AdvancedCard/>
           </div>
-
-          <div className="class-tools-icon-container"
-           style={{
-            color: theme.color.dark,
-          }}
-          >
-            <div className="class-tools-icon-vert">
-              <div className="class-tools-icon">
-                <img src={gmailIcon} alt="gmail-icon" />
-                Google Meet
-              </div>
-              <div className="class-tools-icon">
-                <img src={googleDocs} alt="google-docs-icon" />
-                Google Docs
-              </div>
-            </div>
-            <div className="class-tools-icon-vert">
-              <div className="class-tools-icon">
-                <img src={slack} alt="slack-icon" />
-                Slack
-              </div>
-            </div>
+        </div>
+        <div className="card-block">
+          <div className="desktop-view">
+          <AdvancedCard/>
+          <Executive/>
           </div>
-          <div className="button-container">
-            <PrimaryButton to="/" buttText="Enrol Now" />
+          <div className="mobile-view">
+            <OnsiteCard/>
+            <Executive/>
           </div>
-        </PricingCard>
-
-        <PricingCard
-          backgroundColor={theme.color.primary}
-         cardTitle={"Advance Program"}
-         textColor={theme.color.light}
-         cardText={
-           "To learn the required knowledge, skills and tools to fully take up the role of a product manager"
-         }
-         tuitionFee={"N120,000"}
-         duration={"10 Weeks"}
-         mobileHeight={"100%"}
-         height={"112.4375rem"}
-         backLeft={"20px"}
-       >
-         {AdvancedData.map((item, index) => {
-           return (
-             <PricingList
-               key={index}
-               listText={item.listText}
-               listSubText={item.listSubText}
-               textColor={theme.color.light}
-              
-             />
-           );
-         })}
-
-         <div className="class-tools-container">
-           <H4 fontSize="1.5rem" textAlign="left" color={theme.color.light}>
-             Class Tools
-           </H4>
-         
-         </div>
-
-         <div className="class-tools-icon-container">
-           <div
-             className="class-tools-icon-vert"
-             style={{
-               color: theme.color.light,
-             }}
-           >
-             <div className="class-tools-icon">
-               <img src={googleAnalytics} alt="gmail-icon" />
-               Google Analytics
-             </div>
-             <div className="class-tools-icon">
-               <img src={Figma} alt="google-docs-icon" />
-               Figma
-             </div>
-             <div className="class-tools-icon">
-               <img src={hotJar} alt="google-docs-icon" />
-               Hot Jar
-             </div>
-           </div>
-           <div
-             className="class-tools-icon-vert"
-             style={{
-               color: theme.color.light,
-             }}
-           >
-             <div className="class-tools-icon">
-               <img src={Jira} alt="slack-icon" />
-               Jira Software
-             </div>
-             <div className="class-tools-icon">
-               <img src={trello} alt="slack-icon" />
-               Trello
-             </div>
-             <div className="class-tools-icon">
-               <img src={productPlan} alt="slack-icon" />
-               Product Plan
-             </div>
-           </div>
-         </div>
-         <div className="button-container">
-           <PrimaryButton to="/" buttText="Enrol Now" />
-         </div>
-       </PricingCard>
+        </div>
       </div>
     </StyledPriceHero>
   );
@@ -306,6 +89,7 @@ const StyledPriceHero = styled.div`
       }
     }
   }
+
   .pricing-card {
     position: relative;
     display: grid;
@@ -316,51 +100,29 @@ const StyledPriceHero = styled.div`
       grid-template-columns: 1fr;
       grid-gap: 5rem;
     }
-  }
 
-  .class-tools-icon-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 80%;
-    margin: 2rem 0;
-    .class-tools-icon-vert {
-      gap: 2.125rem;
-      display: flex;
-      flex-direction: column;
+    .card-block {
+    
+
       @media (max-width: 768px) {
-        gap: 1.75rem;
+        row-gap: 5rem;
       }
-      .class-tools-icon {
+      .desktop-view {
         display: flex;
-        align-items: center;
-        column-gap: 1rem;
-        font-size: 1rem;
-        font-weight: 700;
-        .class-icon {
-          width: 2.5rem;
-          height: 2.5rem;
-          object-fit: contain;
-        }
+      flex-direction: column;
+      row-gap: 6.125rem;
         @media (max-width: 768px) {
-          gap: 0.3rem;
-          font-size: 0.7rem;
-          img {
-            width: 1.9rem;
-          }
+          display: none;
         }
       }
-    }
-    @media (max-width: 768px) {
-      max-width: 90%;
-    }
-  }
-  .button-container {
-    width: 30%;
-    position: absolute;
-    bottom: 5%;
-    @media (max-width: 768px) {
-      position: relative;
-      width: 55%;
+      .mobile-view {
+        display: none;
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          row-gap: 5rem;
+        }
+      }
     }
   }
 `;

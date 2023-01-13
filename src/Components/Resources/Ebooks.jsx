@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import leanProduct from "../../assets/resources/leanProduct.png";
-import pmToolkit from "../../assets/resources/pmToolKit.png";
-import productLead from "../../assets/resources/productLeadership.png";
+
 import topRightBg from "../../assets/resources/topRightBg.svg";
 import bottomLeftBg from "../../assets/resources/bottomLeftBg.svg";
 import { H4, P } from "../../Utils/Typograpyhy";
+import { BookData } from "./BookData";
+import BookCard from "./BookCard";
 const Ebooks = () => {
   return (
     <StyledEbooks>
@@ -25,24 +25,16 @@ const Ebooks = () => {
           </P>
         </div>
         <div className="container-body">
-          <div className="image-container">
-            <img src={leanProduct} alt="lean product" />
-          </div>
-          <div className="image-container">
-            <img src={pmToolkit} alt="pm toolkit" />
-          </div>
-          <div className="image-container">
-            <img src={productLead} alt="product leadership" />
-          </div>
-          <div className="image-container">
-            <img src={leanProduct} alt="lean product" />
-          </div>
-          <div className="image-container">
-            <img src={pmToolkit} alt="pm toolkit" />
-          </div>
-          <div className="image-container">
-            <img src={productLead} alt="product leadership" />
-          </div>
+          {
+            BookData.map((book, index) => {
+              return (
+                <BookCard
+                  imgUrl={book.imgUrl}
+                  key={index}
+                />
+              );
+            })
+          }
         </div>
       </div>
     </StyledEbooks>
@@ -97,6 +89,8 @@ const StyledEbooks = styled.div`
       grid-gap: 5.095625rem;
       margin-top: 2rem;
       padding: 2rem 6.25rem;
+
+      
 
       @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
