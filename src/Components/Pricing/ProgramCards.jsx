@@ -82,7 +82,7 @@ export const AdvancedCard = () => {
     <CardStyle>
       <PricingCard
         backgroundColor={theme.color.primary}
-        cardTitle={"Advance Program"}
+        cardTitle={"Advance Program (ONLINE)"}
         textColor={theme.color.light}
         cardText={
           "To learn the required knowledge, skills and tools to fully take up the role of a product manager"
@@ -90,7 +90,7 @@ export const AdvancedCard = () => {
         tuitionFee={"N120,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
-        height={"112.4375rem"}
+        height={"105.4375rem"}
         backLeft={"20px"}
       >
         {AdvancedData.map((item, index) => {
@@ -117,17 +117,14 @@ export const AdvancedCard = () => {
               color: theme.color.light,
             }}
           >
-            <div className="class-tools-icon">
-              <img src={googleAnalytics} alt="gmail-icon" />
-              Google Analytics
-            </div>
+          
             <div className="class-tools-icon">
               <img src={Figma} alt="google-docs-icon" />
               Figma
             </div>
             <div className="class-tools-icon">
-              <img src={hotJar} alt="google-docs-icon" />
-              Hot Jar
+              <img src={Jira} alt="slack-icon" />
+              Jira Software
             </div>
           </div>
           <div
@@ -136,10 +133,7 @@ export const AdvancedCard = () => {
               color: theme.color.light,
             }}
           >
-            <div className="class-tools-icon">
-              <img src={Jira} alt="slack-icon" />
-              Jira Software
-            </div>
+            
             <div className="class-tools-icon">
               <img src={trello} alt="slack-icon" />
               Trello
@@ -171,7 +165,7 @@ export const OnsiteCard = () => {
         tuitionFee={"N200,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
-        height={"75.4375rem"}
+        height={"70.4375rem"}
       >
         {Onsite.map((item, index) => {
           return (
@@ -264,7 +258,7 @@ export const Executive = () => {
         }
         tuitionFee={"N300,000"}
         duration={"7 Weeks"}
-        height={"78rem"}
+        height={"80rem"}
         mobileHeight={"100%"}
         backLeft={"20px"}
       >
