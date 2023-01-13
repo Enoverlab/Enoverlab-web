@@ -1,10 +1,10 @@
 import React, {useState, useRef} from 'react'
 import styled from 'styled-components'
 import Slick from 'react-slick'
-import testiImage1 from '../../assets/TestiVideo.png'
-import testiImage2 from '../..//assets/TestiVideo2.png'
-import testiImage3 from '../../assets/TestiVideo3.png'
-import TestiCard from './TestiCard'
+import testiImage1 from '../../assets/resources/eventThumb.png'
+import testiImage2 from '../../assets/resources/eventThumbLeft.png'
+import testiImage3 from '../../assets/resources/eventThumbRight.png'
+import TestiCard from '../HomeComponents/TestiCard'
 import { H4, P } from '../../Utils/Typograpyhy'
 import arrowWhite from '../../assets/BlackArrow.png'
 import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
@@ -12,26 +12,22 @@ import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
 const TestiData = [
     {
         imgLink: testiImage1,
-        name: "Shabi Loretta",
-        role: "Product Manger,ModusCreate",
-        vidUrl: " https://youtube.com/embed/us8fdyMho3I"
+        vidUrl: "https://youtube.com/embed/zZi9y3wIqjA"
+       
     },
     {
         imgLink: testiImage2,
-        name: "Kemi Ademide",
-        role: "Product Manger,Microsoft",
-        vidUrl: "https://youtube.com/embed/5rrt0YLjiTQ"
+        vidUrl: "https://www.youtube.com/embed/XpbmkNho06I"
+
     },
     {
         imgLink: testiImage3,
-        name: "Buchi Abubakre",
-        role: "Product Manger,Skype",
-        vidUrl: "https://youtube.com/embed/5rrt0YLjiTQ"
+        vidUrl: "https://www.youtube.com/embed/Cdxn1yPdz24"
     },
 ]
 
 
-const TestiVideo = () => {
+const EventSlider = () => {
    //AsNavFor
    const slideRef = useRef()
     const [nav1, setNav1] = useState()
@@ -120,7 +116,7 @@ const TestiVideo = () => {
         // className:"center"
     }
   return (
-    <TestiVideoStyled>
+    <EventSliderStyled>
         <div className='top-slider-container'>
         {
             <div className="testi-desktop">
@@ -149,34 +145,34 @@ const TestiVideo = () => {
         <div className="bottom-carousel-container">
         {/* box1 */}
             <div className="slideboxInactive" onClick={() =>handleCarousel(slideIndex1)}>
-                <TestiCard testImg={TestiData[slideIndex1].imgLink} testName={TestiData[slideIndex1].name} testRole={TestiData[slideIndex1].role} nameFontSize={"0.8rem"} nameMobileFontSize={"0.8rem"} roleFontSize="0.55rem" roleMobileFontSize={"0.55rem"} textAlign="left" filterImg />
+                <TestiCard testImg={TestiData[slideIndex1].imgLink} />
             </div>
             {/* box2 */}
             <div className="slideboxActive" onClick={() =>handleCarousel(slideIndex)}>
-                <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role} nameFontSize={"1rem"} nameMobileFontSize={"0.8rem"} roleFontSize="0.75rem" roleMobileFontSize={"0.65rem"} textAlign="left" />
+                <TestiCard testImg={TestiData[slideIndex].imgLink}  />
             </div>
             {/* box3 */}
             <div className="slideboxInactive" onClick={() =>handleCarousel(slideIndex2)}>
-                <TestiCard testImg={TestiData[slideIndex2].imgLink} testName={TestiData[slideIndex2].name} testRole={TestiData[slideIndex2].role} nameFontSize={"0.8rem"} nameMobileFontSize={"0.8rem"} roleFontSize="0.55rem" roleMobileFontSize={"0.55rem"} textAlign="left"  filterImg/>
+                <TestiCard testImg={TestiData[slideIndex2].imgLink}  />
             </div>
         </div>
 
-        <div className="slide-containers">
+        {/* <div className="slide-containers">
            <div className="slide-arrow">
                 <img src={arrowWhiteLeft} alt="arrow" className="arrowLeft" onClick={()=> handleNext()} />
                 <img src={arrowWhite} alt="arrow" className="arrowRight" onClick={()=> handlePrev()} />
             </div>
-        </div>
+        </div> */}
     </div>
 
     
-    </TestiVideoStyled>
+    </EventSliderStyled>
     )
 }
 
-export default TestiVideo
+export default EventSlider
 
-const TestiVideoStyled = styled.div`
+const EventSliderStyled = styled.div`
     position: relative;
     .top-slider-container{
         position: relative;

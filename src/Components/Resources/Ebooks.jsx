@@ -18,10 +18,10 @@ const Ebooks = () => {
         </div>
         <div className="container-head">
           <H4 textAlign="left" color="#111111" fontSize="2.25rem">
-            ebooks
+          Free product management ebooks
           </H4>
           <P textAlign="left" fontSize="1.25rem" color="#4B4B4B">
-            Discover quality ebooks in product management
+          Download now and expand your product management knowledge
           </P>
         </div>
         <div className="container-body">

@@ -10,14 +10,5 @@ export const BookData = [
     },
     {
         imgUrl: productLead
-    },
-    {
-        imgUrl: leanProduct
-    },
-    {
-        imgUrl: pmToolkit
-    },
-    {
-        imgUrl: productLead
-    },
+    }
 ]
