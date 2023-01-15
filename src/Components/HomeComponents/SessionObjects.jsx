@@ -127,7 +127,7 @@ export const SessionObject = [
     {
         bgImage: SessionImage12,
         name: "Emilia Korczynska ",
-        role: "Product Manager, Userpilot",
+        role: "Head of Marketing, Userpilot",
         company: userpilot,
         width: "6.4375rem"
     },
@@ -141,7 +141,7 @@ export const SessionObject = [
     {
         bgImage: SessionImage14,
         name: "Grace Omole",
-        role: "Product Manager",
+        role: "Tech Lead",
         company: niyo,
         width: "5.45625rem"
     },
@@ -190,7 +190,7 @@ export const SessionObject = [
     {
         bgImage: SessionImage21,
         name: "Oluwaseun Kayode",
-        role: "Product Manager",
+        role: "Founder",
         company: schoolQ,
         width: "5.3125rem"
     },
@@ -211,7 +211,7 @@ export const SessionObject = [
     {
         bgImage: SessionImage24,
         name: "Chinyere Tony-Eke",
-        role: "Globus Bank",
+        role: "Group Head, Digital Banking",
         company: globusBank,
         width: "5.4375rem"
     }

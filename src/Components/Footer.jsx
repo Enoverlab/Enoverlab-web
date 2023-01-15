@@ -1,14 +1,66 @@
-import React from "react";
+import React, {useRef} from "react";
 import styled from "styled-components";
 import { theme } from "../Utils/Theme";
 import { P, H4 } from "../Utils/Typograpyhy";
 import { AiFillLinkedin } from "react-icons/ai";
-import { FaFacebookSquare, FaTwitter, FaYoutube, FaInstagramSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitter, FaYoutube, FaInstagramSquare, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../assets/enovLogo.png";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Footer = () => {
+  const scriptUrl ="https://script.google.com/macros/s/AKfycbw0ohi51CR9vuzVd8cgKr0oV7JU7DsPPvlgg2aQ4iPSrib6SHOzuorHNbdKtLiVQ6z3/exec"
+  const formRef = useRef(null);
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const formData = new FormData(formRef.current)
+    fetch(scriptUrl, { method: 'POST', body: formData }).then(
+     response => {
+      if(response.status === 201 || response.status === 200){
+        toast.success("🎉 Thank you for subscribing to our newsletter. We will get back to you shortly", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+          
+        })
+        //clear fields
+        formRef.current.reset()
+      }else{
+        toast.error("An error occured. Please try again",
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        })
+      }
+     }
+    ).catch(
+      error => {
+        toast.error("An error occured. Please try again",
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        })
+      }
+    )
+  }
   return (
     <StyledFooter>
+      <ToastContainer />
       <div className="footer-container">
         <div className="footer-left">
           <div className="container-left-1">
@@ -55,20 +107,43 @@ const Footer = () => {
                   <FaInstagramSquare classname="icon"/>
                 </a>
               </div>
+              <div className="social-icon">
+                <a href="https://wa.me/message/SFVOFYV4VGWDH1">
+                  <FaWhatsapp />
+                </a>
+              </div>
             </div>
             {/* desktop */}
             <div className="footer-form">
+              <form
+              onSubmit={handleSubmit}
+              ref={formRef}
+              >
               <div className="form">
                 <div className="form-box">
+                  
                   <input
                     type="text"
-                    name=""
+                    name="name"
+                    id=""
+                    placeholder="Full Name"
+                  />
+                   <input
+                    type="text"
+                    name="email"
                     id=""
                     placeholder="Email Address"
                   />
+                     {/* hiddendatefield */}
+                <input type="hidden" name="date" id=""
+                value= {
+                  new Date().toLocaleDateString()
+                }
+                />
                   <button type="submit">Subscribe</button>
                 </div>
               </div>
+              </form>
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -94,7 +169,7 @@ const Footer = () => {
                 Programs
               </H4>
 
-              <Link to="/programs">
+              <HashLink to="/programs#basic">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -105,9 +180,9 @@ const Footer = () => {
               >
                 Basic Program
               </P>
-            </Link>
+            </HashLink>
             
-            <Link to="/programs">
+            <HashLink to="/programs#advanced">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -118,8 +193,8 @@ const Footer = () => {
               >
                 Advanced Program
               </P>
-            </Link>
-            <Link to="/programs">
+            </HashLink>
+            {/* <Link to="/programs">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -130,8 +205,8 @@ const Footer = () => {
               >
                 LevelUP Program
               </P>
-            </Link>
-            <Link to="/executive">
+            </Link> */}
+            <HashLink to="/programs#executive">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -142,8 +217,8 @@ const Footer = () => {
               >
                 Executive Coaching
               </P>
-            </Link>
-            <Link to="/">
+            </HashLink>
+            <Link to="/corporate">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -155,7 +230,7 @@ const Footer = () => {
                 Corporate Training
               </P>
             </Link>
-            <Link to="/">
+            <HashLink to="/programs#onsite">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -166,7 +241,7 @@ const Footer = () => {
               >
                 Onsite Training
               </P>
-            </Link>
+            </HashLink>
           </div>
           <div className="container-left-2">
             
@@ -193,7 +268,7 @@ const Footer = () => {
                 Blog
               </P>
             </Link>
-            <Link to="/resources">
+            <HashLink to="/resources#ebooks">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -204,8 +279,8 @@ const Footer = () => {
               >
                 E-books
               </P>
-            </Link>
-            <Link to="/#">
+            </HashLink>
+            <HashLink to="/resources#sessions">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -216,8 +291,8 @@ const Footer = () => {
               >
                 Product Sessions
               </P>
-            </Link>
-            <Link to="/#">
+            </HashLink>
+            <a href="https://wa.me/message/SFVOFYV4VGWDH1">
               <P
                 color={theme.color.dark}
                 textAlign="left"
@@ -228,7 +303,7 @@ const Footer = () => {
               >
                 Career Advisor
               </P>
-            </Link>
+            </a>
           </div>
           <div className="container-right-1">
             <H4
@@ -266,7 +341,7 @@ const Footer = () => {
             </P>
             </Link>
 
-            <Link to="/#">
+            <HashLink to="/programs#success">
             <P
               color={theme.color.dark}
               textAlign="left"
@@ -277,8 +352,8 @@ const Footer = () => {
             >
               Reviews
             </P>
-            </Link>
-            <Link to="/#">
+            </HashLink>
+            <a href="https://chat.whatsapp.com/BXUZdELIxJDJtrpStJgpi0">
             <P
               color={theme.color.dark}
               textAlign="left"
@@ -289,16 +364,33 @@ const Footer = () => {
             >
               Community
             </P>
-            </Link>
+            </a>
           </div>
 
           {/* mobile */}
           <div className="footer-form">
             <div className="form">
+              <form 
+              onSubmit={handleSubmit}
+              ref={formRef}
+              >
               <div className="form-box">
-                <input type="text" name="" id="" placeholder="Email Address" />
+              <input
+                    type="text"
+                    name="name"
+                    id=""
+                    placeholder="Full Name"
+                  />
+                <input type="text" name="email" id="" placeholder="Email Address" />
+                {/* hiddendatefield */}
+                <input type="hidden" name="date" id=""
+                value= {
+                  new Date().toLocaleDateString()
+                }
+                />
                 <button type="submit">Subscribe</button>
               </div>
+              </form>
             </div>
             <P
               color={theme.color.dark}
@@ -320,7 +412,7 @@ const Footer = () => {
           textAlign="center"
           fontSize="1rem"
         >
-          Copyright @ enoverlab 2022. All Rights Reserved.
+          Copyright @ enoverlab 2023. All Rights Reserved.
         </P>
       </div>
     </StyledFooter>
@@ -403,6 +495,8 @@ const StyledFooter = styled.div`
         display: block;
         .form-box {
           display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
         }
         input {
           padding: 1rem;
@@ -420,6 +514,7 @@ const StyledFooter = styled.div`
           outline: none;
           background-color: ${theme.color.tertiary};
           color: ${theme.color.light};
+          margin-top: 0.5rem;
           @media (max-width: 768px) {
             width: 100%;
           }
@@ -460,6 +555,8 @@ const StyledFooter = styled.div`
         display: none;
         .form-box {
           display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
         }
         input {
           padding: 1rem;
@@ -477,6 +574,7 @@ const StyledFooter = styled.div`
           outline: none;
           background-color: ${theme.color.tertiary};
           color: ${theme.color.light};
+          margin-top: 0.5rem;
           @media (max-width: 768px) {
             width: 100%;
           }

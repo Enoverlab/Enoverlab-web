@@ -41,8 +41,12 @@ export const BasicCard = () => {
           })}
         </div>
         
-        <div className="button-container">
-          <PrimaryButton to="/" buttText="Enrol Now" />
+        <div className="button-container"
+        onClick={() => {
+          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
+        }}
+        >
+          <PrimaryButton to="#" buttText="Enrol Now" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -116,8 +120,12 @@ export const AdvancedCard = () => {
             </div>
           </div>
         </div>
-        <div className="button-container">
-          <PrimaryButton to="/" buttText="Enrol Now" />
+        <div className="button-container"
+        onClick={() => {
+          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
+        }}
+        >
+          <PrimaryButton to="#" buttText="Enrol Now" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -165,8 +173,12 @@ export const OnsiteCard = () => {
         </div>
 
        
-        <div className="button-container">
-          <PrimaryButton to="/" buttText="Enrol Now" />
+        <div className="button-container"
+        onClick={() => {
+          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
+        }}
+        >
+          <PrimaryButton to="#" buttText="Enrol Now" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -199,8 +211,12 @@ export const Executive = () => {
             );
           })}
         </div>
-        <div className="button-container">
-          <PrimaryButton to="/" buttText="Enrol Now" />
+        <div className="button-container"
+        onClick={() => {
+          window.open("https://bit.ly/enoverlabexclusive")
+        }}
+        >
+          <PrimaryButton to="#" buttText="Enrol Now" />
         </div>
       </PricingCard>
     </CardStyle>

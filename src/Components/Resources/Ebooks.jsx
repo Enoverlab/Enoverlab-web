@@ -8,7 +8,7 @@ import { BookData } from "./BookData";
 import BookCard from "./BookCard";
 const Ebooks = () => {
   return (
-    <StyledEbooks>
+    <StyledEbooks id="ebooks"> 
       <div className="container">
         <div className="topbgContainer">
           <img src={topRightBg} alt="top right bg" />
@@ -17,10 +17,10 @@ const Ebooks = () => {
           <img src={bottomLeftBg} alt="bottom left bg" />
         </div>
         <div className="container-head">
-          <H4 textAlign="left" color="#111111" fontSize="2.25rem">
+          <H4 textAlign="left" color="#111111" fontSize="2.25rem" mobileFontSize="1.8rem" mobileLineHeight="2rem">
           Free product management ebooks
           </H4>
-          <P textAlign="left" fontSize="1.25rem" color="#4B4B4B">
+          <P textAlign="left" fontSize="1.25rem" color="#4B4B4B" mobileFontSize="1rem">
           Download now and expand your product management knowledge
           </P>
         </div>
@@ -74,11 +74,8 @@ const StyledEbooks = styled.div`
     .container-head {
       position: relative;
       z-index: 2;
-      H4 {
-        font-size: 2.25rem;
-      }
       @media (max-width: 768px) {
-        display: none;
+        /* display: none; */
       }
     }
     .container-body {

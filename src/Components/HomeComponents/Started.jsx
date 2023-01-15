@@ -9,8 +9,8 @@ const Started = () => {
   return (
     <StyledStarted>
         <div className="started-container">
-           <H1 mobileFontSize="1.2rem" color= {theme.color.light} fontSize="3.25rem" fontWeight={500} >
-           Launch  your Product <br/> Managment career today</H1>
+           <H1 mobileFontSize="1.05rem" color= {theme.color.light} fontSize="3.25rem" fontWeight={500} >
+           Want to become an <br/>impactful Product Manager?</H1>
             <div className="button-container">
                 <SecondaryButton to="/programs" buttText="Get Started"  />
             </div>

@@ -8,7 +8,7 @@ import { H1 } from '../../Utils/Typograpyhy'
 import EventSlider from './EventSlider'
 const Events = () => {
   return (
-    <StyledEvents>
+    <StyledEvents id="sessions">
         <div className="events-container">
             <div className="events-head">
                 <H1

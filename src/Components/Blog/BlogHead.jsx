@@ -117,7 +117,9 @@ const StyledBlogHead = styled.div`
         }
 
         .blog-head-container-front-text{
-            
+            @media (max-width: 768px){
+                margin-top: 1rem;
+            }
         }
     }
 `

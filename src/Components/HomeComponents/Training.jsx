@@ -39,7 +39,7 @@ const Training = () => {
          height="26.625rem"
         >
         <div className="button-container">
-        <SecondaryButton to="/executive" buttText="Learn More"/>
+        <SecondaryButton to="/programs" buttText="Learn More"/>
         </div>
         </HomeCard> 
 
@@ -98,7 +98,7 @@ const StyledTraining = styled.div`
         margin-top: 3rem;
         width: 35%;
         @media(max-width: 768px){
-          width:45%;
+          min-width:47%;
           bottom: 1.7rem;
 
         }

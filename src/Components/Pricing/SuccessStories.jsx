@@ -17,28 +17,28 @@ const SuccessData = [
         avatar: avatar1,
         name: "Raphiu Silas",
         role: "Product Engineer",
-        notes: "enoverlab is an ideal school for anybody who wants to learn product management. Their syllabus is profound and their mentors are aweome. I got a job after my training Thank you!",
+        notes: "Enoverlab is an ideal school for anybody who wants to learn product management. Their syllabus is profound and their mentors are aweome. I got a job after my training Thank you!",
         flag: "🇳🇬"
     },
     {
         avatar: avatar2,
         name: "Kofe Anan",
         role: "Ceo Afrofusion",
-        notes: "enoverlab  is a super encouraging, friendly group of Product Managers  at all stages of their career. There is always  something to learn from everyone. which is super awesome",
+        notes: "Enoverlab  is a super encouraging, friendly group of Product Managers  at all stages of their career. There is always  something to learn from everyone. which is super awesome",
         flag: "🇬🇭"
     },
     {
         avatar: avatar3,
         name: "Sandra Tabansi",
         role: "Ceo Fruittylife",
-        notes: "enoverlab  is a an awesome group of productmanagers who  are  striving to give out their best in their careers",
+        notes: "Enoverlab  is a an awesome group of productmanagers who  are  striving to give out their best in their careers",
         flag: "🇨🇦"
     },
     {
         avatar: avatar4,
         name: "Samuel Adekoya",
         role: "Bank Manager",
-        notes: "The product management course at enoverlab is very detailed and each class was an   interesting experience for me. Coming from a field that is not tech related. I was able to easily understand the role of a product manager.", 
+        notes: "The product management course at Enoverlab is very detailed and each class was an   interesting experience for me. Coming from a field that is not tech related. I was able to easily understand the role of a product manager.", 
         flag: "🇺🇸"
     },
     {
@@ -52,7 +52,7 @@ const SuccessData = [
         avatar: avatar6,
         name: "Tommy Rowland",
         role: "Pilot",
-        notes: "“Looking to get the best value for your money then enoverlab is the best place to begin, dontoverthink it just got for it",
+        notes: "“Looking to get the best value for your money then Enoverlab is the best place to begin, dontoverthink it just got for it",
         flag: "🇬🇧"
     }
 ]
@@ -74,7 +74,7 @@ const SuccessStories = () => {
     }
 
   return (
-    <StyledSuccessStories>
+    <StyledSuccessStories id="success">
         <div className="success-stories-container">
             <div className="text-head">
             <P textAlign="left" color={theme.color.dark} mobileFontSize="0.9rem" fontWeight={300}>

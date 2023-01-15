@@ -10,9 +10,17 @@ const PriceHero = () => {
     <StyledPriceHero>
       <div className="price-hero-container">
         <div className="price-hero-head">
+          <div className="desktop-text">
           <H1 fontWeight="500" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
           Learn the skills, make impact
           </H1>
+          </div>
+          <div className="mobile-text">
+          <H1 fontWeight="500" mobileFontSize="2rem" mobileLineHeight="2.5rem">
+          Learn the skills,<br/> make impact
+          </H1>
+          </div>
+         
           <div className="p-container">
             <P
               fontSize="1.5rem"
@@ -30,22 +38,38 @@ const PriceHero = () => {
       <div className="pricing-card">
         <div className="card-block">
           <div className="desktop-view">
+         <div id="basic">
           <BasicCard/>
+          </div>
+          <div id="onsite">
           <OnsiteCard/>
           </div>
+          </div>
           <div className="mobile-view">
+          <div id="basic">
             <BasicCard/>
+          </div>
+          <div id="advanced">
             <AdvancedCard/>
+          </div>
           </div>
         </div>
         <div className="card-block">
           <div className="desktop-view">
+          <div  id="advanced">
           <AdvancedCard/>
+          </div>
+          <div id="executive">
           <Executive/>
           </div>
+          </div>
           <div className="mobile-view">
+            <div id="onsite">
             <OnsiteCard/>
+          </div>
+          <div id="executive">
             <Executive/>
+            </div>
           </div>
         </div>
       </div>
@@ -75,6 +99,19 @@ const StyledPriceHero = styled.div`
     justify-content: center;
     flex-direction: column;
     max-width: 100%;
+
+    .desktop-text {
+      display: block;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .mobile-text {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
     .p-container {
       width: 65%;
       align-self: center;
