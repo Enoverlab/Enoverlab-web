@@ -98,7 +98,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="social-icon">
-                <a href=" https://www.youtube.com/@enoverlab7773">
+                <a href="https://www.youtube.com/@enoverlab">
                   <FaYoutube classname="icon"/>
                 </a>
               </div>
@@ -115,6 +115,15 @@ const Footer = () => {
             </div>
             {/* desktop */}
             <div className="footer-form">
+            <P
+                color={theme.color.dark}
+                textAlign="left"
+                fontSize="0.9rem"
+                paddingBottom="0.58rem"
+                fontWeight={600}
+              >
+                Receive important product management info weekly
+              </P>
               <form
               onSubmit={handleSubmit}
               ref={formRef}
@@ -144,14 +153,7 @@ const Footer = () => {
                 </div>
               </div>
               </form>
-              <P
-                color={theme.color.dark}
-                textAlign="left"
-                fontSize="0.9rem"
-                paddingTop="0.58rem"
-              >
-                Receive important product management info weekly
-              </P>
+             
             </div>
           </div>
         </div>
@@ -370,6 +372,16 @@ const Footer = () => {
           {/* mobile */}
           <div className="footer-form">
             <div className="form">
+            <P
+              color={theme.color.dark}
+              textAlign="left"
+              fontSize="1rem"
+              paddingBottom="0.58rem"
+              // mobileFontSize="0.5rem"
+              fontWeight={500}
+            >
+              Receive important product management info weekly
+            </P>
               <form 
               onSubmit={handleSubmit}
               ref={formRef}
@@ -392,14 +404,7 @@ const Footer = () => {
               </div>
               </form>
             </div>
-            <P
-              color={theme.color.dark}
-              textAlign="left"
-              fontSize="1rem"
-              paddingTop="0.58rem"
-            >
-              Receive important product management info weekly
-            </P>
+           
           </div>
         </div>
       </div>
@@ -430,7 +435,7 @@ const StyledFooter = styled.div`
   .footer-container {
     display: flex;
     justify-content: space-between;
-    padding: 0% 0% 8% 0%;
+    padding: 0% 0% 4% 0%;
     /* align-items: center; */
     @media (max-width: 768px) {
       flex-direction: column;
@@ -589,7 +594,7 @@ const StyledFooter = styled.div`
             flex-direction: column;
           }
           P {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
           }
           .form {
             display: flex;

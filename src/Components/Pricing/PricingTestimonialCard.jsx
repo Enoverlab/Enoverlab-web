@@ -44,9 +44,13 @@ const StyledPricingTestimonialCard = styled.div`
             iframe{
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
                 border: 2px solid ${theme.color.dark};
-              
+                
+                @media (max-width: 768px){
+                    width: 100%;
+                height:35.4375rem;
+                }
             }
             .play-icon-container{
                 position: absolute;

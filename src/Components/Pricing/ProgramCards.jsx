@@ -168,14 +168,14 @@ export const OnsiteCard = () => {
             color={theme.color.light}
             mobileFontSize="1rem"
           >
-            <span>Our training centre is at Lekki Phase 1</span>
+            <span>Our training centre is at Lekki, Lagos, Nigeria</span>
           </P>
         </div>
 
        
         <div className="button-container"
         onClick={() => {
-          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
+          window.open(" https://bit.ly/enoverlabexclusive")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
@@ -213,7 +213,7 @@ export const Executive = () => {
         </div>
         <div className="button-container"
         onClick={() => {
-          window.open("https://bit.ly/enoverlabexclusive")
+          window.open("")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />

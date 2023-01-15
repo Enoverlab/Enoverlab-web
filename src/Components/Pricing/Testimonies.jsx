@@ -44,6 +44,7 @@ const Testimonies = () => {
         autoplaySpeed: 2000,
         cssEase: "linear",
         arrows: false,
+       
     }
   return (
             <StyledTestimonies>
@@ -139,6 +140,16 @@ export const StyledTestimonies = styled.div`
         .slick-slider{
             .slick-dots{
                 bottom: -2rem;
+                
+                    li{
+                        button{
+                          
+                            /* font-size: 6rem; */
+                            /* width: 40px;
+                            height: 40px; */
+                        }
+                    }
+                
             }
         }
       
