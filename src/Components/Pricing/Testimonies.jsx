@@ -10,6 +10,27 @@ import PricingTestimonialCard from './PricingTestimonialCard'
 import arrowLeft from '../../assets/slideArrowLeft.png'
 import arrowRight from '../../assets/slideArrowBlue.png'
 
+const vidSrcData = [
+    {
+        vidSrc: "https://www.youtube.com/embed/6qK8W_yUEP8",
+        flag: "🇳🇬",
+        name: "Jennifer",
+        country: "Nigeria"
+    },
+    {
+        vidSrc: "https://www.youtube.com/embed/GUkZoWrHtRU",
+        flag: "🇬🇧",
+        name: "Adeola",
+        country: "United Kingdom"
+    },
+    {
+        vidSrc: "https://www.youtube.com/embed/cnERxJ-kJ_I",
+        flag: "🇳🇬",
+        name: "Olatunji",
+        country: "Nigeria"
+    }
+   
+]
 
 const Testimonies = () => {
     const slider = React.useRef(null)
@@ -43,15 +64,24 @@ showcase their skills
                         </P> */}
                     </div>
                     <div className="testimonies-flex">
-                        <PricingTestimonialCard imgSrc={testImage} flag="🇳🇬"/>
-                        <PricingTestimonialCard imgSrc={testImage2} flag="🇬🇧"/>
-                        <PricingTestimonialCard imgSrc={testImage3} flag="🇺🇸"/>
+                     {
+                            vidSrcData.map((vid, index)  => {
+                                return(
+                                    <PricingTestimonialCard vidSrc={vid.vidSrc} flag={vid.flag} country={vid.country} name={vid.name}/>
+                                )
+                            })
+                     }
                     </div>
                         <div className="testimonial-slider">
                         <Slider {...settings} ref={slider}>
-                        <PricingTestimonialCard imgSrc={testImage} flag="🇳🇬"/>
-                        <PricingTestimonialCard imgSrc={testImage2} flag="🇬🇧"/>
-                        <PricingTestimonialCard imgSrc={testImage3} flag=""/>
+                        {
+                            vidSrcData.map((vid, index) => {
+                                return(
+                                    <PricingTestimonialCard vidSrc={vid.vidSrc} flag={vid.flag} country={vid.country} name={vid.name} />
+                                )
+                            })
+                     }
+                 
                         </Slider>
                         {/* <div className="slide-arrow-container">
                             <img src={arrowLeft} alt="arrow" className="arrow"  onClick={()=> slider?.current?.slickPrev()} />

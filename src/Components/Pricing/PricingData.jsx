@@ -142,6 +142,9 @@ export const ExecutiveData = [
       "Building platform products",
   },
   {
+    listText: "Understanding network effects"
+  },
+  {
     listText:
       "Product defensibility",
   },

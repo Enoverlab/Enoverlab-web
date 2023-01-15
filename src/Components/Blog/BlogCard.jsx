@@ -34,11 +34,13 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                 </div>   
                 <div className="blog-text">
                   <P
-                  fontSize= "1.125rem"
+                  fontSize= "1rem"
                   fontWeight="300"
                   color="#4B4B4B"
                   textAlign="left"
                   lineHeight="1.8125rem"
+                  mobileFontSize="0.875rem"
+                  mobileLineHeight="1.5rem"
                   >
                     {contentText}
                   </P>
@@ -52,11 +54,15 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                     fontSize="1rem"
                     fontWeight="400"
                     color="#0D2A57"
-                    textAlign="left">{authorName}</P>
+                    textAlign="left"
+                    mobileFontSize="0.875rem"
+                    mobileLineHeight = "1.5rem"
+                    >{authorName}</P>
                       <P 
-                    fontSize="0.5rem"
+                    fontSize="0.8rem"
                     fontWeight="400"
                     color="#0D2A57"
+                    mobileFontSize="0.8rem"
                     textAlign="left">
                        {date}
                     </P>
@@ -73,13 +79,16 @@ export default BlogCard
 
 const StyledBlogCard = styled.div`
 .blog-card-container{
+  box-shadow: 0 2px 6px 0 rgb(76 78 114 );
+  border-radius: 0.5rem;
     .blog-card-image{
         width: 100%;
         max-width: 23.875rem;
         height: 18.75rem;
         background-color: #F2F2F2;
         overflow: hidden;
-        border: 1px solid #0000FF;
+        border-bottom: 1px solid #0000FF;
+        border-radius: 0.5rem 0.5rem 0 0;
         img{
             width: 100%;
             height: 100%;
@@ -95,7 +104,7 @@ const StyledBlogCard = styled.div`
     }
     .blog-card-content{
       margin-top: 1.5rem;
-      
+      padding: 0 1.5rem 1.5rem 1.5rem;
       .category{
         padding-bottom: 0.5rem;
       }
@@ -120,6 +129,7 @@ const StyledBlogCard = styled.div`
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    border-radius: 50%;
                 }
             }
 

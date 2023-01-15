@@ -8,7 +8,7 @@ const HeroText = () => {
     useEffect(() => {
         let from = gsap.from(['.hero-text1', '.hero-text2', '.hero-text3', '.hero-text4'], 5, {
             opacity: 0,
-            duration: 5,
+            duration: 2,
             y: 80,
             ease: 'power3.out',
             stagger: {

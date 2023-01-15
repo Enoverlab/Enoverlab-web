@@ -11,9 +11,7 @@ const aboutList = [
   {
     listText: "Installment payment option is available;you can spread your tuition payment"
   },
-  {
-    listText: "All our programs are for absolute beginners in product management"
-  },
+ 
   {
     listText: "You don’t need any degree to become a product manager"
   },
@@ -24,11 +22,14 @@ const aboutList = [
     listText: "All classes are live online class with an instructor"
   },
   {
-    listText: "Each class runs for 2hrs"
+    listText: "Class runs for 2 - 3 hours depending on your class schedules"
   },
   {
     listText: "Only Advanced Program trainees have an internship placement at the end of the 10weeks training"
-  }
+  },
+  {
+    listText: "We have weekday & weekend class; you can choose any class that works best for you"
+  },
 ]
 
 const PricingAbout = () => {

@@ -68,7 +68,7 @@ const StyledTestimonials = styled.div`
     
     .testimonials-container{
         position: relative;
-        margin-bottom: 7.5rem;
+        margin-bottom: 2.5rem;
         z-index: 3;
 
         @media (max-width: 768px) {

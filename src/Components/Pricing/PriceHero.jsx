@@ -10,10 +10,8 @@ const PriceHero = () => {
     <StyledPriceHero>
       <div className="price-hero-container">
         <div className="price-hero-head">
-          <H1 fontWeight="500" mobileFontSize="2rem">
-            Launch your Product
-            <br />
-            Management Career
+          <H1 fontWeight="500" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
+          Learn the skills, make impact
           </H1>
           <div className="p-container">
             <P
@@ -21,9 +19,9 @@ const PriceHero = () => {
               lineHeight="2.25rem"
               fontWeight={300}
               color="#4B4B4B"
+            
             >
-              For anyone just starting out to learn the required skills to
-              become a Product Manager
+              Becoming a product manager is not just about starting a new career, its about impacting lives, including yours.
             </P>
           </div>
         </div>
@@ -78,13 +76,13 @@ const StyledPriceHero = styled.div`
     flex-direction: column;
     max-width: 100%;
     .p-container {
-      width: 50%;
+      width: 65%;
       align-self: center;
       @media (max-width: 768px) {
         width: 100%;
         P {
           font-size: 1rem;
-          line-height: 110%;
+          line-height: 120%;
         }
       }
     }

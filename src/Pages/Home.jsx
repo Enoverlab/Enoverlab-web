@@ -19,7 +19,7 @@ const Home = () => {
     }}
     >
        <Header bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
-       <Banner />
+       {/* <Banner /> */}
         <Hero/>
         <About/>
         <Training/>

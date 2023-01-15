@@ -12,7 +12,7 @@ import { SessionObject } from './SessionObjects'
     const Sessions = () => {
         const slider = useRef(null)
     const Settings = {
-        dots: false,
+        dots: true,
         speed: 500,
         slidesToShow: 4,
         rows: 3,
@@ -104,10 +104,10 @@ import { SessionObject } from './SessionObjects'
             <div className="session-text-container">
                
             <H3 mobileFontSize="1.554375rem" color={theme.color.dark} fontWeight={500}>
-            Our Product Mentors
+            Our Product Heroes
             </H3>
             <P lineHeight="1.5125rem" mobileFontSize="0.6875rem" color={theme.color.dark} fontSize={"1.25rem"} fontWeight={500}>
-            The Amazing Product Managers who have been part of our sessions
+            Some of the remarkable product managers who have contributed to our community
             </P>
 
             </div>

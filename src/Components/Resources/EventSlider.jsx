@@ -129,7 +129,7 @@ const EventSlider = () => {
         ref={slideRef} {...settings}
         >
             {TestiData.map((slider, index) => (
-                    <div key={index}>
+                    <div key={index} className="vid-mobile-container">
                        {/* <TestiCard testImg={slider.imgLink} testName={slider.name} testRole={slider.role} showButton nameFontSize={"2rem"} nameMobileFontSize={"1.2rem"} roleFontSize="0.8rem" roleMobileFontSize={"1rem"}/> */}
                           <iframe width="100%" height="100%" src={slider.vidUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -179,7 +179,7 @@ const EventSliderStyled = styled.div`
         padding: 3.25rem 15% 1.25rem 15%;
         box-sizing: border-box;
         @media (max-width: 768px){
-            padding: 3.25rem 5% 1.25rem 5%;
+            padding: 3.25rem 2% 1.25rem 2%;
         }
     }
 
@@ -192,6 +192,10 @@ const EventSliderStyled = styled.div`
             .slick-dots{
                 bottom: -38px;
             }
+        }
+        .vid-mobile-container{
+            width: 100%;
+            height: 20rem;
         }
     }
     .testi-desktop{

@@ -93,6 +93,19 @@ const Footer = () => {
               >
                 Programs
               </H4>
+
+              <Link to="/programs">
+              <P
+                color={theme.color.dark}
+                textAlign="left"
+                fontSize="1rem"
+                lineHeight="28px"
+                mobileFontSize="0.8rem"
+                fontWeight="300"
+              >
+                Basic Program
+              </P>
+            </Link>
             
             <Link to="/programs">
               <P
@@ -127,7 +140,7 @@ const Footer = () => {
                 mobileFontSize="0.8rem"
                 fontWeight="300"
               >
-                Executive Program
+                Executive Coaching
               </P>
             </Link>
             <Link to="/">

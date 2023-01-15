@@ -47,7 +47,7 @@ const BlogHero = () => {
   return (
     <StyledBlogHero>
         <div className="blog-hero-container">
-        <MainBlogCard/>        
+        {/* <MainBlogCard/>         */}
 
          <div className="blog-card-grid">
            {
@@ -80,13 +80,13 @@ const StyledBlogHero = styled.div`
     text-decoration: none;
   }
   .blog-hero-container {
-    padding: 5% 8% 5% 8%;
+    padding: 1% 8% 5% 8%;
     .blog-card-grid{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 2rem;
       grid-row-gap: 4rem;
-      margin-top: 8.1875rem;
+      margin-top: 3.1875rem;
 
       @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);

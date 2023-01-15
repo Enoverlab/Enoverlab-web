@@ -35,7 +35,7 @@ const Training = () => {
        
 
         
-        <HomeCard cardTitle={"Executive Program"} textColor={theme.color.dark} cardText={"This is for senior level professionals looking to get high-level product management knowledge to lead product teams, scale products and grow companies"}
+        <HomeCard cardTitle={"Executive Coaching"} textColor={theme.color.dark} cardText={"This is for senior level professionals looking to get high-level product management knowledge to lead product teams, scale products and grow companies"}
          height="26.625rem"
         >
         <div className="button-container">

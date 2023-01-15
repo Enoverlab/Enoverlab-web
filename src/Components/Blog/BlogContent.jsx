@@ -1,12 +1,13 @@
-import thumbImg1 from '../../assets/BlogImages/thumbnail.png'
 import thumbImg2 from '../../assets/BlogImages/thumbnail2.png'
 import thumbImg3 from '../../assets/BlogImages/thumbnail3.png'
 import thumbImg4 from '../../assets/BlogImages/thumbnail4.png'
+import thumbImg1 from '../../assets/banjiNew.jpg'
 import blogImg1 from '../../assets/blog/blogImage1.png'
 import blogImg2 from '../../assets/blog/blogImage2.png' 
 import blogImg3 from '../../assets/blog/blogImage3.png'
 import blogImg4 from '../../assets/blog/blogImage4.png'
-
+import blogImg5 from '../../assets/blog/blogImage5.png'
+import blogImg6 from '../../assets/blog/blogImage6.png'
 export const Article = [
     {
         id: 1,
@@ -25,7 +26,7 @@ export const Article = [
         thumbImg: thumbImg1,
         date: "June 25,2022",
         category: "Softskills",
-        authorName: "Juila Austin",
+        authorName: "Olabanji Ewenla",
     },
     {
         id: 2,
@@ -36,9 +37,9 @@ export const Article = [
         content4:"Every experience you have matters in product management!",
         cardImg: blogImg2,
         thumbImg: thumbImg2,
-        date: "June 25,2022",
+        date: "March 6,2022",
         category: "Softskills",
-        authorName: "Juila Austin",
+        authorName: "Chidima Ejiogu",
     },
     {
         id: 3,
@@ -76,7 +77,7 @@ export const Article = [
         ],
         content3:"Again, the responsibilities of a PM can vary between different companies, however, the ones we’ve shared above are what every PM would most likely be involved in an average organization. ",
         cardImg: blogImg3,
-        thumbImg: thumbImg3,
+        thumbImg: thumbImg4,
         date: "June 25,2022",
         category: "Softskills",
         authorName: "Juila Austin",
@@ -98,10 +99,41 @@ export const Article = [
         content7:"By coming into product management, you get to transition into tech without having to be technically driven or understand the technicalities of building tech products. A lot of times, people who don’t have flair for writing codes can easily come into tech via the product management route. Now this doesn’t mean that product management is easier than coding - coding is a lot more technical; however, it doesn’t necessarily require coding skills except if you want to be a Technical Product Manager.",
         content8:"Product Management is a high income skill. Experienced PMs who know their craft earn high 6 - 7 figures monthly, sometimes working remotely with added perks etc. Product Managers are well paid for the value they bring to every organization.",
         cardImg: blogImg4,
+        thumbImg: thumbImg1,
+        date: "July 4,2022",
+        category: "Softskills",
+        authorName: "Olabanji Ewenla",
+    },
+    {
+        id: 5,
+        title: "Habits to avoid if you want to be a great product manager",
+        content1:"Here are some habits to avoid if you want to be a great product manager",
+        contenthead1: "Procrastination",
+        contenthead2: "Overthinking",
+        contenthead3: "Assumptions",
+        content4:"Procrastination is a major issue a lot of people naturally deal with The product manager role is however a delicate role that requires actions to be taken immediately or consistently. Procrastinating tasks or actions will affect your project delivery and affect the team. The more you procrastinate, the lower the chances of building a successful product, leading a team well and achieving the organization’s goals and objectives.",
+        content5: "As a product manager, overthinking things will slow down idea generation and implementation. If you are a chronic overthinker, this will affect your workflow thereby affecting your ability to work in an agile approach to get things done. In today's competitive world, the slower you deliver, the more detrimental it can be to the business both in the short and long term",
+        content6:"Making assumptions is one habit to avoid. Never assume you understand someone or something, always ask questions. Inexperienced PMs are guilty of this. Asking questions doesn't mean you are unprofessional or you talk too much - NO! Asking questions makes you understand the other party better; it helps you understand your users, your colleagues and your team a lot better. The more questions you ask, the more clarification you get; this will affect your overall performance as a PM.  If you’re just transitioning into the product management world, take note of these habits and try to be mindful of them as you get into the career path.",
+        cardImg: blogImg5,
+        thumbImg: thumbImg2,
+        date: "January 4,2022",
+        category: "Softskills",
+        authorName: "Chidima Ejiogu",
+    },
+    {
+        id: 6,
+        title: "3 soft signs you’re growing as a product manager",
+        content1: "The 3 soft signs to know you're growing as a product manager",
+        contenthead1: "1. Clear and concise communication",
+        contenthead2: "2.Improved product thinking",
+        contenthead3: "3.Better stakeholder management",
+        content4:"One of the major signs to know if a new product manager is inexperienced is unclear communication. New PMs always feel the need to talk more to prove their point, however, the moment you start to pay attention to talking less, making your communication simple, clear and concise, you are beginning to grow as a PM",
+        content5:"As you get better as a product manager, your product thinking becomes more sharp; you pay more attention to details of products you use or come across and you are able to ask the right questions to discover the problems worth solving, identify target users better, define product vision and business objectives, create the best product to meet the users and finally define the strategy to help the product succeed.",
+        content6:"Stakeholder management is one of the biggest challenges every product manager will face; working with multiple different types of people can be hard if you are not experienced. People management and emotional intelligence skills are one of the skills that can help a product manager be more effective in their duties.For example, software developers/engineers are one of the most interesting people to work with. If you are a new product manager, you might have a lot of back and forth with your developers/engineering team. The better you get working with your dev team is a big sign that you are growing as a product manager; the better you get working with your team is a strong sign you are growing.",
+        cardImg: blogImg6,
         thumbImg: thumbImg4,
-        date: "June 25,2022",
+        date: "February 6,2022",
         category: "Softskills",
         authorName: "Juila Austin",
-    }
-    
+    }  
 ]

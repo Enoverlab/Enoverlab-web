@@ -12,21 +12,21 @@ import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
 const TestiData = [
     {
         imgLink: testiImage1,
-        name: "Shabi Loretta",
-        role: "Product Manger,ModusCreate",
+        name: " Olanrewaju ",
+        role: "Product Manager",
         vidUrl: " https://youtube.com/embed/us8fdyMho3I"
     },
     {
         imgLink: testiImage2,
-        name: "Kemi Ademide",
-        role: "Product Manger,Microsoft",
+        name: " Olabanji ",
+        role: "Lead Product Manager",
         vidUrl: "https://youtube.com/embed/5rrt0YLjiTQ"
     },
     {
         imgLink: testiImage3,
-        name: "Buchi Abubakre",
-        role: "Product Manger,Skype",
-        vidUrl: "https://youtube.com/embed/5rrt0YLjiTQ"
+        name: "Happiness",
+        role: "Product Manager",
+        vidUrl: "https://youtube.com/embed/VA75Hhf1WcM"
     },
 ]
 
@@ -133,7 +133,7 @@ const TestiVideo = () => {
         ref={slideRef} {...settings}
         >
             {TestiData.map((slider, index) => (
-                    <div key={index}>
+                    <div className='vid-mobile-container' key={index}>
                        {/* <TestiCard testImg={slider.imgLink} testName={slider.name} testRole={slider.role} showButton nameFontSize={"2rem"} nameMobileFontSize={"1.2rem"} roleFontSize="0.8rem" roleMobileFontSize={"1rem"}/> */}
                           <iframe width="100%" height="100%" src={slider.vidUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -180,7 +180,7 @@ const TestiVideoStyled = styled.div`
     position: relative;
     .top-slider-container{
         position: relative;
-        padding: 3.25rem 15% 1.25rem 15%;
+        padding: 3.25rem 10% 1.25rem 10%;
         box-sizing: border-box;
         @media (max-width: 768px){
             padding: 3.25rem 5% 1.25rem 5%;
@@ -197,10 +197,14 @@ const TestiVideoStyled = styled.div`
                 bottom: -38px;
             }
         }
+        .vid-mobile-container{
+            width: 100%;
+            height: 15.554375rem;
+        }
     }
     .testi-desktop{
         display: block;
-        height: 25rem;
+        height: 30rem;
         @media (max-width: 768px){
             display: none;
         }
