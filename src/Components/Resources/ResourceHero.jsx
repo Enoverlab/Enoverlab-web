@@ -16,12 +16,12 @@ const ResourceHero = () => {
           keeping you updated with vital resources to make you a competent
           product manager
         </P>
-        <div className="email-input">
+        {/* <div className="email-input">
           <input type="text" placeholder="Enter your email address" />
           <button>Subscribe
             <img src={WhiteArrow} alt="arrow" />
           </button>
-        </div>
+        </div> */}
       </div>
         <div className="resource-image">
             <img src={Enover} alt="enover" />

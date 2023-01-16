@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import styled from "styled-components";
 import { theme } from "../Utils/Theme";
 import { P, H4 } from "../Utils/Typograpyhy";
@@ -12,7 +12,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const Footer = () => {
   const scriptUrl ="https://script.google.com/macros/s/AKfycbw0ohi51CR9vuzVd8cgKr0oV7JU7DsPPvlgg2aQ4iPSrib6SHOzuorHNbdKtLiVQ6z3/exec"
   const formRef = useRef(null);
+  const [loading, setLoading] = useState(false)
   const handleSubmit = (e) => {
+    setLoading(true)
     e.preventDefault()
     const formData = new FormData(formRef.current)
     fetch(scriptUrl, { method: 'POST', body: formData }).then(
@@ -30,6 +32,7 @@ const Footer = () => {
         })
         //clear fields
         formRef.current.reset()
+        setLoading(false)
       }else{
         toast.error("An error occured. Please try again",
         {
@@ -82,7 +85,7 @@ const Footer = () => {
             
             <div className="icon-container">
             <div className="social-icon">
-                <a href="https://www.linkedin.com/company/enoverlab/">
+                <a href="https://web.facebook.com/profile.php?id=100084211149479">
                   <FaFacebookSquare />
                 </a>
               </div>
@@ -152,7 +155,11 @@ const Footer = () => {
                   new Date().toLocaleDateString()
                 }
                 />
-                  <button type="submit">Subscribe</button>
+                  <button type="submit">
+                    {
+                      loading ? "Loading.." : "Subscribe" 
+                    }
+                  </button>
                 </div>
               </div>
               </form>
@@ -321,6 +328,18 @@ const Footer = () => {
             >
               Company
             </H4>
+            <a href="tel:09063124595">
+            <P
+              color={theme.color.dark}
+              textAlign="left"
+              fontSize="1rem"
+              lineHeight="28px"
+              mobileFontSize="0.8rem"
+              fontWeight="300"
+            >
+              Contact Us
+            </P>
+            </a>
             <Link to="/about">
             <P
               color={theme.color.dark}
@@ -358,7 +377,7 @@ const Footer = () => {
               Reviews
             </P>
             </HashLink>
-            <a href="https://chat.whatsapp.com/BXUZdELIxJDJtrpStJgpi0">
+            <a href="https://chat.whatsapp.com/DfED7r2aJNYDAesbbgBDvt">
             <P
               color={theme.color.dark}
               textAlign="left"
@@ -403,7 +422,11 @@ const Footer = () => {
                   new Date().toLocaleDateString()
                 }
                 />
-                <button type="submit">Subscribe</button>
+                <button type="submit">
+                {
+                      loading ? "Loading.." : "Subscribe" 
+                }
+                </button>
               </div>
               </form>
             </div>
