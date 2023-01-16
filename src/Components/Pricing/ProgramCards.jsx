@@ -213,7 +213,7 @@ export const Executive = () => {
         </div>
         <div className="button-container"
         onClick={() => {
-          window.open("")
+          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />

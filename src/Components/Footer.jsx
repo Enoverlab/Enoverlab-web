@@ -12,11 +12,62 @@ import 'react-toastify/dist/ReactToastify.css';
 const Footer = () => {
   const scriptUrl ="https://script.google.com/macros/s/AKfycbw0ohi51CR9vuzVd8cgKr0oV7JU7DsPPvlgg2aQ4iPSrib6SHOzuorHNbdKtLiVQ6z3/exec"
   const formRef = useRef(null);
+  const formRefDesktop = useRef(null)
   const [loading, setLoading] = useState(false)
   const handleSubmit = (e) => {
     setLoading(true)
     e.preventDefault()
-    const formData = new FormData(formRef.current)
+    const formData = new FormData(formRef.current) 
+
+    fetch(scriptUrl, { method: 'POST', body: formData }).then(
+     response => {
+      if(response.status === 201 || response.status === 200){
+        toast.success("🎉 Thank you for subscribing to our newsletter. We will get back to you shortly", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+          
+        })
+        //clear fields
+        formRef.current.reset()
+        setLoading(false)
+      }else{
+        toast.error("An error occured. Please try again",
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        })
+      }
+     }
+    ).catch(
+      error => {
+        toast.error("An error occured. Please try again",
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        })
+      }
+    )
+  }
+  const handleSubmitDesktop = (e) => {
+    setLoading(true)
+    e.preventDefault()
+    const formData = new FormData(formRefDesktop.current) 
+
     fetch(scriptUrl, { method: 'POST', body: formData }).then(
      response => {
       if(response.status === 201 || response.status === 200){
@@ -125,16 +176,14 @@ const Footer = () => {
                 paddingBottom="0.58rem"
                 fontWeight={600}
               >
-                Receive important product management info weekly
+             Receive important PM info weekly
               </P>
               <form
-              onSubmit={handleSubmit}
-              ref={formRef}
+              onSubmit={handleSubmitDesktop}
+              ref={formRefDesktop}
               >
               <div className="form">
-               
                 <div className="form-box">
-                <div className="form-row">
                 <input
                     type="text"
                     name="name"
@@ -147,21 +196,22 @@ const Footer = () => {
                     id=""
                     placeholder="Email Address"
                   />
-                  </div>
-                 
-                     {/* hiddendatefield */}
-                <input type="hidden" name="date" id=""
+                   <input type="hidden" name="date" id=""
                 value= {
                   new Date().toLocaleDateString()
                 }
                 />
+                  </div>
+                 
+                     {/* hiddendatefield */}
+               
                   <button type="submit">
                     {
                       loading ? "Loading.." : "Subscribe" 
                     }
                   </button>
                 </div>
-              </div>
+             
               </form>
              
             </div>
@@ -328,18 +378,7 @@ const Footer = () => {
             >
               Company
             </H4>
-            <a href="tel:09063124595">
-            <P
-              color={theme.color.dark}
-              textAlign="left"
-              fontSize="1rem"
-              lineHeight="28px"
-              mobileFontSize="0.8rem"
-              fontWeight="300"
-            >
-              Contact Us
-            </P>
-            </a>
+          
             <Link to="/about">
             <P
               color={theme.color.dark}
@@ -377,7 +416,7 @@ const Footer = () => {
               Reviews
             </P>
             </HashLink>
-            <a href="https://chat.whatsapp.com/DfED7r2aJNYDAesbbgBDvt">
+            <a href="https://chat.whatsapp.com/FfYyuz2vyDu5TEdD6yMpze">
             <P
               color={theme.color.dark}
               textAlign="left"
@@ -387,6 +426,18 @@ const Footer = () => {
               fontWeight="300"
             >
               Community
+            </P>
+            </a>
+            <a href="tel:09063124595">
+            <P
+              color={theme.color.dark}
+              textAlign="left"
+              fontSize="1rem"
+              lineHeight="28px"
+              mobileFontSize="0.8rem"
+              fontWeight="300"
+            >
+              Contact Us
             </P>
             </a>
           </div>
@@ -402,7 +453,7 @@ const Footer = () => {
               // mobileFontSize="0.5rem"
               fontWeight={500}
             >
-              Receive important product management info weekly
+              Receive important PM info weekly
             </P>
               <form 
               onSubmit={handleSubmit}
@@ -524,15 +575,12 @@ const StyledFooter = styled.div`
       .footer-form {
         margin-top: 1.5rem;
         display: block;
-        .form-box {
-          display: flex;
-          flex-direction: column;
-          row-gap: 0.5rem;
-        }
-        .form-row{
+    
+        .form-box{
           display: flex;
           column-gap: 0.5rem;
         }
+      
         input {
           padding: 1rem;
           border: none;

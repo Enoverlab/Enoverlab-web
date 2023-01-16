@@ -183,7 +183,10 @@ const StyledSession = styled.div`
     .slider-container{
         .slick-slider{
             .slick-dots{
-                bottom: -35px;
+                bottom: -80px;
+                @media (max-width: 768px){
+                    bottom: -35px;
+                }
             }
         }
     }

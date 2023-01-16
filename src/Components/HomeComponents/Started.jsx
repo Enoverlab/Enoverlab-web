@@ -35,7 +35,7 @@ const StyledStarted = styled.div`
         background-position: center;
         background-repeat: no-repeat;
         padding: 5% 5% 5% 5%;
-        border-radius:1.25rem;
+        border-radius:1rem;
         /* width: 100%; */
         H1{
             line-height: 4rem;
