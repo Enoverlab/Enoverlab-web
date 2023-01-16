@@ -40,7 +40,7 @@ const Why = () => {
             </div>
            
            <div className="why-card-container">
-           <WhyCard title={"In-depth training and mentorships"}  content={"with a structured syllabus taught by experienced product managers"} imgSrc={percent} bgColor="#E9F4FE" />
+           <WhyCard title={"In-depth training and mentorship"}  content={"with a structured syllabus taught by experienced product managers"} imgSrc={percent} bgColor="#E9F4FE" />
            <WhyCard title={"Project Based Learning"}  content={"Exposure to projects to get real-life product experience "} imgSrc={bulb} />
            <WhyCard title={"Guaranteed Internship Placement "}  content={"6 weeks Internship after the 10 weeks Advanced training program to build a live product"} imgSrc={cert} />
            <WhyCard title={"Practical and Interactive Live Classes"}  content={"Hands on training with real life cases and examples"} imgSrc={headphone} bgColor="#E9F4FE" />
@@ -50,7 +50,7 @@ const Why = () => {
 
            <div className="why-card-mobile">
               <Slider {...settings}>
-              <WhyCard title={"In-depth training and mentorships"}  content={"with a structured syllabus taught by experienced product managers"} imgSrc={percent} bgColor="#E9F4FE" />
+              <WhyCard title={"In-depth training and mentorship"}  content={"with a structured syllabus taught by experienced product managers"} imgSrc={percent} bgColor="#E9F4FE" />
               <WhyCard title={"Guaranteed Internship Placement "}  content={"6 weeks Internship after the 10 weeks Advanced training program to build a live product"} imgSrc={cert} />
               <WhyCard title={"Supportive Community"}  content={"Access to a close knitted community of product professionals supporting each other"} imgSrc={people}  bgColor="#E9F4FE" />
                 <WhyCard title={"Project Based Learning"}  content={"Exposure to projects to get real-life product experience "} imgSrc={bulb} />   

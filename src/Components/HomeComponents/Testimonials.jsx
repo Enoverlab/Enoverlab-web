@@ -43,6 +43,7 @@ const StyledTestimonials = styled.div`
     
     @media (max-width: 768px) {
         height: 100%;
+        padding: 10% 0% 5% 0%;
     }
        .topCorner{
         position: absolute;
@@ -82,7 +83,7 @@ const StyledTestimonials = styled.div`
             margin-bottom: 0.5rem;
         }
         H3{
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.2rem;
         }
     }
     .testi-slider{

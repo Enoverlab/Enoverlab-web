@@ -189,12 +189,14 @@ const Footer = () => {
                     name="name"
                     id=""
                     placeholder="Full Name"
+                    required
                   />
                    <input
-                    type="text"
+                    type="email"
                     name="email"
                     id=""
                     placeholder="Email Address"
+                    required
                   />
                    <input type="hidden" name="date" id=""
                 value= {
@@ -449,11 +451,11 @@ const Footer = () => {
               color={theme.color.dark}
               textAlign="left"
               fontSize="1rem"
-              paddingBottom="0.58rem"
+              paddingBottom="0.18rem"
               // mobileFontSize="0.5rem"
               fontWeight={500}
             >
-              Receive important PM info weekly
+              Receive important <br/> PM info weekly
             </P>
               <form 
               onSubmit={handleSubmit}
@@ -465,8 +467,9 @@ const Footer = () => {
                     name="name"
                     id=""
                     placeholder="Full Name"
+                    required
                   />
-                <input type="text" name="email" id="" placeholder="Email Address" />
+                <input type="email" name="email" id="" placeholder="Email Address" required/>
                 {/* hiddendatefield */}
                 <input type="hidden" name="date" id=""
                 value= {
@@ -635,7 +638,7 @@ const StyledFooter = styled.div`
       }
      
       .footer-form {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         display: none;
         .form-box {
           display: flex;
@@ -696,7 +699,7 @@ const StyledFooter = styled.div`
      
     }
     p {
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
     }
     H4{
       margin-bottom: 1.2rem;
