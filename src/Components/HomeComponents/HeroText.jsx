@@ -1,6 +1,6 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
-import { H1, H4 } from '../../Utils/Typograpyhy'
+import { H1} from '../../Utils/Typograpyhy'
 import { theme } from '../../Utils/Theme'
 import gsap from 'gsap'
 

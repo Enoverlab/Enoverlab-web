@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H1, H4, P } from '../../Utils/Typograpyhy'
+import { H1,  P } from '../../Utils/Typograpyhy'
 
 const Hero = () => {
   return (

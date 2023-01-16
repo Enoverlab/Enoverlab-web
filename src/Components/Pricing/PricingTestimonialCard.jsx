@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import PriceTestimonialImage from '../../assets/PricingTestimonial1.png'
-import playIcon from '../../assets/playIcon.png'
 import { P } from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 const PricingTestimonialCard = ({vidSrc, flag, name, country}) => {
@@ -9,7 +7,7 @@ const PricingTestimonialCard = ({vidSrc, flag, name, country}) => {
     <StyledPricingTestimonialCard>
         <div className="pricing-testimonial-card-container">
             <div className="price-image-container">
-            <iframe src={vidSrc} frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src={vidSrc} title="youtube player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div className="play-icon-container">
                
                    {/* <img src={playIcon} alt="" className="play-icon" /> */}

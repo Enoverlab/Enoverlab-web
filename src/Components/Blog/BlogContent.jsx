@@ -1,5 +1,4 @@
 import thumbImg2 from '../../assets/BlogImages/thumbnail2.png'
-import thumbImg3 from '../../assets/BlogImages/thumbnail3.png'
 import thumbImg4 from '../../assets/BlogImages/thumbnail4.png'
 import thumbImg1 from '../../assets/banjiNew.jpg'
 import blogImg1 from '../../assets/blog/blogImage1.png'

@@ -5,7 +5,6 @@ import { P, H4, H1 } from "../Utils/Typograpyhy";
 import styled from "styled-components";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import BlogPageImg from '../assets/BlogImages/BlogPageImg.png'
 const BlogContentPage = () => {
   const { id } = useParams();
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import testiMan from '../../assets/testiMan.png'
 import playIcon from '../../assets/playIcon.png'
 import {P} from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'

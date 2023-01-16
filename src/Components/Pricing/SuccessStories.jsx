@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../Utils/Theme'
 import {P, H4} from '../../Utils/Typograpyhy'
@@ -58,7 +58,6 @@ const SuccessData = [
 ]
 
 const SuccessStories = () => {
-    const slider = useRef(null)
     const settings = {
         dots: true,
         infinite: true,

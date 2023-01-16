@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PrimaryButton, SecondaryButton, StyledPrimaryButton } from "../../Utils/Buttons";
+import { PrimaryButton, StyledPrimaryButton } from "../../Utils/Buttons";
 import { theme } from "../../Utils/Theme";
 import { H3, P, H4 } from "../../Utils/Typograpyhy";
 import AboutList from "../Corporate/AboutList";

@@ -5,7 +5,6 @@ import testiImage1 from '../../assets/TestiVideo.png'
 import testiImage2 from '../..//assets/TestiVideo2.png'
 import testiImage3 from '../../assets/TestiVideo3.png'
 import TestiCard from './TestiCard'
-import { H4, P } from '../../Utils/Typograpyhy'
 import arrowWhite from '../../assets/BlackArrow.png'
 import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
 
@@ -34,11 +33,8 @@ const TestiData = [
 const TestiVideo = () => {
    //AsNavFor
    const slideRef = useRef()
-    const [nav1, setNav1] = useState()
-    const [nav2, setNav2] = useState()
-    let slider1 = []
-    let slider2 = []
-
+  
+ 
     const [slideIndex, setSlideIndex] = useState(0)
     const [slideIndex1, setSlideIndex1] = useState(1)
     const [slideIndex2, setSlideIndex2] = useState(2)
@@ -92,15 +88,8 @@ const TestiVideo = () => {
         }
     }
     
-
-    React.useEffect(() => {
-        setNav1(slider1)
-        setNav2(slider2)
-    }, [])
-
     const settings = {
-    
-        speed: 500,
+         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -108,23 +97,11 @@ const TestiVideo = () => {
         autoplay: true,
      
     }
-    const bottomSetting = {
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        arrows: false,
-        adaptiveHeight: true,
-        // centerMode: true,
-        // centerPadding: "5%",
-        // className:"center"
-    }
   return (
     <TestiVideoStyled>
         <div className='top-slider-container'>
         {
             <div className="testi-desktop">
-             {/* <TestiCard testImg={TestiData[slideIndex].imgLink} testName={TestiData[slideIndex].name} testRole={TestiData[slideIndex].role} showButton nameFontSize={"2rem"} nameMobileFontSize={"1.5rem"} roleFontSize="1.5rem" roleMobileFontSize={"1rem"}/> */}
              <iframe width="100%" height="100%" src={TestiData[slideIndex].vidUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         }

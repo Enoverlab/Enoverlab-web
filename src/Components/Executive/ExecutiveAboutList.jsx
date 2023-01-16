@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import check from '../../assets/darkMark.svg'
 import { theme } from '../../Utils/Theme'
 import { P } from '../../Utils/Typograpyhy'
 import { AiOutlineCheck } from 'react-icons/ai'

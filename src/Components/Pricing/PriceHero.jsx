@@ -1,8 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
-import { MainButton, PrimaryButton } from "../../Utils/Buttons";
-import { theme } from "../../Utils/Theme";
 import { H1, P } from "../../Utils/Typograpyhy";
 import { AdvancedCard, BasicCard, Executive, OnsiteCard } from "./ProgramCards";
 const PriceHero = () => {

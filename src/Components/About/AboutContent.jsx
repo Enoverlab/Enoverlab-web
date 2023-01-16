@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import aboutImage from "../../assets/aboutImage.png";
-import { SecondaryButton } from "../../Utils/Buttons";
 import { H1, H2, P } from "../../Utils/Typograpyhy";
 const AboutContent = () => {
   return (

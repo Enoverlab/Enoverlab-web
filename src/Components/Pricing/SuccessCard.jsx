@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../Utils/Theme'
-import { H4, P } from '../../Utils/Typograpyhy'
+import { P } from '../../Utils/Typograpyhy'
 
 const SuccessCard = ({notes, flag, name, avatar, role}) => {
   return (

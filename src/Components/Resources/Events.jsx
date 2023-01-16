@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import eventImage from '../../assets/resources/eventImage.png'
-import eventThumb from '../../assets/resources/eventThumb.png'
-import eventThumbLeft from '../../assets/resources/eventThumbLeft.png'
-import eventThumbRight from '../../assets/resources/eventThumbRight.png'
+// import eventImage from '../../assets/resources/eventImage.png'
+// import eventThumb from '../../assets/resources/eventThumb.png'
+// import eventThumbLeft from '../../assets/resources/eventThumbLeft.png'
+// import eventThumbRight from '../../assets/resources/eventThumbRight.png'
 import { H1 } from '../../Utils/Typograpyhy'
 import EventSlider from './EventSlider'
 const Events = () => {

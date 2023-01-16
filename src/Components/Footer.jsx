@@ -129,9 +129,10 @@ const Footer = () => {
               ref={formRef}
               >
               <div className="form">
+               
                 <div className="form-box">
-                  
-                  <input
+                <div className="form-row">
+                <input
                     type="text"
                     name="name"
                     id=""
@@ -143,6 +144,8 @@ const Footer = () => {
                     id=""
                     placeholder="Email Address"
                   />
+                  </div>
+                 
                      {/* hiddendatefield */}
                 <input type="hidden" name="date" id=""
                 value= {
@@ -503,11 +506,16 @@ const StyledFooter = styled.div`
           flex-direction: column;
           row-gap: 0.5rem;
         }
+        .form-row{
+          display: flex;
+          column-gap: 0.5rem;
+        }
         input {
           padding: 1rem;
           border: none;
-          width: 70%;
+          width: 50%;
           outline: none;
+         
           @media (max-width: 768px) {
             width: 100%;
           }

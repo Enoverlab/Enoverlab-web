@@ -5,9 +5,9 @@ import testiImage1 from '../../assets/resources/eventThumb.png'
 import testiImage2 from '../../assets/resources/eventThumbLeft.png'
 import testiImage3 from '../../assets/resources/eventThumbRight.png'
 import TestiCard from '../HomeComponents/TestiCard'
-import { H4, P } from '../../Utils/Typograpyhy'
-import arrowWhite from '../../assets/BlackArrow.png'
-import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
+// import { H4, P } from '../../Utils/Typograpyhy'
+// import arrowWhite from '../../assets/BlackArrow.png'
+// import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
 
 const TestiData = [
     {
@@ -30,10 +30,6 @@ const TestiData = [
 const EventSlider = () => {
    //AsNavFor
    const slideRef = useRef()
-    const [nav1, setNav1] = useState()
-    const [nav2, setNav2] = useState()
-    let slider1 = []
-    let slider2 = []
 
     const [slideIndex, setSlideIndex] = useState(0)
     const [slideIndex1, setSlideIndex1] = useState(1)
@@ -56,43 +52,40 @@ const EventSlider = () => {
         }
     }
 
-    const handleNext = (index) => {
-        if(slideIndex === 0){
-            setSlideIndex(1)
-            setSlideIndex1(2)
-            setSlideIndex2(0)
-        }else if(slideIndex === 1){
-            setSlideIndex(2)
-            setSlideIndex1(0)
-            setSlideIndex2(1)
-        }else if(slideIndex === 2){
-            setSlideIndex(0)
-            setSlideIndex1(1)
-            setSlideIndex2(2)
-        }
-    }
+    // const handleNext = (index) => {
+    //     if(slideIndex === 0){
+    //         setSlideIndex(1)
+    //         setSlideIndex1(2)
+    //         setSlideIndex2(0)
+    //     }else if(slideIndex === 1){
+    //         setSlideIndex(2)
+    //         setSlideIndex1(0)
+    //         setSlideIndex2(1)
+    //     }else if(slideIndex === 2){
+    //         setSlideIndex(0)
+    //         setSlideIndex1(1)
+    //         setSlideIndex2(2)
+    //     }
+    // }
 
-    const handlePrev = () => {
-        if(slideIndex === 0){
-            setSlideIndex(2)
-            setSlideIndex1(0)
-            setSlideIndex2(1)
-        }else if(slideIndex === 1){
-            setSlideIndex(0)
-            setSlideIndex1(1)
-            setSlideIndex2(2)
-        }else if(slideIndex === 2){
-            setSlideIndex(1)
-            setSlideIndex1(2)
-            setSlideIndex2(0)
-        }
-    }
+    // const handlePrev = () => {
+    //     if(slideIndex === 0){
+    //         setSlideIndex(2)
+    //         setSlideIndex1(0)
+    //         setSlideIndex2(1)
+    //     }else if(slideIndex === 1){
+    //         setSlideIndex(0)
+    //         setSlideIndex1(1)
+    //         setSlideIndex2(2)
+    //     }else if(slideIndex === 2){
+    //         setSlideIndex(1)
+    //         setSlideIndex1(2)
+    //         setSlideIndex2(0)
+    //     }
+    // }
     
 
-    React.useEffect(() => {
-        setNav1(slider1)
-        setNav2(slider2)
-    }, [])
+    
 
     const settings = {
     
@@ -104,17 +97,17 @@ const EventSlider = () => {
         autoplay: true,
      
     }
-    const bottomSetting = {
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        arrows: false,
-        adaptiveHeight: true,
-        // centerMode: true,
-        // centerPadding: "5%",
-        // className:"center"
-    }
+    // const bottomSetting = {
+    //     speed: 500,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     focusOnSelect: true,
+    //     arrows: false,
+    //     adaptiveHeight: true,
+    //     // centerMode: true,
+    //     // centerPadding: "5%",
+    //     // className:"center"
+    // }
   return (
     <EventSliderStyled>
         <div className='top-slider-container'>

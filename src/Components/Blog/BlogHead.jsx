@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {theme} from '../../Utils/Theme'
 import blogHead from '../../assets/blogHeaderBg.svg'
 import { H1 } from '../../Utils/Typograpyhy'
-import { Fi, FiSearch } from 'react-icons/fi'
+import { FiSearch } from 'react-icons/fi'
 
 const BlogHead = () => {
   return (

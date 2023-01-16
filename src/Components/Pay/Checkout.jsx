@@ -5,7 +5,6 @@ import enoverlogo from "../../assets/enovLogo.png";
 import {
   PrimaryButton,
   SecondaryButton,
-  StyledMainButton,
   StyledPrimaryButton,
   StyledSecondaryButton,
 } from "../../Utils/Buttons";

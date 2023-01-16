@@ -4,8 +4,6 @@ import {theme} from '../../Utils/Theme'
 import { H3, P } from '../../Utils/Typograpyhy'
 import Slider from 'react-slick'
 import SessionsCard from './SessionsCard'
-import arrowLeft from '../../assets/slideArrowLeft.png'
-import arrowRight from '../../assets/slideArrowBlue.png'
 import topCornerSessions from '../../assets/topCornerSessions.png'
 import { SessionObject } from './SessionObjects'
 

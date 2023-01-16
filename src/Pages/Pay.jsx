@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import PayHero from '../Components/Pay/PayHero'
@@ -16,4 +16,3 @@ const Pay = () => {
 
 export default Pay
 
-const StyledPay = styled.div``

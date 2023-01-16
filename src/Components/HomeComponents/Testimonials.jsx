@@ -1,13 +1,9 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import {H3, P} from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 import topCornerStripe from '../../assets/topCornerStripes.png'
 import bottomCornerStripe from '../../assets/bottomCornerStripes.png'
-import arrowWhite from '../../assets/BlackArrow.png'
-import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
-import TestiCard from './TestiCard'
-import Slider from 'react-slick'
 import TestiVideo from './TestiVideo'
 
 

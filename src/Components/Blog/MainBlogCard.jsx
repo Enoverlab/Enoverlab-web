@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import blogImage from '../../assets/blogImage.png'
+// import blogImage from '../../assets/blogImage.png'
 import { P, H3 } from '../../Utils/Typograpyhy'
 import thumbnailProfile from '../../assets/BlogImages/thumbnail.png'
 import {theme} from '../../Utils/Theme'

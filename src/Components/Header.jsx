@@ -3,17 +3,14 @@ import styled from "styled-components";
 import { theme } from "../Utils/Theme";
 import { P } from "../Utils/Typograpyhy";
 import {
-  PrimaryButton,
   SecondaryButton,
-  StyledSecondaryButton,
   TertiaryButton,
 } from "../Utils/Buttons";
 import logo from "../assets/enovLogo.png";
-import mobileLogo from "../assets/mobileLogo.png";
 import blueLogo from "../assets/blueLogo.png";
 import menu from "../assets/menu.png";
 import menuWhite from "../assets/menuWhite.png";
-import { Link, useLocation, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { HiOutlineChevronRight } from "react-icons/hi";
 

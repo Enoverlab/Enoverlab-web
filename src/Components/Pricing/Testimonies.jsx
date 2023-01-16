@@ -2,13 +2,13 @@ import React from 'react'
 import {H4, P} from '../../Utils/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 import Slider from 'react-slick'
-import testImage from '../../assets/PricingTestimonial1.png'
-import testImage2 from '../../assets/PricingTestimonial2.png'
-import testImage3 from '../../assets/PricingTestimonial3.png'
+// import testImage from '../../assets/PricingTestimonial1.png'
+// import testImage2 from '../../assets/PricingTestimonial2.png'
+// import testImage3 from '../../assets/PricingTestimonial3.png'
 import styled from 'styled-components'
 import PricingTestimonialCard from './PricingTestimonialCard'
-import arrowLeft from '../../assets/slideArrowLeft.png'
-import arrowRight from '../../assets/slideArrowBlue.png'
+// import arrowLeft from '../../assets/slideArrowLeft.png'
+// import arrowRight from '../../assets/slideArrowBlue.png'
 
 const vidSrcData = [
     {

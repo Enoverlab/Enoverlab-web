@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { P } from '../../Utils/Typograpyhy'
-import {theme} from '../../Utils/Theme'
 import { Link } from 'react-router-dom'
 const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, authorName, imgSrc, date, id}) => {
   return (

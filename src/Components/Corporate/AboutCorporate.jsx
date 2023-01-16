@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {H1, H2, H3, H4, P} from '../../Utils/Typograpyhy'
+import {H1,  H4} from '../../Utils/Typograpyhy'
 import AboutList from './AboutList'
 import laptop from '../../assets/corporate/laptop.png'
 const ListData = [

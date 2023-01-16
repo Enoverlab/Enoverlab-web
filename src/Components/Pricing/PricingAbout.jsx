@@ -5,7 +5,6 @@ import { theme } from '../../Utils/Theme'
 import { H2, P } from '../../Utils/Typograpyhy'
 import PricingAboutList from './PricingAboutList'
 import PricingAboutCorner from '../../assets/pricingAboutCorner.png'
-import { MainButton } from '../../Utils/Buttons'
 
 const aboutList = [
   {
