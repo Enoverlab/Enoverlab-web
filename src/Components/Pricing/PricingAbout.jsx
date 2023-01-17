@@ -25,9 +25,6 @@ const aboutList = [
     listText: "Only Advanced Program trainees have an internship placement at the end of the 10weeks training"
   },
   {
-    listText: "We have weekday & weekend class; you can choose any class that works best for you"
-  },
-  {
     listText: "We have weekday & weekend class for the online training; you can choose any class that works best for you"
   },
   {
