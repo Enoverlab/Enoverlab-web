@@ -17,10 +17,10 @@ const Ebooks = () => {
           <img src={bottomLeftBg} alt="bottom left bg" />
         </div>
         <div className="container-head">
-          <H4 textAlign="left" color="#111111" fontSize="2.25rem" mobileFontSize="1.8rem" mobileLineHeight="2rem">
+          <H4 textAlign="center" color="#111111" fontSize="2.25rem" mobileFontSize="1.8rem" mobileLineHeight="2rem">
           Free product management ebooks
           </H4>
-          <P textAlign="left" fontSize="1.25rem" color="#4B4B4B" mobileFontSize="1rem">
+          <P textAlign="center" fontSize="1.25rem" color="#4B4B4B" mobileFontSize="1rem">
           Download now and expand your product management knowledge
           </P>
         </div>

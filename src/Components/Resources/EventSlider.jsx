@@ -284,13 +284,13 @@ const EventSliderStyled = styled.div`
             .arrowLeft{
                position: absolute;
                 left: 10%;
-                bottom: 50%;
+                bottom: 60%;
                opacity: 0.5;
             }
             .arrowRight{
                 position: absolute;
                 right: 10%;
-                bottom: 50%;
+                bottom: 60%;
             }
             .arrowLeft, .arrowRight{
                 cursor: pointer;
