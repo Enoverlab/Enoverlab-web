@@ -8,7 +8,8 @@ import TestiCard from '../HomeComponents/TestiCard'
 // import { H4, P } from '../../Utils/Typograpyhy'
 // import arrowWhite from '../../assets/BlackArrow.png'
 // import arrowWhiteLeft from '../../assets/BlackArrowLeft.png'
-
+import arrowBlueLeft from '../../assets/icon/blueArrowBack.png'
+import arrowBlueRight from '../../assets/icon/blueArrowFront.png'
 const TestiData = [
     {
         imgLink: testiImage1,
@@ -52,37 +53,37 @@ const EventSlider = () => {
         }
     }
 
-    // const handleNext = (index) => {
-    //     if(slideIndex === 0){
-    //         setSlideIndex(1)
-    //         setSlideIndex1(2)
-    //         setSlideIndex2(0)
-    //     }else if(slideIndex === 1){
-    //         setSlideIndex(2)
-    //         setSlideIndex1(0)
-    //         setSlideIndex2(1)
-    //     }else if(slideIndex === 2){
-    //         setSlideIndex(0)
-    //         setSlideIndex1(1)
-    //         setSlideIndex2(2)
-    //     }
-    // }
+    const handleNext = (index) => {
+        if(slideIndex === 0){
+            setSlideIndex(1)
+            setSlideIndex1(2)
+            setSlideIndex2(0)
+        }else if(slideIndex === 1){
+            setSlideIndex(2)
+            setSlideIndex1(0)
+            setSlideIndex2(1)
+        }else if(slideIndex === 2){
+            setSlideIndex(0)
+            setSlideIndex1(1)
+            setSlideIndex2(2)
+        }
+    }
 
-    // const handlePrev = () => {
-    //     if(slideIndex === 0){
-    //         setSlideIndex(2)
-    //         setSlideIndex1(0)
-    //         setSlideIndex2(1)
-    //     }else if(slideIndex === 1){
-    //         setSlideIndex(0)
-    //         setSlideIndex1(1)
-    //         setSlideIndex2(2)
-    //     }else if(slideIndex === 2){
-    //         setSlideIndex(1)
-    //         setSlideIndex1(2)
-    //         setSlideIndex2(0)
-    //     }
-    // }
+    const handlePrev = () => {
+        if(slideIndex === 0){
+            setSlideIndex(2)
+            setSlideIndex1(0)
+            setSlideIndex2(1)
+        }else if(slideIndex === 1){
+            setSlideIndex(0)
+            setSlideIndex1(1)
+            setSlideIndex2(2)
+        }else if(slideIndex === 2){
+            setSlideIndex(1)
+            setSlideIndex1(2)
+            setSlideIndex2(0)
+        }
+    }
     
 
     
@@ -150,12 +151,12 @@ const EventSlider = () => {
             </div>
         </div>
 
-        {/* <div className="slide-containers">
+        <div className="slide-containers">
            <div className="slide-arrow">
-                <img src={arrowWhiteLeft} alt="arrow" className="arrowLeft" onClick={()=> handleNext()} />
-                <img src={arrowWhite} alt="arrow" className="arrowRight" onClick={()=> handlePrev()} />
+                <img src={arrowBlueLeft} alt="arrow" className="arrowLeft" onClick={()=> handleNext()} />
+                <img src={arrowBlueRight} alt="arrow" className="arrowRight" onClick={()=> handlePrev()} />
             </div>
-        </div> */}
+        </div>
     </div>
 
     
@@ -282,13 +283,13 @@ const EventSliderStyled = styled.div`
             }
             .arrowLeft{
                position: absolute;
-                left: 15%;
+                left: 10%;
                 bottom: 50%;
                opacity: 0.5;
             }
             .arrowRight{
                 position: absolute;
-                right: 15%;
+                right: 10%;
                 bottom: 50%;
             }
             .arrowLeft, .arrowRight{

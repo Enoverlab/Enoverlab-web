@@ -24,7 +24,7 @@ export const Article = [
         cardImg: blogImg1,
         thumbImg: thumbImg1,
         date: "June 25,2022",
-        category: "Softskills",
+        category: "Salary",
         authorName: "Olabanji Ewenla",
     },
     {
@@ -37,7 +37,7 @@ export const Article = [
         cardImg: blogImg2,
         thumbImg: thumbImg2,
         date: "March 6,2022",
-        category: "Softskills",
+        category: "General",
         authorName: "Chidima Ejiogu",
     },
     {
@@ -78,7 +78,7 @@ export const Article = [
         cardImg: blogImg3,
         thumbImg: thumbImg4,
         date: "June 25,2022",
-        category: "Softskills",
+        category: "PM Skills",
         authorName: "Juila Austin",
     },
     {
@@ -100,7 +100,7 @@ export const Article = [
         cardImg: blogImg4,
         thumbImg: thumbImg1,
         date: "July 4,2022",
-        category: "Softskills",
+        category: "Benefits",
         authorName: "Olabanji Ewenla",
     },
     {

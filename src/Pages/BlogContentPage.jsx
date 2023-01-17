@@ -5,6 +5,8 @@ import { P, H4, H1 } from "../Utils/Typograpyhy";
 import styled from "styled-components";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import arrowBack from '../assets/icon/blueArrowBack.png'
+import { Link } from "react-router-dom";
 const BlogContentPage = () => {
   const { id } = useParams();
 
@@ -14,6 +16,24 @@ const BlogContentPage = () => {
   return (
     <>
     <Header  bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
+    
+    <BackIcon>
+    <Link to="/blog">
+    <div className="back-icon">
+      <div className="icon-container">
+      <img src= {arrowBack} alt="back"/>
+      </div>
+   
+    {/* <div className="text">
+      <p>
+        Back
+      </p>
+    </div> */}
+    </div>
+    </Link>
+    </BackIcon>
+  
+   
     <ImageContainer>
       <div className="img-container">
         <img src={article[0]?.cardImg} alt="blog page" />
@@ -171,4 +191,32 @@ const ImageContainer = styled.div`
       object-fit: contain;
     }
   }
+ 
+`
+const BackIcon = styled.div`
+ padding: 0 10%;
+ a{
+  text-decoration: none;
+ 
+  .back-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.375rem;
+    .icon-container{
+      width: 2.5rem;
+      img{
+        width: 100%;
+
+      }
+    }
+    .text{
+      /* margin-left: 1rem; */
+      p{
+        font-size: 1rem;
+        color: #0F2A65;
+        font-weight: 500;
+      }
+    }
+  }
+ }
 `

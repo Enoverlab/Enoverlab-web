@@ -14,11 +14,9 @@ const aboutList = [
   {
     listText: "You don’t need any degree to become a product manager"
   },
+  
   {
-    listText: "Trainings are held  twice a week at selected days"
-  },
-  {
-    listText: "All classes are live online class with an instructor"
+    listText: "The online classes are instructor led, not pre-recorded videos"
   },
   {
     listText: "Class runs for 2 - 3 hours depending on your class schedules"
@@ -29,6 +27,12 @@ const aboutList = [
   {
     listText: "We have weekday & weekend class; you can choose any class that works best for you"
   },
+  {
+    listText: "We have weekday & weekend class for the online training; you can choose any class that works best for you"
+  },
+  {
+    listText: "Onsite training holds only on Saturdays"
+  }
 ]
 
 const PricingAbout = () => {
