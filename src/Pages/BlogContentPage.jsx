@@ -150,7 +150,7 @@ const StyledBlogContent = styled.div`
   padding: 2rem 25%;
   
   @media (max-width: 768px) {
-    padding: 2rem 5%;
+    padding: 2rem 10%;
   }
   .head-container {
     margin-bottom: 2.375rem;
@@ -178,7 +178,7 @@ const StyledBlogContent = styled.div`
 const ImageContainer = styled.div`
   padding: 2rem 10%;
   @media (max-width: 768px) {
-    padding: 6rem 5% 2rem 5%;
+    padding: 2rem 5% 2rem 5%;
   }
   .img-container{
     width: 100%;
@@ -196,6 +196,11 @@ const ImageContainer = styled.div`
 `
 const BackIcon = styled.div`
  padding: 0 10%;
+ position: absolute;
+ top: 20%;
+ @media (max-width: 768px) {
+  top: 10%;
+ }
  a{
   text-decoration: none;
  
@@ -204,13 +209,13 @@ const BackIcon = styled.div`
     align-items: center;
     margin-bottom: 0.375rem;
     .icon-container{
-      width: 2.5rem;
+      width: 3rem;
       /* img{
         width: 100%;
 
       } */
       .icon{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: #0046FF;
       }
     }
