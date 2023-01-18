@@ -200,6 +200,7 @@ const BackIcon = styled.div`
  top: 20%;
  @media (max-width: 768px) {
   top: 10%;
+  padding: 0 2%;
  }
  a{
   text-decoration: none;
@@ -217,6 +218,10 @@ const BackIcon = styled.div`
       .icon{
         font-size: 2.5rem;
         color: #0046FF;
+
+        @media(max-width: 768px){
+          font-size:2rem;
+        }
       }
     }
     .text{
