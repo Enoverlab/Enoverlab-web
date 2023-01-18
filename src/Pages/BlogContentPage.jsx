@@ -7,6 +7,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import arrowBack from '../assets/icon/blueArrowBack.png'
 import { Link } from "react-router-dom";
+import {BsArrowLeftCircle} from 'react-icons/bs'
 const BlogContentPage = () => {
   const { id } = useParams();
 
@@ -21,7 +22,7 @@ const BlogContentPage = () => {
     <Link to="/blog">
     <div className="back-icon">
       <div className="icon-container">
-      <img src= {arrowBack} alt="back"/>
+      <BsArrowLeftCircle className="icon"/>
       </div>
    
     {/* <div className="text">
@@ -204,9 +205,13 @@ const BackIcon = styled.div`
     margin-bottom: 0.375rem;
     .icon-container{
       width: 2.5rem;
-      img{
+      /* img{
         width: 100%;
 
+      } */
+      .icon{
+        font-size: 1.5rem;
+        color: #0046FF;
       }
     }
     .text{
