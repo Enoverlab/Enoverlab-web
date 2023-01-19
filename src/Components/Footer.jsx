@@ -129,7 +129,7 @@ const Footer = () => {
               fontSize="0.9rem"
               mobileFontSize="0.8rem"
             >
-              Building product managers for today,
+              Building impactful product managers for today,
           tomorrow and the future
             </P>
            </div>
