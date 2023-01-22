@@ -8,9 +8,21 @@ import Footer from "../Components/Footer";
 import arrowBack from '../assets/icon/blueArrowBack.png'
 import { Link } from "react-router-dom";
 import {BsArrowLeftCircle} from 'react-icons/bs'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  EmailShareButton,
+  EmailIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from 'react-share'
 const BlogContentPage = () => {
   const { id } = useParams();
-
+  const shareUrl = `https://www.enoverlab.com/blog/${id}`;
   // display content
   const article = Article.filter((item) => item.id === parseInt(id));
   console.log(article);
@@ -52,6 +64,7 @@ const BlogContentPage = () => {
         {article[0]?.title}{" "}
       </H1>
      </div>
+     
       <P textAlign="left" fontSize="1.125rem" color="#4B4B4B" lineHeight="1.9rem">
         {article[0]?.content1}
       </P>
@@ -138,6 +151,34 @@ const BlogContentPage = () => {
       >
         {article[0]?.content10}
       </P>
+
+      <P
+      textAlign="left"
+      fontSize="1.125rem"
+      color="#4B4B4B"
+      lineHeight={"1.1rem"}
+
+      >
+        Share this article:
+      </P>
+
+      <div className="share-container">
+      <FacebookShareButton url={shareUrl} quote={article[0]?.title}>
+        <FacebookIcon size={32} round={true} />
+      </FacebookShareButton>
+      <TwitterShareButton url={shareUrl} title={article[0]?.title}>
+        <TwitterIcon size={32} round={true} />
+      </TwitterShareButton>
+      <WhatsappShareButton url={shareUrl} title={article[0]?.title}>
+        <WhatsappIcon size={32} round={true} />
+      </WhatsappShareButton>
+      <EmailShareButton url={shareUrl} subject={article[0]?.title}>
+        <EmailIcon size={32} round={true} />
+      </EmailShareButton>
+      <LinkedinShareButton url={shareUrl} title={article[0]?.title}>
+        <LinkedinIcon size={32} round={true} />
+      </LinkedinShareButton>
+     </div>
     </StyledBlogContent>
     <Footer/>
     </>
@@ -171,6 +212,16 @@ const StyledBlogContent = styled.div`
       li {
         margin-bottom: 1rem;
       }
+    }
+  }
+  .share-container{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-top: 0rem;
+    @media(max-width: 768px){
+      column-gap: 0.5rem;
+
     }
   }
 `;
@@ -234,4 +285,5 @@ const BackIcon = styled.div`
     }
   }
  }
+ 
 `
