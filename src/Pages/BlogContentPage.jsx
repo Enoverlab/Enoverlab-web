@@ -151,13 +151,15 @@ const BlogContentPage = () => {
       >
         {article[0]?.content10}
       </P>
-
+      
+      
       <P
       textAlign="left"
       fontSize="1.125rem"
       color="#4B4B4B"
       lineHeight={"1.1rem"}
-
+      fontWeight={"700"}
+      paddingTop={"2rem"}
       >
         Share this article:
       </P>
