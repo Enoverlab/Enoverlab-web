@@ -26,7 +26,7 @@ const PriceHero = () => {
               color="#4B4B4B"
             
             >
-              Becoming a product manager is not just about starting a new career, its about impacting lives, including yours.
+             Discover how to solve problems and deliver value with technology while helping organisations drive business growth
             </P>
           </div>
         </div>
