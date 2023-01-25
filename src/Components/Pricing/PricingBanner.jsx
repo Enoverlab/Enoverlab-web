@@ -58,7 +58,7 @@ const StyledPricingBanner = styled.div`
         @media(max-width: 768px) {
             flex-direction: column;
             max-height: 60vh;
-            margin-bottom: 0rem;
+            margin-bottom: 2rem;
         }
         .text-box-1{
             background-color: #1DB6BC;
@@ -154,11 +154,13 @@ const StyledPricingBanner = styled.div`
                 span{
                     background-color: #1DB6BC;
                     color: #0E1098;
-                    padding: 0.2rem;
+                    padding: 0.2rem 0.5rem;
                     font-weight: 800;
                     line-height: 3rem;
                     text-decoration: none;
-                    animation: ${animate} 1s ease-in-out infinite !important; 
+                    animation: ${animate} 1s ease-in-out infinite; 
+                    display: inline-flex;
+                   
                     a{
                         color: #0E1098;
                         text-decoration: none;
@@ -187,7 +189,8 @@ const StyledPricingBanner = styled.div`
                     font-weight: 800;
                     line-height: 3rem;
                     text-decoration: none;
-                    animation: ${animate} 1s ease-in-out infinite !important;
+                    animation: ${animate} 1s ease-in-out infinite ;
+                    display: inline-flex;
                     a{
                         color: #0E1098;
                         text-decoration: none;
