@@ -68,7 +68,7 @@ export const AdvancedCard = () => {
         mobileHeight={"100%"}
         height={"108.4375rem"}
         backLeft={"20px"}
-        lineThrough
+        
         discountPrice={"₦150,000"}
       >
         {AdvancedData.map((item, index) => {

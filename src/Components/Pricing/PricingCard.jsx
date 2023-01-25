@@ -103,6 +103,9 @@ const StyledPricingCard = styled.div`
                     H3{
                     text-decoration: ${props => props.lineThrough ? "line-through" : "none"};
                    }
+                   H4{
+                    text-decoration: line-through;
+                   }
                   
                   }
                    
