@@ -63,11 +63,13 @@ export const AdvancedCard = () => {
         cardText={
           "To learn the required knowledge, skills and tools to fully take up the role of a product manager"
         }
-        tuitionFee={"₦120,000"}
+        tuitionFee={"₦150,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
         height={"108.4375rem"}
         backLeft={"20px"}
+        lineThrough
+        discountPrice={"₦120,000"}
       >
         {AdvancedData.map((item, index) => {
           return (
@@ -146,6 +148,7 @@ export const OnsiteCard = () => {
         duration={"8 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
+       
       >
         {Onsite.map((item, index) => {
           return (

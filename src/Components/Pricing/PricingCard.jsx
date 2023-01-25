@@ -5,9 +5,9 @@ import {H3, P, H4} from '../../Utils/Typograpyhy'
 
 
 
-const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft}) => {
+const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft, lineThrough, discountPrice}) => {
   return (
-    <StyledPricingCard backgroundColor={backgroundColor} height={height} mobileHeight={mobileHeight} backLeft={backLeft}>
+    <StyledPricingCard backgroundColor={backgroundColor} height={height} mobileHeight={mobileHeight} backLeft={backLeft} lineThrough={lineThrough} >
         <div className="pricing-card-container">
         <div className="card-container-back">
             </div>
@@ -20,13 +20,19 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                         {cardText}
                     </P>
                     <div className="fees">
-                        <div className="fee">
+                        <div className="fee-tution">
                           <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
                             TUITION FEE
                           </H4>
-                           <H3 color={textColor} textAlign={"left"} fontSize={"2rem"}>
+                            <div className="tution-price">
+                            <H3 color={textColor} textAlign={"left"} fontSize={"2rem"}>
                                {tuitionFee}
-                            </H3>    
+                            </H3> 
+                            <H4 mobileFontSize="0.8rem" fontSize="1.15rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
+                                {discountPrice}
+                            </H4>   
+                            </div>
+                          
                         </div>
                         <div className="fee">
                             <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor}fontWeight={"700"} textAlign={"left"}>
@@ -89,8 +95,16 @@ const StyledPricingCard = styled.div`
                 justify-content: space-between;
                 margin: 2rem 0;
 
-                .fee{
-                   
+                .fee-tution{
+                  .tution-price{
+                    display: flex;
+                    align-items: baseline;
+                    column-gap: 0.3rem;
+                    H3{
+                    text-decoration: ${props => props.lineThrough ? "line-through" : "none"};
+                   }
+                  
+                  }
                    
                    
                 }
