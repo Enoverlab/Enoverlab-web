@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/bannerImg.jpg'
+import character from '../../assets/banner/bannerImage.jpeg'
 const Banner = () => {
     return (
         <StyledBanner>
@@ -14,14 +14,14 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />            
                     <div className="details mobile">
-                    <h4>Kehinde Olukoga </h4>
-                    <p>Product Manager, KOINS</p>
+                    <h4>Chioma Obiokolo </h4>
+                    <p>Senior Product Manager, VIISAUS</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>Understanding the basics of Product Management</h2>
+                <h2>Common mistakes new PMs make and how to avoid them</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
@@ -29,8 +29,8 @@ const Banner = () => {
                 <img src={character} className="characterWeb" alt="character" />
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Kehinde Olukoga </h4>
-                    <p>Product Manager, KOINS</p>
+                    <h4>Chioma Obiokolo </h4>
+                    <p>Senior Product Manager, VIISAUS</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}

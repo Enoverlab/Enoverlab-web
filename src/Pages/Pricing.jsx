@@ -6,7 +6,7 @@ import PricingAbout from '../Components/Pricing/PricingAbout'
 import Testimonies from '../Components/Pricing/Testimonies'
 import SuccessStories from '../Components/Pricing/SuccessStories'
 import Footer from '../Components/Footer'
-import PricingBanner from '../Components/Pricing/PricingBanner'
+// import PricingBanner from '../Components/Pricing/PricingBanner'
 
 
 const Pricing = () => {
