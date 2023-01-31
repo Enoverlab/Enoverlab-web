@@ -31,6 +31,7 @@ const Ebooks = () => {
                 <BookCard
                   imgUrl={book.imgUrl}
                   key={index}
+                  bookUrl={book.bookUrl}
                 />
               );
             })

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {AiOutlineLink} from 'react-icons/ai'
-const BookCard = ({imgUrl}) => {
+const BookCard = ({imgUrl, bookUrl}) => {
     const [active, setActive] = React.useState(false)
   return (
     <StyledBookCard>
@@ -10,8 +10,12 @@ const BookCard = ({imgUrl}) => {
         onMouseEnter={() => setActive(true)}
         className={
             active ? "book-card-container active" : "book-card-container"
-        }>
-            <img src={imgUrl} alt=""/> 
+        }
+        // onclick={() => window.open(bookUrl, "download")}
+        >
+            <a href={bookUrl} download>
+            <img src={imgUrl} alt=""
+            /> 
             {
                 active ? (
                     <div className="book-card-content">
@@ -22,6 +26,7 @@ const BookCard = ({imgUrl}) => {
                 ):
                 null
             }
+            </a>
         </div>
     </StyledBookCard>    
   )
