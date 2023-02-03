@@ -33,6 +33,9 @@ export const BasicData = [
 
 export const AdvancedData = [
   {
+    listText: "Everything in the basic program"
+  },
+  {
     listText: "Introduction to Product Management",
   },
   {
