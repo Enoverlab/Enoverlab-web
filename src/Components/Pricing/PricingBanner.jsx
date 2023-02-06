@@ -11,8 +11,8 @@ const PricingBanner = () => {
                     You can expand your career options <br/> 
                     </h3>
 
-                    <h3 className='mobile-text'>With product management skills, <br/>
-                    You can expand your career options <br/> 
+                    <h3 className='mobile-text'>With product management<br/>skills, You can expand  <br/>
+                  your career options <br/> 
                     </h3>
                         <span></span>
                 </div>
@@ -27,9 +27,7 @@ const PricingBanner = () => {
                     <p className='mobile-text'>February Admission is ongoing,<br/>
                     Training begins February 11,
                     <br/> <span> <a href="#">
-                       
                         Enrol Now
-                        
                        </a></span></p>
                        
                 </div>
@@ -71,7 +69,7 @@ const StyledPricingBanner = styled.div`
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            padding: 0rem 1.2rem 0rem 10%;
+            padding: 0rem 1.2rem 0rem 5%;
          @media(max-width: 768px) {
             width: 100%;
             height: 23vh;
@@ -200,6 +198,10 @@ const StyledPricingBanner = styled.div`
                         text-decoration: none;
                        
 
+                    }
+
+                    @media(max-width: 768px) {
+                        margin-top: 1rem;
                     }
                 }
                 @media(max-width: 768px) {
