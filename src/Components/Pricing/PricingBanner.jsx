@@ -7,27 +7,31 @@ const PricingBanner = () => {
    <StyledPricingBanner>
     <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>Free PM Masterclass <br/>
-                            Holding this Saturday, Jan 28 <br/> Time: 12pm - 2pm
+                    <h3 className='web-text'>With product management skills <br/>
+                    You can expand your career options <br/> 
                     </h3>
 
-                    <h3 className='mobile-text'>Free PM Masterclass <br/>
-                            Holding this Saturday, Jan 28  <br/>Time: 12pm - 2pm
-
-                        <span></span></h3>
+                    <h3 className='mobile-text'>With product management skills <br/>
+                    You can expand your career options <br/> 
+                    </h3>
+                        <span></span>
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Topic: Starting a career in Product Management<br/>(What you need to know)<br/> <span><a href="https://bit.ly/EnoverlabMasterclass">Register Here</a></span></p>
-                    <p className='mobile-text'>Topic: Starting a career in Product Management<br/>(What you need to know)<br/>
-                    <span> <a href="https://bit.ly/EnoverlabMasterclass">
+                    <p className='web-text'>February Admission is ongoing<br/>Training begins February 13
+                <br/> <span>
+                        <a href="#">Enrol Now</a></span></p> 
+                    <p className='mobile-text'>February Admission is ongoing<br/>
+                    Training begins February 13
+                    <br/> <span> <a href="#">
                        
-                        Register Here
+                        Enrol Now
                         
-                       </a> </span></p>
+                       </a></span></p>
+                       
                 </div>
     </div>
     </StyledPricingBanner>
@@ -80,7 +84,7 @@ const StyledPricingBanner = styled.div`
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 900;
                 color: #0E1098;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 padding-top: .5rem;
                 
                 @media(max-width: 768px) {
