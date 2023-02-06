@@ -21,11 +21,11 @@ const PricingBanner = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>February Admission is ongoing,<br/>Training begins February 13,
+                    <p className='web-text'>February Admission is ongoing,<br/>Training begins February 11,
                 <br/> <span>
                         <a href="#">Enrol Now</a></span></p> 
                     <p className='mobile-text'>February Admission is ongoing,<br/>
-                    Training begins February 13,
+                    Training begins February 11,
                     <br/> <span> <a href="#">
                        
                         Enrol Now
