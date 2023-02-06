@@ -7,11 +7,11 @@ const PricingBanner = () => {
    <StyledPricingBanner>
     <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>With product management skills <br/>
+                    <h3 className='web-text'>With product management skills, <br/>
                     You can expand your career options <br/> 
                     </h3>
 
-                    <h3 className='mobile-text'>With product management skills <br/>
+                    <h3 className='mobile-text'>With product management skills, <br/>
                     You can expand your career options <br/> 
                     </h3>
                         <span></span>
@@ -21,11 +21,11 @@ const PricingBanner = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>February Admission is ongoing<br/>Training begins February 13
+                    <p className='web-text'>February Admission is ongoing,<br/>Training begins February 13,
                 <br/> <span>
                         <a href="#">Enrol Now</a></span></p> 
-                    <p className='mobile-text'>February Admission is ongoing<br/>
-                    Training begins February 13
+                    <p className='mobile-text'>February Admission is ongoing,<br/>
+                    Training begins February 13,
                     <br/> <span> <a href="#">
                        
                         Enrol Now
