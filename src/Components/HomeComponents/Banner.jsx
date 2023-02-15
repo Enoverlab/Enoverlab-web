@@ -6,32 +6,40 @@ import styled from 'styled-components'
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
 import character from '../../assets/banner/bannerImage.jpeg'
+import character2 from '../../assets/banner/bannerImage2.jpg'
+import character3 from '../../assets/banner/bannerImage3.jpeg'
 const Banner = () => {
     return (
         <StyledBanner>
             <div className="topImage">
                 <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
-                <img src={character} className="characterMobile" alt="character" />            
-                    <div className="details mobile">
+                <img src={character} className="characterMobile" alt="character" />        
+                <img src={character2} className="characterMobile" alt="character" />            
+                <img src={character3} className="characterMobile" alt="character" />            
+    
+                    {/* <div className="details mobile">
                     <h4>Chioma Obiokolo </h4>
                     <p>Senior Product Manager, VIISAUS</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>Common mistakes new PMs make and how to avoid them</h2>
+                <h2>How they got their first PM job</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
-                <div className="details web">
+                <img src={character2} className="characterWeb" alt="character" />
+                <img src={character3} className="characterWeb" alt="character" />
+
+                {/* <div className="details web">
                     <h3>Guest Speaker:</h3>
                     <h4>Chioma Obiokolo </h4>
                     <p>Senior Product Manager, VIISAUS</p>
-                </div>
+                </div> */}
             </div>
             {/* <Link to="/register">Register here</Link> */}
             <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
@@ -61,8 +69,10 @@ const StyledBanner = styled.section`
         padding: 1.6875rem 5%;
     }
     .characterWeb {
+        /* width: 90.63px; */
         width: 90.63px;
-        height: auto;
+        height: 100px;
+        object-fit:  cover;
         @media (max-width: 768px) {
             display: none;
         }
@@ -77,9 +87,9 @@ const StyledBanner = styled.section`
             display: none;
             @media (max-width: 768px) {
                 display: block;
-                width: 73px;
+                width: 80px;
                 height: auto;
-                margin-left: .75rem;
+                margin-left: .5rem;
             }
         }
         .logo {
@@ -89,8 +99,12 @@ const StyledBanner = styled.section`
     }
     .cont {
         display: flex;
-         /* mew */
-       
+        column-gap: 0.5rem;
+        
+         /* new */
+        @media (max-width: 768px) {
+            column-gap: 0rem;
+        }
         /* new */
     }
     .details {
