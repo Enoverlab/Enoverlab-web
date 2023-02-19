@@ -18,7 +18,7 @@ const SignupModal = ({ showModal, setShowModal, fileUrl }) => {
       .then((response) => {
 
         if (response.status === 200) {
-            toast.success("🎉 Thank you for Signing up, your download will proceed immediately", {
+            toast.success("🎉 Thank you, your download will proceed immediately", {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -50,7 +50,7 @@ const SignupModal = ({ showModal, setShowModal, fileUrl }) => {
         <div className="overlay" />
         <div className="signup-modal">
           <div className="signup-modal-header">
-            <h3>Sign Up</h3>
+            <h3>Let's get to know you</h3>
             <FaTimes onClick={() => setShowModal(!showModal)} />
           </div>
           <div className="signup-modal-body">
@@ -87,7 +87,7 @@ const SignupModal = ({ showModal, setShowModal, fileUrl }) => {
               />
               {/* submit */}
               <div className="form-group">
-                <input type="submit" value={loading ? "...Loading" : "Sign Up"} />
+                <input type="submit" value={loading ? "...Loading" : "Download Now"} />
               </div>
             </form>
           </div>
@@ -135,6 +135,11 @@ const StyledSignupModal = styled.div`
           font-size: 1.5rem;
           font-weight: 600;
           color: #000000;
+
+          @media (max-width: 768px){
+            font-size: 1.2rem;
+            
+          }
         }
       }
       .signup-modal-body {

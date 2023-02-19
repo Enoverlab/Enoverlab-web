@@ -7,27 +7,27 @@ const PricingBanner = () => {
    <StyledPricingBanner>
     <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>With product management skills, <br/>
-                    You can expand your career options <br/> 
+                    <h3 className='web-text'>20% Lucky Bird Discount Now available!<br/> 
                     </h3>
 
-                    <h3 className='mobile-text'>With product management<br/>skills, You can expand  <br/>
-                  your career options <br/> 
+                    <h3 className='mobile-text'>20% Lucky Bird Discount <br/> Now available!
                     </h3>
-                        <span></span>
+                        {/* <span></span> */}
                 </div>
                 <div className="text-box-2">
                     <img className="triangleWeb" src={triangle} alt="" />
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>February Admission is ongoing,<br/>Training begins February 11,
+                    <p className='web-text'>Save N30,000 when you pay half of your tuition before February 24
+                    {/* <br/> */}
                 <br/> <span>
-                        <a href="#">Enrol Now</a></span></p> 
-                    <p className='mobile-text'>February Admission is ongoing,<br/>
-                    Training begins February 11,
+                        <a href="#">Apply Below</a></span></p> 
+                    <p className='mobile-text'>Save N30,000 when you pay half of your tuition before February 24
+                    {/* <br/> */}
+                    {/* Training begins February 11, */}
                     <br/> <span> <a href="#">
-                        Enrol Now
+                        Apply Below
                        </a></span></p>
                        
                 </div>
@@ -73,7 +73,7 @@ const StyledPricingBanner = styled.div`
          @media(max-width: 768px) {
             width: 100%;
             height: 23vh;
-            padding: 0rem 0.5rem 0rem 0rem;
+            padding: 0rem .5rem 0rem 0rem;
             justify-content: center;
             display: flex;
             align-items: center;
@@ -86,7 +86,7 @@ const StyledPricingBanner = styled.div`
                 padding-top: .5rem;
                 
                 @media(max-width: 768px) {
-                    font-size: 2.0rem;
+                    font-size: 2rem;
                     display: none;
              } 
              .span{
@@ -142,7 +142,7 @@ const StyledPricingBanner = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-left: 0.9rem;
+            padding-left: 3rem;
             @media(max-width: 768px) {
             width: 100%;
             height: 23vh;
@@ -156,7 +156,7 @@ const StyledPricingBanner = styled.div`
                 span{
                     background-color: #1DB6BC;
                     color: #0E1098;
-                    padding: 0.2rem 0.5rem;
+                    padding: .2rem .5rem;
                     font-weight: 800;
                     line-height: 3rem;
                     text-decoration: none;
@@ -187,7 +187,7 @@ const StyledPricingBanner = styled.div`
                 span{
                     background-color: #1DB6BC;
                     color: #0E1098;
-                    padding: 0.2rem;
+                    padding: .2rem;
                     font-weight: 800;
                     line-height: 3rem;
                     text-decoration: none;
