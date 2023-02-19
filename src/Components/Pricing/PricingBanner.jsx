@@ -7,10 +7,14 @@ const PricingBanner = () => {
    <StyledPricingBanner>
     <div className="adbox">
                 <div className="text-box-1">
-                    <h3 className='web-text'>20% Lucky Bird Discount Now available!<br/> 
+                    <h3 className='web-text'>20% Lucky Bird Discount<br/>
+                    Now available for the Advanced<br/> 
+                    Program Online Training <br/>
                     </h3>
 
-                    <h3 className='mobile-text'>20% Lucky Bird Discount <br/> Now available!
+                    <h3 className='mobile-text'>20% Lucky Bird Discount<br/>
+                    Now available for the Advanced<br/> 
+                    Program Online Training <br/>
                     </h3>
                         {/* <span></span> */}
                 </div>
