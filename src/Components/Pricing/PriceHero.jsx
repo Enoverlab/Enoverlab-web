@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { H1, P } from "../../Utils/Typograpyhy";
 import { AdvancedCard, BasicCard, Executive, OnsiteCard } from "./ProgramCards";
+import Timer from "./Timer";
 const PriceHero = () => {
   return (
     <StyledPriceHero>
@@ -49,12 +50,18 @@ const PriceHero = () => {
           <div id="advanced">
             <AdvancedCard/>
           </div>
+          <div id="advanced">
+            <Timer/>
+          </div>
           </div>
         </div>
         <div className="card-block">
           <div className="desktop-view">
           <div  id="advanced">
           <AdvancedCard/>
+          </div>
+          <div  id="advanced" className="timerDesktop">
+          <Timer/>
           </div>
           <div id="executive">
           <Executive/>
@@ -143,6 +150,10 @@ const StyledPriceHero = styled.div`
         display: flex;
       flex-direction: column;
       row-gap: 6.125rem;
+
+      .timerDesktop{
+        
+      }
         @media (max-width: 768px) {
           display: none;
         }
