@@ -4,7 +4,7 @@ import { theme } from "../../Utils/Theme";
 import { H3, P, H4 } from "../../Utils/Typograpyhy";
 
 const Timer = () => {
-    const [expiryTime, setExpiryTime] = useState("24 feb 2023 23:55:00");
+    const [expiryTime, setExpiryTime] = useState("3 mar 2023 23:55:00");
     const [countdownTime, setCountdownTime] = useState({
         countdownDays: "",
         countdownHours: "",

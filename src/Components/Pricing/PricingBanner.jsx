@@ -23,11 +23,11 @@ const PricingBanner = () => {
                     <img src={triangleMobile} className="triangleMobile" alt="" />
                 </div>
                 <div className="text-box-3">
-                    <p className='web-text'>Save N30,000 when you pay half of your tuition before February 24
+                    <p className='web-text'>Save N30,000 when you pay half of your tuition before March 3
                     {/* <br/> */}
                 <br/> <span>
                         <a href="#">Apply Below</a></span></p> 
-                    <p className='mobile-text'>Save N30,000 when you pay half of your tuition before February 24
+                    <p className='mobile-text'>Save N30,000 when you pay half of your tuition before March 3
                     {/* <br/> */}
                     {/* Training begins February 11, */}
                     <br/> <span> <a href="#">
