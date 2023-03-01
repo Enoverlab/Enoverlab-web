@@ -41,7 +41,7 @@ const StyledSectionTwo = styled.div`
         }
         p{
             color: #FFFFFF;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             line-height: 1.875rem;
             margin-bottom: 2rem;
             @media (max-width: 768px){
@@ -50,7 +50,11 @@ const StyledSectionTwo = styled.div`
 
             }
             span{
+                font-size: 1.5rem;
                 color: #84A6FF;
+                @media (max-width: 768px){
+                    font-size: .875rem;
+                }
             }
         }
     }

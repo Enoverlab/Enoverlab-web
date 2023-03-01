@@ -6,8 +6,7 @@ import styled from 'styled-components'
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
 import character from '../../assets/banner/bannerImage1.jpeg'
-import character2 from '../../assets/banner/bannerImage2.jpg'
-import character3 from '../../assets/banner/bannerImage3.jpeg'
+
 const Banner = () => {
     return (
         <StyledBanner>
