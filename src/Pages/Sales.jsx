@@ -9,6 +9,12 @@ import SectionSeven from '../Components/Sales/SectionSeven'
 import SectionEight from '../Components/Sales/SectionEight'
 import SectionNine from '../Components/Sales/SectionNine'
 import SectionTen from '../Components/Sales/SectionTen'
+import SectionEleven from '../Components/Sales/SectionEleven'
+import SectionTwelve from '../Components/Sales/SectionTwelve'
+import SectionThirteen from '../Components/Sales/SectionThirteen'
+import {SectionFourteen} from '../Components/Sales/SectionFourteen'
+import SectionFifteen from '../Components/Sales/SectionFifteen'
+import SectionSixteen from '../Components/Sales/SectionSixteen'
 const Sales = () => {
   return (
     <div>
@@ -22,6 +28,12 @@ const Sales = () => {
         <SectionEight/>
         <SectionNine/>
         <SectionTen/>
+        <SectionEleven/>
+        <SectionTwelve/>
+        <SectionThirteen/>
+        <SectionFourteen/>
+        <SectionFifteen/>
+        <SectionSixteen/>
     </div>
   )
 }
