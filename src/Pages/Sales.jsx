@@ -15,6 +15,8 @@ import SectionThirteen from '../Components/Sales/SectionThirteen'
 import {SectionFourteen} from '../Components/Sales/SectionFourteen'
 import SectionFifteen from '../Components/Sales/SectionFifteen'
 import SectionSixteen from '../Components/Sales/SectionSixteen'
+import SectionSeventeen from '../Components/Sales/SectionSeventeen'
+import SectionEighteen from '../Components/Sales/SectionEighteen'
 const Sales = () => {
   return (
     <div>
@@ -34,6 +36,8 @@ const Sales = () => {
         <SectionFourteen/>
         <SectionFifteen/>
         <SectionSixteen/>
+        <SectionSeventeen/>
+        <SectionEighteen/>
     </div>
   )
 }
