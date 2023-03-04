@@ -50,9 +50,9 @@ const PriceHero = () => {
           <div id="advanced">
             <AdvancedCard/>
           </div>
-          <div id="advanced">
+          {/* <div id="advanced">
             <Timer/>
-          </div>
+          </div> */}
           </div>
         </div>
         <div className="card-block">
@@ -60,9 +60,9 @@ const PriceHero = () => {
           <div  id="advanced">
           <AdvancedCard/>
           </div>
-          <div  id="advanced" className="timerDesktop">
+          {/* <div  id="advanced" className="timerDesktop">
           <Timer/>
-          </div>
+          </div> */}
           <div id="executive">
           <Executive/>
           </div>
