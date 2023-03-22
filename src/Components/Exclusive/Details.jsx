@@ -7,13 +7,13 @@ import detailsImage2 from "../../assets/exclusive/detailsImage2.png";
 import {BsCheckCircle} from 'react-icons/bs'
 import {detailsData, detailsListData} from './DetailsData'
 import Figma from "../../assets/figma.png";
-// import gmailIcon from "../../assets/gmailIcon.png";
-// import googleAnalytics from "../../assets/googleAnalytics.png";
-// import googleDocs from "../../assets/googleDocs.png";
-// import hotJar from "../../assets/hotJar.png";
+import gmailIcon from "../../assets/gmailIcon.png";
+import googleAnalytics from "../../assets/googleAnalytics.png";
+import googleDocs from "../../assets/googleDocs.png";
+import hotJar from "../../assets/hotJar.png";
 import Jira from "../../assets/Jira.png";
 import productPlan from "../../assets/productPlan.png";
-// import slack from "../../assets/slackIcon.png";
+import slack from "../../assets/slackIcon.png";
 import trello from "../../assets/trello.png";
 import { SecondaryButton } from '../../Utils/Buttons'
 
@@ -49,19 +49,7 @@ const Details = () => {
             </H1>
             </div>
             
-            <div className="mobile-head">
-            <H1
-              color={"#0046FF"}
-              fontSize="3rem"
-              lineHeight="3.75rem"
-              mobileFontSize="1.5rem"
-              fontWeight="700"
-              paddingBottom={".875rem"}
-              textAlign="left"
-            >
-              EXCLUSIVE MANAGEMENT  TRAINING
-            </H1>
-            </div>
+          
           
           </div>
           <div className="details-content">
@@ -133,7 +121,14 @@ const Details = () => {
               <img src={Jira} alt="slack-icon" />
               Jira Software
             </div>
+
+            <div className="class-tools-icon">
+              <img src={googleAnalytics} alt="slack-icon" />
+              Product Plan
+            </div>
+
           </div>
+
           <div
             className="class-tools-icon-vert"
             style={{
@@ -148,6 +143,10 @@ const Details = () => {
             <div className="class-tools-icon">
               <img src={productPlan} alt="slack-icon" />
               Product Plan
+            </div>
+            <div className="class-tools-icon">
+              <img src={hotJar} alt="slack-icon" />
+              Hotjar
             </div>
           </div>
         </div>
@@ -192,7 +191,11 @@ const StyledDetails = styled.div`
 
       .details-image {
         width: 100%;
-        height: 100%;
+        height: 26.5rem;
+
+        @media (max-width: 768px) {
+          height: 17.25rem;
+        }
 
         img {
           width: 100%;
@@ -209,17 +212,8 @@ const StyledDetails = styled.div`
       .head-text{
         .desktop-head{
           display: block;
-          @media (max-width: 768px) {
-            display: none;
-          }
         }
-        .mobile-head{
-          display: none;
-          @media (max-width: 768px) {
-            display: block;
-            width: 90%;
-          }
-        }
+       
       }
       .details-content {
         display: grid;

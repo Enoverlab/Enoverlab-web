@@ -28,7 +28,6 @@ const Training = () => {
         >
         <div className="button-container">
         <SecondaryButton to="/programs" buttText="Learn More"/>
-       
         </div>
         </HomeCard> 
 

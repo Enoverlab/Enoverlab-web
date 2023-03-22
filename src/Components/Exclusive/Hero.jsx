@@ -68,6 +68,11 @@ const StyledHero = styled.div`
             position: relative;
             left: 0;
             width:  8.7344rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+            align-self: center;
 
             img{
                 width: 100%;
@@ -100,7 +105,7 @@ const StyledHero = styled.div`
             align-items: center;
 
             @media screen and (max-width: 768px){
-                align-items: flex-start;
+                align-items: center;
                 row-gap: .5rem;
 
             }
@@ -121,13 +126,13 @@ const StyledHero = styled.div`
                 width: 100%;
                .heading-content{
                 H1{
-                    text-align: left;
+                    text-align: center;
                 }
                }
                 .p-container{
                     width: 100%;
                     P{
-                        text-align: left;
+                        text-align: center;
                      
                     }
                 }
