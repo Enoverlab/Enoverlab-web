@@ -29,8 +29,11 @@ const PriceHero = () => {
             
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Here, you will get the knowledge, skills, tools and experience you need to become an impactful product manager
+             Here, you will get the knowledge, skills and tools you need to become an impactful product manager
+             <br/>
+             Go through the programs below to get started
             </P>
+          
           </div>
         </div>
       </div>
