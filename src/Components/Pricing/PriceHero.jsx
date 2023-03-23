@@ -10,12 +10,13 @@ const PriceHero = () => {
         <div className="price-hero-head">
           <div className="desktop-text">
           <H1 fontWeight="500" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
-          Learn the skills, make impact
+          Welcome to an Indepth Product Management learning experience 
           </H1>
           </div>
           <div className="mobile-text">
-          <H1 fontWeight="500" mobileFontSize="2rem" mobileLineHeight="2.5rem">
-          Learn the skills,<br/> make impact
+          <H1 fontWeight="500" mobileFontSize="1.6rem" mobileLineHeight="2rem">
+          {/* Learn the skills,<br/> make impact */}
+          Welcome to an Indepth Product Management learning experience 
           </H1>
           </div>
          
@@ -27,7 +28,8 @@ const PriceHero = () => {
               color="#4B4B4B"
             
             >
-             Discover how to solve problems and deliver value with technology while helping organisations drive business growth
+             {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
+             Here, you will get the knowledge, skills, tools and experience you need to become an impactful product manager
             </P>
           </div>
         </div>
@@ -104,6 +106,10 @@ const StyledPriceHero = styled.div`
     flex-direction: column;
     max-width: 100%;
 
+    @media (max-width: 768px){
+     
+    }
+
     .desktop-text {
       display: block;
       @media (max-width: 768px) {
@@ -114,6 +120,7 @@ const StyledPriceHero = styled.div`
       display: none;
       @media (max-width: 768px) {
         display: block;
+      
       }
     }
     .p-container {
@@ -121,9 +128,11 @@ const StyledPriceHero = styled.div`
       align-self: center;
       @media (max-width: 768px) {
         width: 100%;
+      
         P {
           font-size: 1rem;
           line-height: 120%;
+          padding-top: 0.8rem;
         }
       }
     }
