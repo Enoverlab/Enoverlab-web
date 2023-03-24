@@ -31,16 +31,28 @@ const PriceHero = () => {
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
              Here, you will get the knowledge, skills and tools you need to become an impactful product manager
             </P>
+            <div className="started-text-desktop">
             <P
              fontSize="1.5rem"
              lineHeight="2.25rem"
              fontWeight={300}
              color="#4B4B4B"
-             style = {{marginTop: "0.5rem"}}
-
             >
             Go through the programs below to get started
             </P>
+            </div>
+            <div className="started-text-mobile">
+            <P
+             fontSize="1.5rem"
+             lineHeight="2.25rem"
+             fontWeight={300}
+             color="#4B4B4B"
+           
+            >
+            Go through the programs below to <br/> get started
+            </P>
+            </div>
+           
           
           </div>
         </div>
@@ -144,6 +156,27 @@ const StyledPriceHero = styled.div`
           font-size: 1rem;
           line-height: 120%;
           padding-top: 0.8rem;
+        }
+      }
+      .started-text-desktop {
+        width: 100%;
+        display: block;
+        @media (max-width: 768px) {
+          width: 100%;
+          display: none;
+
+          P{
+          font-size: 1rem;
+          line-height: 120%;
+          width: 100%;
+        }
+        }
+      }
+      .started-text-mobile {
+        display: none;
+
+        @media (max-width: 768px) {
+          display: block;
         }
       }
     }
