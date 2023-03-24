@@ -30,8 +30,16 @@ const PriceHero = () => {
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
              Here, you will get the knowledge, skills and tools you need to become an impactful product manager
-             <br/>
-             Go through the programs below to get started
+            </P>
+            <P
+             fontSize="1.5rem"
+             lineHeight="2.25rem"
+             fontWeight={300}
+             color="#4B4B4B"
+             style = {{marginTop: "0.5rem"}}
+
+            >
+            Go through the programs below to get started
             </P>
           
           </div>
