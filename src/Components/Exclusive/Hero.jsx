@@ -26,8 +26,10 @@ const Hero = () => {
             <P  color="#FFF" fontSize="27.72px"  mobileFontSize="14px" mobileLineHeight="16px">Learn Product Management skills in a premium learning environment, connect with outstanding professionals, and take your career to the next level</P>
             </div>
 
-            <div className="button-container">
-        <SecondaryButton to="/programs" buttText="Enrol Now"/>
+            <div  onClick={() => {
+          window.open("https://bit.ly/enoverlabexclusive")
+        }} className="button-container">
+        <SecondaryButton to="#" buttText="Enrol Now"/>
         </div>
             </div>
           

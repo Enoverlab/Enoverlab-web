@@ -150,8 +150,12 @@ const Details = () => {
             </div>
           </div>
         </div>
-        <div className="button-container">
-        <SecondaryButton to="/programs" buttText="Enrol Now"/>
+        <div 
+         onClick={() => {
+          window.open("https://bit.ly/enoverlabexclusive")
+        }}
+        className="button-container">
+        <SecondaryButton to="#" buttText="Enrol Now"/>
         </div>
         </div>
       </div>
