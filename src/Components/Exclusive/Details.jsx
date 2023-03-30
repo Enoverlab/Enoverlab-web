@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {keyframes}  from "styled-components";
 import { H1, H2, H3, P, H4 } from "../../Utils/Typograpyhy";
 import { theme } from "../../Utils/Theme";
 import detailsImage1 from "../../assets/exclusive/detailsImage1.png";
@@ -88,7 +88,7 @@ const Details = () => {
             detailsListData.map((item, index) => (
               <div key="index" className="list-item">
               <div className="icon">
-                <BsCheckCircle color={color.dark} size="1.5rem" fontWeight={"700"}/>
+                <BsCheckCircle color={color.dark} size="1rem" fontWeight={"700"}/>
               </div>
               <div className="text">
                 <P color={color.dark} fontSize="1.25rem" mobileFontSize="1rem" textAlign="left">
@@ -161,6 +161,17 @@ const Details = () => {
 
 export default Details;
 
+const animate = keyframes`
+    from {
+        transform: scale(.95);
+    }
+
+    to {
+        transform: scale(1);
+    }
+`
+
+
 const StyledDetails = styled.div`
   background-color: #dbf5ff;
   padding: 4.875rem 5%;
@@ -219,6 +230,14 @@ const StyledDetails = styled.div`
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
+
+        .details-content-text{
+          H4{
+            @media (max-width: 768px) {
+              font-weight: 700;
+            }
+          }
+        }
       }
 
     }
@@ -231,6 +250,7 @@ const StyledDetails = styled.div`
           margin-bottom: 1rem;
           display: flex;
           column-gap: 1rem;
+          align-items: center;
         }
       }
     }
@@ -252,6 +272,8 @@ const StyledDetails = styled.div`
         column-gap: 1rem;
         font-size: 1rem;
         font-weight: 700;
+
+      
         .class-icon {
           width: 2.5rem;
           height: 2.5rem;
@@ -259,7 +281,7 @@ const StyledDetails = styled.div`
         }
         @media (max-width: 768px) {
           gap: 0.3rem;
-          font-size: 0.7rem;
+          font-size: 0.85rem;
           img {
             width: 1.9rem;
           }
@@ -275,11 +297,16 @@ const StyledDetails = styled.div`
   .button-container{
         margin-top: 3rem;
         width: 35%;
+        animation: ${animate} 1s ease-in-out infinite; 
         @media(max-width: 768px){
           min-width:47%;
           bottom: 1.7rem;
 
         }
+    }
+
+    ${SecondaryButton}{
+      animation : ${animate} 1s ease-in-out infinite;
     }
 
 `;

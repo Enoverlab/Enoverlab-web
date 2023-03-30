@@ -52,7 +52,7 @@ const StyledHero = styled.div`
         padding: 0 1.5rem;
         display: flex;
         flex-direction: column;
-        row-gap: 3rem;
+        row-gap: 6rem;
 
 
     }
@@ -67,7 +67,7 @@ const StyledHero = styled.div`
         @media screen and (max-width: 768px){
             position: relative;
             left: 0;
-            width:  8.7344rem;
+            width:  6.7344rem;
             display: flex;
             justify-content: center;
             align-items: center;

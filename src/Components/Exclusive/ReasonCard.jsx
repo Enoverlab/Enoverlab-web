@@ -4,11 +4,17 @@ import {H4, P} from '../../Utils/Typograpyhy'
 import reason1 from '../../assets/exclusive/reasonImage1.png'
 
 
-const ReasonCard = ({image, title, description}) => {
+const ReasonCard = ({image, title, description, onClick, onMouseEnter}) => {
   return (
-    <StyledReasonCard  image={image}>
+    <StyledReasonCard 
+    onClick={onClick}
+    onMouseEnter={onMouseEnter}
+    onTouchStart={onMouseEnter}
+    image={image}>
       <div className="card-overlay" />
-       <div className="reason-card-content">
+       <div className="reason-card-content"
+     
+       >
           <div className="reason-card-text">
             <H4 textAlign="left" paddingBottom="1rem" color="#fff"  fontSize="1.25rem" fontWeight="700" mobileFontSize="0.75rem">
               {title}

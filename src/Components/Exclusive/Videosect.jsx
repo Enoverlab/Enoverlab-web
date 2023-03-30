@@ -30,6 +30,14 @@ const StyledVideoSect = styled.div`
         padding: 100px 0;
     }
 
+    .head-container{
+        padding: 0 0;
+        @media (max-width: 768px) {
+            text-align: center;
+            padding: 0 5%;
+        }
+    }
+
     .video-container{
         display: flex;
         justify-content: center;

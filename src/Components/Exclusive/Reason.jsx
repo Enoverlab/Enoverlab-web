@@ -5,23 +5,45 @@ import ReasonCard from './ReasonCard'
 import { theme } from '../../Utils/Theme'
 import { ReasonData } from './ReasonData'
 const Reason = () => {
+    const [activeDots, setActiveDots] = React.useState(0)
   return (
     <StyledReason>
     <div className="reason-header">
         <H3 color={theme.color.dark} paddingBottom="0.5rem" fontSize="1.5rem" fontWeight="700" mobileFontSize="1.25rem" >
-            Why you should join our exclusive community
+        Why take this Exclusive training?
         </H3>
         <P color={theme.color.dark} fontSize="1rem" fontWeight="400" mobileFontSize="0.75rem">
-            We have a community of product managers who are ready to help you grow your career. Here are some of the reasons why you should join us.
+        7 out of every 10 enoverlab trained PM’s gets employed <br/>
+        within 3 months after their training
         </P>
     </div>
     <div className="card-grid">
        {
               ReasonData.map((data, index) => (
-                <ReasonCard key={index} image={data.image} title={data.title} description={data.description} />
+                <ReasonCard key={index} image={data.image} title={data.title} description={data.description} 
+                onClick={() => {setActiveDots(index)}}
+                onMouseEnter={() => {setActiveDots(index)}}
+                />
               ))
        }
     </div>
+    {/* dots */}
+    <div className="dots">   
+    {
+        ReasonData.map((data, index) => (
+            <div className={
+                activeDots === index ? "dot active" : "dot"
+            }
+            onMouseEnter={() => {
+                setActiveDots(index)
+            }}
+            onClick={() => {
+                setActiveDots(index)
+            }}
+            key={index}></div>
+        ))
+    }
+     </div>
     </StyledReason>
   )
 }
@@ -30,7 +52,9 @@ export default Reason
 
 const StyledReason = styled.div`
     padding: 2% 0% 5% 0%;
-
+    @media screen and (max-width: 768px){
+        padding: 2% 0% 15% 0%;
+    }
     .reason-header{
         padding: 0 5%;
     }
@@ -52,4 +76,31 @@ const StyledReason = styled.div`
 
         }
     }
+    .dots{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        
+        @media (max-width: 768px) {
+            display: flex;
+        }
+
+        .dot{
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #C4C4C4;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: #000;
+            }
+        }
+        .active{
+            background-color: #000;
+        }
+    }
+
 `
