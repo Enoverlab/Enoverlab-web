@@ -15,14 +15,14 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />        
                   <div className="details mobile">
-                  <h4>Chinyere Tony-Eke </h4>
-                    <p>Group Head, Digital Banking, Globus Bank</p>
+                  <h4>Rosemary Adekunle </h4>
+                    {/* <p>Group Head, Digital Banking, Globus Bank</p> */}
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>The difference between a product manager and a product marketing manager</h2>
+                <h2>10 things I wish I knew about product management before transitioning</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
@@ -31,8 +31,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Chinyere Tony-Eke </h4>
-                    <p>Group Head, Digital Banking, Globus Bank</p>
+                    <h4>Rosemary Adekunle </h4>
+                    {/* <p>Group Head, Digital Banking, Globus Bank</p> */}
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
