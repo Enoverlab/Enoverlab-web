@@ -1,11 +1,11 @@
 import React from 'react'
 
 import styled from 'styled-components'
-
+import character from '../../assets/SessionImages/SessionCard/Image5.png'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/bannerImage1.jpeg'
+// import character from '../../assets/banner/bannerImage1.jpeg'
 
 const Banner = () => {
     return (
@@ -15,14 +15,14 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />        
                   <div className="details mobile">
-                  <h4>Rosemary Adekunle </h4>
-                    {/* <p>Group Head, Digital Banking, Globus Bank</p> */}
+                  <h4> Oluwaseun Agboola</h4>
+                    <p>Product Manager, African Founders</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>10 things I wish I knew about product management before transitioning</h2>
+                <h2>Managing stakeholders effectively as a new Product Manager</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
@@ -31,8 +31,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Rosemary Adekunle </h4>
-                    {/* <p>Group Head, Digital Banking, Globus Bank</p> */}
+                    <h4> Oluwaseun Agboola</h4>
+                    <p>Product Manager, African Founders</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
@@ -106,7 +106,7 @@ const StyledBanner = styled.section`
         align-items: flex-start;
         justify-content: center;
         margin-left: 1rem;
-        max-width: 150px;
+        max-width: 200px;
         h3{
             font-size: 1.1rem;
             color: #52DEE5;
