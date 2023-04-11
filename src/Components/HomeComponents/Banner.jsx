@@ -67,6 +67,7 @@ const StyledBanner = styled.section`
         width: 90.63px;
         height: 100px;
         object-fit:  cover;
+        object-position: top center;
         @media (max-width: 768px) {
             display: none;
         }
