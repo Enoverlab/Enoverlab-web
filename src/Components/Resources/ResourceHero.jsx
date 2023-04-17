@@ -13,8 +13,7 @@ const ResourceHero = () => {
           Enoverlab Free Resource Library
         </H3>
         <P fontSize="1.75rem" paddingTop="1rem" color=" #4B4B4B" fontWeight={400} lineHeight={"2.625rem"} mobileFontSize="1rem">
-          keeping you updated with vital resources to make you a competent
-          product manager
+        Where you get access to free materials that will help you understand product management better
         </P>
         {/* <div className="email-input">
           <input type="text" placeholder="Enter your email address" />

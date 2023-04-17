@@ -418,7 +418,7 @@ const Footer = () => {
               Reviews
             </P>
             </HashLink>
-            <a href="https://chat.whatsapp.com/FfYyuz2vyDu5TEdD6yMpze">
+            <a href="https://chat.whatsapp.com/J0jWx8V7joE3Y0ridmgAZ5">
             <P
               color={theme.color.dark}
               textAlign="left"
