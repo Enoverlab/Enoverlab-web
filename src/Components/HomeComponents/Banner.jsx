@@ -1,11 +1,10 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import character from '../../assets/SessionImages/SessionCard/Image5.png'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-// import character from '../../assets/banner/bannerImage1.jpeg'
+import character from '../../assets/banner/bannerImage1.jpeg'
 
 const Banner = () => {
     return (
@@ -15,14 +14,14 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />        
                   <div className="details mobile">
-                  <h4> Oluwaseun Agboola</h4>
-                    <p>Product Manager, African Founders</p>
+                  <h4>  Philip Ade-Akanbi </h4>
+                    <p>Data Science Product Manager, Wema Bank</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>Managing stakeholders effectively as a new Product Manager</h2>
+                <h2>What is Data Product Management and how to become a Data PM</h2>
 
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
@@ -31,8 +30,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4> Oluwaseun Agboola</h4>
-                    <p>Product Manager, African Founders</p>
+                    <h4>  Philip Ade-Akanbi </h4>
+                    <p>Data Science Product Manager, Wema Bank</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}

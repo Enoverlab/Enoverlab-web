@@ -5,8 +5,16 @@ import keys from "../../assets/resources/keys.png";
 import job from "../../assets/resources/job.png";
 import earn from "../../assets/resources/earn.png"
 import playbook from "../../assets/resources/tech.png"
+import abc from "../../assets/resources/abc.jpg"
 export const BookData = [
-   
+    {
+        imgUrl: abc,
+        bookUrl: "/abc.pdf"
+    },
+    {
+        imgUrl: playbook,
+        bookUrl: "/playbook.pdf"
+    },
     {
         imgUrl: job,
         bookUrl: "/job.pdf"
@@ -18,9 +26,5 @@ export const BookData = [
     {
         imgUrl: keys,
         bookUrl: "/keys.pdf"
-    },
-    {
-        imgUrl: playbook,
-        bookUrl: "/playbook.pdf"
     }
 ]
