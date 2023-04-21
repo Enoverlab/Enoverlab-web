@@ -221,7 +221,7 @@ export default BookCard;
 const StyledBookCard = styled.div`
   .book-card-container {
     max-width: ${(props) => props.maxWidth ? props.maxWidth : "18.9375rem" };
-    max-height: ${(props) => props.maxHeight ? props.maxHeight : "18.9375rem" };
+    max-height: ${(props) => props.maxHeight ? props.maxHeight : "28.216875rem" };
     cursor: pointer;
     img {
       width: 100%;
