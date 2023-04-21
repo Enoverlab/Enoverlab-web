@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { H1, P } from "../../Utils/Typograpyhy";
 import { AdvancedCard, BasicCard, Executive, OnsiteCard } from "./ProgramCards";
+import BookCard from "../Resources/BookCard";
 import Timer from "./Timer";
+import abc from "../../assets/resources/abc.jpg"
+
 const PriceHero = () => {
   return (
     <StyledPriceHero>
@@ -61,12 +64,12 @@ const PriceHero = () => {
       <div className="pricing-card">
         <div className="card-block">
           <div className="desktop-view">
+          
          <div id="basic">
           <BasicCard/>
           </div>
-          <div id="onsite">
-          <OnsiteCard/>
-          </div>
+          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
+         
           </div>
           <div className="mobile-view">
           <div id="basic">
@@ -85,20 +88,24 @@ const PriceHero = () => {
           <div  id="advanced">
           <AdvancedCard/>
           </div>
+          <div id="onsite">
+          <OnsiteCard/>
+          </div>
           {/* <div  id="advanced" className="timerDesktop">
           <Timer/>
           </div> */}
-          <div id="executive">
+          {/* <div id="executive">
           <Executive/>
-          </div>
+          </div> */}
           </div>
           <div className="mobile-view">
             <div id="onsite">
             <OnsiteCard/>
           </div>
-          <div id="executive">
+          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
+          {/* <div id="executive">
             <Executive/>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
