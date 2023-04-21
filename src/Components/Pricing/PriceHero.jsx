@@ -68,7 +68,17 @@ const PriceHero = () => {
          <div id="basic">
           <BasicCard/>
           </div>
+          <div>
+            <P
+            fontSize="1.3rem"
+            fontWeight="600"
+            color="#000"
+            paddingBottom="1rem"
+            >
+            Download "The ABC of Product Management" below
+            </P>
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
+          </div>
          
           </div>
           <div className="mobile-view">
@@ -102,7 +112,17 @@ const PriceHero = () => {
             <div id="onsite">
             <OnsiteCard/>
           </div>
+          <div>
+          <P
+            fontSize="1.5rem"
+            fontWeight="600"
+            color="#000"
+            paddingBottom="1rem"
+            >
+            Download "The ABC of Product Management" below
+            </P>
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
+          </div>
           {/* <div id="executive">
             <Executive/>
             </div> */}
