@@ -85,14 +85,7 @@ const PriceHero = () => {
             >
             Download "The ABC of Product Management" below
             </P>
-            <P
-            fontSize="1.3rem"
-            fontWeight="600"
-            color="#000"
-            paddingBottom="1rem"
-            >
-            This would expose you to the basics of Product Management.
-            </P>
+            
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div>
          
@@ -145,14 +138,7 @@ const PriceHero = () => {
             >
             Download "The ABC of Product Management" below
             </P>
-            <P
-            fontSize="1.2rem"
-            fontWeight="600"
-            color="#000"
-            paddingBottom="1rem"
-            >
-            This would expose you to the basics of Product Management.
-            </P>
+            
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div>
           {/* <div id="executive">
