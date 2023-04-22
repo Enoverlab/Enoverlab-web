@@ -11,7 +11,7 @@ const PricingAboutList = ({listText, key}) => {
             <AiOutlineCheck className='check-icon' />
           </div>
           <div className="list-text">
-            <P lineHeight="2.0625rem" fontSIze="1.375rem" color="#4B4B4B" textAlign="left" mobileFontSize="0.8rem">{listText}</P>
+            <P lineHeight="2.0625rem" fontSIze="1.375rem" color="#4B4B4B" textAlign="left" mobileFontSize="1rem">{listText}</P>
           </div>
         </div>
     </StyledPricingAboutList>

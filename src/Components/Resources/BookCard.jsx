@@ -175,11 +175,11 @@ const StyledSignupModal = styled.div`
   }
 `;
 
-const BookCard = ({ imgUrl, bookUrl }) => {
+const BookCard = ({ imgUrl, bookUrl, maxWidth, maxHeight }) => {
   const [active, setActive] = React.useState(false);
   const [showModal, setShowModal] = useState(false);
   return (
-    <StyledBookCard>
+    <StyledBookCard maxWidth={maxWidth} maxHeight={maxHeight}>
       <div
         onMouseLeave={() => setActive(false)}
         onMouseEnter={() => setActive(true)}
@@ -220,8 +220,8 @@ export default BookCard;
 
 const StyledBookCard = styled.div`
   .book-card-container {
-    max-width: 18.9375rem;
-    max-height: 28.216875rem;
+    max-width: ${(props) => props.maxWidth ? props.maxWidth : "18.9375rem" };
+    max-height: ${(props) => props.maxHeight ? props.maxHeight : "28.216875rem" };
     cursor: pointer;
     img {
       width: 100%;

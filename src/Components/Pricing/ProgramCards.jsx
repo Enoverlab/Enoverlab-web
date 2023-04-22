@@ -138,9 +138,9 @@ export const OnsiteCard = () => {
   return (
     <CardStyle>
       <PricingCard
-        backgroundColor={theme.color.primary}
+        // backgroundColor={theme.color.primary}
         cardTitle={"Advanced Program (ON-SITE)"}
-        textColor={theme.color.light}
+        textColor={theme.color.dark}
         cardText={
           "This is for professionals who prefers physical training to learn the required skills to become a Product Manager"
         }
@@ -156,19 +156,19 @@ export const OnsiteCard = () => {
               key={index}
               listText={item.listText}
               listSubText={item.listSubText}
-              textColor={theme.color.light}
+              textColor={theme.color.dark}
             />
           );
         })}
 
         <div className="note">
-          <H4 fontSize="1.5rem" textAlign="left" color={theme.color.light}>
+          <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
             NOTE:
           </H4>
           <P
             fontSize="1.125rem"
             textAlign="left"
-            color={theme.color.light}
+            color={theme.color.dark}
             mobileFontSize="1rem"
           >
             <span>Our training centre is at Lekki, Lagos, Nigeria</span>
