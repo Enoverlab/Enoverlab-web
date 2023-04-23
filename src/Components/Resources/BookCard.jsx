@@ -4,11 +4,12 @@ import { AiOutlineLink } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
 import { theme } from "../../Utils/Theme";
 import { ToastContainer, toast } from 'react-toastify';
-
+import {useLocation} from 'react-router-dom'
 const SignupModal = ({ showModal, setShowModal, fileUrl }) => {
+    const location = useLocation()
     const [loading, setLoading] = useState(false)
-  const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbw0ohi51CR9vuzVd8cgKr0oV7JU7DsPPvlgg2aQ4iPSrib6SHOzuorHNbdKtLiVQ6z3/exec";
+  const scriptUrl = location.pathname === "/resources" ?  "https://script.google.com/macros/s/AKfycbw0ohi51CR9vuzVd8cgKr0oV7JU7DsPPvlgg2aQ4iPSrib6SHOzuorHNbdKtLiVQ6z3/exec" : "https://script.google.com/macros/s/AKfycbxFQevT1kEmAzxou6O23T9nV1EmhWCpSBdsKlenLE07D7ks5gMhJttZFKLk3WLomuot/exec"
+   
   const formRef = useRef(null);
   const handleSubmit = (e) => {
     e.preventDefault();
