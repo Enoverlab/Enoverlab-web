@@ -10,7 +10,7 @@ import logo from "../assets/enovLogo.png";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Footer = () => {
-  const scriptUrl ="https://script.google.com/macros/s/AKfycbw0ohi51CR9vuzVd8cgKr0oV7JU7DsPPvlgg2aQ4iPSrib6SHOzuorHNbdKtLiVQ6z3/exec"
+  const scriptUrl ="https://script.google.com/macros/s/AKfycbwCaJuMGD_yGIFXpIJ2tPNsMV94U5ebGPfYwPnUnzJ_nwqyIzRPeSaZ-9Sq1Mk5GKZYCg/exec" 
   const formRef = useRef(null);
   const formRefDesktop = useRef(null)
   const [loading, setLoading] = useState(false)
