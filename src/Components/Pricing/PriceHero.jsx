@@ -50,7 +50,6 @@ const PriceHero = () => {
              lineHeight="2.25rem"
              fontWeight={300}
              color="#4B4B4B"
-           
             >
             Apply today and get 20% discount off!
             </P>
