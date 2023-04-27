@@ -41,7 +41,7 @@ const PriceHero = () => {
              fontWeight={300}
              color="#4B4B4B"
             >
-            Go through the programs below to get started
+         Apply today and get 20% discount off!
             </P>
             </div>
             <div className="started-text-mobile">
@@ -52,7 +52,7 @@ const PriceHero = () => {
              color="#4B4B4B"
            
             >
-            Go through the programs below to <br/> get started
+            Apply today and get 20% discount off!
             </P>
             </div>
            
