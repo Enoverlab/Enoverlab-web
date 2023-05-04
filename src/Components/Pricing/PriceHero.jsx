@@ -35,14 +35,14 @@ const PriceHero = () => {
              Here, you will get the knowledge, skills and tools you need to become an impactful product manager
             </P>
             <div className="started-text-desktop">
-            <P
+            {/* <P
              fontSize="1.5rem"
              lineHeight="2.25rem"
              fontWeight={300}
              color="#4B4B4B"
             >
          Apply today and get 20% discount off!
-            </P>
+            </P> */}
             </div>
             <div className="started-text-mobile">
             <P
