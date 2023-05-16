@@ -16,14 +16,14 @@ const Banner = () => {
                
 
                   <div className="details mobile">
-                  <h4>  Theodora Isola</h4>
-                    <p>Product Manager</p>
+                  <h4> Oluwatosin Adesola</h4>
+                    <p>Associate Product Manager, Lending Technologies Limited</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>Project Management & Product Management; what's the difference?</h2>
+                <h2>Fintech PM shege chronicles</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -31,8 +31,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>  Theodora Isola </h4>
-                    <p>Product Manager</p>
+                    <h4> Oluwatosin Adesola</h4>
+                    <p>Associate Product Manager, Lending Technologies Limited</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
