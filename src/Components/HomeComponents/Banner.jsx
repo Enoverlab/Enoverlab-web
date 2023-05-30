@@ -16,14 +16,14 @@ const Banner = () => {
                
 
                   <div className="details mobile">
-                  <h4>Esther Ubeng</h4>
-                    <p>Scrum Master, Glover Technologies</p>
+                  <h4>Oladipupo Bolaji</h4>
+                    <p>Senior Technical PM, Microsoft</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>The impact of scrum on product teams</h2>
+                <h2>What to focus in your first 60 days as a new Product Manager</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -31,8 +31,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Esther Ubeng</h4>
-                    <p>Scrum Master, Glover Technologies</p>
+                    <h4>Oladipupo Bolaji</h4>
+                    <p>Senior Technical PM, Microsoft</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
