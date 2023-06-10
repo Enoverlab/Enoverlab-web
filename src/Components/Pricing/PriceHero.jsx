@@ -13,7 +13,7 @@ const PriceHero = () => {
         <div className="price-hero-head">
           <div className="desktop-text">
           <H1 fontWeight="500" fontSize="3.8rem" lineHeight="4.2rem" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
-          Kickstart your career in tech without coding
+          Kickstart your career in tech <br/> without coding
           </H1>
           </div>
           <div className="mobile-text">
@@ -24,6 +24,20 @@ const PriceHero = () => {
           </div>
          
           <div className="p-container">
+          <div className="started-text-desktop">
+            <P
+              fontSize="1.5rem"
+              lineHeight="2.25rem"
+              fontWeight={300}
+              color="#4B4B4B"
+            
+            >
+             {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
+             Learn how to become a skilled Product Manager <br/>regardless of your background
+
+            </P>
+            </div>
+            <div className="started-text-mobile">
             <P
               fontSize="1.5rem"
               lineHeight="2.25rem"
@@ -33,8 +47,8 @@ const PriceHero = () => {
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
              Learn how to become a skilled Product Manager regardless of your background
-
             </P>
+            </div>
             <div className="started-text-desktop">
             <P
              fontSize="1.5rem"
@@ -52,7 +66,7 @@ const PriceHero = () => {
              fontWeight={300}
              color="#4B4B4B"
             >
-           Go through the programs below to get started
+           Go through the programs below <br/> to get started
             </P>
             </div>
            
@@ -180,6 +194,7 @@ const StyledPriceHero = styled.div`
 
     .desktop-text {
       display: block;
+      margin-bottom: 1rem;
       @media (max-width: 768px) {
         display: none;
       }
@@ -206,6 +221,7 @@ const StyledPriceHero = styled.div`
       .started-text-desktop {
         width: 100%;
         display: block;
+        margin-bottom: 1rem;
         @media (max-width: 768px) {
           width: 100%;
           display: none;
