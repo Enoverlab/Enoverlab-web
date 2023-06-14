@@ -4,7 +4,7 @@ import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/bannerImage1.jpeg'
+import character from '../../assets/banner/bannerImage1.JPG'
 
 const Banner = () => {
     return (
@@ -16,14 +16,14 @@ const Banner = () => {
                
 
                   <div className="details mobile">
-                  <h4>Oladipupo Bolaji</h4>
-                    <p>Senior Technical PM, Microsoft</p>
+                   <h4>Goodness Ehizode</h4>
+                    <p>Product Manager, Clafiya</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>What to focus in your first 60 days as a new Product Manager</h2>
+                <h2> How to build a Product Manager portfolio</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -31,8 +31,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Oladipupo Bolaji</h4>
-                    <p>Senior Technical PM, Microsoft</p>
+                    <h4>Goodness Ehizode</h4>
+                    <p>Product Manager, Clafiya</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
