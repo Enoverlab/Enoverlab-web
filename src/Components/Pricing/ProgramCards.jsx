@@ -182,7 +182,6 @@ export const OnsiteCard = () => {
             textAlign="left"
             color={theme.color.dark}
             mobileFontSize="1rem"
-            paddingBottom="2rem"
           >
            {
             tab === "active" ?  <span>Our training centre is at Lekki, Lagos, Nigeria</span> :  <span>Our training centre is at Cafe One, Palms Mall, Ring Road, Ibadan</span>
@@ -330,7 +329,6 @@ const CardStyle = styled.div`
     }
   }
   .note {
-    margin-bottom: 1rem;
     H4 {
       margin-bottom: 1rem;
 
