@@ -113,8 +113,8 @@ const PriceHero = () => {
           <div id="basic">
             <BasicCard/>
           </div>
-          <div id="onsite">
-            <OnsiteCard/>
+          <div id="advanced">
+            <AdvancedCard/>
           </div>
           
           {/* <div id="advanced">
@@ -138,9 +138,11 @@ const PriceHero = () => {
           </div> */}
           </div>
           <div className="mobile-view">
-          <div id="advanced">
-            <AdvancedCard/>
+        
+          <div id="onsite">
+          <OnsiteCard/>
           </div>
+
           <div  id="advanced">
           <TechnicalPM/>
           </div>

@@ -5,7 +5,7 @@ import {H3, P, H4} from '../../Utils/Typograpyhy'
 import Switch from 'react-switch'
 
 
-const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft, lineThrough, discountPrice, showSwitch, checkedValue, handleCheckChange}) => {
+const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft, lineThrough, discountPrice, showSwitch, tabValue, switchTab}) => {
    
 
     // const handleChange = (check) => {
@@ -14,7 +14,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
     // }
 
   return (
-    <StyledPricingCard backgroundColor={backgroundColor} height={height} mobileHeight={mobileHeight} backLeft={backLeft} lineThrough={lineThrough} >
+    <StyledPricingCard backgroundColor={backgroundColor} height={height} mobileHeight={mobileHeight} backLeft={backLeft} lineThrough={lineThrough} tabValue={tabValue}>
         <div className="pricing-card-container">
         <div className="card-container-back">
             </div>
@@ -27,26 +27,34 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                         {cardText}
                     </P>
 
-                  {
-                    showSwitch && (
-                        <div
-                        style={{
-                            "display": "flex",
-                            "alignItems": "center",
-                            "marginTop": "1rem"
-                        }}
-                         className="switch-box">
-                        <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
-                        LAGOS     
-                        </H4>
-
-                            <Switch onChange={handleCheckChange} checked={checkedValue} uncheckedIcon={false} checkedIcon={false} offColor={"#000"}/>
-                            <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
-                                    IBADAN
-                            </H4>
-                        </div>
-                    )
-                  }
+               
+                    {
+                        showSwitch && (
+                            <div
+                            className="switch-box">
+                                <div
+                               className="text-switch"
+                               onClick={switchTab}
+                               > 
+                               <H4 mobileFontSize="0.8rem" fontSize="1rem" 
+                                color={tabValue === "active" ? "#FFF" : "#000"} 
+                               fontWeight={"700"} textAlign={"left"}>
+                           LAGOS     
+                           </H4>
+                           </div>
+   
+                               <div
+                               className="text-switch-second"
+                               onClick={switchTab}
+                               >
+                               <H4 mobileFontSize="0.8rem" fontSize="1rem" color={tabValue === "inactive" ? "#FFF" : "#000"} fontWeight={"700"} textAlign={"left"}>
+                                       IBADAN
+                               </H4>
+                               </div>
+                           </div>
+                        )
+                    }
+                   
 
                     <div className="fees">
                         <div className="fee-tution">
@@ -117,13 +125,32 @@ const StyledPricingCard = styled.div`
                     width: 100%;
                     padding: 3rem 1.3rem;
                 }
-            }
 
-            .switch-box{
-                display: "flex !important";
-                column-gap: 0.5rem;
-                margin-top: "1rem"
+                .card-front-text{
+                
+                }
             }
+            .switch-box{
+                display: flex;
+                column-gap: 0.5rem;
+                margin-top: 1rem;
+                cursor: pointer;
+
+                align-items: center;
+                        .text-switch{
+                            background: ${props => props.tabValue === "active" ? "#0046FF" : "#FFF"};
+                            padding: 1rem;
+                            border: 0.01rem solid ${theme.color.primary};
+                        }
+                        .text-switch-second{
+                            background: ${props => props.tabValue === "inactive" ? "#0046FF" : "#FFF"};
+                            padding: 1rem;
+                            border: 0.01rem solid ${theme.color.primary};
+
+                        }
+                    }
+
+           
 
            
 

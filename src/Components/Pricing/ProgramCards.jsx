@@ -136,26 +136,31 @@ export const AdvancedCard = () => {
 };
 
 export const OnsiteCard = () => {
-  const [checked, setChecked] = useState(true)
+  const [tab, setTab] = useState("active")
+
   const handleChange = () => {
-    setChecked(!checked)
+   if(tab === "active"){
+    setTab("inactive")
+   }else{
+    setTab("active")
+   }
   }
   return (
-    <CardStyle>
+    <CardStyle> 
       <PricingCard
-        backgroundColor={theme.color.primary}
+        // backgroundColor={theme.color.primary}
         cardTitle={"Advanced Program (ON-SITE)"}
-        textColor={theme.color.light}
+        textColor={theme.color.dark}
         cardText={
           "This is for professionals who prefers physical training to learn the required skills to become a Product Manager"
         }
         tuitionFee={"₦200,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
-        height={"73.4375rem"}
+        height={"75.4375rem"}
         showSwitch
-        checkedValue={checked}
-       handleCheckChange={handleChange}
+        tabValue={tab}
+        switchTab={handleChange}
       >
         {Onsite.map((item, index) => {
           return (
@@ -163,23 +168,24 @@ export const OnsiteCard = () => {
               key={index}
               listText={item.listText}
               listSubText={item.listSubText}
-              textColor={theme.color.light}
+              textColor={theme.color.dark}
             />
           );
         })}
 
         <div className="note">
-          <H4 fontSize="1.5rem" textAlign="left" color={theme.color.light}>
+          <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
             NOTE:
           </H4>
           <P
             fontSize="1.125rem"
             textAlign="left"
-            color={theme.color.light}
+            color={theme.color.dark}
             mobileFontSize="1rem"
+            paddingBottom="2rem"
           >
            {
-            checked ?  <span>Our training centre is at Lekki, Lagos, Nigeria</span> :  <span>Our training centre is at Cafe One, Palms Mall, Ring Road, Ibadan</span>
+            tab === "active" ?  <span>Our training centre is at Lekki, Lagos, Nigeria</span> :  <span>Our training centre is at Cafe One, Palms Mall, Ring Road, Ibadan</span>
            }
           </P>
         </div>
@@ -242,18 +248,16 @@ export const TechnicalPM = () => {
   return (
     <CardStyle>
       <PricingCard
-        // backgroundColor={theme.color.primary}
-        cardTitle={"Technical Product Management"}
-        textColor={theme.color.dark}
+        backgroundColor={theme.color.primary}
+        cardTitle={"TPM Program"}
+        textColor={theme.color.light}
         cardText={
           "This is a technical product management training that dives deeper into the technical world of building products without coding"
         }
-        tuitionFee={"₦200,000"}
+        tuitionFee={"₦150,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
-        
-      
       >
         {TPMData.map((item, index) => {
           return (
@@ -261,15 +265,10 @@ export const TechnicalPM = () => {
               key={index}
               listText={item.listText}
               listSubText={item.listSubText}
-              textColor={theme.color.dark}
+              textColor={theme.color.light}
             />
           );
         })}
-
-       
-    
-
-       
         <div className="button-container"
         onClick={() => {
           window.open(" https://bit.ly/enoverlabexclusive")
@@ -331,6 +330,7 @@ const CardStyle = styled.div`
     }
   }
   .note {
+    margin-bottom: 1rem;
     H4 {
       margin-bottom: 1rem;
 
