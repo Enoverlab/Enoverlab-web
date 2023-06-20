@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import Figma from "../../assets/figma.png";
 // import gmailIcon from "../../assets/gmailIcon.png";
 // import googleAnalytics from "../../assets/googleAnalytics.png";
@@ -12,7 +13,7 @@ import { theme } from "../../Utils/Theme";
 import {  H4, P } from "../../Utils/Typograpyhy";
 import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
-import { BasicData, AdvancedData, Onsite, ExecutiveData } from "./PricingData";
+import { BasicData, AdvancedData, Onsite, ExecutiveData, TPMData } from "./PricingData";
 import styled from "styled-components";
 export const BasicCard = () => {
   return (
@@ -135,12 +136,16 @@ export const AdvancedCard = () => {
 };
 
 export const OnsiteCard = () => {
+  const [checked, setChecked] = useState(true)
+  const handleChange = () => {
+    setChecked(!checked)
+  }
   return (
     <CardStyle>
       <PricingCard
-        // backgroundColor={theme.color.primary}
+        backgroundColor={theme.color.primary}
         cardTitle={"Advanced Program (ON-SITE)"}
-        textColor={theme.color.dark}
+        textColor={theme.color.light}
         cardText={
           "This is for professionals who prefers physical training to learn the required skills to become a Product Manager"
         }
@@ -148,7 +153,9 @@ export const OnsiteCard = () => {
         duration={"10 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
-       
+        showSwitch
+        checkedValue={checked}
+       handleCheckChange={handleChange}
       >
         {Onsite.map((item, index) => {
           return (
@@ -156,22 +163,24 @@ export const OnsiteCard = () => {
               key={index}
               listText={item.listText}
               listSubText={item.listSubText}
-              textColor={theme.color.dark}
+              textColor={theme.color.light}
             />
           );
         })}
 
         <div className="note">
-          <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
+          <H4 fontSize="1.5rem" textAlign="left" color={theme.color.light}>
             NOTE:
           </H4>
           <P
             fontSize="1.125rem"
             textAlign="left"
-            color={theme.color.dark}
+            color={theme.color.light}
             mobileFontSize="1rem"
           >
-            <span>Our training centre is at Lekki, Lagos, Nigeria</span>
+           {
+            checked ?  <span>Our training centre is at Lekki, Lagos, Nigeria</span> :  <span>Our training centre is at Cafe One, Palms Mall, Ring Road, Ibadan</span>
+           }
           </P>
         </div>
 
@@ -225,6 +234,54 @@ export const Executive = () => {
     </CardStyle>
   );
 };
+
+
+
+export const TechnicalPM = () => {
+ 
+  return (
+    <CardStyle>
+      <PricingCard
+        // backgroundColor={theme.color.primary}
+        cardTitle={"Technical Product Management"}
+        textColor={theme.color.dark}
+        cardText={
+          "This is a technical product management training that dives deeper into the technical world of building products without coding"
+        }
+        tuitionFee={"₦200,000"}
+        duration={"10 Weeks"}
+        mobileHeight={"100%"}
+        height={"73.4375rem"}
+        
+      
+      >
+        {TPMData.map((item, index) => {
+          return (
+            <PricingList
+              key={index}
+              listText={item.listText}
+              listSubText={item.listSubText}
+              textColor={theme.color.dark}
+            />
+          );
+        })}
+
+       
+    
+
+       
+        <div className="button-container"
+        onClick={() => {
+          window.open(" https://bit.ly/enoverlabexclusive")
+        }}
+        >
+          <PrimaryButton to="#" buttText="Enrol Now" />
+        </div>
+      </PricingCard>
+    </CardStyle>
+  );
+};
+
 
 const CardStyle = styled.div`
   .class-tools-icon-container {

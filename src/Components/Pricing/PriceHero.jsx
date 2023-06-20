@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { H1, P } from "../../Utils/Typograpyhy";
-import { AdvancedCard, BasicCard, Executive, OnsiteCard } from "./ProgramCards";
+import { AdvancedCard, BasicCard, Executive, OnsiteCard, TechnicalPM } from "./ProgramCards";
 import BookCard from "../Resources/BookCard";
 import Timer from "./Timer";
 import abc from "../../assets/resources/abc.jpg"
@@ -82,6 +82,11 @@ const PriceHero = () => {
          <div id="basic">
           <BasicCard/>
           </div>
+
+          <div id="onsite">
+          <OnsiteCard/>
+          </div>
+
           <div>
             <P
              fontSize="1.3rem"
@@ -108,9 +113,10 @@ const PriceHero = () => {
           <div id="basic">
             <BasicCard/>
           </div>
-          <div id="advanced">
-            <AdvancedCard/>
+          <div id="onsite">
+            <OnsiteCard/>
           </div>
+          
           {/* <div id="advanced">
             <Timer/>
           </div> */}
@@ -121,8 +127,8 @@ const PriceHero = () => {
           <div  id="advanced">
           <AdvancedCard/>
           </div>
-          <div id="onsite">
-          <OnsiteCard/>
+          <div  id="advanced">
+          <TechnicalPM/>
           </div>
           {/* <div  id="advanced" className="timerDesktop">
           <Timer/>
@@ -132,8 +138,11 @@ const PriceHero = () => {
           </div> */}
           </div>
           <div className="mobile-view">
-            <div id="onsite">
-            <OnsiteCard/>
+          <div id="advanced">
+            <AdvancedCard/>
+          </div>
+          <div  id="advanced">
+          <TechnicalPM/>
           </div>
           <div>
           <P

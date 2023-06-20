@@ -171,5 +171,37 @@ export const ExecutiveData = [
     listText:
       "Product Executive Certification",
   },
+]
 
+export const TPMData = [
+  {
+    listText: "Introduction to Technical Product Management"
+  },
+  {
+    listText: "Requirements Gathering and Product Definition"
+  },
+  {
+    listText: "Agile Product Development"
+  },
+  {
+    listText: "User Experience (UX) Design and Research"
+  },
+  {
+    listText: "Understanding APIs and Integrations"
+  },
+  {
+    listText: "Product Strategy and Roadmapping"
+  },
+  {
+    listText: "Stakeholder Management and Communication"
+  },
+  {
+    listText: "Product Analytics and Iterative Improvement"
+  },
+  {
+    listText: "Product Launch and Go-to-Market Strategies"
+  },
+  {
+    listText: "Career Development and Personal Growth"
+  }
 ]

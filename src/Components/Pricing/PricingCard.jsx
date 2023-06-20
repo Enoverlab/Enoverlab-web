@@ -2,10 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import {theme} from '../../Utils/Theme'
 import {H3, P, H4} from '../../Utils/Typograpyhy'
+import Switch from 'react-switch'
 
 
+const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft, lineThrough, discountPrice, showSwitch, checkedValue, handleCheckChange}) => {
+   
 
-const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft, lineThrough, discountPrice}) => {
+    // const handleChange = (check) => {
+    //     setCheckedValue(check)
+    //     console.log(checkedValue, "check")
+    // }
+
   return (
     <StyledPricingCard backgroundColor={backgroundColor} height={height} mobileHeight={mobileHeight} backLeft={backLeft} lineThrough={lineThrough} >
         <div className="pricing-card-container">
@@ -19,6 +26,28 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                     <P lineHeight="1.5rem" mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" fontSize="0.993125rem" >
                         {cardText}
                     </P>
+
+                  {
+                    showSwitch && (
+                        <div
+                        style={{
+                            "display": "flex",
+                            "alignItems": "center",
+                            "marginTop": "1rem"
+                        }}
+                         className="switch-box">
+                        <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
+                        LAGOS     
+                        </H4>
+
+                            <Switch onChange={handleCheckChange} checked={checkedValue} uncheckedIcon={false} checkedIcon={false} offColor={"#000"}/>
+                            <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
+                                    IBADAN
+                            </H4>
+                        </div>
+                    )
+                  }
+
                     <div className="fees">
                         <div className="fee-tution">
                           <H4 mobileFontSize="0.8rem" fontSize="1rem" color={textColor} fontWeight={"700"} textAlign={"left"}>
@@ -90,6 +119,14 @@ const StyledPricingCard = styled.div`
                 }
             }
 
+            .switch-box{
+                display: "flex !important";
+                column-gap: 0.5rem;
+                margin-top: "1rem"
+            }
+
+           
+
             .fees{
                 display: flex;
                 justify-content: space-between;
@@ -113,4 +150,6 @@ const StyledPricingCard = styled.div`
                 }
             }
         }
+
+       
 `
