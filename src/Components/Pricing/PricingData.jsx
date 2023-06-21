@@ -203,5 +203,8 @@ export const TPMData = [
   },
   {
     listText: "Career Development and Personal Growth"
-  }
+  },
+  {
+    listText: "6 weeks Internship placement"
+  },
 ]
