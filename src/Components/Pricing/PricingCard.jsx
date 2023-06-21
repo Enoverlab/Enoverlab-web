@@ -40,7 +40,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                                <H4 mobileFontSize="0.8rem" fontSize="1rem" 
                                 color={tabValue === "active" ? "#FFF" : "#000"} 
                                fontWeight={"700"} textAlign={"left"}>
-                           LAGOS     
+                           LEKKI    
                            </H4>
                            </div>
    
@@ -59,11 +59,11 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                             textAlign="left"
                             color={theme.color.dark}
                             mobileFontSize="1rem"
-                            paddingTop="1rem"
+                            paddingTop="1.5rem"
                             >
                            <IoLocationSharp/> {
-                            tabValue === "active" ?  <span>Our training centre is at Gateview Plaza, Admiralty way, Lekki Phase 1
-                            </span> :  <span>Our training centre is at Cafe One, Palms Mall, Ring Road, Ibadan</span>
+                            tabValue === "active" ?  <span>Gateview Plaza, Admiralty way, Lekki Phase 1
+                            </span> :  <span>Cafe One, Palms Mall, Ring Road, Ibadan</span>
                             }
                             </P>
                             </>
