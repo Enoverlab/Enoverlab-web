@@ -192,7 +192,7 @@ export const OnsiteCard = () => {
        
         <div className="button-container"
         onClick={() => {
-          window.open(" https://bit.ly/enoverlabexclusive")
+          window.open(tab === "active" ? " https://bit.ly/enoverlabexclusive" : "https://forms.gle/UQtq3gr3BeP59iui8")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
@@ -248,7 +248,7 @@ export const TechnicalPM = () => {
     <CardStyle>
       <PricingCard
         backgroundColor={theme.color.primary}
-        cardTitle={"TPM Program"}
+        cardTitle={"Technical Product Management Program"}
         textColor={theme.color.light}
         cardText={
           "This is a technical product management training that dives deeper into the technical world of building products without coding"
@@ -270,7 +270,7 @@ export const TechnicalPM = () => {
         })}
         <div className="button-container"
         onClick={() => {
-          window.open(" https://bit.ly/enoverlabexclusive")
+          window.open(" https://forms.gle/6j6TMEotgcqHtSe87")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
@@ -279,6 +279,7 @@ export const TechnicalPM = () => {
     </CardStyle>
   );
 };
+
 
 
 const CardStyle = styled.div`

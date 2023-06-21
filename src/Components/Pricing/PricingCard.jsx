@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import {theme} from '../../Utils/Theme'
 import {H3, P, H4} from '../../Utils/Typograpyhy'
 import Switch from 'react-switch'
@@ -89,7 +89,17 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
 }
 
 export default PricingCard
-
+const pulse = keyframes`
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+`
 const StyledPricingCard = styled.div`
         position: relative;
         width: 100%;
@@ -132,7 +142,7 @@ const StyledPricingCard = styled.div`
             }
             .switch-box{
                 display: flex;
-                column-gap: 0.5rem;
+                column-gap: 1rem;
                 margin-top: 1rem;
                 cursor: pointer;
 
@@ -141,11 +151,13 @@ const StyledPricingCard = styled.div`
                             background: ${props => props.tabValue === "active" ? "#0046FF" : "#FFF"};
                             padding: 1rem;
                             border: 0.01rem solid ${theme.color.primary};
+                            animation: ${pulse} 2s ease-in-out infinite;
                         }
                         .text-switch-second{
                             background: ${props => props.tabValue === "inactive" ? "#0046FF" : "#FFF"};
                             padding: 1rem;
                             border: 0.01rem solid ${theme.color.primary};
+                            animation: ${pulse} 2s ease-in-out infinite;
 
                         }
                     }
