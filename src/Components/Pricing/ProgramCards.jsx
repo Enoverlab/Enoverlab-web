@@ -174,19 +174,10 @@ export const OnsiteCard = () => {
         })}
 
         <div className="note">
-          <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
+          {/* <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
             NOTE:
-          </H4>
-          <P
-            fontSize="1.125rem"
-            textAlign="left"
-            color={theme.color.dark}
-            mobileFontSize="1rem"
-          >
-           {
-            tab === "active" ?  <span>Our training centre is at Lekki, Lagos, Nigeria</span> :  <span>Our training centre is at Cafe One, Palms Mall, Ring Road, Ibadan</span>
-           }
-          </P>
+          </H4> */}
+         
         </div>
 
        

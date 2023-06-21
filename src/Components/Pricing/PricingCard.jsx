@@ -3,7 +3,7 @@ import styled, {keyframes} from 'styled-components'
 import {theme} from '../../Utils/Theme'
 import {H3, P, H4} from '../../Utils/Typograpyhy'
 import Switch from 'react-switch'
-
+import {IoLocationSharp} from 'react-icons/io5'
 
 const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft, lineThrough, discountPrice, showSwitch, tabValue, switchTab}) => {
    
@@ -30,6 +30,7 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                
                     {
                         showSwitch && (
+                            <>
                             <div
                             className="switch-box">
                                 <div
@@ -52,6 +53,20 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                                </H4>
                                </div>
                            </div>
+
+                            <P
+                            fontSize="1.125rem"
+                            textAlign="left"
+                            color={theme.color.dark}
+                            mobileFontSize="1rem"
+                            paddingTop="1rem"
+                            >
+                           <IoLocationSharp/> {
+                            tabValue === "active" ?  <span>Our training centre is at Gateview Plaza, Admiralty way, Lekki Phase 1
+                            </span> :  <span>Our training centre is at Cafe One, Palms Mall, Ring Road, Ibadan</span>
+                            }
+                            </P>
+                            </>
                         )
                     }
                    
