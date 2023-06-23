@@ -14,7 +14,7 @@ const Videosect = () => {
 
 
         <div className="video-container">
-        <iframe width="374" height="665" src="https://www.youtube.com/embed/MBYpSE9xDtY" title="Catch a glimpse into our Product Management training room" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="374" height="665" src="https://www.youtube.com/embed/MBYpSE9xDtY" title="Catch a glimpse into our Product Management training room" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </StyledVideoSect>
 
