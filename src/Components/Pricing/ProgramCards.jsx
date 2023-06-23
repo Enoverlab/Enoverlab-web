@@ -64,13 +64,13 @@ export const AdvancedCard = () => {
         cardText={
           "To learn the required knowledge, skills and tools to fully take up the role of a product manager"
         }
-        tuitionFee={"₦150,000"}
+        tuitionFee={"₦120,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
         height={"108.4375rem"}
         backLeft={"20px"}
         
-        // discountPrice={"₦150,000"}
+        discountPrice={"₦150,000"}
       >
         {AdvancedData.map((item, index) => {
           return (
@@ -244,10 +244,11 @@ export const TechnicalPM = () => {
         cardText={
           "This is a technical product management training that dives deeper into the technical world of building products without coding"
         }
-        tuitionFee={"₦150,000"}
+        tuitionFee={"₦120,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
+        discountPrice={"₦150,000"}
       >
         {TPMData.map((item, index) => {
           return (
