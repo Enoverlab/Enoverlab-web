@@ -154,7 +154,7 @@ export const OnsiteCard = () => {
         cardText={
           "This is for professionals who prefers physical training to learn the required skills to become a Product Manager"
         }
-        tuitionFee={"₦200,000"}
+        tuitionFee={tab === "active" ? "₦200,000" : "₦180,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
         height={"75.4375rem"}
