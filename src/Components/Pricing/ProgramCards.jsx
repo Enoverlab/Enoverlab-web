@@ -148,7 +148,7 @@ export const OnsiteCard = () => {
   return (
     <CardStyle> 
       <PricingCard
-        // backgroundColor={theme.color.primary}
+        // backgroundColor={theme.color.primary} add comment
         cardTitle={"Advanced Program (ON-SITE)"}
         textColor={theme.color.dark}
         cardText={
