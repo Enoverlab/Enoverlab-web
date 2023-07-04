@@ -4,7 +4,7 @@ import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/bannerImage1.jpeg'
+import character from '../../assets/banner/bannerImage1.jpg'
 
 const Banner = () => {
     return (
@@ -13,17 +13,15 @@ const Banner = () => {
                 <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />
-               
-
                   <div className="details mobile">
-                  <h4>Adebayo Adesegun</h4>
-                    <p>Senior Software Engineer, Paystack</p>
+                  <h4>Mark Yusuf </h4>
+                    <p>Product Owner, FCMB</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2> How to collaborate effectively with Engineering teams</h2>
+                <h2> The relevance of APIs to Product Managers</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -31,8 +29,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Adebayo Adesegun</h4>
-                    <p>Senior Software Engineer, Paystack</p>
+                    <h4>Mark Yusuf </h4>
+                    <p>Product Owner, FCMB</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
