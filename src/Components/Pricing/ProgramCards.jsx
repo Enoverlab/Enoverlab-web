@@ -61,9 +61,7 @@ export const AdvancedCard = () => {
         backgroundColor={theme.color.primary}
         cardTitle={"Advanced Program (ONLINE)"}
         textColor={theme.color.light}
-        cardText={
-          "To learn the required knowledge, skills and tools to fully take up the role of a product manager"
-        }
+        cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}
         tuitionFee={"₦150,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
