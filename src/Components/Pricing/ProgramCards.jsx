@@ -241,7 +241,7 @@ export const TechnicalPM = () => {
         cardTitle={"Technical Product Management Program"}
         textColor={theme.color.light}
         cardText={
-          "This is a technical product management training that dives deeper into the technical world of building products without coding"
+          "For product managers with atleast one year working experience to build their technical proficiency"
         }
         tuitionFee={"₦120,000"}
         duration={"10 Weeks"}
