@@ -173,35 +173,39 @@ export const ExecutiveData = [
   },
 ]
 
+
 export const TPMData = [
   {
     listText: "Introduction to Technical Product Management"
   },
   {
-    listText: "Requirements Gathering and Product Definition"
+    listText: "Fundamentals of APIs"
   },
   {
-    listText: "Agile Product Development"
+    listText: "API Management and Strategy"
   },
   {
-    listText: "User Experience (UX) Design and Research"
+    listText: "Building Effective Support Systems"
   },
   {
-    listText: "Understanding APIs and Integrations"
+    listText: "Support Tools and Metrics"
   },
   {
-    listText: "Product Strategy and Roadmapping"
+    listText: "Using Postman and Azure to test APIs"
   },
   {
-    listText: "Stakeholder Management and Communication"
+    listText: "Integration Approaches and Patterns"
   },
   {
-    listText: "Product Analytics and Iterative Improvement"
+    listText: "Integration Tools and Platforms"
   },
   {
-    listText: "Product Launch and Go-to-Market Strategies"
+    listText: "Deployment and deployment environments"
   },
   {
-    listText: "Career Development and Personal Growth"
+    listText: "Product Analytics"
+  },
+  {
+    listText: "Advanced Topics and Case Studies"
   }
 ]

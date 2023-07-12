@@ -244,7 +244,7 @@ export const TechnicalPM = () => {
           "For product managers with atleast one year working experience to build their technical proficiency"
         }
         tuitionFee={"₦120,000"}
-        duration={"10 Weeks"}
+        duration={"8 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
         discountPrice={"₦150,000"}
