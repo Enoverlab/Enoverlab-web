@@ -9,6 +9,7 @@ import Started from '../Components/HomeComponents/Started'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Banner from '../Components/HomeComponents/Banner'
+import CertiMarquee from '../Components/HomeComponents/CertiMarquee'
 // import { theme } from '../Utils/Theme'
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
        <Header bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
        {/* <Banner /> */}
         <Hero/>
+        <CertiMarquee/>
         <About/>
         <Training/>
         <Why/>

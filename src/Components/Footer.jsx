@@ -132,6 +132,15 @@ const Footer = () => {
               Building impactful product managers for today,
           tomorrow and the future
             </P>
+            <P
+              lineHeight="28px"
+              color={theme.color.dark}
+              textAlign="left"
+              fontSize="0.9rem"
+              mobileFontSize="0.8rem"
+            >
+             Enoverlab is accredited by the American Council of Training and Development (ACTD)
+            </P>
            </div>
             
             <div className="icon-container">
@@ -440,6 +449,18 @@ const Footer = () => {
               fontWeight="300"
             >
               Contact Us
+            </P>
+            </a>
+            <a target="_blank" href="https://www.actd.us/enoverlab/">
+            <P
+              color={theme.color.dark}
+              textAlign="left"
+              fontSize="1rem"
+              lineHeight="28px"
+              mobileFontSize="0.8rem"
+              fontWeight="300"
+            >
+            Accreditation
             </P>
             </a>
           </div>

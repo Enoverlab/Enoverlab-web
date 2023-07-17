@@ -5,7 +5,7 @@ import { AdvancedCard, BasicCard, Executive, OnsiteCard, TechnicalPM } from "./P
 import BookCard from "../Resources/BookCard";
 import Timer from "./Timer";
 import abc from "../../assets/resources/abc.jpg"
-
+import CertiMarquee from "../HomeComponents/CertiMarquee";
 const PriceHero = () => {
   return (
     <StyledPriceHero>
@@ -70,11 +70,13 @@ const PriceHero = () => {
             </P>
             </div>
            
-          
+       
           </div>
+        
         </div>
+        <CertiMarquee/>
       </div>
-
+   
       <div className="pricing-card">
         <div className="card-block">
           <div className="desktop-view">
