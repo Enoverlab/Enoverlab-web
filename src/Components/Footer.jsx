@@ -139,7 +139,7 @@ const Footer = () => {
               fontSize="0.9rem"
               mobileFontSize="0.8rem"
             >
-             Enoverlab is accredited by the American Council of Training and Development (ACTD)
+           Accredited by the American Council of Training and Development (ACTD) to deliver professional product management training to individuals and corporate organisations.
             </P>
            </div>
             
@@ -402,6 +402,18 @@ const Footer = () => {
               About Us
             </P>
             </Link>
+            <a target="_blank" href="https://www.actd.us/enoverlab/">
+            <P
+              color={theme.color.dark}
+              textAlign="left"
+              fontSize="1rem"
+              lineHeight="28px"
+              mobileFontSize="0.8rem"
+              fontWeight="300"
+            >
+            Accreditation
+            </P>
+            </a>
             <Link to="/#">
             <P
               color={theme.color.dark}
@@ -451,18 +463,7 @@ const Footer = () => {
               Contact Us
             </P>
             </a>
-            <a target="_blank" href="https://www.actd.us/enoverlab/">
-            <P
-              color={theme.color.dark}
-              textAlign="left"
-              fontSize="1rem"
-              lineHeight="28px"
-              mobileFontSize="0.8rem"
-              fontWeight="300"
-            >
-            Accreditation
-            </P>
-            </a>
+          
           </div>
 
           {/* mobile */}

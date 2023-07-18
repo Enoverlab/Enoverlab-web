@@ -6,7 +6,7 @@ const CertiMarquee = () => {
     <StyledCerti>
     <Marquee>
         <h5 className="cert-text">
-        We are accredited by the American Council of Training and Development (ACTD)
+        Enoverlab is accredited by the American Council of Training and Development (ACTD)
         </h5>
        
     
@@ -18,9 +18,12 @@ const CertiMarquee = () => {
 export default CertiMarquee
 
 const StyledCerti = styled.div`
-    padding: 2rem 0;
+    padding: 1rem 0;
+    margin: 3rem 0; 
+    background-color:  #0046FF;
+    
     .cert-text{
-        color: #0046FF;
+        color: #FFF;
         font-size: 25px;
         font-weight: 500;
 

@@ -74,9 +74,9 @@ const PriceHero = () => {
           </div>
         
         </div>
-        <CertiMarquee/>
+        
       </div>
-   
+      <CertiMarquee/>
       <div className="pricing-card">
         <div className="card-block">
           <div className="desktop-view">
@@ -181,18 +181,26 @@ const PriceHero = () => {
 export default PriceHero;
 
 const StyledPriceHero = styled.div`
-  padding: 5% 8% 12% 8%;
+ 
   position: relative;
   /* margin-bottom: 10%; */
   background-color: #fffdf7;
   @media (max-width: 768px) {
-    padding: 5% 10% 15% 5%;
+   
   }
   .price-hero-container {
+    padding: 5% 8% 0% 8%;
     position: relative;
-    margin-bottom: 8.5rem;
+    margin-bottom: 3rem;
     @media (max-width: 768px) {
-      margin-bottom: 6rem;
+      margin-bottom: 2rem;
+      padding: 5% 10% 0% 5%;
+    }
+  }
+  .pricing-card{
+    padding: 5% 10% 15% 5%;
+    @media(max-width: 768px){
+      padding: 5% 10% 15% 5%;
     }
   }
   .price-hero-head {
