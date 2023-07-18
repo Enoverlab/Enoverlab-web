@@ -122,16 +122,15 @@ const Footer = () => {
               <img src={logo} alt="logo" />
            </div>
            <div className="slogan">
-           {/* <P
+           <P
               lineHeight="28px"
               color={theme.color.dark}
               textAlign="left"
               fontSize="0.9rem"
               mobileFontSize="0.8rem"
             >
-              Building impactful product managers for today,
-          tomorrow and the future
-            </P> */}
+            Building impactful product managers for today, tomorrow, and the future
+            </P>
             <P
               lineHeight="28px"
               color={theme.color.dark}
