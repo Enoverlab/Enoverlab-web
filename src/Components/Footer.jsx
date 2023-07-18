@@ -131,7 +131,7 @@ const Footer = () => {
             >
             Building impactful product managers for today, tomorrow, and the future
             </P>
-            <P
+            {/* <P
               lineHeight="28px"
               color={theme.color.dark}
               textAlign="left"
@@ -139,7 +139,7 @@ const Footer = () => {
               mobileFontSize="0.8rem"
             >
            Accredited by the American Council of Training and Development (ACTD) to deliver professional product management training to individuals and corporate organisations.
-            </P>
+            </P> */}
            </div>
             
             <div className="icon-container">
