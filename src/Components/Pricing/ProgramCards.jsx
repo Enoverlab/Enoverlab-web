@@ -243,11 +243,11 @@ export const TechnicalPM = () => {
         cardText={
           "For product managers with atleast one year working experience to build their technical proficiency"
         }
-        tuitionFee={"₦120,000"}
+        tuitionFee={"₦150,000"}
         duration={"8 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
-        discountPrice={"₦150,000"}
+        // discountPrice={"₦150,000"}
       >
         {TPMData.map((item, index) => {
           return (
