@@ -13,14 +13,14 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />
                   <div className="details mobile">
-                  <h4>Adeola Richards</h4>
-                    <p>Senior Product Manager, Glover Technologies</p>
+                  <h4>Seyifunmi Jesuloluwa </h4>
+                    <p>Product Manager, Cashingames</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>What do you do after a product launch</h2>
+                <h2>Scaling products from introduction to growth stage</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -28,8 +28,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Adeola Richards</h4>
-                    <p>Senior Product Manager, Glover Technologies</p>
+                    <h4>Seyifunmi Jesuloluwa </h4>
+                    <p>Product Manager, Cashingames</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
