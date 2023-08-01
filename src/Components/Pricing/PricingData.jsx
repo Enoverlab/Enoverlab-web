@@ -89,7 +89,7 @@ export const AdvancedData = [
     listText: "Certificate of Completion",
   },
   {
-    listText: "6 weeks Internship placement",
+    listText: "8 weeks Internship placement",
   },
 ];
 
