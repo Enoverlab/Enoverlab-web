@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { H1, P } from "../../Utils/Typograpyhy";
-import { AdvancedCard, BasicCard, Executive, OnsiteCard, TechnicalPM } from "./ProgramCards";
+import { AdvancedCard, BasicCard, Executive, OnsiteCard, TechnicalPM, GrowthPM } from "./ProgramCards";
 import BookCard from "../Resources/BookCard";
 import Timer from "./Timer";
 import abc from "../../assets/resources/abc.jpg"
@@ -88,8 +88,46 @@ const PriceHero = () => {
           <div id="onsite">
           <OnsiteCard/>
           </div>
+          <div id="growth">
+          <GrowthPM/>
+          </div>
 
-          <div>
+         
+         
+          </div>
+          <div className="mobile-view">
+          <div id="basic">
+            <BasicCard/>
+          </div>
+          <div id="advanced">
+            <AdvancedCard/>
+          </div>
+          
+          
+          {/* <div id="advanced">
+            <Timer/>
+          </div> */}
+          </div>
+        </div>
+        <div className="card-block">
+          <div className="desktop-view">
+          <div  id="advanced">
+          <AdvancedCard/>
+          </div>
+          <div  id="advanced">
+          <TechnicalPM/>
+          </div>
+          <div  id="advanced">
+         
+          </div>
+
+          {/* <div  id="advanced" className="timerDesktop">
+          <Timer/>
+          </div> */}
+          {/* <div id="executive">
+          <Executive/>
+          </div> */}
+           <div>
             <P
              fontSize="1.3rem"
              fontWeight="600"
@@ -109,35 +147,6 @@ const PriceHero = () => {
             
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div>
-         
-          </div>
-          <div className="mobile-view">
-          <div id="basic">
-            <BasicCard/>
-          </div>
-          <div id="advanced">
-            <AdvancedCard/>
-          </div>
-          
-          {/* <div id="advanced">
-            <Timer/>
-          </div> */}
-          </div>
-        </div>
-        <div className="card-block">
-          <div className="desktop-view">
-          <div  id="advanced">
-          <AdvancedCard/>
-          </div>
-          <div  id="advanced">
-          <TechnicalPM/>
-          </div>
-          {/* <div  id="advanced" className="timerDesktop">
-          <Timer/>
-          </div> */}
-          {/* <div id="executive">
-          <Executive/>
-          </div> */}
           </div>
           <div className="mobile-view">
         
@@ -147,6 +156,9 @@ const PriceHero = () => {
 
           <div  id="advanced">
           <TechnicalPM/>
+          </div>
+          <div id="growth">
+          <GrowthPM/>
           </div>
           <div>
           <P

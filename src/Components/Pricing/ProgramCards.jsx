@@ -13,7 +13,7 @@ import { theme } from "../../Utils/Theme";
 import {  H4, P } from "../../Utils/Typograpyhy";
 import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
-import { BasicData, AdvancedData, Onsite, ExecutiveData, TPMData } from "./PricingData";
+import { BasicData, AdvancedData, Onsite, ExecutiveData, TPMData, GrowthData } from "./PricingData";
 import styled from "styled-components";
 export const BasicCard = () => {
   return (
@@ -230,8 +230,6 @@ export const Executive = () => {
   );
 };
 
-
-
 export const TechnicalPM = () => {
  
   return (
@@ -256,6 +254,44 @@ export const TechnicalPM = () => {
               listText={item.listText}
               listSubText={item.listSubText}
               textColor={theme.color.light}
+            />
+          );
+        })}
+        <div className="button-container"
+        onClick={() => {
+          window.open("https://forms.gle/6j6TMEotgcqHtSe87")
+        }}
+        >
+          <PrimaryButton to="#" buttText="Enrol Now" />
+        </div>
+      </PricingCard>
+    </CardStyle>
+  );
+};
+
+export const GrowthPM = () => {
+  return (
+    <CardStyle>
+      <PricingCard
+        // backgroundColor={theme.color.primary}
+        cardTitle={"Growth Product Management Program"}
+        textColor={theme.color.dark}
+        cardText={
+          "For product managers to learn the specific skills to drive their product growth to the next level"
+        }
+        tuitionFee={"₦150,000"}
+        duration={"8 weeks"}
+        mobileHeight={"100%"}
+        height={"85.4375rem"}
+        // discountPrice={"₦150,000"}
+      >
+        {GrowthData.map((item, index) => {
+          return (
+            <PricingList
+              key={index}
+              listText={item.listText}
+              listSubText={item.listSubText}
+              textColor={theme.color.dark}
             />
           );
         })}

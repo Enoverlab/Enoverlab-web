@@ -209,3 +209,45 @@ export const TPMData = [
     listText: "Advanced Topics and Case Studies"
   }
 ]
+
+export const GrowthData = [
+  {
+    listText: "Introduction to Product Growth"
+  },
+  {
+    listText: "Different types of growth"
+  },
+  {
+    listText: "Understanding growth terms; gamification, time-to-value, economies of scale, network effects, personalisation, habit forming, etc"
+  },
+  {
+    listText: "Achieving Product Market Fit (PMF)"
+  },
+  {
+    listText: "Growing from product market fit"
+  },
+  {
+    listText: "Product Metrics AARRR (Acquisition, Activation, Retention, Referral, Revenue)"
+  },
+  {
+    listText: "Tracking data with Amplitude & Mixpanel"
+  },
+  {
+    listText: "Rapid testing & experimentation; A/B Testing & Usability Testing"
+  },
+  {
+    listText: "Product Strategy"
+  },
+  {
+    listText: "Product Led Growth"
+  },
+  {
+    listText: "Collaborating with the marketing team"
+  },
+  {
+    listText: "Creating & implementing growth plans"
+  },
+  {
+    listText: "Analysing different growth strategies of major tech companies"
+  }
+]
