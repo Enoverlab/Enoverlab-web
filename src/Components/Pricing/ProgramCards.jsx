@@ -277,7 +277,7 @@ export const GrowthPM = () => {
         cardTitle={"Growth Product Management Program"}
         textColor={theme.color.dark}
         cardText={
-          "Analysing Different Growth Strategies of Major Tech Companies"
+          "For Product Managers to learn the specific skills required to drive their product growth to the next level"
         }
         tuitionFee={"₦150,000"}
         duration={"8 weeks"}
