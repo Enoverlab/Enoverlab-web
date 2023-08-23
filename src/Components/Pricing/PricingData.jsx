@@ -215,10 +215,10 @@ export const GrowthData = [
     listText: "Introduction to Product Growth"
   },
   {
-    listText: "Different types of growth"
+    listText: "Different types of Growth"
   },
   {
-    listText: "Understanding growth terms; gamification, time-to-value, economies of scale, network effects, personalisation, habit forming, etc"
+    listText: "Understanding Growth Terms - Gamification, Time-to-Value, Economies of Scale, Network Effects, Personalisation, Habit Forming, etc"
   },
   {
     listText: "Achieving Product Market Fit (PMF)"
@@ -230,10 +230,10 @@ export const GrowthData = [
     listText: "Product Metrics AARRR (Acquisition, Activation, Retention, Referral, Revenue)"
   },
   {
-    listText: "Tracking data with Amplitude & Mixpanel"
+    listText: "Tracking Data with Amplitude & Mixpanel"
   },
   {
-    listText: "Rapid testing & experimentation; A/B Testing & Usability Testing"
+    listText: "Rapid Testing &  Experimentation; A/B Testing & Usability Testing"
   },
   {
     listText: "Product Strategy"
@@ -242,12 +242,12 @@ export const GrowthData = [
     listText: "Product Led Growth"
   },
   {
-    listText: "Collaborating with the marketing team"
+    listText: "Collaborating with the Marketing Team"
   },
   {
-    listText: "Creating & implementing growth plans"
+    listText: "Creating & Implementing Growth Plans"
   },
   {
-    listText: "Analysing different growth strategies of major tech companies"
+    listText: "Analysing Different Growth Strategies of Major Tech Companies"
   }
 ]

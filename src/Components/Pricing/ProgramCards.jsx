@@ -277,7 +277,7 @@ export const GrowthPM = () => {
         cardTitle={"Growth Product Management Program"}
         textColor={theme.color.dark}
         cardText={
-          "For product managers to learn the specific skills to drive their product growth to the next level"
+          "Analysing Different Growth Strategies of Major Tech Companies"
         }
         tuitionFee={"₦150,000"}
         duration={"8 weeks"}
@@ -297,7 +297,7 @@ export const GrowthPM = () => {
         })}
         <div className="button-container"
         onClick={() => {
-          window.open("https://forms.gle/6j6TMEotgcqHtSe87")
+          window.open("https://forms.gle/dhpvRAR5qXY3sjdu8")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
