@@ -6,13 +6,6 @@ import Switch from 'react-switch'
 import {IoLocationSharp} from 'react-icons/io5'
 
 const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor, tuitionFee, duration, height, mobileHeight, backLeft, lineThrough, discountPrice, showSwitch, tabValue, switchTab}) => {
-   
-
-    // const handleChange = (check) => {
-    //     setCheckedValue(check)
-    //     console.log(checkedValue, "check")
-    // }
-
   return (
     <StyledPricingCard backgroundColor={backgroundColor} height={height} mobileHeight={mobileHeight} backLeft={backLeft} lineThrough={lineThrough} tabValue={tabValue}>
         <div className="pricing-card-container">
@@ -26,8 +19,6 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                     <P lineHeight="1.5rem" mobileFontSize="1rem" textAlign={"left"} color={textColor} fontWeight="300" fontSize="0.993125rem" >
                         {cardText}
                     </P>
-
-               
                     {
                         showSwitch && (
                             <>
@@ -35,10 +26,10 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                             className="switch-box">
                                 <div
                                className="text-switch"
-                               onClick={switchTab}
+                               onClick={()=>switchTab("tabActive")}
                                > 
                                <H4 mobileFontSize="0.8rem" fontSize="1rem" 
-                                color={tabValue === "active" ? "#FFF" : "#000"} 
+                                color={tabValue === "tabActive" ? "#FFF" : "#000"} 
                                fontWeight={"700"} textAlign={"left"}>
                            LEKKI    
                            </H4>
@@ -46,10 +37,18 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
    
                                <div
                                className="text-switch-second"
-                               onClick={switchTab}
+                               onClick={()=>switchTab("tabInactive")}
                                >
-                               <H4 mobileFontSize="0.8rem" fontSize="1rem" color={tabValue === "inactive" ? "#FFF" : "#000"} fontWeight={"700"} textAlign={"left"}>
+                               <H4 mobileFontSize="0.8rem" fontSize="1rem" color={tabValue === "tabInactive" ? "#FFF" : "#000"} fontWeight={"700"} textAlign={"left"}>
                                        IBADAN
+                               </H4>
+                               </div>
+                               <div
+                               className="text-switch-third"
+                               onClick={()=>switchTab("bergActive")}
+                               >
+                               <H4 mobileFontSize="0.8rem" fontSize="1rem" color={tabValue === "bergActive" ? "#FFF" : "#000"} fontWeight={"700"} textAlign={"left"}>
+                                       BERGER
                                </H4>
                                </div>
                            </div>
@@ -62,9 +61,8 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                             paddingTop="1.5rem"
                             >
                            <IoLocationSharp/> {
-                            tabValue === "active" ?  <span>Gateview Plaza, Admiralty way, Lekki Phase 1
-                            </span> :  <span>Cafe One, Palms Mall, Ring Road, Ibadan</span>
-                            }
+                                 tabValue === "tabActive" ? "Lekki Gateview Plaza, Admiralty way, Lekki Phase 1" : tabValue === "tabInactive" ? "Cafe One, Palms Mall, Ring Road, Ibadan" : "75b Ogunnusi Rd, Isheri, Ojodu Berger, Lagos Berger"
+                           }
                             </P>
                             </>
                         )
@@ -163,13 +161,20 @@ const StyledPricingCard = styled.div`
 
                 align-items: center;
                         .text-switch{
-                            background: ${props => props.tabValue === "active" ? "#0046FF" : "#FFF"};
+                            background: ${props => props.tabValue === "tabActive" ? "#0046FF" : "#FFF"};
                             padding: 1rem;
                             border: 0.01rem solid ${theme.color.primary};
                             animation: ${pulse} 2s ease-in-out infinite;
                         }
                         .text-switch-second{
-                            background: ${props => props.tabValue === "inactive" ? "#0046FF" : "#FFF"};
+                            background: ${props => props.tabValue === "tabInactive" ? "#0046FF" : "#FFF"};
+                            padding: 1rem;
+                            border: 0.01rem solid ${theme.color.primary};
+                            animation: ${pulse} 2s ease-in-out infinite;
+
+                        }
+                        .text-switch-third{
+                            background: ${props => props.tabValue === "bergActive" ? "#0046FF" : "#FFF"};
                             padding: 1rem;
                             border: 0.01rem solid ${theme.color.primary};
                             animation: ${pulse} 2s ease-in-out infinite;

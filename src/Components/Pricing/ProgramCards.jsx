@@ -134,14 +134,17 @@ export const AdvancedCard = () => {
 };
 
 export const OnsiteCard = () => {
-  const [tab, setTab] = useState("active")
+  const [tab, setTab] = useState("tabActive")
 
-  const handleChange = () => {
-   if(tab === "active"){
-    setTab("inactive")
-   }else{
-    setTab("active")
-   }
+  const handleChange = (tabValue) => {
+  //  if(tab === "active"){
+  //   setTab("active")
+  //  }else if(tab==="tabInactive"){
+  //   setTab("inactive")
+  //  }else{
+  //   setTab("bergActive")
+  //  }
+  setTab(tabValue)
   }
   return (
     <CardStyle> 
@@ -182,7 +185,7 @@ export const OnsiteCard = () => {
        
         <div className="button-container"
         onClick={() => {
-          window.open(tab === "active" ? " https://bit.ly/enoverlabexclusive" : "https://forms.gle/UQtq3gr3BeP59iui8")
+          window.open(tab === "tabActive" ? " https://bit.ly/enoverlabexclusive" : tab === "tabInactive" ?  "https://forms.gle/UQtq3gr3BeP59iui8" : "https://forms.gle/Bv6j6THHFdTvmx5W6")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
