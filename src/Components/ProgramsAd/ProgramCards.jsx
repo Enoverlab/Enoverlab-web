@@ -262,7 +262,7 @@ export const TechnicalPM = () => {
         })}
         <div className="button-container"
         onClick={() => {
-          window.open("https://forms.gle/6j6TMEotgcqHtSe87")
+          window.open("https://forms.gle/nWz9USaguewx1bQ5A")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
