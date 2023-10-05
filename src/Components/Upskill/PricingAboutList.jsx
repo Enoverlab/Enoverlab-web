@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { theme } from '../../Utils/Theme'
 import { P } from '../../Utils/Typograpyhy'
 import { AiOutlineCheck } from 'react-icons/ai'
-const PricingAboutList = ({listText, key}) => {
+const PricingAboutList = ({listText, listText2, key}) => {
   return (
     <StyledPricingAboutList key={key}>
         <div className="pricing-about-list-container">
@@ -12,6 +12,7 @@ const PricingAboutList = ({listText, key}) => {
           </div>
           <div className="list-text">
             <P lineHeight="2.0625rem" fontSIze="1.375rem" color="#4B4B4B" textAlign="left" mobileFontSize="1rem">{listText}</P>
+            <P lineHeight="2.0625rem" fontSIze="1.375rem" color="#4B4B4B" textAlign="left" mobileFontSize="1rem">{listText2}</P>
           </div>
         </div>
     </StyledPricingAboutList>

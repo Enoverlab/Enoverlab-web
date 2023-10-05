@@ -8,7 +8,9 @@ import PricingAboutCorner from '../../assets/pricingAboutCorner.png'
 
 const aboutList = [
   {
-    listText: "All the programs here are for practising product managers looking to upskill. PS: If you are just transitioning into product management, the program above are not for you."
+    listText: "All the programs here are for practising product managers looking to upskill.",
+    listText2: " PS: If you are just transitioning into product management, the program above are not for you."
+   
   },
  
   {
@@ -47,7 +49,7 @@ const PricingAbout = () => {
           {
             aboutList.map((item, index) => {
                return(
-                  <PricingAboutList listText={item.listText} key={index} />
+                  <PricingAboutList listText={item.listText} listText2={item?.listText2} key={index} />
                )
             })
           }
