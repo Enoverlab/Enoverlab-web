@@ -22,7 +22,7 @@ export const BasicCard = () => {
         cardTitle={"Basic Program"}
         textColor={theme.color.dark}
         cardText={
-          "This is an introductory training for anyone trying to understand the basics of product management"
+          "Introductory training to understand the foundations of product management"
         }
         tuitionFee={"₦50,000"}
         duration={"4 Weeks"}
@@ -61,7 +61,7 @@ export const AdvancedCard = () => {
         backgroundColor={theme.color.primary}
         cardTitle={"Advanced Program (ONLINE)"}
         textColor={theme.color.light}
-        cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}
+        cardText={"Comprehensive product management training to become a skilled product manager"}
         tuitionFee={"₦150,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}

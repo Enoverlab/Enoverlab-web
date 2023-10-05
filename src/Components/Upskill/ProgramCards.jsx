@@ -22,7 +22,7 @@ export const BasicCard = () => {
         cardTitle={"Basic Program"}
         textColor={theme.color.dark}
         cardText={
-          "This is an introductory training for anyone trying to understand the basics of product management"
+          "Introductory training to understand the foundations of product management  "
         }
         tuitionFee={"₦50,000"}
         duration={"4 Weeks"}
@@ -44,7 +44,7 @@ export const BasicCard = () => {
         
         <div className="button-container"
         onClick={() => {
-          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
+          window.open("https://forms.gle/mEgFW43AXVTkpUtV7")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
@@ -61,7 +61,7 @@ export const AdvancedCard = () => {
         backgroundColor={theme.color.primary}
         cardTitle={"Advanced Program (ONLINE)"}
         textColor={theme.color.light}
-        cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"}
+        cardText={"Comprehensive product management training to become a skilled product manager"}
         tuitionFee={"₦150,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
@@ -123,7 +123,7 @@ export const AdvancedCard = () => {
         </div>
         <div className="button-container"
         onClick={() => {
-          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
+          window.open("https://forms.gle/mEgFW43AXVTkpUtV7")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
@@ -185,7 +185,7 @@ export const OnsiteCard = () => {
        
         <div className="button-container"
         onClick={() => {
-          window.open(tab === "tabActive" ? " https://bit.ly/enoverlabexclusive" : tab === "tabInactive" ?  "https://forms.gle/UQtq3gr3BeP59iui8" : "https://forms.gle/Bv6j6THHFdTvmx5W6")
+          window.open("https://forms.gle/DfFEZ36nZLFoUJwN8")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
@@ -262,7 +262,7 @@ export const TechnicalPM = () => {
         })}
         <div className="button-container"
         onClick={() => {
-          window.open("https://forms.gle/6j6TMEotgcqHtSe87")
+          window.open("https://forms.gle/nWz9USaguewx1bQ5A")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
@@ -276,9 +276,9 @@ export const GrowthPM = () => {
   return (
     <CardStyle>
       <PricingCard
-        backgroundColor={theme.color.primary}
+        // backgroundColor={theme.color.primary}
         cardTitle={"Growth Product Management Program"}
-        textColor={theme.color.light}
+        textColor={theme.color.dark}
         cardText={
           "For Product Managers to learn the specific skills required to drive their product growth to the next level"
         }
@@ -287,7 +287,6 @@ export const GrowthPM = () => {
         mobileHeight={"100%"}
         height={"85.4375rem"}
         // discountPrice={"₦150,000"}
-        backLeft="20px"
       >
         {GrowthData.map((item, index) => {
           return (
@@ -295,7 +294,7 @@ export const GrowthPM = () => {
               key={index}
               listText={item.listText}
               listSubText={item.listSubText}
-              textColor={theme.color.light}
+              textColor={theme.color.dark}
             />
           );
         })}

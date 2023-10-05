@@ -88,28 +88,10 @@ const PriceHero = () => {
           <div id="onsite">
           <OnsiteCard/>
           </div>
-          <div>
-            <P
-             fontSize="1.3rem"
-             fontWeight="600"
-             color="#000"
-             paddingBottom="1rem"
-            >
-            Not sure if product management is for you?
-            </P>
-            <P
-            fontSize="1.3rem"
-            fontWeight="600"
-            color="#000"
-            paddingBottom="1rem"
-            >
-            Download "The ABC of Product Management" below
-            </P>
-            
-          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
-          </div>
+
+        
           <div id="growth">
-         
+          <GrowthPM/>
           </div>
 
          
@@ -135,12 +117,29 @@ const PriceHero = () => {
           <AdvancedCard/>
           </div>
           <div  id="advanced">
-          <GrowthPM/>
-          {/* <TechnicalPM/> */}
+          <TechnicalPM/>
           </div>
-          <div  id="advanced">
+          
+          <div>
+            <P
+             fontSize="1.3rem"
+             fontWeight="600"
+             color="#000"
+             paddingBottom="1rem"
+            >
+            Not sure if product management is for you?
+            </P>
+            <P
+            fontSize="1.3rem"
+            fontWeight="600"
+            color="#000"
+            paddingBottom="1rem"
+            >
+            Download "The ABC of Product Management" below
+            </P>
+          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
+          </div>
          
-          </div>
 
           {/* <div  id="advanced" className="timerDesktop">
           <Timer/>
@@ -148,7 +147,7 @@ const PriceHero = () => {
           {/* <div id="executive">
           <Executive/>
           </div> */}
-        
+           
           </div>
           <div className="mobile-view">
         
@@ -157,7 +156,7 @@ const PriceHero = () => {
           </div>
 
           <div  id="advanced">
-          {/* <TechnicalPM/> */}
+          <TechnicalPM/>
           </div>
           <div id="growth">
           <GrowthPM/>
