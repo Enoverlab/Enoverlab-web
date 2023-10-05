@@ -13,7 +13,7 @@ const PriceHero = () => {
         <div className="price-hero-head">
           <div className="desktop-text">
           <H1 fontWeight="500" fontSize="3.8rem" lineHeight="4.2rem" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
-          Take your product manager career  <br/>to the next level
+          Take your product manager<br/>career to the next level
           </H1>
           </div>
           <div className="mobile-text">
