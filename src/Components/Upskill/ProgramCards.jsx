@@ -238,9 +238,9 @@ export const TechnicalPM = () => {
   return (
     <CardStyle>
       <PricingCard
-        backgroundColor={theme.color.primary}
+        // backgroundColor={theme.color.primary}
         cardTitle={"Technical Product Management Program"}
-        textColor={theme.color.light}
+        textColor={theme.color.dark}
         cardText={
           "For product managers with atleast one year working experience to build their technical proficiency"
         }
@@ -248,7 +248,7 @@ export const TechnicalPM = () => {
         duration={"8 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
-        backleft={"20px"}
+        // backleft={"20px"}
         // discountPrice={"₦150,000"}
       >
         {TPMData.map((item, index) => {
@@ -257,7 +257,7 @@ export const TechnicalPM = () => {
               key={index}
               listText={item.listText}
               listSubText={item.listSubText}
-              textColor={theme.color.light}
+              textColor={theme.color.dark}
             />
           );
         })}
@@ -277,9 +277,9 @@ export const GrowthPM = () => {
   return (
     <CardStyle>
       <PricingCard
-        // backgroundColor={theme.color.primary}
+        backgroundColor={theme.color.primary}
         cardTitle={"Growth Product Management Program"}
-        textColor={theme.color.dark}
+        textColor={theme.color.light}
         cardText={
           "For Product Managers to learn the specific skills required to drive their product growth to the next level"
         }
@@ -287,6 +287,7 @@ export const GrowthPM = () => {
         duration={"8 weeks"}
         mobileHeight={"100%"}
         height={"85.4375rem"}
+        backleft={"20px"}
         // discountPrice={"₦150,000"}
       >
         {GrowthData.map((item, index) => {
@@ -295,7 +296,7 @@ export const GrowthPM = () => {
               key={index}
               listText={item.listText}
               listSubText={item.listSubText}
-              textColor={theme.color.dark}
+              textColor={theme.color.light}
             />
           );
         })}

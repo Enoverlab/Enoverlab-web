@@ -76,7 +76,7 @@ const PriceHero = () => {
         <div className="card-block">
           <div className="desktop-view"> 
          <div id="basic">
-         <GrowthPM/>
+         <TechnicalPM/>
           {/* <BasicCard/> */}
           </div>
           {/* <div id="onsite">
@@ -86,7 +86,7 @@ const PriceHero = () => {
          
           </div> */}
 
-          <div>
+          {/* <div>
             <P
              fontSize="1.3rem"
              fontWeight="600"
@@ -104,7 +104,7 @@ const PriceHero = () => {
             Download "The ABC of Product Management" below
             </P>
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
-          </div>
+          </div> */}
           </div>
           {/* <div className="mobile-view">
           <div id="basic">
@@ -121,7 +121,8 @@ const PriceHero = () => {
         <div className="card-block">
           <div className="desktop-view">
           <div  id="basic">
-          <TechnicalPM/>
+        
+          <GrowthPM/>
           {/* <AdvancedCard/> */}
           </div>
           {/* <div  id="advanced">
@@ -141,14 +142,15 @@ const PriceHero = () => {
           {/* <div id="onsite">
           <OnsiteCard/>
           </div> */}
+            <div  id="advanced">
+          <TechnicalPM/>
+          </div>
            <div id="basic">
           <GrowthPM/>
           </div>
-          <div  id="advanced">
-          <TechnicalPM/>
-          </div>
+        
          
-          <div>
+          {/* <div>
           <P
              fontSize="1.2rem"
              fontWeight="600"
@@ -167,7 +169,7 @@ const PriceHero = () => {
             </P>
             
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
-          </div>
+          </div> */}
           {/* <div id="executive">
             <Executive/>
             </div> */}

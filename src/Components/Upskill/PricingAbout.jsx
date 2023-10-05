@@ -8,28 +8,28 @@ import PricingAboutCorner from '../../assets/pricingAboutCorner.png'
 
 const aboutList = [
   {
-    listText: "Installment payment option is available;you can spread your tuition payment"
+    listText: "All the programs here are for practising product managers looking to upskill. PS: If you are just transitioning into product management, the program above are not for you."
   },
  
   {
-    listText: "You don’t need any degree to become a product manager"
+    listText: "Installment payment option is available; you can spread your tuition payment twice"
   },
   
   {
     listText: "The online classes are instructor led, not pre-recorded videos"
   },
   {
-    listText: "Class runs for 2 - 3 hours depending on your class schedules"
+    listText: "Class runs for 3-4 hours depending on your class schedules"
   },
   {
-    listText: "Only Advanced Program trainees have an internship placement at the end of the 10weeks training"
+    listText: "You will get an Internationally accredited Certificate of Completion at the end of the training"
   },
-  {
-    listText: "We have weekday & weekend class for the online training; you can choose any class that works best for you"
-  },
-  {
-    listText: "Onsite training holds only on Saturdays"
-  }
+  // {
+  //   listText: "We have weekday & weekend class for the online training; you can choose any class that works best for you"
+  // },
+  // {
+  //   listText: "Onsite training holds only on Saturdays"
+  // }
 ]
 
 const PricingAbout = () => {
