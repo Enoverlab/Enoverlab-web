@@ -248,6 +248,7 @@ export const TechnicalPM = () => {
         duration={"8 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
+        backleft={"20px"}
         // discountPrice={"₦150,000"}
       >
         {TPMData.map((item, index) => {

@@ -13,13 +13,13 @@ const PriceHero = () => {
         <div className="price-hero-head">
           <div className="desktop-text">
           <H1 fontWeight="500" fontSize="3.8rem" lineHeight="4.2rem" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
-          Kickstart your career in tech <br/> without coding
+          Take your product manager career  <br/>to the next level
           </H1>
           </div>
           <div className="mobile-text">
           <H1 fontWeight="500" mobileFontSize="1.6rem" mobileLineHeight="2rem">
           {/* Learn the skills,<br/> make impact */}
-          Kickstart your career in tech without coding
+          Take your product manager career to the next level
           </H1>
           </div>
          
@@ -33,7 +33,7 @@ const PriceHero = () => {
             
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Learn how to become a skilled Product Manager <br/>regardless of your background
+             Learn high-level product management skills  <br/>and become more empowered
 
             </P>
             </div>
@@ -43,10 +43,9 @@ const PriceHero = () => {
               lineHeight="2.25rem"
               fontWeight={300}
               color="#4B4B4B"
-            
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Learn how to become a skilled Product Manager regardless of your background
+             Learn high-level product management skills and become more empowered
             </P>
             </div>
             <div className="started-text-desktop">
@@ -69,57 +68,24 @@ const PriceHero = () => {
            Go through the programs below <br/> to get started
             </P>
             </div>
-           
-       
           </div>
-        
         </div>
-        
       </div>
       <CertiMarquee/>
       <div className="pricing-card">
         <div className="card-block">
-          <div className="desktop-view">
-          
+          <div className="desktop-view"> 
          <div id="basic">
-          <BasicCard/>
+         <GrowthPM/>
+          {/* <BasicCard/> */}
           </div>
-
-          <div id="onsite">
+          {/* <div id="onsite">
           <OnsiteCard/>
-          </div>
-
-        
-          <div id="growth">
-          <GrowthPM/>
-          </div>
-
-         
-         
-          </div>
-          <div className="mobile-view">
-          <div id="basic">
-            <BasicCard/>
-          </div>
-          <div id="advanced">
-            <AdvancedCard/>
-          </div>
-          
-          
-          {/* <div id="advanced">
-            <Timer/>
           </div> */}
-          </div>
-        </div>
-        <div className="card-block">
-          <div className="desktop-view">
-          <div  id="advanced">
-          <AdvancedCard/>
-          </div>
-          <div  id="advanced">
-          <TechnicalPM/>
-          </div>
-          
+          {/* <div id="growth">
+         
+          </div> */}
+
           <div>
             <P
              fontSize="1.3rem"
@@ -139,8 +105,30 @@ const PriceHero = () => {
             </P>
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div>
+          </div>
+          {/* <div className="mobile-view">
+          <div id="basic">
+            <BasicCard/>
+          </div>
+           <div id="advanced">
+            <AdvancedCard/>
+          </div>
+          <div id="advanced">
+            <Timer/>
+          </div>
+          </div> */}
+        </div>
+        <div className="card-block">
+          <div className="desktop-view">
+          <div  id="basic">
+          <TechnicalPM/>
+          {/* <AdvancedCard/> */}
+          </div>
+          {/* <div  id="advanced">
          
+          </div> */}
 
+        
           {/* <div  id="advanced" className="timerDesktop">
           <Timer/>
           </div> */}
@@ -150,17 +138,16 @@ const PriceHero = () => {
            
           </div>
           <div className="mobile-view">
-        
-          <div id="onsite">
+          {/* <div id="onsite">
           <OnsiteCard/>
+          </div> */}
+           <div id="basic">
+          <GrowthPM/>
           </div>
-
           <div  id="advanced">
           <TechnicalPM/>
           </div>
-          <div id="growth">
-          <GrowthPM/>
-          </div>
+         
           <div>
           <P
              fontSize="1.2rem"
@@ -285,7 +272,7 @@ const StyledPriceHero = styled.div`
     grid-gap: 2.3125rem;
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      grid-gap: 5rem;
+      grid-gap: 2.5rem;
     }
 
     .card-block {

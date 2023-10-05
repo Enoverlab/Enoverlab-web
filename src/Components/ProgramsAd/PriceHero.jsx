@@ -29,8 +29,7 @@ const PriceHero = () => {
               fontSize="1.5rem"
               lineHeight="2.25rem"
               fontWeight={300}
-              color="#4B4B4B"
-            
+              color="#4B4B4B"  
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
              Learn how to become a skilled Product Manager <br/>regardless of your background
