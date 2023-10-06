@@ -8,7 +8,7 @@ import Jira from "../../assets/Jira.png";
 import productPlan from "../../assets/productPlan.png";
 // import slack from "../../assets/slackIcon.png";
 import trello from "../../assets/trello.png";
-import {  PrimaryButton } from "../../Utils/Buttons";
+import {  PrimaryButton, MainButton, TransparentButton } from "../../Utils/Buttons";
 import { theme } from "../../Utils/Theme";
 import {  H4, P } from "../../Utils/Typograpyhy";
 import PricingCard from "./PricingCard";
@@ -181,8 +181,33 @@ export const OnsiteCard = () => {
           </H4> */}
          
         </div>
+        
+        <div className="button-box">
+          <div className="button-flex">
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://paystack.com/pay/enoverlabbasic");
+              }}
+            >
+              <MainButton to="#" buttText="Pay Now" />
+            </div>
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://forms.gle/DfFEZ36nZLFoUJwN8")
+              }}
+            >
+              <TransparentButton to="#" buttText="Enrol Now" />
+            </div>
+          </div>
+          <div className="download-text-url">
+            <a href="">
+              <p>Download Now</p>
+            </a>
+          </div>
+        </div>
 
-       
         <div className="button-container"
         onClick={() => {
           window.open("https://forms.gle/DfFEZ36nZLFoUJwN8")
@@ -261,13 +286,40 @@ export const TechnicalPM = () => {
             />
           );
         })}
+
+<div className="button-box">
+          <div className="button-flex">
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://paystack.com/pay/enoverlabtpmp");
+              }}
+            >
+              <MainButton to="#" buttText="Pay Now" />
+            </div>
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://forms.gle/nWz9USaguewx1bQ5A")
+              }}
+            >
+              <TransparentButton to="#" buttText="Enrol Now" />
+            </div>
+          </div>
+          <div className="download-text-url">
+            <a href="https://birdsend.page/forms/6444/va9wSykY3B">
+              <p>Download Now</p>
+            </a>
+          </div>
+        </div>
+{/* 
         <div className="button-container"
         onClick={() => {
           window.open("https://forms.gle/nWz9USaguewx1bQ5A")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
-        </div>
+        </div> */}
       </PricingCard>
     </CardStyle>
   );
@@ -300,13 +352,48 @@ export const GrowthPM = () => {
             />
           );
         })}
-        <div className="button-container"
+         <div className="button-box">
+          <div className="button-flex">
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://paystack.com/pay/enoverlabgpmp");
+              }}
+            >
+              <PrimaryButton
+                to="#"
+                buttText="Pay Now"
+                border="1px solid #000"
+              />
+            </div>
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://forms.gle/dhpvRAR5qXY3sjdu8")
+              }}
+            >
+              <TransparentButton
+                to="#"
+                buttText="Enrol Now"
+                border="1px solid #FFF"
+                textColor="#FFF"
+                whiteArrow
+              />
+            </div>
+          </div>
+          <div className="download-text-url white-download">
+            <a href="https://birdsend.page/forms/6444/va9wSykY3B">
+              <p>Download Now</p>
+            </a>
+          </div>
+        </div>
+        {/* <div className="button-container"
         onClick={() => {
           window.open("https://forms.gle/dhpvRAR5qXY3sjdu8")
         }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
-        </div>
+        </div> */}
       </PricingCard>
     </CardStyle>
   );
@@ -351,16 +438,43 @@ const CardStyle = styled.div`
       max-width: 90%;
     }
   }
-  .button-container {
-    width: 30%;
-    position: absolute;
-    bottom: 5%;
-    @media (max-width: 768px) {
-      position: relative;
-      width: 55%;
-      margin-top: 3.2rem;
+  .button-box {
+    /* width: 100%; */
+    margin-top: 3rem;
+    .button-flex {
+      display: flex;
+      /* width: 100%; */
+      column-gap: 1rem;
+
+      @media (max-width: 768px){
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+      .button-container {
+        width: 40%;
+        /* position: absolute; */
+        bottom: 5%;
+        @media (max-width: 768px) {
+          position: relative;
+          width: 55%;
+          /* margin-top: 3.2rem; */
+        }
+      }
+    }
+
+    .download-text-url {
+      margin-top: 1rem;
+      a {
+        color: ${theme.color.primary};
+      }
+    }
+    .white-download{
+     a{
+      color: #FFF;
+     }
     }
   }
+
   .note {
     H4 {
       margin-bottom: 1rem;

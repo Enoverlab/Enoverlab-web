@@ -7,9 +7,9 @@ import {Link} from "react-router-dom";
 const  color = theme.color
 
 
-export const PrimaryButton = ({to, buttText}) => {
+export const PrimaryButton = ({border, to, buttText}) => {
     return (
-        <StyledPrimaryButton>
+        <StyledPrimaryButton border={border}>
         <Link to={to}>
                 <span>{buttText}</span>
                 <img src={BlueArrow} alt=""/>
@@ -53,14 +53,57 @@ export const MainButton = ({props, buttText}) => {
     )
 }
 
+export const TransparentButton = ({textColor, buttText, whiteArrow, border}) => {
+    return (
+        <StyledTransButton textColor={textColor} border={border}>
+            <Link to="/">
+                <span>{buttText}</span>
+                <img src={whiteArrow ? WhiteArrow : BlueArrow} alt=""/>
+            </Link>
+        </StyledTransButton>
+    )
+}
+
+export const StyledTransButton = styled.div`  
+    a{  
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: ${props => props.border ? props.border : '1px solid #0046FF' };
+        padding:  1rem 1rem;
+        text-decoration: none;
+        background-color: transparent;
+        color: ${props => props.textColor ? props.textColor : '#0046FF' };
+        font-size: 1rem;
+        img{
+            width: 2.875rem;
+            height: 1rem;
+            margin-left: 0.5rem;
+            @media(max-width: 768px){
+                width: 1.5rem;   
+            height: 0.7rem;       
+            }
+        }
+        @media(max-width: 768px){
+            font-size: 0.9rem;
+            padding: 0.7rem 1rem; 
+        }
+    }
+    &:hover{
+            box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+            -webkit-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+            -moz-box-shadow: 9px 6px 0px -1px rgba(0,0,0,1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+`
 
 export const StyledPrimaryButton = styled.div`  
     a{  
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        border: 1px solid ${color.primary};
-        padding:  1rem 1rem;
+        border: ${props => props.border ? props.border : "1px solid #0046FF"};
+        padding: 1rem 1rem;
         text-decoration: none;
         background-color: ${color.light};
         color: ${color.primary};
@@ -158,19 +201,29 @@ export const StyledSecondaryButton = styled.div`
         }
 `
 export const StyledMainButton = styled.div`
-    display: flex;
-    justify-content: center;
+    
+    a{
+        display: flex;
+    justify-content: flex-start;
     padding:  1rem 1.25rem;
     align-items: center;
-    background-color: ${props => props.backgroundColor || color.primary};
+    background-color: ${props => props.backgroundColor ? props.backgroundColor  : color.primary};
     border: 1px solid ${props => props.borderColor || color.primary};
-    a{
         text-decoration: none;
         color: ${props => props.color || color.light};
         font-size: 1rem;
         img{
-            width: 1.9rem;
+            width: 2.875rem;
+            height: 1rem;
             margin-left: 0.5rem;
+            @media(max-width: 768px){
+                width: 1.5rem;   
+            height: 0.7rem;    
+            }
+        }
+        @media(max-width: 768px){
+            font-size: 0.9rem;
+            padding: 0.7rem 1rem; 
         }
     }
     &:hover{

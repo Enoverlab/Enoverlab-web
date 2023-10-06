@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import Figma from "../../assets/figma.png";
 // import gmailIcon from "../../assets/gmailIcon.png";
 // import googleAnalytics from "../../assets/googleAnalytics.png";
@@ -8,12 +8,23 @@ import Jira from "../../assets/Jira.png";
 import productPlan from "../../assets/productPlan.png";
 // import slack from "../../assets/slackIcon.png";
 import trello from "../../assets/trello.png";
-import {  PrimaryButton } from "../../Utils/Buttons";
+import {
+  PrimaryButton,
+  MainButton,
+  TransparentButton,
+} from "../../Utils/Buttons";
 import { theme } from "../../Utils/Theme";
-import {  H4, P } from "../../Utils/Typograpyhy";
+import { H4, P } from "../../Utils/Typograpyhy";
 import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
-import { BasicData, AdvancedData, Onsite, ExecutiveData, TPMData, GrowthData } from "./PricingData";
+import {
+  BasicData,
+  AdvancedData,
+  Onsite,
+  ExecutiveData,
+  TPMData,
+  GrowthData,
+} from "./PricingData";
 import styled from "styled-components";
 export const BasicCard = () => {
   return (
@@ -26,7 +37,7 @@ export const BasicCard = () => {
         }
         tuitionFee={"₦50,000"}
         duration={"4 Weeks"}
-        height={"63rem"}
+        height={"65rem"}
         mobileHeight={"100%"}
         // backLeft={"20px"}
       >
@@ -41,13 +52,31 @@ export const BasicCard = () => {
             );
           })}
         </div>
-        
-        <div className="button-container"
-        onClick={() => {
-          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
-        }}
-        >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+
+        <div className="button-box">
+          <div className="button-flex">
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://paystack.com/pay/enoverlabbasic");
+              }}
+            >
+              <MainButton to="#" buttText="Pay Now" />
+            </div>
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://forms.gle/2Ymz8FovVJEX6uDD9");
+              }}
+            >
+              <TransparentButton to="#" buttText="Enrol Now" />
+            </div>
+          </div>
+          <div className="download-text-url">
+            <a href="https://birdsend.page/forms/6444/va9wSykY3B">
+              <p>Download Now</p>
+            </a>
+          </div>
         </div>
       </PricingCard>
     </CardStyle>
@@ -61,13 +90,15 @@ export const AdvancedCard = () => {
         backgroundColor={theme.color.primary}
         cardTitle={"Advanced Program (ONLINE)"}
         textColor={theme.color.light}
-        cardText={"Comprehensive product management training to become a skilled product manager"}
+        cardText={
+          "Comprehensive product management training to become a skilled product manager"
+        }
         tuitionFee={"₦150,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
-        height={"108.4375rem"}
+        height={"112.4375rem"}
         backLeft={"20px"}
-        
+
         // discountPrice={"₦150,000"}
       >
         {AdvancedData.map((item, index) => {
@@ -94,7 +125,6 @@ export const AdvancedCard = () => {
               color: theme.color.light,
             }}
           >
-          
             <div className="class-tools-icon">
               <img src={Figma} alt="google-docs-icon" />
               Figma
@@ -110,7 +140,6 @@ export const AdvancedCard = () => {
               color: theme.color.light,
             }}
           >
-            
             <div className="class-tools-icon">
               <img src={trello} alt="slack-icon" />
               Trello
@@ -121,33 +150,62 @@ export const AdvancedCard = () => {
             </div>
           </div>
         </div>
-        <div className="button-container"
+        <div className="button-box">
+          <div className="button-flex">
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://paystack.com/pay/enoverlabadvance");
+              }}
+            >
+              <PrimaryButton
+                to="#"
+                buttText="Pay Now"
+                border="1px solid #000"
+              />
+            </div>
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://forms.gle/2Ymz8FovVJEX6uDD9");
+              }}
+            >
+              <TransparentButton
+                to="#"
+                buttText="Enrol Now"
+                border="1px solid #FFF"
+                textColor="#FFF"
+                whiteArrow
+              />
+            </div>
+          </div>
+          <div className="download-text-url white-download">
+            <a href="https://birdsend.page/forms/6444/va9wSykY3B">
+              <p>Download Now</p>
+            </a>
+          </div>
+        </div>
+        {/* <div className="button-container"
         onClick={() => {
-          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
+          window.open()
         }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
-        </div>
+          <PrimaryButton to="#" buttText="Enrol Now" border="1px solid #000" />
+        </div> */}
       </PricingCard>
     </CardStyle>
   );
 };
 
 export const OnsiteCard = () => {
-  const [tab, setTab] = useState("tabActive")
+  const [tab, setTab] = useState("tabActive");
 
   const handleChange = (tabValue) => {
-  //  if(tab === "active"){
-  //   setTab("active")
-  //  }else if(tab==="tabInactive"){
-  //   setTab("inactive")
-  //  }else{
-  //   setTab("bergActive")
-  //  }
-  setTab(tabValue)
-  }
+  
+    setTab(tabValue);
+  };
   return (
-    <CardStyle> 
+    <CardStyle>
       <PricingCard
         // backgroundColor={theme.color.primary} add comment
         cardTitle={"Advanced Program (ON-SITE)"}
@@ -179,16 +237,47 @@ export const OnsiteCard = () => {
           {/* <H4 fontSize="1.5rem" textAlign="left" color={theme.color.dark}>
             NOTE:
           </H4> */}
-         
         </div>
 
-       
-        <div className="button-container"
-        onClick={() => {
-          window.open(tab === "tabActive" ? " https://bit.ly/enoverlabexclusive" : tab === "tabInactive" ?  "https://forms.gle/UQtq3gr3BeP59iui8" : "https://forms.gle/Bv6j6THHFdTvmx5W6")
-        }}
-        >
+        {/* <div className="button-container">
           <PrimaryButton to="#" buttText="Enrol Now" />
+        </div> */}
+        <div className="button-box">
+          <div className="button-flex">
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open(
+                  tab === "tabActive"
+                    ? "https://paystack.com/pay/EnoverlabLekki"
+                    : tab === "tabInactive"
+                    ? "https://paystack.com/pay/enoverlabibadan"
+                    : "https://paystack.com/pay/enoverlabberger"
+                );
+              }}
+            >
+              <MainButton to="#" buttText="Pay Now" />
+            </div>
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open(
+                  tab === "tabActive"
+                    ? " https://bit.ly/enoverlabexclusive"
+                    : tab === "tabInactive"
+                    ? "https://forms.gle/UQtq3gr3BeP59iui8"
+                    : "https://forms.gle/Bv6j6THHFdTvmx5W6"
+                );
+              }}
+            >
+              <TransparentButton to="#" buttText="Enrol Now" />
+            </div>
+          </div>
+          <div className="download-text-url">
+            <a href="https://birdsend.page/forms/6444/va9wSykY3B">
+              <p>Download Now</p>
+            </a>
+          </div>
         </div>
       </PricingCard>
     </CardStyle>
@@ -221,10 +310,11 @@ export const Executive = () => {
             );
           })}
         </div>
-        <div className="button-container"
-        onClick={() => {
-          window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
-        }}
+        <div
+          className="button-container"
+          onClick={() => {
+            window.open("https://forms.gle/2Ymz8FovVJEX6uDD9");
+          }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
         </div>
@@ -234,7 +324,6 @@ export const Executive = () => {
 };
 
 export const TechnicalPM = () => {
- 
   return (
     <CardStyle>
       <PricingCard
@@ -260,10 +349,11 @@ export const TechnicalPM = () => {
             />
           );
         })}
-        <div className="button-container"
-        onClick={() => {
-          window.open("https://forms.gle/6j6TMEotgcqHtSe87")
-        }}
+        <div
+          className="button-container"
+          onClick={() => {
+            window.open("https://forms.gle/6j6TMEotgcqHtSe87");
+          }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
         </div>
@@ -299,10 +389,11 @@ export const GrowthPM = () => {
             />
           );
         })}
-        <div className="button-container"
-        onClick={() => {
-          window.open("https://forms.gle/dhpvRAR5qXY3sjdu8")
-        }}
+        <div
+          className="button-container"
+          onClick={() => {
+            window.open("https://forms.gle/dhpvRAR5qXY3sjdu8");
+          }}
         >
           <PrimaryButton to="#" buttText="Enrol Now" />
         </div>
@@ -310,8 +401,6 @@ export const GrowthPM = () => {
     </CardStyle>
   );
 };
-
-
 
 const CardStyle = styled.div`
   .class-tools-icon-container {
@@ -350,16 +439,44 @@ const CardStyle = styled.div`
       max-width: 90%;
     }
   }
-  .button-container {
-    width: 30%;
-    position: absolute;
-    bottom: 5%;
-    @media (max-width: 768px) {
-      position: relative;
-      width: 55%;
-      margin-top: 3.2rem;
+
+  .button-box {
+    /* width: 100%; */
+    margin-top: 3rem;
+    .button-flex {
+      display: flex;
+      /* width: 100%; */
+      column-gap: 1rem;
+
+      @media (max-width: 768px){
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+      .button-container {
+        width: 35%;
+        /* position: absolute; */
+        bottom: 5%;
+        @media (max-width: 768px) {
+          position: relative;
+          width: 55%;
+          /* margin-top: 3.2rem; */
+        }
+      }
+    }
+
+    .download-text-url {
+      margin-top: 1rem;
+      a {
+        color: ${theme.color.primary};
+      }
+    }
+    .white-download{
+     a{
+      color: #FFF;
+     }
     }
   }
+
   .note {
     H4 {
       margin-bottom: 1rem;
