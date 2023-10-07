@@ -438,6 +438,7 @@ const CardStyle = styled.div`
       max-width: 90%;
     }
   }
+
   .button-box {
     /* width: 100%; */
     margin-top: 3rem;
@@ -447,16 +448,16 @@ const CardStyle = styled.div`
       column-gap: 1rem;
 
       @media (max-width: 768px){
-        flex-direction: column;
-        row-gap: 1rem;
+        /* flex-direction: column; */
+        columnn-gap: 0.2rem;
       }
       .button-container {
-        width: 40%;
+        width: 35%;
         /* position: absolute; */
         bottom: 5%;
         @media (max-width: 768px) {
           position: relative;
-          width: 55%;
+          width: 50%;
           /* margin-top: 3.2rem; */
         }
       }
