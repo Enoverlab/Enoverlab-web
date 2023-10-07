@@ -190,11 +190,13 @@ const BookCard = ({ imgUrl, bookUrl, maxWidth, maxHeight }) => {
         // onclick={() => window.open(bookUrl, "download")}
       >
         {/* <a href={bookUrl} download> */}
-        <img src={imgUrl} alt="" onClick={() => setShowModal(!showModal)} />
+        {/* <img src={imgUrl} alt="" onClick={() => setShowModal(!showModal)} /> */}
+        <a href="https://birdsend.page/forms/6444/va9wSykY3B" target="_blank" rel="noreferrer">
+        <img src={imgUrl} alt="" />
         {active ? (
           <div
             className="book-card-content"
-            onClick={() => setShowModal(!showModal)}
+            // onClick={() => setShowModal(!showModal)}
           >
             <div className="book-card-content-text">
               <h4>
@@ -203,14 +205,15 @@ const BookCard = ({ imgUrl, bookUrl, maxWidth, maxHeight }) => {
             </div>
           </div>
         ) : null}
+        </a>
 
-        {showModal ? (
+        {/* {showModal ? (
           <SignupModal
             showModal={showModal}
             setShowModal={setShowModal}
             fileUrl={bookUrl}
           />
-        ) : null}
+        ) : null} */}
         {/* </a> */}
       </div>
     </StyledBookCard>

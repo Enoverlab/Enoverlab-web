@@ -133,6 +133,7 @@ const PriceHero = () => {
             Download "The ABC of Product Management" below
             </P>
             
+          {/* <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/> */}
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div>
           {/* <div  id="advanced">

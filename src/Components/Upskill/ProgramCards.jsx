@@ -47,7 +47,7 @@ export const BasicCard = () => {
           window.open("https://forms.gle/mEgFW43AXVTkpUtV7")
         }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -126,7 +126,7 @@ export const AdvancedCard = () => {
           window.open("https://forms.gle/mEgFW43AXVTkpUtV7")
         }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -198,12 +198,12 @@ export const OnsiteCard = () => {
                 window.open("https://forms.gle/DfFEZ36nZLFoUJwN8")
               }}
             >
-              <TransparentButton to="#" buttText="Enrol Now" />
+              <TransparentButton to="#" buttText="Sign Up" />
             </div>
           </div>
           <div className="download-text-url">
             <a href="">
-              <p>Download Now</p>
+              <p>Download Syllabus</p>
             </a>
           </div>
         </div>
@@ -213,7 +213,7 @@ export const OnsiteCard = () => {
           window.open("https://forms.gle/DfFEZ36nZLFoUJwN8")
         }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -251,7 +251,7 @@ export const Executive = () => {
           window.open("https://forms.gle/2Ymz8FovVJEX6uDD9")
         }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -303,12 +303,12 @@ export const TechnicalPM = () => {
                 window.open("https://forms.gle/nWz9USaguewx1bQ5A")
               }}
             >
-              <TransparentButton to="#" buttText="Enrol Now" />
+              <TransparentButton to="#" buttText="Sign Up" />
             </div>
           </div>
           <div className="download-text-url">
             <a href="https://birdsend.page/forms/6444/va9wSykY3B">
-              <p>Download Now</p>
+              <p>Download Syllabus</p>
             </a>
           </div>
         </div>
@@ -318,7 +318,7 @@ export const TechnicalPM = () => {
           window.open("https://forms.gle/nWz9USaguewx1bQ5A")
         }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div> */}
       </PricingCard>
     </CardStyle>
@@ -374,7 +374,7 @@ export const GrowthPM = () => {
             >
               <TransparentButton
                 to="#"
-                buttText="Enrol Now"
+                buttText="Sign Up"
                 border="1px solid #FFF"
                 textColor="#FFF"
                 whiteArrow
@@ -383,7 +383,7 @@ export const GrowthPM = () => {
           </div>
           <div className="download-text-url white-download">
             <a href="https://birdsend.page/forms/6444/va9wSykY3B">
-              <p>Download Now</p>
+              <p>Download Syllabus</p>
             </a>
           </div>
         </div>
@@ -392,7 +392,7 @@ export const GrowthPM = () => {
           window.open("https://forms.gle/dhpvRAR5qXY3sjdu8")
         }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div> */}
       </PricingCard>
     </CardStyle>

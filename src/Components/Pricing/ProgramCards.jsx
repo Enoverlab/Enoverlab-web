@@ -69,12 +69,12 @@ export const BasicCard = () => {
                 window.open("https://forms.gle/2Ymz8FovVJEX6uDD9");
               }}
             >
-              <TransparentButton to="#" buttText="Enrol Now" />
+              <TransparentButton to="#" buttText="Sign Up" />
             </div>
           </div>
           <div className="download-text-url">
             <a href="https://birdsend.page/forms/6444/va9wSykY3B">
-              <p>Download Now</p>
+              <p>Download Syllabus</p>
             </a>
           </div>
         </div>
@@ -172,7 +172,7 @@ export const AdvancedCard = () => {
             >
               <TransparentButton
                 to="#"
-                buttText="Enrol Now"
+                buttText="Sign Up"
                 border="1px solid #FFF"
                 textColor="#FFF"
                 whiteArrow
@@ -181,7 +181,7 @@ export const AdvancedCard = () => {
           </div>
           <div className="download-text-url white-download">
             <a href="https://birdsend.page/forms/6444/va9wSykY3B">
-              <p>Download Now</p>
+              <p>Download Syllabus</p>
             </a>
           </div>
         </div>
@@ -190,7 +190,7 @@ export const AdvancedCard = () => {
           window.open()
         }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" border="1px solid #000" />
+          <PrimaryButton to="#" buttText="Sign Up" border="1px solid #000" />
         </div> */}
       </PricingCard>
     </CardStyle>
@@ -240,7 +240,7 @@ export const OnsiteCard = () => {
         </div>
 
         {/* <div className="button-container">
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div> */}
         <div className="button-box">
           <div className="button-flex">
@@ -270,12 +270,12 @@ export const OnsiteCard = () => {
                 );
               }}
             >
-              <TransparentButton to="#" buttText="Enrol Now" />
+              <TransparentButton to="#" buttText="Sign Up" />
             </div>
           </div>
           <div className="download-text-url">
             <a href="https://birdsend.page/forms/6444/va9wSykY3B">
-              <p>Download Now</p>
+              <p>Download Syllabus</p>
             </a>
           </div>
         </div>
@@ -316,7 +316,7 @@ export const Executive = () => {
             window.open("https://forms.gle/2Ymz8FovVJEX6uDD9");
           }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -355,7 +355,7 @@ export const TechnicalPM = () => {
             window.open("https://forms.gle/6j6TMEotgcqHtSe87");
           }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div>
       </PricingCard>
     </CardStyle>
@@ -395,7 +395,7 @@ export const GrowthPM = () => {
             window.open("https://forms.gle/dhpvRAR5qXY3sjdu8");
           }}
         >
-          <PrimaryButton to="#" buttText="Enrol Now" />
+          <PrimaryButton to="#" buttText="Sign Up" />
         </div>
       </PricingCard>
     </CardStyle>
