@@ -29,7 +29,8 @@ const PriceHero = () => {
               fontSize="1.5rem"
               lineHeight="2.25rem"
               fontWeight={300}
-              color="#4B4B4B"  
+              color="#4B4B4B"
+            
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
              Learn how to become a skilled Product Manager <br/>regardless of your background
@@ -87,30 +88,10 @@ const PriceHero = () => {
           <div id="onsite">
           <OnsiteCard/>
           </div>
-
-          <div>
-            <P
-             fontSize="1.3rem"
-             fontWeight="600"
-             color="#000"
-             paddingBottom="1rem"
-            >
-            Not sure if product management is for you?
-            </P>
-            <P
-            fontSize="1.3rem"
-            fontWeight="600"
-            color="#000"
-            paddingBottom="1rem"
-            >
-            Download "The ABC of Product Management" below
-            </P>
-            
-          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
-          </div>
-          <div id="growth">
-          {/* <GrowthPM/> */}
-          </div>
+         
+          {/* <div id="growth">
+         
+          </div> */}
 
          
          
@@ -134,12 +115,34 @@ const PriceHero = () => {
           <div  id="advanced">
           <AdvancedCard/>
           </div>
-          <div  id="advanced">
+          <div>
+            <P
+             fontSize="1.3rem"
+             fontWeight="600"
+             color="#000"
+             paddingBottom="1rem"
+            >
+            Not sure if product management is for you?
+            </P>
+            <P
+            fontSize="1.3rem"
+            fontWeight="600"
+            color="#000"
+            paddingBottom="1rem"
+            >
+            Download "The ABC of Product Management" below
+            </P>
+            
+          {/* <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/> */}
+          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
+          </div>
+          {/* <div  id="advanced">
+          <GrowthPM/>
           <TechnicalPM/>
-          </div>
-          <div  id="advanced">
+          </div> */}
+          {/* <div  id="advanced">
          
-          </div>
+          </div> */}
 
           {/* <div  id="advanced" className="timerDesktop">
           <Timer/>
@@ -147,7 +150,7 @@ const PriceHero = () => {
           {/* <div id="executive">
           <Executive/>
           </div> */}
-           
+        
           </div>
           <div className="mobile-view">
         
@@ -155,12 +158,12 @@ const PriceHero = () => {
           <OnsiteCard/>
           </div>
 
-          <div  id="advanced">
+          {/* <div  id="advanced">
           <TechnicalPM/>
-          </div>
-          <div id="growth">
-          {/* <GrowthPM/> */}
-          </div>
+          </div> */}
+          {/* <div id="growth">
+          <GrowthPM/>
+          </div> */}
           <div>
           <P
              fontSize="1.2rem"
