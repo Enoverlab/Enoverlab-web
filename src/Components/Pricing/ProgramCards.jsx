@@ -465,10 +465,14 @@ const CardStyle = styled.div`
     }
 
     .download-text-url {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       a {
         color: ${theme.color.primary};
       }
+       @media (max-width: 768px) {
+        margin-top: 2rem;
+        padding-bottom: 3rem;
+       }
     }
     .white-download{
      a{

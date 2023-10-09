@@ -468,6 +468,10 @@ const CardStyle = styled.div`
       a {
         color: ${theme.color.primary};
       }
+       @media (max-width: 768px) {
+        margin-top: 2rem;
+        padding-bottom: 3rem;
+       }
     }
     .white-download{
      a{
