@@ -13,13 +13,13 @@ const PriceHero = () => {
         <div className="price-hero-head">
           <div className="desktop-text">
           <H1 fontWeight="500" fontSize="3.8rem" lineHeight="4.2rem" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
-          Kickstart your career in tech <br/> without coding
+          Master the art of <br/> project management
           </H1>
           </div>
           <div className="mobile-text">
           <H1 fontWeight="500" mobileFontSize="1.6rem" mobileLineHeight="2rem">
           {/* Learn the skills,<br/> make impact */}
-          Kickstart your career in tech without coding
+          Master the art of project management
           </H1>
           </div>
          
@@ -33,7 +33,7 @@ const PriceHero = () => {
             
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Learn how to become a skilled Product Manager <br/>regardless of your background
+             Learn how to become a skilled Project Manager and be able to deliver projects for any organisation across the globe
 
             </P>
             </div>
@@ -46,7 +46,7 @@ const PriceHero = () => {
             
             >
              {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Learn how to become a skilled Product Manager regardless of your background
+             Learn how to become a skilled Project Manager and be able to deliver projects for any organisation across the globe
             </P>
             </div>
             <div className="started-text-desktop">

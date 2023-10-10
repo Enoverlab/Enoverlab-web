@@ -32,9 +32,9 @@ export const BasicCard = () => {
       <PricingCard
         cardTitle={"Project Management Program"}
         textColor={theme.color.dark}
-        // cardText={
-        //   "Introductory training to understand the foundations of product management"
-        // }
+        cardText={
+          "Comprehensive project management training to become a skilled project manager"
+        }
         tuitionFee={"₦150,000"}
         duration={"8 Weeks"}
         height={"92rem"}
