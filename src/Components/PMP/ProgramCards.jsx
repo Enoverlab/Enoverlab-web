@@ -30,14 +30,14 @@ export const BasicCard = () => {
   return (
     <CardStyle>
       <PricingCard
-        cardTitle={"Basic Program"}
+        cardTitle={"Project Management Program"}
         textColor={theme.color.dark}
-        cardText={
-          "Introductory training to understand the foundations of product management"
-        }
-        tuitionFee={"₦50,000"}
-        duration={"4 Weeks"}
-        height={"65rem"}
+        // cardText={
+        //   "Introductory training to understand the foundations of product management"
+        // }
+        tuitionFee={"₦150,000"}
+        duration={"8 Weeks"}
+        height={"92rem"}
         mobileHeight={"100%"}
         // backLeft={"20px"}
       >
@@ -58,7 +58,7 @@ export const BasicCard = () => {
             <div
               className="button-container"
               onClick={() => {
-                window.open("https://paystack.com/pay/enoverlabbasic");
+                window.open("https://paystack.com/pay/enoverlabpmp");
               }}
             >
               <MainButton to="#" buttText="Pay Now" />
@@ -66,7 +66,7 @@ export const BasicCard = () => {
             <div
               className="button-container"
               onClick={() => {
-                window.open("https://forms.gle/mEgFW43AXVTkpUtV7");
+                window.open("https://forms.gle/rCjotT56MyyTFYHeA");
               }}
             >
               <TransparentButton to="#" buttText="Sign Up" />
@@ -167,7 +167,7 @@ export const AdvancedCard = () => {
             <div
               className="button-container"
               onClick={() => {
-                window.open("https://forms.gle/mEgFW43AXVTkpUtV7");
+                window.open("https://forms.gle/2Ymz8FovVJEX6uDD9");
               }}
             >
               <TransparentButton

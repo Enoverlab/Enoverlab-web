@@ -19,6 +19,8 @@ import Sales from "./Pages/Sales";
 import Exclusive from "./Pages/Exclusive";
 import ProgramsAd from './Pages/ProgramsAd'
 import Upskill from './Pages/Upskill'
+import PMP from './Pages/PMP'
+
 function App() {
   useEffect(() => {
     AOS.init();
@@ -40,6 +42,7 @@ function App() {
         <Route path="/exclusive" element={<Exclusive/>} />
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />
+        <Route path="/projectmanagement" element={<PMP/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </ThemeProvider>
