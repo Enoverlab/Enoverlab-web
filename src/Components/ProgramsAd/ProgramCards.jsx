@@ -58,7 +58,7 @@ export const BasicCard = () => {
             <div
               className="button-container"
               onClick={() => {
-                window.open("https://paystack.com/pay/enoverlabbasic");
+                window.open("https://paystack.com/pay/enoverlabbasicad");
               }}
             >
               <MainButton to="#" buttText="Pay Now" />
@@ -155,7 +155,7 @@ export const AdvancedCard = () => {
             <div
               className="button-container"
               onClick={() => {
-                window.open("https://paystack.com/pay/enoverlabadvance");
+                window.open(" https://paystack.com/pay/enoverlabadvancedad");
               }}
             >
               <PrimaryButton

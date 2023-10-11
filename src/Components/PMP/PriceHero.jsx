@@ -49,7 +49,7 @@ const PriceHero = () => {
              Learn how to become a skilled Project Manager and be able to deliver projects for any organisation across the globe
             </P>
             </div>
-            <div className="started-text-desktop">
+            {/* <div className="started-text-desktop">
             <P
              fontSize="1.5rem"
              lineHeight="2.25rem"
@@ -68,7 +68,7 @@ const PriceHero = () => {
             >
            Go through the programs below <br/> to get started
             </P>
-            </div>
+            </div> */}
            
        
           </div>
@@ -283,8 +283,9 @@ const StyledPriceHero = styled.div`
     position: relative;
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2.3125rem;
+    width: 100%;
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-gap: 5rem;
@@ -298,8 +299,10 @@ const StyledPriceHero = styled.div`
       }
       .desktop-view {
         display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
       row-gap: 6.125rem;
+      justify-content: center;
+      align-items: center;
 
       .timerDesktop{
         
