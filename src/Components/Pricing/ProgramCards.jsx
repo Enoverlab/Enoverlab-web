@@ -24,6 +24,7 @@ import {
   ExecutiveData,
   TPMData,
   GrowthData,
+  PMPData
 } from "./PricingData";
 import styled from "styled-components";
 export const BasicCard = () => {
@@ -396,6 +397,64 @@ export const GrowthPM = () => {
           }}
         >
           <PrimaryButton to="#" buttText="Sign Up" />
+        </div>
+      </PricingCard>
+    </CardStyle>
+  );
+};
+
+export const PMPCard = () => {
+  return (
+    <CardStyle>
+      <PricingCard
+       backgroundColor={theme.color.primary}
+        cardTitle={"Project Management Program"}
+        textColor={theme.color.light}
+        cardText={
+          "Comprehensive project management training to become a skilled project manager"
+        }
+        tuitionFee={"₦150,000"}
+        duration={"8 Weeks"}
+        height={"92rem"}
+        mobileHeight={"100%"}
+        backLeft={"20px"}
+      >
+        <div className="container-list">
+          {PMPData.map((item, index) => {
+            return (
+              <PricingList
+                index={index}
+                listText={item.listText}
+                textColor={theme.color.light}
+              />
+            );
+          })}
+        </div>
+
+        <div className="button-box">
+          <div className="button-flex">
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://paystack.com/pay/enoverlabpmp");
+              }}
+            >
+              <PrimaryButton to="#" buttText="Pay Now"  border="1px solid #000" />
+            </div>
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://forms.gle/rCjotT56MyyTFYHeA");
+              }}
+            >
+              <TransparentButton to="#" buttText="Sign Up"  border="1px solid #FFF" textColor="#FFF"  whiteArrow />
+            </div>
+          </div>
+          <div className="download-text-url white-download">
+            <a href="https://birdsend.page/forms/6444/va9wSykY3B">
+              <p>Download Syllabus</p>
+            </a>
+          </div>
         </div>
       </PricingCard>
     </CardStyle>

@@ -251,3 +251,57 @@ export const GrowthData = [
     listText: "Analysing Different Growth Strategies of Major Tech Companies"
   }
 ]
+
+export const PMPData = [ 
+  {
+    listText: "Introduction to Project management",
+  },
+  {
+    listText: "Project Management Methodologies",
+  },
+  {
+    listText: "Defining Project Goals, Scope and Success Criteria",
+  },
+  {
+    listText: "Working with Stakeholders",
+  },
+  {
+    listText: "Project Planning",
+  },
+  {
+    listText: "Risk Management",
+  },
+  {
+    listText: "Documentation",
+  },
+  {
+    listText: "Managing Project and Continuous Improvement",
+  },
+  {
+    listText: "Team Management",
+  },
+  {
+    listText: "Facilitating Project Retrospective",
+  },
+  {
+    listText: " Agile Project Management",
+  },
+  {
+    listText: "Fundamentals of Agile",
+  },
+  {
+    listText: "Agile Values and Principles"
+  },
+  {
+    listText: "Implementing Scrum"
+  },
+  {
+    listText: "Capstone Project"
+  },
+  {
+    listText: "Certificate of Completion"
+  },
+  {
+    listText: "8 weeks Internship"
+  }
+];
