@@ -72,11 +72,11 @@ export const BasicCard = () => {
               <TransparentButton to="#" buttText="Sign Up" />
             </div>
           </div>
-          <div className="download-text-url">
+          {/* <div className="download-text-url">
             <a href="https://birdsend.page/forms/6444/va9wSykY3B">
               <p>Download Syllabus</p>
             </a>
-          </div>
+          </div> */}
         </div>
       </PricingCard>
     </CardStyle>
