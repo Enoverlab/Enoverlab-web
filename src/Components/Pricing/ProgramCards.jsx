@@ -450,11 +450,11 @@ export const PMPCard = () => {
               <TransparentButton to="#" buttText="Sign Up"  border="1px solid #FFF" textColor="#FFF"  whiteArrow />
             </div>
           </div>
-          <div className="download-text-url white-download">
+          {/* <div className="download-text-url white-download">
             <a href="https://birdsend.page/forms/6444/va9wSykY3B">
               <p>Download Syllabus</p>
             </a>
-          </div>
+          </div> */}
         </div>
       </PricingCard>
     </CardStyle>
