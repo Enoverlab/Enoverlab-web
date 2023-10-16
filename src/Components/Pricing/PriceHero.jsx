@@ -120,10 +120,11 @@ const PriceHero = () => {
           <div id="basic">
             <BasicCard/>
           </div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/jXR2CYoci_4?si=RQNw6ZY0L8XLO8il" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <div id="advanced">
             <AdvancedCard/>
           </div>
-          
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/CnlDAo2EHVU?si=iioex-ResHalig_y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           
           {/* <div id="advanced">
             <Timer/>
@@ -135,10 +136,11 @@ const PriceHero = () => {
           <div  id="advanced">
           <AdvancedCard/>
           </div>
+       
           <div id="onsite">
           <PMPCard/>
           </div>
-          
+         
           {/* <div  id="advanced">
           <GrowthPM/>
           <TechnicalPM/>
@@ -160,6 +162,7 @@ const PriceHero = () => {
           <div id="onsite">
           <OnsiteCard/>
           </div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/iPMxwnmj7sk?si=IIoJGezZSvZXKOUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
            <div  id="advanced">
           <PMPCard/>
           </div>
