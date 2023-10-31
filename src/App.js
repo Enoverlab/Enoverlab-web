@@ -20,6 +20,7 @@ import Exclusive from "./Pages/Exclusive";
 import ProgramsAd from './Pages/ProgramsAd'
 import Upskill from './Pages/Upskill'
 import PMP from './Pages/PMP'
+import Diaspora from './Pages/Diaspora'
 
 function App() {
   useEffect(() => {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />
         <Route path="/projectmanagement" element={<PMP/>} />
+        <Route path="/diaspora" element={<Diaspora/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </ThemeProvider>

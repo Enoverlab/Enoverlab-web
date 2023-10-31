@@ -13,7 +13,7 @@ const Pricing = () => {
   return (
     <StyledPricing>
           <Header bgColor="#FFFDF7"  bgColorMobile="#FFFDF7"/>
-          {/* <PricingBanner/> */}
+          <PricingBanner/>
         <PriceHero/>
         <Testimonials/>
         <PricingAbout/>

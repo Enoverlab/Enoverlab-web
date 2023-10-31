@@ -205,7 +205,6 @@ const PriceHero = () => {
 export default PriceHero;
 
 const StyledPriceHero = styled.div`
- 
   position: relative;
   /* margin-bottom: 10%; */
   background-color: #fffdf7;
