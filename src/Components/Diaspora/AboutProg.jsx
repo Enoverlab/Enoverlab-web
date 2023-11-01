@@ -11,7 +11,7 @@ const AboutProg = () => {
 
   return (
     <StyledAboutProg>
-        <H1>
+        <H1 fontSizee="3.7rem">
         ABOUT THE PROGRAM
         </H1>
         <P>
