@@ -15,7 +15,7 @@ import Jira from "../../assets/Jira.png";
 import productPlan from "../../assets/productPlan.png";
 import slack from "../../assets/slackIcon.png";
 import trello from "../../assets/trello.png";
-import { SecondaryButton } from '../../Utils/Buttons'
+import { SecondaryButton, TransparentButton } from '../../Utils/Buttons'
 
 
 
@@ -45,7 +45,7 @@ const Details = () => {
               paddingBottom={".875rem"}
               textAlign="left"
             >
-              What the course entails
+              What the program entails
             </H1>
             </div>
             
@@ -80,7 +80,7 @@ const Details = () => {
           <div className="detailsListContainer">
             <div className="list-title">
               <H4 textAlign="left" color={color.dark} fontSize="1.25rem" mobileFontSize="1rem">
-                Learning Syllabus
+                Course Outline
               </H4>
             </div>
             <div className="list">
@@ -150,12 +150,30 @@ const Details = () => {
             </div>
           </div>
         </div>
-        <div 
+        
+        <div className="button-box">
+          <div className="button-flex">
+          <div 
          onClick={() => {
           window.open("https://bit.ly/enoverlabexclusive")
         }}
         className="button-container">
-        <SecondaryButton to="#" buttText="Enrol Now"/>
+        <SecondaryButton to="#" buttText="Pay Now"/>
+        </div>
+            <div
+              className="button-container"
+              onClick={() => {
+                window.open("https://forms.gle/2Ymz8FovVJEX6uDD9");
+              }}
+            >
+              <TransparentButton to="#" buttText="Sign Up" />
+            </div>
+          </div>
+          <div className="download-text-url">
+            <a href="https://birdsend.page/forms/6444/va9wSykY3B">
+              <p>Download Syllabus</p>
+            </a>
+          </div>
         </div>
         </div>
       </div>
@@ -312,5 +330,47 @@ const StyledDetails = styled.div`
     ${SecondaryButton}{
       animation : ${animate} 1s ease-in-out infinite;
     }
+
+
+  .button-box {
+    /* width: 100%; */
+    margin-top: 1rem;
+    .button-flex {
+      display: flex;
+      /* width: 100%; */
+      column-gap: 1rem;
+
+      @media (max-width: 768px){
+        /* flex-direction: column; */
+        columnn-gap: 0.2rem;
+      }
+      .button-container {
+        width: 35%;
+        /* position: absolute; */
+        bottom: 5%;
+        @media (max-width: 768px) {
+          position: relative;
+          width: 50%;
+          /* margin-top: 3.2rem; */
+        }
+      }
+    }
+
+    .download-text-url {
+      margin-top: 1.5rem;
+      a {
+        color: ${theme.color.primary};
+      }
+       @media (max-width: 768px) {
+        margin-top: 2rem;
+        padding-bottom: 3rem;
+       }
+    }
+    .white-download{
+     a{
+      color: #FFF;
+     }
+    }
+  }
 
 `;

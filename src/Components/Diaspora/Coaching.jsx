@@ -9,17 +9,21 @@ const coachData = [
     coaching2: "Negotiating salary offers",
   },
   {
-    coaching1: "Product networking /career events.",
-    coaching2: "Negotiating salary offers",
+    coaching1: "Signing up on strategic job boards",
+    coaching2: "Portfolio building",
   },
   {
-    coaching1: "Product networking /career events.",
-    coaching2: "Negotiating salary offers",
+    coaching1: "CV Screening, review and recreation",
+    coaching2: "Job application strategy",
   },
   {
-    coaching1: "Product networking /career events.",
-    coaching2: "Negotiating salary offers",
+    coaching1: "Interview preparation/mock ",
+    coaching2: "Interview preparation/mock"
   },
+  {
+    coaching1: "LinkedIn profile optimization",
+    coaching2: "Understanding job market."
+  }
 ];
 
 const Coaching = () => {
@@ -39,7 +43,7 @@ const Coaching = () => {
                 <AiOutlineCheckCircle className="icon" color="#111" />
                 <P
                 color="#111"
-                fontSize="1.75rem"
+                fontSize="1.5rem"
                 mobileFontSize="1rem"
                 textAlign="left"
                 >{data.coaching1}</P>
@@ -51,7 +55,7 @@ const Coaching = () => {
                  fontSize="1.5rem"
                  mobileFontSize="1rem"
                  textAlign="left"
-                >{data.coaching1}</P>
+                >{data.coaching2}</P>
                 </div>
 
               </div>

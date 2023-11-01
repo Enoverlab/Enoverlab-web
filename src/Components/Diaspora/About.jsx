@@ -8,7 +8,7 @@ import PricingAboutCorner from '../../assets/pricingAboutCorner.png'
 import PlacementImg from '../../assets/placementImg.png'
 const aboutList = [
   {
-    listText: "Get real life product management experience."
+    listText: "Get real life product management work experience."
   },
  
   {
@@ -38,8 +38,8 @@ const PricingAbout = () => {
               {/* <img src={PricingAboutCorner} alt=""  /> */}
               </div>
         
-            <H2 mobileFontSize="1.8rem" paddingBottom="2rem" fontSize="3rem" color="#121212" textAlign="left" fontWeight={400}>Internship Placement(8 Weeks)</H2>
-            <P fontWeight={"500"} paddingBottom={"2rem"} textAlign="left" fontSize="1.75rem" color={theme.color.dark} mobileFontSize="1rem">After completing the 10 weeks training, you will be placed in an open-source remote internship </P>
+            <H2 mobileFontSize="1.8rem" paddingBottom="2rem" fontSize="3rem" color="#121212" textAlign="left" fontWeight={400}>Internship Placement<br/>(8 Weeks)</H2>
+            <P fontWeight={"500"} paddingBottom={"2rem"} textAlign="left" fontSize="1.75rem" color={theme.color.dark} mobileFontSize="1rem">After completing the training, you will be placed in an open-source remote internship </P>
             <div className="pricing-about-list-container">
           {
             aboutList.map((item, index) => {
@@ -121,5 +121,5 @@ const StyledPricingAbout = styled.div`
     }
   }
 
-  
+       
 `

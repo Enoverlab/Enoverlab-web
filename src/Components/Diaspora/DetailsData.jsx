@@ -1,6 +1,6 @@
 export const detailsData = [
     {
-      text: "Course Duration",
+      text: "Duration",
       value: "10 weeks",
     },
     {
@@ -9,11 +9,11 @@ export const detailsData = [
     },
     {
       text: "Tution Fee",
-      value: "₦200,000",
+      value: "$1,000",
     },
     {
-      text: "Class Location",
-      value: "Online",
+      text: "Training Mode",
+      value: "Online Instructor-led",
     },
   ];
   

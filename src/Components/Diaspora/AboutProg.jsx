@@ -41,7 +41,7 @@ const AboutProg = () => {
 export default AboutProg
 
 const StyledAboutProg = styled.div`
-    padding: 0rem 10% 3rem 10%;
+    padding: 0rem 25% 3rem 25%;
     @media (max-width: 768px){
         padding: 3rem 5% 3rem 5%;
     }
@@ -56,13 +56,16 @@ const StyledAboutProg = styled.div`
         margin: 1rem 0;
         text-align: left;
         color: #121212;
-
+        font-size: 1.125rem;
+        line-height: 1.9rem;
         @media (max-width: 768px){
             font-size: 1rem;
+            lin-height: 1.8rem;
+
         }
     }
     .show-more{
-        color: #121212;
+        color: blue;
         cursor: pointer;
         font-weight: 600;
         font-size: 1.2rem;
