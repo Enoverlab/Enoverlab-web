@@ -13,7 +13,7 @@ const Hero = () => {
                 fontSize="4.5rem"
                 mobileFontSize="2.3rem"
                 >
-                Nigerians in  Diaspora Product Management Training Program
+               International Product Management Training Program
                 </H1>
 
                <div className="p-container">
@@ -23,7 +23,7 @@ const Hero = () => {
                 fontSize="1.75rem"
                 mobileFontSize="1.1rem"
                 >
-                To help Nigerians in diaspora with professional backgrounds learn global product management tech skills 
+                To help International learners, Black Americans and Africans in Diaspora with professional backgrounds learn global product management tech skills
                 </P>
                </div>
                <div  onClick={() => {
