@@ -1,11 +1,11 @@
 export const detailsData = [
     {
       text: "Duration",
-      value: "10 weeks",
+      value: "18 weeks",
     },
     {
-      text: "Internship",
-      value: "8 Weeks",
+      text: "Location",
+      value: "Global",
     },
     {
       text: "Tution Fee",
