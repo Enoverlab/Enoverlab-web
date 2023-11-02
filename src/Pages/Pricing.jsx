@@ -8,14 +8,16 @@ import SuccessStories from '../Components/Pricing/SuccessStories'
 import Footer from '../Components/Footer'
 import PricingBanner from '../Components/Pricing/PricingBanner'
 import Testimonials from '../Components/Pricing/Testimonials'
-
+import Banner from '../Components/Pricing/Banner'
 const Pricing = () => {
   return (
     <StyledPricing>
           <Header bgColor="#FFFDF7"  bgColorMobile="#FFFDF7"/>
           {/* <PricingBanner/> */}
         <PriceHero/>
+       
         <Testimonials/>
+        <Banner/>
         <PricingAbout/>
         <Testimonies/>
         <SuccessStories/>
