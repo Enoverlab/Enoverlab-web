@@ -88,27 +88,7 @@ const PriceHero = () => {
           <div id="onsite">
           <OnsiteCard/>
           </div>
-          <div>
-            <P
-             fontSize="1.3rem"
-             fontWeight="600"
-             color="#000"
-             paddingBottom="1rem"
-            >
-            Not sure if product management is for you?
-            </P>
-            <P
-            fontSize="1.3rem"
-            fontWeight="600"
-            color="#000"
-            paddingBottom="1rem"
-            >
-            Download "The ABC of Product Management" below
-            </P>
-            
-          {/* <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/> */}
-          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
-          </div>
+         
           {/* <div id="growth">
          
           </div> */}
@@ -136,10 +116,32 @@ const PriceHero = () => {
           <div  id="advanced">
           <AdvancedCard/>
           </div>
-       
-          <div id="onsite">
-          <PMPCard/>
+
+          <div>
+            <P
+             fontSize="1.3rem"
+             fontWeight="600"
+             color="#000"
+             paddingBottom="1rem"
+            >
+            Not sure if product management is for you?
+            </P>
+            <P
+            fontSize="1.3rem"
+            fontWeight="600"
+            color="#000"
+            paddingBottom="1rem"
+            >
+            Download "The ABC of Product Management" below
+            </P>
+            
+          {/* <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/> */}
+          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div>
+       
+          {/* <div id="onsite">
+          <PMPCard/>
+          </div> */}
          
           {/* <div  id="advanced">
           <GrowthPM/>
@@ -163,9 +165,9 @@ const PriceHero = () => {
           <OnsiteCard/>
           </div>
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/iPMxwnmj7sk?si=IIoJGezZSvZXKOUI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-           <div  id="advanced">
+           {/* <div  id="advanced">
           <PMPCard/>
-          </div>
+          </div> */}
           {/* <div  id="advanced">
           <TechnicalPM/>
           </div> */}
