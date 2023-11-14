@@ -3,8 +3,8 @@ import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-// import character from '../../assets/banner/bannerImage1.jpeg'
-import character from '../../assets/banjiNew.jpg'
+import character from '../../assets/banner/bannerImage1.jpeg'
+// import character from '../../assets/banjiNew.jpg'
 const Banner = () => {
     return (
         <StyledBanner>
@@ -13,14 +13,14 @@ const Banner = () => {
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />
                   <div className="details mobile">
-                  <h4>Olabanji Ewenla  </h4>
-                    <p>Lead Product Manager, Dashouts</p>
+                  <h4>Amaka Atasie  </h4>
+                    <p>Founder/Head of Product, Octahedron Software</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>The role of mindset in shaping your career growth</h2>
+                <h2>How to know you are building the right product</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -28,8 +28,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Olabanji Ewenla  </h4>
-                    <p>Lead Product Manager, Dashouts</p>
+                    <h4>Amaka Atasie  </h4>
+                    <p>Founder/Head of Product, Octahedron Software</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
