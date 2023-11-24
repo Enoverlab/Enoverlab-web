@@ -94,7 +94,7 @@ export const AdvancedCard = () => {
         cardText={
           "Comprehensive product management training to become a skilled product manager"
         }
-        tuitionFee={"₦150,000"}
+        tuitionFee={"₦200,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
         height={"112.4375rem"}
@@ -214,8 +214,8 @@ export const OnsiteCard = () => {
         cardText={
           "This is for professionals who prefers physical training to learn the required skills to become a Product Manager"
         }
-        tuitionFee={tab === "active" ? "₦200,000" : "₦200,000"}
-        duration={"10 Weeks"}
+        tuitionFee={tab === "active" ? "₦250,000" : "₦250,000"}
+        duration={"12 Weeks"}
         mobileHeight={"100%"}
         height={"75.4375rem"}
         showSwitch
@@ -334,7 +334,7 @@ export const TechnicalPM = () => {
         cardText={
           "For product managers with atleast one year working experience to build their technical proficiency"
         }
-        tuitionFee={"₦150,000"}
+        tuitionFee={"₦200,000"}
         duration={"8 Weeks"}
         mobileHeight={"100%"}
         height={"73.4375rem"}
@@ -373,7 +373,7 @@ export const GrowthPM = () => {
         cardText={
           "For Product Managers to learn the specific skills required to drive their product growth to the next level"
         }
-        tuitionFee={"₦150,000"}
+        tuitionFee={"₦200,000"}
         duration={"8 weeks"}
         mobileHeight={"100%"}
         height={"85.4375rem"}
