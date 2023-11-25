@@ -373,7 +373,7 @@ export const GrowthPM = () => {
         cardText={
           "For Product Managers to learn the specific skills required to drive their product growth to the next level"
         }
-        tuitionFee={"₦200,000"}
+        tuitionFee={"₦20ss0,000"}
         duration={"8 weeks"}
         mobileHeight={"100%"}
         height={"85.4375rem"}

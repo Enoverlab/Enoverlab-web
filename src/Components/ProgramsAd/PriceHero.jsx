@@ -81,41 +81,14 @@ const PriceHero = () => {
         <div className="card-block">
           <div className="desktop-view">
           
-         <div id="basic">
+         {/* <div id="basic">
           <BasicCard/>
-          </div>
+          </div> */}
 
           <div id="onsite">
           <OnsiteCard/>
           </div>
-         
-          {/* <div id="growth">
-         
-          </div> */}
 
-         
-         
-          </div>
-          <div className="mobile-view">
-          <div id="basic">
-            <BasicCard/>
-          </div>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/jXR2CYoci_4?si=RQNw6ZY0L8XLO8il" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <div id="advanced">
-            <AdvancedCard/>
-          </div>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/CnlDAo2EHVU?si=iioex-ResHalig_y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          
-          {/* <div id="advanced">
-            <Timer/>
-          </div> */}
-          </div>
-        </div>
-        <div className="card-block">
-          <div className="desktop-view">
-          <div  id="advanced">
-          <AdvancedCard/>
-          </div>
           <div>
             <P
              fontSize="1.3rem"
@@ -137,6 +110,35 @@ const PriceHero = () => {
           {/* <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/> */}
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div>
+         
+          {/* <div id="growth">
+         
+          </div> */}
+
+         
+         
+          </div>
+          <div className="mobile-view">
+          {/* <div id="basic">
+            <BasicCard/>
+          </div> */}
+          {/* <iframe width="100%" height="315" src="https://www.youtube.com/embed/jXR2CYoci_4?si=RQNw6ZY0L8XLO8il" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+          <div id="advanced">
+            <AdvancedCard/>
+          </div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/CnlDAo2EHVU?si=iioex-ResHalig_y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
+          {/* <div id="advanced">
+            <Timer/>
+          </div> */}
+          </div>
+        </div>
+        <div className="card-block">
+          <div className="desktop-view">
+          <div  id="advanced">
+          <AdvancedCard/>
+          </div>
+      
           {/* <div  id="advanced">
           <GrowthPM/>
           <TechnicalPM/>
