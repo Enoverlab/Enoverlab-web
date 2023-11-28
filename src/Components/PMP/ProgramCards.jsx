@@ -93,7 +93,7 @@ export const AdvancedCard = () => {
         cardText={
           "Comprehensive product management training to become a skilled product manager"
         }
-        tuitionFee={"₦150,000"}
+        tuitionFee={"₦200,000"}
         duration={"10 Weeks"}
         mobileHeight={"100%"}
         height={"112.4375rem"}
