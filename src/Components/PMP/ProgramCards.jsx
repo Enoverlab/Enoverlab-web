@@ -35,7 +35,7 @@ export const BasicCard = () => {
         cardText={
           "Comprehensive project management training to become a skilled project manager"
         }
-        tuitionFee={"₦150,000"}
+        tuitionFee={"₦200,000"}
         duration={"8 Weeks"}
         height={"92rem"}
         mobileHeight={"100%"}
