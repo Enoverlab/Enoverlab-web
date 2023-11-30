@@ -300,7 +300,7 @@ export const TechnicalPM = () => {
             <div
               className="button-container"
               onClick={() => {
-                window.open("https://forms.gle/nWz9USaguewx1bQ5A")
+                window.open("https://forms.gle/1kpr3pcnJvWqQ1CUA")
               }}
             >
               <TransparentButton to="#" buttText="Sign Up" />
