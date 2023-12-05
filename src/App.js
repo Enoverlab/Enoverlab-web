@@ -21,6 +21,7 @@ import ProgramsAd from './Pages/ProgramsAd'
 import Upskill from './Pages/Upskill'
 import PMP from './Pages/PMP'
 import Diaspora from './Pages/Diaspora'
+import NewPricing from './Pages/NewPricing'
 
 function App() {
   useEffect(() => {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/upskill" element={<Upskill/>} />
         <Route path="/projectmanagement" element={<PMP/>} />
         <Route path="/diaspora" element={<Diaspora/>} />
+        <Route path="/newprograms" element={<NewPricing/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </ThemeProvider>
