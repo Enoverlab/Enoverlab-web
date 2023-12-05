@@ -220,7 +220,7 @@ const StyledPriceHero = styled.div`
   .pricing-card{
     padding: 5% 10% 5% 10%;
     @media(max-width: 768px){
-      padding: 5% 10% 5% 10%;
+      padding: 5% 5% 5% 5%;
     }
   }
   .price-hero-head {
