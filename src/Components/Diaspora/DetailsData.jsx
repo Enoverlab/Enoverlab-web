@@ -1,7 +1,7 @@
 export const detailsData = [
     {
       text: "Duration",
-      value: "18 weeks",
+      value: "8 weeks",
     },
     {
       text: "Location",
@@ -13,7 +13,7 @@ export const detailsData = [
     },
     {
       text: "Training Mode",
-      value: "Online Instructor-led",
+      value: "Online",
     },
   ];
   

@@ -6,8 +6,10 @@ import PricingAbout from '../Components/Diaspora/About'
 import AboutProg from '../Components/Diaspora/AboutProg'
 import Testimonies from '../Components/Pricing/Testimonies'
 import SuccessStories from '../Components/Pricing/SuccessStories'
-import Header from '../Components/Header'
+import Header from '../Components/DiasporaHeader'
 import Footer from '../Components/Footer'
+import Placement from '../Components/Diaspora/Placement'
+import Started from '../Components/Diaspora/Started'
 const Diaspora = () => {
   return (
     <div>
@@ -16,10 +18,10 @@ const Diaspora = () => {
         <AboutProg/>
         <Details/>
         <Coaching/>
+        <Placement/>
         <PricingAbout/>
-        <Testimonies/>
-        <SuccessStories/>
-        <Footer/>
+        <Started/>
+      /
     </div>
   )
 }

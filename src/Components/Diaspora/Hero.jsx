@@ -1,29 +1,50 @@
 import React from 'react'
 import styled from "styled-components";
 import { H1, P } from "../../Utils/Typograpyhy";
-import HeroBg from '../../assets/diasporaHeroBg.png'
+import HeroImg from '../../assets/diaspora/heroImg.png'
 import { SecondaryButton } from '../../Utils/Buttons'
 const Hero = () => {
   return (
     <StyledHero>
         <div className="hero-container">
-            <div className="hero-inner-container">
+            <div className="hero-left-container">
+            <div className="intro-text">
+               <P
+                color="#4B4B4B"
+                textAlign="left"
+                fontSize="1.25rem"
+                fontWeight={300}
+                lineHeight="normal"
+                mobileFontSize=".75rem"
+                >
+               ENOVERLAB IN CONJUNCTION WITH <span
+               style={{
+                color: "#FAA31A"
+               }}
+               >{" "}ELITE DIGEST{" "}</span>PRESENTS
+                </P>
+               </div>
                 <H1
-                color="#FFF"
-                fontSize="4.5rem"
-                mobileFontSize="2.3rem"
+                color="#333333"
+                fontSize="2.8125rem"
+                mobileFontSize="1.875rem"
+                textAlign="left"
+                lineHeight="normal"
+                mobileLineHeight="normal"
                 >
                International Product Management Training Program
                 </H1>
 
                <div className="p-container">
                <P
-                color="#FFF"
-                textAlign="center"
-                fontSize="1.75rem"
-                mobileFontSize="1.1rem"
+                color="#4B4B4B"
+                textAlign="left"
+                fontSize="1.5rem"
+                fontWeight={300}
+                lineHeight="normal"
+                mobileFontSize=".75rem"
                 >
-                To help International learners, Black Americans and Africans in Diaspora with professional backgrounds learn global product management tech skills
+                To help Africans in Diaspora with professional backgrounds learn global product management tech skills.
                 </P>
                </div>
                <div  onClick={() => {
@@ -31,6 +52,9 @@ const Hero = () => {
         }} className="button-container">
         <SecondaryButton to="#" buttText="Enrol Now"/>
         </div>
+            </div>
+            <div className="img-container">
+              <img src={HeroImg} alt="heroImg" />
             </div>
         </div>
     </StyledHero>
@@ -40,29 +64,56 @@ const Hero = () => {
 export default Hero
 
 const StyledHero = styled.div`
- 
+  
   .hero-container{
     padding: 5%;
   background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+
   @media screen and (max-width: 768px){
-    padding: 0%;
+    padding: 6%;
+    flex-direction: column;
+    align-items: center;
   }
-    .hero-inner-container{
-      padding: 74px 5% 155px 5%;
-      background-image: url(${HeroBg});
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .hero-left-container{
+      width: 55%;
+      @media screen and (max-width: 768px){
+        width: 100%;
+      }
+      .intro-text{
+        margin-bottom: 3.0625rem;
+
+        @media screen and (max-width: 768px){
+          margin-bottom: .75rem;
+        }
+      }
+   
       .p-container{
-        margin-top: 1.75rem;
+        margin-top: 1.5rem;
+        @media screen and (max-width: 768px){
+          margin-top: 1rem;
+        }
       }
       .button-container{
-        margin-top: 1.3125rem;
-
-@media screen and (max-width: 768px){
-    margin-top: 1.5rem;
-}
+        margin-top: 3rem;
+        width: 30%;
+        @media screen and (max-width: 768px){
+            margin-top: 1.5rem;
+            width: 50%;
+        }
       }
     }
+    .img-container{
+    max-width: 35%;
+    @media screen and (max-width: 768px){
+      max-width: 100%;
+      margin-top: 2rem;
+    }
+    img{
+      width: 100%;
+    }
   }
+  }
+  
 `
