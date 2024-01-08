@@ -19,9 +19,11 @@ const Diaspora = () => {
         <Details/>
         <Coaching/>
         <Placement/>
-        <PricingAbout/>
+        <Testimonies/>
+        <SuccessStories/>
+        {/* <PricingAbout/> */}
         <Started/>
-      /
+        <Footer/>
     </div>
   )
 }
