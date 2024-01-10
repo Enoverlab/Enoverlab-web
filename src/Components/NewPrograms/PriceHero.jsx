@@ -190,7 +190,7 @@ export default PriceHero;
 //     transform: translateY(0);
 //   }
 // `;
-
+/* 
 const slideUp = keyframes`
   from {
     transform: translateY(0);
@@ -199,7 +199,8 @@ const slideUp = keyframes`
     transform: translateY(-100%);
   }
 `;
-
+ */
+/* 
 const hoverCard1 = keyframes`
   0% {
     animation: ${slideUp} 0.5s forwards;
@@ -207,8 +208,8 @@ const hoverCard1 = keyframes`
   100% {
     animation: ${slideDown} 0.5s forwards;
   }
-`;
-
+`; */
+/* 
 const hoverCard2 = keyframes`
   0% {
     animation: ${slideUp} 0.5s forwards;
@@ -216,8 +217,8 @@ const hoverCard2 = keyframes`
   100% {
     animation: ${slideDown} 0.5s forwards;
   }
-`;
-
+`; */
+/* 
 const hoverCard3 = keyframes`
   0% {
     animation: ${slideUp} 0.5s forwards;
@@ -225,7 +226,7 @@ const hoverCard3 = keyframes`
   100% {
     animation: ${slideDown} 0.5s forwards;
   }
-`;
+`; */
 
 const StyledPriceHero = styled.div`
   position: relative;
@@ -268,12 +269,7 @@ const StyledPriceHero = styled.div`
           .sub-1{
             display:none;
           }
-          /* &:hover{
-            .sub-1 {
-            animation: ${hoverCard1} 0.5s forwards;
-            display: block;
-          }
-          } */
+        
         }
         .card-2{
           background-color: #2A65FF;
@@ -290,12 +286,7 @@ const StyledPriceHero = styled.div`
           .sub-1{
             display:none;
           }
-          /* &:hover{
-            .sub-1 {
-                animation: ${hoverCard2} 0.5s forwards;
-                display: block;
-              }
-          } */
+         
         }
         .card-3{
           background-color: #003AD4;
@@ -313,12 +304,7 @@ const StyledPriceHero = styled.div`
           .sub-1{
             display:none;
           }
-          /* &:hover{
-            .sub-1 {
-            animation: ${hoverCard3} 0.5s forwards;
-            display: block;
-          }
-          } */
+         
         }
     
 
