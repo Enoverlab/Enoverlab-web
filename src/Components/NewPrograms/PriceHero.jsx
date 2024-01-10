@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import { H1, P } from "../../Utils/Typograpyhy";
 import { AdvancedCard, BasicCard, Executive, OnsiteCard, TechnicalPM, GrowthPM, PMPCard } from "./ProgramCards";
 import BookCard from "../Resources/BookCard";
@@ -10,73 +10,54 @@ const PriceHero = () => {
   return (
     <StyledPriceHero>
       <div className="price-hero-container">
-        <div className="price-hero-head">
-          <div className="desktop-text">
-          <H1 color="#FFF" fontWeight="500" fontSize="3.8rem" lineHeight="4.2rem" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
-          Kickstart your career in tech <br/> without coding
-          </H1>
-          </div>
-          <div className="mobile-text">
-          <H1 color="#FFF" fontWeight="500" mobileFontSize="1.6rem" mobileLineHeight="2rem">
-          {/* Learn the skills,<br/> make impact */}
-          Kickstart your career in tech without coding
-          </H1>
-          </div>
-         
-          <div className="p-container">
-          <div className="started-text-desktop">
-            <P
-              fontSize="1.5rem"
-              lineHeight="2.25rem"
-              fontWeight={300}
-              color="#FFF"
-            
-            >
-             {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Learn how to become a skilled Product Manager <br/>regardless of your background
+        <div className="left-container">
+        <H1 color="#131313" textAlign="left" fontSize="48px" lineHeight="110%">
+        Kickstart your career in Product Management
+        </H1>
+        <P textAlign="left" color="#131313" fontWeight={400}>Get familiar with what product management is and how you can become a skilled PM regardless of your background.</P>
 
+        <div className="benefits-card">
+          <div className="card-head">
+            <P>
+            Benefits of Being A Product Manager
             </P>
-            </div>
-            <div className="started-text-mobile">
-            <P
-              fontSize="1.5rem"
-              lineHeight="2.25rem"
-              fontWeight={300}
-              color="#FFF"
-            
-            >
-             {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Learn how to become a skilled Product Manager regardless of your background
+            <P>
+              
             </P>
-            </div>
-            <div className="started-text-desktop">
-            <P
-             fontSize="1.5rem"
-             lineHeight="2.25rem"
-             fontWeight={300}
-             color="#FFF"
-            >
-        Go through the programs below to get started
-            </P>
-            </div>
-            <div className="started-text-mobile">
-            <P
-             fontSize="1.5rem"
-             lineHeight="2.25rem"
-             fontWeight={300}
-             color="#FFF"
-            >
-           Go through the programs below <br/> to get started
-            </P>
-            </div>
-           
-       
           </div>
-        
+          <div className="card-1">
+            <P>
+            Leadership
+            </P>
+            <P className="sub-1">
+            Product managers inspire and guide their teams by setting a clear vision, aligning everyone towards common goals, and fostering a collaborative and motivated environment.
+            </P>
+          </div>
+          <div className="card-2">
+            <P>
+            Execution
+            </P>
+            <P className="sub-1">
+            Responsible for the tactical aspects of bringing a product to life, overseeing project timelines, resource allocation, and ensuring that the team delivers high-quality outcomes.
+            </P>
+          </div>
+          <div className="card-3">
+            <P>
+            Product sense
+            </P>
+            <P className="sub-1">
+            Product managers  understand user needs, market trends, and competition to make informed decisions about the product's features, design, and strategy, ensuring it resonates and solves intended problem.
+            </P>
+          </div>
         </div>
-        
+
+
+        </div>
+        <div className="right-container">
+
+        </div>
       </div>
-      <CertiMarquee/>
+      {/* <CertiMarquee/> */}
       <div className="pricing-card">
         <div className="card-block">
           <div className="desktop-view">     
@@ -200,6 +181,52 @@ const PriceHero = () => {
 
 export default PriceHero;
 
+ 
+// const slideDown = keyframes`
+//   from {
+//     transform: translateY(-100%);
+//   }
+//   to {
+//     transform: translateY(0);
+//   }
+// `;
+
+const slideUp = keyframes`
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+`;
+
+const hoverCard1 = keyframes`
+  0% {
+    animation: ${slideUp} 0.5s forwards;
+  }
+  100% {
+    animation: ${slideDown} 0.5s forwards;
+  }
+`;
+
+const hoverCard2 = keyframes`
+  0% {
+    animation: ${slideUp} 0.5s forwards;
+  }
+  100% {
+    animation: ${slideDown} 0.5s forwards;
+  }
+`;
+
+const hoverCard3 = keyframes`
+  0% {
+    animation: ${slideUp} 0.5s forwards;
+  }
+  100% {
+    animation: ${slideDown} 0.5s forwards;
+  }
+`;
+
 const StyledPriceHero = styled.div`
   position: relative;
   /* margin-bottom: 10%; */
@@ -209,14 +236,97 @@ const StyledPriceHero = styled.div`
   }
   .price-hero-container {
     padding: 5% 8% 5% 8%;
-    position: relative;
-    margin-bottom: 3rem;
-    background-color: #00F;
-    @media (max-width: 768px) {
-      margin-bottom: 2rem;
-      padding: 5% 10% 5% 10%;
+    .left-container{
+      width: 50%;
+      .benefits-card{
+        height:488px;
+        background-color: #E8F3FE;
+        position: relative;
+        overflow: hidden;
+        .card-head{
+          padding: 15px 32px;
+         
+          P{
+            text-align: left;
+            color: #000;
+            background-color: #E8F3FE;
+            font-size: 28px;
+            width: 50%
+          }
+        }
+        .card-1{
+          padding: 40px;
+          background-color: #80A2FF;
+          border-radius: 32px 32px 0px 0px;
+          height: 144px;
+          P{
+            text-align: left;
+            color: #FFFDF7;
+            font-size: 28px;
+          }  
+
+          .sub-1{
+            display:none;
+          }
+          /* &:hover{
+            .sub-1 {
+            animation: ${hoverCard1} 0.5s forwards;
+            display: block;
+          }
+          } */
+        }
+        .card-2{
+          background-color: #2A65FF;
+           padding: 40px;
+           border-radius: 32px 32px 0px 0px;
+           height: 142px;
+           z-index: 2;
+          transform: translateY(-24px);
+          P{
+            text-align: left;
+            color: #FFFDF7;
+            font-size: 28px;
+          }  
+          .sub-1{
+            display:none;
+          }
+          /* &:hover{
+            .sub-1 {
+                animation: ${hoverCard2} 0.5s forwards;
+                display: block;
+              }
+          } */
+        }
+        .card-3{
+          background-color: #003AD4;
+           padding: 40px;
+         border-radius: 32px 32px 0px 0px;
+         height: 148px;
+          z-index: 2;
+          transform: translateY(-48px);
+          P{
+            text-align: left;
+            color: #FFFDF7;
+            font-size: 28px;
+
+          }  
+          .sub-1{
+            display:none;
+          }
+          /* &:hover{
+            .sub-1 {
+            animation: ${hoverCard3} 0.5s forwards;
+            display: block;
+          }
+          } */
+        }
+    
+
+      }
     }
   }
+    
+  
   .pricing-card{
     padding: 5% 10% 5% 10%;
     @media(max-width: 768px){
