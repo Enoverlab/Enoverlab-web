@@ -45,6 +45,14 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                                </div>
                                <div
                                className="text-switch-third"
+                               onClick={()=>switchTab("abujaActive")}
+                               >
+                               <H4 mobileFontSize="0.8rem" fontSize="1rem" color={tabValue === "abujaActive" ? "#FFF" : "#000"} fontWeight={"700"} textAlign={"left"}>
+                                    ABUJA
+                               </H4>
+                               </div>
+                               <div
+                               className="text-switch-fourth"
                                onClick={()=>switchTab("bergActive")}
                                >
                                <H4 mobileFontSize="0.8rem" fontSize="1rem" color={tabValue === "bergActive" ? "#FFF" : "#000"} fontWeight={"700"} textAlign={"left"}>
@@ -61,8 +69,14 @@ const PricingCard = ({children, cardTitle, cardText, backgroundColor, textColor,
                             paddingTop="1.5rem"
                             >
                            <IoLocationSharp/> {
-                                 tabValue === "tabActive" ? "Lekki Gateview Plaza, Admiralty way, Lekki Phase 1" : tabValue === "tabInactive" ? "Cafe One, Palms Mall, Ring Road, Ibadan" : "75b Ogunnusi Rd, Isheri, Ojodu Berger, Lagos Berger"
-                           }
+  tabValue === "tabActive"
+    ? "Lekki Gateview Plaza, Admiralty way, Lekki Phase 1"
+    : tabValue === "tabInactive"
+    ? "Cafe One, Palms Mall, Ring Road, Ibadan"
+    : tabValue === "abujaActive"
+    ? "22 Kumasi Cres, Wuse 2, Abuja"
+    : "75b Ogunnusi Rd, Isheri, Ojodu Berger, Lagos Berger"
+}
                             </P>
                             </>
                         )
@@ -158,8 +172,10 @@ const StyledPricingCard = styled.div`
                 column-gap: 1rem;
                 margin-top: 1rem;
                 cursor: pointer;
-
                 align-items: center;
+                @media(max-width: 768px){
+                    flex-wrap: wrap;
+                } 
                         .text-switch{
                             background: ${props => props.tabValue === "tabActive" ? "#0046FF" : "#FFF"};
                             padding: 1rem;
@@ -174,11 +190,19 @@ const StyledPricingCard = styled.div`
 
                         }
                         .text-switch-third{
+                            background: ${props => props.tabValue === "abujaActive" ? "#0046FF" : "#FFF"};
+                            padding: 1rem;
+                            border: 0.01rem solid ${theme.color.primary};
+                            animation: ${pulse} 2s ease-in-out infinite;
+                        }
+                        .text-switch-fourth{
                             background: ${props => props.tabValue === "bergActive" ? "#0046FF" : "#FFF"};
                             padding: 1rem;
                             border: 0.01rem solid ${theme.color.primary};
                             animation: ${pulse} 2s ease-in-out infinite;
-
+                            @media(max-width: 768px){
+                                margin-top: 8px;
+                            }
                         }
                     }
 

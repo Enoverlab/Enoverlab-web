@@ -221,6 +221,7 @@ export const OnsiteCard = () => {
         showSwitch
         tabValue={tab}
         switchTab={handleChange}
+        
         // discountPrice={tab === "active" ? "" : "₦200,000" }
       >
         {Onsite.map((item, index) => {
@@ -253,7 +254,8 @@ export const OnsiteCard = () => {
                     ? "https://paystack.com/pay/EnoverlabLekki"
                     : tab === "tabInactive"
                     ? "https://paystack.com/pay/enoverlabibadan"
-                    : "https://paystack.com/pay/enoverlabberger"
+                    : tab === "abujaActive" ? "https://paystack.com/pay/enoverlababuja" 
+                    :"https://paystack.com/pay/enoverlabberger"
                 );
               }}
             >
@@ -267,6 +269,7 @@ export const OnsiteCard = () => {
                     ? " https://bit.ly/enoverlabexclusive"
                     : tab === "tabInactive"
                     ? "https://forms.gle/UQtq3gr3BeP59iui8"
+                    : tab === "abujaActive" ? "https://forms.gle/9CDxZVtTr5Lkw56A8"
                     : "https://forms.gle/Bv6j6THHFdTvmx5W6"
                 );
               }}

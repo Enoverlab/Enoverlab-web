@@ -1,75 +1,85 @@
-import React from "react";
-import styled, {keyframes} from "styled-components";
+import React, { useState } from "react";
+import styled, { keyframes } from "styled-components";
 import { H1, P } from "../../Utils/Typograpyhy";
-import { AdvancedCard, BasicCard, Executive, OnsiteCard, TechnicalPM, GrowthPM, PMPCard } from "./ProgramCards";
+import {
+  AdvancedCard,
+  BasicCard,
+  Executive,
+  OnsiteCard,
+  TechnicalPM,
+  GrowthPM,
+  PMPCard,
+} from "./ProgramCards";
 import BookCard from "../Resources/BookCard";
 import Timer from "./Timer";
-import abc from "../../assets/resources/abc.jpg"
+import abc from "../../assets/resources/abc.jpg";
 import CertiMarquee from "../HomeComponents/CertiMarquee";
 const PriceHero = () => {
+  const [isCard1Hovered, setIsCard1Hovered] = useState(false);
   return (
-    <StyledPriceHero>
+    <StyledPriceHero isCard1Hovered={isCard1Hovered}>
       <div className="price-hero-container">
         <div className="left-container">
-        <H1 color="#131313" textAlign="left" fontSize="48px" lineHeight="110%">
-        Kickstart your career in Product Management
-        </H1>
-        <P textAlign="left" color="#131313" fontWeight={400}>Get familiar with what product management is and how you can become a skilled PM regardless of your background.</P>
+          <H1
+            color="#131313"
+            textAlign="left"
+            fontSize="48px"
+            lineHeight="110%"
+          >
+            Kickstart your career in Product Management
+          </H1>
+          <P textAlign="left" color="#131313" fontWeight={400}>
+            Get familiar with what product management is and how you can become
+            a skilled PM regardless of your background.
+          </P>
 
-        <div className="benefits-card">
-          <div className="card-head">
-            <P>
-            Benefits of Being A Product Manager
-            </P>
-            <P>
-              
-            </P>
-          </div>
-          <div className="card-1">
-            <P>
-            Leadership
-            </P>
-            <P className="sub-1">
-            Product managers inspire and guide their teams by setting a clear vision, aligning everyone towards common goals, and fostering a collaborative and motivated environment.
-            </P>
-          </div>
-          <div className="card-2">
-            <P>
-            Execution
-            </P>
-            <P className="sub-1">
-            Responsible for the tactical aspects of bringing a product to life, overseeing project timelines, resource allocation, and ensuring that the team delivers high-quality outcomes.
-            </P>
-          </div>
-          <div className="card-3">
-            <P>
-            Product sense
-            </P>
-            <P className="sub-1">
-            Product managers  understand user needs, market trends, and competition to make informed decisions about the product's features, design, and strategy, ensuring it resonates and solves intended problem.
-            </P>
+          <div className="benefits-card">
+            <div className="card-head">
+              <P>Benefits of Being A Product Manager</P>
+              <P></P>
+            </div>
+            <div className="card-1"  onMouseEnter={() => setIsCard1Hovered(true)} onMouseLeave={() => setIsCard1Hovered(false)}>
+              <P>Leadership</P>
+              <P className="sub-1">
+                Product managers inspire and guide their teams by setting a
+                clear vision, aligning everyone towards common goals, and
+                fostering a collaborative and motivated environment.
+              </P>
+            </div>
+            <div className="card-2">
+              <P>Execution</P>
+              <P className="sub-1">
+                Responsible for the tactical aspects of bringing a product to
+                life, overseeing project timelines, resource allocation, and
+                ensuring that the team delivers high-quality outcomes.
+              </P>
+            </div>
+            <div className="card-3">
+              <P>Product sense</P>
+              <P className="sub-1">
+                Product managers understand user needs, market trends, and
+                competition to make informed decisions about the product's
+                features, design, and strategy, ensuring it resonates and solves
+                intended problem.
+              </P>
+            </div>
           </div>
         </div>
-
-
-        </div>
-        <div className="right-container">
-
-        </div>
+        <div className="right-container"></div>
       </div>
       {/* <CertiMarquee/> */}
       <div className="pricing-card">
         <div className="card-block">
-          <div className="desktop-view">     
-         {/* <div id="basic">
+          <div className="desktop-view">
+            {/* <div id="basic">
           <BasicCard/>
           </div> */}
-          <div id="onsite">
-          <OnsiteCard/>
-          </div>
-          {/* <div id="growth">
+            <div id="onsite">
+              <OnsiteCard />
+            </div>
+            {/* <div id="growth">
           </div> */}
-              {/* <div>
+            {/* <div>
             <P
              fontSize="1.3rem"
              fontWeight="600"
@@ -89,67 +99,78 @@ const PriceHero = () => {
             
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div> */}
-
           </div>
           <div className="mobile-view">
-          {/* <div id="basic">
+            {/* <div id="basic">
             <BasicCard/>
           </div> */}
-          {/* <iframe width="100%" height="315" src="https://www.youtube.com/embed/jXR2CYoci_4?si=RQNw6ZY0L8XLO8il" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-          <div id="advanced">
-            <AdvancedCard/>
-          </div>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/CnlDAo2EHVU?si=iioex-ResHalig_y" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          
-          {/* <div id="advanced">
+            {/* <iframe width="100%" height="315" src="https://www.youtube.com/embed/jXR2CYoci_4?si=RQNw6ZY0L8XLO8il" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+            <div id="advanced">
+              <AdvancedCard />
+            </div>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/CnlDAo2EHVU?si=iioex-ResHalig_y"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            {/* <div id="advanced">
             <Timer/>
           </div> */}
           </div>
         </div>
         <div className="card-block">
           <div className="desktop-view">
-          <div  id="advanced">
-          <AdvancedCard/>
-          </div>
+            <div id="advanced">
+              <AdvancedCard />
+            </div>
 
-     
-       
-          {/* <div id="onsite">
+            {/* <div id="onsite">
           <PMPCard/>
           </div> */}
-         
-          {/* <div  id="advanced">
+
+            {/* <div  id="advanced">
           <GrowthPM/>
           <TechnicalPM/>
           </div> */}
-          {/* <div  id="advanced">
+            {/* <div  id="advanced">
          
           </div> */}
 
-          {/* <div  id="advanced" className="timerDesktop">
+            {/* <div  id="advanced" className="timerDesktop">
           <Timer/>
           </div> */}
-          {/* <div id="executive">
+            {/* <div id="executive">
           <Executive/>
           </div> */}
-        
           </div>
           <div className="mobile-view">
-        
-          <div id="onsite">
-          <OnsiteCard/>
-          </div>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/iPMxwnmj7sk?si=IIoJGezZSvZXKOUI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-           {/* <div  id="advanced">
+            <div id="onsite">
+              <OnsiteCard />
+            </div>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/iPMxwnmj7sk?si=IIoJGezZSvZXKOUI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            {/* <div  id="advanced">
           <PMPCard/>
           </div> */}
-          {/* <div  id="advanced">
+            {/* <div  id="advanced">
           <TechnicalPM/>
           </div> */}
-          {/* <div id="growth">
+            {/* <div id="growth">
           <GrowthPM/>
           </div> */}
-          {/* <div>
+            {/* <div>
           <P
              fontSize="1.2rem"
              fontWeight="600"
@@ -169,7 +190,7 @@ const PriceHero = () => {
             
           <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
           </div> */}
-          {/* <div id="executive">
+            {/* <div id="executive">
             <Executive/>
             </div> */}
           </div>
@@ -181,141 +202,111 @@ const PriceHero = () => {
 
 export default PriceHero;
 
- 
-// const slideDown = keyframes`
-//   from {
-//     transform: translateY(-100%);
-//   }
-//   to {
-//     transform: translateY(0);
-//   }
-// `;
-/* 
-const slideUp = keyframes`
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
-`;
- */
-/* 
-const hoverCard1 = keyframes`
-  0% {
-    animation: ${slideUp} 0.5s forwards;
-  }
-  100% {
-    animation: ${slideDown} 0.5s forwards;
-  }
-`; */
-/* 
-const hoverCard2 = keyframes`
-  0% {
-    animation: ${slideUp} 0.5s forwards;
-  }
-  100% {
-    animation: ${slideDown} 0.5s forwards;
-  }
-`; */
-/* 
-const hoverCard3 = keyframes`
-  0% {
-    animation: ${slideUp} 0.5s forwards;
-  }
-  100% {
-    animation: ${slideDown} 0.5s forwards;
-  }
-`; */
-
 const StyledPriceHero = styled.div`
   position: relative;
   /* margin-bottom: 10%; */
   background-color: #fffdf7;
   @media (max-width: 768px) {
-   
   }
   .price-hero-container {
     padding: 5% 8% 5% 8%;
-    .left-container{
+    .left-container {
       width: 50%;
-      .benefits-card{
-        height:488px;
-        background-color: #E8F3FE;
+      .benefits-card {
+        height: 488px;
+        background-color: #e8f3fe;
         position: relative;
         overflow: hidden;
-        .card-head{
+        .card-head {
           padding: 15px 32px;
-         
-          P{
+
+          P {
             text-align: left;
             color: #000;
-            background-color: #E8F3FE;
+            background-color: #e8f3fe;
             font-size: 28px;
-            width: 50%
+            width: 50%;
           }
         }
-        .card-1{
+        .card-1 {
           padding: 40px;
-          background-color: #80A2FF;
+          background-color: #80a2ff;
           border-radius: 32px 32px 0px 0px;
           height: 144px;
-          P{
+          P {
             text-align: left;
-            color: #FFFDF7;
+            color: #fffdf7;
             font-size: 28px;
-          }  
-
-          .sub-1{
-            display:none;
           }
-        
-        }
-        .card-2{
-          background-color: #2A65FF;
-           padding: 40px;
-           border-radius: 32px 32px 0px 0px;
-           height: 142px;
-           z-index: 2;
-          transform: translateY(-24px);
-          P{
-            text-align: left;
-            color: #FFFDF7;
-            font-size: 28px;
-          }  
-          .sub-1{
-            display:none;
+          .sub-1 {
+            display: none;
           }
-         
-        }
-        .card-3{
-          background-color: #003AD4;
-           padding: 40px;
-         border-radius: 32px 32px 0px 0px;
-         height: 148px;
-          z-index: 2;
-          transform: translateY(-48px);
-          P{
-            text-align: left;
-            color: #FFFDF7;
-            font-size: 28px;
 
-          }  
-          .sub-1{
-            display:none;
-          }
-         
-        }
-    
-
+          &:hover {
+            height: 332px;
+      .sub-1 {
+        display: block;
       }
+      ${props => props.isCard1Hovered && `
+            + .card-3 {
+          transform: translateY(-80px) !important;  /* Adjust the translateY value */
+          height: 180px !important;  /* Adjust the height value */
+          position: relative;
+          z-index: 299;
+        }
+        + .card-2 {
+          transform: translateY(-60px);
+          height: 91px;
+          position: relative;
+          z-index: 28;
+        }
+       
+      `}
+    }
+   
+          }
+        .card-2 {
+          background-color: #2a65ff;
+          padding: 40px;
+          width: 100%;
+          border-radius: 32px 32px 0px 0px;
+          height: 142px;
+          z-index: 2;
+          transform: translateY(-24px);
+          P {
+            text-align: left;
+            color: #fffdf7;
+            font-size: 28px;
+          }
+          .sub-1 {
+            display: none;
+          }
+        }
+        .card-3 {
+          background-color: #003ad4;
+          width: 100%;
+          padding: 40px;
+          border-radius: 32px 32px 0px 0px;
+          height: 148px;
+          z-index: 5;
+          transform: translateY(-48px);
+          P {
+            text-align: left;
+            color: #fffdf7;
+            font-size: 28px;
+          }
+          .sub-1 {
+            display: none;
+          }
+        }
+      }
+      
     }
   }
-    
-  
-  .pricing-card{
+
+  .pricing-card {
     padding: 5% 10% 5% 10%;
-    @media(max-width: 768px){
+    @media (max-width: 768px) {
       padding: 5% 5% 5% 5%;
     }
   }
@@ -325,8 +316,7 @@ const StyledPriceHero = styled.div`
     flex-direction: column;
     max-width: 100%;
 
-    @media (max-width: 768px){
-     
+    @media (max-width: 768px) {
     }
 
     .desktop-text {
@@ -340,7 +330,6 @@ const StyledPriceHero = styled.div`
       display: none;
       @media (max-width: 768px) {
         display: block;
-      
       }
     }
     .p-container {
@@ -348,7 +337,7 @@ const StyledPriceHero = styled.div`
       align-self: center;
       @media (max-width: 768px) {
         width: 100%;
-      
+
         P {
           font-size: 1rem;
           line-height: 120%;
@@ -363,11 +352,11 @@ const StyledPriceHero = styled.div`
           width: 100%;
           display: none;
 
-          P{
-          font-size: 1rem;
-          line-height: 120%;
-          width: 100%;
-        }
+          P {
+            font-size: 1rem;
+            line-height: 120%;
+            width: 100%;
+          }
         }
       }
       .started-text-mobile {
@@ -392,19 +381,16 @@ const StyledPriceHero = styled.div`
     }
 
     .card-block {
-    
-
       @media (max-width: 768px) {
         row-gap: 5rem;
       }
       .desktop-view {
         display: flex;
-      flex-direction: column;
-      row-gap: 6.125rem;
+        flex-direction: column;
+        row-gap: 6.125rem;
 
-      .timerDesktop{
-        
-      }
+        .timerDesktop {
+        }
         @media (max-width: 768px) {
           display: none;
         }
