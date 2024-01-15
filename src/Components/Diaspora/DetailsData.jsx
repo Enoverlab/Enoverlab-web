@@ -1,7 +1,7 @@
 export const detailsData = [
     {
       text: "Duration",
-      value: "8 weeks",
+      value: "18 weeks",
     },
     {
       text: "Location",

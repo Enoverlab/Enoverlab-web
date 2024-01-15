@@ -37,7 +37,7 @@ const Details = () => {
                   paddingBottom={".875rem"}
                   textAlign="left"
                 >
-                  Course Details
+                 Program Details
                 </H1>
               </div>
             </div>
@@ -145,7 +145,7 @@ const Details = () => {
               <div className="button-flex">
                 <div
                   onClick={() => {
-                    window.open("https://bit.ly/enoverlabexclusive");
+                    window.open("https://forms.gle/CU5EXw9V5P5UL8dK7");
                   }}
                   className="button-container"
                 >
@@ -154,7 +154,7 @@ const Details = () => {
                 <div
                   className="button-container"
                   onClick={() => {
-                    window.open("https://forms.gle/2Ymz8FovVJEX6uDD9");
+                    window.open("https://forms.gle/CU5EXw9V5P5UL8dK7");
                   }}
                 >
                   <TransparentButton to="#" buttText="Sign Up" />

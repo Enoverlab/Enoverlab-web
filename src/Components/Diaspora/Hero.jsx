@@ -48,7 +48,7 @@ const Hero = () => {
                 </P>
                </div>
                <div  onClick={() => {
-          window.open("https://bit.ly/enoverlabexclusive")
+          window.open("https://forms.gle/CU5EXw9V5P5UL8dK7")
         }} className="button-container">
         <SecondaryButton to="#" buttText="Enrol Now"/>
         </div>

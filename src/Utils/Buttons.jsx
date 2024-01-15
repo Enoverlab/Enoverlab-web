@@ -177,7 +177,7 @@ export const StyledSecondaryButton = styled.div`
         font-size: 1rem;
         padding:  1rem 1.25rem;
         text-align: center;
-
+        display: flex;
         img{
             width: 2.875rem;
             height: 1rem;

@@ -22,12 +22,15 @@ import Upskill from './Pages/Upskill'
 import PMP from './Pages/PMP'
 import Diaspora from './Pages/Diaspora'
 import NewPricing from './Pages/NewPricing'
-
+import Policy from './Pages/Policy'
+import Physical from './Pages/Physical'
+import {ChakraProvider} from '@chakra-ui/react'
 function App() {
   useEffect(() => {
     AOS.init();
   });
   return (
+    <ChakraProvider>
     <ThemeProvider theme={theme}>
       <Routes>
         <Route index path="/" element={<Home />} />
@@ -47,9 +50,12 @@ function App() {
         <Route path="/projectmanagement" element={<PMP/>} />
         <Route path="/diaspora" element={<Diaspora/>} />
         <Route path="/newprograms" element={<NewPricing/>} />
+        <Route path="/policy" element={<Policy/>} />
+        <Route path="/physical" element={<Physical/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </ThemeProvider>
+    </ChakraProvider>
   );
 }
 
