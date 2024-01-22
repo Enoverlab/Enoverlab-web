@@ -7,13 +7,15 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 const Physical = () => {
   return (
+    <>
+    <Header bgColor="#F8FAFF"  bgColorMobile="#FFFDF7"/>
     <Box px="5%" backgroundColor="#F8FAFF">
-           <Header bgColor="#F8FAFF"  bgColorMobile="#FFFDF7"/>
         <Hero/>
         <PhysicalLocationLayout/>
         <SuccessStories bgColor="#F8FAFF"/>
-        <Footer/>
     </Box>
+    <Footer/>
+    </>
   )
 }
 
