@@ -57,7 +57,7 @@ const SuccessData = [
     }
 ]
 
-const SuccessStories = () => {
+const SuccessStories = ({bgColor}) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -73,7 +73,7 @@ const SuccessStories = () => {
     }
 
   return (
-    <StyledSuccessStories id="success">
+    <StyledSuccessStories id="success" bgColor={bgColor}>
         <div className="success-stories-container">
             <div className="text-head">
             <P textAlign="left" color={theme.color.dark} mobileFontSize="0.9rem" fontWeight={300}>
@@ -82,7 +82,7 @@ const SuccessStories = () => {
 
             <H4 fontSize="1.8rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%">
             Hear what people like you have to say 
-about their experience with Enoverlab
+            about their experience with Enoverlab
             </H4>
 
             {/* <P textAlign="left" color={theme.color.dark}>
@@ -118,7 +118,7 @@ about their experience with Enoverlab
 export default SuccessStories
 
 const StyledSuccessStories = styled.div`
-    background-color: ${theme.color.quaternary};
+    background-color: ${props => props.bgColor ? props.bgColor :  theme.color.quaternary};
   
     .success-stories-container{
         padding: 5% 5%;

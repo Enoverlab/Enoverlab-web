@@ -21,27 +21,26 @@ export const Hero = () => {
         lineHeight="102%"
         fontWeight="800"     
         >
-        Explore our 
+        Admissions 
         </Heading>
         <Heading
         color="#0046FF"
         fontSize={["2.8rem","4.5rem"]}
         lineHeight="102%"
         fontWeight="800"
-        
         >
-        Physical Spaces.
+      are Ongoing! 
         </Heading>
         <Text
         fontSize={["0.9rem","1.25rem"]}
         color="#555"
         mt={["1rem","1.875rem"]}
         >
-        On our quest to continue expanding and bringing design education to your dorrstep, we have establishde a couple of physical learning spaces.
+        Sign Up for our programs to take your life and career to the next level
         </Text>
       </Box>
       <Box
-      width={["100%","50%"]}
+      width={["100%","40%"]}
       >
         <Image src={HeroImg} alt="physical space hero" />
       </Box>

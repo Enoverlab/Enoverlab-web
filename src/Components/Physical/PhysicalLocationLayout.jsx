@@ -22,10 +22,10 @@ export const PhysicalLocationLayout = () => {
     <PhysicalCard bgImage={Enov2}  location={"On-Site"}
                 locationLink={"/programs"} />
     </Flex> 
-    <Flex mb={["2.5rem","6.125rem"]}>
+    {/* <Flex mb={["2.5rem","6.125rem"]}>
     <PhysicalCard bgImage={Enov3}  location={"Project Management"}
                 locationLink={"/programs"} />
-    </Flex>
+    </Flex> */}
     <Flex
     columnGap="6.125rem"
     mb="1.5rem"

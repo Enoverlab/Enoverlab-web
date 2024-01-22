@@ -14,14 +14,14 @@ export const PhysicalCard = ({bgImage, location, locationLink, heightValue, font
     borderRadius=".625rem"
     position="relative"
     backgroundColor= "black"
-    minHeight={heightValue ? heightValue : ["27.5rem","31.5625rem"]}
+    minHeight={heightValue ? heightValue : ["21.875rem","31.5625rem"]}
     // href={locationLink }
     width={"100%"}
     >    
      <Box  p={["0 0 2.125rem 1.625rem","0 0 2.5rem 2.9375rem"]} position="absolute" bottom={"0"} left="0" >
       <Heading
       color="#FFF"
-      fontSize={"2.8125rem"}
+      fontSize={["24px","2.8125rem"]}
       fontWeight="800"
       >
       {location}

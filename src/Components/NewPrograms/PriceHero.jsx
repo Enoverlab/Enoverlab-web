@@ -65,9 +65,7 @@ const PriceHero = () => {
               </div>
          
               <P className="sub-1">
-                Responsible for the tactical aspects of bringing a product to
-                life, overseeing project timelines, resource allocation, and
-                ensuring that the team delivers high-quality outcomes.
+              Responsible for the tactical aspects of bringing a product to life, overseeing project timelines, resource allocation, and ensuring that the team delivers high-quality outcomes.
               </P>
             </div>
             <div
@@ -81,10 +79,7 @@ const PriceHero = () => {
               </div>
             
               <P className="sub-1">
-                Product managers understand user needs, market trends, and
-                competition to make informed decisions about the product's
-                features, design, and strategy, ensuring it resonates and solves
-                intended problem.
+              Product managers  understand user needs, market trends, and competition to make informed decisions about the product's features, design, and strategy, ensuring it resonates and solves intended problem.
               </P>
             </div>
           </div>
