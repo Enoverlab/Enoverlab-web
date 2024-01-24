@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/bannerImage1.jpeg'
+// import character from '../../assets/banner/bannerImage1.jpeg'
 import {Link} from 'react-router-dom'
 const Banner = () => {
     return (
