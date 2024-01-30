@@ -8,16 +8,21 @@ import SuccessStories from '../Components/NewPrograms/SuccessStories'
 import Footer from '../Components/Footer'
 // import PricingBanner from '../Components/NewPrograms/PricingBanner'
 import Testimonials from '../Components/NewPrograms/Testimonials'
+import { PricingLayout } from '../Components/NewPrograms/PricingLayout'
 import Banner from '../Components/NewPrograms/Banner'
 import {ClassTools} from '../Components/NewPrograms/ClassTools'
+import {FaqSection} from '../Components/NewPrograms/FaqSection'
 const Pricing = () => {
   return (
     <StyledPricing>
-          <Header bgColor="#FFFDF7"  bgColorMobile="#FFFDF7"/>
+          <Header bgColor="#F4FCFE"  bgColorMobile="#FFFDF7"/>
           {/* <PricingBanner/> */}
+       
         <PriceHero/>
+        <FaqSection/>
+        <PricingLayout/>
        <ClassTools/>
-        <Testimonials/>
+        {/* <Testimonials/> */}
         <Banner/>
         <PricingAbout/>
         <Testimonies/>
@@ -29,4 +34,6 @@ const Pricing = () => {
 
 export default Pricing
 
-const StyledPricing = styled.div``
+const StyledPricing = styled.div`
+background-color: #F4FCFE;
+`

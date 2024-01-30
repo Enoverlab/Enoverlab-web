@@ -64,12 +64,13 @@ export const ClassTools = () => {
 }
 
 const ToolsStyle = styled.div`
+    background-color: #F4FCFE;
     .tools {
-        padding: 0 17%;
-        margin-top: 5rem;
+        padding: 5rem 17%;
+        /* margin-top: 5rem; */
         margin-bottom: 5rem;
         @media(max-width: 780px){
-            padding: 0 5%;
+            padding: 5rem 5%;
         }
         .tools-header {
             text-align: center;

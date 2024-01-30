@@ -33,9 +33,6 @@ export const BasicData = [
 
 export const AdvancedData = [
   {
-    listText: "Everything in the basic program"
-  },
-  {
     listText: "Introduction to Product Management",
   },
   {
@@ -61,8 +58,6 @@ export const AdvancedData = [
   },
   {
     listText: "Product Roadmap",
-    // listSubText:
-    //   "Understanding the basics of UX/UI designConnect the product vision,strategy, and development process in line with metrics",
   },
   {
     listText: "Competitive Analysis",
@@ -71,25 +66,10 @@ export const AdvancedData = [
     listText: "Product Metrics",
   },
   {
-    listText: "Prioritization frameworks",
-  },
-  {
-    listText: "Product Strategy",
-  },
-  {
-    listText: "Minimum Viable Product",
-  },
-  {
-    listText: "Product Launch; Go - to - market strategy",
-  },
-  {
-    listText: "Tracking & analyzing product data",
-  },
-  {
     listText: "Certificate of Completion",
   },
   {
-    listText: "8 weeks Internship placement",
+    listText: "And so much more...",
   },
 ];
 

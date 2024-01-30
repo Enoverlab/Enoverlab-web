@@ -20,8 +20,9 @@ const PricingCard = ({
   discountPrice,
   showSwitch,
   tabValue,
-  switchTab,
   topBgColor,
+  selectedLocation,
+  handleLocationChange
 }) => {
   return (
     <StyledPricingCard
@@ -37,7 +38,7 @@ const PricingCard = ({
         <div className=""></div>
         <div className="card-container-front">
           <div className="card-front-text">
-            <div class="ribbon">4 weeks</div>
+            <div class="ribbon">10 weeks</div>
             <H3
               fontSize="2rem"
               textAlign={"left"}
@@ -60,70 +61,7 @@ const PricingCard = ({
             </P>
             </div>
            
-            {showSwitch && (
-              <>
-                <div className="switch-box">
-                  <div
-                    className="text-switch"
-                    onClick={() => switchTab("tabActive")}
-                  >
-                    <H4
-                      mobileFontSize="0.8rem"
-                      fontSize="1rem"
-                      color={tabValue === "tabActive" ? "#FFF" : "#000"}
-                      fontWeight={"700"}
-                      textAlign={"left"}
-                    >
-                      LEKKI
-                    </H4>
-                  </div>
 
-                  <div
-                    className="text-switch-second"
-                    onClick={() => switchTab("tabInactive")}
-                  >
-                    <H4
-                      mobileFontSize="0.8rem"
-                      fontSize="1rem"
-                      color={tabValue === "tabInactive" ? "#FFF" : "#000"}
-                      fontWeight={"700"}
-                      textAlign={"left"}
-                    >
-                      IBADAN
-                    </H4>
-                  </div>
-                  <div
-                    className="text-switch-third"
-                    onClick={() => switchTab("bergActive")}
-                  >
-                    <H4
-                      mobileFontSize="0.8rem"
-                      fontSize="1rem"
-                      color={tabValue === "bergActive" ? "#FFF" : "#000"}
-                      fontWeight={"700"}
-                      textAlign={"left"}
-                    >
-                      BERGER
-                    </H4>
-                  </div>
-                </div>
-
-                <P
-                  fontSize="1.125rem"
-                  textAlign="left"
-                  color={theme.color.dark}
-                  mobileFontSize="1rem"
-                  paddingTop="1.5rem"
-                >
-                  <IoLocationSharp />{" "}
-                  {tabValue === "tabActive"
-                    ? "Lekki Gateview Plaza, Admiralty way, Lekki Phase 1"
-                    : tabValue === "tabInactive"
-                    ? "Cafe One, Palms Mall, Ring Road, Ibadan"
-                    : "75b Ogunnusi Rd, Isheri, Ojodu Berger, Lagos Berger"}
-                </P>
-              </>
-            )}
 
             <div className="fees">
               <div className="fee-tution">
@@ -164,6 +102,38 @@ const PricingCard = ({
                 </H3>
               </div>
             </div>
+
+
+        {showSwitch && (
+        <div className="select-container">
+          <select
+            value={selectedLocation}
+            onChange={handleLocationChange}
+            className="switch-box"
+          >
+            <option value="Lekki">LEKKI</option>
+            <option value="Ibadan">IBADAN</option>
+            <option value="Berger">BERGER</option>
+          </select>
+
+          <P
+            fontSize="1rem"
+            textAlign="left"
+            color={theme.color.dark}
+            mobileFontSize="1rem"
+            paddingTop="1.5rem"
+            
+          >
+            <IoLocationSharp />{' '}
+            {selectedLocation === 'Lekki'
+              ? 'Lekki Gateview Plaza, Admiralty way, Lekki Phase 1'
+              : selectedLocation === 'Ibadan'
+              ? 'Cafe One, Palms Mall, Ring Road, Ibadan'
+              : '75b Ogunnusi Rd, Isheri, Ojodu Berger, Lagos Berger'}
+          </P>
+        </div>
+      )}
+
           </div>
           <div className="children-container">{children}</div>
         </div>
@@ -225,9 +195,8 @@ const StyledPricingCard = styled.div`
         .ribbon {
           --r: 0.4em; /* control the ribbon shape (the radius) */
           --c: #BAEAFA;
-
           position: absolute;
-          top: 90px;
+          top: 30px;
           right: calc(-1 * var(--r));
           line-height: 1.8;
           padding: 0 0.5em calc(2 * var(--r));
@@ -308,6 +277,24 @@ const StyledPricingCard = styled.div`
             text-decoration: line-through;
           }
         }
+      }
+    }
+
+    .select-container{
+      P{
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+      }
+
+      select{
+        width: 50%;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        padding: 0.5rem;
+        outline: none;
+        cursor: pointer;
       }
     }
   }

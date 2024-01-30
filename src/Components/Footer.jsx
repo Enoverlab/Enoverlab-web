@@ -401,7 +401,7 @@ const Footer = () => {
               About Us
             </P>
             </Link>
-            <a target="_blank" href="https://www.actd.us/enoverlab/">
+            <a target="_blank" href="https://www.actd.us/enoverlab/" rel="noreferrer">
             <P
               color={theme.color.dark}
               textAlign="left"
