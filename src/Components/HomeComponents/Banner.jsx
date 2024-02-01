@@ -3,7 +3,9 @@ import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/bannerImage1.JPG'
+import character from '../../assets/banner/bannerImage1.jpeg'
+import character2 from '../../assets/banner/bannerImage2.jpeg'
+import character3 from '../../assets/banner/bannerImage3.jpeg'
 // import character from '../../assets/banjiNew.jpg'
 const Banner = () => {
     return (
@@ -12,25 +14,28 @@ const Banner = () => {
                 <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
                 <img src={character} className="characterMobile" alt="character" />
-                  <div className="details mobile">
+                <img src={character2} className="characterMobile" alt="character" />
+                <img src={character3} className="characterMobile" alt="character" />
+                  {/* <div className="details mobile">
                   <h4>Oyinkansolami</h4>
                     <p>Growth Product Manager, LearnWazobia</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>  How to scale your product beyond market fit</h2>
+                <h2>How they got their first Product Manager job</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
-              
-                <div className="details web">
+                <img src={character2} className="characterWeb" alt="character" />
+                <img src={character3} className="characterWeb" alt="character" />
+                {/* <div className="details web">
                     <h3>Guest Speaker:</h3>
                     <h4>Oyinkansolami</h4>
                     <p>Growth Product Manager, LearnWazobia</p>
-                </div>
+                </div> */}
             </div>
             {/* <Link to="/register">Register here</Link> */}
             <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
