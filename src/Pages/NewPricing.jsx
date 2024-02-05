@@ -12,6 +12,7 @@ import { PricingLayout } from '../Components/NewPrograms/PricingLayout'
 import Banner from '../Components/NewPrograms/Banner'
 import {ClassTools} from '../Components/NewPrograms/ClassTools'
 import {FaqSection} from '../Components/NewPrograms/FaqSection'
+import CertiMarquee from '../Components/HomeComponents/CertiMarquee'
 const Pricing = () => {
   return (
     <StyledPricing>
@@ -20,6 +21,7 @@ const Pricing = () => {
        
         <PriceHero/>
         <FaqSection/>
+        <CertiMarquee/>
         <PricingLayout/>
        <ClassTools/>
         {/* <Testimonials/> */}

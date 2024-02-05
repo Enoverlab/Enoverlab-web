@@ -58,13 +58,11 @@ const PriceHero = () => {
             >
               <div className="card-desc">
                 <BsDot className="icon"/>
-                <P>Leadership</P>
+                <P>Impact</P>
               </div>
             
               <P className="sub-1">
-                Product managers inspire and guide their teams by setting a
-                clear vision, aligning everyone towards common goals, and
-                fostering a collaborative and motivated environment.
+              As a Product Manager, you will be involved in building products that can make significant impact in the lives of people by solving their problems and making their lives better.
               </P>
             </div>
             <div
@@ -74,11 +72,11 @@ const PriceHero = () => {
             >
               <div className="card-desc">
                 <BsDot className="icon"/>
-                <P>Execution</P>
+                <P>Remote work</P>
               </div>
          
               <P className="sub-1">
-              Responsible for the tactical aspects of bringing a product to life, overseeing project timelines, resource allocation, and ensuring that the team delivers high-quality outcomes.
+              Being a Product Manager makes it easy for you to get remote work, both locally and internationally. Most companies hiring product managers give product managers opportunity to work remotely.
               </P>
             </div>
             <div
@@ -88,11 +86,11 @@ const PriceHero = () => {
             >
                <div className="card-desc">
                 <BsDot className="icon"/>
-                <P>Product sense</P>
+                <P>Make plenty money</P>
               </div>
             
               <P className="sub-1">
-              Product managers  understand user needs, market trends, and competition to make informed decisions about the product's features, design, and strategy, ensuring it resonates and solves intended problem.
+              Product Managers are highly paid tech talents. A skilled product manager will earn an average of #300,000 - #500,000 or $3,000 - 5,000 monthly. More experienced product managers will earn even much more.
               </P>
             </div>
           </div>
