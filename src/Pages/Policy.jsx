@@ -5,7 +5,7 @@ import Header from '../Components/Header'
 const Policy = () => {
   return (
     <div>
-          <Header bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
+          <Header bgColor="rgba(0, 0, 255, 0.04)" bgColorMobile="#F5FCFF" headerPosition={'relative'} />
         <TermsLayout/>
         <Footer/>
     </div>

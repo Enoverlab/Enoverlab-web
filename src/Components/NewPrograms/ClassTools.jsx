@@ -25,10 +25,10 @@ export const ClassTools = () => {
                 <img src={Figma} alt="Figma" />
                 <p>Figma</p>
             </div>
-            <div className="tools-body-item">
+            {/* <div className="tools-body-item">
                 <img src={gmailIcon} alt="Gmail" />
                 <p>Gmail</p>
-            </div>
+            </div> */}
             <div className="tools-body-item">
                 <img src={googleAnalytics} alt="Google Analytics" />
                 <p>Google Analytics</p>

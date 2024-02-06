@@ -1,17 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 import { H1, P } from "../../Utils/Typograpyhy";
-
+import HeroVidCover from "../../assets/newProgramsHero.png";
 import BookCard from "../Resources/BookCard";
 import Timer from "./Timer";
 import abc from "../../assets/resources/abc.jpg";
 import CertiMarquee from "../HomeComponents/CertiMarquee";
+import { FaPlay } from "react-icons/fa";
 import { BsDot } from "react-icons/bs";
 const PriceHero = () => {
   const [isCard1Hovered, setIsCard1Hovered] = useState(false);
   const [isCard2Hovered, setIsCard2Hovered] = useState(false);
   const [isCard3Hovered, setIsCard3Hovered] = useState(false);
-  
+  const [isClicked, setIsClicked] = useState(false);
+  const iframeRef = useRef(null);
+  const mobileIframe = useRef(null);
+  const handleClicked = () => {
+    setIsClicked(!isClicked);
+    if (isClicked === true){
+      const iframeWindow = iframeRef.current.contentWindow;
+      iframeWindow.document.getElementById('video').play();
+      const mobileIframeWindow = mobileIframe.current.contentWindow;
+      mobileIframeWindow.document.getElementById('video').play();
+    }else{
+      const iframeWindow = iframeRef.current.contentWindow;
+      iframeWindow.document.getElementById('video').pause();
+    }
+  }
  return (
     <StyledPriceHero
       isCard1Hovered={isCard1Hovered}
@@ -38,13 +53,34 @@ const PriceHero = () => {
             a skilled PM regardless of your background.
           </P>
           <div className="video-box">
-          <iframe width="100%" height="696px" src="https://www.youtube.com/embed/FgDC-w0zXcA?si=h3qjeJu-sujPjwDS" 
+          {
+            isClicked ? (
+              <>
+                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/FgDC-w0zXcA?si=h3qjeJu-sujPjwDS" 
         title="YouTube video player" 
         frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullscreen
-        play="true"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullscreen
+        autoPlay="true"
+        id="video"
+        ref={mobileIframe}
         ></iframe>
+              </>
+            ): (
+              <>
+             <div className="video-cover" onClick={handleClicked}>
+              <img src={HeroVidCover} alt="video-cover" />
+              <div className="play-button">
+                <div className="play-triangle">
+                  <FaPlay className="play-icon" />
+                </div>
+              </div>
+            </div> 
+              </>
+            )
+          }
           </div>
+     
           <div className="benefits-card-container">
           <div className="benefits-card">
             <div className="card-head">
@@ -99,12 +135,32 @@ const PriceHero = () => {
         </div>
         <div className="right-container">
           <div className="video-box">
-          <iframe width="100%" height="696px" src="https://www.youtube.com/embed/FgDC-w0zXcA?si=h3qjeJu-sujPjwDS" 
+          {
+            isClicked ? (
+              <>
+                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/FgDC-w0zXcA?si=h3qjeJu-sujPjwDS" 
         title="YouTube video player" 
         frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullscreen
-        play="true"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullscreen
+        autoPlay="true"
+        id="video"
+        ref={iframeRef}
         ></iframe>
+              </>
+            ): (
+              <>
+             <div className="video-cover" onClick={handleClicked}>
+              <img src={HeroVidCover} alt="video-cover" />
+              <div className="play-button">
+                <div className="play-triangle">
+                  <FaPlay className="play-icon" />
+                </div>
+              </div>
+            </div> 
+              </>
+            )
+          }
           </div>
      
         </div>
@@ -158,6 +214,55 @@ const StyledPriceHero = styled.div`
         }
       }
 
+      .video-cover {
+        position: relative;
+        width: 100%;
+        height: 696px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 26px -25px 0px -2px rgba(0,70,255,0.18);
+        cursor: pointer;
+        @media (max-width: 768px) {
+          height: 500px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .play-button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .play-triangle {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .play-icon {
+              font-size: 40px;
+              color: #0046ff;
+              
+            }
+          }
+          @media (max-width: 768px) {
+            .play-triangle {
+              width: 60px;
+              height: 60px;
+              .play-icon {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
 
       .benefits-card-container {
         @media (max-width: 768px) {
@@ -207,7 +312,7 @@ const StyledPriceHero = styled.div`
         }
         P{
           @media (max-width: 768px) {
-            font-size: 16px;
+            font-size: 13px;
           }
         }
         
@@ -216,7 +321,7 @@ const StyledPriceHero = styled.div`
         font-size: 20px;
         line-height: 36px;
         @media (max-width: 768px) {
-          font-size: 16px;
+          font-size: 13px;
         }
       }
     }
@@ -274,7 +379,7 @@ const StyledPriceHero = styled.div`
           .sub-1 {
             display: none;
             @media (max-width: 768px) {
-          font-size: 16px;
+          font-size: 13px;
         }
           }
           &:hover {
@@ -337,6 +442,45 @@ const StyledPriceHero = styled.div`
           }
         }
 
+      }
+
+      .video-cover {
+        position: relative;
+        width: 100%;
+        height: 696px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @media (max-width: 768px) {
+          height: 500px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .play-button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .play-triangle {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .play-icon {
+              font-size: 40px;
+              color: #0046ff;
+            }
+          }
+        }
       }
 
     @media (max-width: 768px) {

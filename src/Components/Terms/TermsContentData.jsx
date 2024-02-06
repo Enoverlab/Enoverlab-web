@@ -18,7 +18,7 @@ export const TermsContentObj = [
         id: 2,
         slug:"student-eligibility",
         termsTitle: "Student Eligibility",
-        termsContent1: "EnoverLab provides UIUX Design education for anyone between the age of 17-50 years who have a financial income of any sort and can make payment for education.",
+        termsContent1: "EnoverLab provides Product Management education for anyone between the age of 17-50 years who have a financial income of any sort and can make payment for education.",
     },
     {
         id: 3,

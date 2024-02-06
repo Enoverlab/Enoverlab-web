@@ -14,7 +14,7 @@ import { Link, NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { HiOutlineChevronRight } from "react-icons/hi";
 
-const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
+const Header = ({ bgColor, bgColorMobile, navColor, blueProps, headerPosition }) => {
   const [active, setActive] = React.useState(false);
   const [weightHome, setWeightHome] = React.useState("bold");
   const [weightPricing, setWeightPricing] = React.useState("normal");
@@ -22,7 +22,7 @@ const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
   const [weightResource, setWeightResource] = React.useState("normal");
 
   return (
-    <StyledHeader bgColor={bgColor} bgColorMobile={bgColorMobile} navColor={navColor}>
+    <StyledHeader bgColor={bgColor} bgColorMobile={bgColorMobile} navColor={navColor} headerPosition={headerPosition}>
       <div className="header-container">
         <div className="header-left">
           <div className="logo-container">
@@ -172,9 +172,9 @@ const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
 export default Header;
 
 const StyledHeader = styled.div`
-  position: sticky;
+  position: ${(props) => (props ? props.headerPosition : 'sticky')};
   width: 100%;
-  z-index: 5;
+  z-index: 100000;
   top: 0;
   background-color: ${(props) => (props ? props.bgColor : theme.color.light)};
   @media (max-width: 768px) {
