@@ -112,8 +112,8 @@ export const OnsiteCard = () => {
         topBgColor="#BAEAFA29"
         textColor={theme.color.dark}
         cardText={"To understand the fundamentals of product management and kickstart your product manager career"}
-        tuitionFee={selectedLocation === "Lekki" ? "₦250,000" : "₦300,000"}
-        duration={"$245.00"}
+        tuitionFee={selectedLocation === "Ibadan" ? "₦250,000" : "₦300,000"}
+        duration={selectedLocation === "Ibadan" ? "$250" : "$300"}
         mobileHeight={"100%"}
         height={"100%"}
         showSwitch

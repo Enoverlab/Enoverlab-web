@@ -73,6 +73,9 @@ const ToolsStyle = styled.div`
             padding: 5rem 5%;
         }
         .tools-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
             margin-bottom: 2rem;
             h1 {
@@ -82,12 +85,14 @@ const ToolsStyle = styled.div`
             p{
                 font-size: 1.125rem;
                 font-weight: 400;
-                line-height: 18px;
+                line-height: 24px;
                 color: #000;
                 margin-top: 12px;
+                width: 80%;
                 @media(max-width: 780px){
                     font-size: 0.9rem;
                     line-height: 1.5rem;
+                    width: 100%;
         }
             }
         }
