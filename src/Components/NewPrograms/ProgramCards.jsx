@@ -33,7 +33,7 @@ export const AdvancedCard = () => {
         cardText={"To learn the required knowledge, skills and tools to fully take up the role of a product manager"
         }
         tuitionFee={"₦200,000"}
-        duration={"$49.00"}
+        duration={"$200.00"}
         mobileHeight={"100%"}
         height={"100%"}
 
