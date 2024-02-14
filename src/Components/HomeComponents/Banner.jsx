@@ -21,7 +21,7 @@ const Banner = () => {
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>Communication as a PM: Storytelling and Shakeholder communication</h2>
+                <h2>Communication as a PM: Storytelling and Shakeholder communication.</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
