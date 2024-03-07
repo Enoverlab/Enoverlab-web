@@ -1,25 +1,14 @@
 import React, { useState } from "react";
-import Figma from "../../assets/figma.png";
-import Jira from "../../assets/Jira.png";
-import productPlan from "../../assets/productPlan.png";
-import trello from "../../assets/trello.png";
 import {
-  PrimaryButton,
   MainButton,
   TransparentButton,
 } from "../../Utils/Buttons";
 import { theme } from "../../Utils/Theme";
-import { H4, P } from "../../Utils/Typograpyhy";
 import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
 import {
-  BasicData,
   AdvancedData,
   Onsite,
-  ExecutiveData,
-  TPMData,
-  GrowthData,
-  PMPData
 } from "./PricingData";
 import styled from "styled-components";
 
