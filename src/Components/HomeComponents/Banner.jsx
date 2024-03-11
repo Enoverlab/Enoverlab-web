@@ -14,14 +14,14 @@ const Banner = () => {
                 <img src={character} className="characterMobile" alt="character" />
               
                   <div className="details mobile">
-                  <h4>Praise Kehinde-Ige Esq </h4>
-                    <p>DalensAI</p>
+                  <h4>Dolapo Oshikoya</h4>
+                    <p>Product Manager, Coachli</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>Communication as a PM: Storytelling and Shakeholder communication.</h2>
+                <h2>Why are product managers important in any organization? </h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -29,8 +29,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Praise Kehinde-Ige Esq </h4>
-                    <p>DalensAI</p>
+                    <h4>Dolapo Oshikoya</h4>
+                    <p>Product Manager, Coachli</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
