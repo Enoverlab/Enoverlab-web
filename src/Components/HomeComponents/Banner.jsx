@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/bannerImage2.jpg'
+import character from '../../assets/banner/bannerImage2.jpeg'
 // import character from '../../assets/banjiNew.jpg'
 const Banner = () => {
     return (
@@ -14,14 +14,14 @@ const Banner = () => {
                 <img src={character} className="characterMobile" alt="character" />
               
                   <div className="details mobile">
-                  <h4>Dolapo Oshikoya</h4>
-                    <p>Product Manager, Coachli</p>
+                     <h4>Emmanuel Oke</h4>
+                    <p>Product Manager (Lead), QuickCheck </p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2>Why are product managers important in any organization? </h2>
+                <h2> The future of product management in Nigeria. </h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -29,8 +29,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Dolapo Oshikoya</h4>
-                    <p>Product Manager, Coachli</p>
+                    <h4>Emmanuel Oke</h4>
+                    <p>Product Manager (Lead), QuickCheck </p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
