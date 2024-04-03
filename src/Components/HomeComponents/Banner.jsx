@@ -11,17 +11,17 @@ const Banner = () => {
             <div className="topImage">
                 <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
-                <img src={character} className="characterMobile" alt="character" />
+{/*                 <img src={character} className="characterMobile" alt="character" /> */}
               
                   <div className="details mobile">
-                     <h4>Emmanuel Oke</h4>
-                    <p>Product Manager (Lead), QuickCheck </p>
+                     <h4>Wale Owoade</h4>
+                    <p>Head of Product, Matta </p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2> The future of product management in Nigeria. </h2>
+                <h2> How to lead a development team as a new product manager. </h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -29,8 +29,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Emmanuel Oke</h4>
-                    <p>Product Manager (Lead), QuickCheck </p>
+                    <h4>Wale Owoade</h4>
+                    <p>Head of Product, Matta </p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
