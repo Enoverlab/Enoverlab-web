@@ -24,12 +24,6 @@ const Banner = () => {
                 <h5>Session Topic:</h5>
                 <h2> How to lead a development team as a new product manager. </h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
-                <div className='timingMob'>
-                <h1>
-                Date: <span>6th April, 2024</span>
-                </h1>
-                <h1>TIme: <span>7pm</span></h1>
-            </div>
             </div>
             <div className="cont">
                 <img src={character} className="characterWeb" alt="character" />
@@ -43,12 +37,6 @@ const Banner = () => {
             {/* <Link to="/register">Register here</Link> */}
             <a href="https://forms.gle/8jVs1tALg73xYxNr6" target="_blank" rel="noopener noreferrer">Register here</a>
             </section>
-            <div className='timing'>
-                <h1>
-                Date: <span>6th April, 2024</span>
-                </h1>
-                <h1>TIme: <span>7pm</span></h1>
-            </div>
         </StyledBanner>
     )
 }
@@ -70,39 +58,10 @@ const StyledBanner = styled.section`
     justify-content: space-between;
     position: relative;
     }
-    .timing{
-        display: flex;
-        gap: 10px;
-        padding: 3px 0;
-        h1{
-            color: #52DEE5;
-        }
-        span{
-            color: white;
-        }
-        margin-left:14vw;
-    }
-    .timingMob{
-        display: none;
-        padding-bottom: 10px;
-        gap: 10px;
-        h1{
-            color: #52DEE5;
-        }
-        span{
-            color: white;
-        }
-    }
     @media (max-width: 768px) {
         section{
             flex-direction: column;
             align-items: flex-start;
-        }
-        .timing{
-            display: none;
-        }
-        .timingMob{
-            display: flex;
         }
         max-height: 100%;
         padding: 1.6875rem 5%;
