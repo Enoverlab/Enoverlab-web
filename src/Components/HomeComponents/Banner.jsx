@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/bannerImage2.jpeg'
+import character from '../../assets/banner/speaker.jpg'
 // import character from '../../assets/banjiNew.jpg'
 const Banner = () => {
     return (
@@ -11,7 +11,7 @@ const Banner = () => {
             <div className="topImage">
                 <img className="logo" src={ama} alt="ama section" />
                 <div className='cont'>
-{/*                 <img src={character} className="characterMobile" alt="character" /> */}
+                <img src={character} className="characterMobile" alt="character" />
               
                   <div className="details mobile">
                      <h4>Wale Owoade</h4>
