@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-// images
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/speaker.jpg'
-// import character from '../../assets/banjiNew.jpg'
+import character from '../../assets/banner/speaker.png'
 const Banner = () => {
     return (
         <StyledBanner>
@@ -15,14 +13,14 @@ const Banner = () => {
                 <img src={character} className="characterMobile" alt="character" />
               
                   <div className="details mobile">
-                     <h4>Wale Owoade</h4>
-                    <p>Head of Product, Matta </p>
+                     <h4>Mark Yusuf</h4>
+                    <p>Product Owner at FCMB</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2> How to lead a development team as a new product manager. </h2>
+                <h2> The basics of technical products management and the value of specialised training for experienced product managers </h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">
@@ -30,8 +28,8 @@ const Banner = () => {
               
                 <div className="details web">
                     <h3>Guest Speaker:</h3>
-                    <h4>Wale Owoade</h4>
-                    <p>Head of Product, Matta </p>
+                    <h4>Mark Yusuf</h4>
+                    <p>Product Owner at FCMB</p>
                 </div>
             </div>
             {/* <Link to="/register">Register here</Link> */}
