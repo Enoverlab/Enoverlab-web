@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import banner from '../../assets/bannerBackground.jpg';
 import ama from '../../assets/ama.svg';
-import character from '../../assets/banner/speaker.png'
+import character from '../../assets/banner/MarkYusuf.png'
 const Banner = () => {
     return (
         <StyledBanner>
@@ -150,8 +150,9 @@ const StyledBanner = styled.section`
             margin-bottom: 0.5rem;
         }
         h2 {
-            font-size: 1.331875rem;
+            font-size: 1.131875rem;
             font-weight: 700;
+            text-align: justify;
             color: #fff;
             line-height: 1.385rem;
             @media (max-width: 768px) {
