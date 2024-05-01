@@ -6,7 +6,7 @@ import  alumniLine from "../../assets/icon/alumiLine.png"
 
 const Alumni = () => {
   return (
-    <StyledAlumni>
+    <StyledAlumni id="alumni">
       <H2 fs="5.6974vw" mdfs="2.38vw" color="var(--Title-Text)">
         Meet Some of Our Alumni
         </H2>
@@ -14,7 +14,7 @@ const Alumni = () => {
         Some of the amazing product managers who have trained with us all over
         the world
       </H4>
-      <section className="imageGrid" id="alumni">
+      <section className="imageGrid" >
         {alumni.map((x) => (
           <img src={x} alt="x" />
         ))}
