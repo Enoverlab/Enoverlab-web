@@ -14,7 +14,7 @@ const Alumni = () => {
         Some of the amazing product managers who have trained with us all over
         the world
       </H4>
-      <section className="imageGrid">
+      <section className="imageGrid" id="alumni">
         {alumni.map((x) => (
           <img src={x} alt="x" />
         ))}

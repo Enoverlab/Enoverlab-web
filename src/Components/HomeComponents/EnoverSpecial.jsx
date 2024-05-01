@@ -48,7 +48,7 @@ const EnoverSpecial = () => {
             <p>Students trained</p>
             </header>
             <footer>
-              <TertiaryButton Text="See Alumni" arrowDown={true} handleClick={ScrollToElement}/>
+              <TertiaryButton Text="See Alumni" to="#alumni" arrowDown={true} handleClick={ScrollToElement}/>
             </footer>
         </div>
         <div className="card3">
