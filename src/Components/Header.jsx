@@ -71,7 +71,7 @@ const Header = ({bg})=> {
     </TopNavbabies>
 
     <Toggleview display>
-      <PrimaryButton Text='Contact Us'/>
+      <PrimaryButton Text='Contact Us' to="tel:09063124595"/>
     </Toggleview>
 
     <MenuToggle tog={toggle} open={isOpen}/>
@@ -115,7 +115,7 @@ const Header = ({bg})=> {
         </MenuItems>)}
       </SideBarBabies>
       <motion.span {...framerText(3)}>
-      <PrimaryButton Text='Contact Us'/>
+      <PrimaryButton Text='Contact Us' to="tel:09063124595"/>
       </motion.span>
     </FramerSidebarPanel>
 
