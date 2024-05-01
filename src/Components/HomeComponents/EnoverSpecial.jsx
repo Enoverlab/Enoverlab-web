@@ -75,7 +75,7 @@ export default EnoverSpecial;
 
 const Styledspecial = styled.div`
   background: #000073;
-  padding: 7.2rem 2.4rem;
+  padding: 7.2rem clamp(1.5rem,5vw,2.4rem);
   display: grid;
   .topSect{
     color: white;

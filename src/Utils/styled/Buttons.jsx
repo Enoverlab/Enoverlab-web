@@ -8,11 +8,11 @@ const color = theme.color;
 
 export const breathing = keyframes`
   0%,100%{
-    gap: 5px;
+    transform: scale(1)
   }
   50%{
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 255, 0.50);
-    gap: 12px;
+    transform: scale(1.1);
   }
 `
 

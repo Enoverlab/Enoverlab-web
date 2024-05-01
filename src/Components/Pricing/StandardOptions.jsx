@@ -15,7 +15,7 @@ const StandardOptions = () => {
             <section>
                 <div className='card'>
                     <img src={fastTracking} alt="Fast Tracking" />
-                    <H3>Fast-Tracking</H3>
+                    <H3>Fast-Track</H3>
                 </div>
                 <H4>
                 This is for individuals who want to complete the standard program in 5 - 10 weeks instead of 18 - 20 weeks.

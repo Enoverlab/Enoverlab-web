@@ -6,7 +6,7 @@ export const StyledHeroHeader = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 32px 32px 32px 32px;
+  padding: 32px clamp(2.5rem,7vw,3rem) ;
   h1 {
     font-size: clamp(2.5rem,7.47vw,3.2rem);
     font-style: normal;
