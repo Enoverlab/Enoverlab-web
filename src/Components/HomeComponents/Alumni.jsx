@@ -6,8 +6,8 @@ import  alumniLine from "../../assets/icon/alumiLine.png"
 
 const Alumni = () => {
   return (
-    <StyledAlumni id="alumni">
-      <H2 fs="5.6974vw" mdfs="2.38vw" color="var(--Title-Text)">
+    <StyledAlumni >
+      <H2 fs="5.6974vw" mdfs="2.38vw" id="alumni" color="var(--Title-Text)">
         Meet Some of Our Alumni
         </H2>
       <H4 fs="3.27vw" color="var(--Body-Text)" tA="left" mdtA="center">
