@@ -1,18 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import startedBg from '../../assets/startedBg.png'
-import { H1 } from '../../Utils/Typograpyhy'
+import { H1 } from '../../Utils/styled/Typograpyhy'
 import {theme} from '../../Utils/Theme'
-import { SecondaryButton } from '../../Utils/Buttons'
-import { StyledSecondaryButton } from '../../Utils/Buttons'
+import { BlackButton} from '../../Utils/styled/Buttons'
 const Started = () => {
   return (
     <StyledStarted>
         <div className="started-container">
-           <H1 mobileFontSize="1.05rem" color= {theme.color.light} fontSize="3.25rem" fontWeight={500} >
-           Want to become an <br/>impactful Product Manager?</H1>
+           <H1 mdfs="3.17vw" mdlh="6.8rem" lh="4.8rem" color= {theme.color.light} fs="7.47vw" fontWeight={600} >
+           Launch  your Product Managment career today</H1>
             <div className="button-container">
-                <SecondaryButton to="/programs" buttText="Get Started"  />
+                <BlackButton to="/programs" Text="Get Started"  />
             </div>
         </div>
     </StyledStarted>
@@ -22,44 +21,28 @@ const Started = () => {
 export default Started
 
 const StyledStarted = styled.div`
-    padding: 5% 12% 5% 12%;
     position: relative;
-    /* height: 150vh; */
-    /* min-height: 70vh; */
-    @media(max-width: 768px){
-        min-height: 35vh;
-    }
+    padding: 5rem 2.3rem;
     .started-container{
         background-image: url(${startedBg});
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 5% 5% 5% 5%;
         border-radius:1rem;
-        /* width: 100%; */
-        H1{
-            line-height: 4rem;
-            @media(max-width: 768px){
-                line-height: 2rem;
-            }
-        }
+        padding: 7.6rem 3.5rem;
+        
+        text-align: center;
         .button-container{
             display: flex;
             justify-content: center;
             margin-top: 4.9375rem;
-
-            ${StyledSecondaryButton}{
-                @media(max-width: 768px){
-                    a{
-                        span{
-                            font-size: 0.875rem;
-                        }
-                    }
-                }
-            }
-            @media(max-width: 768px){
-                margin-top: 2rem;
-            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 7rem 10.25vw;
+        .started-container{
+            width: 79.36vw;
+        padding: 9.6rem 17.92vw;
         }
     }
 `

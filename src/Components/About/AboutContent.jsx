@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import aboutImage from "../../assets/aboutImage.png";
-import { H1, H2, P } from "../../Utils/Typograpyhy";
+import { H1, H2, P } from "../../Utils/styled/Typograpyhy";
 const AboutContent = () => {
   return (
     <StyledAboutContent>

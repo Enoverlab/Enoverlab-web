@@ -1,7 +1,7 @@
 import React from 'react'
-import {Box, Text, Heading, OrderedList, ListItem} from '@chakra-ui/react'
+import {Box, Text} from '@chakra-ui/react'
 import { TermsNavLink } from './TermsContentData'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 export const TermsNav = () => {
     const [active, setActive] = React.useState('payment-policy')
   return (

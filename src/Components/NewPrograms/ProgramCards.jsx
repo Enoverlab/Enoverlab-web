@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   MainButton,
   TransparentButton,
-} from "../../Utils/Buttons";
+} from "../../Utils/styled/Buttons";
 import { theme } from "../../Utils/Theme";
 import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
@@ -88,7 +88,7 @@ export const AdvancedCard = () => {
 };
 
 export const OnsiteCard = () => {
-  const [tab, setTab] = useState("tabActive");
+  const [tab] = useState("tabActive");
   const [selectedLocation, setSelectedLocation] = useState('Lekki');
   const handleLocationChange = (e) => {
     setSelectedLocation(e.target.value);

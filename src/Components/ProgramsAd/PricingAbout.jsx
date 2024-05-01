@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PricingImage from '../../assets/pricingImage.png'
 import { theme } from '../../Utils/Theme'
-import { H2, P } from '../../Utils/Typograpyhy'
+import { H2, P } from '../../Utils/styled/Typograpyhy'
 import PricingAboutList from './PricingAboutList'
 import PricingAboutCorner from '../../assets/pricingAboutCorner.png'
 

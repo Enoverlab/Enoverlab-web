@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled, {keyframes} from "styled-components";
 import { theme } from "../../Utils/Theme";
-import { H3, P, H4 } from "../../Utils/Typograpyhy";
+import { H3, H4 } from "../../Utils/styled/Typograpyhy";
 
 const Timer = () => {
     const [expiryTime, setExpiryTime] = useState("3 mar 2023 23:55:00");

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { H1, P } from "../../Utils/Typograpyhy";
+import { H1, P } from "../../Utils/styled/Typograpyhy";
 import HomeCard from "../HomeComponents/HomeCard";
-import { PrimaryButton, SecondaryButton } from "../../Utils/Buttons";
+import { PrimaryButton, SecondaryButton } from "../../Utils/styled/Buttons";
 import { theme } from "../../Utils/Theme";
 import PriceTag from "./PriceTag";
 const PayHero = () => {

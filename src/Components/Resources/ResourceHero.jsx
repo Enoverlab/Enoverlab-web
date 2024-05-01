@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { H3, P } from "../../Utils/Typograpyhy";
-import WhiteArrow from "../../assets/ArrowWhite.png"
+import { H3, P } from "../../Utils/styled/Typograpyhy";
+// import WhiteArrow from "../../assets/ArrowWhite.png"
 import Enover from "../../assets/resources/Enover.png";
 import FigmaLogo from "../../assets/resources/Figma.png";
 const ResourceHero = () => {

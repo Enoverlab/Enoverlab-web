@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../Utils/Theme'
-import {P, H4} from '../../Utils/Typograpyhy'
+import {P, H4} from '../../Utils/styled/Typograpyhy'
 import SuccessCard from './SuccessCard'
 import avatar1 from '../../assets/successImage1.png'
 import avatar2 from '../../assets/successImage2.png'

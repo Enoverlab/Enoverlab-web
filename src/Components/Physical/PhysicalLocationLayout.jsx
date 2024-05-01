@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react'
-import {Box, Flex, Heading, Center, Button} from '@chakra-ui/react'
+import {Box, Flex} from '@chakra-ui/react'
 import {PhysicalCard} from './PhysicalCard'
 import Enov1 from "../../assets/physical/enovPhysical1.png"
 import Enov2 from "../../assets/physical/enovPhysical2.png"
-import Enov3 from "../../assets/physical/enovPhysical3.png"
 import Enov4 from "../../assets/physical/enovPhysical4.png"
 import Enov5 from "../../assets/physical/enovPhysical5.png"
 export const PhysicalLocationLayout = () => {

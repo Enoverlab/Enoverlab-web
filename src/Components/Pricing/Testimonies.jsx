@@ -1,14 +1,9 @@
 import React from 'react'
-import {H4, P} from '../../Utils/Typograpyhy'
-import {theme} from '../../Utils/Theme'
+import {H4, P} from '../../Utils/styled/Typograpyhy'
 import Slider from 'react-slick'
-// import testImage from '../../assets/PricingTestimonial1.png'
-// import testImage2 from '../../assets/PricingTestimonial2.png'
-// import testImage3 from '../../assets/PricingTestimonial3.png'
 import styled from 'styled-components'
 import PricingTestimonialCard from './PricingTestimonialCard'
-// import arrowLeft from '../../assets/slideArrowLeft.png'
-// import arrowRight from '../../assets/slideArrowBlue.png'
+
 
 const vidSrcData = [
     {
@@ -49,26 +44,19 @@ const Testimonies = () => {
   return (
             <StyledTestimonies>
                 <div className="testimonies-container">
-                    <div className="testimonies-header">
-                        <P textAlign="left" color={theme.color.dark} mobileFontSize="0.9rem" fontWeight={300}>
-                        Our Training Result</P>
-                        <H4 fontSize="1.8rem" mobileFontSize="1.1rem" textAlign="left" fontWeight={500} color={theme.color.dark} lineHeigh="120%"
-                        >
-                     Listen to some of our trained Product Managers
-showcase their skills
-                        </H4>
-                        {/* <P textAlign="left" color={theme.color.dark}
-                        mobileFontSize="0.8rem"
-                        lineHeight="1.575rem"
-                        >
-                        We are glad to equip individuals with the digital skills to  accelerate their career as certified product managers that are competent . Learn how product managers enjoyed learning with enoverlab.
-                        </P> */}
+                    <div className="header">
+                    <H4 fs="5.60vw" mdfs="2.38vw" fw={700} color="#181818" lh="normal">
+                    Students' Projects
+                    </H4>
+                        <P color="#363636" fs="3.27vw" mdfs="1.322vw" fw={300}>
+                        Listen to some of our trained product managers showcase their skills, you can also achieve such feat.
+                        </P>
                     </div>
                     <div className="testimonies-flex">
                      {
                             vidSrcData.map((vid, index)  => {
                                 return(
-                                    <PricingTestimonialCard vidSrc={vid.vidSrc} flag={vid.flag} country={vid.country} name={vid.name}/>
+                                    <PricingTestimonialCard key={vid.vidSrc} vidSrc={vid.vidSrc} flag={vid.flag} country={vid.country} name={vid.name}/>
                                 )
                             })
                      }
@@ -78,16 +66,12 @@ showcase their skills
                         {
                             vidSrcData.map((vid, index) => {
                                 return(
-                                    <PricingTestimonialCard vidSrc={vid.vidSrc} flag={vid.flag} country={vid.country} name={vid.name} />
+                                    <PricingTestimonialCard key={vid.vidSrc} vidSrc={vid.vidSrc} flag={vid.flag} country={vid.country} name={vid.name} />
                                 )
                             })
                      }
                  
                         </Slider>
-                        {/* <div className="slide-arrow-container">
-                            <img src={arrowLeft} alt="arrow" className="arrow"  onClick={()=> slider?.current?.slickPrev()} />
-                            <img src={arrowRight} alt="arrow" className="arrow"  onClick={()=> slider?.current?.slickNext()} />
-                        </div> */}
                     </div>
                 </div>
             </StyledTestimonies>    
@@ -100,23 +84,33 @@ export const StyledTestimonies = styled.div`
    
     .testimonies-container{
         position: relative;
-        padding: 5% 5%; 
-        background-color: ${theme.color.tertiary};
-        @media (max-width: 768px){
-            padding: 10% 5% 15% 5%;
+        padding: 0 2rem 6.4rem 2rem;
+        @media (min-width: 1024px){
+            padding: 4rem 9.6rem 16rem 9.6rem;
         }
         
-        .testimonies-header{
-            max-width: 45%;
+        .header{
             margin-bottom: 2rem;
-            @media (max-width: 768px){
-                max-width: 100%;
+            h4{
+                padding-bottom: 1.6rem;
+            }
+            @media (min-width: 1024px){
+                margin-bottom: 3.1rem;
+                display: flex;
+                justify-content: space-between;
+                h4{
+                padding-bottom: 0rem;
+            }
+                p{
+                    width: 42%;
+                }
             }
         }
         .testimonies-flex{
             display: flex;
             justify-content: space-between;
             margin-top: 2rem;
+            gap: 2.7rem;
 
             @media (max-width: 768px){
                 display: none;

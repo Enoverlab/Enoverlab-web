@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 // images
 import banner from '../../assets/bannerPrograms.png';
-import {Link} from 'react-router-dom'
-import {SecondaryButton} from '../../Utils/Buttons'
+import {SecondaryButton} from '../../Utils/styled/Buttons'
 const Banner = () => {
     return (
         <StyledBanner>

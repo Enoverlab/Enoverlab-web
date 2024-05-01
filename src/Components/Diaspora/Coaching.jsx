@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { H1, P } from "../../Utils/Typograpyhy";
+import { H1, P } from "../../Utils/styled/Typograpyhy";
 import DetailsImg from "../../assets/diaspora/eliteDigestLogo.svg";
 import LineImg from "../../assets/diaspora/bottomLine.svg";
 import { AiOutlineCheckCircle } from "react-icons/ai";

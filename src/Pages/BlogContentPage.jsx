@@ -1,11 +1,11 @@
 import React from "react";
 import { Article } from "../Components/Blog/BlogContent";
 import { useParams } from "react-router-dom";
-import { P, H4, H1 } from "../Utils/Typograpyhy";
+import { P, H4, H1 } from "../Utils/styled/Typograpyhy";
 import styled from "styled-components";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import arrowBack from '../assets/icon/blueArrowBack.png'
+// import arrowBack from '../assets/icon/blueArrowBack.png'
 import { Link } from "react-router-dom";
 import {BsArrowLeftCircle} from 'react-icons/bs'
 import {

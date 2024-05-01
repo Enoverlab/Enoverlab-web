@@ -6,7 +6,7 @@ const SectionTwo = () => {
       <div className="section-two-container">
         <p>
           Few years before I knew about the world of Tech, I had gotten my hands
-          dirty by doing many kinds of Jobs. 
+          dirty by doing many kinds of Jobs.
         </p>
         <p>
           Is it photography, Networking marketing, social media management,

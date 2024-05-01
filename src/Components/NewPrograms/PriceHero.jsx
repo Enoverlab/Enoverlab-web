@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
-import styled, { keyframes } from "styled-components";
-import { H1, P } from "../../Utils/Typograpyhy";
+import styled from "styled-components";
+import { H1, P } from "../../Utils/styled/Typograpyhy";
 import HeroVidCover from "../../assets/newProgramsHero.png";
-import BookCard from "../Resources/BookCard";
-import Timer from "./Timer";
-import abc from "../../assets/resources/abc.jpg";
-import CertiMarquee from "../HomeComponents/CertiMarquee";
+// import BookCard from "../Resources/BookCard";
+// import Timer from "./Timer";
+// import abc from "../../assets/resources/abc.jpg";
+// import CertiMarquee from "../HomeComponents/CertiMarquee";
 import { FaPlay } from "react-icons/fa";
 import { BsDot } from "react-icons/bs";
 const PriceHero = () => {

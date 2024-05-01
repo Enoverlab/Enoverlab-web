@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {theme} from '../../Utils/Theme'
 import blogHead from '../../assets/blogHeaderBg.svg'
-import { H1 } from '../../Utils/Typograpyhy'
+import { H1 } from '../../Utils/styled/Typograpyhy'
 import { FiSearch } from 'react-icons/fi'
 
 const BlogHead = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { P } from '../../Utils/Typograpyhy'
+import { P } from '../../Utils/styled/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 const PricingTestimonialCard = ({vidSrc, flag, name, country}) => {
   return (
@@ -32,7 +32,7 @@ const StyledPricingTestimonialCard = styled.div`
     .pricing-testimonial-card-container{
         .price-image-container{
             position: relative;
-            width: 26.0625rem;
+            width: 27.91vw;
             height: 35.4375rem;
             @media (max-width: 768px){
                 width: 100%;

@@ -1,8 +1,8 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { theme } from "../../Utils/Theme";
-import { H3, P, H4 } from "../../Utils/Typograpyhy";
-import Switch from "react-switch";
+import { H3, P, H4 } from "../../Utils/styled/Typograpyhy";
+// import Switch from "react-switch";
 import { IoLocationSharp } from "react-icons/io5";
 
 const PricingCard = ({

@@ -1,326 +1,669 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
-import { H1, P } from "../../Utils/Typograpyhy";
-import { AdvancedCard, BasicCard, Executive, OnsiteCard, TechnicalPM, GrowthPM, PMPCard } from "./ProgramCards";
-import BookCard from "../Resources/BookCard";
-import Timer from "./Timer";
-import abc from "../../assets/resources/abc.jpg"
-import CertiMarquee from "../HomeComponents/CertiMarquee";
+import { H1, H4,P } from "../../Utils/styled/Typograpyhy";
+import HeroVidCover from "../../assets/icon/programsCover.svg";
+import { AiOutlineShrink as Shrink } from "react-icons/ai";
+import { FaExpandAlt as Expand } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/swiper-bundle.css";
+import "swiper/css/autoplay";
+import { Autoplay} from "swiper/modules";
+// import BookCard from "../Resources/BookCard";
+// import Timer from "./Timer";
+// import abc from "../../assets/resources/abc.jpg";
+// import CertiMarquee from "../HomeComponents/CertiMarquee";
+import * as data from "../../constants/index"
+import { FaPlay } from "react-icons/fa";
+import { BsDot } from "react-icons/bs";
+import { Flex } from "../HomeComponents/ProductSection";
 const PriceHero = () => {
-  return (
-    <StyledPriceHero>
+  const [isCard1Hovered, setIsCard1Hovered] = useState(false);
+  const [card1Clicked, setCard1Clicked] = useState(false);
+  const [isCard2Hovered, setIsCard2Hovered] = useState(false);
+  const [card2Clicked, setCard2Clicked] = useState(false);
+  const [isCard3Hovered, setIsCard3Hovered] = useState(false);
+  const [card3Clicked, setCard3Clicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const iframeRef = useRef(null);
+  const mobileIframe = useRef(null);
+  const handleClicked = () => {
+    setIsClicked(!isClicked);
+    if (isClicked === true){
+      const iframeWindow = iframeRef.current.contentWindow;
+      iframeWindow.document.getElementById('video').play();
+      const mobileIframeWindow = mobileIframe.current.contentWindow;
+      mobileIframeWindow.document.getElementById('video').play();
+    }else{
+      const iframeWindow = iframeRef.current.contentWindow;
+      iframeWindow.document.getElementById('video').pause();
+    }
+  }
+ return (
+    <StyledPriceHero
+      isCard1Hovered={isCard1Hovered}
+      isCard2Hovered={isCard2Hovered}
+      isCard3Hovered={isCard3Hovered}
+      card3Clicked={card3Clicked}
+      card2Clicked={card2Clicked}
+      card1Clicked={card1Clicked}
+    >
       <div className="price-hero-container">
-        <div className="price-hero-head">
-          <div className="desktop-text">
-          <H1 fontWeight="500" fontSize="3.8rem" lineHeight="4.2rem" mobileFontSize="2rem" mobileLineHeight="2.5rem">  
-          Kickstart your career in tech <br/> without coding
+        <div className="left-container">
+          <section className="textContainer">
+          <H1
+            color="#131313"
+            textAlign="left"
+            mdfs="48px"
+            fs="3.2rem"
+            mdlh="6.8rem"
+            lh="4.6rem"
+          >
+            Kickstart your career in Product Management
           </H1>
+          <H4 color="var(--Body-Text)" mdlh="3rem" fs="1.6rem" mdfs="2rem" mdwidth="85%">
+            Regardless of your background, you too can become a skilled product manager in the next 6 months.
+          </H4>
+          </section>
+          <div className="video-box">
+          {
+            isClicked ? (
+              <>
+                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/FgDC-w0zXcA?si=h3qjeJu-sujPjwDS" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullscreen
+                autoPlay="true"
+                id="video"
+                ref={mobileIframe}
+              >
+
+              </iframe>
+              </>
+            ): (
+              <>
+             <div className="video-cover" onClick={handleClicked}>
+              <img src={HeroVidCover} alt="video-cover" />
+              <div className="play-button">
+                <div className="play-triangle">
+                  <FaPlay className="play-icon" />
+                </div>
+              </div>
+            </div> 
+              </>
+            )
+          }
           </div>
-          <div className="mobile-text">
-          <H1 fontWeight="500" mobileFontSize="1.6rem" mobileLineHeight="2rem">
-          {/* Learn the skills,<br/> make impact */}
-          Kickstart your career in tech without coding
-          </H1>
-          </div>
+          <div className="benefits-card-container">
+          <div className="benefits-card">
+            <div className="card-head">
+              <P>Benefits of Becoming A Product Manager</P>
+              <P></P>
+            </div>
+            <div
+              className="card-1"
+              onMouseEnter={() => setIsCard1Hovered(true)}
+              onMouseLeave={() => setIsCard1Hovered(false)}
+            >
+              <div className="card-desc">
+                <div className="card-desci">
+                <BsDot className="icon"/>
+                <P>Impact</P>
+                </div>
+                <div className="mobctrl" onClick={()=>setCard1Clicked(!card1Clicked)}>
+                  {card1Clicked ? <Shrink/> : <Expand/>}
+                </div>
+              </div>
+            
+              <P className="sub-1">
+              As a Product Manager, you will be involved in building products that can make significant impact in the lives of people by solving their problems and making their lives better.
+              </P>
+            </div>
+            <div
+              className="card-2"
+              onMouseEnter={() => setIsCard2Hovered(true)}
+              onMouseLeave={() => setIsCard2Hovered(false)}
+            >
+              <div className="card-desc">
+                <div className="card-desci">
+                <BsDot className="icon"/>
+                <P>Remote work</P>
+                </div>
+                <div className="mobctrl" onClick={()=>setCard2Clicked(!card2Clicked)}>
+                  {card2Clicked ? <Shrink/> : <Expand/>}
+                </div>
+              </div>
          
-          <div className="p-container">
-          <div className="started-text-desktop">
-            <P
-              fontSize="1.5rem"
-              lineHeight="2.25rem"
-              fontWeight={300}
-              color="#4B4B4B"
+              <P className="sub-1">
+              Many companies hiring product managers gibe them  opportunity to work remotely or hybrid. Becoming a PM will make it easy to get remote or hybrid work, both locally and internationally.
+              </P>
+            </div>
+            <div
+              className="card-3"
+              onMouseEnter={() => setIsCard3Hovered(true)}
+              onMouseLeave={() => setIsCard3Hovered(false)}
+            >
+               <div className="card-desc">
+                <div className="card-desci">
+                <BsDot className="icon"/>
+                <P>Make plenty money</P>
+                </div>
+                <div className="mobctrl" onClick={()=>setCard3Clicked(!card3Clicked)}>
+                  {card3Clicked ? <Shrink/> : <Expand/>}
+                </div>
+              </div>
             
-            >
-             {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Learn how to become a skilled Product Manager <br/>regardless of your background
-
-            </P>
+              <P className="sub-1">
+              A skilled product manager will earn an average of ₦500,000 or $5,000 per month. More experienced product managers will earn even much more.
+              </P>
             </div>
-            <div className="started-text-mobile">
-            <P
-              fontSize="1.5rem"
-              lineHeight="2.25rem"
-              fontWeight={300}
-              color="#4B4B4B"
-            
-            >
-             {/* Discover how to solve problems and deliver value with technology while helping organisations drive business growth */}
-             Learn how to become a skilled Product Manager regardless of your background
-            </P>
-            </div>
-            <div className="started-text-desktop">
-            <P
-             fontSize="1.5rem"
-             lineHeight="2.25rem"
-             fontWeight={300}
-             color="#4B4B4B"
-            >
-        Go through the programs below to get started
-            </P>
-            </div>
-            <div className="started-text-mobile">
-            <P
-             fontSize="1.5rem"
-             lineHeight="2.25rem"
-             fontWeight={300}
-             color="#4B4B4B"
-            >
-           Go through the programs below <br/> to get started
-            </P>
-            </div>
-           
-       
           </div>
-        
-        </div>
-        
-      </div>
-      <CertiMarquee/>
-      <div className="pricing-card">
-        <div className="card-block">
-          <div className="desktop-view">     
-         {/* <div id="basic">
-          <BasicCard/>
-          </div> */}
-          <div id="onsite">
-          <OnsiteCard/>
-          </div>
-          {/* <div id="growth">
-          </div> */}
-              <div>
-            <P
-             fontSize="1.3rem"
-             fontWeight="600"
-             color="#000"
-             paddingBottom="1rem"
-            >
-            Not sure if product management is for you?
-            </P>
-            <P
-            fontSize="1.3rem"
-            fontWeight="600"
-            color="#000"
-            paddingBottom="1rem"
-            >
-            Download "The ABC of Product Management" below
-            </P>
-            
-          {/* <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/> */}
-          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
-          </div>
-
-          </div>
-          <div className="mobile-view">
-          {/* <div id="basic">
-            <BasicCard/>
-          </div> */}
-          {/* <iframe width="100%" height="315" src="https://www.youtube.com/embed/jXR2CYoci_4?si=RQNw6ZY0L8XLO8il" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-          <div id="advanced">
-            <AdvancedCard/>
-          </div>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/CnlDAo2EHVU?si=iioex-ResHalig_y" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          
-          {/* <div id="advanced">
-            <Timer/>
-          </div> */}
           </div>
         </div>
-        <div className="card-block">
-          <div className="desktop-view">
-          <div  id="advanced">
-          <AdvancedCard/>
+        <div className="right-container">
+          <div className="video-box">
+          {
+            isClicked ? (
+              <>
+                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/FgDC-w0zXcA?si=h3qjeJu-sujPjwDS" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullscreen
+                autoPlay="true"
+                id="video"
+                ref={iframeRef}
+        ></iframe>
+              </>
+            ): (
+              <>
+             <div className="video-cover" onClick={handleClicked}>
+              <img src={HeroVidCover} alt="video-cover" />
+              <div className="play-button">
+                <div className="play-triangle">
+                  <FaPlay className="play-icon" />
+                </div>
+              </div>
+            </div> 
+              </>
+            )
+          }
           </div>
-
      
-       
-          {/* <div id="onsite">
-          <PMPCard/>
-          </div> */}
-         
-          {/* <div  id="advanced">
-          <GrowthPM/>
-          <TechnicalPM/>
-          </div> */}
-          {/* <div  id="advanced">
-         
-          </div> */}
-
-          {/* <div  id="advanced" className="timerDesktop">
-          <Timer/>
-          </div> */}
-          {/* <div id="executive">
-          <Executive/>
-          </div> */}
-        
-          </div>
-          <div className="mobile-view">
-        
-          <div id="onsite">
-          <OnsiteCard/>
-          </div>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/iPMxwnmj7sk?si=IIoJGezZSvZXKOUI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-           {/* <div  id="advanced">
-          <PMPCard/>
-          </div> */}
-          {/* <div  id="advanced">
-          <TechnicalPM/>
-          </div> */}
-          {/* <div id="growth">
-          <GrowthPM/>
-          </div> */}
-          <div>
-          <P
-             fontSize="1.2rem"
-             fontWeight="600"
-             color="#000"
-             paddingBottom="1rem"
-            >
-            Not sure if product management is for you?
-            </P>
-          <P
-            fontSize="1.2rem"
-            fontWeight="600"
-            color="#000"
-            paddingBottom="1rem"
-            >
-            Download "The ABC of Product Management" below
-            </P>
-            
-          <BookCard imgUrl={abc} bookUrl={'/abc.pdf'} maxHeight="100%" maxWidth="100%"/>
-          </div>
-          {/* <div id="executive">
-            <Executive/>
-            </div> */}
-          </div>
         </div>
       </div>
+      <StyledSwiper>
+      <H4 color="rgba(75, 75, 75, 0.89)" mdfs="2.4rem" fw="500">Physical Locations</H4>
+        <Swiper
+        modules={[Autoplay]}
+        spaceBetween={50}
+        autoplay={{
+          delay: 5000,
+        }}
+        > 
+        
+          <SwiperSlide>
+            <Flex mdgap="1.4vw" gap="7.7px">
+            {
+              data.programLocale1.map(image => <img src={image} key="image" alt="Lekki"/>)
+            }
+            </Flex>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Flex mdgap="1.25vw" gap="7.7px">
+            {
+              data.programLocale2.map(image => <img src={image} key="image" alt="Lekki"/>)
+            }
+            </Flex>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Flex mdgap="1.25vw" gap="7.7px">
+            {
+              data.programLocale3.map(image => <img src={image} key="image" alt="Lekki"/>)
+            }
+            </Flex>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Flex mdgap="1.25vw" gap="7.7px">
+            {
+              data.programLocale4.map(image => <img src={image} key="image" alt="Lekki"/>)
+            }
+            </Flex>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Flex mdgap="1.25vw" gap="7.7px">
+            {
+              data.programLocale5.map(image => <img src={image} key="image" alt="Lekki"/>)
+            }
+            </Flex>
+          </SwiperSlide>
+        </Swiper>
+
+      </StyledSwiper>
     </StyledPriceHero>
   );
 };
 
 export default PriceHero;
 
+const StyledSwiper = styled.div`
+  h4{
+    display: none;
+    padding-bottom: 3.2rem;
+  }
+  padding: 3.2rem 0;
+  img{
+    width : 23.7vw;
+  }
+  @media (min-width: 1024px) {
+    padding: 5.4rem 9.6rem;
+    h4{
+      display: block;
+    }
+    img{
+      width: 20.63vw;
+    }
+  }
+`
+
 const StyledPriceHero = styled.div`
   position: relative;
   /* margin-bottom: 10%; */
-  background-color: #fffdf7;
-  @media (max-width: 768px) {
-   
-  }
+  background-color:#FFFDF7;
   .price-hero-container {
-    padding: 5% 8% 0% 8%;
-    position: relative;
-    margin-bottom: 3rem;
-    @media (max-width: 768px) {
-      margin-bottom: 2rem;
-      padding: 5% 10% 0% 5%;
-    }
-  }
-  .pricing-card{
-    padding: 5% 10% 15% 5%;
-    @media(max-width: 768px){
-      padding: 5% 10% 15% 5%;
-    }
-  }
-  .price-hero-head {
+    padding: 0 9.6rem;
+    padding-top:8.2rem;
+
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 100%;
-
-    @media (max-width: 768px){
-     
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      padding: 0;
+      padding-top: 4.8rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      row-gap: 3rem;
     }
-
-    .desktop-text {
-      display: block;
-      margin-bottom: 1rem;
-      @media (max-width: 768px) {
-        display: none;
-      }
-    }
-    .mobile-text {
-      display: none;
-      @media (max-width: 768px) {
-        display: block;
-      
-      }
-    }
-    .p-container {
-      width: 65%;
-      align-self: center;
+    
+    .left-container {
+      width: 50%;
       @media (max-width: 768px) {
         width: 100%;
-      
-        P {
-          font-size: 1rem;
-          line-height: 120%;
-          padding-top: 0.8rem;
+        .textContainer{
+          padding: 0 2.4rem 0 2.4rem ;
+          padding-bottom: 3.9rem;
         }
       }
-      .started-text-desktop {
-        width: 100%;
-        display: block;
-        margin-bottom: 1rem;
-        @media (max-width: 768px) {
-          width: 100%;
-          display: none;
-
-          P{
-          font-size: 1rem;
-          line-height: 120%;
-          width: 100%;
-        }
-        }
-      }
-      .started-text-mobile {
+      .video-box{
         display: none;
-
+        margin-top: 51px;
+        padding-right: 2rem;
+        iframe{
+          box-shadow: 26px -25px 0px -2px rgba(0,70,255,0.18);
+          @media (max-width: 768px) {
+            height: 446px;
+          }
+        }
         @media (max-width: 768px) {
           display: block;
         }
       }
-    }
-  }
 
-  .pricing-card {
-    position: relative;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2.3125rem;
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      grid-gap: 5rem;
-    }
-
-    .card-block {
-    
-
-      @media (max-width: 768px) {
-        row-gap: 5rem;
-      }
-      .desktop-view {
+      .video-cover {
+        position: relative;
+        width: 100%;
+        height: 696px;
         display: flex;
-      flex-direction: column;
-      row-gap: 6.125rem;
-
-      .timerDesktop{
-        
-      }
+        align-items: center;
+        justify-content: center;
+        box-shadow: 26px -25px 0px -2px rgba(0,70,255,0.18);
+        cursor: pointer;
         @media (max-width: 768px) {
+          height: 500px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .play-button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .play-triangle {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .play-icon {
+              font-size: 40px;
+              color: #0046ff;
+              
+            }
+          }
+          @media (max-width: 768px) {
+            .play-triangle {
+              width: 60px;
+              height: 60px;
+              .play-icon {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+
+      .benefits-card-container {
+        @media (max-width: 768px) {
+          padding: 0px 2.4rem;
+        }
+      }
+      .benefits-card {
+        margin-top: 40px;
+        height: 488px;
+        background-color: #e8f3fe;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+        width: 70%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .card-head {
+          padding: 15px 32px;
+
+          P {
+            text-align: left;
+            color: #000;
+            background-color: #e8f3fe;
+            font-size: 28px;
+            width: 80%;
+            @media (max-width: 768px) {
+              font-size: 22px;
+              width: 100%;
+            }
+          }
+        }
+        .card-1,
+    .card-2,
+    .card-3 {
+      cursor: pointer;
+      transition: 1s ease;
+      padding: 30px;
+      .card-desc{
+        display: flex;
+        justify-content: space-between;
+        .card-desci{
+          display: flex;
+        }
+        .mobctrl{
           display: none;
         }
-      }
-      .mobile-view {
-        display: none;
         @media (max-width: 768px) {
-          display: flex;
-          flex-direction: column;
-          row-gap: 5rem;
+          .mobctrl{
+          display: block;
+        }
+        }
+        .icon{
+          font-size: 35px;
+          color: #FFF;
+        }
+        @media (max-width: 768px) {
+            .icon{
+              font-size: 35px;
+            }
+            .mobctrl{
+              font-size: 25px;
+              color: #FFF;
+            }
+          }
+        P{
+          @media (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+        
+      }
+      .sub-1{
+        font-size: 20px;
+        line-height: 36px;
+        @media (max-width: 768px) {
+          font-size: 13px;
         }
       }
     }
+        .card-1 {
+          background-color: #80a2ff;
+          border-radius: 32px 32px 0px 0px;
+          height: 144px;
+          P {
+            text-align: left;
+            color: #fffdf7;
+            font-size: 28px;
+          }
+          .sub-1 {
+            display: none;
+          }
+          @media (max-width: 786px) {
+            
+            ${(props) =>
+              props.card1Clicked &&
+              `
+
+        + .card-2 {
+          transform: translateY(-48px);
+          height: 121px;
+          position: relative;
+        }
+        ~ .card-3 {
+          transform: translateY(-100px);
+          height: 80px;
+        }
+        .sub-1 {
+              display: block;
+            }
+            height: 332px;
+      `}
+          }
+          @media (min-width: 1024px) {
+            &:hover {
+            height: 332px;
+            .sub-1 {
+              display: block;
+            }
+            ${(props) =>
+              props.isCard1Hovered &&
+              `
+        + .card-2 {
+          transform: translateY(-48px);
+          height: 121px;
+          position: relative;
+        }
+        ~ .card-3 {
+          transform: translateY(-100px);
+          height: 80px;
+        }
+      `}
+          }
+            
+          }
+        }
+        .card-2 {
+          background-color: #2a65ff;
+       
+          width: 100%;
+          border-radius: 32px 32px 0px 0px;
+          height: 142px;
+          z-index: 2;
+          transform: translateY(-24px);
+          position: relative;
+          P {
+            text-align: left;
+            color: #fffdf7;
+            font-size: 28px;
+          }
+          .sub-1 {
+            display: none;
+            @media (max-width: 768px) {
+          font-size: 13px;
+        }
+          }
+          @media (max-width: 786px) {
+            ${(props) =>
+              props.card2Clicked &&
+              `
+              ~ .card-3 {
+                height: 160px;
+          z-index: 5 !important;
+          position: relative;
+          transform: translateY(-158px);
+              }
+              height: 332px;
+            transform: translateY(-100px);
+            .sub-1 {
+              display: block;
+              
+            }
+      `}
+          }
+          @media (min-width: 1024px ){
+            &:hover {
+            height: 332px;
+            transform: translateY(-100px);
+            .sub-1 {
+              display: block;
+              
+            }
+            ${(props) =>
+              props.isCard2Hovered &&
+              `
+              ~ .card-3 {
+                height: 168px;
+          z-index: 5 !important;
+          position: relative;
+          transform: translateY(-150px);
+              }
+      `}
+      }
+          }
+        }
+        .card-3 {
+          background-color: #003ad4;
+          width: 100%;
+         
+          border-radius: 32px 32px 0px 0px;
+          height: 168px;
+          z-index: 5 !important;
+          position: relative;
+          transform: translateY(-48px);
+          P {
+            text-align: left;
+            color: #fffdf7;
+            font-size: 28px;
+          }
+          .sub-1 {
+            display: none;
+          }
+          @media (max-width: 786px) {
+            ${props => props.card3Clicked && `
+            ~ .card-2 {
+                height: 568px;
+          z-index: 5 !important;
+          transform: translateY(-548px);
+            }
+            height: 380px;
+              transform: translateY(-250px);
+            .sub-1 {
+              display: block;
+            }
+            
+            `}
+          }
+          @media (min-width: 1024px) {
+            &:hover {
+            height: 380px;
+            transform: translateY(-250px);
+            .sub-1 {
+              display: block;
+            }
+          }
+          }
+        }
+       
+      }
+    }
+    .right-container{
+      width: 40%;
+      display: block;
+      .video-box{
+        border: 1.228px solid #111;
+        box-shadow: 26px -25px 0px -2px rgba(0,70,255,0.18);
+
+        iframe{
+          @media (max-width: 768px) {
+            height: 500px;
+          }
+        }
+
+      }
+
+      .video-cover {
+        position: relative;
+        width: 100%;
+        height: 696px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @media (max-width: 768px) {
+          height: 500px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .play-button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .play-triangle {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .play-icon {
+              font-size: 40px;
+              color: #0046ff;
+            }
+          }
+        }
+      }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 40px;
+      display: none;
+    }   
+    }
   }
+
+  
+  
 `;
+
+

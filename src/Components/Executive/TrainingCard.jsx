@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { PrimaryButton, StyledPrimaryButton } from "../../Utils/Buttons";
+import { PrimaryButton, StyledPrimaryButton } from "../../Utils/styled/Buttons";
 import { theme } from "../../Utils/Theme";
-import { H3, P, H4 } from "../../Utils/Typograpyhy";
+import { H3, P, H4 } from "../../Utils/styled/Typograpyhy";
 import AboutList from "../Corporate/AboutList";
 
 const trainingList = [

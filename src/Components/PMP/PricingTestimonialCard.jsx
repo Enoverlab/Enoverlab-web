@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { P } from '../../Utils/Typograpyhy'
+import { P } from '../../Utils/styled/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 const PricingTestimonialCard = ({vidSrc, flag, name, country}) => {
   return (

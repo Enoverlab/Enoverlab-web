@@ -6,7 +6,7 @@ import PricingAbout from '../Components/ProgramsAd/PricingAbout'
 import Testimonies from '../Components/ProgramsAd/Testimonies'
 import SuccessStories from '../Components/ProgramsAd/SuccessStories'
 import Footer from '../Components/Footer'
-import PricingBanner from '../Components/Pricing/PricingBanner'
+// import PricingBanner from '../Components/Pricing/PricingBanner'
 import Testimonials from '../Components/Pricing/Testimonials'
 
 const ProgramsAd = () => {

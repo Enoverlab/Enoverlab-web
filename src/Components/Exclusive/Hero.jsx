@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import heroImage from '../../assets/exclusive/heroImage.png'
-import {H1, P} from '../../Utils/Typograpyhy'
+import {H1, P} from '../../Utils/styled/Typograpyhy'
 import logo from '../../assets/enovLogo.png'
-import { SecondaryButton } from '../../Utils/Buttons'
+import { SecondaryButton } from '../../Utils/styled/Buttons'
 
 const Hero = () => {
   return (

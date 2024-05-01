@@ -2,30 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 import PriceHero from '../Components/Pricing/PriceHero'
 import Header from '../Components/Header'
-import PricingAbout from '../Components/Pricing/PricingAbout'
 import Testimonies from '../Components/Pricing/Testimonies'
-import SuccessStories from '../Components/Pricing/SuccessStories'
+// import SuccessStories from '../Components/Pricing/SuccessStories'
 import Footer from '../Components/Footer'
-import PricingBanner from '../Components/Pricing/PricingBanner'
-import Testimonials from '../Components/Pricing/Testimonials'
-import Banner from '../Components/Pricing/Banner'
+import StandardProgram from '../Components/Pricing/StandardProgram'
+import { ClassTools } from '../Components/Pricing/ClassTools'
+import Explore from '../Components/Pricing/Explore'
+import { FaqSection } from '../Components/Pricing/FaqSection'
+import StandardOptions from '../Components/Pricing/StandardOptions'
+import Testimonials from '../Components/Pricing/Testi'
 const Pricing = () => {
-  return (
+  return (<div>
+    <Header bg="#FFFDF7"/>
     <StyledPricing>
-          <Header bgColor="#FFFDF7"  bgColorMobile="#FFFDF7"/>
-          {/* <PricingBanner/> */}
         <PriceHero/>
-       
+        <StandardProgram/>
+        <ClassTools/>
+        <StandardOptions/>
+        <Explore/>
         <Testimonials/>
-        <Banner/>
-        <PricingAbout/>
         <Testimonies/>
-        <SuccessStories/>
-        <Footer/>
+        <FaqSection/>
     </StyledPricing>
-  )
+    <Footer p="5rem 9.6rem"/>
+  </div>)
 }
 
 export default Pricing
 
-const StyledPricing = styled.div``
+const StyledPricing = styled.div`
+  background: #FFFDF7;
+    @media (min-width: 1024px) {
+      /* padding: 0 9.6rem; */
+    }
+`

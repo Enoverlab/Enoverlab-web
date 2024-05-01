@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {H4, P} from '../../Utils/Typograpyhy'
+import {H4, P} from '../../Utils/styled/Typograpyhy'
 import reason1 from '../../assets/exclusive/reasonImage1.png'
 
 

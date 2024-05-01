@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {H3, H4} from '../../Utils/Typograpyhy'
+import {H3, H4} from '../../Utils/styled/Typograpyhy'
 const PriceTag = ({tuitionFee, duration, textColor}) => {
   return (
     <StyledPriceTag>

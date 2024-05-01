@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { PrimaryButton, SecondaryButton } from '../../Utils/Buttons'
+import { PrimaryButton, SecondaryButton } from '../../Utils/styled/Buttons'
 import { theme } from '../../Utils/Theme'
-import { H3, H4 } from '../../Utils/Typograpyhy'
+import { H3, H4 } from '../../Utils/styled/Typograpyhy'
 import HomeCard from './HomeCard'
 
 const Training = () => {

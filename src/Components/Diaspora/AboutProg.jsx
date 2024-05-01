@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { H1, P } from "../../Utils/Typograpyhy";
+import { H1, P } from "../../Utils/styled/Typograpyhy";
 import LogoImg from '../../assets/diaspora/enovLogoBg.png';
 import styled from "styled-components";
 const AboutProg = () => {

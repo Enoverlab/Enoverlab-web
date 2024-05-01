@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {theme} from '../../Utils/Theme'
-import { H3, P } from '../../Utils/Typograpyhy'
+import { H3, P } from '../../Utils/styled/Typograpyhy'
 
 const HomeCard = ({children, cardTitle, cardText, backgroundColor, textColor, backLeft, height}) => {
   return (

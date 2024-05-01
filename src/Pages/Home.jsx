@@ -1,37 +1,40 @@
 import React from 'react'
 import Hero from '../Components/HomeComponents/Hero'
-import About from '../Components/HomeComponents/About'
-import Training from '../Components/HomeComponents/Training'
-import Why from '../Components/HomeComponents/Why'
 import Testimonials from '../Components/HomeComponents/Testimonials'
-import Sessions from '../Components/HomeComponents/Sessions'
 import Started from '../Components/HomeComponents/Started'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import Banner from "../Components/HomeComponents/Banner"
-import CertiMarquee from '../Components/HomeComponents/CertiMarquee'
+import ProductSession from '../Components/HomeComponents/ProductSession'
+import ProductSection from '../Components/HomeComponents/ProductSection'
+import EnoverSpecial from '../Components/HomeComponents/EnoverSpecial'
+import SuccessStories from '../Components/HomeComponents/SuccessStories'
+import Partners from '../Components/HomeComponents/Partners'
+import Alumni from '../Components/HomeComponents/Alumni'
+import { useState } from 'react'
+import LoadingScreen from '../Components/LoadingScreen'
+// import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
 const Home = () => {
-  return (
-    <div
-    style={{
-      backgroundColor: "#FFFFFF",
-      position: "relative"
-    }}
-    >
-       <Header bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
-        {/* <Banner/> */}
+  const [isLoading, setIsLoading] = useState(true)
+
+  setTimeout(()=>{
+    setIsLoading(false)
+  },3000)
+  return (<>
+  {isLoading ? <LoadingScreen/> : <div>
+       <Header/>
         <Hero/>
-        <CertiMarquee/>
-        <About/>
-        <Training/>
-        <Why/>
+        <ProductSession/>
+        <ProductSection/>
+        <EnoverSpecial/>
+        <Partners/>
         <Testimonials/>
-        <Sessions/>
+        <SuccessStories/>
+        <Alumni/>
         <Started/>
-        <Footer/>
-    </div>
-  )
+        <Footer p="5rem 9.6rem 0 9.6rem"/>
+    </div>}
+  </>)
 }
 
 export default Home

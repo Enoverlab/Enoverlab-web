@@ -3,8 +3,8 @@ import styled from "styled-components";
 import person1 from "../../assets/executive/person1.png";
 import person2 from "../../assets/executive/person2.png";
 import person3 from "../../assets/executive/person3.png";
-import { SecondaryButton } from "../../Utils/Buttons";
-import { H1, P } from "../../Utils/Typograpyhy";
+import { SecondaryButton } from "../../Utils/styled/Buttons";
+import { H1, P } from "../../Utils/styled/Typograpyhy";
 const Hero = () => {
   return (
     <StyledHero>

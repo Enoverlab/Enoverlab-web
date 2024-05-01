@@ -1,6 +1,6 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
-import { H1, H2, H3, P, H4 } from "../../Utils/Typograpyhy";
+import styled from "styled-components";
+import { H1, P} from "../../Utils/styled/Typograpyhy";
 import Place1 from "../../assets/diaspora/place1.svg";
 import Place2 from "../../assets/diaspora/place2.svg";
 import Place3 from "../../assets/diaspora/place3.svg";

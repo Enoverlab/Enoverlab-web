@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import enovAbout from '../../assets/enovAbout.png'
-import { H2, P } from '../../Utils/Typograpyhy'
+import { H2, P } from '../../Utils/styled/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 
 const About = () => {

@@ -3,7 +3,7 @@ import {Box, Heading, Text, Icon, Flex} from '@chakra-ui/react'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 // import {Link} from 'react-router-dom'
 // import Marquee from 'react-fast-marquee'
-import Enov1 from "../../assets/physical/enovPhysical1.png"
+// import Enov1 from "../../assets/physical/enovPhysical1.png"
 
 export const PhysicalCard = ({bgImage, location, locationLink, heightValue, fontSizeProp, isComing}) => {
   return (

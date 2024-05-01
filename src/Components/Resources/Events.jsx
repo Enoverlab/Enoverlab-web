@@ -4,7 +4,7 @@ import styled from 'styled-components'
 // import eventThumb from '../../assets/resources/eventThumb.png'
 // import eventThumbLeft from '../../assets/resources/eventThumbLeft.png'
 // import eventThumbRight from '../../assets/resources/eventThumbRight.png'
-import { H1 } from '../../Utils/Typograpyhy'
+import { H1 } from '../../Utils/styled/Typograpyhy'
 import EventSlider from './EventSlider'
 const Events = () => {
   return (

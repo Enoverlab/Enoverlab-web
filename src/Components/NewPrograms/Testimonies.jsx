@@ -1,5 +1,5 @@
 import React from 'react'
-import {H4, P} from '../../Utils/Typograpyhy'
+import {H4, P} from '../../Utils/styled/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 import Slider from 'react-slick'
 // import testImage from '../../assets/PricingTestimonial1.png'

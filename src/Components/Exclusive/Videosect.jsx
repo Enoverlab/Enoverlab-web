@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {H1} from '../../Utils/Typograpyhy'
+import {H1} from '../../Utils/styled/Typograpyhy'
 const Videosect = () => {
   return (
     <StyledVideoSect>

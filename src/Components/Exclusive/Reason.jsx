@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H3, P } from '../../Utils/Typograpyhy'
+import { H3, P } from '../../Utils/styled/Typograpyhy'
 import ReasonCard from './ReasonCard'
 import { theme } from '../../Utils/Theme'
 import { ReasonData } from './ReasonData'

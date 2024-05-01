@@ -1,9 +1,9 @@
 import React, {useRef} from 'react'
 import styled from 'styled-components'
-import {H3, P} from '../../Utils/Typograpyhy'
+import {H3, P} from '../../Utils/styled/Typograpyhy'
 import {theme} from '../../Utils/Theme'
-import topCornerStripe from '../../assets/topCornerStripes.png'
-import bottomCornerStripe from '../../assets/bottomCornerStripes.png'
+// import topCornerStripe from '../../assets/topCornerStripes.png'
+// import bottomCornerStripe from '../../assets/bottomCornerStripes.png'
 import Slider from 'react-slick'
 
 const Testimonials = () => {

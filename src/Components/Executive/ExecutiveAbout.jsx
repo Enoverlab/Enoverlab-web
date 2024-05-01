@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PricingImage from '../../assets/executive/aboutImage.png'
 import { theme } from '../../Utils/Theme'
-import {  P } from '../../Utils/Typograpyhy'
+import {  P } from '../../Utils/styled/Typograpyhy'
 import ExecutiveAboutList from './ExecutiveAboutList'
 
 const aboutList = [

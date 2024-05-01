@@ -26,13 +26,13 @@ const PricingBanner = () => {
                     <p className='web-text'>Save N30,000 when you pay half of your tuition before March 3
                     {/* <br/> */}
                 <br/> <span>
-                        <a href="#">Apply Below</a></span></p> 
+                        <button href="#">Apply Below</button></span></p> 
                     <p className='mobile-text'>Save N30,000 when you pay half of your tuition before March 3
                     {/* <br/> */}
                     {/* Training begins February 11, */}
-                    <br/> <span> <a href="#">
+                    <br/> <span> <button href="#">
                         Apply Below
-                       </a></span></p>
+                       </button></span></p>
                        
                 </div>
     </div>
@@ -167,7 +167,7 @@ const StyledPricingBanner = styled.div`
                     animation: ${animate} 1s ease-in-out infinite; 
                     display: inline-flex;
                    
-                    a{
+                    button{
                         color: #0E1098;
                         text-decoration: none;
                        
@@ -197,7 +197,7 @@ const StyledPricingBanner = styled.div`
                     text-decoration: none;
                     animation: ${animate} 1s ease-in-out infinite ;
                     display: inline-flex;
-                    a{
+                    button{
                         color: #0E1098;
                         text-decoration: none;
                        

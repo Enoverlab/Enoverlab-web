@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import topRightBg from "../../assets/resources/topRightBg.svg";
 import bottomLeftBg from "../../assets/resources/bottomLeftBg.svg";
-import { H4, P } from "../../Utils/Typograpyhy";
+import { H4, P } from "../../Utils/styled/Typograpyhy";
 import { BookData } from "./BookData";
 import BookCard from "./BookCard";
 const Ebooks = () => {

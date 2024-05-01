@@ -1,19 +1,19 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { H1, H2, H3, P, H4 } from "../../Utils/Typograpyhy";
+import { H1,P, H4 } from "../../Utils/styled/Typograpyhy";
 import { theme } from "../../Utils/Theme";
 import { BsCheckCircle } from "react-icons/bs";
 import { detailsData, detailsListData } from "./DetailsData";
 import Figma from "../../assets/figma.png";
-import gmailIcon from "../../assets/gmailIcon.png";
+// import gmailIcon from "../../assets/gmailIcon.png";
 import googleAnalytics from "../../assets/googleAnalytics.png";
-import googleDocs from "../../assets/googleDocs.png";
+// import googleDocs from "../../assets/googleDocs.png";
 import hotJar from "../../assets/hotJar.png";
 import Jira from "../../assets/Jira.png";
 import productPlan from "../../assets/productPlan.png";
-import slack from "../../assets/slackIcon.png";
+// import slack from "../../assets/slackIcon.png";
 import trello from "../../assets/trello.png";
-import { SecondaryButton, TransparentButton } from "../../Utils/Buttons";
+import { SecondaryButton, TransparentButton } from "../../Utils/styled/Buttons";
 import DetailsImg from "../../assets/diaspora/detailsImg.png";
 
 const Details = () => {
@@ -37,7 +37,7 @@ const Details = () => {
                   paddingBottom={".875rem"}
                   textAlign="left"
                 >
-                 Program Details
+                  Program Details
                 </H1>
               </div>
             </div>
@@ -238,10 +238,10 @@ const StyledDetails = styled.div`
         .head-text {
           .desktop-head {
             display: block;
-            H1{
+            H1 {
               display: block;
               @media (max-width: 768px) {
-              display: none;
+                display: none;
               }
             }
           }
@@ -309,12 +309,11 @@ const StyledDetails = styled.div`
           display: flex;
           column-gap: 1rem;
           align-items: center;
-          .text{
+          .text {
             @media (max-width: 768px) {
-              P{
+              P {
                 font-weight: 600;
               }
-            
             }
           }
         }

@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react'
 import { Box, Heading, Image, Flex, Text } from '@chakra-ui/react'
 import HeroImg from "../../assets/physical/heroImg.png"
 export const Hero = () => {

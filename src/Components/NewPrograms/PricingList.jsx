@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H4 } from '../../Utils/Typograpyhy'
+import { H4 } from '../../Utils/styled/Typograpyhy'
 import { FaRegCheckCircle } from "react-icons/fa";
 const PricingList = ({ listText, listSubText, textColor}) => {
   return (

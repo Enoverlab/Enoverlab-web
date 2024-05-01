@@ -2,6 +2,7 @@ import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import triangle from '../../assets/pricingbanner/triangle.svg'
 import triangleMobile from "../../assets/pricingbanner/triangleMobile.png"
+import { Link } from 'react-router-dom'
 const PricingBanner = () => {
   return (
    <StyledPricingBanner>
@@ -26,13 +27,13 @@ const PricingBanner = () => {
                     <p className='web-text'>Save N30,000 when you pay half of your tuition before March 3
                     {/* <br/> */}
                 <br/> <span>
-                        <a href="#">Apply Below</a></span></p> 
+                        <Link to="#">Apply Below</Link></span></p> 
                     <p className='mobile-text'>Save N30,000 when you pay half of your tuition before March 3
                     {/* <br/> */}
                     {/* Training begins February 11, */}
-                    <br/> <span> <a href="#">
+                    <br/> <span> <Link to="#">
                         Apply Below
-                       </a></span></p>
+                       </Link></span></p>
                        
                 </div>
     </div>

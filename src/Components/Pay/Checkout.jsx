@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { H3, H4, P } from "../../Utils/Typograpyhy";
+import { H3, H4, P } from "../../Utils/styled/Typograpyhy";
 import enoverlogo from "../../assets/enovLogo.png";
 import {
   PrimaryButton,
   SecondaryButton,
   StyledPrimaryButton,
   StyledSecondaryButton,
-} from "../../Utils/Buttons";
+} from "../../Utils/styled/Buttons";
 import aellaLogo from "../../assets/aellalogo.png";
 import { FaArrowLeft } from "react-icons/fa";
 import { useParams } from "react-router";

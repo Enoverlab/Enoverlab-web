@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../Utils/Theme";
-import { P } from "../Utils/Typograpyhy";
+import { P } from "../Utils/styled/Typograpyhy";
 import {
   SecondaryButton,
   TertiaryButton,
-} from "../Utils/Buttons";
+} from "../Utils/styled/Buttons";
 import logo from "../assets/enovLogo.png";
 import blueLogo from "../assets/blueLogo.png";
 import menu from "../assets/menu.png";
@@ -16,10 +16,10 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 
 const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
   const [active, setActive] = React.useState(false);
-  const [weightHome, setWeightHome] = React.useState("bold");
+  const [setWeightHome] = React.useState("bold");
   const [weightPricing, setWeightPricing] = React.useState("normal");
   const [weightBlog, setWeightBlog] = React.useState("normal");
-  const [weightResource, setWeightResource] = React.useState("normal");
+  // const [weightResource, setWeightResource] = React.useState("normal");
 
   return (
     <StyledHeader bgColor={bgColor} bgColorMobile={bgColorMobile} navColor={navColor}>

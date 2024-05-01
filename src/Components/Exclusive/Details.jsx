@@ -1,21 +1,21 @@
 import React from "react";
 import styled, {keyframes}  from "styled-components";
-import { H1, H2, H3, P, H4 } from "../../Utils/Typograpyhy";
+import { H1, P, H4 } from "../../Utils/styled/Typograpyhy";
 import { theme } from "../../Utils/Theme";
 import detailsImage1 from "../../assets/exclusive/detailsImage1.png";
 import detailsImage2 from "../../assets/exclusive/detailsImage2.png";
 import {BsCheckCircle} from 'react-icons/bs'
 import {detailsData, detailsListData} from './DetailsData'
 import Figma from "../../assets/figma.png";
-import gmailIcon from "../../assets/gmailIcon.png";
+// import gmailIcon from "../../assets/gmailIcon.png";
 import googleAnalytics from "../../assets/googleAnalytics.png";
-import googleDocs from "../../assets/googleDocs.png";
+// import googleDocs from "../../assets/googleDocs.png";
 import hotJar from "../../assets/hotJar.png";
 import Jira from "../../assets/Jira.png";
 import productPlan from "../../assets/productPlan.png";
-import slack from "../../assets/slackIcon.png";
+// import slack from "../../assets/slackIcon.png";
 import trello from "../../assets/trello.png";
-import { SecondaryButton } from '../../Utils/Buttons'
+import { SecondaryButton } from '../../Utils/styled/Buttons'
 
 
 

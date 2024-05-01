@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 // import blogImage from '../../assets/blogImage.png'
-import { P, H3 } from '../../Utils/Typograpyhy'
+import { P, H3 } from '../../Utils/styled/Typograpyhy'
 import thumbnailProfile from '../../assets/BlogImages/thumbnail.png'
 import {theme} from '../../Utils/Theme'
 import { Article } from './BlogContent'

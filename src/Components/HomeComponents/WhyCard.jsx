@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {theme} from '../../Utils/Theme'
-import {P, H3} from '../../Utils/Typograpyhy'
+import {P, H3} from '../../Utils/styled/Typograpyhy'
 
 
 const WhyCard = ({bgColor, title, content, imgSrc}) => {

@@ -1,352 +1,224 @@
-import React from "react";
-import styled from "styled-components";
-import { theme } from "../Utils/Theme";
-import { P } from "../Utils/Typograpyhy";
-import {
-  SecondaryButton,
-  TertiaryButton,
-} from "../Utils/Buttons";
-import logo from "../assets/enovLogo.png";
-import blueLogo from "../assets/blueLogo.png";
-import menu from "../assets/menu.png";
-import menuWhite from "../assets/menuWhite.png";
-import { Link, NavLink } from "react-router-dom";
-import { FaTimes } from "react-icons/fa";
-import { HiOutlineChevronRight } from "react-icons/hi";
+import {useState, useEffect, useRef } from "react"
+import { FramerSidebar, FramerSidebarPanel, SideBarBabies, StyledHeader, Toggleview, TopNavbabies } from "../Utils/styled/header/header.styled";
+import enoverLogo from '../assets/enovLogo.svg'
+import { GiHamburgerMenu as MenuIcon } from "react-icons/gi";
+import { AnimatePresence, motion } from "framer-motion";
+import { useClickAway } from "@uidotdev/usehooks";
+import { MdClose as CloseIcon } from "react-icons/md";
+import { NavLink } from "react-router-dom";
+import { PrimaryButton } from "../Utils/styled/Buttons";
+import caret from "../assets/icon/caret.svg"
+import { HashLink } from "react-router-hash-link";
+import { useLocation } from "react-router-dom";
 
-const Header = ({ bgColor, bgColorMobile, navColor, blueProps, headerPosition }) => {
-  const [active, setActive] = React.useState(false);
-  const [weightHome, setWeightHome] = React.useState("bold");
-  const [weightPricing, setWeightPricing] = React.useState("normal");
-  const [weightBlog, setWeightBlog] = React.useState("normal");
-  const [weightResource, setWeightResource] = React.useState("normal");
+const Header = ({bg})=> {
+  const location = useLocation()
+  const lastHash = useRef('')
 
-  return (
-    <StyledHeader bgColor={bgColor} bgColorMobile={bgColorMobile} navColor={navColor} headerPosition={headerPosition}>
-      <div className="header-container">
-        <div className="header-left">
-          <div className="logo-container">
-           {
-              !blueProps ? (
-                <Link to="/">
-                <img src={logo} alt="logo" />
-              </Link>
-              ): (
-                <Link to="/">
-                <img src={blueLogo} alt="logo" />
-              </Link>
-              )
-           }
-          </div>
-          <div className="menu-container">
-            <div className={active ? "menu-item active" : "menu-item"}>
-              <div className="mobile-logo-container">
-                <Link to="/">
-                  <img src={logo} alt="logo" />
-                </Link>
-                <FaTimes className="times" onClick={() => setActive(!active)} />
-              </div>
-              <div className="menu-item-container">
-                <NavLink
-                  style={({ isActive }) => ({
-                    fontWeight: isActive
-                      ? setWeightHome("600")
-                      : setWeightHome("300"),
-                  })}
-                  to="/"
-                >
-                  <P
-                    color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark }
-                    textAlign="left"
-                    fontSize={"1.25rem"}
-                    fontWeight={weightHome}
-                  >
-                    Home
-                  </P>
-                  <HiOutlineChevronRight className="icon" />
-                </NavLink>
-              </div>
-              <div className="menu-item-container">
-                <NavLink
-                  style={({ isActive }) => ({
-                    fontWeight: isActive
-                      ? setWeightPricing("600")
-                      : setWeightPricing("300"),
-                  })}
-                  to="/programs"
-                >
-                  <P
-                    color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark}
-                    textAlign="left"
-                    fontSize={"1.25rem"}
-                    fontWeight={weightPricing}
-                  >
-                    Programs
-                  </P>
-                  <HiOutlineChevronRight className="icon" />
-                </NavLink>
-              </div>
-              <div className="menu-item-container">
-                <NavLink
-                  style={({ isActive }) => ({
-                    fontWeight: isActive
-                      ? setWeightBlog("600")
-                      : setWeightBlog("300"),
-                  })}
-                  to="/blog"
-                >
-                  <P
-                    color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark}
-                    textAlign="left"
-                    fontSize={"1.25rem"}
-                    fontWeight={weightBlog}
-                  >
-                    Blog
-                  </P>
-                  <HiOutlineChevronRight className="icon" />
-                </NavLink>
-              </div>
-              <div className="menu-item-container">
-                <NavLink
-                  style={({ isActive }) => ({
-                    fontWeight: isActive
-                      ? setWeightResource("600")
-                      : setWeightResource("300"),
-                  })}
-                  to="/resources"
-                >
-                  <P
-                    color={bgColor === "#0046FF" ? "#FFFFFF" : theme.color.dark}
-                    textAlign="left"
-                    fontSize={"1.25rem"}
-                    fontWeight={weightResource}
-                  >
-                    Free Resources
-                  </P>
-                  <HiOutlineChevronRight className="icon" />
-                </NavLink>
-              </div>
-              <div className="mobile-button-container"
-                onClick={()=> {
-                  window.open("tel:09063124595")
-                }}
-              >
-                <SecondaryButton
-                  textAlign="center"
-                  to="/"
-                  buttText="Contact Us"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="header-right">
-          <div className="header-button-container"
-           onClick={()=> {
-            window.open("tel:09063124595")
-          }}
-          >
-            <TertiaryButton to="/" buttText="Contact Us" fontWeight={500} />
-          </div>
-          <div className="menu-icon-container">
-           {
-            !blueProps ?
-            (
-              <img onClick={() => setActive(!active)} src={menu} alt="menu" />
-            ): 
-            (
-              <img onClick={() => setActive(!active)} src={menuWhite} alt="menu" />
-            )
-           }
-          </div>
+    useEffect(()=>{
+        console.log(location)
+        if(location.hash){
+            lastHash.current = location.hash.slice(1)
+        }
+        if(lastHash.current && document.getElementById(lastHash.current)){
+            setTimeout(()=>{
+                document.getElementById(lastHash.current)?.scrollIntoView({behavior: 'smooth', block : "start"})
+            },100)
+            lastHash.current = '';
+        }
+    },[location])
+
+  const [isOpen, setIsOpen] = useState(false)
+  const ref = useClickAway(() => {
+    setIsOpen(false);
+  });
+
+  const [addlinks, setAddLinks]= useState(false)
+
+  const handleLinks = ()=> setAddLinks(!addlinks)
+
+  const toggle = ()=> setIsOpen(!isOpen)
+  return(<StyledHeader bg={bg}>
+    <NavLink to="/">
+    <img src={enoverLogo} alt="EnoverLab Logo"/>
+    </NavLink>
+
+    <TopNavbabies>
+      <div className="dropdown">
+      Programs <img src={caret} alt="" />
+        <div className="addLinks">
+          <header>
+            Standard
+          </header>
+          <main>
+          {standard.map((links)=> <MenuItems2  link={links.linkto}>{links.linkName}</MenuItems2>)}
+          </main>
+          <header>
+            Advanced
+          </header>
+          <main>
+          {advanced.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+          <header>
+            International
+          </header>
+          <main>
+          {international.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
         </div>
       </div>
-      <div
-        onClick={() => setActive(!active)}
-        className={active ? "overlay active" : "overlay"}
-      ></div>
-    </StyledHeader>
-  );
-};
+      {Menulist.map(menu => <MenuItems link={menu.linkto}>{menu.linkName}</MenuItems>)}
+    </TopNavbabies>
 
-export default Header;
+    <Toggleview display>
+      <PrimaryButton Text='Contact Us'/>
+    </Toggleview>
 
-const StyledHeader = styled.div`
-  position: ${(props) => (props ? props.headerPosition : 'sticky')};
-  width: 100%;
-  z-index: 100000;
-  top: 0;
-  background-color: ${(props) => (props ? props.bgColor : theme.color.light)};
-  @media (max-width: 768px) {
-    position: sticky;
-    top: 0;
+    <MenuToggle tog={toggle} open={isOpen}/>
+    <AnimatePresence mode="wait" initial={false} >
+    {isOpen && (<>
+    <FramerSidebar  {...framerSidebarBackground}>
+    </FramerSidebar>
+    <FramerSidebarPanel {...framerSidebarPanel} ref={ref}>
+      <CloseIcon size="3rem" onClick={toggle} />
+      <SideBarBabies>
+      <motion.span {...framerText(0)}>
+      <div>
+      <p onClick={handleLinks} className="dropdown">Programs <img src={caret} alt="" /></p>
+        {addlinks && (<div className="addLinks">
+          <header>
+            Standard
+          </header>
+          <main>
+          {standard.map((links)=> <MenuItems2 link={links.linkto}>{links.linkName}</MenuItems2>)}
+          </main>
+          <header>
+            Advanced
+          </header>
+          <main>
+          {advanced.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+          <header>
+            International
+          </header>
+          <main>
+          {international.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+        </div>)}
+      </div>
+      </motion.span>
+      {Menulist.map((menu, index) => <MenuItems onClick={toggle} 
+      link={menu.linkto}>
+        {<motion.span {...framerText(index + 1)}>
+        {menu.linkName}
+        </motion.span>}
+        </MenuItems>)}
+      </SideBarBabies>
+      <motion.span {...framerText(3)}>
+      <PrimaryButton Text='Contact Us'/>
+      </motion.span>
+    </FramerSidebarPanel>
+
+    </>) }
+    </AnimatePresence>
+    
+  </StyledHeader>)
+}
+
+export default Header
+
+const MenuItems = ({link,children, onClick})=>{
+  return(<NavLink onClick={onClick} to={link} style={({isActive})=>{return {
+    fontWeight : isActive ? 700 : 400
+  }}}>
+    {children}
+  </NavLink>)
+}
+
+const MenuItems2 = ({link,children})=>{
+  return(<HashLink to={link} >
+    {children}
+  </HashLink>)
+}
+
+
+const MenuToggle = ({tog, open})=>{
+  return(<Toggleview onClick={tog}>
+     <MenuIcon size = "3rem"/>
+  </Toggleview>)
+}
+
+const standard = [
+  {
+    linkName : 'Online Product Management',
+    linkto : '/programs#online',
+  },
+  {
+    linkName : 'Onsite Product Management',
+    linkto : '/programs#onsite',
+  },
+]
+
+const advanced = [
+  {
+    linkName : 'AI Product Management',
+    linkto : '/ai',
+  },
+  {
+    linkName : 'Growth Product Management',
+    linkto : '/growthpm',
+  },
+  {
+    linkName : 'Technical Product Management',
+    linkto : '/technicalpm',
+  },
+]
+
+const international = [
+  {
+    linkName : 'Diaspora Program',
+    linkto : '/diaspora',
+  },
+  {
+    linkName : 'Kenya Program',
+    linkto : '/kenya',
+  },
+]
+
+
+const Menulist = [
+  {
+    linkName : 'Blog',
+    linkto : '/blog',
+  },
+  {
+    linkName : 'Free Resources',
+    linkto : '/resources',
+  },
+]
+
+
+
+const framerSidebarBackground = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0, transition: { delay: 0.2 } },
+  transition: { duration: 0.3 },
+}
+
+const framerSidebarPanel = {
+  initial: { x: '100%' },
+  animate: { x: 0 },
+  exit: { x: '100%' },
+  transition: { duration: 0.3 },
+}
+
+const framerText = delay => {
+  return {
+    initial: { opacity: 0, x: 50 },
+    animate: { opacity: 1, x: 0 },
+    transition: {
+      delay: 0.5 + delay / 10,
+    },
   }
-  .header-container {
-    display: flex;
-    width: 99%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4%;
-    @media (max-width: 768px) {
-      padding: 1.25rem 4%;
-    }
-    .header-left {
-      display: flex;
-      align-items: center;
-      column-gap: 7.875rem;
-      .logo-container {
-        display: flex;
-        max-width: 14.0625rem;
-        height: 2rem;
-        align-items: center;
-        img {
-          width: 13.0625rem;
-          height: 2.015rem;
-          object-fit: contain;
-        }
-        @media (max-width: 768px) {
-          max-width: 5rem;
-          img {
-            width: 8.75rem;
-            height: 1.5rem;
-            object-fit: contain;
-          }
-        }
-      }
-      .menu-container {
-        a {
-          text-decoration: none;
-          display: block;
-
-          P {
-            &:hover {
-              color: ${theme.color.primary};
-            }
-          }
-          .icon {
-            display: none;
-
-            @media (max-width: 768px) {
-              display: block;
-            }
-          }
-          @media (max-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-            padding: 1rem 0;
-          }
-        }
-        .menu-item {
-          display: flex;
-          align-items: center;
-          column-gap: 2.875rem;
-          .mobile-logo-container {
-            display: none;
-            @media (max-width: 768px) {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              max-width: 100%;
-              /* margin-right: -0.5rem; */
-              img {
-                width: 9.125rem;
-                /* align-self: flex-end; */
-              }
-              .times {
-                font-size: 1.5rem;
-                color: #4b4b4b;
-              }
-            }
-          }
-          .mobile-button-container {
-            display: none;
-            padding-bottom: 3rem;
-
-            @media (max-width: 768px) {
-              display: block;
-              /* align-items: flex-end; */
-              /* justify-content: flex-end; */
-              width: 100%;
-              margin-top: 1rem;
-            }
-          }
-          @media (max-width: 768px) {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            position: fixed;
-            width: 100%;
-            top: 0;
-            width: 100%;
-
-            height: 55vh;
-            background-color: ${(props) =>
-              props ? props.bgColorMobile : theme.color.light};
-            z-index: 99;
-            overflow-x: hidden;
-            display: none;
-            padding: 1.7rem 1.3rem;
-            P {
-              color: ${theme.color.dark};
-            }
-          }
-          &.active {
-            display: block;
-            right: ${({ active }) => (!active ? "-0px" : "0")};
-            transition: right ease-in-out 900ms;
-          }
-        }
-      }
-    }
-    .header-right {
-      width: 20%;
-      @media (max-width: 768px) {
-        width: 10%;
-      }
-      .header-button-container {
-        width: 100%;
-        padding-left: 4rem;
-
-        @media (max-width: 768px) {
-          display: none;
-          padding-left: 0;
-        }
-      }
-      .menu-icon-container {
-        display: none;
-
-        @media (max-width: 768px) {
-          display: block;
-          img {
-            width: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-
-  .overlay {
-    @media (max-width: 768px) {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      cursor: pointer;
-      z-index: 3;
-      display: none;
-
-      &.active {
-        display: block;
-      }
-    }
-  }
-  P {
-    @media (max-width: 768px) {
-      text-align: right;
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-  }
-`;
+}

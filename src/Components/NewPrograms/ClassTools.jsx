@@ -1,6 +1,5 @@
 import React from 'react'
 import Figma from "../../assets/figma.png";
-import gmailIcon from "../../assets/gmailIcon.png";
 import googleAnalytics from "../../assets/googleAnalytics.png";
 import googleDocs from "../../assets/googleDocs.png";
 import hotJar from "../../assets/hotJar.png";

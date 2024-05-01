@@ -12,9 +12,9 @@ import {
   PrimaryButton,
   MainButton,
   TransparentButton,
-} from "../../Utils/Buttons";
+} from "../../Utils/styled/Buttons";
 import { theme } from "../../Utils/Theme";
-import { H4, P } from "../../Utils/Typograpyhy";
+import { H4 } from "../../Utils/styled/Typograpyhy";
 import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
 import {

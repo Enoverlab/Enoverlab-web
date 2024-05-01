@@ -4,7 +4,7 @@ import acquilaImage from '../../assets/sales/acquilaSales.png'
 const listData = [
   "You do NOT require the knowledge of coding to transition Into Product Management.",
   "Product Management is NOT Project Management",
-  " You do NOT have to come from a technical background to do Product Management ",
+  " You do NOT have to come from a technical background to do Product Management",
   "Product Management is NOT for special people with special skills",
 ];
 const SectionSeven = () => {

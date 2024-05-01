@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {H4, H3} from '../../Utils/Typograpyhy'
+import {H4, H3} from '../../Utils/styled/Typograpyhy'
 import {theme} from '../../Utils/Theme'
 import bulb from '../../assets/bulb.png'
 import percent from '../../assets/percent.png'
