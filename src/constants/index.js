@@ -59,13 +59,13 @@ export const advancedPrograms = [
   {
     img: ad1,
     headText: "Technical Product Management",
-    subText: "For Experienced PMs",
+    subText: "For Experienced Product Managers",
     link : "/"
   },
   {
     img: ad2,
     headText: "Growth Product Management",
-    subText: "For Experienced PMs",
+    subText: "For Experienced Product Managers",
     link : "/"
   },
   {

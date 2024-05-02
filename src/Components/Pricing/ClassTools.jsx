@@ -69,7 +69,7 @@ const ToolsStyle = styled.div`
             flex-direction: column;
             align-items: flex-start;
             h1 {
-                font-size: 5.70vw;
+                font-size: clamp(2.8rem,5.90vw,3rem);
                 font-weight: 700;
             }
             p{
@@ -77,7 +77,7 @@ const ToolsStyle = styled.div`
                 font-weight: 400;
                 line-height: 24px;
                 color: #000;
-                margin-top: 28px;
+                margin-top: 22px;
             }
             margin-bottom: 2rem;
             @media (min-width: 1024px) {
