@@ -33,6 +33,13 @@ const StandardProgram = () => {
           link :  "https://paystack.com/pay/enoverlabibadan"
         })
         break;
+        case "Anambra":
+          setTrainingLocation({
+            location : 'Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka, Anambra',
+            tuition : '250,000',
+            link :  "https://paystack.com/pay/enoverlabibadan"
+          })
+          break;
       case "Abuja":
         setTrainingLocation({
           location : '22 Kumasi Cres, Wuse 2, Abuja',
@@ -123,7 +130,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Saturday
+                          Every Wednesday <br /> & Saturday
                         </H2>
                        </div>
                        <div>
@@ -146,7 +153,7 @@ const StandardProgram = () => {
                           Duration
                         </H4>
                         <H2 mdfs="1.587vw" mb="1rem" fs="3.32vw" fw="600" color="var(--Body-Text)">
-                          12 weeks training
+                          10 weeks training
                         </H2>
                         <H2 mdfs="1.587vw" fs="3.32vw" fw="600" color="var(--Body-Text)">
                           8 weeks internship
@@ -230,6 +237,7 @@ const StandardProgram = () => {
                         <option value="Ibadan">IBADAN</option>
                         <option value="Abuja">ABUJA</option>
                         <option value="Berger">BERGER</option>
+                        <option value="Anambra">Anambra</option>
                       </select>
                       {isError && <p className="err">Please select Your Preferred Location</p>}
                       </div>

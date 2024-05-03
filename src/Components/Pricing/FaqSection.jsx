@@ -5,7 +5,7 @@ import {FaqAccordion} from './FaqContainer'
 export const FaqSection = () => {
   return (
     <Box
-    padding={["0 2rem 6.4rem 2rem","0 14.35vw 16rem 14.35vw"]}
+    padding={["0 2rem 6.4rem 2rem","0 16.35vw 16rem 16.35vw"]}
     >
         <Center>
         <Heading fontSize={["4.67vw","1.85vw"]} textAlign="center" fontWeight="500" mb="32px" width={["75%","50%"]}>

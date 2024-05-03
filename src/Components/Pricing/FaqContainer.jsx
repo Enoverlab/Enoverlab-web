@@ -17,7 +17,7 @@ export const FaqAccordion = ({questionTitle, questionAnswer}) => {
      >
           <AccordionButton background="none">
             <Box flex="1" textAlign="left">
-              <Heading fontWeight="600" fontSize={["3.3vw","1.322vw"]} lineHeight={["1.5","2rem"]}>
+              <Heading fontWeight="600" fontSize={["3.6vw","1.822vw"]} lineHeight={["1.5","2rem"]}>
             {questionTitle}
               </Heading>
             </Box>
@@ -26,7 +26,7 @@ export const FaqAccordion = ({questionTitle, questionAnswer}) => {
           <AccordionPanel pb={4}>
             <Text
             lineHeight={["1.5rem","2rem"]}
-            fontSize={["2.90vw","1.058vw"]}
+            fontSize={["3.20vw","1.858vw"]}
             >
            {questionAnswer}
             </Text>
