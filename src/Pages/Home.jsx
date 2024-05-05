@@ -19,7 +19,7 @@ const Home = () => {
 
   setTimeout(()=>{
     setIsLoading(false)
-  },4000)
+  },3500)
   return (<>
   {isLoading ? <LoadingScreen/> : <div>
        <Header/>
