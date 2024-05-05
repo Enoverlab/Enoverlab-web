@@ -11,9 +11,18 @@ import Explore from '../Components/Pricing/Explore'
 import { FaqSection } from '../Components/Pricing/FaqSection'
 import StandardOptions from '../Components/Pricing/StandardOptions'
 import Testimonials from '../Components/Pricing/Testi'
+import {useState, useEffect} from "react"
+import LoadingScreen2 from '../Components/LoadingScreen2'
 const Pricing = () => {
+  const [loading, setLoading] = useState(true)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)
+    },4000)
+  },[])
   return (<div>
-    <Header bg="#FFFDF7"/>
+   {loading ? <LoadingScreen2/> : <div>
+   <Header bg="#FFFDF7"/>
     <StyledPricing>
         <PriceHero/>
         <StandardProgram/>
@@ -25,6 +34,7 @@ const Pricing = () => {
         <FaqSection/>
     </StyledPricing>
     <Footer p="5rem 9.6rem"/>
+    </div>}
   </div>)
 }
 

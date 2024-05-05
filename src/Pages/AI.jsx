@@ -7,11 +7,21 @@ import Footer from "../Components/Footer"
 import Header from "../Components/Header"
 import Started from "../Components/HomeComponents/Started"
 import { FaqSection } from "../Components/Pricing/FaqSection"
+import {useState, useEffect} from "react"
+import LoadingScreen2 from '../Components/LoadingScreen2'
 
 const AI = () => {
+  const [loading, setLoading] = useState(true)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)
+    },4000)
+  },[])
   return (
     <div>
-      <Header/>
+      {loading ? <LoadingScreen2/> : 
+      <div>
+        <Header/>
       <AiHero/>
       <Aiprogram/>
       <ProgramDetails/>
@@ -20,6 +30,7 @@ const AI = () => {
       <FaqSection/>
       <Started/>
       <Footer p="5rem 9.6rem 0 9.6rem"/>
+      </div>}
     </div>
   )
 }

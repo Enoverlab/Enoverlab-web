@@ -8,11 +8,21 @@ import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import { FaqSection } from "../Components/Pricing/FaqSection"
 import { H2 } from '../Utils/styled/Typograpyhy'
 import Formi from '../Components/Kenya/Form'
+import {useState, useEffect} from "react"
+import LoadingScreen2 from '../Components/LoadingScreen2'
 
 const Kenya = () => {
+  const [loading, setLoading] = useState(true)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)
+    },4000)
+  },[])
   return (
     <div>
-        <Header/>
+        {loading ? <LoadingScreen2/> :
+        <div>
+          <Header/>
         <KenyanHero/>
         <Access/>
         <ProgramDetails/>
@@ -24,6 +34,7 @@ const Kenya = () => {
         </div>
         <FaqSection/>
         <Footer p="5rem 9.6rem 0 9.6rem"/>
+        </div>}
     </div>
   )
 }

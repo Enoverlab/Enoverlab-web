@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import dbg from "../assets/icon/Dbg.png"
 
 const LoadingScreen = () => {
   return (
@@ -37,7 +38,8 @@ align-items: center;
 justify-content: center;
 height: 100svh;
 width: 100%;
-background-color: white;
+background-image: url(${dbg});
+background-color:rgba(82, 222, 229,0.1);
 svg{
     height: 100%;
     /* width: 100%; */
