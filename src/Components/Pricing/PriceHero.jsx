@@ -55,9 +55,10 @@ const PriceHero = () => {
             color="#131313"
             textAlign="left"
             mdfs="48px"
-            fs="3.2rem"
+            fs="7vw"
             mdlh="6.8rem"
             lh="4.6rem"
+            paddingBottom="1.5rem"
           >
             Kickstart your career in Product Management
           </H1>

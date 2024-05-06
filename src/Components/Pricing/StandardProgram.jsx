@@ -331,7 +331,7 @@ const StandardProgram = () => {
 export default StandardProgram;
 
 const StyledProgram = styled.div`
-  padding: 32px 24px 0 24px;
+  padding: 32px 0 0 24px;
   header {
     color: var(--Title-Text);
     text-align: center;
@@ -340,11 +340,11 @@ const StyledProgram = styled.div`
   }
   .program {
     position: relative;
-    width: 100%;
+    width: 93%;
     img {
       width: 32.71vw;
       position: absolute;
-      right: -5px;
+      right: -10px;
     }
   }
   .heading {

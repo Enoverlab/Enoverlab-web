@@ -8,14 +8,16 @@ import { PrimaryButton } from '../../Utils/styled/Buttons';
 const StandardOptions = () => {
   return (
     <StyledStandardOptions>
-        <H2 tA="center">
+        <header>
+        <H2 tA="center" fs="5.60vw" w="80%" >
         Other Options for Standard Program
         </H2>
+        </header>
         <main>
             <section>
                 <div className='card'>
                     <img src={fastTracking} alt="Fast Tracking" />
-                    <H3>Fast-Track</H3>
+                    <H3 fs="4.2vw">Fast-Track</H3>
                 </div>
                 <H4>
                 This is for individuals who want to complete the standard program in 5 - 10 weeks instead of 18 - 20 weeks.
@@ -27,7 +29,7 @@ const StandardOptions = () => {
             <section>
                 <div className='card'>
                     <img src={privateCoaching} alt="private Coaching" />
-                    <H3>Private Coaching</H3>
+                    <H3 fs="4.2vw">Private Coaching</H3>
                 </div>
                 <H4 mdfs="">
                 This is for high-level professionals who want a one-on-one coaching to get personal mentorship and support.
@@ -47,6 +49,11 @@ export default StandardOptions
 
 const StyledStandardOptions = styled.div`
    background: #E8F3FE;
+   header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
    h2,h3{
     color: var(--Title-Text);
    }

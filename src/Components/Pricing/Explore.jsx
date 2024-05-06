@@ -76,7 +76,7 @@ const StyledExplore = styled.div`
     font-weight: 700;
     padding-bottom: 10px;
   }
-  padding: 0 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   padding-bottom: 64px;
   @media (min-width: 1024px) {
     header{

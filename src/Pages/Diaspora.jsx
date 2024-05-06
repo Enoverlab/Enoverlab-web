@@ -6,14 +6,14 @@ import Coaching from '../Components/Diaspora/Coaching'
 import AboutProg from '../Components/Diaspora/AboutProg'
 import Testimonies from '../Components/Pricing/Testimonies'
 import SuccessStories from '../Components/Pricing/SuccessStories'
-import Header from '../Components/DiasporaHeader'
+import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Placement from '../Components/Diaspora/Placement'
 import Started from '../Components/Diaspora/Started'
 const Diaspora = () => {
   return (
     <div>
-        <Header bgColor="#fff" bgColorMobile="#FFF" />
+        <Header  />
         <Hero/>
         <AboutProg/>
         <Details/>
