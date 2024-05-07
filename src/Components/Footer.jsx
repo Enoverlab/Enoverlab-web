@@ -129,7 +129,7 @@ const Footer = ({p}) => {
                 lineHeight="28px"
                 color="var(--Body-Text)"
                 mdfs="1.058vw"
-                fs="2.8037vw"
+                fs="3.2037vw"
                 fw="500"
               >
                 Building impactful product managers for today, tomorrow, and the
@@ -230,7 +230,7 @@ const Footer = ({p}) => {
             <HashLink to="/programs#basic">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -242,7 +242,7 @@ const Footer = ({p}) => {
             <HashLink to="/programs#advanced">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -253,7 +253,7 @@ const Footer = ({p}) => {
             <HashLink to="/programs#executive">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -264,7 +264,7 @@ const Footer = ({p}) => {
             <Link to="/corporate">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -275,7 +275,7 @@ const Footer = ({p}) => {
             <HashLink to="/programs#onsite">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -297,7 +297,7 @@ const Footer = ({p}) => {
             <Link to="/blog">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -308,7 +308,7 @@ const Footer = ({p}) => {
             <HashLink to="/resources#ebooks">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -319,7 +319,7 @@ const Footer = ({p}) => {
             <HashLink to="/resources#sessions">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -330,7 +330,7 @@ const Footer = ({p}) => {
             <a href="https://wa.me/message/SFVOFYV4VGWDH1">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -352,7 +352,7 @@ const Footer = ({p}) => {
             <Link to="/about">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -367,7 +367,7 @@ const Footer = ({p}) => {
             >
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -378,7 +378,7 @@ const Footer = ({p}) => {
             <Link to="/#">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -390,7 +390,7 @@ const Footer = ({p}) => {
             <HashLink to="/programs#success">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -401,7 +401,7 @@ const Footer = ({p}) => {
             <a href="https://chat.whatsapp.com/J0jWx8V7joE3Y0ridmgAZ5">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -412,7 +412,7 @@ const Footer = ({p}) => {
             <a href="tel:09063124595">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -423,7 +423,7 @@ const Footer = ({p}) => {
             <a href="#e">
               <P
                 color="var(--Body-Text)"
-                fs="2.803vw"
+                fs="3vw"
                 mdfs="1.058vw"
                 lh="28px"
                 fw="400"
@@ -480,7 +480,7 @@ const Footer = ({p}) => {
       <div className="footer-bottom">
         <P
           color="var(--Body-Text)"
-          fs="2.803vw"
+          fs="3vw"
           mdfs="1.058vw"
           lh="28px"
           fw="400"

@@ -23,12 +23,12 @@ const ProgramDetails = () => {
                     <div className="item">
                       <div className='item1'>
                        <div >
-                       <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
+                       <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.9vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -36,12 +36,12 @@ const ProgramDetails = () => {
                         </H2>
                        </div>
                        <div>
-                       <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
+                       <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2
                           mdfs="1.58vw"
-                          fs="3.27vw"
+                          fs="3.9vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -51,12 +51,12 @@ const ProgramDetails = () => {
                       </div>
                       <div className="item2">
                         <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Location
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.9vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -66,12 +66,12 @@ const ProgramDetails = () => {
                       </div>
                       <div className='item3'>
                         <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Duration
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.9vw"
                           fw="600"
                           mb="1rem"
                           color="var(--Body-Text)"
@@ -80,7 +80,7 @@ const ProgramDetails = () => {
                         </H2>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.9vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -88,12 +88,12 @@ const ProgramDetails = () => {
                         </H2>
                         </div>
                         <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
                         <H2
                           mdfs="2.38vw"
-                          fs="3.27vw"
+                          fs="3.9vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -126,7 +126,7 @@ const ProgramDetails = () => {
                   {OnsiteProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
-                      <P fs="3.27vw" mdfs="1.23vw" color="var(--Body-Text)">
+                      <P fs="3.9vw" mdfs="1.23vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>
@@ -145,11 +145,11 @@ const StyledProgramDetail = styled.div`
     padding: 33px 20px 3.2rem 15px;
   .program {
     position: relative;
-    width: 100%;
+    width: 93%;
     img {
       width: clamp(100px, 32vw, 140px);
       position: absolute;
-      right: -5px;
+      right: -10px;
     }
   }
   .heading {

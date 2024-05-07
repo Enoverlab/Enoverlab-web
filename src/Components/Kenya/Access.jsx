@@ -17,7 +17,7 @@ const Access = () => {
             {accessData.map(data => {
                 return(<div className='data'>
                     <img src={tick} alt="tick checks" />
-                    <H3>{data}</H3>
+                    <H3 fs="3.5vw">{data}</H3>
                     </div>)
             })}
         </div>

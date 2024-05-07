@@ -24,7 +24,7 @@ const Home = () => {
   {isLoading ? <LoadingScreen/> : <div>
        <Header/>
         <Hero/>
-        <ProductSession/>
+        {/* <ProductSession/> */}
         <ProductSection/>
         <EnoverSpecial/>
         <Partners/>

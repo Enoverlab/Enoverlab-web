@@ -66,6 +66,7 @@ const StyledPricingTestimonialCard = styled.div`
         margin-top: 1.125rem;
         @media (max-width: 768px){
             margin-top:1rem;
+            padding-bottom: 2rem;
         }
     }
   }

@@ -73,7 +73,7 @@ const ToolsStyle = styled.div`
                 font-weight: 700;
             }
             p{
-                font-size: 3.32vw;
+                font-size: 3.62vw;
                 font-weight: 400;
                 line-height: 24px;
                 color: #000;
@@ -113,7 +113,7 @@ const ToolsStyle = styled.div`
                 text-align: center;
                 column-gap: 8px;
                 img {
-                    width: 4.67vw;
+                    width: 5.27vw;
                 }
                 p {
                     font-size: 2.903vw;

@@ -48,7 +48,7 @@ const Testimonies = () => {
                     <H4 fs="5.60vw" mdfs="2.38vw" fw={700} color="#181818" lh="normal">
                     Students' Projects
                     </H4>
-                        <P color="#363636" fs="3.27vw" mdfs="1.322vw" fw={300}>
+                        <P color="#363636" fs="3.67vw" mdfs="1.322vw" fw={300}>
                         Listen to some of our trained product managers showcase their skills, you can also achieve such feat.
                         </P>
                     </div>

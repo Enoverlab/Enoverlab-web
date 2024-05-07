@@ -57,12 +57,12 @@ const PriceHero = () => {
             mdfs="48px"
             fs="7vw"
             mdlh="6.8rem"
-            lh="4.6rem"
-            paddingBottom="1.5rem"
+            lh="3.7rem"
+            paddingBottom="2rem"
           >
             Kickstart your career in Product Management
           </H1>
-          <H4 color="var(--Body-Text)" mdlh="3rem" fs="3.68vw" mdfs="2rem" mdwidth="85%">
+          <H4 color="var(--Body-Text)" mdlh="3rem" fs="3.9vw" mdfs="2rem" mdwidth="85%">
             Regardless of your background, you too can become an Exceptional Product Manager in the next 6 months.
           </H4>
           </section>

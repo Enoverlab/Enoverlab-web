@@ -9,7 +9,7 @@ const StandardOptions = () => {
   return (
     <StyledStandardOptions>
         <header>
-        <H2 tA="center" fs="5.60vw" w="80%" >
+        <H2 tA="center" fs="5.60vw" w="75%" >
         Other Options for Standard Program
         </H2>
         </header>

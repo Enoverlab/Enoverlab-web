@@ -8,7 +8,7 @@ const Started = () => {
   return (
     <StyledStarted>
         <div className="started-container">
-           <H1 mdfs="3.17vw" mdlh="6.8rem" lh="4.8rem" color= {theme.color.light} fs="7.47vw" fontWeight={600} >
+           <H1 mdfs="3.17vw" mdlh="6.8rem" lh="4.8rem" color= {theme.color.light} fs="7vw" fontWeight={600} >
            Launch  your Product Managment career today</H1>
             <div className="button-container">
                 <BlackButton to="/programs" Text="Get Started"  />
