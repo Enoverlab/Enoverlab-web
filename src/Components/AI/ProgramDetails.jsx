@@ -145,11 +145,11 @@ const StyledProgramDetail = styled.div`
     padding: 33px 20px 3.2rem 15px;
   .program {
     position: relative;
-    width: 100%;
+    width: 93%;
     img {
       width: clamp(100px, 32vw, 140px);
       position: absolute;
-      right: -5px;
+      right: -10px;
     }
   }
   .strike{
