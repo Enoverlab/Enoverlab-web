@@ -191,7 +191,7 @@ const StandardProgram = () => {
                   {onlineProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
-                      <P fs="3.6" mdfs="1.33vw" color="var(--Body-Text)">
+                      <P fs="3.6vw" mdfs="1.33vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>
@@ -313,7 +313,7 @@ const StandardProgram = () => {
                   {OnsiteProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
-                      <P fs="3.6" mdfs="1.23vw" color="var(--Body-Text)">
+                      <P fs="3.6vw" mdfs="1.23vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>

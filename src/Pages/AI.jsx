@@ -6,7 +6,7 @@ import ProgramDetails from "../Components/AI/ProgramDetails"
 import Footer from "../Components/Footer"
 import Header from "../Components/Header"
 import Started from "../Components/HomeComponents/Started"
-import { FaqSection } from "../Components/Pricing/FaqSection"
+import { FaqSection } from "../Components/AI/FaqSection"
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
 

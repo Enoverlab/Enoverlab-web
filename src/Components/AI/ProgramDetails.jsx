@@ -3,7 +3,7 @@ import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import { AiProgram } from '../../constants'
-import weeks12 from "../../assets/icon/weeks12.svg"
+import weeks4 from "../../assets/icon/weeks4.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
@@ -13,22 +13,22 @@ const ProgramDetails = () => {
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
                 <div className="heading" id="onsite">
-                  <H4 mdfs="2.38vw" fw="700">
+                  <H4 mdfs="2.38vw" fs="4.2vw" fw="700">
                   AI Product Management <br /> Training
                   </H4>
-                  <img src={weeks12} alt="12 weeks" />
+                  <img src={weeks4} alt="4 weeks" />
                 </div>
                 <div className="cover2">
                   <main>
                     <div className="item">
                       <div className='item1'>
                        <div >
-                       <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                       <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -36,12 +36,12 @@ const ProgramDetails = () => {
                         </H2>
                        </div>
                        <div>
-                       <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                       <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2
                           mdfs="1.58vw"
-                          fs="3.27vw"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -51,12 +51,12 @@ const ProgramDetails = () => {
                       </div>
                       <div className="item2">
                         <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
                           Location
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -66,12 +66,12 @@ const ProgramDetails = () => {
                       </div>
                       <div className='item3'>
                         <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
                           Duration
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -79,12 +79,12 @@ const ProgramDetails = () => {
                         </H2>
                         </div>
                         <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
                         <H2
                           mdfs="2.38vw"
-                          fs="3.27vw"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -126,7 +126,7 @@ const ProgramDetails = () => {
                   {AiProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
-                      <P fs="3.27vw" mdfs="1.23vw" color="var(--Body-Text)">
+                      <P fs="3.6vw" mdfs="1.23vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>
