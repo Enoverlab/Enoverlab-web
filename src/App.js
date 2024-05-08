@@ -21,7 +21,6 @@ import ProgramsAd from './Pages/ProgramsAd'
 import Upskill from './Pages/Upskill'
 import PMP from './Pages/PMP'
 import Diaspora from './Pages/Diaspora'
-import NewPricing from './Pages/NewPricing'
 import Policy from './Pages/Policy'
 import Physical from './Pages/Physical'
 import {ChakraProvider} from '@chakra-ui/react'
@@ -55,7 +54,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/programs" element={<Pricing />} />
-        <Route path="/ai" element={<AI/>} />
+        <Route path="/aipmp" element={<AI/>} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/pay" element={<Pay />} />
@@ -71,7 +70,6 @@ function App() {
         <Route path="/upskill" element={<Upskill/>} />
         <Route path="/projectmanagement" element={<PMP/>} />
         <Route path="/diaspora" element={<Diaspora/>} />
-        <Route path="/newprograms" element={<NewPricing/>} />
         <Route path="/policy" element={<Policy/>} />
         <Route path="/physical" element={<Physical/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />

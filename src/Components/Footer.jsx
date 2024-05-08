@@ -420,7 +420,7 @@ const Footer = ({p}) => {
                 Contact Us
               </P>
             </a>
-            <a href="#e">
+            <a href="/policy">
               <P
                 color="var(--Body-Text)"
                 fs="3vw"

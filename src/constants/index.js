@@ -8,6 +8,7 @@ import sp2 from "../assets/icon/sp2.png";
 import ad1 from "../assets/icon/ad1.png";
 import ad2 from "../assets/icon/ad2.png";
 import ad3 from "../assets/icon/ad3.png";
+import ad4 from "../assets/icon/web3.jpg"
 import ip1 from "../assets/icon/ip1.png";
 import ip2 from "../assets/icon/ip2.png";
 import avatar1 from "../assets/successImage1.png";
@@ -72,7 +73,15 @@ export const advancedPrograms = [
     img: ad3,
     headText: "AI Product Management",
     subText: "For Product Leaders",
-    link : "/ai"
+    linkText: "Coming Soon!!!",
+    link : "/aipmp"
+  },
+  {
+    img: ad4,
+    headText: "Web 3 Product Management",
+    subText: "For Product Leaders",
+    linkText: "Coming Soon!!!",
+    link : "/aipmp"
   },
 ];
 
@@ -173,6 +182,18 @@ export const OnsiteProgram = [
   'After training support; interview prep, CV review and job recommendations**'
 ]
 
+export const AiProgram = [
+   'Key definitions - introduction to AI and different forms of AI ',
+ 'Developing an Analytical mind  ' ,
+ 'Research, Data gathering and Management ' ,
+ 'AI Product Development Lifecycle ',
+ 'AI Product Strategy ',
+ 'Measuring success of AI Products',
+ 'Data/AI Governance ',
+ 'Machine Learning Operations (MLOPs): Implementing MLOPs for delivery of AI Products',
+ 'Dissection Case Studies of AI products',
+] 
+
 
 
 export const FaqContent = [
@@ -196,6 +217,39 @@ export const FaqContent = [
       questionTitle:  "5. What are the benefits of becoming a Product Manager?",
       questionAnswer: "By becoming a Product Manager, you will build skills that will make you very valuable to any organization. You can work fully remote or hybrid for any company in the world, create a product that solves problems, earn a great salary for your effort, and make the lives of people better through the product solutions you create."
   }
+]
+
+export const AiFaqContent = [
+  {
+    
+    questionTitle: "1.  What are the prerequisites for this program? ",
+    questionAnswer: "This program is designed for product managers with a basic understanding of product development. No prior knowledge of AI is required."
+  },
+  {
+    
+    questionTitle: "2.  Will I learn how to code AI models? ",
+    questionAnswer: "This program focuses on the product management aspects of AI, not on coding the models themselves. However, we will discuss the different types of AI models and the development process."
+  },
+  {
+    
+    questionTitle: "3.  Is this program relevant for non-technical product managers?",
+    questionAnswer: "Absolutely! The program equips product managers with the necessary knowledge to lead AI product development teams."
+  },
+  {
+    
+    questionTitle: "4. What types of AI products will we be covering?",
+    questionAnswer: "We will explore a variety of AI products across different industries, showcasing the diverse applications of this technology. "
+  },
+  {
+    
+    questionTitle: "5. How will the case study be conducted? ",
+    questionAnswer: "The case study will be a group activity where you'll analyse a real-world AI product, identify its core elements, and discuss its development process and potential future directions."
+  },
+  {
+    
+    questionTitle: "6. What should I expect after this program? ",
+    questionAnswer: "By the end of the program, participants will be future-proofed with the knowledge to build innovative AI products that make a positive impact and derive value to customers and organisations."
+  },
 ]
 
 export const partners = [

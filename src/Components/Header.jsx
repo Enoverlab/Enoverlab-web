@@ -162,7 +162,7 @@ const standard = [
 const advanced = [
   {
     linkName : 'AI Product Management',
-    linkto : '/ai',
+    linkto : '/aipmp',
   },
   {
     linkName : 'Growth Product Management',

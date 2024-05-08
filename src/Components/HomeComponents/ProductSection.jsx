@@ -56,8 +56,10 @@ const ProductSection = () => {
             },
           }}
           autoHeight={true}
+          touchReleaseOnEdges={true}
+          nested={true}
           autoplay={{
-            delay: 5000,
+            delay: 7000,
           }}
           className="swipe"
         >
@@ -78,22 +80,46 @@ const ProductSection = () => {
             </Flex>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="ad">
-            <div>
-            <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem">
+          <SwiperSlide >
+          <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem">
               Advanced Programs
             </H3>
-            <Flex wrap="wrap" gap="15px" >
-              {advancedPrograms.map((programs) => (
-                <Card
-                  link={programs.link}
-                  img={programs.img}
-                  headText={programs.headText}
-                  subText={programs.subText}
-                />
-              ))}
-            </Flex>
-            </div>
+            <Swiper
+            modules={[Autoplay]}
+            spaceBetween={5}
+            slidesPerView={1}
+            autoHeight={true}
+            className="swi"
+            autoplay={{ 
+              delay: 2000
+            }}
+          >
+            <SwiperSlide className="ad">
+                  <Flex wrap="wrap" gap="15px" >
+                  {advancedPrograms.filter((programs,index) => index < 2 ).map(programs => (
+                    <Card
+                    link={programs.link}
+                    img={programs.img}
+                    headText={programs.headText}
+                    subText={programs.subText}
+                  />
+                  ))}
+                </Flex>
+              </SwiperSlide>
+              <SwiperSlide className="ad">
+                  <Flex wrap="wrap" gap="15px" mdalign="stretch" >
+                  {advancedPrograms.filter((programs,index) => index > 1 ).map(programs => (
+                    <Card
+                    link={programs.link}
+                    img={programs.img}
+                    headText={programs.headText}
+                    subText={programs.subText}
+                    linkText={programs.linkText}
+                  />
+                  ))}
+                </Flex>
+              </SwiperSlide>
+          </Swiper>
           </SwiperSlide>
           <SwiperSlide className="ip">
             <div>
@@ -120,7 +146,7 @@ const ProductSection = () => {
 
 export default ProductSection;
 
-export const Card = ({ img, headText, subText, link }) => {
+export const Card = ({ img, headText, subText, link, linkText }) => {
   return (
     <StyledCard>
       <Link to={link}>
@@ -133,7 +159,7 @@ export const Card = ({ img, headText, subText, link }) => {
           </P>
         </div>
         <Flex gap="8px" justify="none" mdjustify="end">
-          <H4 fs="clamp(12px,3.73vw,16px)" mdfs="clamp(18px,1.322vw,20px)">Learn more</H4>
+          <H4 fs="clamp(12px,3.73vw,16px)" mdfs="clamp(18px,1.322vw,20px)">{linkText || 'Learn more'}</H4>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
           <path d="M15.037 18.1567L13.626 16.7388L16.896 13.4838L3.29103 13.4707L3.29303 11.4707L16.861 11.4838L13.646 8.25375L15.063 6.84375L20.707 12.5138L15.037 18.1567Z" fill="white"/>
           </svg>
@@ -182,6 +208,10 @@ const StyledCard = styled.div`
   @media (min-width: 1024px) {
     section {
       padding: 15px 16px;
+    }
+    img{
+    max-width : 53.6rem;
+    max-height : 24.8rem
     }
   }
 `;

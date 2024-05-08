@@ -2,7 +2,7 @@ import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
-import { OnsiteProgram } from '../../constants'
+import { AiProgram } from '../../constants'
 import weeks12 from "../../assets/icon/weeks12.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
@@ -90,6 +90,15 @@ const ProgramDetails = () => {
                         >
                           ₦300,000
                         </H2>
+                        <H2
+                          mdfs="1.38vw"
+                          fs="2.27vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                          className='strike'
+                        >
+                          ₦400,000
+                        </H2>
                       </div>
                       </div>
                     </div>
@@ -114,7 +123,7 @@ const ProgramDetails = () => {
                   Training Details
                 </H4>
                 <div className="list">
-                  {OnsiteProgram.map((pg) => (
+                  {AiProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
                       <P fs="3.27vw" mdfs="1.23vw" color="var(--Body-Text)">
@@ -142,6 +151,9 @@ const StyledProgramDetail = styled.div`
       position: absolute;
       right: -5px;
     }
+  }
+  .strike{
+    text-decoration: line-through;
   }
   .heading {
     padding: 2.5rem 0;

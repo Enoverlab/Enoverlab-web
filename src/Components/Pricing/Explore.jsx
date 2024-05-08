@@ -44,16 +44,17 @@ const Explore = () => {
         }
       }
       >
-        {advancedPrograms.map(pg => <SwiperSlide>
+        {advancedPrograms.filter((x,idx)=>idx < 2).map(pg => <SwiperSlide>
             <Card
                   key={pg.headText}
                   img={pg.img}
                   headText={pg.headText}
                   subText={pg.subText}
                   link={pg.link}
+                  
                 />
         </SwiperSlide>)}
-        {advancedPrograms.map(pg => <SwiperSlide>
+        {advancedPrograms.filter((x,idx)=>idx > 1).map(pg => <SwiperSlide>
             <Card
                   key={pg.headText}
                   img={pg.img}

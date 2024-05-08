@@ -13,19 +13,20 @@ export const FaqAccordion = ({questionTitle, questionAnswer}) => {
     <>
      <AccordionItem
      py="1rem"
+     borderBottom="0.5px solid #000"
      >
           <AccordionButton background="none">
             <Box flex="1" textAlign="left">
-              <Heading fontWeight="600" fontSize={["1rem","1.25rem"]} lineHeight={["1.5","2rem"]}>
+              <Heading fontWeight="600" fontSize={["3.9vw","1.822vw"]} lineHeight={["1.9","2.9rem"]}>
             {questionTitle}
               </Heading>
             </Box>
-            <AccordionIcon />
+            <AccordionIcon fontSize="2.4rem" />
           </AccordionButton>
           <AccordionPanel pb={4}>
             <Text
-            lineHeight={["1.5rem","1.5rem"]}
-            fontSize={["0.8rem","1rem"]}
+            lineHeight={["1.9rem","3.2rem"]}
+            fontSize={["3.6vw","1.858vw"]}
             >
            {questionAnswer}
             </Text>
