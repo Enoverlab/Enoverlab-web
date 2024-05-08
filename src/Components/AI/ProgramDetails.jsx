@@ -13,7 +13,7 @@ const ProgramDetails = () => {
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
                 <div className="heading" id="onsite">
-                  <H4 mdfs="2.38vw" fs="4.2vw" fw="700">
+                  <H4 mdfs="2.38vw" fs="4vw" fw="700">
                   AI Product Management <br /> Training
                   </H4>
                   <img src={weeks4} alt="4 weeks" />
@@ -145,7 +145,7 @@ const StyledProgramDetail = styled.div`
     padding: 33px 20px 3.2rem 15px;
   .program {
     position: relative;
-    width: 93%;
+    width: 95%;
     img {
       width: clamp(100px, 32vw, 140px);
       position: absolute;
