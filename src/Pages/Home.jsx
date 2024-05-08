@@ -11,7 +11,7 @@ import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import Partners from '../Components/HomeComponents/Partners'
 import Alumni from '../Components/HomeComponents/Alumni'
 import { useState } from 'react'
-import LoadingScreen from '../Components/LoadingScreen'
+import LoadingScreen2 from '../Components/LoadingScreen2'
 // import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
     setIsLoading(false)
   },3500)
   return (<>
-  {isLoading ? <LoadingScreen/> : <div>
+  {isLoading ? <LoadingScreen2/> : <div>
        <Header/>
         <Hero/>
         {/* <ProductSession/> */}
