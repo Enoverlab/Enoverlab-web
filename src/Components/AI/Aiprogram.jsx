@@ -8,8 +8,7 @@ const Aiprogram = () => {
     <StyledAiprogram>
       <div className="cta">
         <H4 color="#1A1A1A" fs="1.6rem">
-          Train with Certified product managers and optimise Poduct Management
-          skills within 3 months!
+        Come learn how to solve problems, build products, and grow your company with Artificial Intelligence (AI)
         </H4>
         <SecondaryButton Text="Enroll Now" />
       </div>
