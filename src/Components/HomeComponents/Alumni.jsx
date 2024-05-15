@@ -15,8 +15,8 @@ const Alumni = () => {
         the world
       </H4>
       <section className="imageGrid" >
-        {alumni.map((x) => (
-          <img src={x} alt="x" />
+        {alumni.map((x, idx) => (
+          <img src={x} alt="x" key={idx}/>
         ))}
       </section>
     </StyledAlumni>
