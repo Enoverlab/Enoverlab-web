@@ -13,14 +13,14 @@ const Banner = () => {
                 <img src={character} className="characterMobile" alt="character" />
               
                   <div className="details mobile">
-                     <h4>Mark Yusuf</h4>
-                    <p>Product Owner at FCMB</p>
+                     <h4>Philip Ade-Akanbi</h4>
+                    <p>AI Product Manager, Wema Bank</p>
                     </div>
                 </div>
             </div>
             <div className="content">
                 <h5>Session Topic:</h5>
-                <h2> The basics of technical products management and the value of specialised training for experienced product managers </h2>
+                <h2> Introduction To Artificial Intelligence Product Management Program</h2>
                 {/* <p>(Blackberry, Nokia, Sony, OLX, Lagos Red Taxi, Mr Biggs)</p> */}
             </div>
             <div className="cont">

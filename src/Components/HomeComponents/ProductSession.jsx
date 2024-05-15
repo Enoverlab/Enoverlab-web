@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import speaker from "../../assets/icon/speaker.png";
+import speaker from "../../assets/icon/speaker.jpg";
 import calendar from "../../assets/icon/calender.png";
 import clock from "../../assets/icon/time.png";
-import { SecondaryButton } from "../../Utils/styled/Buttons";
+import { SecondaryButtonA } from "../../Utils/styled/Buttons";
 
 const ProductSession = () => {
   return (
@@ -14,30 +14,29 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
               <h2>Guest Speaker:</h2>
-              <h3>Adekunle Rosemary</h3>
-              <h4>Product Manager</h4>
+              <h3>Philip Ade-Akanbi</h3>
+              <h4>AI Product Manager, Wema Bank</h4>
             </div>
           </StyledSpeakerDetails>
           <DetailsSession>
             <h2>Topic:</h2>
             <h3>
-              How to grow your career after completing <br /> a product management
-              training.
+            Introduction To Artificial Intelligence <br/> Product Management Program
             </h3>
           </DetailsSession>
         </Content>
         <TimeContent>
           <Timing>
             <img src={calendar} alt="calendar" />
-            February 24, 2025
+            May 18, 2024
           </Timing>
           <Timing>
             <img src={clock} alt="clock" />
-            8pm
+            7pm
           </Timing>
         </TimeContent>
         <section>
-        <SecondaryButton Text="Register"/>
+        <SecondaryButtonA Text="Register" to='https://docs.google.com/forms/d/1MGN1d7-fgTcs4ackWRmsYrhrtH3c7aplm4yER37lGWg/edit?ts=65cdcca6' target="_blank"/>
         </section>
       </MainContent>
     </div>
@@ -121,6 +120,7 @@ export const StyledSpeakerDetails = styled.div`
   gap: 32px;
   img {
     width: 69px;
+    border-radius: 50%;
   }
   h2,h4{
     color: #F7F7F7;
