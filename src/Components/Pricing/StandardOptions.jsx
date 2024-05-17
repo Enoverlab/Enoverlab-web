@@ -4,6 +4,11 @@ import { H2,H3,H4 } from '../../Utils/styled/Typograpyhy';
 import fastTracking from "../../assets/icon/fastTracking.svg";
 import privateCoaching from "../../assets/icon/private.svg"
 import { PrimaryButton } from '../../Utils/styled/Buttons';
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay} from "swiper/modules";
+import "swiper/css";
+import "swiper/swiper-bundle.css";
+import "swiper/css/autoplay";
 
 const StandardOptions = () => {
   return (
@@ -13,8 +18,34 @@ const StandardOptions = () => {
         Other Options for Standard Program
         </H2>
         </header>
-        <main>
-            <section>
+        <Swiper
+        modules={[Autoplay]}
+        autoplay
+      breakpoints={
+        {
+            320 : {
+                slidesPerView : 1,
+                autoplay : {
+                    delay : 3000,
+                }
+            },
+            640:{
+                slidesPerView : 1,
+                autoplay : {
+                    delay : 5000
+                }
+            },
+            1024: {
+                slidesPerView : 2,
+                spaceBetween: 55,
+                autoplay : {
+                    delay : 5000
+                }
+            }
+        }
+      }
+        >
+            <SwiperSlide>
                 <div className='card'>
                     <img src={fastTracking} alt="Fast Tracking" />
                     <H3 fs="4.2vw">Fast-Track</H3>
@@ -25,11 +56,11 @@ const StandardOptions = () => {
                 <div className='learnContainer'>
                  <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More"/>
                 </div>
-            </section>
-            <section>
+            </SwiperSlide>
+            <SwiperSlide>
                 <div className='card'>
                     <img src={privateCoaching} alt="private Coaching" />
-                    <H3 fs="4.2vw">Private Coaching</H3>
+                    <H3 fs="4.2vw">Executive Coaching</H3>
                 </div>
                 <H4 mdfs="">
                 This is for high-level professionals who want a one-on-one coaching to get personal mentorship and support.
@@ -37,9 +68,8 @@ const StandardOptions = () => {
                 <div className='learnContainer'>
                  <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More"/>
                 </div>
-            </section>
-
-        </main>
+            </SwiperSlide>
+        </Swiper>
       
     </StyledStandardOptions>
   )
@@ -53,6 +83,7 @@ const StyledStandardOptions = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
    }
    h2,h3{
     color: var(--Title-Text);
@@ -89,12 +120,9 @@ const StyledStandardOptions = styled.div`
    @media (min-width: 1024px) {
     padding: 8rem 12rem;
     margin-bottom: 9.7rem;
-    main{
-    flex-direction: row;
-    justify-content: center;
-    margin: 7.8rem 0 0 0;
-    gap: clamp(8rem, 6.812vw, 10.2rem) ;
-   }
+    header{
+        margin-bottom: 4rem;
+    }
    section{
     width: 50%;
     max-width: 58.4rem;

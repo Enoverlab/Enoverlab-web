@@ -28,15 +28,15 @@ const Explore = () => {
                 }
             },
             1024: {
-                slidesPerView : 2.5,
-                spaceBetween: 15,
+                slidesPerView : 2.3,
+                spaceBetween: 25,
                 autoplay : {
                     delay : 5000
                 }
             },
             1440 : {
               slidesPerView : 2.5,
-                spaceBetween: 10,
+                spaceBetween: 15,
                 autoplay : {
                     delay : 5000
                 }
@@ -51,7 +51,7 @@ const Explore = () => {
                   headText={pg.headText}
                   subText={pg.subText}
                   link={pg.link}
-                  
+                  linkText={pg.linkText}
                 />
         </SwiperSlide>)}
         {advancedPrograms.filter((x,idx)=>idx > 1).map(pg => <SwiperSlide>
@@ -61,6 +61,7 @@ const Explore = () => {
                   headText={pg.headText}
                   subText={pg.subText}
                   link={pg.link}
+                  linkText={pg.linkText}
                 />
         </SwiperSlide>)}
       </Swiper>
