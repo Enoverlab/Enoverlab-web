@@ -105,7 +105,7 @@ export const StyledSecondaryButton = styled(StyledPrimaryButton)`
 
 export const SecondaryButton = ({target, to="#", Text, handleClick, w, arrowDown}) => {
   return (
-    <Link to={{to}} target={target}  onClick={handleClick} >
+    <Link to={to} target={target}  onClick={handleClick} >
       <StyledSecondaryButton w={w}>
         <h5>{Text}</h5>
         {

@@ -177,9 +177,9 @@ const StandardProgram = () => {
                   </main>
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
-                    <Link to="#" className="syll">
-                      Download Syllabus
-                    </Link>
+                    <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
+                    Download Syllabus
+                  </Link>
                   </div>
                 </form>
               </div>
@@ -292,7 +292,7 @@ const StandardProgram = () => {
                   </main>
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
-                    <Link to="#" className="syll">
+                    <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
                   </div>

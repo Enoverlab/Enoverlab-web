@@ -5,10 +5,11 @@ import fastTracking from "../../assets/icon/fastTracking.svg";
 import privateCoaching from "../../assets/icon/private.svg"
 import { PrimaryButton } from '../../Utils/styled/Buttons';
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay} from "swiper/modules";
+import { Autoplay, Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
 const StandardOptions = () => {
   return (
@@ -19,12 +20,17 @@ const StandardOptions = () => {
         </H2>
         </header>
         <Swiper
-        modules={[Autoplay]}
+        modules={[Autoplay,Pagination]}
+        pagination={{
+            el: ".very",
+            clickable: true,
+          }}
         autoplay
       breakpoints={
         {
             320 : {
                 slidesPerView : 1,
+                spaceBetween: 25,
                 autoplay : {
                     delay : 3000,
                 }
@@ -69,8 +75,9 @@ const StandardOptions = () => {
                  <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More"/>
                 </div>
             </SwiperSlide>
+            <div className="very"></div>
         </Swiper>
-      
+        
     </StyledStandardOptions>
   )
 }
@@ -115,6 +122,7 @@ const StyledStandardOptions = styled.div`
     margin-top: 1rem;
     display: flex;
     justify-content: flex-start;
+    margin-left : 10px;
    }
    padding: 3.2rem 2.4rem;
    @media (min-width: 1024px) {

@@ -78,12 +78,13 @@ export const MainContent = styled.div`
 const Content = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
   @media (min-width: 1024px) {
     /* width: 80%; */
     display: flex;
     flex-direction: row;
-    gap: 0;
+    gap: 10px;
+    margin-right: 20px;
   }
 `;
 
@@ -91,7 +92,7 @@ const TimeContent = styled.div`
     display: flex;
     align-items: center;
     gap: 15px;
-    margin: 20px 0px;
+    margin: 30px 0px;
   @media (min-width: 1024px) {
     position: absolute;
     gap: 30px;
@@ -135,6 +136,7 @@ export const StyledSpeakerDetails = styled.div`
     margin: 3px 0px;
   }
   @media (min-width: 1024px) {
+    margin-left: 20px;
     gap: clamp(3rem,2.91vw, 4rem);
     img {
       width: 135px;

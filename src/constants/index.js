@@ -45,13 +45,13 @@ export const standardPrograms = [
   {
     img: sp1,
     headText: "Online Training",
-    subText: "For Newbies in product ",
+    subText: "For Newbies in Product Management ",
     link : "/programs"
   },
   {
     img: sp2,
     headText: "On-Site Training",
-    subText: "For Newbies in product ",
+    subText: "For Newbies in Product Management ",
     link : "/programs"
   },
 ];
@@ -73,14 +73,14 @@ export const advancedPrograms = [
     img: ad3,
     headText: "AI Product Management",
     subText: "For Product Leaders",
-    linkText: "Coming Soon!!!",
+    linkText: "COMING SOON!!!",
     link : "/aipmp"
   },
   {
     img: ad4,
     headText: "Web 3 Product Management",
     subText: "For Product Leaders",
-    linkText: "Coming Soon!!!",
+    linkText: "COMING SOON!!!",
     link : "/aipmp"
   },
 ];
@@ -90,13 +90,15 @@ export const internationalPrograms = [
     img: ip1,
     headText: "Diaspora Program",
     subText: "For Africans in diaspora",
-    link : '/diaspora'
+    link : '/diaspora',
+    linkText: "COMING SOON!!!",
   },
   {
     img: ip2,
     headText: "Kenya Center",
     subText: "For Newbies in Kenya",
-    link : "/kenya"
+    link : "/kenya",
+    linkText: "COMING SOON!!!",
   },
 ];
 

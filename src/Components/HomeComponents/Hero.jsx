@@ -31,11 +31,11 @@ const Hero = () => {
         />
         <div className="text">
           <h2>
-            7K+ <span>Students</span>
+            20K+ <span>Members</span>
           </h2>
           <img src={line} alt="" />
           <h2>
-            7+ <span>Locations</span>
+            20+ <span>Locations</span>
           </h2>
         </div>
       </StyledHeroBody>

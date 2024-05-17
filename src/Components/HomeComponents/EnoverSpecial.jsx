@@ -20,7 +20,7 @@ const EnoverSpecial = () => {
         <div className="topSectCard">
           <div className="writeUp">
             <h1>
-            7<small>+</small><span>Locations</span> 
+            7<small>+ </small><span> Locations</span> 
             </h1>
             <p>
             Learn virtually from home or visit hubs in your city.
@@ -81,13 +81,13 @@ const Styledspecial = styled.div`
     color: white;
     padding-bottom: clamp(4rem,12.85vw,5.5rem);
     header{
-      font-size: clamp(1.8rem,5.60vw,2.4rem);
+      font-size: clamp(1.8rem,5.80vw,2.9rem);
       font-weight: 700;
       line-height: 32px;
       padding-bottom: 0.8rem;
     }
     p{
-      font-size: clamp(1rem,3.27vw,1.4rem);
+      font-size: clamp(1rem,3.5vw,1.8rem);
       font-style: normal;
       font-weight: 400;
       line-height: 22px;

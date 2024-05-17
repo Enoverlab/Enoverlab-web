@@ -57,9 +57,8 @@ const ProductSection = () => {
           }}
           autoHeight={true}
           touchReleaseOnEdges={true}
-          nested={true}
           autoplay={{
-            delay: 7000,
+            delay: 10000,
           }}
           className="swipe"
         >
@@ -91,7 +90,7 @@ const ProductSection = () => {
             autoHeight={true}
             className="swi"
             autoplay={{ 
-              delay: 2000
+              delay: 5000
             }}
           >
             <SwiperSlide className="ad">
@@ -133,6 +132,7 @@ const ProductSection = () => {
                   img={programs.img}
                   headText={programs.headText}
                   subText={programs.subText}
+                  linkText={programs.linkText}
                 />
               ))}
             </Flex>
@@ -151,6 +151,9 @@ export const Card = ({ img, headText, subText, link, linkText }) => {
     <StyledCard>
       <Link to={link}>
       <img src={img} alt="subText" className="cardImg" />
+      <div className="overlay">
+
+      </div>
       <section>
         <div>
           <H4 fs="clamp(14px,4.20vw,18px)" mdfs="clamp(18px,1.322vw,20px)" >{headText}</H4>
@@ -202,16 +205,28 @@ const StyledCard = styled.div`
     width: 100%;
     padding: 10px 16px 10px 16px;
   }
+  .overlay{
+    position: absolute;
+    background: rgba(0, 0, 0,0.4);
+    border-radius: 20px;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
   img {
     border-radius: 20px;
+    width : 88.4vw;
+    height: 48vw;
   }
   @media (min-width: 1024px) {
     section {
       padding: 15px 16px;
     }
     img{
+    width: 34vw;
+    height: 18.37vw;
     max-width : 53.6rem;
-    max-height : 24.8rem
+    max-height : 24.8rem;
     }
   }
 `;
