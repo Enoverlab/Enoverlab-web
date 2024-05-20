@@ -137,7 +137,7 @@ const StyledProgramDetail = styled.div`
     padding: 33px 20px 3.2rem 15px;
   .program {
     position: relative;
-    width: 93%;
+    width: 97%;
     img {
       width: clamp(100px, 32vw, 140px);
       position: absolute;
@@ -168,7 +168,7 @@ const StyledProgramDetail = styled.div`
     gap:21.164vw;
   }
   .item3{
-    gap: 19.841vw;
+    gap: 35.841vw;
   }
   .list {
     display: flex;
@@ -211,6 +211,9 @@ const StyledProgramDetail = styled.div`
     }
     .item{
     gap: 65px;
+  }
+  .item3{
+    gap: 27.841vw;
   }
     .list {
       display: flex;
