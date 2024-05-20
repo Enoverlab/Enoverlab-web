@@ -99,6 +99,7 @@ h4{
     .leftContainer{
         padding-top: 1.6rem;
         width: 45%;
+        
     }
     .kenyaCity{
         max-width: 30.06vw;
