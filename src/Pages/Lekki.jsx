@@ -1,15 +1,14 @@
 import LekkiHero from '../Components/Lekki/LekkiHero'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import { ClassTools } from '../Components/Pricing/ClassTools'
-import Access from '../Components/Kenya/Access'
+import Access from '../Components/Lekki/Access'
 import ProgramDetails from '../Components/Lekki/ProgramDetails'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import { FaqSection } from "../Components/Pricing/FaqSection"
-import { H2 } from '../Utils/styled/Typograpyhy'
-import Formi from '../Components/Kenya/Form'
+import Formi from '../Components/Lekki/Form'
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
+import Testimonials from '../Components/HomeComponents/Testimonials'
 
 const Lekki = () => {
   const [loading, setLoading] = useState(true)
@@ -26,10 +25,9 @@ const Lekki = () => {
         <LekkiHero/>
         <Access/>
         <ProgramDetails/>
-        <ClassTools/>
         <Formi/>
+        <Testimonials/>
         <div>
-        <H2 mt="4rem" tA="center" color='var(--TItle-Text)'>What Our Alumni Say</H2>
         <SuccessStories/>
         </div>
         <FaqSection/>

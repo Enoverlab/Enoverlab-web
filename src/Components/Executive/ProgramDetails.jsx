@@ -166,12 +166,6 @@ const StyledProgramDetail = styled.div`
     display: grid;
     grid-template-columns: 1fr .5fr;
   }
-  /* .item1{
-    gap:21.164vw;
-  }
-  .item3{
-    gap: 35.841vw;
-  } */
   .list {
     display: flex;
     flex-direction: column;
@@ -185,7 +179,7 @@ const StyledProgramDetail = styled.div`
     justify-content: space-between;
     .syll {
         color: #175afe;
-        font-size: 14px;
+        font-size: 12px;
       }
 
   }

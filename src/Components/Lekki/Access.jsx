@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { H2, H3, H4, P } from '../../Utils/styled/Typograpyhy'
-import learningHub from "../../assets/icon/learnHub.png"
+import learningHub from "../../assets/icon/learnhubLekki.png"
 import { accessData } from '../../constants'
 import tick from "../../assets/icon/tick.png"
 
@@ -59,7 +59,7 @@ const StyledAccess = styled.div`
     }
     @media (min-width: 1024px) {
         flex-direction: row-reverse;
-        padding: 10rem 9.6rem;
+        padding: 15rem 9.6rem 10rem 9.6rem;
         h2{
             margin: 0.8rem 0 1.6rem 0;
         }

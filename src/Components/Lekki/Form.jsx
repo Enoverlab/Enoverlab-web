@@ -105,6 +105,7 @@ const StyledForm = styled.div`
                 display: flex;
                 width: 100%;
                 max-width: 450px;
+                margin-top: 1.5rem;
                 justify-content: center;
             }
         }

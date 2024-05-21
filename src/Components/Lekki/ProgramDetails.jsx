@@ -3,7 +3,7 @@ import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import { OnsiteProgram } from '../../constants'
-import weeks12 from "../../assets/icon/weeks12.svg"
+import weeks20 from "../../assets/icon/20weeks.png"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
@@ -14,21 +14,21 @@ const ProgramDetails = () => {
               <div className="program">
                 <div className="heading" id="onsite">
                   <H4 mdfs="2.38vw" fw="700">
-                  Kenya Centre Info
+                  Lekki Centre Info
                   </H4>
-                  <img src={weeks12} alt="12 weeks" />
+                  <img src={weeks20} alt="20 weeks" />
                 </div>
                 <div className="cover2">
                   <main>
                     <div className="item">
                       <div className='item1'>
                        <div >
-                       <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                       <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.9vw"
+                          fs="1.4rem"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -36,12 +36,12 @@ const ProgramDetails = () => {
                         </H2>
                        </div>
                        <div>
-                       <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                       <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2
                           mdfs="1.58vw"
-                          fs="3.9vw"
+                          fs="1.4rem"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -51,36 +51,35 @@ const ProgramDetails = () => {
                       </div>
                       <div className="item2">
                         <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
                           Location
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.9vw"
+                          fs="clamp(1.4rem,1.4rem,2rem)"
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Indigo Cowork Space, General Mathenge Road, Nairobi, Kenya
+                          Roc Workspace, Gateview Plaza, Plot 11,<br />Admiralty way, Lekki Phase 1
                         </H2>
                         </div>
                       </div>
                       <div className='item3'>
                         <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
                           Duration
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.9vw"
+                          fs="1.4rem"
                           fw="600"
-                          mb="1rem"
                           color="var(--Body-Text)"
                         >
                           12 weeks training
                         </H2>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.9vw"
+                          fs="1.4rem"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -88,16 +87,16 @@ const ProgramDetails = () => {
                         </H2>
                         </div>
                         <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
                         <H2
                           mdfs="2.38vw"
-                          fs="3.9vw"
+                          fs="1.4rem"
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          KES 50,000
+                          ₦300,000
                         </H2>
                       </div>
                       </div>
@@ -126,7 +125,7 @@ const ProgramDetails = () => {
                   {OnsiteProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
-                      <P fs="3.9vw" mdfs="1.23vw" color="var(--Body-Text)">
+                      <P fs="1.4rem" mdfs="1.23vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>
@@ -142,10 +141,10 @@ const ProgramDetails = () => {
 export default ProgramDetails
 
 const StyledProgramDetail = styled.div`
-    padding: 33px 20px 3.2rem 15px;
+    padding: 33px 20px 3.2rem 5px;
   .program {
     position: relative;
-    width: 93%;
+    width: 100%;
     img {
       width: clamp(100px, 32vw, 140px);
       position: absolute;
@@ -162,39 +161,51 @@ const StyledProgramDetail = styled.div`
   .cover2{
     background: rgba(186, 234, 250, 0.4);
     padding: 4.4rem 0 2rem 0;
-    padding-left: 3.5rem;
+    padding-left: 2.5rem;
   }
   .item{
     display: flex;
     flex-direction: column;
     gap: 34px;
   }
-  .item1,.item2, .item3 {
+  .item1,.item3 {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    align-items: flex-start;
+  }
+  /* .item1{
     display: flex;
-  }
-  .item1{
-    gap:21.164vw;
-  }
-  .item3{
-    gap: 19.841vw;
-  }
+    justify-content: space-between;
+    padding-right: 5.9rem;
+  } */
   .list {
     display: flex;
     flex-direction: column;
     gap: 26px;
   }
   .cta {
+    padding-top: 2.1rem;
+    padding-right: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 40px;
+    justify-content: space-between;
     .syll {
-      display: none;
-    }
+        color: #175afe;
+        font-size: 12px;
+      }
+
+  }
+  .breakdown{
+    padding-left: 2.5rem;
   }
   .contain{
       border-bottom: 4px solid rgba(0, 70, 255, 0.44);
       margin-bottom:4rem;
+    }
+    @media (min-width: 700px) {
+      .cta {
+        padding-right: 7rem;
+      }
     }
   @media (min-width: 1024px) {
     padding: 6.8rem 0;
@@ -232,10 +243,9 @@ const StyledProgramDetail = styled.div`
     }
     .cta {
       padding-top: 6.1rem;
-      justify-content: flex-start;
+      padding-right: 7rem;
       .syll {
         display: block;
-        padding-left: 17.01vw;
         color: #175afe;
         font-size: 20px;
       }

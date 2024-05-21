@@ -14,15 +14,15 @@ const LekkiHero = () => {
                 <H4>Lekki, Nigeria</H4>
             </div>
             <div className='direction'>
-                <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="3rem">
+                <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">
                     Learn Product <br /> Management onsite <br /> in Lekki
                 </H1>
                 
                     <img src={direction} alt="" />
                 
             </div>
-            <H3 mdfs="clamp(1.6rem,1.322vw,2rem)" fs="3.5vw">
-            Enjoy the richer, deeper experiences that comes with learning in-person at our incredible Lekki centre
+            <H3 mdfs="clamp(1.6rem,1.39vw,2rem)" fs="clamp(1.3rem,3.3vw,2rem)">
+            Enjoy the richer, deeper experiences that comes with <br /> learning in-person at our incredible Lekki centre
             </H3>
             <SecondaryButton Text="Enroll Now"/>
         </section>
@@ -77,8 +77,9 @@ h4{
 .direction{
         display : flex;
         align-items: center;
+        gap: 1rem;
         img{
-        width: 3.2rem;
+        width: 4rem;
         }
 
     }
@@ -102,7 +103,7 @@ h4{
     padding: 1.2rem 2.8rem;
 }
 @media (min-width: 1024px) {
-    padding: 6.4rem 9.6rem;
+    padding: 6.4rem 9.6rem 0 9.6rem;
     flex-direction: row;
     justify-content: space-between;
     h1{
@@ -115,6 +116,7 @@ h4{
     .direction{
         display : flex;
         align-items: center;
+        gap: 2rem;
         img{
         width: 6.4rem;
         }
