@@ -14,8 +14,8 @@ const LekkiHero = () => {
                 <H4>Lekki, Nigeria</H4>
             </div>
             <div className='direction'>
-                <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">
-                    Learn Product Management onsite in Lekki
+                <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="3rem">
+                    Learn Product <br /> Management onsite <br /> in Lekki
                 </H1>
                 
                     <img src={direction} alt="" />
@@ -77,6 +77,9 @@ h4{
 .direction{
         display : flex;
         align-items: center;
+        img{
+        width: 3.2rem;
+        }
 
     }
 .rightContainer{
@@ -109,9 +112,15 @@ h4{
         padding: 1.2rem 1.8rem;
         border-radius: 24px;
     }
+    .direction{
+        display : flex;
+        align-items: center;
+        img{
+        width: 6.4rem;
+        }
+    }
     .leftContainer{
         padding-top: 1.6rem;
-        width: 43%;
     }
     .kenyaCity{
         max-width: 30.06vw;

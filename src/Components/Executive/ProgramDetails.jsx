@@ -154,7 +154,7 @@ const StyledProgramDetail = styled.div`
   }
   .cover2{
     background: rgba(186, 234, 250, 0.4);
-    padding: 4.4rem 1.5rem 2rem 0;
+    padding: 3.4rem 1.5rem 1rem 0;
     padding-left: 3.5rem;
   }
   .item{
