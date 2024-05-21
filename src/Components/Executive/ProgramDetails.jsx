@@ -178,6 +178,8 @@ const StyledProgramDetail = styled.div`
     gap: 26px;
   }
   .cta {
+    padding-top: 2.1rem;
+    padding-right: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -190,6 +192,11 @@ const StyledProgramDetail = styled.div`
   .contain{
       border-bottom: 4px solid rgba(0, 70, 255, 0.44);
       margin-bottom:4rem;
+    }
+    @media (min-width: 700px) {
+      .cta {
+        padding-right: 7rem;
+      }
     }
   @media (min-width: 1024px) {
     padding: 6.8rem 0;

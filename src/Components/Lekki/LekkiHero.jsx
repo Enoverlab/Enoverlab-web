@@ -4,6 +4,7 @@ import { SecondaryButton } from '../../Utils/styled/Buttons'
 import lekkiCity from "../../assets/icon/lekkicentre.png"
 import styled from 'styled-components'
 import location from "../../assets/icon/location.svg"
+import direction from "../../assets/icon/direction.png"
 
 const LekkiHero = () => {
   return (
@@ -12,9 +13,14 @@ const LekkiHero = () => {
             <div className='topTool'>
                 <H4>Lekki, Nigeria</H4>
             </div>
-            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">
-            Learn Product Management onsite in Lekki
-            </H1>
+            <div className='direction'>
+                <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">
+                    Learn Product Management onsite in Lekki
+                </H1>
+                
+                    <img src={direction} alt="" />
+                
+            </div>
             <H3 mdfs="clamp(1.6rem,1.322vw,2rem)" fs="3.5vw">
             Enjoy the richer, deeper experiences that comes with learning in-person at our incredible Lekki centre
             </H3>
@@ -66,7 +72,13 @@ h4{
         mix-blend-mode: inherit;
         /* background-blend-mode: lighten; */
     }
+    
 }
+.direction{
+        display : flex;
+        align-items: center;
+
+    }
 .rightContainer{
     width: fit-content;
     position: relative;
