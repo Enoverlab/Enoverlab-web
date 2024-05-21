@@ -1,6 +1,6 @@
 import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
-import { SecondaryButton } from '../../Utils/styled/Buttons'
+import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import {  executiveProgram} from '../../constants'
 import day10 from "../../assets/icon/day10.svg"
@@ -96,8 +96,8 @@ const ProgramDetails = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButton Text="Enroll Now" />
-                    <Link to="#" className="syll">
+                    <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
+                    <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
                   </div>
@@ -137,6 +137,7 @@ const StyledProgramDetail = styled.div`
     padding: 33px 20px 3.2rem 15px;
   .program {
     position: relative;
+    margin-right: 1.5rem;
     width: 97%;
     img {
       width: clamp(100px, 32vw, 140px);
@@ -153,7 +154,7 @@ const StyledProgramDetail = styled.div`
   }
   .cover2{
     background: rgba(186, 234, 250, 0.4);
-    padding: 4.4rem 0 2rem 0;
+    padding: 4.4rem 1.5rem 2rem 0;
     padding-left: 3.5rem;
   }
   .item{
@@ -162,14 +163,15 @@ const StyledProgramDetail = styled.div`
     gap: 34px;
   }
   .item1,.item2, .item3 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
   }
-  .item1{
+  /* .item1{
     gap:21.164vw;
   }
   .item3{
     gap: 35.841vw;
-  }
+  } */
   .list {
     display: flex;
     flex-direction: column;
@@ -178,11 +180,12 @@ const StyledProgramDetail = styled.div`
   .cta {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 40px;
+    justify-content: space-between;
     .syll {
-      display: none;
-    }
+        color: #175afe;
+        font-size: 14px;
+      }
+
   }
   .contain{
       border-bottom: 4px solid rgba(0, 70, 255, 0.44);
@@ -212,9 +215,6 @@ const StyledProgramDetail = styled.div`
     .item{
     gap: 65px;
   }
-  .item3{
-    gap: 27.841vw;
-  }
     .list {
       display: flex;
       flex-direction: column;
@@ -227,10 +227,9 @@ const StyledProgramDetail = styled.div`
     }
     .cta {
       padding-top: 6.1rem;
-      justify-content: flex-start;
+      padding-right: 7rem;
       .syll {
         display: block;
-        padding-left: 17.01vw;
         color: #175afe;
         font-size: 20px;
       }

@@ -3,7 +3,7 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import { ClassTools } from '../Components/Pricing/ClassTools'
 import Access from '../Components/Kenya/Access'
-import ProgramDetails from '../Components/Kenya/ProgramDetails'
+import ProgramDetails from '../Components/Lekki/ProgramDetails'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import { FaqSection } from "../Components/Pricing/FaqSection"
 import { H2 } from '../Utils/styled/Typograpyhy'

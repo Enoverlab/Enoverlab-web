@@ -1,7 +1,7 @@
 import React from 'react'
 import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
-import kenyaCity from "../../assets/icon/kenyaCity.png"
+import lekkiCity from "../../assets/icon/lekkicentre.png"
 import styled from 'styled-components'
 import location from "../../assets/icon/location.svg"
 
@@ -16,13 +16,13 @@ const LekkiHero = () => {
             Learn Product Management onsite in Lekki
             </H1>
             <H3 mdfs="clamp(1.6rem,1.322vw,2rem)" fs="3.5vw">
-                Enjoy the richer, deeper experiences that comes with learning in-person at our incredible Nairobi centre
+            Enjoy the richer, deeper experiences that comes with learning in-person at our incredible Lekki centre
             </H3>
             <SecondaryButton Text="Enroll Now"/>
         </section>
         <section className='rightContainer'>
             <div>
-            <img src={kenyaCity} alt=""  className='kenyaCity'/>
+            <img src={lekkiCity} alt=""  className='kenyaCity'/>
             <div className='locale'>
                 <img src={location} alt="kenya City " />
                 <H4>Lekki, Nigeria</H4>
