@@ -173,6 +173,20 @@ export const onlineProgram = [
   "Competitive Analysis","Product Metrics","Certficate of Completion","And so much more..."
 ];
 
+export const executiveProgram = [
+  "Introduction to Product management",
+  "Product Thinking",
+  "Conducting User Research",
+  "Understanding Product Life Cycle",
+  "User Segmentation & Personas",
+  "Writing User Stories",
+  "Creating Userflows, Prototypes & Wireframes",
+  "Agile Product Development",
+  "Minimum Viable Product",
+  "Product Roadmap",
+  "And so much more..."
+];
+
 export const OnsiteProgram = [
   'Ideal for anyone who wants to learn everything on Product management; beginner or professional.',
   'It includes everything in the standard curriculum',
@@ -295,4 +309,8 @@ export const alumni = [
 
 export const accessData = [
   "Intensive training", "Project based learning", "Internship placement", "Global Certificate",
+]
+
+export const executiveData = [
+  "Indepth Coaching", "Project based learning", "Small Class", "Global Certificate",
 ]

@@ -1,50 +1,10 @@
 
-span.pagetext0::before {
-  content: "Standard";
-}
-span.pagetext1::before {
-  content: "Advanced";
-}
-span.pagetext2::before {
-  content: "International";
-}
-
-.hide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hide .swiper-pagination-bullet {
-  /* position: relative; */
-  margin:0 auto;
-  padding: 7px 0px;
-  color: rgba(24, 24, 24, 0.35);
-  width: 104px;
-  font-size: 14px;
-  text-align: center;
-  height: 34px;
-  border-radius: 4px;
-  background-color: #d2d2d2;
-  opacity: 100%;
-  z-index: 20;
-}
-.hide .swiper-pagination-bullet-active {
-  background-color: #baeafa;
-  border: 1px solid #00f;
-  color: #0046ff;
-}
-
 .cardImg {
   width: 380px;
 }
 section img.dk {
   display: none;
 }
-.hides {
-  position: relative;
-}
-
 
 .sp, .ad, .ip{
   display: flex;
@@ -59,49 +19,10 @@ section img.dk {
 }
 
 @media (min-width: 1024px) {
-  .hide .swiper-pagination-bullets.swiper-pagination-horizontal {
-    width: 200px;
-  }
-  .hide .swiper-pagination-bullets{
-    display: flex;
-    align-items: center;
-  }
-  .hide {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 128px;
-  }
-  section img.dk {
-    display: block;
-    position: absolute;
-    right: 185px;
-    top: 24px;
-  }
   .cardImg {
     width: 465px;
   }
-  span.pagetext0,
-  span.pagetext1,
-  span.pagetext2 {
-    position: absolute;
-    left: 30px;
-  }
-  .hide .swiper-pagination-bullet {
-    display: block;
-    position: relative;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    width: 24px;
-    height: 24px;
-    background-color: #d2d2d2;
-    opacity: 100%;
-  }
-  .hide .swiper-pagination-bullet-active {
-    background-color: #baeafa;
-  }
+  
   .locale{
     position: relative;
   }

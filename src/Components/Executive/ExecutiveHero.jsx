@@ -1,5 +1,5 @@
 import React from 'react'
-import { H1, H3 } from '../../Utils/styled/Typograpyhy'
+import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
 // import kenyanFlag from "../../assets/icon/kenyaFlag.png"
 import kenyaCity from "../../assets/icon/kenyaCity.png"
@@ -10,13 +10,13 @@ const ExecutiveHero = () => {
   return (
     <StyledExecutiveHero>
         <section className='leftContainer'>
-            {/* <div className='topTool'>
-                <H4>Hujambo Kenya</H4>
-                <img src={kenyanFlag} alt="Kenya's FLag" />
-            </div> */}
+            <div className='topTool'>
+                <H4>Executive Coaching</H4>
+                {/* <img src={kenyanFlag} alt="Kenya's FLag" /> */}
+            </div>
             <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Learn Advanced Product Management Skills in 10 days!
 </H1>
-            <H3 mdfs="clamp(1.6rem,1.322vw,2rem)" fs="3.5vw">For busy career professionals, managers, executives, and leaders</H3>
+            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="3.5vw">For busy career professionals, managers, executives, and leaders</H3>
             <SecondaryButton Text="Enroll Now"/>
         </section>
         <section className='rightContainer'>

@@ -178,11 +178,50 @@ const StyledProductSection = styled.div`
   background-repeat: no-repeat;
   background-size: 20%;
   padding: 6.7rem 2.4rem;
-  color: var(--Title-Text) header {
+  color: var(--Title-Text);
+  header {
     display: flex;
     justify-content: center;
     padding-bottom: 6.4rem;
   }
+  span.pagetext0::before {
+  content: "Standard";
+}
+span.pagetext1::before {
+  content: "Advanced";
+}
+span.pagetext2::before {
+  content: "International";
+}
+
+.hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .swiper-pagination-bullet {
+  /* position: relative; */
+  margin:0 auto;
+  padding: 7px 0px;
+  color: rgba(24, 24, 24, 0.35);
+  width: 104px;
+  font-size: 14px;
+  text-align: center;
+  height: 34px;
+  border-radius: 4px;
+  background-color: #d2d2d2;
+  opacity: 100%;
+  z-index: 20;
+}
+ .swiper-pagination-bullet-active {
+  background-color: #baeafa;
+  border: 1px solid #00f;
+  color: #0046ff;
+}
+.hides {
+  position: relative;
+}
   @media (min-width: 1024px) {
     padding: 12.1rem 9.6rem;
     background-size: 10%;
@@ -191,6 +230,47 @@ const StyledProductSection = styled.div`
       justify-content: center;
       padding-bottom: 6.4rem;
     }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 200px;
+
+  }
+ .swiper-pagination-bullets{
+    display: flex;
+    align-items: center;
+  }
+  .hide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 128px;
+  }
+  section img.dk {
+    display: block;
+    position: absolute;
+    right: 185px;
+    top: 24px;
+  }
+  span.pagetext0,
+  span.pagetext1,
+  span.pagetext2 {
+    position: absolute;
+    left: 30px;
+  }
+ .swiper-pagination-bullet {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    width: 24px;
+    height: 24px;
+    background-color: #d2d2d2;
+    opacity: 100%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #baeafa;
+  }
   }
 `;
 const StyledCard = styled.div`

@@ -7,7 +7,7 @@ import ProgramDetails from '../Components/Executive/ProgramDetails'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import { FaqSection } from "../Components/Pricing/FaqSection"
 import { H2 } from '../Utils/styled/Typograpyhy'
-import Formi from '../Components/Kenya/Form'
+import Formi from '../Components/AI/Form'
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
 

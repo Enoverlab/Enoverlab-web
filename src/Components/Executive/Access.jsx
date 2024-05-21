@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { H2, H3, H4, P } from '../../Utils/styled/Typograpyhy'
-import learningHub from "../../assets/icon/learnHub.png"
-import { accessData } from '../../constants'
+import learningHub from "../../assets/icon/learnhub2.png"
+import { executiveData } from '../../constants'
 import tick from "../../assets/icon/tick.png"
 
 const Access = () => {
@@ -14,7 +14,7 @@ const Access = () => {
         <H2>To become an Exceptional Product Manager!</H2>
         <P>Get the knowledge, skills, and tools you need to function effectively as a Product Manager.</P>
         <div className='dataList'>
-            {accessData.map(data => {
+            {executiveData.map(data => {
                 return(<div className='data'>
                     <img src={tick} alt="tick checks" />
                     <H3 fs="3.5vw">{data}</H3>

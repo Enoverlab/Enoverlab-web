@@ -2,8 +2,8 @@ import React from 'react'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import * as Yup from "yup"
 import styled from 'styled-components'
-import { H1, H2, H3, H4 } from '../../Utils/styled/Typograpyhy'
-import { PrimaryButton, SecondaryButton } from '../../Utils/styled/Buttons'
+import { H3, H4 } from '../../Utils/styled/Typograpyhy'
+import {  SecondaryButton } from '../../Utils/styled/Buttons'
 
 const Formi = () => {
   return (<StyledFormi>
@@ -49,11 +49,6 @@ const Formi = () => {
         </Form>
     </Formik>
     </StyledForm>
-    <section className='physical'>
-        <H1>Can't attend physically?</H1>
-        <H2>Sign up for our online instructor led training that you can join from anywhere you are in the world.</H2>
-        <PrimaryButton bg="white" border="none" Text="Online Training" />
-    </section>
   </StyledFormi>)
 }
 
