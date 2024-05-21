@@ -1,41 +1,42 @@
 import React from 'react'
 import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
-import {  SecondaryButtonA } from '../../Utils/styled/Buttons'
-// import kenyanFlag from "../../assets/icon/kenyaFlag.png"
+import { SecondaryButton } from '../../Utils/styled/Buttons'
 import kenyaCity from "../../assets/icon/kenyaCity.png"
 import styled from 'styled-components'
-// import location from "../../assets/icon/location.svg"
+import location from "../../assets/icon/location.svg"
 
-const ExecutiveHero = () => {
+const LekkiHero = () => {
   return (
-    <StyledExecutiveHero>
+    <StyledLekkiHero>
         <section className='leftContainer'>
             <div className='topTool'>
-                <H4>Executive Coaching</H4>
-                {/* <img src={kenyanFlag} alt="Kenya's FLag" /> */}
+                <H4>Lekki, Nigeria</H4>
             </div>
-            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Learn Advanced Product Management Skills in 10 days!
-</H1>
-            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">For busy career professionals, managers, executives, and leaders</H3>
-            <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
+            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">
+            Learn Product Management onsite in Lekki
+            </H1>
+            <H3 mdfs="clamp(1.6rem,1.322vw,2rem)" fs="3.5vw">
+                Enjoy the richer, deeper experiences that comes with learning in-person at our incredible Nairobi centre
+            </H3>
+            <SecondaryButton Text="Enroll Now"/>
         </section>
         <section className='rightContainer'>
             <div>
             <img src={kenyaCity} alt=""  className='kenyaCity'/>
-            {/* <div className='locale'>
+            <div className='locale'>
                 <img src={location} alt="kenya City " />
-                <H4>Nairobi, Kenya</H4>
-            </div> */}
+                <H4>Lekki, Nigeria</H4>
+            </div>
             </div>
         </section>
       
-    </StyledExecutiveHero>
+    </StyledLekkiHero>
   )
 }
 
-export default ExecutiveHero
+export default LekkiHero
 
-const StyledExecutiveHero = styled.div`
+const StyledLekkiHero = styled.div`
 padding: 1.9rem 2.4rem;
 display: flex;
 flex-direction: column;
@@ -98,8 +99,7 @@ h4{
     }
     .leftContainer{
         padding-top: 1.6rem;
-        width: 45%;
-        
+        width: 43%;
     }
     .kenyaCity{
         max-width: 30.06vw;

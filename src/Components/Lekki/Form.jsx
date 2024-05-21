@@ -2,12 +2,12 @@ import React from 'react'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import * as Yup from "yup"
 import styled from 'styled-components'
-import { H3, H4 } from '../../Utils/styled/Typograpyhy'
-import { SecondaryButton } from '../../Utils/styled/Buttons'
+import { H1, H2, H3, H4 } from '../../Utils/styled/Typograpyhy'
+import { PrimaryButton, SecondaryButton } from '../../Utils/styled/Buttons'
 
 const Formi = () => {
-  return (
-    <StyledForm>
+  return (<StyledFormi>
+  <StyledForm>
     <Formik
     initialValues={{name: "", email : ""}}
     validationSchema={
@@ -32,6 +32,7 @@ const Formi = () => {
                     </H4>
                 </section>
                 <section className='forms'>
+                <div className='form12'>
                 <div className='form1'>
                 <Field name='name' type="text" placeholder="Name"/>
                 <ErrorMessage name='name' id='name' render={msg => <div className='err'>{msg}</div>} />
@@ -40,20 +41,57 @@ const Formi = () => {
                 <Field name='email' type="email" placeholder="Email"/>
                 <ErrorMessage name='email' id='email' render={msg => <div className='err'>{msg}</div>} />
                 </div>
+                </div>
                 <div className='button'>
                <SecondaryButton Text="Register"/>
                 </div>
                 </section>
         </Form>
     </Formik>
-      
     </StyledForm>
-  )
+    <section className='physical'>
+        <H1>Can't attend physically?</H1>
+        <H2>Sign up for our online instructor led training that you can join from anywhere you are in the world.</H2>
+        <PrimaryButton bg="white" border="none" Text="Online Training" />
+    </section>
+  </StyledFormi>)
 }
 
 export default Formi
 
-
+const StyledFormi = styled.div`
+.physical{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    background: rgba(0, 70, 255, 0.20);
+    padding: 4.8rem 3rem;
+    h1{
+        font-size: 2.4rem;
+        color: #181818;
+    }
+    h2{
+        font-size: 1.4rem;
+        color: var(--Body-Text);
+        font-weight: 400;
+    }
+}
+@media (min-width: 1024px) {
+    display: flex;
+    .physical{
+        gap: 3.5rem;
+        padding: 4.8rem 9rem;
+        h1{
+            font-size: 2.4rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+}
+`
 
 const StyledForm = styled.div`
     background-color: #010140;
@@ -67,7 +105,6 @@ const StyledForm = styled.div`
                 display: flex;
                 width: 100%;
                 max-width: 450px;
-                margin-top: 25px;
                 justify-content: center;
             }
         }
@@ -90,22 +127,22 @@ const StyledForm = styled.div`
             color: red;
         }
     @media (min-width: 1024px) {
-        padding: 5.2rem 9.6rem;
+        padding: 5.2rem 0 5.2rem 9.6rem;
+        width: 100%;
         form{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            .write{
-                width: 40%;
-            }
-            .forms{
-                width: 40%;
-            }
             .button{
                 display: flex;
                 width: 100%;
                 max-width: 450px;
                 justify-content: flex-start;
+            }
+            .forms{
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+            }
+            .form12{
+                width: 100%;
             }
         }
         input{

@@ -26,6 +26,7 @@ import Physical from './Pages/Physical'
 import {ChakraProvider} from '@chakra-ui/react'
 import AI from "./Pages/AI";
 import Kenya from "./Pages/Kenya";
+import Lekki from "./Pages/Lekki";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -65,6 +66,7 @@ function App() {
         <Route path="/executive" element={<Executive/>} />
         <Route path="/sales" element={<Sales/>} />
         <Route path="/kenya" element={<Kenya/>} />
+        <Route path="/lekki" element={<Lekki/>} />
         <Route path="/exclusive" element={<Exclusive/>} />
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />
