@@ -1,15 +1,8 @@
-import React from 'react'
 import styled from 'styled-components'
 import { H2,H3,H4 } from '../../Utils/styled/Typograpyhy';
-import fastTracking from "../../assets/icon/fastTracking.svg";
 import privateCoaching from "../../assets/icon/private.svg"
 import { PrimaryButton } from '../../Utils/styled/Buttons';
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, Pagination} from "swiper/modules";
-import "swiper/css";
-import "swiper/swiper-bundle.css";
-import "swiper/css/autoplay";
-import "swiper/css/pagination";
+
 
 const StandardOptions = () => {
   return (
@@ -19,70 +12,25 @@ const StandardOptions = () => {
         Other Options for Standard Program
         </H2>
         </header>
-        <Swiper
-        modules={[Autoplay,Pagination]}
-        pagination={{
-            el: ".very",
-            clickable: true,
-          }}
-        autoplay
-      breakpoints={
-        {
-            320 : {
-                slidesPerView : 1,
-                spaceBetween: 25,
-                autoplay : {
-                    delay : 3000,
-                }
-            },
-            640:{
-                slidesPerView : 1,
-                autoplay : {
-                    delay : 5000
-                }
-            },
-            1024: {
-                slidesPerView : 2,
-                spaceBetween: 55,
-                autoplay : {
-                    delay : 5000
-                }
-            }
-        }
-      }
-        >
-            <SwiperSlide>
-                <div className='card'>
-                    <img src={fastTracking} alt="Fast Tracking" />
-                    <H3 fs="4.2vw">Fast-Track</H3>
-                </div>
-                <H4>
-                This is for individuals who want to complete the standard program in 5 - 10 weeks instead of 18 - 20 weeks.
-                </H4>
-                <div className='learnContainer'>
-                 <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More"/>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            <section className="swiper">
                 <div className='card'>
                     <img src={privateCoaching} alt="private Coaching" />
                     <H3 fs="4.2vw">Executive Coaching</H3>
                 </div>
                 <H4 mdfs="">
                 This is for high-level professionals who want a one-on-one coaching to get personal mentorship and support.
+
                 </H4>
                 <div className='learnContainer'>
-                 <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More"/>
+                 <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More" to='/executive'/>
                 </div>
-            </SwiperSlide>
-            <div className="very"></div>
-        </Swiper>
-        
+            </section>
     </StyledStandardOptions>
   )
 }
 
 export default StandardOptions
+
 
 const StyledStandardOptions = styled.div`
    background: #E8F3FE;
@@ -131,7 +79,7 @@ const StyledStandardOptions = styled.div`
     header{
         margin-bottom: 4rem;
     }
-   section{
+   .swiper{
     width: 50%;
     max-width: 58.4rem;
    }

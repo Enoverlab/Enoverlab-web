@@ -89,6 +89,7 @@ export const H4 = styled.h4`
   padding: ${(props) => props.p || "0"};
   padding-top: ${(props) => props.pt || "0"};
   padding-bottom: ${(props) => props.pb || "0"};
+  width: ${(props) => props.width};
   span {
     font-weight: 500;
   }

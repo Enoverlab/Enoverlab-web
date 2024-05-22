@@ -177,9 +177,9 @@ const StandardProgram = () => {
                   </main>
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
-                    <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
-                    Download Syllabus
-                  </Link>
+                    <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      Download Syllabus
+                </Link>
                   </div>
                 </form>
               </div>
@@ -196,6 +196,11 @@ const StandardProgram = () => {
                       </P>
                     </Flex>
                   ))}
+                </div>
+                <div className="but">
+                <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      Download Syllabus
+                </Link>
                 </div>
               </div>
             </Flex>
@@ -292,7 +297,7 @@ const StandardProgram = () => {
                   </main>
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
-                    <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
+                    <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
                   </div>
@@ -318,6 +323,11 @@ const StandardProgram = () => {
                       </P>
                     </Flex>
                   ))}
+                </div>
+                <div className="but">
+                <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      Download Syllabus
+                </Link>
                 </div>
               </div>
             </Flex>
@@ -400,6 +410,15 @@ const StyledProgram = styled.div`
       display: none;
     }
   }
+  .but{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    .syll{
+      color: #175afe;
+      font-size: 14px;
+    }
+  }
   .swiperPagination {
     display: flex;
     .swiper-pagination-bullet {
@@ -416,6 +435,7 @@ const StyledProgram = styled.div`
       font-size: 14px;
       text-align: center;
       height: 42px;
+      background-color: #FFFDF7;
       opacity: 100%;
       z-index: 20;
     }
@@ -520,6 +540,9 @@ const StyledProgram = styled.div`
         color: #175afe;
         font-size: 20px;
       }
+    }
+    .but{
+      display: none;
     }
     .swiperPagination{
       width: 100%;

@@ -58,12 +58,12 @@ const PriceHero = () => {
             fs="7vw"
             mdlh="6.8rem"
             lh="3.7rem"
-            paddingBottom="2rem"
+            pb="1rem"
           >
             Kickstart your career in Product Management
           </H1>
-          <H4 color="var(--Body-Text)" mdlh="3rem" fs="3.9vw" mdfs="2rem" mdwidth="85%">
-            Regardless of your background, you too can become an Exceptional Product Manager in the next 6 months.
+          <H4 color="var(--Body-Text)" mdlh="3rem" fs="1.6rem" mdfs="2rem" mdwidth="85%">
+            Regardless of your background, you too can become an Exceptional Product Manager <br /> in the next 6 months.
           </H4>
           </section>
           <div className="video-box">
@@ -290,11 +290,19 @@ const StyledPriceHero = styled.div`
     
     .left-container {
       width: 50%;
+      .textContainer{
+        br{
+          display: none;
+        }
+      }
       @media (max-width: 768px) {
         width: 100%;
         .textContainer{
           padding: 0 2.4rem 0 2.4rem ;
           padding-bottom: 3.9rem;
+          br{
+            display: block;
+          }
         }
       }
       .video-box{
