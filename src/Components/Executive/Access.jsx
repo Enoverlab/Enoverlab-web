@@ -11,7 +11,7 @@ const Access = () => {
         <H4>
         Intensive coaching program,
         </H4>
-        <H2>To become skilled in product management</H2>
+        <H2>On product management</H2>
         <P>For busy career professionals, managers, executives, founders, CEOs, and business leaders.</P>
         <div className='dataList'>
             {executiveData.map(data => {

@@ -1,6 +1,6 @@
 import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
-import { SecondaryButton } from '../../Utils/styled/Buttons'
+import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import { AiProgram } from '../../constants'
 import weeks4 from "../../assets/icon/weeks4.svg"
@@ -104,7 +104,7 @@ const ProgramDetails = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButton Text="Enroll Now" />
+                    <SecondaryButtonA Text="Enroll Now" to='https://forms.gle/tULTGfaEbTRGHfccA' />
                     <Link to="#" className="syll">
                       Download Syllabus
                     </Link>
