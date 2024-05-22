@@ -23,35 +23,35 @@ const StandardProgram = () => {
         setTrainingLocation({
           location : 'Lekki Gateview Plaza, Admiralty way, Lekki Phase 1',
           tuition : '300,000',
-          link : 'https://paystack.com/pay/EnoverlabLekki'
+          link : 'https://forms.gle/RubzGLnYfKgShe4N7'
         })
         break;
       case "Ibadan":
         setTrainingLocation({
           location : 'Cafe One, Palms Mall, Ring Road, Ibadan',
           tuition : '250,000',
-          link :  "https://paystack.com/pay/enoverlabibadan"
+          link :  "https://forms.gle/CsYYXENLZNmjnsfK6"
         })
         break;
         case "Anambra":
           setTrainingLocation({
             location : 'Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka, Anambra',
             tuition : '250,000',
-            link :  "https://paystack.com/pay/enoverlabibadan"
+            link :  "https://forms.gle/YWw8jFN42sDoPQiT8"
           })
           break;
       case "Abuja":
         setTrainingLocation({
           location : '22 Kumasi Cres, Wuse 2, Abuja',
           tuition : '300,000',
-          link : "https://paystack.com/pay/enoverlababuja"
+          link : "https://forms.gle/Gp7G4tN6QsxaPnds7"
         })
         break;
         case "Berger":
           setTrainingLocation({
             location : '75b Ogunnusi Rd, Isheri, Ojodu Berger, Lagos Berger',
             tuition : '300,000',
-            link : 'https://paystack.com/pay/enoverlabberger'
+            link : 'https://forms.gle/p1FhbPHk5muJGpdK6'
           })
           break;
       default:
@@ -116,7 +116,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
-                <form action="https://paystack.com/pay/enoverlabadvance" method="post" target="_blank"  className="cover">
+                <form action="https://forms.gle/VyeL132b97jEv3Pz6" method="post" target="_blank"  className="cover">
                   <main>
                   <div  className="item">
                       <div className='item1'>
