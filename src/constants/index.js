@@ -312,5 +312,5 @@ export const accessData = [
 ]
 
 export const executiveData = [
-  "Indepth Coaching", "Project based learning", "Small Class", "Global Certificate",
+  "Indepth Coaching", "Personalised learning", "Small Class", "Global Certificate",
 ]

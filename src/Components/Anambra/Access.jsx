@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { H2, H3, H4, P } from '../../Utils/styled/Typograpyhy'
-import learningHub from "../../assets/icon/learnhub2.png"
-import { executiveData } from '../../constants'
+import learningHub from "../../assets/icon/learnhubLekki.png"
+import { accessData } from '../../constants'
 import tick from "../../assets/icon/tick.png"
 
 const Access = () => {
@@ -9,12 +9,12 @@ const Access = () => {
     <StyledAccess>
         <section>
         <H4>
-        Intensive coaching program,
+        Brought to you in Nairobi,
         </H4>
-        <H2>To become skilled in product management</H2>
-        <P>For busy career professionals, managers, executives, founders, CEOs, and business leaders.</P>
+        <H2>Closer Access, Better Learning!</H2>
+        <P>Get the knowledge, skills, and tools you need to become an Exceptional Product Manager right in your vicinity.</P>
         <div className='dataList'>
-            {executiveData.map(data => {
+            {accessData.map(data => {
                 return(<div className='data'>
                     <img src={tick} alt="tick checks" />
                     <H3 fs="3.5vw">{data}</H3>
@@ -59,7 +59,7 @@ const StyledAccess = styled.div`
     }
     @media (min-width: 1024px) {
         flex-direction: row-reverse;
-        padding: 10rem 9.6rem;
+        padding: 15rem 9.6rem 10rem 9.6rem;
         h2{
             margin: 0.8rem 0 1.6rem 0;
         }

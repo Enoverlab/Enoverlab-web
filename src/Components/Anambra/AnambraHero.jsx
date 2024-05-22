@@ -1,41 +1,48 @@
 import React from 'react'
 import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
-import {  SecondaryButtonA } from '../../Utils/styled/Buttons'
-// import kenyanFlag from "../../assets/icon/kenyaFlag.png"
-import kenyaCity from "../../assets/icon/kenyaCity.png"
+import { SecondaryButton } from '../../Utils/styled/Buttons'
+import anambraCity from "../../assets/icon/anambraCentre.png"
 import styled from 'styled-components'
-// import location from "../../assets/icon/location.svg"
+import location from "../../assets/icon/location.svg"
+import direction from "../../assets/icon/direction.png"
 
-const ExecutiveHero = () => {
+const AnambraHero = () => {
   return (
-    <StyledExecutiveHero>
+    <StyledAnambraHero>
         <section className='leftContainer'>
             <div className='topTool'>
-                <H4>Executive Coaching</H4>
-                {/* <img src={kenyanFlag} alt="Kenya's FLag" /> */}
+                <H4>Ndeewo</H4>
             </div>
-            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Learn Advanced Product Management Skills in 10 days!
-</H1>
-            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Save 80 days of precious time and scale your career/business to the next level</H3>
-            <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
+            <div className='direction'>
+                <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">
+                    Learn Product <br /> Management onsite <br /> in Lekki
+                </H1>
+                
+                    <img src={direction} alt="" />
+                
+            </div>
+            <H3 mdfs="clamp(1.6rem,1.39vw,2rem)" fs="clamp(1.3rem,3.3vw,2rem)">
+            Enjoy the richer, deeper experiences that comes with <br /> learning in-person at our incredible Lekki centre
+            </H3>
+            <SecondaryButton Text="Enroll Now"/>
         </section>
         <section className='rightContainer'>
             <div>
-            <img src={kenyaCity} alt=""  className='kenyaCity'/>
-            {/* <div className='locale'>
-                <img src={location} alt="kenya City " />
-                <H4>Nairobi, Kenya</H4>
-            </div> */}
+            <img src={anambraCity} alt=""  className='kenyaCity'/>
+            <div className='locale'>
+                <img src={location} alt="kenya City"/>
+                <H4>Lekki, Nigeria </H4>
+            </div>
             </div>
         </section>
       
-    </StyledExecutiveHero>
+    </StyledAnambraHero>
   )
 }
 
-export default ExecutiveHero
+export default AnambraHero
 
-const StyledExecutiveHero = styled.div`
+const StyledAnambraHero = styled.div`
 padding: 1.9rem 2.4rem;
 display: flex;
 flex-direction: column;
@@ -65,7 +72,17 @@ h4{
         mix-blend-mode: inherit;
         /* background-blend-mode: lighten; */
     }
+    
 }
+.direction{
+        display : flex;
+        align-items: center;
+        gap: 1rem;
+        img{
+        width: 4rem;
+        }
+
+    }
 .rightContainer{
     width: fit-content;
     position: relative;
@@ -86,7 +103,7 @@ h4{
     padding: 1.2rem 2.8rem;
 }
 @media (min-width: 1024px) {
-    padding: 6.4rem 9.6rem;
+    padding: 6.4rem 9.6rem 0 9.6rem;
     flex-direction: row;
     justify-content: space-between;
     h1{
@@ -96,10 +113,16 @@ h4{
         padding: 1.2rem 1.8rem;
         border-radius: 24px;
     }
+    .direction{
+        display : flex;
+        align-items: center;
+        gap: 2rem;
+        img{
+        width: 6.4rem;
+        }
+    }
     .leftContainer{
         padding-top: 1.6rem;
-        width: 45%;
-        
     }
     .kenyaCity{
         max-width: 30.06vw;
