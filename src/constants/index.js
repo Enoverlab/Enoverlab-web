@@ -73,7 +73,7 @@ export const advancedPrograms = [
     img: ad3,
     headText: "AI Product Management",
     subText: "For Product Leaders",
-    linkText: "COMING SOON!!!",
+    linkText: "",
     link : "/aipmp"
   },
   {

@@ -18,7 +18,7 @@ const StandardOptions = () => {
                     <H3 fs="4.2vw">Executive Coaching</H3>
                 </div>
                 <H4 mdfs="">
-                This is for high-level professionals who want a one-on-one coaching to get personal mentorship and support.
+                This is for busy career professionals & business leaders to complete the standard program in 10 days instead of 90 days.
 
                 </H4>
                 <div className='learnContainer'>
@@ -67,10 +67,9 @@ const StyledStandardOptions = styled.div`
     justify-content: center;
    }
    .learnContainer{
-    margin-top: 1rem;
+    margin: 3rem 0 1.5rem 0;
     display: flex;
-    justify-content: flex-start;
-    margin-left : 10px;
+    justify-content: center;
    }
    padding: 3.2rem 2.4rem;
    @media (min-width: 1024px) {

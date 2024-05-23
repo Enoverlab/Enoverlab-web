@@ -105,9 +105,9 @@ const ProgramDetails = () => {
                   </main>
                   <div className="cta">
                     <SecondaryButtonA Text="Enroll Now" to='https://forms.gle/tULTGfaEbTRGHfccA' />
-                    <Link to="#" className="syll">
+                    <Link to="/AISyllabus.pdf" target="_blank" download='AISyllabus.pdf' className="syll">
                       Download Syllabus
-                    </Link>
+                </Link>
                   </div>
                 </div>
               </div>
@@ -131,6 +131,11 @@ const ProgramDetails = () => {
                       </P>
                     </Flex>
                   ))}
+                </div>
+                <div className="but">
+                <Link to="/AISyllabus.pdf" target="_blank" download='AISyllabus.pdf' className="syll">
+                      Download Syllabus
+                </Link>
                 </div>
               </div>
             </Flex>
@@ -195,6 +200,17 @@ const StyledProgramDetail = styled.div`
       display: none;
     }
   }
+
+  .but{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    .syll{
+      color: #175afe;
+      font-size: 14px;
+    }
+  }
+
   .contain{
       border-bottom: 4px solid rgba(0, 70, 255, 0.44);
       margin-bottom:4rem;
@@ -242,6 +258,10 @@ const StyledProgramDetail = styled.div`
         color: #175afe;
         font-size: 20px;
       }
+    }
+
+    .but{
+      display: none;
     }
 
   }

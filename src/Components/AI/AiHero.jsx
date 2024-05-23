@@ -9,7 +9,8 @@ const AiHero = () => {
     let sizes = `(min-width: 1024px) 1024px, 300px`
   return (
     <StyledAiHero>
-      <H1 tA="center"  mdlh="8.6rem" color='#1A1A1A'><span>Optimizing</span> Product management <span>Using AI</span> </H1>
+      <H1 tA="center"  mdlh="8.6rem" color='#1A1A1A'>
+        <span>Artificial</span> Intelligence Product <span>Management Program</span> </H1>
       <img src={mobaiheroimg} alt="Enoverlab Hero" 
     srcSet={src} sizes={sizes} className='heroImg'
      />

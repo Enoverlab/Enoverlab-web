@@ -341,7 +341,7 @@ const StandardProgram = () => {
 export default StandardProgram;
 
 const StyledProgram = styled.div`
-  padding: 32px 0 0 24px;
+  padding: 32px 0 0 5px;
   header {
     color: var(--Title-Text);
     text-align: center;
@@ -350,7 +350,7 @@ const StyledProgram = styled.div`
   }
   .program {
     position: relative;
-    width: 93%;
+    width: 97%;
     img {
       width: 32.71vw;
       position: absolute;
@@ -366,17 +366,21 @@ const StyledProgram = styled.div`
   }
   .cover {
     background: rgba(186, 234, 250, 0.4);
-    padding: 4.4rem 0 2rem 0;
+    padding: 4.4rem 0 3.5rem 0;
     padding-left: 3.5rem;
   }
   .cover2{
     background: rgba(186, 234, 250, 0.4);
-    padding: 4.4rem 0 2rem 0;
+    padding: 4.4rem 0 3.5rem 0;
     padding-left: 3.5rem;
   }
+  .breakdown{
+      padding: 0 1.2rem;
+    }
   main {
     display: flex;
   }
+  
   .list {
     display: flex;
     flex-direction: column;
@@ -401,6 +405,7 @@ const StyledProgram = styled.div`
     flex-direction: column;
     gap: 26px;
   }
+
   .cta {
     display: flex;
     align-items: center;
@@ -410,6 +415,7 @@ const StyledProgram = styled.div`
       display: none;
     }
   }
+
   .but{
     display: flex;
     justify-content: center;
@@ -419,6 +425,7 @@ const StyledProgram = styled.div`
       font-size: 14px;
     }
   }
+
   .swiperPagination {
     display: flex;
     .swiper-pagination-bullet {

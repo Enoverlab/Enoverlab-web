@@ -22,7 +22,6 @@ const ProductSection = () => {
       <header id="programs">
         <H2
           color="var(--Title-Text)"
-          pb="6.4rem"
           pdmb="7.2rem"
           mdlh="48px"
           lh="32px"
@@ -80,7 +79,7 @@ const ProductSection = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide >
-          <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem">
+          <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem" mb="1rem" mdmb="1rem">
               Advanced Programs
             </H3>
             <Swiper
@@ -122,7 +121,7 @@ const ProductSection = () => {
           </SwiperSlide>
           <SwiperSlide className="ip">
             <div>
-            <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem">
+            <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem" mb="1rem" mdmb="1rem">
               International Programs
             </H3>
             <Flex wrap="wrap" gap="15px" >

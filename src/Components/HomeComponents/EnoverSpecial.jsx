@@ -105,15 +105,15 @@ const Styledspecial = styled.div`
     color: white;
     font-style: normal;
     h1{
-      font-size: clamp(2.8rem,8.411vw,3.6rem);
+      font-size: 3.6rem;
       font-weight: 800;
       line-height: normal;
       span{
-        font-size: clamp(1.5rem,4.205vw,1.9rem);
+        font-size: 1.9rem;
       }
     }
     p{
-      font-size: clamp(1rem,3.73vw,1.6rem);
+      font-size: 1.6rem;
       font-weight: 400;
       line-height: 28px; 
     }

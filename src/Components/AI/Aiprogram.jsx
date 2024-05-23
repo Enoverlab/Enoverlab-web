@@ -8,18 +8,15 @@ const Aiprogram = () => {
     <StyledAiprogram>
       <div className="cta">
         <H4 color="#1A1A1A" fs="1.6rem">
-        Come learn how to solve problems, build products, and grow your company with Artificial Intelligence (AI)
+        Solve problems, build products, and grow your company with Artificial Intelligence
         </H4>
         <SecondaryButton Text="Enroll Now" />
       </div>
       <div className="writeup">
         <H2 color="rgba(1,1,91,0.82)" mdfs="4rem">
-          AI Product Management Program
+        About the Program
         </H2>
         <main>
-          <H2 mb="2.4rem" mdmb="3.2rem" color="#4B4B4B">
-            About
-          </H2>
           <section>
             <H4 fs="1.4rem" color="#4B4B4B" lh="3.2rem">
               The AI for Product Management Course delves into the integration
