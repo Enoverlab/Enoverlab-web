@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import styled from "styled-components";
 import { Flex } from "../HomeComponents/ProductSection";
 import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
-import weeks20 from "../../assets/icon/20weeks.png";
+import weeks20 from "../../assets/icon/weeks18.png";
 import { OnsiteProgram, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
