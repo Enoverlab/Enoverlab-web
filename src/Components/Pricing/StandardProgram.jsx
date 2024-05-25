@@ -6,7 +6,8 @@ import "swiper/css/pagination";
 import styled from "styled-components";
 import { Flex } from "../HomeComponents/ProductSection";
 import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
-import weeks20 from "../../assets/icon/weeks18.png";
+import weeks18 from "../../assets/icon/weeks18.png";
+import weeks20 from "../../assets/icon/20weeks.png";
 import { OnsiteProgram, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
@@ -114,7 +115,7 @@ const StandardProgram = () => {
                   <H4 mdfs="2.3vw" fw="700">
                     Online Training
                   </H4>
-                  <img src={weeks20} alt="20 weeks" />
+                  <img src={weeks18} alt="18 weeks" />
                 </div>
                 <form action="https://forms.gle/VyeL132b97jEv3Pz6" method="post" target="_blank"  className="cover">
                   <main>
@@ -130,7 +131,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Wednesday <br /> & Saturday
+                          Every Monday <br /> & Thursday
                         </H2>
                        </div>
                        <div>
