@@ -4,7 +4,7 @@ import Testimonials from '../Components/HomeComponents/Testimonials'
 import Started from '../Components/HomeComponents/Started'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-// import ProductSession from '../Components/HomeComponents/ProductSession'
+import ProductSession2 from '../Components/HomeComponents/ProductSession2'
 import ProductSection from '../Components/HomeComponents/ProductSection'
 import EnoverSpecial from '../Components/HomeComponents/EnoverSpecial'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
@@ -12,7 +12,6 @@ import Partners from '../Components/HomeComponents/Partners'
 import Alumni from '../Components/HomeComponents/Alumni'
 import { useState } from 'react'
 import LoadingScreen2 from '../Components/LoadingScreen2'
-// import ProductSession from '../Components/HomeComponents/ProductSession'
 // import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
 const Home = () => {
@@ -25,7 +24,7 @@ const Home = () => {
   {isLoading ? <LoadingScreen2/> : <div>
        <Header/>
         <Hero/>
-        {/* <ProductSession/> */}
+        <ProductSession2/>
         <ProductSection/>
         <EnoverSpecial/>
         <Partners/>
