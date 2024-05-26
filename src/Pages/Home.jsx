@@ -4,7 +4,7 @@ import Testimonials from '../Components/HomeComponents/Testimonials'
 import Started from '../Components/HomeComponents/Started'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import ProductSession2 from '../Components/HomeComponents/ProductSession2'
+// import ProductSession2 from '../Components/HomeComponents/ProductSession2'
 import ProductSection from '../Components/HomeComponents/ProductSection'
 import EnoverSpecial from '../Components/HomeComponents/EnoverSpecial'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
@@ -24,7 +24,7 @@ const Home = () => {
   {isLoading ? <LoadingScreen2/> : <div>
        <Header/>
         <Hero/>
-        <ProductSession2/>
+        {/* <ProductSession2/> */}
         <ProductSection/>
         <EnoverSpecial/>
         <Partners/>
