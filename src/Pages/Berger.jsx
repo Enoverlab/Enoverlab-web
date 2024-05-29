@@ -1,16 +1,16 @@
-import AnambraHero from '../Components/Anambra/AnambraHero'
+import AnambraHero from '../Components/Berger/BergerHero'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import Access from '../Components/Anambra/Access'
-import ProgramDetails from '../Components/Anambra/ProgramDetails'
+import Access from '../Components/Berger/Access'
+import ProgramDetails from '../Components/Berger/ProgramDetails'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import {FaqSection} from "../Components/Pricing/FaqSection"
-import Formi from '../Components/Anambra/Form'
+import Formi from '../Components/Berger/Form'
 import { useState, useEffect } from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
 import Testimonials from '../Components/HomeComponents/Testimonials'
 
-const Anambra = () => {
+const Berger = () => {
   const [loading, setLoading] = useState(true)
   useEffect(()=>{
     setTimeout(()=>{
@@ -37,4 +37,4 @@ const Anambra = () => {
   )
 }
 
-export default Anambra
+export default Berger

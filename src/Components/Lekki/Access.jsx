@@ -9,7 +9,7 @@ const Access = () => {
     <StyledAccess>
         <section>
         <H4>
-        Brought to you in Nairobi,
+        Brought to you in Lekki,
         </H4>
         <H2>Closer Access, Better Learning!</H2>
         <P>Get the knowledge, skills, and tools you need to become an Exceptional Product Manager right in your vicinity.</P>

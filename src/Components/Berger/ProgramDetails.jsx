@@ -14,12 +14,12 @@ const ProgramDetails = () => {
               <div className="program">
                 <div className="heading" id="onsite">
                   <H4 mdfs="2.38vw" fw="700">
-                  Lekki Centre Info
+                  Berger Centre Info
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
                 <div className="cover2">
-                  <form action="https://forms.gle/RubzGLnYfKgShe4N7" target='_blank'>
+                  <form action="https://forms.gle/p1FhbPHk5muJGpdK6" target="_blank">
                   <main>
                     <div className="item">
                       <div className='item1'>
@@ -61,7 +61,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Roc Workspace, Gateview Plaza, Plot 11,<br />Admiralty way, Lekki Phase 1
+                          75b Ogunnusi Rd, Isheri, Ojodu <br /> Berger, Lagos Berger
                         </H2>
                         </div>
                       </div>
@@ -107,9 +107,10 @@ const ProgramDetails = () => {
                     <SubmitButton Text="Enroll Now" />
                     <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
-                    </Link>
+                </Link>
                   </div>
                   </form>
+                  
                 </div>
               </div>
               <div className="breakdown">

@@ -1,48 +1,48 @@
 import React from 'react'
 import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
-import anambraCity from "../../assets/icon/anambraCentre.png"
+import bergerCity from "../../assets/icon/bergerCentre.png"
 import styled from 'styled-components'
 import location from "../../assets/icon/location.svg"
 import direction from "../../assets/icon/direction.png"
 
-const AnambraHero = () => {
+const BergerHero = () => {
   return (
-    <StyledAnambraHero>
+    <StyledBergerHero>
         <section className='leftContainer'>
             <div className='topTool'>
-                <H4>Ndeewo</H4>
+                <H4>Hello</H4>
             </div>
             <div className='direction'>
                 <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">
-                    Learn Product <br /> Management onsite <br /> in Anambra
+                    Learn Product <br /> Management onsite <br /> in Ojodu Berger
                 </H1>
                 
                     <img src={direction} alt="" />
                 
             </div>
             <H3 mdfs="clamp(1.6rem,1.39vw,2rem)" fs="clamp(1.3rem,3.3vw,2rem)">
-            Enjoy the richer, deeper experiences that comes with <br /> learning in-person at our incredible Anambra centre
+            Enjoy the richer, deeper experiences that comes with <br /> learning in-person at our incredible Ojodu Berger centre
             </H3>
             <SecondaryButton Text="Enroll Now"/>
         </section>
         <section className='rightContainer'>
             <div>
-            <img src={anambraCity} alt=""  className='kenyaCity'/>
+            <img src={bergerCity} alt=""  className='kenyaCity'/>
             <div className='locale'>
                 <img src={location} alt="kenya City"/>
-                <H4>Akwa, Anambra </H4>
+                <H4>Berger, Lagos </H4>
             </div>
             </div>
         </section>
       
-    </StyledAnambraHero>
+    </StyledBergerHero>
   )
 }
 
-export default AnambraHero
+export default BergerHero
 
-const StyledAnambraHero = styled.div`
+const StyledBergerHero = styled.div`
 padding: 1.9rem 2.4rem;
 display: flex;
 flex-direction: column;

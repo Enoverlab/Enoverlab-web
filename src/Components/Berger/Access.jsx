@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { H2, H3, H4, P } from '../../Utils/styled/Typograpyhy'
-import learningHub from "../../assets/icon/learnhubAnamba.png"
+import learningHub from "../../assets/icon/learnhubBerger.png"
 import { accessData } from '../../constants'
 import tick from "../../assets/icon/tick.png"
 
@@ -9,7 +9,7 @@ const Access = () => {
     <StyledAccess>
         <section>
         <H4>
-        Brought to you in Anambra,
+        Brought to you in Berger,
         </H4>
         <H2>Closer Access, Better Learning!</H2>
         <P>Get the knowledge, skills, and tools you need to become an Exceptional Product Manager right in your vicinity.</P>

@@ -117,7 +117,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks18} alt="18 weeks" />
                 </div>
-                <form action="https://forms.gle/VyeL132b97jEv3Pz6" method="post" target="_blank"  className="cover">
+                <form action="https://forms.gle/VyeL132b97jEv3Pz6" target="_blank"  className="cover">
                   <main>
                   <div  className="item">
                       <div className='item1'>
@@ -215,7 +215,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
-                <form action={trainingLocation.link} method="post" target="_blank" onSubmit={handleSubmit} className="cover2">
+                <form action={trainingLocation.link} target="_blank" onSubmit={handleSubmit} className="cover2">
                   <main>
                   <div className="item">
                       <div className='item1'>

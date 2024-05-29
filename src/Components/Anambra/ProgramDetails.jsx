@@ -1,6 +1,6 @@
 import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
-import { SecondaryButton } from '../../Utils/styled/Buttons'
+import { SubmitButton } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import { OnsiteProgram } from '../../constants'
 import weeks20 from "../../assets/icon/20weeks.png"
@@ -14,11 +14,12 @@ const ProgramDetails = () => {
               <div className="program">
                 <div className="heading" id="onsite">
                   <H4 mdfs="2.38vw" fw="700">
-                  Lekki Centre Info
+                  Anambra Centre Info
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
                 <div className="cover2">
+                  <form action="https://forms.gle/YWw8jFN42sDoPQiT8" target="_blank">
                   <main>
                     <div className="item">
                       <div className='item1'>
@@ -60,7 +61,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Roc Workspace, Gateview Plaza, Plot 11,<br />Admiralty way, Lekki Phase 1
+                          Kodex Africa, Plot No. A/127, Iyiagu <br /> Housing Estate, Awka,Anambra
                         </H2>
                         </div>
                       </div>
@@ -96,18 +97,20 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦300,000
+                          ₦250,000
                         </H2>
                       </div>
                       </div>
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButton Text="Enroll Now" />
-                    <Link to="#" className="syll">
+                    <SubmitButton Text="Enroll Now" />
+                    <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
-                    </Link>
+                </Link>
                   </div>
+                  </form>
+                  
                 </div>
               </div>
               <div className="breakdown">
