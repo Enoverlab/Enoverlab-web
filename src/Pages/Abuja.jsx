@@ -1,4 +1,4 @@
-import AbujaHero from '../Components/Abuja/AnambraHero'
+import AbujaHero from '../Components/Abuja/AbujaHero'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Access from '../Components/Abuja/Access'
