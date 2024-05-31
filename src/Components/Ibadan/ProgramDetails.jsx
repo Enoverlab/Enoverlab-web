@@ -14,12 +14,12 @@ const ProgramDetails = () => {
               <div className="program">
                 <div className="heading" id="onsite">
                   <H4 mdfs="2.38vw" fw="700">
-                  Anambra Centre Info
+                  Ibadan Centre Info
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
                 <div className="cover2">
-                  <form action="https://forms.gle/YWw8jFN42sDoPQiT8" target="_blank">
+                  <form action="https://forms.gle/CsYYXENLZNmjnsfK6" target="_blank">
                   <main>
                     <div className="item">
                       <div className='item1'>
@@ -61,7 +61,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Kodex Africa, Plot No. A/127, Iyiagu <br /> Housing Estate, Awka,Anambra
+                          Cafe One, Palms Mall, Ring Road, <br /> Ibadan
                         </H2>
                         </div>
                       </div>

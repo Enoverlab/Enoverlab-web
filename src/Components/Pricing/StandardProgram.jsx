@@ -36,7 +36,7 @@ const StandardProgram = () => {
         break;
         case "Anambra":
           setTrainingLocation({
-            location : 'Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka, Anambra',
+            location : 'Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka,Anambra',
             tuition : '250,000',
             link :  "https://forms.gle/YWw8jFN42sDoPQiT8"
           })

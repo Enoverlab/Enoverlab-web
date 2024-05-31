@@ -29,6 +29,8 @@ import Kenya from "./Pages/Kenya";
 import Lekki from "./Pages/Lekki";
 import Anambra from "./Pages/Anambra";
 import Berger from "./Pages/Berger";
+import Ibadan from "./Pages/Ibadan";
+import Abuja from "./Pages/Abuja";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -71,6 +73,8 @@ function App() {
         <Route path="/lekki" element={<Lekki/>} />
         <Route path="/anambra" element={<Anambra/>} />
         <Route path="/berger" element={<Berger/>} />
+        <Route path="/ibadan" element={<Ibadan/>} />
+        <Route path="/abuja" element={<Abuja/>} />
         <Route path="/exclusive" element={<Exclusive/>} />
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />
