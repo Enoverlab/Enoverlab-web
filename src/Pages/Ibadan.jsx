@@ -1,4 +1,4 @@
-import IbadanHero from '../Components/Ibadan/AnambraHero'
+import IbadanHero from '../Components/Ibadan/IbaHero'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Access from '../Components/Ibadan/Access'
