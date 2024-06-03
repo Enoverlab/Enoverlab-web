@@ -2,7 +2,7 @@ import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
-import { executiveProgram} from '../../constants'
+import { businessProgram } from '../../constants'
 import day3 from "../../assets/icon/days3.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
@@ -113,7 +113,7 @@ const ProgramDetails = () => {
                   Training Details
                 </H4>
                 <div className="list">
-                  {executiveProgram.map((pg) => (
+                  {businessProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
                       <P fs="3.9vw" mdfs="1.23vw" color="var(--Body-Text)">
