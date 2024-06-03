@@ -13,7 +13,7 @@ const ProgramDetails = () => {
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
                 <div className="heading" id="onsite">
-                  <H4 mdfs="2.38vw" fs="1.5rem" fw="700">
+                  <H4 mdfs="2.38vw" fs="1.3rem" fw="700">
                   Business Growth Coaching 
                   </H4>
                   <img src={day3} alt="3 days" />
@@ -108,6 +108,7 @@ const ProgramDetails = () => {
                   pb="25px"
                   mdpb="28px"
                   color="var(--Body-Text)"
+                  id='trainingDetails'
                 >
                   Training Details
                 </H4>

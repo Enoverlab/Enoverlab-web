@@ -1,9 +1,10 @@
 import React from 'react'
 import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
-import {  SecondaryButtonA } from '../../Utils/styled/Buttons'
+import {  SecondaryButton } from '../../Utils/styled/Buttons'
 // import kenyanFlag from "../../assets/icon/kenyaFlag.png"
 import kenyaCity from "../../assets/icon/kenyaCity.png"
 import styled from 'styled-components'
+import ScrollToElement from '../../helper/ScrollToElement'
 // import location from "../../assets/icon/location.svg"
 
 const BusinessHero = () => {
@@ -15,8 +16,8 @@ const BusinessHero = () => {
                 {/* <img src={kenyanFlag} alt="Kenya's FLag" /> */}
             </div>
             <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Drive your business growth with Product Thinking</H1>
-            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Increase your revenue by 10% - 30% annually </H3>
-            <SecondaryButtonA Text="Learn More"/>
+            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Increase your company revenue by 10% - 30% annually </H3>
+            <SecondaryButton Text="Learn More" to='#trainingDetails' handleClick={ScrollToElement}/>
         </section>
         <section className='rightContainer'>
             <div>
