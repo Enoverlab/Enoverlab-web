@@ -11,7 +11,8 @@ const BergerHero = () => {
     <StyledBergerHero>
         <section className='leftContainer'>
             <div className='topTool'>
-                <H4>Howdy <div className="wiggle">👋</div></H4>
+                <H4>Howdy </H4>
+                <div className="wiggle">👋</div>
             </div>
             <div className='direction'>
                 <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">
