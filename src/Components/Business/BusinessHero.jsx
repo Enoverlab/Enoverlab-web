@@ -16,7 +16,7 @@ const BusinessHero = () => {
                 {/* <img src={kenyanFlag} alt="Kenya's FLag" /> */}
             </div>
             <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Drive your business growth with Product Thinking</H1>
-            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Increase your company revenue by 10% - 30% annually </H3>
+            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Increase your company revenue by <br /> 10% - 30% annually </H3>
             <SecondaryButton Text="Learn More" to='#trainingDetails' handleClick={ScrollToElement}/>
         </section>
         <section className='rightContainer'>
