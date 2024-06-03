@@ -79,6 +79,7 @@ h4{
     border-radius: 16px;
     background: rgba(0, 78, 255, 0.44);
     .wiggle{
+        font-size : 1.4rem;
         animation : ${wave} 1s ease-in-out infinite
     }
 }
