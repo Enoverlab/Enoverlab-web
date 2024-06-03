@@ -169,7 +169,7 @@ const StyledProgramDetail = styled.div`
     gap: 26px;
   }
   .cta {
-    padding-top: 2.1rem;
+    padding: 2.1rem 0 3rem 0;
     padding-right: 1rem;
     display: flex;
     align-items: center;
