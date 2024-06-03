@@ -3,7 +3,7 @@ import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import {  executiveProgram} from '../../constants'
-import day10 from "../../assets/icon/day10.svg"
+import day3 from "../../assets/icon/days3.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
@@ -13,10 +13,10 @@ const ProgramDetails = () => {
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
                 <div className="heading" id="onsite">
-                  <H4 mdfs="2.38vw" fw="700">
+                  <H4 mdfs="2.38vw" fs="1.2rem" fw="700">
                   Business Growth Coaching 
                   </H4>
-                  <img src={day10} alt="10 days" />
+                  <img src={day3} alt="3 days" />
                 </div>
                 <div className="cover2">
                   <main>
