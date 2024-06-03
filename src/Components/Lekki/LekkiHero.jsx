@@ -11,7 +11,7 @@ const LekkiHero = () => {
     <StyledLekkiHero>
         <section className='leftContainer'>
             <div className='topTool'>
-                <H4>Lekki, Nigeria</H4>
+                <H4>Hiya 👋</H4>
             </div>
             <div className='direction'>
                 <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">

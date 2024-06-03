@@ -186,6 +186,18 @@ export const executiveProgram = [
   "Product Roadmap",
   "And so much more..."
 ];
+export const businessProgram = [
+  "Product Thinking",
+  "6 pillars of product thinking",
+  "Solving problems for your customers",
+  "Defining your target users",
+  "Crafting a product vision",
+  "Defining your business objectives",
+  "Creating a product/service",
+  "Developing a business strategy",
+  "Practical application of product thinking",
+  "And so much more..."
+];
 
 export const OnsiteProgram = [
   'Ideal for anyone who wants to learn everything on Product management; beginner or professional.',

@@ -72,9 +72,9 @@ p{
     font-size: clamp(1.2rem,3.27vw,1.4rem);
     text-align: center;
   }
-// #Property{
-//     animation: ${bounce} 1s infinite;;
-// }
+/* #Property{
+  animation: ${bounce} 1s infinite;;
+} */
 
 @media(min-width: 1024px) {
   div{

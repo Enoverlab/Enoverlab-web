@@ -2,7 +2,7 @@ import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
-import {  executiveProgram} from '../../constants'
+import { executiveProgram} from '../../constants'
 import day3 from "../../assets/icon/days3.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
