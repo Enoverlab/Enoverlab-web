@@ -75,11 +75,11 @@ h4{
     align-items: center;
     padding: 0.6rem 0.8rem;
     width: fit-content;
-    gap: 1.5rem;
+    gap: 1rem;
     border-radius: 16px;
     background: rgba(0, 78, 255, 0.44);
     .wiggle{
-        font-size : 1.4rem;
+        font-size : 1.8rem;
         animation : ${wave} 1s ease-in-out infinite
     }
 }

@@ -2,7 +2,9 @@ import React from 'react'
 import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
 import bergerCity from "../../assets/icon/abujaCenter.png"
-import styled from 'styled-components'
+
+import styled, { keyframes } from 'styled-components';
+
 import location from "../../assets/icon/location.svg"
 import direction from "../../assets/icon/direction.png"
 
@@ -12,6 +14,7 @@ const AbujaHero = () => {
         <section className='leftContainer'>
             <div className='topTool'>
                 <H4>Hello</H4>
+                <div className="wiggle">👋</div>
             </div>
             <div className='direction'>
                 <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">
@@ -42,6 +45,15 @@ const AbujaHero = () => {
 
 export default AbujaHero
 
+const wave = keyframes`
+  0%, 100% {
+     transform : rotate(0deg);
+    }
+    50% {
+        transform : rotate(50deg);
+    }
+  `
+
 const StyledAbujaHero = styled.div`
 padding: 1.9rem 2.4rem;
 display: flex;
@@ -65,14 +77,13 @@ h4{
     align-items: center;
     padding: 0.6rem 0.8rem;
     width: fit-content;
-    gap: 0.5rem;
+    gap: 1rem;
     border-radius: 16px;
     background: rgba(0, 78, 255, 0.44);
-    img{
-        mix-blend-mode: inherit;
-        /* background-blend-mode: lighten; */
+    .wiggle{
+        font-size : 1.8rem;
+        animation : ${wave} 1s ease-in-out infinite
     }
-    
 }
 .direction{
         display : flex;
