@@ -84,8 +84,8 @@ const ProgramDetails = () => {
                           TUITION FEES
                         </H4>
                         <H2
-                          mdfs="2.38vw"
-                          fs="3.9vw"
+                          mdfs="1.38vw"
+                          fs="2vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
