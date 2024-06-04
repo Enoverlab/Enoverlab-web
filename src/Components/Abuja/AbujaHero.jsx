@@ -80,6 +80,10 @@ h4{
     gap: 1rem;
     border-radius: 16px;
     background: rgba(0, 78, 255, 0.44);
+    h4{
+        font-size: 1.8rem;
+        font-weight:600 ;
+    }
     .wiggle{
         font-size : 1.8rem;
         animation : ${wave} 1s ease-in-out infinite
@@ -123,6 +127,13 @@ h4{
     .topTool{
         padding: 1.2rem 1.8rem;
         border-radius: 24px;
+        h4{
+        font-size: 2rem;
+    }
+    .wiggle{
+        font-size : 2rem;
+        animation : ${wave} 1s ease-in-out infinite
+    }
     }
     .direction{
         display : flex;

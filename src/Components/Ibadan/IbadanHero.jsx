@@ -2,7 +2,7 @@ import React from 'react'
 import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
 import bergerCity from "../../assets/icon/ibadanCenter.png"
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import location from "../../assets/icon/location.svg"
 import direction from "../../assets/icon/direction.png"
 
@@ -12,6 +12,7 @@ const IbadanHero = () => {
         <section className='leftContainer'>
             <div className='topTool'>
                 <H4>Bawo ni</H4>
+                <div className="wiggle">👋</div>
             </div>
             <div className='direction'>
                 <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">
@@ -42,6 +43,15 @@ const IbadanHero = () => {
 
 export default IbadanHero
 
+const wave = keyframes`
+  0%, 100% {
+     transform : rotate(0deg);
+    }
+    50% {
+        transform : rotate(50deg);
+    }
+  `
+
 const StyledIbadanHero = styled.div`
 padding: 1.9rem 2.4rem;
 display: flex;
@@ -65,12 +75,16 @@ h4{
     align-items: center;
     padding: 0.6rem 0.8rem;
     width: fit-content;
-    gap: 0.5rem;
+    gap: 1rem;
     border-radius: 16px;
     background: rgba(0, 78, 255, 0.44);
-    img{
-        mix-blend-mode: inherit;
-        /* background-blend-mode: lighten; */
+    h4{
+        font-size: 1.8rem;
+        font-weight: 600 ;
+    }
+    .wiggle{
+        font-size : 1.8rem;
+        animation : ${wave} 1s ease-in-out infinite
     }
     
 }
@@ -112,6 +126,14 @@ h4{
     .topTool{
         padding: 1.2rem 1.8rem;
         border-radius: 24px;
+        h4{
+        font-size: 2rem;
+        font-weight: 600 ;
+    }
+    .wiggle{
+        font-size : 2rem;
+        animation : ${wave} 1s ease-in-out infinite
+    }
     }
     .direction{
         display : flex;
