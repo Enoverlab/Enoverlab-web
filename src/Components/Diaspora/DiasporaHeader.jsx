@@ -14,7 +14,6 @@ import { useClickAway } from "@uidotdev/usehooks";
 import { MdClose as CloseIcon } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { PrimaryButton } from "../../Utils/styled/Buttons";
-import { HashLink } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
 
 const Header = ({ bg }) => {
@@ -54,27 +53,7 @@ const Header = ({ bg }) => {
 
       <TopNavbabies>
         <div className="dropdown">
-          Programs
-          <div className="addLinks">
-            <header>Standard</header>
-            <main>
-              {standard.map((links) => (
-                <MenuItems2 link={links.linkto}>{links.linkName}</MenuItems2>
-              ))}
-            </main>
-            <header>Advanced</header>
-            <main>
-              {advanced.map((links) => (
-                <MenuItems link={links.linkto}>{links.linkName}</MenuItems>
-              ))}
-            </main>
-            <header>International</header>
-            <main>
-              {international.map((links) => (
-                <MenuItems link={links.linkto}>{links.linkName}</MenuItems>
-              ))}
-            </main>
-          </div>
+          About Program
         </div>
         {Menulist.map((menu) => (
           <MenuItems link={menu.linkto}>{menu.linkName}</MenuItems>
@@ -101,34 +80,6 @@ const Header = ({ bg }) => {
                     <p onClick={handleLinks} className="dropdown">
                       Programs
                     </p>
-                    {addlinks && (
-                      <div className="addLinks">
-                        <header>Standard</header>
-                        <main>
-                          {standard.map((links) => (
-                            <MenuItems2 link={links.linkto}>
-                              {links.linkName}
-                            </MenuItems2>
-                          ))}
-                        </main>
-                        <header>Advanced</header>
-                        <main>
-                          {advanced.map((links) => (
-                            <MenuItems link={links.linkto}>
-                              {links.linkName}
-                            </MenuItems>
-                          ))}
-                        </main>
-                        <header>International</header>
-                        <main>
-                          {international.map((links) => (
-                            <MenuItems link={links.linkto}>
-                              {links.linkName}
-                            </MenuItems>
-                          ))}
-                        </main>
-                      </div>
-                    )}
                   </div>
                 </motion.span>
                 {Menulist.map((menu, index) => (
@@ -173,9 +124,6 @@ const MenuItems = ({ link, children, onClick }) => {
   );
 };
 
-const MenuItems2 = ({ link, children }) => {
-  return <HashLink to={link}>{children}</HashLink>;
-};
 
 const MenuToggle = ({ tog, open }) => {
   return (
@@ -185,51 +133,14 @@ const MenuToggle = ({ tog, open }) => {
   );
 };
 
-const standard = [
-  {
-    linkName: "Online Product Management",
-    linkto: "/programs#online",
-  },
-  {
-    linkName: "Onsite Product Management",
-    linkto: "/programs#onsite",
-  },
-];
-
-const advanced = [
-  {
-    linkName: "AI Product Management",
-    linkto: "/aipmp",
-  },
-  {
-    linkName: "Growth Product Management",
-    linkto: "/growthpm",
-  },
-  {
-    linkName: "Technical Product Management",
-    linkto: "/technicalpm",
-  },
-];
-
-const international = [
-  {
-    linkName: "Diaspora Program",
-    linkto: "/diaspora",
-  },
-  {
-    linkName: "Kenya Program",
-    linkto: "/kenya",
-  },
-];
-
 const Menulist = [
   {
-    linkName: "Blog",
-    linkto: "/blog",
+    linkName: "Career Coaching",
+    linkto: "#career",
   },
   {
-    linkName: "Free Resources",
-    linkto: "/resources",
+    linkName: "Internship",
+    linkto: "#internship",
   },
 ];
 
