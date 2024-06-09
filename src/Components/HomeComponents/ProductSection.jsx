@@ -302,7 +302,7 @@ const StyledCard = styled.div`
       padding: 15px 16px;
     }
     img{
-    width: 34vw;
+    width: 32vw;
     height: 18.37vw;
     max-width : 53.6rem;
     max-height : 24.8rem;

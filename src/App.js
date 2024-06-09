@@ -33,6 +33,7 @@ import Ibadan from "./Pages/Ibadan";
 import Abuja from "./Pages/Abuja";
 import Business from "./Pages/Business";
 import Growth from "./Pages/Growth";
+import Technical from "./Pages/Technical";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -79,6 +80,7 @@ function App() {
         <Route path="/ibadan" element={<Ibadan/>} />
         <Route path="/abuja" element={<Abuja/>} />
         <Route path="/growth" element={<Growth/>} />
+        <Route path="/technical" element={<Technical/>} />
         <Route path="/exclusive" element={<Exclusive/>} />
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />

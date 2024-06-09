@@ -2,7 +2,7 @@ import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
-import {GrowthProgram } from '../../constants'
+import {TechnicalProgram } from '../../constants'
 import weeks10 from "../../assets/icon/weeks10.png"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
@@ -13,8 +13,8 @@ const ProgramDetails = () => {
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
                 <div className="heading" id="onsite">
-                  <H4 mdfs="2.38vw" fs="3.3vw" fw="700">
-                  Growth Product Management<br /> Program Training
+                  <H4 mdfs="2.38vw" fs="1.8rem" fw="700">
+                  Technical Product<br /> Management Program
                   </H4>
                   <img src={weeks10} alt="4 weeks" />
                 </div>
@@ -32,7 +32,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Wednesday <br /> & Saturday
+                          Every Saturday
                         </H2>
                        </div>
                        <div>
@@ -45,7 +45,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          11am - 1pm
+                          10am - 2pm
                         </H2>
                        </div>
                       </div>
@@ -114,7 +114,7 @@ const ProgramDetails = () => {
                   Training Details
                 </H4>
                 <div className="list">
-                  {GrowthProgram.map((pg) => (
+                  {TechnicalProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
                       <P fs="3.6vw" mdfs="1.23vw" color="var(--Body-Text)">
@@ -141,7 +141,7 @@ const StyledProgramDetail = styled.div`
     padding: 33px 20px 3.2rem 15px;
   .program {
     position: relative;
-    width: 98%;
+    width: 100%;
     img {
       width: clamp(100px, 32vw, 140px);
       position: absolute;

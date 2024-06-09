@@ -222,6 +222,14 @@ export const AiProgram = [
  'Dissection Case Studies of AI products',
 ] 
 
+export const GrowthProgram = [
+  'Introduction to Product Growth', 'Different types of Growth','Understanding Growth Terms - Gamification, Time-to-Value, Economies of Scale, Network Effects, Personalisation, Habit Forming, etc', 'Achieving Product Market Fit (PMF)', 'Growing from product market fit',' Product Metrics AARRR (Acquisition, Activation, Retention, Referral, Revenue)','Tracking Data with Amplitude & Mixpanel','Rapid Testing & Experimentation; A/B Testing & Usability Testing', 'Product Strategy Product Led Growth','Collaborating with the Marketing Team','Creating & Implementing Growth Plans','Analysing Different Growth Strategies of Major Tech Companies'
+]
+
+export const TechnicalProgram = [
+  'Introduction to Technical Product Management','Fundamentals of APIs','API Management and Strategy','Building Effective Support Systems','Support Tools and Metrics','Using Postman and Azure to test APIs','Integration Approaches and Patterns','Integration Tools and Platforms','Deployment and deployment environments','Product Analytics','Integration Tools and Platforms'
+]
+
 
 
 export const FaqContent = [
