@@ -59,7 +59,7 @@ const Hero = () => {
             }}
             className="button-container"
           >
-            <SecondaryButton to="#" buttText="Enrol Now" />
+            <SecondaryButton to="#" Text="Enrol Now" />
           </div>
         </div>
         <div className="img-container">
