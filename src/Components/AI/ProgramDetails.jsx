@@ -45,7 +45,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          10am - 1pm
+                          11am - 3pm
                         </H2>
                        </div>
                       </div>
@@ -60,7 +60,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Lekki, Lagos, Nigeria
+                          Online and Onsite (Lekki, Lagos, Nigeria)
                         </H2>
                         </div>
                       </div>

@@ -18,22 +18,8 @@ export const detailsData = [
   ];
   
  export const detailsListData = [
-    "Introduction to Product Management",
-    "Product Thinking",
-    "Understanding Product Life Cycle",
-    "Conducting User Research",
-    "User Segmentation & Personas",
-    "Writing User Stories",
-    "Creating Userflows & Wireframes",
-    "Agile Product Development",
-    "Product Roadmap",
-    "Competitive & Market Analysis",
-    "Product Metrics",
-    "Prioritization frameworks",
-    "Product Strategy",
-    "Minimum Viable Product",
-    "Product Launch; Go - to - market strategy",
-    "Tracking & Analyzing Product Data",
-    "Product Launch; Go - to - market strategy"
+  'Introduction to Product management',
+  'Minimum Viable Product ','Product Thinking',
+  'Prioritization','Understanding Product Lifecycle','Product Roadmap',' Conducting  user research','Agile and Scrum; Using JIRA','User Segmentation & Persona','Product Metrics','User  stories & acceptance criteria','Product Strategy','Creating Userflow & Wireframe','Product Launch','Competitiive Analysis'
   ]
   

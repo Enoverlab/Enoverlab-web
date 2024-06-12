@@ -48,11 +48,11 @@ const Coaching = () => {
           <div className="title-container">
             <div className="title-text">
               <H1
-                textAlign="left"
+                tA="left"
                 color="#111"
-                fontSize="1.5rem"
-                fontWeight={600}
-                mobileFontSize=".75rem"
+                mdfs="1.5rem"
+                fw={600}
+                fs=".75rem"
               >
                 Career coaching powered by EliteDigest
               </H1>
@@ -153,8 +153,11 @@ const StyledCoaching = styled.div`
       .title-container {
         .title-text {
           display: flex;
+        align-items: center;
           column-gap: 10px;
-
+          img{
+              width: 2.3125rem;
+            }
           @media (max-width: 768px) {
             img{
               width: 2.3125rem;

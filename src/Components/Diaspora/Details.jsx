@@ -13,7 +13,7 @@ import Jira from "../../assets/Jira.png";
 import productPlan from "../../assets/productPlan.png";
 // import slack from "../../assets/slackIcon.png";
 import trello from "../../assets/trello.png";
-import { SecondaryButton, TransparentButton } from "../../Utils/styled/Buttons";
+import {SecondaryButton} from "../../Utils/styled/Buttons";
 import DetailsImg from "../../assets/diaspora/detailsImg.png";
 
 const Details = () => {
@@ -30,14 +30,13 @@ const Details = () => {
               <div className="desktop-head">
                 <H1
                   color={"#FFFFFF"}
-                  fontSize="3rem"
-                  lineHeight="3.75rem"
-                  mobileFontSize="1.5rem"
-                  fontWeight="600"
-                  paddingBottom={".875rem"}
-                  textAlign="left"
+                  mdfs="4.8rem"
+                  lh="3.75rem"
+                  fs="1.5rem"
+                  fw="600"
+                  tA="left"
                 >
-                  Program Details
+                  Course Details
                 </H1>
               </div>
             </div>
@@ -46,19 +45,19 @@ const Details = () => {
                 <div key={index} className="details-content-text">
                   <H4
                     color={color.light}
-                    fontSize="1.25rem"
-                    mobileFontSize=".625rem"
-                    fontWeight="400"
-                    textAlign="left"
+                    mdfs="1.6rem"
+                    fs="1.2rem"
+                    fw="400"
+                    tA="left"
                   >
                     {item.text}
                   </H4>
                   <P
                     color={color.light}
-                    fontSize="1.5rem"
-                    mobileFontSize=".875rem"
-                    fontWeight="500"
-                    textAlign="left"
+                    mdfs="3.6rem"
+                    fs="2.4rem"
+                    fw="500"
+                    tA="left"
                   >
                     {item.value}
                   </P>
@@ -76,17 +75,17 @@ const Details = () => {
                   <div className="icon">
                     <BsCheckCircle
                       color={color.dark}
-                      size="1rem"
+                      size="2rem"
                       fontWeight={"700"}
                     />
                   </div>
                   <div className="text">
                     <P
                       color={color.dark}
-                      fontSize="1.25rem"
-                      mobileFontSize="14px"
-                      fontWeight={700}
-                      textAlign="left"
+                      mdfs="2rem"
+                      fs="1.4rem"
+                      fw={700}
+                      tA="left"
                     >
                       {item}
                     </P>
@@ -96,16 +95,10 @@ const Details = () => {
             </div>
           </div>
           <div className="class-tools-container">
-            <H4 fontSize="1.5rem" textAlign="center" color={theme.color.dark}>
+            <H4 mdfs="2.4rem" fs='1.6rem' tA="center" fw={700} color='#333'>
               Class Tools
             </H4>
             <div className="class-tools-icon-container">
-              <div
-                className="class-tools-icon-vert"
-                style={{
-                  color: theme.color.dark,
-                }}
-              >
                 <div className="class-tools-icon">
                   <img src={Figma} alt="google-docs-icon" />
                   Figma
@@ -119,14 +112,6 @@ const Details = () => {
                   <img src={googleAnalytics} alt="slack-icon" />
                   Product Plan
                 </div>
-              </div>
-
-              <div
-                className="class-tools-icon-vert"
-                style={{
-                  color: theme.color.dark,
-                }}
-              >
                 <div className="class-tools-icon">
                   <img src={trello} alt="slack-icon" />
                   Trello
@@ -139,7 +124,6 @@ const Details = () => {
                   <img src={hotJar} alt="slack-icon" />
                   Hotjar
                 </div>
-              </div>
             </div>
             <div className="button-box">
               <div className="button-flex">
@@ -149,15 +133,7 @@ const Details = () => {
                   }}
                   className="button-container"
                 >
-                  <SecondaryButton to="#" buttText="Pay Now" />
-                </div>
-                <div
-                  className="button-container"
-                  onClick={() => {
-                    window.open("https://forms.gle/CU5EXw9V5P5UL8dK7");
-                  }}
-                >
-                  <TransparentButton to="#" buttText="Sign Up" />
+                  <SecondaryButton to="#" Text="Enroll Now" />
                 </div>
               </div>
               {/* <div className="download-text-url">
@@ -240,6 +216,7 @@ const StyledDetails = styled.div`
             display: block;
             H1 {
               display: block;
+              margin-bottom: 2.3rem;
               @media (max-width: 768px) {
                 display: none;
               }
@@ -249,7 +226,12 @@ const StyledDetails = styled.div`
         .details-content {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-gap: 1rem;
+          column-gap: 30rem;
+          row-gap: 5rem;
+          @media (max-width: 768px) {
+            column-gap: 10rem;
+            row-gap: 2rem;
+              }
 
           .details-content-text {
             H4 {
@@ -283,32 +265,35 @@ const StyledDetails = styled.div`
       }
     }
     .detailsListContainer {
-      padding: 4% 13%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 4.8rem;
       @media (max-width: 768px) {
         padding: 4% 3%;
+        align-items: flex-start;
+        margin-top: 2.8rem;
       }
       .list-title {
         padding: 1rem 0;
       }
       .list {
         max-height: 480px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        row-gap: 32px;
-        justify-content: space-between;
-        column-gap: 20%;
-
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        row-gap: 3.2rem;
+        column-gap: 22rem;
         @media (max-width: 768px) {
-          flex-wrap: nowrap;
-          max-height: 100%;
+          grid-template-columns: repeat(1,auto);
           row-gap: 1.5625rem;
         }
         .list-item {
-          /* margin-bottom: 1rem; */
           display: flex;
-          column-gap: 1rem;
+          gap: 3rem;
           align-items: center;
+          @media (max-width: 768px) {
+            gap: 2rem;
+        }
           .text {
             @media (max-width: 768px) {
               P {
@@ -327,48 +312,41 @@ const StyledDetails = styled.div`
       padding: 0 30%;
 
       @media (max-width: 768px) {
+        flex-direction: column;
+      align-items: center;
+        margin: 10rem 0px 0 0;
         padding: 0 2%;
       }
     }
     .class-tools-icon-container {
-      display: flex;
-      justify-content: space-between;
-      /* max-width: 80%; */
+      display: grid;
+      width: 100%;
+      grid-template-columns:repeat(3, auto);
+      place-items: center;
+      column-gap: 4rem;
+      row-gap: 2rem;
       margin: 2rem 0;
-
-      .class-tools-icon-vert {
-        gap: 2.125rem;
-        display: flex;
-        flex-direction: column;
-        @media (max-width: 768px) {
-          gap: 1.75rem;
-        }
         .class-tools-icon {
           display: flex;
           align-items: center;
           column-gap: 1rem;
-          font-size: 1rem;
+          font-size: 1.6rem;
           font-weight: 700;
 
-          .class-icon {
-            width: 2.5rem;
-            height: 2.5rem;
-            object-fit: contain;
-          }
           @media (max-width: 768px) {
-            gap: 0.3rem;
-            font-size: 0.85rem;
+            column-gap: 1rem;
+            font-size: 1.3rem;
             img {
               width: 1.9rem;
             }
           }
         }
-      }
-      @media (max-width: 768px) {
-        max-width: 90%;
+        @media (max-width: 768px) {
+            column-gap: 1rem;
+            font-size: 1.3rem;
+          }
       }
     }
-  }
 
   .button-container {
     margin-top: 3rem;
