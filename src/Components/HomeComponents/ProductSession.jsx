@@ -14,28 +14,28 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Philip Ade-Akanbi</h3>
-                  <h4>AI Product Manager, Wema Bank</h4>
+                  <h3>Oladipupo Bolaji</h3>
+                  <h4>(Former Snr Pm at Microsoft)</h4>
             </div>
           </SpeakerImage>
           <div>
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Philip Ade-Akanbi</h3>
-                  <h4>AI Product Manager, Wema Bank</h4>
+                  <h3>Oladipupo Bolaji</h3>
+                  <h4>(Former Snr Pm at Microsoft)</h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                Introduction To Artificial Intelligence <br/> Product Management Program
+                Mastering Product Metrics: <br/> Building a Solid Foundation for Success
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                May 18, 2024
+                June 15, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
@@ -113,6 +113,7 @@ img{
   width :6.9rem;
   height: 6.9rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 div{
   h2,h4{

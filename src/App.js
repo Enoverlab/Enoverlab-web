@@ -79,8 +79,8 @@ function App() {
         <Route path="/berger" element={<Berger/>} />
         <Route path="/ibadan" element={<Ibadan/>} />
         <Route path="/abuja" element={<Abuja/>} />
-        <Route path="/growth" element={<Growth/>} />
-        <Route path="/technical" element={<Technical/>} />
+        <Route path="/growthpm" element={<Growth/>} />
+        <Route path="/technicalpm" element={<Technical/>} />
         <Route path="/exclusive" element={<Exclusive/>} />
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />
