@@ -93,7 +93,7 @@ const ProgramDetails = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButtonA Text="Contact Us" to=''/>
+                    <SecondaryButtonA Text="Contact Us" to='tel:09063124595'/>
                     <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
