@@ -3,7 +3,8 @@ import { ErrorMessage, Field, Form, Formik } from 'formik'
 import * as Yup from "yup"
 import styled from 'styled-components'
 import { H3, H4 } from '../../Utils/styled/Typograpyhy'
-import { SecondaryButton } from '../../Utils/styled/Buttons'
+import { SubmitButton } from '../../Utils/styled/Buttons'
+import axios from 'axios'
 
 const Formi = () => {
   return (
@@ -16,11 +17,43 @@ const Formi = () => {
             email : Yup.string().email("Must be a Valid Email Address").required('Field is Requred!')
         })
     }
-    onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
+    onSubmit={(values, { setSubmitting, }) => {
+        const tkn = process.env.REACT_APP_BIRDSEND_TKN
+        const config = {
+            headers : {
+                Authorization : `Bearer ${tkn}`
+            }
+        }
+        function checkNaming(){
+            const nameBreakdown = values.name.split(' ')
+            const firstName = nameBreakdown[0]
+            if(nameBreakdown[1]){
+                const lastName = nameBreakdown[1]
+                return {
+                    first_name : firstName,
+                    last_name : lastName
+                }
+            }
+            return {
+                first_name : firstName
+            }
+        }
+        const namingResult = checkNaming()
+        console.log(namingResult)
+        axios.post('https://api.birdsend.co/v1/contacts',
+            {
+                email : values.email,
+                fields : {
+                    ...namingResult
+                }
+            },config
+        )
+        .then((res)=>{
+            console.log(res)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
       }}
     >
         <Form>
@@ -41,7 +74,7 @@ const Formi = () => {
                 <ErrorMessage name='email' id='email' render={msg => <div className='err'>{msg}</div>} />
                 </div>
                 <div className='button'>
-               <SecondaryButton Text="Register"/>
+               <SubmitButton Text="Register"/>
                 </div>
                 </section>
         </Form>
