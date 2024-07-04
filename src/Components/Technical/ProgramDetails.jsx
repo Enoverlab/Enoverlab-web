@@ -3,7 +3,7 @@ import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import {TechnicalProgram } from '../../constants'
-import weeks10 from "../../assets/icon/weeks10.png"
+import weeks8 from "../../assets/icon/weeks8.png"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
@@ -16,7 +16,7 @@ const ProgramDetails = () => {
                   <H4 mdfs="2.38vw" fs="1.8rem" fw="700">
                   Technical Product<br /> Management Program
                   </H4>
-                  <img src={weeks10} alt="4 weeks" />
+                  <img src={weeks8} alt="weeks 8" />
                 </div>
                 <div className="cover2">
                   <main>
@@ -75,7 +75,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          10 weeks training
+                          8 weeks
                         </H2>
                         </div>
                         <div>

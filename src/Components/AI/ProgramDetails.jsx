@@ -60,7 +60,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Online and Onsite (Lekki, Lagos, Nigeria)
+                          Online
                         </H2>
                         </div>
                       </div>
@@ -75,7 +75,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          4 weeks training
+                          4 weeks
                         </H2>
                         </div>
                         <div>
@@ -184,7 +184,7 @@ const StyledProgramDetail = styled.div`
     gap:21.164vw;
   }
   .item3{
-    gap: 19.841vw;
+    gap: 25.841vw;
   }
   .list {
     display: flex;

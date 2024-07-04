@@ -131,7 +131,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Monday <br /> & Thursday
+                          Every Tuesday <br /> & Friday
                         </H2>
                        </div>
                        <div>
@@ -243,7 +243,7 @@ const StandardProgram = () => {
                         <option value="Ibadan">IBADAN</option>
                         <option value="Abuja">ABUJA</option>
                         <option value="Berger">BERGER</option>
-                        <option value="Anambra">Anambra</option>
+                        <option value="Anambra">ANAMBRA</option>
                       </select>
                       {isError && <p className="err">Please select Your Preferred Location</p>}
                       </div>
