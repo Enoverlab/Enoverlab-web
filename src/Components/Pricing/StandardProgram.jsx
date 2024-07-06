@@ -120,7 +120,6 @@ const StandardProgram = () => {
                 <form action="https://forms.gle/VyeL132b97jEv3Pz6" target="_blank"  className="cover">
                   <main>
                   <div  className="item">
-                      <div className='item1'>
                        <div >
                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Training day
@@ -147,8 +146,6 @@ const StandardProgram = () => {
                           8pm - 10pm
                         </H2>
                        </div>
-                      </div>
-                      <div className='item3'>
                         <div>
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Duration
@@ -173,14 +170,17 @@ const StandardProgram = () => {
                           ₦200,000
                         </H2>
                       </div>
-                      </div>
                     </div>
+                    
                   </main>
                   <div className="cta">
-                    <SubmitButton Text="Enroll Now" />
-                    <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      <SubmitButton Text="Enroll Now" />
+                      <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
-                </Link>
+                    </Link>
+                  </div>
+                  <div className="note">
+                    <h1>NOTE : Price does not apply to international applicants! <span><Link to='/diaspora'>Check Here</Link></span></h1>
                   </div>
                 </form>
               </div>
@@ -217,39 +217,35 @@ const StandardProgram = () => {
                 </div>
                 <form action={trainingLocation.link} target="_blank" onSubmit={handleSubmit} className="cover2">
                   <main>
-                  <div className="item">
-                      <div className='item1'>
-                       <div>
+                    <div className="item">
+                      <div>
                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2 mdfs="1.587vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
                           Every Saturday
                         </H2>
-                       </div>
-                       <div>
+                      </div>
+                      <div>
                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2 mdfs="1.58vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
                           10am - 1pm
                         </H2>
-                       </div>
                       </div>
-                      <div>
-                      <select title="location" name="locale" id="locale"  value={location} onChange={handleLocationChange} onBlur={handleBlur}>
-                        <option id="item" value="">Select Location</option>
-                        <option value="Lekki">LEKKI</option>
-                        <option value="Ibadan">IBADAN</option>
-                        <option value="Abuja">ABUJA</option>
-                        <option value="Berger">BERGER</option>
-                        <option value="Anambra">ANAMBRA</option>
-                      </select>
-                      {isError && <p className="err">Please select Your Preferred Location</p>}
+                      <div className="selectOption">
+                        <select title="location" name="locale" id="locale"  value={location} onChange={handleLocationChange} onBlur={handleBlur}>
+                          <option id="item" value="">Select Location</option>
+                          <option value="Lekki">LEKKI</option>
+                          <option value="Ibadan">IBADAN</option>
+                          <option value="Abuja">ABUJA</option>
+                          <option value="Berger">BERGER</option>
+                          <option value="Anambra">ANAMBRA</option>
+                        </select>
+                        {isError && <p className="err">Please select Your Preferred Location</p>}
                       </div>
-                      
-                      <div className="item2">
-                        <div>
+                      <div className="selectLocale">
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Location
                         </H4>
@@ -261,10 +257,8 @@ const StandardProgram = () => {
                         >
                           {trainingLocation.location}
                         </H2>
-                        </div>
                       </div>
-                      <div className='item3'>
-                        <div>
+                      <div>
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Duration
                         </H4>
@@ -279,8 +273,8 @@ const StandardProgram = () => {
                         >
                           8 weeks Internship
                         </H2>
-                        </div>
-                        <div>
+                      </div>
+                      <div>
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
@@ -292,7 +286,6 @@ const StandardProgram = () => {
                         >
                           ₦{trainingLocation.tuition}
                         </H2>
-                      </div>
                       </div>
                     </div>
                   </main>
@@ -367,7 +360,7 @@ const StyledProgram = styled.div`
   }
   .cover {
     background: rgba(186, 234, 250, 0.4);
-    padding: 4.4rem 0 3.5rem 0;
+    padding: 4.4rem 0 2.5rem 0;
     padding-left: 3.5rem;
   }
   .cover2{
@@ -388,19 +381,15 @@ const StyledProgram = styled.div`
     gap: 26px;
   }
   .item{
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 100px;
+    row-gap: 30px;
   }
-  .item1,.item2, .item3 {
-    display: flex;
+  .selectLocale, .selectOption{
+    grid-column: span 2 / span 2;
   }
-  .item1{
-    gap:21.164vw;
-  }
-  .item3{
-    gap: 19.841vw;
-  }
+
   .list, .list2{
     display: flex;
     flex-direction: column;
@@ -411,12 +400,25 @@ const StyledProgram = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 30px;
     .syll {
       display: none;
     }
   }
 
+  .note{
+    padding-top: 25px;
+    font-size: 14px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    span{
+      padding-left: 15px;
+      a{
+      color: #175afe;
+    }
+    }
+  }
   .but{
     display: flex;
     justify-content: center;
@@ -531,24 +533,26 @@ const StyledProgram = styled.div`
       padding-left: 9.6rem;
     }
     .item{
-    gap: 65px;
-  }
-  .item1{
-    gap:17.164vw;
-  }
-  .item3{
-    gap: 15.841vw;
+    column-gap: 165px;
+    row-gap: 65px;
   }
     .cta {
-      padding-top: 6.1rem;
+      display: grid;
+      grid-template-columns: repeat(2,auto);
       justify-content: flex-start;
+      gap: 200px;
+      padding-top: 6.1rem;
       .syll {
         display: block;
-        padding-left: 16.01vw;
-        color: #175afe;
+        
         font-size: 20px;
       }
     }
+
+    .note{
+    padding-top: 25px;
+    font-size: 16px;
+  }
     .but{
       display: none;
     }

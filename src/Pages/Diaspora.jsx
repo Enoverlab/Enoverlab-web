@@ -9,7 +9,7 @@ import SuccessStories from "../Components/Pricing/SuccessStories";
 import Header from "../Components/Diaspora/DiasporaHeader";
 import Footer from "../Components/Footer";
 import Placement from "../Components/Diaspora/Placement";
-import Started from "../Components/Diaspora/Started";
+import Started from '../Components/HomeComponents/Started'
 const Diaspora = () => {
   return (
     <div>
@@ -23,7 +23,7 @@ const Diaspora = () => {
       <SuccessStories />
       {/* <PricingAbout/> */}
       <Started />
-      <Footer />
+      <Footer p="5rem 9.6rem 0 9.6rem"/>
     </div>
   );
 };

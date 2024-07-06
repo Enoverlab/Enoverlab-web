@@ -188,6 +188,7 @@ const StyledDetails = styled.div`
 
       @media (max-width: 768px) {
         margin-top: 0;
+        width: 100%;
         padding: 0 1%;
       }
 
@@ -197,7 +198,7 @@ const StyledDetails = styled.div`
 
         img {
           width: 100%;
-          object-fit: contain;
+          object-fit: cover;
         }
       }
       @media (max-width: 768px) {
@@ -229,6 +230,7 @@ const StyledDetails = styled.div`
           column-gap: 30rem;
           row-gap: 5rem;
           @media (max-width: 768px) {
+            padding-top: 50px;
             column-gap: 10rem;
             row-gap: 2rem;
               }

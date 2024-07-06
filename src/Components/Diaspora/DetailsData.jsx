@@ -9,7 +9,7 @@ export const detailsData = [
     },
     {
       text: "Tution Fee",
-      value: "$1,000",
+      value: "$500",
     },
     {
       text: "Training Mode",
