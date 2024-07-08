@@ -1,8 +1,14 @@
 import styled from 'styled-components'
 import { H2,H3,H4 } from '../../Utils/styled/Typograpyhy';
 import privateCoaching from "../../assets/icon/private.svg"
+import fastTracking from "../../assets/icon/fastTracking.svg"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 import { PrimaryButton } from '../../Utils/styled/Buttons';
-
+import "swiper/css";
+import "swiper/swiper-bundle.css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 const StandardOptions = () => {
   return (
@@ -12,7 +18,40 @@ const StandardOptions = () => {
         Other Options for Standard Program
         </H2>
         </header>
-            <section className="swiper">
+        <Swiper className='swipery'
+        modules={[Pagination, Autoplay]}
+        autoplay
+        breakpoints={
+          {
+              320 : {
+                  slidesPerView : 1,
+                  autoplay : {
+                      delay : 3000,
+                  }
+              },
+              640:{
+                  slidesPerView : 1.2,
+                  spaceBetween: 25,
+                  autoplay : {
+                      delay : 5000
+                  }
+              },
+              1024: {
+                  slidesPerView : 2,
+                  spaceBetween: 25,
+                  autoplay : {
+                      delay : 5000
+                  }
+              },
+          }
+        }
+        pagination={{
+          el : '.swiperPagination',
+          clickable: true,
+        }}
+        >
+          <SwiperSlide className="swiper">
+          <section >
                 <div className='card'>
                     <img src={privateCoaching} alt="private Coaching" />
                     <H3 fs="4.2vw">Executive Coaching</H3>
@@ -25,6 +64,28 @@ const StandardOptions = () => {
                  <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More" to='/executive'/>
                 </div>
             </section>
+          </SwiperSlide>
+          <SwiperSlide className="swiper">
+          <section >
+                <div className='card'>
+                    <img src={fastTracking} alt="Fast track Coaching" />
+                    <H3 fs="4.2vw">International Program</H3>
+                </div>
+                <H4 mdfs="">
+                This is for Nigerians in Diaspora to learn product management skills and get international PM jobs
+
+                </H4>
+                <div className='learnContainer'>
+                 <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More" to='/diaspora'/>
+                </div>
+            </section>
+          </SwiperSlide>
+          <div className='swiperPagination'>
+
+          </div>
+        </Swiper>
+        
+            
     </StyledStandardOptions>
   )
 }
@@ -71,6 +132,11 @@ const StyledStandardOptions = styled.div`
     display: flex;
     justify-content: center;
    }
+   .swiperPagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   }
    padding: 3.2rem 2.4rem;
    @media (min-width: 1024px) {
     padding: 8rem 12rem;
@@ -78,10 +144,10 @@ const StyledStandardOptions = styled.div`
     header{
         margin-bottom: 4rem;
     }
-   .swiper{
+   /* .swiper{
     width: 50%;
     max-width: 58.4rem;
-   }
+   } */
     .card{
     background-color: #BAEAFA;
     padding: 4.2rem;
