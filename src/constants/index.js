@@ -76,13 +76,13 @@ export const advancedPrograms = [
     linkText: "",
     link : "/aipmp"
   },
-  {
-    img: ad4,
-    headText: "Web 3 Product Management",
-    subText: "For Product Leaders",
-    linkText: "COMING SOON!!!",
-    link : "/aipmp"
-  },
+  // {
+  //   img: ad4,
+  //   headText: "Web 3 Product Management",
+  //   subText: "For Product Leaders",
+  //   linkText: "COMING SOON!!!",
+  //   link : "/aipmp"
+  // },
 ];
 
 export const internationalPrograms = [
