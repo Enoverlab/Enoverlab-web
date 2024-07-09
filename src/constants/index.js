@@ -8,7 +8,7 @@ import sp2 from "../assets/icon/sp2.png";
 import ad1 from "../assets/icon/ad1.png";
 import ad2 from "../assets/icon/ad2.png";
 import ad3 from "../assets/icon/ad3.png";
-import ad4 from "../assets/icon/web3.jpg"
+// import ad4 from "../assets/icon/web3.jpg"
 import ip1 from "../assets/icon/ip1.png";
 import ip2 from "../assets/icon/ip2.png";
 import avatar1 from "../assets/successImage1.png";

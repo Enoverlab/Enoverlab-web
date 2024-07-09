@@ -12,12 +12,12 @@ const Hero = () => {
             <P
               color="#4B4B4B"
               textAlign="left"
-              fontSize="1.25rem"
+              mdfs="2rem"
               fontWeight={300}
               lineHeight="normal"
-              mobileFontSize=".75rem"
+              fs="1.2rem"
             >
-              ENOVERLAB IN CONJUNCTION WITH{" "}
+              ENOVERLAB IN PARTNERSHIP WITH{" "}
               <span
                 style={{
                   color: "#FAA31A",
@@ -31,26 +31,25 @@ const Hero = () => {
           </div>
           <H1
             color="#333333"
-            fontSize="2.8125rem"
-            mobileFontSize="1.875rem"
+            mdfs="4.5rem"
+            fs="3rem"
             textAlign="left"
             lineHeight="normal"
             mobileLineHeight="normal"
           >
-            International Product Management Training Program
+            International Product Management Program
           </H1>
 
           <div className="p-container">
             <P
               color="#4B4B4B"
               textAlign="left"
-              fontSize="1.5rem"
+              mdfs="2.4rem"
               fontWeight={300}
               lineHeight="normal"
-              mobileFontSize=".75rem"
+              fs="1.2rem"
             >
-              To help Africans in Diaspora with professional backgrounds learn
-              global product management tech skills.
+              To help Nigerians in Diaspora learn product management tech skills and get a job within 4 months!
             </P>
           </div>
           <div
@@ -100,14 +99,15 @@ const StyledHero = styled.div`
       .p-container {
         margin-top: 1.5rem;
         @media screen and (max-width: 768px) {
-          margin-top: 1rem;
+          margin-top: 2rem;
+          margin-bottom: 2.5rem;
         }
       }
       .button-container {
         margin-top: 3rem;
         width: 30%;
         @media screen and (max-width: 768px) {
-          margin-top: 1.5rem;
+          margin: 1.5rem 0;
           width: 50%;
         }
       }

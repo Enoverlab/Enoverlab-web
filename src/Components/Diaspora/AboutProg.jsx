@@ -41,6 +41,7 @@ export default AboutProg
 
 const StyledAboutProg = styled.div`
     padding: 4.875rem 20% 7.125rem 20%;
+    font-family: "Plus Jakarta Sans";
     background-color: #BAEAFA21;
     background-image: url(${LogoImg});
     background-repeat: no-repeat;
@@ -53,7 +54,8 @@ const StyledAboutProg = styled.div`
     H1{
         color: #333;
         z-index: 100;
-        margin-bottom: 4.8rem;
+        margin-bottom: 4.5rem;
+        font-weight: 700;
         @media (max-width: 768px){
             H1{
                 margin-bottom:3.2rem;
@@ -66,11 +68,11 @@ const StyledAboutProg = styled.div`
         text-align: left;
         color: #4B4B4B;
         font-size: 2.4rem;
-        line-height: normal;
+        line-height: 3.2rem;
         font-weight:400;
         @media (max-width: 768px){
-            font-size: 1.8rem;
-            line-height: 1.8rem;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
             margin-bottom: 2.4rem;
         }
     }
@@ -79,12 +81,12 @@ const StyledAboutProg = styled.div`
         color: blue;
         cursor: pointer;
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         &:hover{
             color: #00A343;
         }
         @media (max-width: 768px){
-            font-size: 1rem;
+            font-size: 1.6rem;
         }
     }
 `

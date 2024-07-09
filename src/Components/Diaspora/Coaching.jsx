@@ -146,6 +146,7 @@ const StyledCoaching = styled.div`
   .coaching-container {
     background-color: #e6ecff;
     padding: 5%;
+    margin-bottom: 4rem;
     @media (max-width: 768px) {
       padding: 2%;
     }

@@ -21,33 +21,24 @@ const Details = () => {
   return (
     <StyledDetails>
       <div className="details-container">
-        <div className="details-images-container">
-          <div className="img-box">
-            <img src={DetailsImg} alt="" className="details-head" />
-          </div>
-          <div className="text-layout">
-            <div className="head-text">
-              <div className="desktop-head">
-                <H1
-                  color={"#FFFFFF"}
-                  mdfs="4.8rem"
-                  lh="3.75rem"
-                  fs="1.5rem"
-                  fw="600"
-                  tA="left"
-                >
-                  Course Details
-                </H1>
-              </div>
-            </div>
-            <div className="details-content">
+        <div className="details-identity-container">
+          <H1
+            color={"#FFFFFF"}
+            mdfs="4.8rem"
+            lh="3.75rem"
+            fs="1.5rem"
+            tA="left"
+          >
+            Course Details
+          </H1>
+          <div className="details-content">
               {detailsData.map((item, index) => (
                 <div key={index} className="details-content-text">
                   <H4
                     color={color.light}
                     mdfs="1.6rem"
                     fs="1.2rem"
-                    fw="400"
+                    fw="700"
                     tA="left"
                   >
                     {item.text}
@@ -64,11 +55,14 @@ const Details = () => {
                 </div>
               ))}
             </div>
-          </div>
         </div>
 
         <div className="details-content-container">
+          <header>
+          What you will learn
+          </header>
           <div className="detailsListContainer">
+            
             <div className="list">
               {detailsListData.map((item, index) => (
                 <div key="index" className="list-item">
@@ -162,7 +156,7 @@ const animate = keyframes`
 `;
 
 const StyledDetails = styled.div`
-  /* padding: 9.1875rem 5%; */
+  padding: 9.1875rem 5%;
 
   @media (max-width: 768px) {
     padding: 2.875rem 5%;
@@ -176,62 +170,31 @@ const StyledDetails = styled.div`
       flex-direction: column;
       row-gap: 2rem;
     }
-
-    .details-images-container {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      width: 100%;
-      position: relative;
-      padding: 0 5%;
-      margin-top: 3rem;
-
-      @media (max-width: 768px) {
-        margin-top: 0;
-        width: 100%;
-        padding: 0 1%;
-      }
-
-      .img-box {
-        width: 100%;
-        position: relative;
-
-        img {
-          width: 100%;
-          object-fit: cover;
-        }
-      }
-      @media (max-width: 768px) {
-        width: 100%;
-      }
-
-      .text-layout {
-        padding: 24px;
-        position: absolute;
-        bottom: 0;
-        @media (max-width: 768px) {
-          padding: 14px;
-        }
-        .head-text {
-          .desktop-head {
-            display: block;
-            H1 {
-              display: block;
-              margin-bottom: 2.3rem;
-              @media (max-width: 768px) {
-                display: none;
-              }
-            }
+        .details-identity-container{
+          background-image: url(${DetailsImg});
+          padding: 2.4rem;
+          padding-top: 21rem;
+          h1{
+            padding-bottom: 2.4rem;
+            font-weight: 600;
           }
+          @media (max-width: 768px) {
+            padding-top: 5rem;
+            h1{
+                display: none;
+            }
+              
+          }
+          
         }
         .details-content {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          column-gap: 30rem;
+          grid-template-columns: repeat(2, 200px);
+          column-gap: 20rem;
           row-gap: 5rem;
           @media (max-width: 768px) {
             padding-top: 50px;
-            column-gap: 10rem;
+            column-gap: 2rem;
             row-gap: 2rem;
               }
 
@@ -245,25 +208,20 @@ const StyledDetails = styled.div`
         }
       }
 
-      .details-image {
-        width: 100%;
-        height: 26.5rem;
-
-        @media (max-width: 768px) {
-          height: 17.25rem;
-        }
-
-        img {
-          /* width: 100%; */
-          height: 100%;
-          box-shadow: -10px 14px 0px 0px rgba(0, 70, 255, 1);
-        }
-      }
-    }
+      
     .details-content-container {
       width: 100%;
+      header{
+        text-align: center;
+        font-size: 3.4rem;
+        font-weight: 600;
+        margin-top: 40px;
+      }
       @media (max-width: 768px) {
-        width: 100%;
+        header{
+        font-size: 2.8rem;
+        margin-top: 20px;
+        }
       }
     }
     .detailsListContainer {
@@ -348,7 +306,7 @@ const StyledDetails = styled.div`
             font-size: 1.3rem;
           }
       }
-    }
+
 
   .button-container {
     margin-top: 3rem;
