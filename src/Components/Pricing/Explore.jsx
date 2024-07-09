@@ -19,21 +19,21 @@ const Explore = () => {
                 slidesPerView : 1,
             },
             640:{
-                slidesPerView : 1.5,
+                slidesPerView : 1.2,
             },
             1024: {
-                slidesPerView : 2.3,
-                spaceBetween: 25,
+                slidesPerView : 2.5,
+                spaceBetween: 15,
             },
             1440 : {
-              slidesPerView : 2.5,
-                spaceBetween: 15,
+              slidesPerView : 2.7,
+                spaceBetween: 5,
             }
         }
       }
       pagination = {
         {
-          el : '.swiperPagination',
+          el : '.swiperPaginationss',
           clickable : true
         }
       }
@@ -58,7 +58,7 @@ const Explore = () => {
                   linkText={pg.linkText}
                 />
         </SwiperSlide>)}
-        <div className='swiperPagination'>
+        <div className='swiperPaginationss'>
 
         </div>
       </Swiper>
@@ -75,7 +75,7 @@ const StyledExplore = styled.div`
     font-weight: 700;
     padding-bottom: 10px;
   }
-  .swiperPagination{
+  .swiperPaginationss{
     display: flex;
     justify-content: center;
     margin-top: 20px;

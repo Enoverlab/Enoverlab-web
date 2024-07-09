@@ -49,7 +49,7 @@ const Hero = () => {
               lineHeight="normal"
               fs="1.4rem"
             >
-              To help Nigerians in Diaspora learn product management tech skills and get a job within 4 months!
+              To help Nigerians in Diaspora learn product management skills and get a job within 4 months!
             </P>
           </div>
           <div
@@ -76,6 +76,7 @@ const StyledHero = styled.div`
     padding: 5%;
     background-color: #fff;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     @media screen and (max-width: 768px) {

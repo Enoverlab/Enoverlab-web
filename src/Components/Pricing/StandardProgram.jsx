@@ -554,8 +554,10 @@ const StyledProgram = styled.div`
     }
 
     .note{
-    padding-top: 25px;
+    padding-top: 50px;
     font-size: 16px;
+    display: flex;
+    gap: 10px;
   }
     .but{
       display: none;

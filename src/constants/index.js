@@ -88,9 +88,9 @@ export const advancedPrograms = [
 export const internationalPrograms = [
   {
     img: ip1,
-    headText: "Diaspora Program",
-    subText: "For Africans in diaspora",
-    link : '/diaspora',
+    headText: "International Program",
+    subText: "For Nigerians in diaspora",
+    link : '/international',
     linkText: "COMING SOON!!!",
   },
   {

@@ -50,7 +50,7 @@ const StandardOptions = () => {
           }
         }
         pagination={{
-          el : '.swiperPagination',
+          el : '.swiperPaginationss',
           clickable: true,
         }}
         >
@@ -60,7 +60,7 @@ const StandardOptions = () => {
                     <img src={fastTracking} alt="Fast track Coaching" />
                     <H3 fs="4.2vw">International Program</H3>
                 </div>
-                <H4 mdfs="">
+                <H4 mdfs="3.5rem">
                 This is for Nigerians in Diaspora to learn product management skills and get a product manager job within 4 months
 
                 </H4>
@@ -75,7 +75,7 @@ const StandardOptions = () => {
                     <img src={privateCoaching} alt="private Coaching" />
                     <H3 fs="4.2vw">Executive Coaching</H3>
                 </div>
-                <H4 mdfs="">
+                <H4 mdfs="3.5rem">
                 This is for busy career professionals & business leaders to complete the standard program in 10 days instead of 90 days.
 
                 </H4>
@@ -84,7 +84,7 @@ const StandardOptions = () => {
                 </div>
             </section>
           </SwiperSlide>
-          <div className='swiperPagination'>
+          <div className='swiperPaginationss'>
 
           </div>
         </Swiper>
@@ -136,7 +136,7 @@ const StyledStandardOptions = styled.div`
     display: flex;
     justify-content: center;
    }
-   .swiperPagination{
+   .swiperPaginationss{
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -148,10 +148,10 @@ const StyledStandardOptions = styled.div`
     header{
         margin-bottom: 4rem;
     }
-   /* .swiper{
-    width: 50%;
-    max-width: 58.4rem;
-   } */
+   .swiper{
+    width: 100%;
+    max-width: 98.4rem;
+   }
     .card{
     background-color: #BAEAFA;
     padding: 4.2rem;
