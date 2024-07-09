@@ -53,21 +53,6 @@ const StandardOptions = () => {
           <SwiperSlide className="swiper">
           <section >
                 <div className='card'>
-                    <img src={privateCoaching} alt="private Coaching" />
-                    <H3 fs="4.2vw">Executive Coaching</H3>
-                </div>
-                <H4 mdfs="">
-                This is for busy career professionals & business leaders to complete the standard program in 10 days instead of 90 days.
-
-                </H4>
-                <div className='learnContainer'>
-                 <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More" to='/executive'/>
-                </div>
-            </section>
-          </SwiperSlide>
-          <SwiperSlide className="swiper">
-          <section >
-                <div className='card'>
                     <img src={fastTracking} alt="Fast track Coaching" />
                     <H3 fs="4.2vw">International Program</H3>
                 </div>
@@ -77,6 +62,21 @@ const StandardOptions = () => {
                 </H4>
                 <div className='learnContainer'>
                  <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More" to='/diaspora'/>
+                </div>
+            </section>
+          </SwiperSlide>
+          <SwiperSlide className="swiper">
+          <section >
+                <div className='card'>
+                    <img src={privateCoaching} alt="private Coaching" />
+                    <H3 fs="4.2vw">Executive Coaching</H3>
+                </div>
+                <H4 mdfs="">
+                This is for busy career professionals & business leaders to complete the standard program in 10 days instead of 90 days.
+
+                </H4>
+                <div className='learnContainer'>
+                 <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More" to='/executive'/>
                 </div>
             </section>
           </SwiperSlide>
