@@ -176,8 +176,8 @@ const advanced = [
 
 const international = [
   {
-    linkName : 'Diaspora Program',
-    linkto : '/diaspora',
+    linkName : 'International Program',
+    linkto : '/international',
   },
   {
     linkName : 'Kenya Program',

@@ -61,7 +61,7 @@ const StandardOptions = () => {
 
                 </H4>
                 <div className='learnContainer'>
-                 <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More" to='/diaspora'/>
+                 <PrimaryButton border="none" svgWidth="2.4rem" Text="Learn More" to='/international'/>
                 </div>
             </section>
           </SwiperSlide>

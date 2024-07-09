@@ -85,7 +85,7 @@ function App() {
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />
         <Route path="/projectmanagement" element={<PMP/>} />
-        <Route path="/diaspora" element={<Diaspora/>} />
+        <Route path="/international" element={<Diaspora/>} />
         <Route path="/policy" element={<Policy/>} />
         <Route path="/physical" element={<Physical/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />

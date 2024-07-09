@@ -182,7 +182,7 @@ const StandardProgram = () => {
                   <div className="note">
                     <h1>PS: We have a very sweet deal for international applicants!
                     </h1>
-                    <Link to='/diaspora'>Check Here</Link>
+                    <Link to='/international'>Check Here</Link>
                   </div>
                 </form>
               </div>
