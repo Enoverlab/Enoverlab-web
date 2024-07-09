@@ -13,23 +13,32 @@ const AboutProg = () => {
   return (
     <StyledAboutProg >
         <H1 fs="2.8rem" mdfs='4.5rem' tA='center' id="about">
-        About  The Program
+        About The Program
         </H1>
         <P>
-        Enoverlab, a product management training institute accredited by the American Council of Training and Development (ACTD), and EliteDIgest, a career coaching company based in Europe are partnering together to bring an wholistic product management program that will help Africans in diaspora take their life and career to the next level in a new country.{" "}
+        Many Nigerians living in other countries like the UK, US, Canada, UAE, Germany, Qatar, etc, struggle with getting well paying jobs.
+
+        This is because a lot of them are not equipped with the right skills, which will make them more valuable in the job market and business space abroad.
+
+        This International Product Management Program has been created to help solve this problem.{" "}
         </P>
         {showMore ? '' : <span onClick={toggleMore} className="show-more">Show More...</span>
         }
         {
             showMore ? (<>
                 <P>
-        This carefully curated product management program has been designed to help Africans living in other countries learn product management skills in-depthly, go through a remote open-source internship to get work experience, receive an intensive career coaching till they they land an international product manager role.
+        Regardless of your background, your qualifications, and education, this program will help you build skills that will make you valuable in the marketplace abroad.
+
+        In the program, you will
+        - Learn product management skills (one of the top tech skills in the world today).
         </P>
         <P>
-        The program will run for 18 weeks, which would include training, mentorship, internship, and career coaching services to help you take your life in a new country to the next level.
+        - Get one-on-one intensive career coaching to help you land a product manager job anywhere in the world in 4 months if you are ready to put in the work.
+
+        - Be guided on how to use product management skills to build a successful business (For business driven people)
         </P>
         <P>
-        Go through the details of the program below
+            Get more details about the program below
         </P>
             </>) : null
         }

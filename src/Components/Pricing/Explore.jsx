@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay} from "swiper/modules";
+import { Pagination,Autoplay} from "swiper/modules";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
 import { advancedPrograms } from "../../constants";
 import { Card } from "../HomeComponents/ProductSection";
 import styled from "styled-components";
@@ -11,36 +12,29 @@ const Explore = () => {
     <StyledExplore>
         <header>Explore Our Advanced Programs</header>
       <Swiper
-      modules={[Autoplay]}
-      autoplay
+      modules={[Pagination,Autoplay]}
       breakpoints={
         {
             320 : {
                 slidesPerView : 1,
-                autoplay : {
-                    delay : 3000,
-                }
             },
             640:{
                 slidesPerView : 1.5,
-                autoplay : {
-                    delay : 5000
-                }
             },
             1024: {
                 slidesPerView : 2.3,
                 spaceBetween: 25,
-                autoplay : {
-                    delay : 5000
-                }
             },
             1440 : {
               slidesPerView : 2.5,
                 spaceBetween: 15,
-                autoplay : {
-                    delay : 5000
-                }
             }
+        }
+      }
+      pagination = {
+        {
+          el : '.swiperPagination',
+          clickable : true
         }
       }
       >
@@ -64,6 +58,9 @@ const Explore = () => {
                   linkText={pg.linkText}
                 />
         </SwiperSlide>)}
+        <div className='swiperPagination'>
+
+        </div>
       </Swiper>
     </StyledExplore>
   )
@@ -78,6 +75,11 @@ const StyledExplore = styled.div`
     font-weight: 700;
     padding-bottom: 10px;
   }
+  .swiperPagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   }
   padding: 4rem 2rem 2rem 2rem;
   padding-bottom: 64px;
   @media (min-width: 1024px) {

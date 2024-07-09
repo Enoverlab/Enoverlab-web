@@ -182,7 +182,9 @@ const StandardProgram = () => {
                   <div className="note">
                     <h1>PS: We have a very sweet deal for international applicants!
                     </h1>
+                    <div>
                     <Link to='/international'>Check Here</Link>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -413,6 +415,10 @@ const StyledProgram = styled.div`
     padding-bottom: 10px;
     font-size: 14px;
     font-style: italic;
+    div{
+      display: flex;
+      justify-content: center;
+    }
       a{
       color: #175afe;
     }

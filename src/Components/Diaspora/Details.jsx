@@ -55,6 +55,7 @@ const Details = () => {
                 </div>
               ))}
             </div>
+            <P color="white" fs="1rem" mdfs="1.2rem">*Instalment payment is available</P>
         </div>
 
         <div className="details-content-container">
@@ -87,6 +88,7 @@ const Details = () => {
                 </div>
               ))}
             </div>
+            
           </div>
           <div className="class-tools-container">
             <H4 mdfs="2.4rem" fs='1.6rem' tA="center" fw={700} color='#333'>
@@ -130,11 +132,6 @@ const Details = () => {
                   <SecondaryButton to="#" Text="Enroll Now" />
                 </div>
               </div>
-              {/* <div className="download-text-url">
-            <a href="https://birdsend.page/forms/6444/va9wSykY3B">
-              <p>Download Syllabus</p>
-            </a>
-          </div> */}
             </div>
           </div>
         </div>
@@ -173,13 +170,14 @@ const StyledDetails = styled.div`
         .details-identity-container{
           background-image: url(${DetailsImg});
           padding: 2.4rem;
+          padding-right: 2.7rem;
           padding-top: 21rem;
           h1{
             padding-bottom: 2.4rem;
             font-weight: 600;
           }
           @media (max-width: 768px) {
-            padding-top: 5rem;
+            padding-top: 3rem;
             h1{
                 display: none;
             }

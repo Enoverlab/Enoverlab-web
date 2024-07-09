@@ -4,8 +4,8 @@ export const detailsData = [
       value: "12 weeks",
     },
     {
-      text: "Location",
-      value: "Global",
+      // text: "Location",
+      // value: "Global",
     },
     {
       text: "Tution Fee",

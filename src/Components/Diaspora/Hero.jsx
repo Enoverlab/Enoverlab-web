@@ -47,7 +47,7 @@ const Hero = () => {
               mdfs="2.4rem"
               fontWeight={300}
               lineHeight="normal"
-              fs="1.2rem"
+              fs="1.4rem"
             >
               To help Nigerians in Diaspora learn product management tech skills and get a job within 4 months!
             </P>

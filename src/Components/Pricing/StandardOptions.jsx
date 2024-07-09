@@ -20,13 +20,17 @@ const StandardOptions = () => {
         </header>
         <Swiper className='swipery'
         modules={[Pagination, Autoplay]}
-        autoplay
+        autoplay = {
+          {
+            delay : 8000
+          }
+        }
         breakpoints={
           {
               320 : {
                   slidesPerView : 1,
                   autoplay : {
-                      delay : 3000,
+                      delay : 7000,
                   }
               },
               640:{
