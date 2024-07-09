@@ -180,7 +180,9 @@ const StandardProgram = () => {
                     </Link>
                   </div>
                   <div className="note">
-                    <h1>NOTE : Price does not apply to international applicants! <span><Link to='/diaspora'>Check Here</Link></span></h1>
+                    <h1>PS: We have a very sweet deal for international applicants!
+                    </h1>
+                    <Link to='/diaspora'>Check Here</Link>
                   </div>
                 </form>
               </div>
@@ -407,16 +409,12 @@ const StyledProgram = styled.div`
   }
 
   .note{
-    padding-top: 25px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     font-size: 14px;
     font-style: italic;
-    display: flex;
-    align-items: center;
-    span{
-      padding-left: 15px;
       a{
       color: #175afe;
-    }
     }
   }
   .but{

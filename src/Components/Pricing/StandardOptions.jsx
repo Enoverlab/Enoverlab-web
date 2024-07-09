@@ -57,7 +57,7 @@ const StandardOptions = () => {
                     <H3 fs="4.2vw">International Program</H3>
                 </div>
                 <H4 mdfs="">
-                This is for Nigerians in Diaspora to learn product management skills and get international PM jobs
+                This is for Nigerians in Diaspora to learn product management skills and get a product manager job within 4 months
 
                 </H4>
                 <div className='learnContainer'>
