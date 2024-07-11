@@ -14,28 +14,29 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Oladipupo Bolaji</h3>
-                  <h4>(Former Snr Pm at Microsoft)</h4>
+                  <h3>Matthew Hans-Bello</h3>
+                  {/* <h4>(Former Snr Pm at Microsoft)</h4> */}
             </div>
           </SpeakerImage>
           <div>
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Oladipupo Bolaji</h3>
-                  <h4>(Former Snr Pm at Microsoft)</h4>
+                  <h3>Matthew Hans-Bello</h3>
+                  {/* <h4>(Former Snr Pm at Microsoft)</h4> */}
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                AI in Product Management: <br /> Rethinking Strategies from the Ground Up
+                  Importance of Metrics & KPI In <br />
+                  Product Launch
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                June 22, 2024
+                July 13, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
@@ -67,7 +68,7 @@ export const StyledSession = styled.div`
     align-items: center; */
     display: flex;
     align-items: center;
-    gap: 5.5rem;
+    gap: 15.5rem;
     .but{
       display: block;
     }

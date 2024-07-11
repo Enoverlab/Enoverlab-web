@@ -12,10 +12,10 @@ const Events = () => {
         <div className="events-container">
             <div className="events-head">
                 <H1
-                fontSize="2.25rem"
+                mdfs="3.6rem"
                 color= "#000000"
-                mobileFontSize="1.1rem"
-                mobileLineHeight="2rem"
+                fs="1.7rem"
+                lh="2rem"
                 >
                     Watch our past product sessions
                 </H1>

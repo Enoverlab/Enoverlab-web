@@ -15,7 +15,7 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
             <div className="blog-card-content">
                 <div className="category">
                     <P textAlign="left"
-                    fontSize="1rem"
+                    mdfs="1.6rem"
                     color="#7080A1"
                     >
                       {category}
@@ -23,7 +23,7 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                 </div> 
                <div className="blog-title">
                     <P textAlign="left"
-                    fontSize="1.5rem"
+                    mdfs="2.4rem"
                     color={"#0D2A57"}
                     lineHeight="1.9rem"
                     fontWeight={500}
@@ -33,12 +33,12 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                 </div>   
                 <div className="blog-text">
                   <P
-                  fontSize= "1rem"
+                  mdfs= "1.6rem"
                   fontWeight="300"
                   color="#4B4B4B"
                   textAlign="left"
                   lineHeight="1.8125rem"
-                  mobileFontSize="0.875rem"
+                  fs="1.4rem"
                   mobileLineHeight="1.5rem"
                   >
                     {contentText}
@@ -50,18 +50,18 @@ const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, autho
                     </div>
                     <div className="author-name">
                     <P
-                    fontSize="1rem"
+                    mdfs="1.6rem"
                     fontWeight="400"
                     color="#0D2A57"
-                    textAlign="left"
-                    mobileFontSize="0.875rem"
+                    tA="left"
+                    fs="1.4rem"
                     mobileLineHeight = "1.5rem"
                     >{authorName}</P>
                       <P 
-                    fontSize="0.8rem"
+                    mdfs="1.28rem"
                     fontWeight="400"
                     color="#0D2A57"
-                    mobileFontSize="0.8rem"
+                    fs="1.28rem"
                     textAlign="left">
                        {date}
                     </P>
@@ -82,7 +82,7 @@ const StyledBlogCard = styled.div`
   border-radius: 0.5rem;
     .blog-card-image{
         width: 100%;
-        max-width: 23.875rem;
+        /* max-width: 23.875rem; */
         height: 18.75rem;
         background-color: #F2F2F2;
         overflow: hidden;

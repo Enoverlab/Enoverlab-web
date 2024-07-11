@@ -9,10 +9,10 @@ const ResourceHero = () => {
     <StyledResourceHero>
       <div className="resource-hero-container">
       <div className="resource-content">
-      <H3 fontSize="4rem" fontWeight="500" mobileFontSize="2.5rem">
+      <H3 mdfs="6.4rem" fontWeight="500" color=" #4B4B4B" fs="4rem">
           Enoverlab Free Resource Library
         </H3>
-        <P fontSize="1.75rem" paddingTop="1rem" color=" #4B4B4B" fontWeight={400} lineHeight={"2.625rem"} mobileFontSize="1rem">
+        <P mdfs="2.8rem" pt="1rem" color=" #4B4B4B" fontWeight={400} lineHeight={"2.625rem"} fs="1.4rem">
         Where you get access to free materials that will help you understand product management better
         </P>
         {/* <div className="email-input">
