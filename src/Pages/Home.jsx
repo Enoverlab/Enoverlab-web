@@ -12,7 +12,7 @@ import Partners from '../Components/HomeComponents/Partners'
 import Alumni from '../Components/HomeComponents/Alumni'
 import { useState } from 'react'
 import LoadingScreen2 from '../Components/LoadingScreen2'
-// import ProductSession from '../Components/HomeComponents/ProductSession'
+import ProductSession from '../Components/HomeComponents/ProductSession'
 // import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
 const Home = () => {
@@ -22,17 +22,17 @@ const Home = () => {
     setIsLoading(false)
   },3500)
   return (<>
-  {isLoading ? <LoadingScreen2/> : <div>
-       <Header/>
-        <Hero/>
-        {/* <ProductSession/> */}
-        <ProductSection/>
-        <EnoverSpecial/>
-        <Partners/>
-        <Testimonials/>
-        <SuccessStories/>
-        <Alumni/>
-        <Started/>
+  {isLoading ? <LoadingScreen2 /> : <div>
+       <Header />
+        <Hero />
+        <ProductSession />
+        <ProductSection />
+        <EnoverSpecial />
+        <Partners />
+        <Testimonials />
+        <SuccessStories />
+        <Alumni />
+        <Started />
         <Footer p="5rem 9.6rem 0 9.6rem"/>
     </div>}
   </>)
