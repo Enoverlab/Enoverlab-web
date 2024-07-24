@@ -95,8 +95,8 @@ const ProgramDetails = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButtonA Text="Enroll Now" to='https://forms.gle/tULTGfaEbTRGHfccA' />
-                    <Link to="/AISyllabus.pdf" target="_blank" download='AISyllabus.pdf' className="syll">
+                    <SecondaryButtonA Text="Enroll Now" to='https://forms.gle/Bcnj6247SoTwcbtLA' />
+                    <Link to="/GrowthPM.pdf" target="_blank" download='Growth Pm Syllabus.pdf' className="syll">
                       Download Syllabus
                 </Link>
                   </div>
