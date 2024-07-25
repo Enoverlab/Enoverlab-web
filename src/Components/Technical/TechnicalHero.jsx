@@ -10,7 +10,9 @@ const GrowthHero = () => {
   return (
     <StyledGrowthHero>
       <H1 tA="center"  mdlh="8.6rem" color='#1A1A1A'>
-      Take your product manager <span>career</span> to the<br id='break' /><span>next level</span></H1>
+      Advance your <span>Product</span>  Management Knowledge
+      {/* Take your product manager <span>career</span> to the<br id='break' /><span>next level</span> */}
+      </H1>
       <img src={mobtechnical} alt="Enoverlab Hero" srcSet={src} sizes={sizes} className='heroImg' />
     </StyledGrowthHero>
   )
@@ -22,6 +24,7 @@ const StyledGrowthHero = styled.div`
     h1{
         padding: 0 1rem;
         margin-top: 5.6rem;
+        font-size: 3rem;
         br{
           display: block;
         }
@@ -36,16 +39,24 @@ const StyledGrowthHero = styled.div`
         border-radius: 15px;
         padding: 0 10px;
     }
+  @media (min-width: 700px) {
+    h1{
+        padding: 0 1rem;
+        margin-top: 5.6rem;
+        font-size: 4.5rem;
+    }
+  }
   @media (min-width: 1024px) {
     h1{ 
         padding: 0 191px;
         margin-top: 6.4rem;
+        font-size: 4.32vw;
         br#break{
           display: none;
         }
     }
     span{
-        border-radius: 10px;
+        border-radius: 30px;
         padding:0 30px;
     }
     .heroImg{

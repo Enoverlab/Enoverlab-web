@@ -7,8 +7,8 @@ const Technicalprogram = () => {
   return (
     <StyledTechnicalprogram>
       <div className="cta">
-        <H4 color="#1A1A1A" fs="1.6rem">
-        Train with Certified product managers and optimise <br /> Poduct Management skills within 3 months!
+        <H4 color="#1A1A1A" fs="1.8rem" mdfs="2.4rem" mdlh="3rem">
+        Take your product manager career to the <br /> next level in 8 weeks
         </H4>
         <SecondaryButton Text="Enroll Now" />
       </div>
@@ -19,10 +19,13 @@ const Technicalprogram = () => {
         <main>
           <section>
             <H4 fs="1.4rem" color="#4B4B4B" lh="3.2rem">
-            The Technical Product Management Course prepares aspiring product managers for success in technical settings. Participants delve into essential technical concepts like software development methodologies and system architecture through immersive lectures and workshops. They gain skills to navigate complexities in product management, from feature prioritization to collaboration with engineering teams.
+            This technical product management program is for Product Managers with at least 1 year of product management experience to advance their technical knowledge and understanding so they can work better with software developers and engineers to build better products.
             </H4>
             <H4 fs="1.4rem" color="#4B4B4B" lh="3.2rem">
-            Advanced topics such as agile frameworks and product lifecycle management are covered, empowering participants to innovate and deliver high-quality products. By completion, students possess a thorough grasp of technical product management principles, priming them for successful careers in the field.
+            In the program, you will learn about frontend and backend frameworks, APIs (Application Programming Interface), integrations, architecture, deployment, use of postman, etc. 
+            You would also learn how to collaborate better with engineering teams.
+
+            At the end of the program, you would have gotten a sound technical knowledge, which would take your product manager career to the next level.
             </H4>
           </section>
         </main>
@@ -42,7 +45,7 @@ const StyledTechnicalprogram = styled.div`
   .cta {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
     h4{
       br{
         display: none;
@@ -65,14 +68,25 @@ const StyledTechnicalprogram = styled.div`
       }
     }
   }
+  @media (min-width: 700px){
+    .cta {
+      h4 {
+        font-size: 2rem;
+        br{
+          display: flex;
+        }
+      }
+    }
+  }
   @media (min-width: 1024px) {
     padding: 4rem 9.6rem 2rem 9.6rem;
     .cta {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 5px;
+      gap: 35px;
       h4 {
+        font-size: 2.4rem;
         br{
           display: flex;
         }

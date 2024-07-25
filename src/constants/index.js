@@ -67,7 +67,7 @@ export const advancedPrograms = [
     img: ad2,
     headText: "Growth Product Management",
     subText: "For Experienced Product Managers",
-    link : "/technicalpm"
+    link : "/growthpm"
   },
   {
     img: ad3,
@@ -227,7 +227,7 @@ export const GrowthProgram = [
 ]
 
 export const TechnicalProgram = [
-  'Introduction to Technical Product Management','Fundamentals of APIs','API Management and Strategy','Building Effective Support Systems','Support Tools and Metrics','Using Postman and Azure to test APIs','Integration Approaches and Patterns','Integration Tools and Platforms','Deployment and deployment environments','Product Analytics','Integration Tools and Platforms'
+  'Introduction to Technical Product Management','Fundamentals of APIs','API Management and Strategy','Building Effective Support Systems','Support Tools and Metrics','Using Postman and Azure to test APIs','Integration Approaches and Patterns','Integration Tools and Platforms','Deployment and deployment environments'
 ]
 
 
