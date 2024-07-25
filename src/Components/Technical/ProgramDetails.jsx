@@ -11,8 +11,8 @@ const ProgramDetails = () => {
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
-              <div className="program">
-                <div className="heading" id="onsite">
+              <div className="program" id='technicalEnrol'>
+                <div className="heading" id="onsite" >
                   <H4 mdfs="2.38vw" fs="1.8rem" fw="700">
                   Technical Product<br /> Management Program
                   </H4>
@@ -21,19 +21,18 @@ const ProgramDetails = () => {
                 <div className="cover2">
                   <main>
                     <div className="item">
-                      <div className='item1'>
                        <div >
-                       <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
-                          Training day
-                        </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          Every Saturday
-                        </H2>
+                          <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
+                            Training day
+                          </H4>
+                          <H2
+                            mdfs="1.587vw"
+                            fs="3.6vw"
+                            fw="600"
+                            color="var(--Body-Text)"
+                          >
+                            Every Saturday
+                          </H2>
                        </div>
                        <div>
                        <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
@@ -48,9 +47,7 @@ const ProgramDetails = () => {
                           10am - 2pm
                         </H2>
                        </div>
-                      </div>
-                      <div className="item2">
-                        <div>
+                        <div className='locale'>
                         <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
                           Location
                         </H4>
@@ -63,8 +60,6 @@ const ProgramDetails = () => {
                           Online Training
                         </H2>
                         </div>
-                      </div>
-                      <div className='item3'>
                         <div>
                         <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
                           Duration
@@ -88,9 +83,8 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦300,000
+                          ₦200,000
                         </H2>
-                      </div>
                       </div>
                     </div>
                   </main>
@@ -98,7 +92,7 @@ const ProgramDetails = () => {
                     <SecondaryButtonA Text="Enroll Now" to='https://forms.gle/T7KmwAbgGemt6JiTA' />
                     <Link to="/TPMBrochure.pdf" target="_blank" download='TPM Brochure.pdf' className="syll">
                       Download Syllabus
-                </Link>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -164,19 +158,15 @@ const StyledProgramDetail = styled.div`
     padding-left: 3.5rem;
   }
   .item{
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 100px;
+    row-gap: 30px;
   }
-  .item1,.item2, .item3 {
-    display: flex;
+  .locale{
+    grid-column: span 2 / span 2;
   }
-  .item1{
-    gap:21.164vw;
-  }
-  .item3{
-    gap: 19.841vw;
-  }
+  
   .list {
     display: flex;
     flex-direction: column;

@@ -8,7 +8,6 @@ import ACTD from "../../assets/icon/ACTD.svg";
 import deskheroImage1 from "../../assets/icon/deskHeroImg.png";
 import mobHeroImg from "../../assets/icon/mobHeroImg.png";
 import line from "../../assets/icon/Line 76.svg";
-import ScrollToElement from "../../helper/ScrollToElement";
 
 const Hero = () => {
   let src = `${mobHeroImg} 300w, ${deskheroImage1} 1512w,  `;
@@ -19,7 +18,7 @@ const Hero = () => {
         <h1>
           Empowering You To Be An <span>EXCEPTIONAL</span> Product Manager
         </h1>
-        <SecondaryButton Text="Explore Our Programs" to="#programs" handleClick={ScrollToElement} arrowDown={true} />
+        <SecondaryButton Text="Explore Our Programs" to="#programs" arrowDown={true} />
       </StyledHeroHeader>
       <StyledHeroBody>
         <img
@@ -45,7 +44,7 @@ const Hero = () => {
             Regardless of your background, you can become a skilled product
             manager in the next 6 months.
           </p>
-          <SecondaryButton to="#programs" handleClick={ScrollToElement} Text="Explore Our Programs" w="27rem" arrowDown={true} />
+          <SecondaryButton to="#programs"  Text="Explore Our Programs" w="27rem" arrowDown={true} />
         </section>
         <div>
           <img src={ACTD} alt="Acrd" />

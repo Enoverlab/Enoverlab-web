@@ -11,10 +11,10 @@ const ProgramDetails = () => {
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
-              <div className="program">
+              <div className="program" id='growthEnrol'>
                 <div className="heading" id="onsite">
                   <H4 mdfs="2.38vw" fs="3.3vw" fw="700">
-                  Growth Product Management<br /> Program Training
+                  Growth Product Management<br /> Program
                   </H4>
                   <img src={weeks10} alt="4 weeks" />
                 </div>
@@ -45,7 +45,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          11am - 1pm
+                          8pm - 10pm
                         </H2>
                        </div>
                       </div>
@@ -88,7 +88,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦300,000
+                          ₦200,000
                         </H2>
                       </div>
                       </div>

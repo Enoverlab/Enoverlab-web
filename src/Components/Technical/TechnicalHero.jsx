@@ -11,7 +11,6 @@ const GrowthHero = () => {
     <StyledGrowthHero>
       <H1 tA="center"  mdlh="8.6rem" color='#1A1A1A'>
       Advance your <span>Product</span>  Management Knowledge
-      {/* Take your product manager <span>career</span> to the<br id='break' /><span>next level</span> */}
       </H1>
       <img src={mobtechnical} alt="Enoverlab Hero" srcSet={src} sizes={sizes} className='heroImg' />
     </StyledGrowthHero>

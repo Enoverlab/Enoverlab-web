@@ -10,7 +10,7 @@ const Technicalprogram = () => {
         <H4 color="#1A1A1A" fs="1.8rem" mdfs="2.4rem" mdlh="3rem">
         Take your product manager career to the <br /> next level in 8 weeks
         </H4>
-        <SecondaryButton Text="Enroll Now" />
+        <SecondaryButton Text="Enroll Now" to="#technicalEnrol" arrowDown={true} />
       </div>
       <div className="writeup">
         <H2 color="rgba(1,1,91,0.82)" fs='2.4rem' mdfs="4rem">

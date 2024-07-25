@@ -7,10 +7,10 @@ const Growthprogram = () => {
   return (
     <StyledGrowthprogram>
       <div className="cta">
-        <H4 color="#1A1A1A" fs="1.6rem">
-        Train with Certified product managers and optimise <br /> Poduct Management skills within 3 months!
+      <H4 color="#1A1A1A" fs="1.8rem" mdfs="2.4rem" mdlh="3rem">
+        Take your product manager career to the <br /> next level in 8 weeks
         </H4>
-        <SecondaryButton Text="Enroll Now" />
+        <SecondaryButton Text="Enroll Now" to="#growthEnrol" arrowDown={true} />
       </div>
       <div className="writeup">
         <H2 color="rgba(1,1,91,0.82)" mdfs="4rem">
@@ -19,10 +19,14 @@ const Growthprogram = () => {
         <main>
           <section>
             <H4 fs="1.4rem" color="#4B4B4B" lh="3.2rem">
-            The Growth Product Management Course empowers aspiring product managers with essential knowledge and skills for driving growth and innovation in their organizations. Covering topics like user acquisition, retention, and monetization strategies, participants learn through lectures, case studies, and practical exercises to identify growth opportunities and leverage data-driven insights.
+            This growth product management program is for Product Managers with at least 1 year of product management experience to advance their marketing, growth, and partnership knowledge to drive their product growth and help their companies achieve their business goals and objectives.
             </H4>
             <H4 fs="1.4rem" color="#4B4B4B" lh="3.2rem">
-            Additionally, advanced topics such as experimentation frameworks, A/B testing, and product analytics are explored, enabling participants to make informed decisions and adapt swiftly to user feedback. By the end of the course, students will have a solid grasp of growth product management principles and practical skills to excel in their roles.
+            In the program, you will learn about how to achieve product market fit (PMF), different types of product growth, AARRR growth metrics, the principle of virality, collaborating with influencers, growth loops, etc.
+
+            You would also learn how to collaborate better with marketing and sales teams.
+
+            At the end of the program, you would have gotten sound knowledge on driving product growth, which would take your product manager career to the next level.
             </H4>
           </section>
         </main>
@@ -62,14 +66,25 @@ const StyledGrowthprogram = styled.div`
       }
     }
   }
+  @media (min-width: 700px){
+    .cta {
+      h4 {
+        font-size: 2rem;
+        br{
+          display: flex;
+        }
+      }
+    }
+  }
   @media (min-width: 1024px) {
     padding: 4rem 9.6rem 2rem 9.6rem;
     .cta {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 5px;
+      gap: 35px;
       h4 {
+        font-size: 2.4rem;
         br{
           display: flex;
         }

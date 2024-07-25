@@ -17,6 +17,7 @@ const ScrollToElement = () => {
             lastHash.current = '';
         }
     },[location])
+    return;
 }
 
 export default ScrollToElement

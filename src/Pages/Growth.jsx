@@ -5,7 +5,7 @@ import ProgramDetails from "../Components/Growth/ProgramDetails"
 import Footer from "../Components/Footer"
 import Header from "../Components/Header"
 // import Started from "../Components/HomeComponents/Started"
-import { FaqSection } from "../Components/Growth/FaqSection"
+// import { FaqSection } from "../Components/Growth/FaqSection"
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
 
@@ -25,7 +25,7 @@ const Growth = () => {
       <Growthprogram/>
       <ProgramDetails/>
       <Formi/>
-      <FaqSection/>
+      {/* <FaqSection/> */}
       {/* <Started/> */}
       <Footer p="5rem 9.6rem 0 9.6rem"/>
       </div>}
