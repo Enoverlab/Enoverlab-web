@@ -118,9 +118,9 @@ const ProgramDetails = () => {
                   ))}
                 </div>
                 <div className="but">
-                <Link to="/AISyllabus.pdf" target="_blank" download='AISyllabus.pdf' className="syll">
+                <Link to="/TPMBrochure.pdf" target="_blank" download='TPM Brochure.pdf' className="syll">
                       Download Syllabus
-                </Link>
+                    </Link>
                 </div>
               </div>
             </Flex>

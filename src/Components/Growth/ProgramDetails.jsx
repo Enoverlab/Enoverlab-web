@@ -124,7 +124,7 @@ const ProgramDetails = () => {
                   ))}
                 </div>
                 <div className="but">
-                <Link to="/AISyllabus.pdf" target="_blank" download='AISyllabus.pdf' className="syll">
+                <Link to="/GrowthPM.pdf" target="_blank" download='Growth Pm Syllabus.pdf' className="syll">
                       Download Syllabus
                 </Link>
                 </div>
