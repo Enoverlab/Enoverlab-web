@@ -227,7 +227,7 @@ const Footer = ({p}) => {
               Programs
             </H4>
 
-            <HashLink to="/programs#basic">
+            <HashLink to="/programs#online">
               <P
                 color="var(--Body-Text)"
                 fs="3vw"
@@ -235,43 +235,10 @@ const Footer = ({p}) => {
                 lh="28px"
                 fw="400"
               >
-                Basic Program
+                Online Training
               </P>
             </HashLink>
 
-            <HashLink to="/programs#advanced">
-              <P
-                color="var(--Body-Text)"
-                fs="3vw"
-                mdfs="1.058vw"
-                lh="28px"
-                fw="400"
-              >
-                Advanced Program
-              </P>
-            </HashLink>
-            <HashLink to="/programs#executive">
-              <P
-                color="var(--Body-Text)"
-                fs="3vw"
-                mdfs="1.058vw"
-                lh="28px"
-                fw="400"
-              >
-                Executive Coaching
-              </P>
-            </HashLink>
-            <Link to="/corporate">
-              <P
-                color="var(--Body-Text)"
-                fs="3vw"
-                mdfs="1.058vw"
-                lh="28px"
-                fw="400"
-              >
-                Corporate Training
-              </P>
-            </Link>
             <HashLink to="/programs#onsite">
               <P
                 color="var(--Body-Text)"
@@ -283,6 +250,72 @@ const Footer = ({p}) => {
                 Onsite Training
               </P>
             </HashLink>
+            <Link to="/executive">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Executive Coaching
+              </P>
+            </Link>
+            <Link to="/international">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                International Program
+              </P>
+            </Link>
+            <Link to="/corporate">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Corporate Training
+              </P>
+            </Link>
+            <Link to="/technicalpm">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Technical PM
+              </P>
+            </Link>
+            <Link to="/growthpm">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Growth PM
+              </P>
+            </Link>
+            <Link to="/aipmp">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                AI PM Program
+              </P>
+            </Link>
           </div>
           <div className="container-left-2">
             <H4
