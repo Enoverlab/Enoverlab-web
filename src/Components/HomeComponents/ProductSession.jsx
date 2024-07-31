@@ -14,21 +14,21 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Philip Osemi</h3>
-                  <h4>(Global Accelerex)</h4>
+                  <h3>Stellamaris Emamoro</h3>
+                  <h4>(Remedial Health)</h4>
             </div>
           </SpeakerImage>
           <div>
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Philip Osemi</h3>
-                  <h4>(Global Accelerex)</h4>
+                  <h3>Stellamaris Emamoro</h3>
+                  <h4>(Remedial Health)</h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                Backlog Management and product roadmapping
+                Building and communicating your Product Vision
                 </h3>
               </DetailsSession>
             </div>
