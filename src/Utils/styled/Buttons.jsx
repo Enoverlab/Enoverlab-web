@@ -261,7 +261,7 @@ export const BlackButton = ({ to = "#", Text, handleClick, arrowDown}) => {
 
 export const SubmitButton = ({ to = "#", Text, handleClick, w, arrowDown}) => {
   return (
-      <StyledSecondaryButton w={w}>
+      <StyledSecondaryButton w={w} onClick={handleClick}>
         <h5>{Text}</h5>
         {
           arrowDown ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

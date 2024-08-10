@@ -11,6 +11,9 @@ export default function ScrollToTop() {
       left: 0,
       behavior: "instant", // Optional if you want to skip the scrolling animation
     });
+
+    window.scrollTo(0, 0);
+
   }, [pathname]);
 
   return null;

@@ -51,27 +51,27 @@ const Header = ({bg})=> {
             Standard
           </header>
           <main>
-          {standard.map((links)=> <MenuItems2 key={links.linkName}  link={links.linkto}>{links.linkName}</MenuItems2>)}
+          {standard.map((links)=> <MenuItems2  link={links.linkto}>{links.linkName}</MenuItems2>)}
           </main>
           <header>
             Advanced
           </header>
           <main>
-          {advanced.map((links)=> <MenuItems key={links.linkName} link={links.linkto}>{links.linkName}</MenuItems>)}
+          {advanced.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
           </main>
           <header>
             International
           </header>
           <main>
-          {international.map((links)=> <MenuItems key={links.linkName} link={links.linkto}>{links.linkName}</MenuItems>)}
+          {international.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
           </main>
         </div>
       </div>
-      {Menulist.map(menu => <MenuItems key={menu.linkName} link={menu.linkto}>{menu.linkName}</MenuItems>)}
+      {Menulist.map(menu => <MenuItems link={menu.linkto}>{menu.linkName}</MenuItems>)}
     </TopNavbabies>
 
-    <Toggleview display="true">
-      <PrimaryButton to="/contactus" Text='Contact Us'/>
+    <Toggleview display>
+      <PrimaryButton Text='Contact Us' handleClick={()=>window.open("tel:09063124595")}/>
     </Toggleview>
 
     <MenuToggle tog={toggle} open={isOpen}/>
@@ -90,24 +90,24 @@ const Header = ({bg})=> {
             Standard
           </header>
           <main>
-          {standard.map((links)=> <MenuItems2 key={links.linkName} link={links.linkto}>{links.linkName}</MenuItems2>)}
+          {standard.map((links)=> <MenuItems2 link={links.linkto}>{links.linkName}</MenuItems2>)}
           </main>
           <header>
             Advanced
           </header>
           <main>
-          {advanced.map((links)=> <MenuItems key={links.linkName} link={links.linkto}>{links.linkName}</MenuItems>)}
+          {advanced.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
           </main>
           <header>
             International
           </header>
           <main>
-          {international.map((links)=> <MenuItems key={links.linkName} link={links.linkto}>{links.linkName}</MenuItems>)}
+          {international.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
           </main>
         </div>)}
       </div>
       </motion.span>
-      {Menulist.map((menu, index) => <MenuItems key={menu.linkto} onClick={toggle} 
+      {Menulist.map((menu, index) => <MenuItems onClick={toggle} 
       link={menu.linkto}>
         {<motion.span {...framerText(index + 1)}>
         {menu.linkName}

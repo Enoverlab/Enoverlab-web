@@ -6,7 +6,7 @@ import Blog from "./Pages/Blog";
 import Pay from "./Pages/Pay";
 import Resources from "./Pages/Resources";
 import Corporate from "./Pages/Corporate";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
@@ -34,6 +34,8 @@ import Abuja from "./Pages/Abuja";
 import Business from "./Pages/Business";
 import Growth from "./Pages/Growth";
 import Technical from "./Pages/Technical";
+import Career from "./Pages/Career";
+import ContactUs from "./Pages/ContactUs";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -80,6 +82,8 @@ function App() {
         <Route path="/ibadan" element={<Ibadan/>} />
         <Route path="/abuja" element={<Abuja/>} />
         <Route path="/growthpm" element={<Growth/>} />
+        <Route path='/contactus' element={<ContactUs/>} />
+        <Route path='/careerfair' element={<Career/>} />
         <Route path="/technicalpm" element={<Technical/>} />
         <Route path="/exclusive" element={<Exclusive/>} />
         <Route path="/programsad" element={<ProgramsAd/>} />

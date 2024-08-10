@@ -13,11 +13,13 @@ import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
 import {useState, useEffect} from "react";
+import StandardForm from "../Enroll-Form/StandardForm";
 
 const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const [trainingLocation, setTrainingLocation] = useState({location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : ''})
+  const [enrolModal, setEnrolModal] = useState({open : false, formtype : ''})
   useEffect(()=>{
     switch(location){
       case "Lekki":
@@ -73,12 +75,21 @@ const StandardProgram = () => {
   function handleLocationChange(e){
     setLocation(e.target.value)
   }
+
+  function handleOpenEnrolModal(formtype){
+    setEnrolModal({open : true, formtype})
+  }
+  function handleCloseEnrolModal(){
+    setEnrolModal({...enrolModal, open : false})
+  }
+
   function handleSubmit(e){
     if(!trainingLocation.link){
       e.preventDefault()
       setIsError(true)
       return
     }
+    handleOpenEnrolModal(trainingLocation.location)
     setIsError(false)
   }
   function handleBlur(){
@@ -123,7 +134,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks18} alt="18 weeks" />
                 </div>
-                <form action="https://forms.gle/VyeL132b97jEv3Pz6" target="_blank"  className="cover">
+                <form className="cover" onSubmit={(e)=>{e.preventDefault()}}>
                   <main>
                   <div  className="item">
                        <div >
@@ -180,7 +191,9 @@ const StandardProgram = () => {
                     
                   </main>
                   <div className="cta">
-                      <SubmitButton Text="Enroll Now" />
+                      <SubmitButton Text="Enroll Now"  handleClick={()=>{
+                        handleOpenEnrolModal('Online Instructor Led')
+                      }}/>
                       <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
@@ -300,7 +313,7 @@ const StandardProgram = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SubmitButton Text="Enroll Now" />
+                    <SubmitButton Text="Enroll Now"  />
                     <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
@@ -341,6 +354,7 @@ const StandardProgram = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      <StandardForm handleCloseModal={handleCloseEnrolModal} modalDetails={enrolModal}/>
       <div className="mapLaptopIframe">
       {trainingLocation.mapIframe}
       </div>
