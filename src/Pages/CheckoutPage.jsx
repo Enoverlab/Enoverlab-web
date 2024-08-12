@@ -8,7 +8,7 @@ const CheckoutPage = () => {
     <div>
         <Header  bgColor="#FFFDF7"  bgColorMobile="#FFFDF7"/>
             <Checkout/>
-        <Footer/>
+        <Footer p="5rem 9.6rem 0 9.6rem"/>
     </div>
   )
 }

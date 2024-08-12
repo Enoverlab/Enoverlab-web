@@ -41,6 +41,11 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
     width: 2.4rem;
     fill: #00f;
   }
+  &:disabled{
+    background: #848488;
+    border : 0;
+    animation: none;
+  }
   @media (min-width: 1024px) {
     width: 17rem;
     display: flex;
@@ -55,6 +60,9 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
       transition: all .5s ease;
     }
     transition: all .5s ease;
+    &:disabled{
+    background: #848488;
+  }
     &:hover {
       background: #00F;
       box-shadow: 0px 0px 40px 0px rgba(0, 0, 255, 0.50);
@@ -92,8 +100,11 @@ export const StyledSecondaryButton = styled(StyledPrimaryButton)`
   background-color: ${color.secondary};
   color: ${color.light};
   svg {
-        fill: #fff;
-      }
+    fill: #fff;
+  }
+  &:disabled{
+    background: #848488;
+  }
   @media (min-width: 1024px) {
     width:${(props)=> props.w || "17rem"};
     &:hover {
@@ -259,9 +270,9 @@ export const BlackButton = ({ to = "#", Text, handleClick, arrowDown}) => {
   );
 };
 
-export const SubmitButton = ({ to = "#", Text, handleClick, w, arrowDown}) => {
+export const SubmitButton = ({ to = "#", Text, handleClick, w, arrowDown, ...props}) => {
   return (
-      <StyledSecondaryButton w={w} onClick={handleClick}>
+      <StyledSecondaryButton w={w} onClick={handleClick} {...props}>
         <h5>{Text}</h5>
         {
           arrowDown ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

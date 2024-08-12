@@ -1,7 +1,7 @@
 const Paydata = [
     {
         id: 1,
-        program: "Advanced Program",
+        program: "Online Program",
         price: "₦120,000",
         duration: "3 Months",
     },

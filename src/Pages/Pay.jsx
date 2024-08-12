@@ -9,7 +9,7 @@ const Pay = () => {
     <>
         <Header bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
         <PayHero/>
-        <Footer/>
+        <Footer p="5rem 9.6rem 0 9.6rem"/>
     </>
   )
 }

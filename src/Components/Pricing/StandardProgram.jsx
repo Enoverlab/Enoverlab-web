@@ -18,12 +18,13 @@ import StandardForm from "../Enroll-Form/StandardForm";
 const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
-  const [trainingLocation, setTrainingLocation] = useState({location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : ''})
-  const [enrolModal, setEnrolModal] = useState({open : false, formtype : ''})
+  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : ''})
+  const [enrolModal, setEnrolModal] = useState({open : false, formtype : '', site : ''})
   useEffect(()=>{
     switch(location){
       case "Lekki":
         setTrainingLocation({
+          place : 'Lekki',
           location : 'Lekki Gateview Plaza, Admiralty way, Lekki Phase 1',
           tuition : '300,000',
           link : 'https://forms.gle/RubzGLnYfKgShe4N7',
@@ -32,6 +33,7 @@ const StandardProgram = () => {
         break;
       case "Ibadan":
         setTrainingLocation({
+          place : 'Ibadan',
           location : 'Cafe One, Palms Mall, Ring Road, Ibadan',
           tuition : '250,000',
           link :  "https://forms.gle/CsYYXENLZNmjnsfK6",
@@ -40,6 +42,7 @@ const StandardProgram = () => {
         break;
         case "Anambra":
           setTrainingLocation({
+            place : 'Anambra',
             location : 'Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka,Anambra',
             tuition : '250,000',
             link :  "https://forms.gle/YWw8jFN42sDoPQiT8",
@@ -48,6 +51,7 @@ const StandardProgram = () => {
           break;
       case "Abuja":
         setTrainingLocation({
+          place : 'Abuja',
           location : '22 Kumasi Cres, Wuse 2, Abuja',
           tuition : '300,000',
           link : "https://forms.gle/Gp7G4tN6QsxaPnds7",
@@ -56,6 +60,7 @@ const StandardProgram = () => {
         break;
         case "Ikeja":
           setTrainingLocation({
+            place : 'Ikeja',
             location : 'The Philippi Centre, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
             tuition : '300,000',
             link : 'https://forms.gle/p1FhbPHk5muJGpdK6',
@@ -76,8 +81,8 @@ const StandardProgram = () => {
     setLocation(e.target.value)
   }
 
-  function handleOpenEnrolModal(formtype){
-    setEnrolModal({open : true, formtype})
+  function handleOpenEnrolModal(formtype , site = ''){
+    setEnrolModal({...enrolModal, open : true, formtype, site})
   }
   function handleCloseEnrolModal(){
     setEnrolModal({...enrolModal, open : false})
@@ -89,7 +94,8 @@ const StandardProgram = () => {
       setIsError(true)
       return
     }
-    handleOpenEnrolModal(trainingLocation.location)
+    e.preventDefault()
+    handleOpenEnrolModal(trainingLocation.place, 'On-site')
     setIsError(false)
   }
   function handleBlur(){
@@ -238,7 +244,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
-                <form action={trainingLocation.link} target="_blank" onSubmit={handleSubmit} className="cover2">
+                <form  onSubmit={handleSubmit} className="cover2">
                   <main>
                     <div className="item">
                       <div>
