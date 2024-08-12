@@ -115,7 +115,7 @@ const Header = ({bg})=> {
         </MenuItems>)}
       </SideBarBabies>
       <motion.span {...framerText(3)}>
-      <PrimaryButton Text='Contact Us' handleClick={()=>window.open("tel:09063124595")}/>
+      <PrimaryButton to="/contactus" Text='Contact Us'/>
       </motion.span>
     </FramerSidebarPanel>
 
