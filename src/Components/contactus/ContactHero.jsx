@@ -99,7 +99,7 @@ const ContactHero = () => {
               <img src={mailsvg} alt="mail icon" />
               <section>
               <h1>Send us a mail</h1>
-              <p>info@enoverlab.com</p> 
+              <p>enoverlab@gmail.com</p> 
               </section>
             </div>
           </div>
@@ -107,9 +107,19 @@ const ContactHero = () => {
             <div>
               <img src={callsvg} alt="call icon" />
               <section>
-              <h1>Call or Whatsapp</h1>
-              <p>(+234) 8123456789</p>
-              <h5>10Am - 3Pm</h5> 
+              <h1>Call us on</h1>
+              <p>09063124595, 08104522214 </p>
+              <h5>8Am - 8Pm</h5> 
+              </section>
+            </div>
+          </div>
+          <div className="contactDetails">
+            <div>
+              <img src={callsvg} alt="call icon" />
+              <section>
+              <h1>Chat via Whatsapp</h1>
+              <p>08104522214, 07053395509</p>
+              <h5>8Am - 8Pm</h5> 
               </section>
             </div>
           </div>

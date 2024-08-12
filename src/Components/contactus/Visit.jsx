@@ -7,7 +7,7 @@ const Visit = () => {
     <StyledVisit>
       <header>
         <h1>
-            Visit our <br /> other offices
+            Visit our other <br /> Learning Centres
         </h1>
         <p>
             Find us at these locations
@@ -16,42 +16,42 @@ const Visit = () => {
       <main>
         <div>
             <h1>
-                Kenya
+                Lekki
             </h1>
             <p>
-            Gateview Plaza, Plot 11 Admiralty Wy, Lekki Phase 1, Lagos 100001, Lagos
+            Lekki Gateview Plaza, Admiralty way, Lekki Phase 1
             </p>
         </div>
         <div>
             <h1>
-                Kenya
+                Ibadan
             </h1>
             <p>
-            Gateview Plaza, Plot 11 Admiralty Wy, Lekki Phase 1, Lagos 100001, Lagos
+            Cafe One, Palms Mall, Ring Road, Ibadan
             </p>
         </div>
         <div>
             <h1>
-                Kenya
+                Anambra
             </h1>
             <p>
-            Gateview Plaza, Plot 11 Admiralty Wy, Lekki Phase 1, Lagos 100001, Lagos
+                Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka,Anambra
             </p>
         </div>
         <div>
             <h1>
-                Kenya
+            Abuja
             </h1>
             <p>
-            Gateview Plaza, Plot 11 Admiralty Wy, Lekki Phase 1, Lagos 100001, Lagos
+                22 Kumasi Cres, Wuse 2, Abuja
             </p>
         </div>
         <div>
             <h1>
-                Kenya
+                Ikeja
             </h1>
             <p>
-            Gateview Plaza, Plot 11 Admiralty Wy, Lekki Phase 1, Lagos 100001, Lagos
+                EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja
             </p>
         </div>
       </main>
