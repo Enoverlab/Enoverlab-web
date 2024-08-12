@@ -14,28 +14,28 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Stellamaris Emamoro</h3>
-                  <h4>(Remedial Health)</h4>
+                  <h3>Matthew Hans-bello</h3>
+                  <h4>(TASCK)</h4>
             </div>
           </SpeakerImage>
           <div>
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Stellamaris Emamoro</h3>
-                  <h4>(Remedial Health)</h4>
+                  <h3>Matthew Hans-bello</h3>
+                  <h4>(TASCK)</h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                Building and communicating your Product Vision
+                Product Development Life cycle: <br />Understanding the stages from ideation to launch.
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                August 3, 2024
+                August 17th, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
