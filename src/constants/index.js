@@ -535,6 +535,7 @@ export const countries = [
 
 
 export const countryCodes = [
+  {"country":"Nigeria","code":"234","iso":"NG"},
   {"country":"Afghanistan","code":"93","iso":"AF"},
   {"country":"Albania","code":"355","iso":"AL"},
   {"country":"Algeria","code":"213","iso":"DZ"},
@@ -688,7 +689,6 @@ export const countryCodes = [
   {"country":"New Zealand","code":"64","iso":"NZ"},
   {"country":"Nicaragua","code":"505","iso":"NI"},
   {"country":"Niger","code":"227","iso":"NE"},
-  {"country":"Nigeria","code":"234","iso":"NG"},
   {"country":"Niue","code":"683","iso":"NU"},
   {"country":"North Korea","code":"850","iso":"KP"},
   {"country":"Northern Mariana Islands","code":"1-670","iso":"MP"},

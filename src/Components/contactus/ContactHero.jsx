@@ -8,6 +8,7 @@ import callsvg from "../../assets/icon/call.svg"
 import { useState } from "react"
 import LoadingScreen from "../LoadingScreen"
 import Submission from "../Submission"
+import axios from "axios"
 
 
 const ContactHero = () => {
@@ -39,16 +40,34 @@ const ContactHero = () => {
             })
             }
             onSubmit={(values)=>{
-              setloading(true)
-              console.log('done')
+//               entry.740827428: Oladee
+// entry.1252540315: deemajor230600@gmail.com
+// entry.1702911739: 07062834260
+// entry.225648131: Howdy guys
+              const subValues = {
+                'entry.740827428' : values.fullName,
+                'entry.1252540315' : values.email,
+                'entry.225648131' : values.message,
+                'entry.1702911739' : '123456789'
+              }
+
+              axios.postForm('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfkkBqyBI9rNg-iVibsJDt8feH6-0tIcncLn40ZjfithRz0lQ/formResponse', subValues)
+              .then(()=>{
+                console.log('yay')
+              })
+              .catch(()=>{
+                console.log('err')
+              })
+              .then(()=>{
+                setloading(true)
               setTimeout(()=>{
-                console.log('done')
                 setloading(false)
                 setSubmitted(true)
               }, 2500)
+              })
             }}
             >
-              {({errors, touched}) => (
+              {() => (
                 <Form>
                 <label htmlFor="">
                   Full Name
