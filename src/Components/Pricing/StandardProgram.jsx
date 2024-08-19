@@ -411,7 +411,6 @@ const StandardProgram = () => {
                         </H2>
                       </div>
                     </div>
-                    
                   </main>
                   <div className="cta">
                       <SubmitButton Text="Enroll Now"  handleClick={()=>{
