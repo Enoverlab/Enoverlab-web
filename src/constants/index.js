@@ -160,17 +160,17 @@ export const programLocale4 = [berger1, lk2, lk3, lk4];
 export const programLocale5 = [ib1, lk2, lk3, lk4];
 
 export const onlineProgram = [
-  "Introduction to Product management",
-  "Product Thinking",
-  "Conducting User Research",
-  "Understanding Product Life Cycle",
-  "User Segmentation & Personas",
-  "Writing User Stories",
-  "Creating Userflows, Prototypes & Wireframes",
-  "Agile Product Development",
-  "Minimum Viable Product",
-  "Product Roadmap",
-  "Competitive Analysis","Product Metrics","Certficate of Completion","And so much more..."
+  "10 weeks Intensive training and mentorship",
+  '8 weeks internship placement ',
+  "International certification accredited by the American Council of Training and Development (ACTD)",
+  "Lifetime access to Product management resources ",
+  "Opportunity to learn from anywhere you are in the world",
+  "Avenue to meet people from across the globe",
+  "CV review and optimization for a Product Manager role",
+  "LinkedIn profile setup for a Product Manager role",
+  "Product Manager interview and assessment guide",
+  "Job recommendations when they are available ",
+  "Access to a supportive community of over 1,000 product managers across the globe"
 ];
 
 export const executiveProgram = [
@@ -200,14 +200,33 @@ export const businessProgram = [
 ];
 
 export const OnsiteProgram = [
-  'Ideal for anyone who wants to learn everything on Product management; beginner or professional.',
-  'It includes everything in the standard curriculum',
-  'In-depth training & close mentorship with an AIPMM Certified Product Manager',
-  'Small class group; only 10 people are accepted!',
-  'Interactive, immersive and personalised learning experience',
-  'Remarkable facility that is designed to support your learning and growth (With free internet, library, eatery and parking lot)',
-  'Opportunity to meet & relate with like minds on this PM career journey',
-  'After training support; interview prep, CV review and job recommendations**'
+  "12 weeks Intensive training and mentorship ONSITE",
+  "8 weeks internship placement",
+  "A small class for only 10 persons",
+  "International certification accredited by the American Council of Training and Development (ACTD)",
+  "Lifetime access to Product management resources",
+  "Access to a supportive community of over 1,000 product managers across the globe",
+  "Opportunity to physically connect with incredible people on the same Product Manager journey",
+  "CV review and optimization for a Product Manager role",
+  "LinkedIn profile setup for a Product Manager role",
+  "Product Manager interview and assessment guide",
+  "Job recommendations when they are available ",
+  "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
+]
+
+export const PrivateCoaching = [
+  "One-on-one coaching and mentorship ONLINE for 6 weeks or less",
+  "Flexible class time schedule",
+  `Guaranteed Product Manager Job recommendations 
+  PS: YOU MUST BE READY TO PLAY YOUR PART!**`,
+  "Close support and guidance till you land a Product Manager role",
+  "International certification accredited by the American Council of Training and Development (ACTD)",
+  "Lifetime access to Product management resources",
+  "Access to a supportive community of over 1,000 product managers across the globe",
+  "You get ONE of either the Technical Product Management or Growth Product Management or AI Product Management training for FREE ",
+  "You get The Blood Money in Tech ebook for FREE",
+  "Personal recommendation from our CEO for job offers and VISA application "
+
 ]
 
 export const AiProgram = [

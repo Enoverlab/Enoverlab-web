@@ -8,7 +8,7 @@ import { Flex } from "../HomeComponents/ProductSection";
 import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks18 from "../../assets/icon/weeks18.png";
 import weeks20 from "../../assets/icon/20weeks.png";
-import { OnsiteProgram, onlineProgram } from "../../constants";
+import { OnsiteProgram, PrivateCoaching, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
@@ -204,18 +204,11 @@ const StandardProgram = () => {
                       Download Syllabus
                     </Link>
                   </div>
-                  <div className="note">
-                    <h1>PS: We have a very sweet deal for international applicants!
-                    </h1>
-                    <div>
-                    <Link to='/international'>Check Here</Link>
-                    </div>
-                  </div>
                 </form>
               </div>
               <div className="breakdown">
                 <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
-                  Training Details
+                  Here Are The Benefits You Get
                 </H4>
                 <div className="list2">
                   {onlineProgram.map((pg) => (
@@ -338,13 +331,107 @@ const StandardProgram = () => {
                   mdpb="28px"
                   color="var(--Body-Text)"
                 >
-                  Training Details
+                  Here Are The Benefits You Get
                 </H4>
                 <div className="list">
                   {OnsiteProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
                       <P fs="3.6vw" mdfs="1.23vw" color="var(--Body-Text)">
+                        {pg}
+                      </P>
+                    </Flex>
+                  ))}
+                </div>
+                <div className="but">
+                <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      Download Syllabus
+                </Link>
+                </div>
+              </div>
+            </Flex>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Flex mdgap="5.9rem" display="block" mdalign="stretch">
+              <div className="program">
+                <div className="heading" id="online">
+                  <H4 mdfs="2.3vw" fw="700">
+                    Private Coaching
+                  </H4>
+                  <img src={weeks18} alt="18 weeks" />
+                </div>
+                <form className="cover" onSubmit={(e)=>{e.preventDefault()}}>
+                  <main>
+                  <div  className="item">
+                       <div >
+                       <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          Training day
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          Any Day You <br /> Choose
+                        </H2>
+                       </div>
+                       <div>
+                       <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          Class Times
+                        </H4>
+                        <H2
+                          mdfs="1.58vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          Any Time You <br />Choose
+                        </H2>
+                       </div>
+                        <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          Duration
+                        </H4>
+                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)">
+                          6 weeks or less
+                        </H2>
+                        </div>
+                        <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          TUITION FEES
+                        </H4>
+                        <H2
+                          mdfs="2vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          ₦899,000 / $699
+                        </H2>
+                      </div>
+                    </div>
+                    
+                  </main>
+                  <div className="cta">
+                      <SubmitButton Text="Enroll Now"  handleClick={()=>{
+                        handleOpenEnrolModal('Online Instructor Led')
+                      }}/>
+                      <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      Download Syllabus
+                    </Link>
+                  </div>
+                </form>
+              </div>
+              <div className="breakdown">
+                <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
+                  Here Are The Benefits Get
+                </H4>
+                <div className="list2">
+                  {PrivateCoaching.map((pg) => (
+                    <Flex gap="10px">
+                      <img src={check} alt="checkMark" />
+                      <P fs="3.6vw" mdfs="1.33vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>
@@ -405,16 +492,10 @@ const StyledProgram = styled.div`
     padding-left: 3.5rem;
   }
   .breakdown{
-      padding: 0 1.2rem;
-    }
+    padding: 0 1.2rem;
+  }
   main {
     display: flex;
-  }
-  
-  .list {
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
   }
   .item{
     display: grid;
@@ -495,6 +576,9 @@ const StyledProgram = styled.div`
     .programtext1::before {
       content: "On-Site Training";
     }
+    .programtext2::before {
+      content: "Private Coaching";
+    }
   }
   .contain{
       border-bottom: 4px solid rgba(0, 70, 255, 0.44);
@@ -539,7 +623,7 @@ const StyledProgram = styled.div`
     }
     .program {
       position: relative;
-      width: 62.79vw;
+      width: 62vw;
       img {
         position: absolute;
         width: 12.66vw;
@@ -547,7 +631,7 @@ const StyledProgram = styled.div`
       }
     }
     .breakdown{
-      width: calc(100vw - 62.79vw);
+      width: calc(100vw - 62vw);
       padding-top: 2rem;
     }
     .heading {
@@ -560,7 +644,7 @@ const StyledProgram = styled.div`
     .list, .list2{
       display: flex;
       flex-direction: column;
-      gap: 35px;
+      gap: 25px;
     }
     .list2{
       gap: 18px;

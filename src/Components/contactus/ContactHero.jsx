@@ -40,10 +40,6 @@ const ContactHero = () => {
             })
             }
             onSubmit={(values)=>{
-//               entry.740827428: Oladee
-// entry.1252540315: deemajor230600@gmail.com
-// entry.1702911739: 07062834260
-// entry.225648131: Howdy guys
               const subValues = {
                 'entry.740827428' : values.fullName,
                 'entry.1252540315' : values.email,
