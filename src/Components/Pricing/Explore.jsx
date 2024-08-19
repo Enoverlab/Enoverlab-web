@@ -38,7 +38,7 @@ const Explore = () => {
         }
       }
       >
-        {advancedPrograms.filter((x,idx)=>idx < 2).map(pg => <SwiperSlide>
+        {advancedPrograms.filter((x,idx)=>idx < 2).map(pg => <SwiperSlide key={pg.link}>
             <Card
                   key={pg.headText}
                   img={pg.img}
@@ -48,7 +48,7 @@ const Explore = () => {
                   linkText={pg.linkText}
                 />
         </SwiperSlide>)}
-        {advancedPrograms.filter((x,idx)=>idx > 1).map(pg => <SwiperSlide>
+        {advancedPrograms.filter((x,idx)=>idx > 1).map(pg => <SwiperSlide key={pg.link}>
             <Card
                   key={pg.headText}
                   img={pg.img}

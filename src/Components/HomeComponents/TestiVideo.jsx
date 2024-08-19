@@ -99,9 +99,8 @@ const TestiVideo = () => {
               height="100%"
               src={TestiData[slideIndex].vidUrl}
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         }
@@ -115,9 +114,8 @@ const TestiVideo = () => {
                   height="100%"
                   src={slider.vidUrl}
                   title="YouTube video player"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
             ))}

@@ -8,13 +8,13 @@ const Partners = () => {
       <main>
         <div>{partners.map((partner, index)=>{
             if(index < 3){
-                return <img src={partner} alt="partners"/>
+                return <img src={partner} key={partner} alt="partners"/>
             }
             return null;
         })}</div>
         <div>{partners.map((partner, index)=>{
             if(index > 2){
-                return <img src={partner} alt="partners"/>
+                return <img src={partner} key={partner} alt="partners"/>
             }
             return null;
         })}</div>

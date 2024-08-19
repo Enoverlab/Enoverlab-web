@@ -8,6 +8,7 @@ import { Flex } from "../HomeComponents/ProductSection";
 import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks18 from "../../assets/icon/weeks18.png";
 import weeks20 from "../../assets/icon/20weeks.png";
+import weeks6 from "../../assets/icon/6weeks.png";
 import { OnsiteProgram, PrivateCoaching, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
@@ -358,7 +359,7 @@ const StandardProgram = () => {
                   <H4 mdfs="2.3vw" fw="700">
                     Private Coaching
                   </H4>
-                  <img src={weeks18} alt="18 weeks" />
+                  <img src={weeks6} alt="6weeks" />
                 </div>
                 <form className="cover" onSubmit={(e)=>{e.preventDefault()}}>
                   <main>

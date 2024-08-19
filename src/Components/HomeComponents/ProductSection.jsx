@@ -67,8 +67,9 @@ const ProductSection = () => {
               Standard Programs
             </H3>
             <Flex wrap="wrap" gap="15px" >
-              {standardPrograms.map((programs) => (
+              {standardPrograms.map((programs, index) => (
                 <Card
+                  key={index}
                   link={programs.link}
                   img={programs.img}
                   headText={programs.headText}
@@ -94,8 +95,9 @@ const ProductSection = () => {
           >
             <SwiperSlide className="ad">
                   <Flex wrap="wrap" gap="15px" >
-                  {advancedPrograms.filter((programs,index) => index < 2 ).map(programs => (
+                  {advancedPrograms.filter((programs,index) => index < 2 ).map((programs,index) => (
                     <Card
+                    key={index}
                     link={programs.link}
                     img={programs.img}
                     headText={programs.headText}
@@ -106,8 +108,9 @@ const ProductSection = () => {
               </SwiperSlide>
               <SwiperSlide className="ad">
                   <Flex wrap="wrap" gap="15px" mdalign="stretch" >
-                  {advancedPrograms.filter((programs,index) => index > 1 ).map(programs => (
+                  {advancedPrograms.filter((programs,index) => index > 1 ).map((programs,index) => (
                     <Card
+                    key={index}
                     link={programs.link}
                     img={programs.img}
                     headText={programs.headText}
@@ -125,8 +128,9 @@ const ProductSection = () => {
               International Programs
             </H3>
             <Flex wrap="wrap" gap="15px" >
-              {internationalPrograms.map((programs) => (
+              {internationalPrograms.map((programs,index) => (
                 <Card
+                  key={index}
                   link={programs.link}
                   img={programs.img}
                   headText={programs.headText}
