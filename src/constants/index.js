@@ -222,7 +222,6 @@ export const PrivateCoaching = [
   "Close support and guidance till you land a Product Manager role",
   "International certification accredited by the American Council of Training and Development (ACTD)",
   "Lifetime access to Product management resources",
-  "Access to a supportive community of over 1,000 product managers across the globe",
   "You get ONE of either the Technical Product Management or Growth Product Management or AI Product Management training for FREE ",
   "You get The Blood Money in Tech ebook for FREE",
   "Personal recommendation from our CEO for job offers and VISA application "

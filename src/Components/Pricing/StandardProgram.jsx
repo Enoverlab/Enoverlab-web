@@ -425,7 +425,7 @@ const StandardProgram = () => {
               </div>
               <div className="breakdown">
                 <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
-                  Here Are The Benefits Get
+                  Here Are The Benefits You Get
                 </H4>
                 <div className="list2">
                   {PrivateCoaching.map((pg) => (
