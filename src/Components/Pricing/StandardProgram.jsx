@@ -281,12 +281,12 @@ const StandardProgram = () => {
                       <div className="selectOption">
                         <select title="location" name="locale" id="locale"  value={location} onChange={handleLocationChange} onBlur={handleBlur}>
                           <option id="item" value="">Select Location</option>
-                          <option value="Osapa">OSAPA, LEKKI</option>
                           <option value="Lekki">LEKKI</option>
                           <option value="Ibadan">IBADAN</option>
                           <option value="Abuja">ABUJA</option>
                           <option value="Ikeja">IKEJA</option>
                           <option value="Anambra">ANAMBRA</option>
+                          <option value="Osapa">OSAPA, LEKKI</option>
                         </select>
                         {isError && <p className="err">Please select Your Preferred Location</p>}
                       </div>
@@ -545,26 +545,13 @@ const StyledProgram = styled.div`
     }
   }
 
-  .note{
-    padding-top: 40px;
-    padding-bottom: 10px;
-    font-size: 14px;
-    font-style: italic;
-    div{
-      display: flex;
-      justify-content: center;
-    }
-      a{
-      color: #175afe;
-    }
-  }
   .but{
     display: flex;
     justify-content: center;
     margin-top: 3rem;
     .syll{
       color: #175afe;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -693,7 +680,7 @@ const StyledProgram = styled.div`
       padding-top: 6.1rem;
       .syll {
         display: block;
-        
+        color: #175afe;
         font-size: 20px;
       }
     }
