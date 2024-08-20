@@ -10,7 +10,9 @@ import styled from "styled-components";
 const Explore = () => {
   return (
     <StyledExplore>
-        <header>Explore Our Advanced Programs</header>
+        <header>Already a Product Manager? <br />
+        </header>
+        <h1>Check out Advanced Programs for you</h1>
       <Swiper
       modules={[Pagination,Autoplay]}
       breakpoints={
@@ -27,7 +29,7 @@ const Explore = () => {
             },
             1440 : {
               slidesPerView : 2.7,
-                spaceBetween: 5,
+                spaceBetween: 10,
             }
         }
       }
@@ -73,6 +75,11 @@ const StyledExplore = styled.div`
     color: #010140;
     font-size: 24px;
     font-weight: 700;
+    padding-bottom: 10px;
+  }
+  h1{
+    font-size: 18px;
+    font-weight: 600;
     padding-bottom: 10px;
   }
   .swiperPaginationss{

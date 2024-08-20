@@ -113,10 +113,10 @@ const ToolsStyle = styled.div`
                 text-align: center;
                 column-gap: 8px;
                 img {
-                    width: 5.27vw;
+                    width: 5.5vw;
                 }
                 p {
-                    font-size: 2.903vw;
+                    font-size: 3vw;
                     font-weight: 400;
                 }
 

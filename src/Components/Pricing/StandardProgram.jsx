@@ -128,7 +128,7 @@ const StandardProgram = () => {
       <div className="swipepgContainer">
         <section className="contain">
           <div className="swiperPagination"></div>
-        </section>
+        </section>    
         <Swiper
           modules={[Pagination]}
           spaceBetween={50}
@@ -461,12 +461,13 @@ const StandardProgram = () => {
                 </div>
                 <div className="but">
                 <Link to="/PrivateSyllabus.pdf" target="_blank" download='PrivateSyllabus.pdf' className="syll">
-                      Download Syllabus
+                  Download Syllabus
                 </Link>
                 </div>
               </div>
             </Flex>
           </SwiperSlide>
+          <div className="swiper-pagination-progressbar-fill"></div>
         </Swiper>
       </div>
       <StandardForm handleCloseModal={handleCloseEnrolModal} modalDetails={enrolModal}/>
@@ -581,12 +582,15 @@ const StyledProgram = styled.div`
     }
     .programtext0::before {
       content: "Online Training";
+      font-size: 1.2rem;
     }
     .programtext1::before {
       content: "On-Site Training";
+      font-size: 1.2rem;
     }
     .programtext2::before {
       content: "Private Coaching";
+      font-size: 1.2rem;
     }
   }
   .contain{
@@ -702,6 +706,18 @@ const StyledProgram = styled.div`
     border-radius: 16px 16px 0px 0px;
     width: 220px;
     height: 75px;
+    }
+    .programtext0::before {
+      content: "Online Training";
+      font-size: 1.6rem;
+    }
+    .programtext1::before {
+      content: "On-Site Training";
+      font-size: 1.6rem;
+    }
+    .programtext2::before {
+      content: "Private Coaching";
+      font-size: 1.6rem;
     }
     }
     #locale{

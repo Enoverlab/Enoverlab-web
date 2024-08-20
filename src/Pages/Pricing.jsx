@@ -28,9 +28,9 @@ const Pricing = () => {
         <StandardProgram/>
         <ClassTools/>
         {/* <StandardOptions/> */}
-        <Explore/>
         <Testimonials/>
         <Testimonies/>
+        <Explore/>
         <FaqSection/>
     </StyledPricing>
     <Footer p="5rem 9.6rem"/>
