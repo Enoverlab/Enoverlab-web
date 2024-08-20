@@ -9,7 +9,7 @@ import StandardProgram from '../Components/Pricing/StandardProgram'
 import { ClassTools } from '../Components/Pricing/ClassTools'
 import Explore from '../Components/Pricing/Explore'
 import { FaqSection } from '../Components/Pricing/FaqSection'
-import StandardOptions from '../Components/Pricing/StandardOptions'
+// import StandardOptions from '../Components/Pricing/StandardOptions'
 import Testimonials from '../Components/Pricing/Testi'
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
@@ -27,7 +27,7 @@ const Pricing = () => {
         <PriceHero/>
         <StandardProgram/>
         <ClassTools/>
-        <StandardOptions/>
+        {/* <StandardOptions/> */}
         <Explore/>
         <Testimonials/>
         <Testimonies/>

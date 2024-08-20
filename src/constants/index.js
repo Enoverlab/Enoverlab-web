@@ -167,7 +167,6 @@ export const onlineProgram = [
   "Opportunity to learn from anywhere you are in the world",
   "Avenue to meet people from across the globe",
   "CV review and optimization for a Product Manager role",
-  "LinkedIn profile setup for a Product Manager role",
   "Product Manager interview and assessment guide",
   "Job recommendations when they are available ",
   "Access to a supportive community of over 1,000 product managers across the globe"
@@ -208,7 +207,6 @@ export const OnsiteProgram = [
   "Access to a supportive community of over 1,000 product managers across the globe",
   "Opportunity to physically connect with incredible people on the same Product Manager journey",
   "CV review and optimization for a Product Manager role",
-  "LinkedIn profile setup for a Product Manager role",
   "Product Manager interview and assessment guide",
   "Job recommendations when they are available ",
   "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
