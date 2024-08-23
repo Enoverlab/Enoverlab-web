@@ -13,6 +13,7 @@ import { FaqSection } from '../Components/Pricing/FaqSection'
 import Testimonials from '../Components/Pricing/Testi'
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
+import Guarantee from '../Components/Pricing/Guarantee'
 const Pricing = () => {
   const [loading, setLoading] = useState(true)
   useEffect(()=>{
@@ -27,6 +28,7 @@ const Pricing = () => {
         <PriceHero/>
         <StandardProgram/>
         <ClassTools/>
+        <Guarantee/>
         {/* <StandardOptions/> */}
         <Testimonials/>
         <Testimonies/>
