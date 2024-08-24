@@ -59,8 +59,9 @@ const StyledGuarantee = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom:4rem;
     main{
-      width: 96%;
+      width: 92%;
       max-width: 1000px;
     }
     header{
@@ -68,19 +69,26 @@ const StyledGuarantee = styled.div`
       align-items: center;
       gap: 1.9rem;
       margin-bottom: 1.3rem;
+      img{
+          width: 2.5rem;
+        }
       h1{
         color: #3D3D3D;
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         font-weight: 700;
         line-height: 5rem;
       }
     }
     section.card{
       border-radius: 1rem;
+      position: relative;
+      z-index: 1000;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0px 20px 0px -10px #80A2FF;
       padding: 2.9rem 2.8rem 3.0rem 2.8rem;
       background: #003AD4;
       color: white;
-      box-shadow: 0px 40px 5px -15px #80A2FF;
       h2{
         font-size: 1.8rem;
         line-height: 4.1rem;
@@ -97,7 +105,7 @@ const StyledGuarantee = styled.div`
           gap: 2.2rem;
           font-size: 1.6rem;
           line-height: 5rem;
-          margin: 1.6rem 0;
+          margin: 0.6rem 0;
         }
         li:nth-child(6){
           line-height: 2.8rem;
@@ -111,18 +119,28 @@ const StyledGuarantee = styled.div`
           font-weight: 700;
         }
       }
+      div.smally{
+        position: absolute;
+        width: 90%;
+        bottom: -200rem;
+        z-index: -100;
+      }
     }
 
     @media (min-width: 1024px) {
       header{
         margin-bottom: 2.9rem;
+        img{
+          width: initial;
+        }
         h1{
-          font-size: 4.8rem;
+           font-size: 3.5rem;
         }
       }
       section.card{
         border-radius: 2.6rem;
         padding: 5.4rem 11.5rem;
+        box-shadow: 0px 30px 0px -10px #80A2FF;
         h2{
           font-size: 2.3855rem;
           line-height: 5rem;
