@@ -430,7 +430,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦899,000 / $699
+                          ₦799,000 / $599
                         </H2>
                       </div>
                     </div>
