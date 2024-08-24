@@ -14,6 +14,9 @@ export const H1 = styled.h1`
   padding: ${(props) => props.p || "0"};
   padding-top: ${(props) => props.pt || "0"};
   padding-bottom: ${(props) => props.pb || "0"};
+  @media (min-width: 700px) {
+    line-height: ${(props) => props.mdlh || "normal"};
+  }
   @media (min-width: 1024px) {
     font-size: ${(props) => props.mdfs || "4.32vw"};
     line-height: ${(props) => props.mdlh || "normal"};

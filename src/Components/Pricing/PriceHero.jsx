@@ -54,16 +54,17 @@ const PriceHero = () => {
           <H1
             color="#131313"
             textAlign="left"
-            mdfs="48px"
-            fs="7vw"
-            mdlh="6.8rem"
-            lh="3.7rem"
+            mdfs="4rem"
+            fs="6vw"
+            mdlh="5.8rem"
+            lh="3.3rem"
             pb="1rem"
           >
-            Kickstart your career in Product Management
+            Learn Product Management Skills in 3 months 
           </H1>
-          <H4 color="var(--Body-Text)" mdlh="3rem" fs="1.6rem" mdfs="2rem" mdwidth="85%">
-            Regardless of your background, you too can become an Exceptional Product Manager <br /> in the next 6 months.
+          <H4 color="var(--Body-Text)" mdlh="3rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
+          Start making between N200,000 - N500,000 within the next 6 months!
+            {/* Regardless of your background, you too can become an Exceptional Product Manager <br /> in the next 6 months. */}
           </H4>
           </section>
           <div className="video-box">
@@ -275,13 +276,12 @@ const StyledPriceHero = styled.div`
   .price-hero-container {
     padding: 0 9.6rem;
     padding-top:8.2rem;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     @media (max-width: 768px) {
       padding: 0;
-      padding-top: 4.8rem;
+      padding-top: 3.8rem;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
