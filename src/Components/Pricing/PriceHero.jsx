@@ -60,10 +60,10 @@ const PriceHero = () => {
             lh="3.3rem"
             pb="1rem"
           >
-            Learn Product Management Skills in 3 months 
+            Learn Product Management Skills in the next 3 months 
           </H1>
-          <H4 color="var(--Body-Text)" mdlh="3rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
-          Start making between N200,000 - N500,000 within the next 6 months!
+          <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="2rem" mdfs="2.3rem" mdwidth="85%">
+          Start earning between N200,000 - N500,000 within the next 6 months regardless of your educational background, technical know-how, <br /> or what you currently do.
             {/* Regardless of your background, you too can become an Exceptional Product Manager <br /> in the next 6 months. */}
           </H4>
           </section>
