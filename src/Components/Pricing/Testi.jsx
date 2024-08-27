@@ -9,8 +9,8 @@ const Testimonials = () => {
     <StyledTestimonials>
         <div className="testimonials-container">
             <div className="testimonials-text-container">
-                <H3 mdfs="2.38vw" fs="5.60vw" mb="2rem" mdmb="8rem" color="var(--Body-Text)" tA="center" fw={700}>
-                What People Say About Enoverlab
+                <H3 mdfs="2.38vw" fs="5.60vw" mb="1rem" mdmb="4rem" color="var(--Body-Text)" tA="center" fw={700}>
+                What Our Alumni Say About Enoverlab
                 </H3>
             </div>
          <>

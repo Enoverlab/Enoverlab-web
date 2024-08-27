@@ -1,15 +1,17 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import Slick from "react-slick";
-import testiImage1 from "../../assets/icon/review1.svg";
-import testiImage2 from "../..//assets/icon/review2.svg";
-import testiImage3 from "../../assets/icon/review3.svg";
+import testiImage1 from "../../assets/icon/shalom.png";
+import testiImage2 from "../..//assets/icon/adebola.png";
+import testiImage3 from "../../assets/icon/chinelo.png";
+import testiImage4 from "../../assets/icon/chika.png"
+import testiImage5 from "../../assets/icon/elizabeth.jpg"
 import TestiCard from "./TestiCard";
 
 const TestiData = [
   {
     imgLink: testiImage1,
-    name: " Shalom",
+    name: "Shalom",
     role: "Product Manager",
     vidUrl: "https://www.youtube.com/embed/jXR2CYoci_4",
   },
@@ -25,6 +27,18 @@ const TestiData = [
     role: "Product Manager",
     vidUrl: "https://www.youtube.com/embed/iPMxwnmj7sk",
   },
+  {
+    imgLink: testiImage4,
+    name: "Chika Ibobo",
+    role: "Product Manager",
+    vidUrl: "https://www.youtube.com/embed/BGUOtO0yLJM",
+  },
+  {
+    imgLink: testiImage5,
+    name: "Elizabeth",
+    role: "Product Manager",
+    vidUrl: "https://www.youtube.com/embed/0V6SionngKM",
+  },
 ];
 
 const TestiVideo = () => {
@@ -32,12 +46,18 @@ const TestiVideo = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [slideIndex1, setSlideIndex1] = useState(1);
   const [slideIndex2, setSlideIndex2] = useState(2);
+  const [slideIndex3, setSlideIndex3] = useState(3);
+  const [slideIndex4, setSlideIndex4] = useState(4);
+  console.log(slideIndex3)
+  console.log(slideIndex4)
 
   const handleCarousel = (index) => {
     if (index === 0) {
       setSlideIndex(0);
       setSlideIndex1(1);
       setSlideIndex2(2);
+      setSlideIndex3(3);
+      setSlideIndex4(4);
     } else if (index === 1) {
       setSlideIndex(1);
       setSlideIndex1(2);
@@ -48,38 +68,6 @@ const TestiVideo = () => {
       setSlideIndex2(1);
     }
   };
-
-//   const handleNext = (index) => {
-//     if (slideIndex === 0) {
-//       setSlideIndex(1);
-//       setSlideIndex1(2);
-//       setSlideIndex2(0);
-//     } else if (slideIndex === 1) {
-//       setSlideIndex(2);
-//       setSlideIndex1(0);
-//       setSlideIndex2(1);
-//     } else if (slideIndex === 2) {
-//       setSlideIndex(0);
-//       setSlideIndex1(1);
-//       setSlideIndex2(2);
-//     }
-//   };
-
-//   const handlePrev = () => {
-//     if (slideIndex === 0) {
-//       setSlideIndex(2);
-//       setSlideIndex1(0);
-//       setSlideIndex2(1);
-//     } else if (slideIndex === 1) {
-//       setSlideIndex(0);
-//       setSlideIndex1(1);
-//       setSlideIndex2(2);
-//     } else if (slideIndex === 2) {
-//       setSlideIndex(1);
-//       setSlideIndex1(2);
-//       setSlideIndex2(0);
-//     }
-//   };
 
   const settings = {
     speed: 500,

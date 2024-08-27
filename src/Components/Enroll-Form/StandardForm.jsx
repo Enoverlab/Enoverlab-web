@@ -225,7 +225,7 @@ const StandardForm = ({handleCloseModal, modalDetails}) => {
                             field, 
                             meta: { touched, error } 
                       }) => <div>
-                        <input className={touched && error ? "invalid locale" : "locale" } { ...field } placeholder="Select Country" list='countries'/>
+                        <input className={touched && error ? "invalid locale" : "locale" } { ...field } placeholder="Berger, Lagos" list='countries'/>
                         <datalist id='countries'>
                           {
                             countries.map(country => 

@@ -6,6 +6,14 @@ import { SecondaryButton } from "../../Utils/styled/Buttons";
 const Technicalprogram = () => {
   return (
     <StyledTechnicalprogram>
+      <section>
+      <H2 color="rgba(1,1,91,0.82)" fs='2.2rem' mdfs="4rem">
+        Technical Product Management <br /> Program
+      </H2>
+      <H4 color="#1A1A1A" fs="1.8rem" mdfs="2.4rem" mdlh="3rem" className="gainy">
+      Gain hands-on technical knowledge, experience, and tools to collaborate better with engineering teams and build impactful products
+      </H4>
+      </section>
       <div className="cta">
         <H4 color="#1A1A1A" fs="1.8rem" mdfs="2.4rem" mdlh="3rem">
         Take your product manager career to the <br /> next level in 8 weeks
@@ -14,7 +22,7 @@ const Technicalprogram = () => {
       </div>
       <div className="writeup">
         <H2 color="rgba(1,1,91,0.82)" fs='2.4rem' mdfs="4rem">
-        Technical Product Management <br /> Program
+        About Program
         </H2>
         <main>
           <section>
@@ -42,6 +50,12 @@ const StyledTechnicalprogram = styled.div`
   background-position: 100% 0%;
   background-size: 20%;
   padding: 4rem 1.6rem 1rem 1.6rem;
+  .gainy{
+    margin: 2rem 0;
+    width: 95%;
+    max-width: 800px;
+    text-align: justify;
+  }
   .cta {
     display: flex;
     flex-direction: column;
@@ -53,7 +67,7 @@ const StyledTechnicalprogram = styled.div`
     }
   }
   .writeup {
-    margin-top: 6.4rem;
+    margin-top: 4.4rem;
     h2 {
       margin-bottom: 4rem;
       br{
@@ -80,6 +94,12 @@ const StyledTechnicalprogram = styled.div`
   }
   @media (min-width: 1024px) {
     padding: 4rem 9.6rem 2rem 9.6rem;
+    .gainy{
+    margin: 3rem 0;
+    width: 95%;
+    max-width: 800px;
+    text-align: justify;
+    }
     .cta {
       display: flex;
       flex-direction: row;
@@ -93,7 +113,7 @@ const StyledTechnicalprogram = styled.div`
       }
     }
     .writeup {
-      margin-top: 16rem;
+      margin-top: 6rem;
       h2 {
         margin-bottom: 4rem;
         br{

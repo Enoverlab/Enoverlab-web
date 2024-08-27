@@ -112,7 +112,6 @@ const StandardProgram = () => {
       return
     }
     e.preventDefault()
-    handleOpenEnrolModal(trainingLocation.place, 'On-site')
     setIsError(false)
   }
   function handleBlur(){
@@ -254,7 +253,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
-                <form  onSubmit={handleSubmit} className="cover2">
+                <form onSubmit={handleSubmit}  action={trainingLocation.link} target="_blank" className="cover2">
                   <main>
                     <div className="item">
                       <div>
@@ -275,7 +274,7 @@ const StandardProgram = () => {
                           Class Times
                         </H4>
                         <H2 mdfs="1.58vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                          {trainingLocation.place === "Osapa" ? "12pm - 3pm" : "10am - 1pm"}
+                          {trainingLocation.place === "Osapa" ? "12pm - 3pm" : trainingLocation.place === "Lekki" || "Ikeja" ? "2pm -5pm" : "10am - 1pm"}
                         </H2>
                       </div>
                       <div className="selectOption">
