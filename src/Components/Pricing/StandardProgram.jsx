@@ -107,11 +107,12 @@ const StandardProgram = () => {
 
   function handleSubmit(e){
     if(!trainingLocation.link){
+      console.log(trainingLocation)
       e.preventDefault()
       setIsError(true)
       return
     }
-    e.preventDefault()
+    console.log(trainingLocation)
     setIsError(false)
   }
   function handleBlur(){
