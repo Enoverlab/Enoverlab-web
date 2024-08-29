@@ -14,7 +14,7 @@ const ProgramDetails = () => {
               <div className="program">
                 <div className="heading" id="onsite">
                   <H4 mdfs="2.38vw" fw="700">
-                  Berger Centre Info
+                  Ikeja Centre Info
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
@@ -61,7 +61,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          75b Ogunnusi Rd, Isheri, Ojodu <br /> Berger, Lagos Berger
+                          EridanSpace, Oluwalogbon House, Plot A Obafemi <br /> Awolowo Way, Alausa, Ikeja
                         </H2>
                         </div>
                       </div>

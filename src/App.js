@@ -28,7 +28,7 @@ import AI from "./Pages/AI";
 import Kenya from "./Pages/Kenya";
 import Lekki from "./Pages/Lekki";
 import Anambra from "./Pages/Anambra";
-import Berger from "./Pages/Berger";
+import Ikeja from "./Pages/Ikeja";
 import Ibadan from "./Pages/Ibadan";
 import Abuja from "./Pages/Abuja";
 import Business from "./Pages/Business";
@@ -78,7 +78,7 @@ function App() {
         <Route path="/kenya" element={<Kenya/>} />
         <Route path="/lekki" element={<Lekki/>} />
         <Route path="/anambra" element={<Anambra/>} />
-        <Route path="/berger" element={<Berger/>} />
+        <Route path="/ikeja" element={<Ikeja/>} />
         <Route path="/ibadan" element={<Ibadan/>} />
         <Route path="/abuja" element={<Abuja/>} />
         <Route path="/growthpm" element={<Growth/>} />

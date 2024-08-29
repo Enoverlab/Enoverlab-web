@@ -6,9 +6,9 @@ import styled, { keyframes } from 'styled-components'
 import location from "../../assets/icon/location.svg"
 import direction from "../../assets/icon/direction.png"
 
-const BergerHero = () => {
+const IkejaHero = () => {
   return (
-    <StyledBergerHero>
+    <StyledIkejaHero>
         <section className='leftContainer'>
             <div className='topTool'>
                 <H4>Howdy </H4>
@@ -16,14 +16,14 @@ const BergerHero = () => {
             </div>
             <div className='direction'>
                 <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">
-                    Learn Product <br /> Management onsite <br /> in Ojodu Berger
+                    Learn Product <br /> Management onsite <br /> in Ikeja, Lagos
                 </H1>
                 
                     <img src={direction} alt="" />
                 
             </div>
             <H3 mdfs="clamp(1.6rem,1.39vw,2rem)" fs="clamp(1.3rem,3.3vw,2rem)">
-            Enjoy the richer, deeper experiences that comes with <br /> learning in-person at our incredible Ojodu Berger centre
+            Enjoy the richer, deeper experiences that comes with <br /> learning in-person at our incredible Ikeja centre
             </H3>
             <SecondaryButton Text="Enroll Now"/>
         </section>
@@ -32,16 +32,16 @@ const BergerHero = () => {
             <img src={bergerCity} alt=""  className='kenyaCity'/>
             <div className='locale'>
                 <img src={location} alt="kenya City"/>
-                <H4>Berger, Lagos </H4>
+                <H4>Ikeja, Lagos </H4>
             </div>
             </div>
         </section>
       
-    </StyledBergerHero>
+    </StyledIkejaHero>
   )
 }
 
-export default BergerHero
+export default IkejaHero
 
 const wave = keyframes`
   0%, 100% {
@@ -52,7 +52,7 @@ const wave = keyframes`
     }
   `
 
-const StyledBergerHero = styled.div`
+const StyledIkejaHero = styled.div`
 padding: 1.9rem 2.4rem;
 display: flex;
 flex-direction: column;
