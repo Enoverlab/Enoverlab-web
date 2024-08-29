@@ -46,7 +46,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          10am - 1pm
+                          2pm - 5pm
                         </H2>
                        </div>
                       </div>

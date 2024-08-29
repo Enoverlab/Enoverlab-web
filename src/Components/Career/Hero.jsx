@@ -75,12 +75,26 @@ const StyledHero = styled.div`
         padding: 1.3rem 3.4rem 1.9rem 2.4rem ;
         color: #373737;
         font-size: 3.2vw;
+        margin-top: 6.7rem;
         line-height: 22px;
         h3{
             font-weight: 800;
         }
         p{
             font-weight: 500;
+        }
+    }
+    @media (min-width: 700px) {
+        section.right_sect{
+            background: url(${scratch2});
+            background-size: 100%;
+            background-repeat: no-repeat;
+            padding: 2rem 4.5rem 4rem 3.2rem;
+            line-height: 3.2rem;
+            font-size: 3vw;
+            img{
+                width: 3rem;
+            }
         }
     }
     @media (min-width: 1024px) {
@@ -101,13 +115,16 @@ const StyledHero = styled.div`
         }
         section.right_sect{
             background: url(${scratch2});
-            background-size: contain;
-            height: 100%;
+            background-size: 100%;
+            height: 270px;
             background-repeat: no-repeat;
-            padding: 4rem 4.2rem;
-            line-height: 3.4rem;
+            padding: 2rem 4.5rem 4rem 3.2rem;
+            line-height: 3.2rem;
             margin-top : 15rem;
-            font-size: 2rem;
+            font-size: 1.3vw;
+            img{
+                width: 3rem;
+            }
         }
         div.timer{
             position: absolute;
