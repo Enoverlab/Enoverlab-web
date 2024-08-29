@@ -9,6 +9,8 @@ import Formi from '../Components/Anambra/Form'
 import { useState, useEffect } from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
 import Testimonials from '../Components/HomeComponents/Testimonials'
+import Guarantee from '../Components/Pricing/Guarantee'
+import Companies from '../Components/Pricing/Companies'
 
 const Ibadan = () => {
   const [loading, setLoading] = useState(true)
@@ -25,11 +27,13 @@ const Ibadan = () => {
         <IbadanHero/>
         <Access/>
         <ProgramDetails/>
-        <Formi/>
+        <Guarantee/>
+        <Companies/>
         <Testimonials/>
         <div>
         <SuccessStories/>
         </div>
+        <Formi/>
         <FaqSection/>
         <Footer p="5rem 9.6rem 0 9.6rem"/>
         </div>}

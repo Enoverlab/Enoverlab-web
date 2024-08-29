@@ -228,8 +228,8 @@ const StandardForm = ({handleCloseModal, modalDetails}) => {
                         <input className={touched && error ? "invalid locale" : "locale" } { ...field } placeholder="Berger, Lagos" list='countries'/>
                         <datalist id='countries'>
                           {
-                            countries.map(country => 
-                            <option value={country} key={country}/>                         
+                            countries.map(place => 
+                            <option value={`${place.city}, ${place.state}`} key={place.country}/>                         
                             )
                           }
                         </datalist>

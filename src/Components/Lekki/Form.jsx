@@ -52,7 +52,7 @@ const Formi = () => {
     <section className='physical'>
         <H1>Can't attend physically?</H1>
         <H2>Sign up for our online instructor led training that you can join from anywhere you are in the world.</H2>
-        <PrimaryButton bg="white" border="none" Text="Online Training" />
+        <PrimaryButton bg="white" border="none" to='/programs#online' Text="Online Training" />
     </section>
   </StyledFormi>)
 }
@@ -60,6 +60,7 @@ const Formi = () => {
 export default Formi
 
 const StyledFormi = styled.div`
+margin-bottom: 3rem;
 .physical{
     text-align: center;
     display: flex;
@@ -79,6 +80,7 @@ const StyledFormi = styled.div`
     }
 }
 @media (min-width: 1024px) {
+    margin-bottom: 4rem;
     display: flex;
     .physical{
         gap: 3.5rem;

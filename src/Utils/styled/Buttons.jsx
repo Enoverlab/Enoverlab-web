@@ -80,7 +80,7 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
 
 export const PrimaryButton = ({ to = "#", Text, svgWidth, border, bg, handleClick }) => {
   return (
-    <Link to={to} onClick={handleClick}>
+    <HashLink to={to} onClick={handleClick}>
       <StyledPrimaryButton bg={bg} svgWidth={svgWidth} border={border}>
         <p>{Text}</p>
         <svg
@@ -92,7 +92,7 @@ export const PrimaryButton = ({ to = "#", Text, svgWidth, border, bg, handleClic
           <path d="M15.8691 17.6567L14.4581 16.2388L17.7281 12.9838L4.12306 12.9707L4.12506 10.9707L17.6931 10.9838L14.4781 7.75375L15.8951 6.34375L21.5391 12.0138L15.8691 17.6567Z" />
         </svg>
       </StyledPrimaryButton>
-    </Link>
+    </HashLink>
   );
 };
 

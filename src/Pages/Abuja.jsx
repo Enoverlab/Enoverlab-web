@@ -5,10 +5,12 @@ import Access from '../Components/Abuja/Access'
 import ProgramDetails from '../Components/Abuja/ProgramDetails'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import {FaqSection} from "../Components/Pricing/FaqSection"
-import Formi from '../Components/Anambra/Form'
+import Formi from '../Components/Abuja/Form'
 import { useState, useEffect } from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
 import Testimonials from '../Components/HomeComponents/Testimonials'
+import Guarantee from '../Components/Pricing/Guarantee'
+import Companies from '../Components/Pricing/Companies'
 
 const Abuja = () => {
   const [loading, setLoading] = useState(true)
@@ -25,11 +27,13 @@ const Abuja = () => {
         <AbujaHero/>
         <Access/>
         <ProgramDetails/>
-        <Formi/>
+        <Guarantee/>
+        <Companies/>
         <Testimonials/>
         <div>
         <SuccessStories/>
         </div>
+        <Formi/>
         <FaqSection/>
         <Footer p="5rem 9.6rem 0 9.6rem"/>
         </div>}

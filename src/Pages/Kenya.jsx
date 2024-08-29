@@ -10,6 +10,8 @@ import { H2 } from '../Utils/styled/Typograpyhy'
 import Formi from '../Components/Kenya/Form'
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
+import Guarantee from '../Components/Pricing/Guarantee'
+import Companies from '../Components/Pricing/Companies'
 
 const Kenya = () => {
   const [loading, setLoading] = useState(true)
@@ -26,12 +28,14 @@ const Kenya = () => {
         <KenyanHero/>
         <Access/>
         <ProgramDetails/>
+        <Guarantee/>
+        <Companies/>
         <ClassTools/>
-        <Formi/>
         <div>
         <H2 mt="4rem" tA="center" color='var(--TItle-Text)'>What Our Alumni Say</H2>
         <SuccessStories/>
         </div>
+        <Formi/>
         <FaqSection/>
         <Footer p="5rem 9.6rem 0 9.6rem"/>
         </div>}

@@ -324,6 +324,84 @@ const Footer = ({p}) => {
               lh="24px"
               fw="700"
             >
+              Centers
+            </H4>
+
+            <HashLink to="/lekki">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Lekki
+              </P>
+            </HashLink>
+
+            <HashLink to="/ikeja">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Ikeja
+              </P>
+            </HashLink>
+            <Link to="/ibadan">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Ibadan
+              </P>
+            </Link>
+            <Link to="/Abuja">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Abuja
+              </P>
+            </Link>
+            <Link to="/anambra">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Anambra
+              </P>
+            </Link>
+            <Link to="/kenya">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Kenya
+              </P>
+            </Link>
+          </div>
+          <div className="container-left-2">
+            <H4
+              mdfs="1.388vw"
+              color="var(--Body-Text)"
+              lh="24px"
+              fw="700"
+            >
               Free Resource
             </H4>
 
@@ -652,7 +730,7 @@ const StyledFooter = styled.div`
     .footer-right {
       display: flex;
       justify-content: space-between;
-      width: 50%;
+      width: 55%;
 
       @media (max-width: 768px) {
         width: 100%;
