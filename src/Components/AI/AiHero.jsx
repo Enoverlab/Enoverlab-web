@@ -10,7 +10,7 @@ const AiHero = () => {
   return (
     <StyledAiHero>
       <H1 tA="center"  mdlh="8.6rem" color='#1A1A1A'>
-        <span>Artificial</span> Intelligence Product <span>Management Program</span> </H1>
+        Artificial Intelligence Product Management Program </H1>
       <img src={mobaiheroimg} alt="Enoverlab Hero" 
     srcSet={src} sizes={sizes} className='heroImg'
      />
@@ -30,20 +30,10 @@ const StyledAiHero = styled.div`
         margin: 4rem 0 0 0;
         /* height: clamp(200px,26vw,350px) ; */
     }
-    span{
-        color: white;
-        background: #8c8cff;
-        border-radius: 15px;
-        padding-left:5px;
-    }
   @media (min-width: 1024px) {
     h1{
         padding: 0 191px;
         margin-top: 6.4rem;
-    }
-    span{
-        border-radius: 20px;
-        padding-left:30px;
     }
     .heroImg{
     width: 100%;
