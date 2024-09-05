@@ -28,7 +28,7 @@ const Pricing = () => {
     <StyledPricing>
         <PriceHero/>
         <StandardProgram/>
-        <ClassTools/>
+        {/* <ClassTools/> */}
         <Guarantee/>
         <Companies/>
         {/* <StandardOptions/> */}

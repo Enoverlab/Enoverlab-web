@@ -61,7 +61,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          22 Kumasi Cres, Wuse 2, Abuja
+                          Savvy Instant Offices, No 22, Kumasi Cres, <br /> Wuse 2, Abuja
                         </H2>
                         </div>
                       </div>
