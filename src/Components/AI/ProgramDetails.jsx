@@ -88,7 +88,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦300,000
+                          ₦250,000
                         </H2>
                         <H2
                           mdfs="1.38vw"
