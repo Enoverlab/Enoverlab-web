@@ -275,7 +275,7 @@ const StandardProgram = () => {
                           Class Times
                         </H4>
                         <H2 mdfs="1.58vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                          {trainingLocation.place === "Osapa" ? "12pm - 3pm" : trainingLocation.place === "Lekki" || "Ikeja" ? "2pm -5pm" : "10am - 1pm"}
+                          {trainingLocation.place === "Osapa" ? "12pm - 3pm" : (trainingLocation.place === "Lekki" || trainingLocation.place === "Ikeja") ? "2pm -5pm" : "10am - 1pm"}
                         </H2>
                       </div>
                       <div className="selectOption">
@@ -481,7 +481,7 @@ const StandardProgram = () => {
 export default StandardProgram;
 
 const StyledProgram = styled.div`
-  padding: 32px 0 0 5px;
+  padding: 3.2rem 0 4.2rem 0.5rem;
   header {
     color: var(--Title-Text);
     text-align: center;

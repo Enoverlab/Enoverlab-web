@@ -99,7 +99,7 @@ const StyledHero = styled.div`
   
   @media (min-width: 1024px) {
     section{
-      padding: 9.4rem 0rem;
+      padding: 9.4rem 0rem 14rem 0;
       h1{
         margin-top: 5.9rem;
         font-size: 6.4rem;
