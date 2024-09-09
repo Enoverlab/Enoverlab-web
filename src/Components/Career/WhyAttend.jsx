@@ -38,7 +38,7 @@ const StyledWhyAttend = styled.div`
         display: flex;
         flex-direction: row-reverse;
         gap: 4.5rem;
-        padding: 16.8rem 9.6rem;
+        padding: 16.8rem 9.6rem 10rem 9.6rem;
         .texty{
             width: 60%;
             header{

@@ -83,7 +83,7 @@ function App() {
         <Route path="/abuja" element={<Abuja/>} />
         <Route path="/growthpm" element={<Growth/>} />
         <Route path='/contactus' element={<ContactUs/>} />
-        <Route path='/careerfair' element={<Career/>} />
+        <Route path='/temp/careerfair' element={<Career/>} />
         <Route path="/technicalpm" element={<Technical/>} />
         <Route path="/exclusive" element={<Exclusive/>} />
         <Route path="/programsad" element={<ProgramsAd/>} />

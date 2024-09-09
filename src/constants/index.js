@@ -40,6 +40,10 @@ import matthew from "../assets/Alumni/Matthew.png"
 import precious from "../assets/Alumni/Precious.png"
 import adeoluwa from "../assets/Alumni/Adeoluwa.png"
 import apalowo from "../assets/Alumni/Apalowo.png"
+import speaker1 from "../assets/icon/careerfair/speaker1.png"
+import speaker2 from "../assets/icon/careerfair/speaker2.png"
+import speaker3 from "../assets/icon/careerfair/speaker3.png"
+import speaker4 from "../assets/icon/careerfair/speaker4.png"
 
 export const standardPrograms = [
   {
@@ -687,4 +691,31 @@ export const countryCodes = [
   {"country":"Yemen","code":"967","iso":"YE"},
   {"country":"Zambia","code":"260","iso":"ZM"},
   {"country":"Zimbabwe","code":"263","iso":"ZW"}
+]
+
+export const careerspeakers = [
+  {
+    speakerImg : speaker1,
+    speakerName : 'Olabanji Ewenla',
+    speakerPosition : 'Founder & CEO',
+    speakerBio : 'Gain exclusive insights from industry leaders as they share their career journeys and product management wisdom.'
+  },
+  {
+    speakerImg : speaker2,
+    speakerName : 'Olabanji Ewenla',
+    speakerPosition : 'Founder & CEO',
+    speakerBio : 'Gain exclusive insights from industry leaders as they share their career journeys and product management wisdom.'
+  },
+  {
+    speakerImg : speaker3,
+    speakerName : 'Olabanji Ewenla',
+    speakerPosition : 'Founder & CEO',
+    speakerBio : 'Gain exclusive insights from industry leaders as they share their career journeys and product management wisdom.'
+  },
+  {
+    speakerImg : speaker4,
+    speakerName : 'Olabanji Ewenla',
+    speakerPosition : 'Founder & CEO',
+    speakerBio : 'Gain exclusive insights from industry leaders as they share their career journeys and product management wisdom.'
+  }
 ]
