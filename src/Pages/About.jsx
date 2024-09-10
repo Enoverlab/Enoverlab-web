@@ -5,6 +5,8 @@ import Hero from '../Components/About/Hero'
 import Footer from '../Components/Footer'
 import WhoWeAre from '../Components/About/WhoWeAre'
 import Provides from '../Components/About/Provides'
+import Empowering from '../Components/About/Empowering'
+import News from '../Components/About/News'
 const About = () => {
   return (
     <StyledAbout>
@@ -12,6 +14,8 @@ const About = () => {
        <Hero/>
        <WhoWeAre/>
        <Provides/>
+       <Empowering/>
+       <News/>
        <Footer p="5rem 9.6rem 0 9.6rem"/>
     </StyledAbout>
   )

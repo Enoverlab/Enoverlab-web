@@ -44,6 +44,9 @@ import speaker1 from "../assets/icon/careerfair/speaker1.png"
 import speaker2 from "../assets/icon/careerfair/speaker2.png"
 import speaker3 from "../assets/icon/careerfair/speaker3.png"
 import speaker4 from "../assets/icon/careerfair/speaker4.png"
+import newsImg1 from "../assets/icon/about/newsImg1.png"
+import newsImg2 from "../assets/icon/about/newsImg2.png"
+import newsImg3 from "../assets/icon/about/newsImg3.png"
 
 export const standardPrograms = [
   {
@@ -717,5 +720,23 @@ export const careerspeakers = [
     speakerName : 'Olabanji Ewenla',
     speakerPosition : 'Founder & CEO',
     speakerBio : 'Gain exclusive insights from industry leaders as they share their career journeys and product management wisdom.'
+  }
+]
+
+export const newsContent = [
+  {
+    newsImg : newsImg1, 
+    newsTopic : 'Enoverlab Expands Footprint with New Learning Center in Awka, Anambra', 
+    newsLink : 'https://www.thisdaylive.com/index.php/2024/03/08/enoverlab-expands-footprint-with-new-learning-center-in-awka-anambra/#google_vignette'
+  },
+  {
+    newsImg : newsImg2, 
+    newsTopic : 'Earning £7K In Nigeria Is More Appealing Than In The UK - Olabanji Ewenla', 
+    newsLink : 'https://www.youtube.com/watch?v=SSxBMumUle8'
+  },
+  {
+    newsImg : newsImg3, 
+    newsTopic : 'Charting your paths in a digital world', 
+    newsLink : 'www.linkedin.com/feed/update/urn:li:activity:7228830982689157120/'
   }
 ]
