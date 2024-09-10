@@ -182,7 +182,7 @@ const BlogContentPage = () => {
       </LinkedinShareButton>
      </div>
     </StyledBlogContent>
-    <Footer/>
+    <Footer p="5rem 9.6rem 0 9.6rem"/>
     </>
   );
 };

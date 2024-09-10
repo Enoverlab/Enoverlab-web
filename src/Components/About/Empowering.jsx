@@ -16,7 +16,7 @@ const Empowering = () => {
       </section>
       <section className="bottom_part">
         <p>
-        Enoverlab is run by a team of experienced Product Managers with over 20 years of cumulative experience in Product Management who are passionate about impacting African talents with the knowledge, skill, and tools they need to become skilled product managers who can solve problems, create and deliver valuable products while driving up business value for organizations.
+          Enoverlab is run by a team of experienced Product Managers with over 20 years of cumulative experience in Product Management who are passionate about impacting African talents with the knowledge, skill, and tools they need to become skilled product managers who can solve problems, create and deliver valuable products while driving up business value for organizations.
         </p>
       </section>
     </StyledEmpowering>

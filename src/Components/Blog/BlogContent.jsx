@@ -7,6 +7,7 @@ import blogImg3 from '../../assets/blog/blogImage3.png'
 import blogImg4 from '../../assets/blog/blogImage4.png'
 import blogImg5 from '../../assets/blog/blogImage5.png'
 import blogImg6 from '../../assets/blog/blogImage6.png'
+import blogImg7 from '../../assets/blog/blogImage7.jpg'
 export const Article = [
     {
         id: 1,
@@ -134,5 +135,26 @@ export const Article = [
         date: "February 6,2022",
         category: "Softskills",
         authorName: "Juila Austin",
-    }  
+    },
+    {
+        id: 7,
+        title: "HOW TO LAND YOUR DREAM P.M JOB",
+        content1: "Are you ready to take your product management career to the next level? Landing your dream job requires a strategic approach that combines networking, skill development, and effective job search strategies.",
+        contenthead1: "Network Like a Pro ",
+        contenthead2: "Create a Killer Portfolio",
+        contenthead3: "Nail Your Interview",
+        contenthead4: "Build a Strong Foundation",
+        contenthead5: "Identify Your Niche",
+        content4:"Building strong relationships within the product management community is essential. Attend industry events, join online forums, and connect with experienced product managers. Networking can provide valuable insights, mentorship opportunities, and potential job leads.",
+        content5:"Showcase your skills and experience through a well-crafted portfolio. Highlight your projects, case studies, and accomplishments that demonstrate your ability to deliver successful products. A strong portfolio can make a lasting impression on potential employers.  ",
+        content6:"Prepare for your product management interviews by studying common questions and practising your responses. Be ready to discuss your favourite products, explain how you would improve them, and articulate your understanding of product management principles.",
+        content7:"A solid understanding of product management fundamentals is crucial. Stay updated on industry trends, learn about product methodologies, and develop essential skills such as market research, data analysis, and strategic thinking",
+        content8:"Specialising in a particular area of product management can set you apart from the competition. Find your passion and focus on developing expertise in that niche. This will make you a more valuable asset to potential employers.",
+        content9:"By following these strategies and staying committed to your career goals, you can increase your chances of landing your dream product management job.",
+        cardImg: blogImg7,
+        thumbImg: thumbImg1,
+        date: "Sep 10,2024",
+        category: "Job",
+        authorName: "Enoverlab",
+    },
 ]
