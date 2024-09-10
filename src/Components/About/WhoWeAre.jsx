@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import aboutusimg from "../../assets/icon/aboutusimg.png"
 
 const WhoWeAre = () => {
   return (
@@ -8,7 +7,7 @@ const WhoWeAre = () => {
         <h4>
             Who we are
         </h4>
-        <img src={aboutusimg} alt="" width="100%"/>
+        {/* <img src={aboutusimg} alt="" width="100%"/> */}
         
       </header>
       <section>
@@ -57,7 +56,7 @@ const StyledWhoWeAre = styled.div`
         color: #3D3D3D;
         padding-top: 2rem;
         text-align: justify;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 400;
         line-height: 2.2rem;
         .margin{
@@ -66,17 +65,22 @@ const StyledWhoWeAre = styled.div`
     }
     @media (min-width: 1024px) {
         padding: 40.5rem 0 10rem 0;
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
         gap : 4.8rem;
         header{
-            align-items: stretch;
+            /* align-items: stretch; */
         }
         section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding-top: 0rem;
             font-size: 2.2rem;
-            width: 70%;
             line-height: 3.1rem;
+            p{
+                width: 70%;
+            }
             .margin{
                 margin-top: 3rem;
             }

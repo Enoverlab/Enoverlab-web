@@ -45,7 +45,7 @@ const StyledProvides = styled.div`
         color: #3D3D3D;
         background: #EEFCFC;
         text-align: justify;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 2.2rem;
         p{
             margin-top: 2rem;

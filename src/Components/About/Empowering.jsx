@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import the_garage from "../../assets/icon/about/the_garage.png"
+import the_garage from "../../assets/icon/about/the_garage.svg"
 import circle2 from "../../assets/icon/about/circle2.png"
 import deskcircle2 from "../../assets/icon/about/deskcircle2.png"
 import circles from "../../assets/icon/circles.png"
@@ -29,7 +29,7 @@ const StyledEmpowering = styled.div`
     .empowering{
       background: url(${circles});
       background-repeat: no-repeat;
-      padding: 7.6rem 1.6rem;
+      padding: 7.6rem 0rem;
       background-color: #002DA4;
       color: #DCE5FF;
       text-align: center;
@@ -45,7 +45,7 @@ const StyledEmpowering = styled.div`
       /* background-size: 90%; */
       color: #3D3D3D;
       text-align: justify;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       line-height: 2.2rem;
       p{
           margin-top: 2rem;
