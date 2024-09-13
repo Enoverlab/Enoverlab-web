@@ -95,6 +95,9 @@ const BlogContentPage = () => {
         lineHeight="1.9rem"
        
       >
+        <span>
+          {article[0]?.contentbold1}
+        </span>
         {article[0]?.content4}
       </P>
       <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead2}</H4>
@@ -104,6 +107,9 @@ const BlogContentPage = () => {
         color="#4B4B4B"
         lineHeight="1.9rem"
       >
+        <span>
+          {article[0]?.contentbold2}
+        </span>
         {article[0]?.content5}
       </P>
       <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead3}</H4>
@@ -114,6 +120,9 @@ const BlogContentPage = () => {
         lineHeight="1.9rem"
         
       >
+        <span>
+          {article[0]?.contentbold3}
+        </span>
         {article[0]?.content6}
       </P>
       <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead4}</H4>
@@ -124,6 +133,9 @@ const BlogContentPage = () => {
         lineHeight="1.9rem"
       
       >
+        <span>
+          {article[0]?.contentbold4}
+        </span>
         {article[0]?.content7}
       </P>
       <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead5}</H4>
@@ -133,7 +145,45 @@ const BlogContentPage = () => {
         color="#4B4B4B"
         lineHeight={"1.9rem"}
       >
+        <span>
+          {article[0]?.contentbold5}
+        </span>
         {article[0]?.content8}
+      </P>
+      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead6}</H4>
+      <P
+        textAlign="left"
+        fontSize="1.125rem"
+        color="#4B4B4B"
+        lineHeight={"1.9rem"}
+      >
+        <span>
+          {article[0]?.contentbold6}
+        </span>
+        {article[0]?.contentextra9}
+      </P>
+      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead7}</H4>
+      <P
+        textAlign="left"
+        fontSize="1.125rem"
+        color="#4B4B4B"
+        lineHeight={"1.9rem"}
+      >
+        <span>
+          {article[0]?.contentbold7}
+        </span>
+        {article[0]?.contentextra10}
+      </P><H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead8}</H4>
+      <P
+        textAlign="left"
+        fontSize="1.125rem"
+        color="#4B4B4B"
+        lineHeight={"1.9rem"}
+      >
+        <span>
+          {article[0]?.contentbold8}
+        </span>
+        {article[0]?.contentextra11}
       </P>
       <P
         textAlign="left"
@@ -205,6 +255,9 @@ const StyledBlogContent = styled.div`
     margin-bottom: 1rem;
     font-weight: 500;
     font-size: 1.5rem;
+  }
+  span{
+    font-weight: 800;
   }
   .contentList {
     margin-bottom: 1.75rem;

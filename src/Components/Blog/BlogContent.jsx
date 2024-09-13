@@ -8,6 +8,7 @@ import blogImg4 from '../../assets/blog/blogImage4.png'
 import blogImg5 from '../../assets/blog/blogImage5.png'
 import blogImg6 from '../../assets/blog/blogImage6.png'
 import blogImg7 from '../../assets/blog/blogImage7.jpg'
+import blogImg8 from '../../assets/blog/blogImage8.jpg'
 export const Article = [
     {
         id: 1,
@@ -154,6 +155,33 @@ export const Article = [
         cardImg: blogImg7,
         thumbImg: thumbImg1,
         date: "Sep 10,2024",
+        category: "Job",
+        authorName: "Enoverlab",
+    },
+    {
+        id: 8,
+        title: "Technical Savvy: A Game-Changer for Product Managers",
+        content1: "As a product manager, possessing technical knowledge can significantly elevate your career. It empowers you to make informed decisions, collaborate effectively with engineering teams, and stay ahead of industry trends.",
+        contentbold1: "Technical knowledge allows you to speak the same language as your engineering team, ",
+        contentbold2: "By bridging the communication gap between technical and non-technical stakeholders,",
+        contentbold3: "Technical product management courses expose you to emerging technologies and trends,",
+        contentbold4: "Technical knowledge helps you anticipate and address potential technical risks early in the product development process,",
+        contentbold5: "Technical knowledge enables you to align your product strategy with long-term business goals,",
+        contentbold6: "Technical product management skills make you a more valuable asset to your Organization,",
+        contentbold7: "Technical knowledge gives you the confidence to present and defend your product decisions,",
+        contentbold8: "Technical product management courses help you stay up-to-date with the latest technologies and industry trends,",
+        content4:"fostering better understanding and collaboration. You can make more strategic choices about product features and architecture when you have a deeper understanding of technology.",
+        content5:"you can ensure everyone is aligned. A shared understanding of technical concepts builds trust and respect among team members.",
+        content6:"enabling you to identify innovative solutions and stay ahead of the competition. A solid technical foundation allows you to contribute meaningfully to product discussions and inspire innovative ideas.",
+        content7:"saving time and resources. A deeper understanding of technical constraints allows you to make more informed decisions about product feasibility and scalability.",
+        content8:"ensuring that your product is technically sound and scalable. A solid understanding of technology allows you to make informed decisions about resource allocation and technology investments.",
+        contentextra9:"opening doors to career advancement and leadership roles. A strong technical background can enhance your credibility and reputation within the industry.",
+        contentextra10:"even in technical discussions. A solid technical foundation boosts your credibility and enhances your ability to influence stakeholders.",
+        contentextra11:"ensuring you remain adaptable in a rapidly changing landscape. By acquiring technical knowledge, you position yourself for long-term success in the product management field.",
+        content9 : "In conclusion, technical knowledge is a valuable asset for product managers. It enables you to communicate effectively,collaborate seamlessly, make informed decisions, and drive innovation. By investing in your technical skills, you can significantly enhance your career prospects and become a more effective product leader.",
+        cardImg: blogImg8,
+        thumbImg: thumbImg1,
+        date: "Sep 14th,2024",
         category: "Job",
         authorName: "Enoverlab",
     },

@@ -14,28 +14,32 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Paula Adaja</h3>
-                  <h4>(Metro Africa Xpress)</h4>
+                  <h3>Ose Olusanya</h3>
+                  <h4>(Product/Operation Manager)
+                    <h5>(Jara Investment)</h5>
+                  </h4>
             </div>
           </SpeakerImage>
           <div>
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Paula Adaja</h3>
-                  <h4>(Metro Africa Xpress)</h4>
+                  <h3>Ose Olusanya</h3>
+                  <h4>(Product/Operation Manager) <h5>
+                  (Jara Investment)
+                    </h5></h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                Cracking the code: Your First Job Blueprint 
+                The efficacy of choice with regards to <br />preparing your cv and job growth. 
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                September 7th, 2024
+                September 14th, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
@@ -127,6 +131,11 @@ div{
   }
   h4{
     margin: 4px 0;
+    /* width: fit-content; */
+    h5{
+      /* text-align: center; */
+      margin-top: 0.5rem;
+    }
   }
   h3 {
     color: #fff;
@@ -169,6 +178,10 @@ display: none;
       font-weight: 400;
       color: #F7F7F7;
       line-height: normal;
+      h5{
+        margin-top: 0.5rem;
+        text-align: center;
+      }
     }
   }
 `;
