@@ -9,6 +9,7 @@ import blogImg5 from '../../assets/blog/blogImage5.png'
 import blogImg6 from '../../assets/blog/blogImage6.png'
 import blogImg7 from '../../assets/blog/blogImage7.jpg'
 import blogImg8 from '../../assets/blog/blogImage8.jpg'
+import blogImg9 from '../../assets/blog/blogImage9.jpg'
 export const Article = [
     {
         id: 1,
@@ -182,7 +183,24 @@ export const Article = [
         cardImg: blogImg8,
         thumbImg: thumbImg1,
         date: "Sep 14th,2024",
-        category: "Job",
+        category: "Tech",
+        authorName: "Enoverlab",
+    },
+    {
+        id: 9,
+        title: "PM KNOWLEDGE FOR NEWBIES",
+        content1: "As a product manager, your ability to stay ahead of the curve and deliver exceptional products is paramount. To achieve this, it's essential to adopt a few key strategies.",
+        contenthead1: "Empathise with Your Users ",
+        contenthead2: "Prioritise Effectively",
+        contenthead3: "Stay Curious and Hungry",
+        content4:"One of the most fundamental principles of product management is to understand your users deeply. Put yourself in their shoes by creating user stories and gaining a comprehensive understanding of their needs and pain points. This empathy will guide you in building products that truly resonate with your target audience.",
+        content5:"In the fast-paced world of product management, prioritisation is key. The Eisenhower Matrix is a valuable tool to help you categorise tasks based on their urgency and importance. By focusing on tasks that are both urgent and important, you can ensure that your efforts are aligned with your product's strategic goals.  ",
+        content6:"The field of product management is constantly evolving. To stay ahead of the curve, it's essential to maintain a curious mindset and a relentless drive to learn. Never stop exploring new technologies, industry trends, and best practices. Additionally, be hungry for innovation and experimentation. Continuously push boundaries and strive to create groundbreaking products.",
+        content9:"By following these principles, you can elevate your product management skills and become a force to be reckoned with in the industry. Remember, empathy, prioritizations, curiosity, and hunger are the cornerstones of a successful product manager.",
+        cardImg: blogImg9,
+        thumbImg: thumbImg1,
+        date: "Sep 18,2024",
+        category: "Knowledge",
         authorName: "Enoverlab",
     },
 ]
