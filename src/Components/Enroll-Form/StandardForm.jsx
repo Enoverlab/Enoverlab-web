@@ -276,6 +276,9 @@ const StandardForm = ({handleCloseModal, modalDetails}) => {
                     </Field>
                     <ErrorMessage name='knowAbout' component="div" className='erroMsg'/>
                   </label>
+                  <p className="note">
+                    NB: Next Cohort Starts by October 11, 2024
+                  </p>
                 </main>
                 <div className="cta">
                   <SubmitButton Text="Submit" disabled={!(isValid && dirty)}/>
@@ -391,6 +394,11 @@ const StyledStandardForm = styled.div`
           color: red;
         }
       }
+    }
+    p{
+      font-weight: 600;
+      font-size: 1.4rem;
+      font-style: italic;
     }
   }
   .cta{
