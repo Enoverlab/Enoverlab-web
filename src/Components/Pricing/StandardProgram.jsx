@@ -53,7 +53,7 @@ const StandardProgram = () => {
             weeks : "10",
             link :  "https://forms.gle/YWw8jFN42sDoPQiT8",
             mapIframe : <iframe title="Anambra" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3051337147767!2d7.053362574482788!3d6.223437493764614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104379af706c6619%3A0x2598afc465c51641!2sKodex%20Africa!5e0!3m2!1sen!2sng!4v1721040675268!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-            startDate : "N/A"
+            startDate : "Jan 25, 2024"
           })
           break;
       case "Abuja":
@@ -76,17 +76,6 @@ const StandardProgram = () => {
             link : 'https://forms.gle/p1FhbPHk5muJGpdK6',
             mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
             startDate : "Jan 11, 2024"
-          })
-          break;
-        case "Osapa":
-          setTrainingLocation({
-            place : "Osapa",
-            tuition : '400,000',
-            location : "Triangle Mall, Osapa London, Lekki - Epe Expressway",
-            link : "https://forms.gle/cuNG9n8vDqqxCdru9",
-            weeks : "6",
-            mapIframe : <iframe title="Osapa Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.664387829949!2d3.5097482999999996!3d6.437132499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf7266783825f%3A0xc71e7e52aec40174!2sTriangle%20Business%20Place!5e0!3m2!1sen!2sng!4v1724143432688!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-            startDate : "Oct 10, 2024"
           })
           break;
       default:
@@ -306,7 +295,6 @@ const StandardProgram = () => {
                           <option value="Abuja">ABUJA</option>
                           <option value="Ikeja">IKEJA</option>
                           <option value="Anambra">ANAMBRA</option>
-                          <option value="Osapa">OSAPA, LEKKI</option>
                         </select>
                         {isError && <p className="err">Please select Your Preferred Location</p>}
                       </div>
