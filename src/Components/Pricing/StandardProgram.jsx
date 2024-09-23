@@ -53,7 +53,7 @@ const StandardProgram = () => {
             weeks : "10",
             link :  "https://forms.gle/YWw8jFN42sDoPQiT8",
             mapIframe : <iframe title="Anambra" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3051337147767!2d7.053362574482788!3d6.223437493764614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104379af706c6619%3A0x2598afc465c51641!2sKodex%20Africa!5e0!3m2!1sen!2sng!4v1721040675268!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-            startDate : "Jan 25, 2024"
+            startDate : "Jan 25, 2025"
           })
           break;
       case "Abuja":
@@ -75,7 +75,7 @@ const StandardProgram = () => {
             weeks : "10",
             link : 'https://forms.gle/p1FhbPHk5muJGpdK6',
             mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-            startDate : "Jan 11, 2024"
+            startDate : "Jan 11, 2025"
           })
           break;
       default:
@@ -184,17 +184,6 @@ const StandardProgram = () => {
                       </div>
                       <div>
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
-                          Duration
-                        </H4>
-                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                          10 weeks training
-                        </H2>
-                        <H2 mdfs="1.587vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                          8 weeks internship
-                        </H2>
-                      </div>
-                      <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Start Date
                         </H4>
                         <H2
@@ -270,14 +259,9 @@ const StandardProgram = () => {
                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Training day
                         </H4>
-                        {
-                          trainingLocation.place === "Osapa" ? 
-                          <H2 mdfs="1.587vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                          Every Tuesday <br /> & Thursday
-                          </H2> : <H2 mdfs="1.587vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
+                        <H2 mdfs="1.587vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
                           Every Saturday
                         </H2>
-                        }
                       </div>
                       <div>
                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
@@ -309,22 +293,6 @@ const StandardProgram = () => {
                           color="var(--Body-Text)"
                         >
                           {trainingLocation.location}
-                        </H2>
-                      </div>
-                      <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
-                          Duration
-                        </H4>
-                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" >
-                          {trainingLocation.weeks} weeks training
-                        </H2>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          {trainingLocation.place === "Osapa" || '8 weeks Internship'}
                         </H2>
                       </div>
                       <div>

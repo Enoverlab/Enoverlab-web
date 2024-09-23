@@ -22,36 +22,33 @@ const ProgramDetails = () => {
                   <form action="https://forms.gle/YWw8jFN42sDoPQiT8" target="_blank">
                   <main>
                     <div className="item">
-                      <div className='item1'>
-                       <div >
-                       <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
+                      <div >
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="1.4rem"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
                           Every Saturday
                         </H2>
-                       </div>
-                       <div>
-                       <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
+                      </div>
+                      <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2
                           mdfs="1.58vw"
-                          fs="1.4rem"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
                           10am - 1pm
                         </H2>
-                       </div>
                       </div>
-                      <div className="item2">
-                        <div>
+                      <div className='locale'>
                         <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
                           Location
                         </H4>
@@ -64,42 +61,31 @@ const ProgramDetails = () => {
                           Kodex Africa, Plot No. A/127, Iyiagu <br /> Housing Estate, Awka,Anambra
                         </H2>
                         </div>
-                      </div>
-                      <div className='item3'>
-                        <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
-                          Duration
+                      <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          Start Date
                         </H4>
                         <H2
-                          mdfs="1.587vw"
-                          fs="1.4rem"
+                          mdfs="2.38vw"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          12 weeks training
+                          Jan 25, 2025
                         </H2>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="1.4rem"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          8 weeks training
-                        </H2>
-                        </div>
-                        <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
+                      </div>
+                      <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
                         <H2
                           mdfs="2.38vw"
-                          fs="1.4rem"
+                          fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
                           ₦250,000
                         </H2>
-                      </div>
                       </div>
                     </div>
                   </main>
@@ -167,20 +153,14 @@ const StyledProgramDetail = styled.div`
     padding-left: 2.5rem;
   }
   .item{
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
-  }
-  .item1,.item3 {
     display: grid;
-    grid-template-columns: 1fr .5fr;
-    align-items: flex-start;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 100px;
+    row-gap: 30px;
   }
-  /* .item1{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 5.9rem;
-  } */
+  .locale{
+    grid-column: span 2 / span 2;
+  }
   .list {
     display: flex;
     flex-direction: column;

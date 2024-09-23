@@ -102,6 +102,73 @@ const ProgramDetails = () => {
                       </div>
                       </div>
                     </div>
+                    <div className="item">
+                      <div >
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          Training day
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          Every Saturday
+                        </H2>
+                      </div>
+                      <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          Class Times
+                        </H4>
+                        <H2
+                          mdfs="1.58vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          10am - 1pm
+                        </H2>
+                      </div>
+                      <div className='locale'>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
+                          Location
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          fs="clamp(1.4rem,1.4rem,2rem)"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          Cafe One, Palms Mall, Ring Road, <br /> Ibadan
+                        </H2>
+                        </div>
+                      <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          Start Date
+                        </H4>
+                        <H2
+                          mdfs="2.38vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          Sept 21, 2024
+                        </H2>
+                      </div>
+                      <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                          TUITION FEES
+                        </H4>
+                        <H2
+                          mdfs="2.38vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          ₦250,000
+                        </H2>
+                      </div>
+                    </div>
                   </main>
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
@@ -167,20 +234,14 @@ const StyledProgramDetail = styled.div`
     padding-left: 2.5rem;
   }
   .item{
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
-  }
-  .item1,.item3 {
     display: grid;
-    grid-template-columns: 1fr .5fr;
-    align-items: flex-start;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 100px;
+    row-gap: 30px;
   }
-  /* .item1{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 5.9rem;
-  } */
+  .locale{
+    grid-column: span 2 / span 2;
+  }
   .list {
     display: flex;
     flex-direction: column;
