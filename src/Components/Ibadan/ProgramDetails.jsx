@@ -245,7 +245,7 @@ const StyledProgramDetail = styled.div`
   .list {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 26px;p
   }
   .cta {
     padding: 3.1rem 0 2.1rem 0;
