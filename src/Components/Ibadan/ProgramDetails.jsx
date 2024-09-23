@@ -22,87 +22,6 @@ const ProgramDetails = () => {
                   <form action="https://forms.gle/CsYYXENLZNmjnsfK6" target="_blank">
                   <main>
                     <div className="item">
-                      <div className='item1'>
-                       <div >
-                       <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
-                          Training day
-                        </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="1.4rem"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          Every Saturday
-                        </H2>
-                       </div>
-                       <div>
-                       <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
-                          Class Times
-                        </H4>
-                        <H2
-                          mdfs="1.58vw"
-                          fs="1.4rem"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          10am - 1pm
-                        </H2>
-                       </div>
-                      </div>
-                      <div className="item2">
-                        <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
-                          Location
-                        </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="clamp(1.4rem,1.4rem,2rem)"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          Cafe One, Palms Mall, Ring Road, <br /> Ibadan
-                        </H2>
-                        </div>
-                      </div>
-                      <div className='item3'>
-                        <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
-                          Duration
-                        </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="1.4rem"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          12 weeks training
-                        </H2>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="1.4rem"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          8 weeks training
-                        </H2>
-                        </div>
-                        <div>
-                        <H4 mdfs="1.058vw" mb="1rem" fs="1.2rem" color="var(--Body-Text)">
-                          TUITION FEES
-                        </H4>
-                        <H2
-                          mdfs="2.38vw"
-                          fs="1.4rem"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          ₦250,000
-                        </H2>
-                      </div>
-                      </div>
-                    </div>
-                    <div className="item">
                       <div >
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Training day
@@ -245,7 +164,7 @@ const StyledProgramDetail = styled.div`
   .list {
     display: flex;
     flex-direction: column;
-    gap: 26px;p
+    gap: 26px;
   }
   .cta {
     padding: 3.1rem 0 2.1rem 0;
@@ -293,7 +212,8 @@ const StyledProgramDetail = styled.div`
       gap: 14.48vw;
     }
     .item{
-    gap: 65px;
+    column-gap: 165px;
+    row-gap: 65px;
   }
     .list {
       display: flex;

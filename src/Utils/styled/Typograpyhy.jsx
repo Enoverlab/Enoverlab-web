@@ -125,3 +125,23 @@ export const P = styled.p`
     padding-bottom: ${(props) => props.pb || props.pmdb};
   }
 `;
+
+export const LI = styled.li`
+font-size: ${(props) => props.fs || fontSize.sm};
+  color: ${(props) => props.color || color.light};
+  font-weight: ${(props) => props.fw || 400};
+  display: ${(props) => props.display} ;
+  align-items: ${(props) => props.align};
+  gap: ${(props) => props.gap};
+  text-align: ${(props) => props.tA};
+  margin: ${(props) => props.margin || "0"};
+  padding: ${(props) => props.padding || "0"};
+  padding-top: ${(props) => props.pt || "0"};
+  padding-bottom: ${(props) => props.pb || "0"};
+  @media (min-width: 1024px) {
+    font-size: ${(props) => props.mdfs || fontSize.base};
+    line-height: ${(props) => props.mdlh};
+    font-weight: ${(props) => props.mdfw || props.fw};
+    padding-bottom: ${(props) => props.pb || props.pmdb};
+  }
+`

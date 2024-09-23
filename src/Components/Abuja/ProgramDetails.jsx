@@ -212,7 +212,8 @@ const StyledProgramDetail = styled.div`
       gap: 14.48vw;
     }
     .item{
-    gap: 65px;
+    column-gap: 165px;
+    row-gap: 65px;
   }
     .list {
       display: flex;

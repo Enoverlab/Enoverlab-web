@@ -1,7 +1,7 @@
 import React from "react";
 import { Article } from "../Components/Blog/BlogContent";
 import { useParams } from "react-router-dom";
-import { P, H4, H1 } from "../Utils/styled/Typograpyhy";
+import { P, H4, H1, LI } from "../Utils/styled/Typograpyhy";
 import styled from "styled-components";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
@@ -73,8 +73,13 @@ const BlogContentPage = () => {
       </P>
       <div className="contentList">
         <ul>
-          {article[0]?.contentList?.map((item) => (
-            <li>{item.content}</li>
+          {article[0]?.contentList?.map((item, idx) => (
+            <LI
+            tA="left"
+            fs="1.125rem"
+            color="#4B4B4B"
+            lineHeight="1.9rem"
+            ><span>{item.contentHeading}</span> {item.content}</LI>
           ))}
         </ul>
       </div>
@@ -103,7 +108,7 @@ const BlogContentPage = () => {
       <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead2}</H4>
       <P
         textAlign="left"
-        fontSize="1.125rem"
+        fs="1.125rem"
         color="#4B4B4B"
         lineHeight="1.9rem"
       >

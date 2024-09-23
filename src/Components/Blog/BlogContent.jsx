@@ -10,6 +10,7 @@ import blogImg6 from '../../assets/blog/blogImage6.png'
 import blogImg7 from '../../assets/blog/blogImage7.jpg'
 import blogImg8 from '../../assets/blog/blogImage8.jpg'
 import blogImg9 from '../../assets/blog/blogImage9.jpg'
+import blogImg10 from '../../assets/blog/blogImage10.jpg'
 export const Article = [
     {
         id: 1,
@@ -201,6 +202,40 @@ export const Article = [
         thumbImg: thumbImg1,
         date: "Sep 18,2024",
         category: "Knowledge",
+        authorName: "Enoverlab",
+    },
+    {
+        id: 10,
+        title: "Crafting a Product Roadmap That Captivate Stakeholders",
+        content1: "A well-structured product roadmap is a cornerstone for aligning teams and stakeholders, ensuring everyone is marching towards the same product vision. It serves as a strategic compass, preventing teams from veering off course and ensuring project success. While creating a roadmap might seem daunting, especially for new product managers, adhering to these key steps can help you develop a compelling plan that resonates with your audience.",
+        content2:"Here are some of them;",
+        contentList:[
+        {
+            contentHeading : "Define Your Vision and Goals:",
+            content: "Clearly articulate your product's purpose and align it with your company's broader objectives. This vision will serve as the guiding star for your roadmap. "
+        },
+        {
+            contentHeading : "Understand Your Audience:",
+            content: "Dive deep into your target users' needs, pain points, and desires. This knowledge will help you prioritise features that truly resonate with them."
+        },
+        {
+            contentHeading : "Prioritise Features Strategically:",
+            content: "Use techniques like the MoSCoW prioritisation framework to determine which features are must-haves, should-haves, could-haves, and won't-haves. This focused approach ensures you're working on the most impactful features.            "
+        },
+        {
+            contentHeading : "Create a Realistic Timeline:",
+            content: "Develop a timeline that considers resource availability, dependencies, and potential risks. Use tools like Gantt charts to visualise your plan and track progress effectively.            "
+        },
+        {
+            contentHeading : "Visualise Your Roadmap Effectively:",
+            content: "Craft a clear and visually appealing roadmap that's easy to understand and share. Tools like Miro or Lucidchart can help you create interactive roadmaps that can be easily updated and shared with stakeholders.            "
+        }
+        ],
+        content9:"This roadmap guide is your secret weapon for stakeholder engagement. Implement these steps, and witness the positive impact on their trust and buy-in.",
+        cardImg: blogImg10,
+        thumbImg: thumbImg1,
+        date: "Sep 23,2024",
+        category: "Product",
         authorName: "Enoverlab",
     },
 ]
