@@ -49,7 +49,8 @@ const Footer = () => {
               <img src={mailsvg} alt="mail icon" />
               <section>
               <h1>Send us a mail</h1>
-              <p>enoverlab@gmail.com</p> 
+              <p><Link to="mailto:sarah@enoverlab.com" target="_blank">Sarah@enoverlab.com</Link> </p>
+              <Link to="mailto:info@enoverlab.com" target="_blank">info@enoverlab.com</Link> 
               </section>
             </div>
           </div>
@@ -58,7 +59,8 @@ const Footer = () => {
               <img src={callsvg} alt="call icon" />
               <section>
               <h1>Call us on</h1>
-              <p>09063124595, 08104522214 </p>
+              <p>+234 (813 489 7313)</p>
+              <p>+234 (906 312 4595) </p>
               <h5>8Am - 8Pm</h5> 
               </section>
             </div>
@@ -130,7 +132,7 @@ const StyledFooter = styled.div`
                     font-size: 1.4rem;
                     font-weight: 700;
                 }
-                p{
+                p, a{
                     font-size: 1.2rem;
                 }
                 h5{
@@ -173,7 +175,7 @@ const StyledFooter = styled.div`
                 font-size: 2rem;
                 font-weight: 700;
             }
-            p{
+            p,a{
                 font-size: 1.6rem;
             }
             h5{

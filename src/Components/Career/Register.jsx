@@ -14,7 +14,8 @@ const Register = () => {
         </h4>
       </header>
       <Formik
-      initialValues={{full_name : '', email : '', work_currently : '', location : '', background : '', experience : ''}}
+      initialValues={{full_name : '', email : '', work_currently : '', location : '', background : '', experience : '', linkedin : ""}}
+      
       >
         <Form className="form">
             <label htmlFor="full_name">
@@ -62,6 +63,13 @@ const Register = () => {
                     </option>
                 </Field>
                 <ErrorMessage name="experience" component="div" />
+            </label>
+            <label htmlFor="background">
+                <div>
+                Linkedin Profile Link <span>*</span>
+                </div>
+                <Field name='linkedin' placeholder= "https://linkedin.com/userID"/>
+                <ErrorMessage name="linkedin" component="div" />
             </label>
             <div className="submit">
                 <SubmitButton Text="Submit"/>
