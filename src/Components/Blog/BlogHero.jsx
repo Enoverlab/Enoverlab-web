@@ -17,7 +17,7 @@ const BlogHero = () => {
                   key={item.id}
                   category={item.category}
                   contentTitle={item.title}
-                  contentText={item.content1.slice(0, 100) + '...'}
+                  contentText={item.content1 ? item?.content1?.slice(0, 100) + '...' : item.content4.slice(0,100) + '...'}
                   authorName={item.authorName}
                   cardImg={item.cardImg}
                   thumbImg={item.thumbImg}

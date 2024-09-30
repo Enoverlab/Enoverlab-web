@@ -11,6 +11,9 @@ import blogImg7 from '../../assets/blog/blogImage7.jpg'
 import blogImg8 from '../../assets/blog/blogImage8.jpg'
 import blogImg9 from '../../assets/blog/blogImage9.jpg'
 import blogImg10 from '../../assets/blog/blogImage10.jpg'
+import blogImg11 from '../../assets/blog/blogImage11.jpg'
+import blogImg12 from '../../assets/blog/blogImage12.jpg'
+
 export const Article = [
     {
         id: 1,
@@ -236,6 +239,37 @@ export const Article = [
         thumbImg: thumbImg1,
         date: "Sep 23,2024",
         category: "Product",
+        authorName: "Enoverlab",
+    },
+    {
+        id: 11,
+        title: "4 Things To Consider my When Building An MVP",
+        contenthead1: "PROBLEM-SOLUTION FIT ",
+        contenthead2: "MINIMAL FEATURE SET",
+        contenthead3: "USER-CENTRIC DESIGN",
+        contenthead4: "RAPID ITERATION & LEARNING",
+        content4:"Ensure that your MVP addresses a real problem for your target users. Define the problem you're solving and validate its significance through market research and customer feedback. By doing this, you increase the chances of building a product that resonates with your target users.",
+        content5:"Prioritise the essential features that demonstrate the core value of your product. Avoid feature bloat and focus on delivering a lean and functional MVP. This saves time and costs while getting the product to market faster.",
+        content6:"Pay attention to user experience (UX) and design your MVP with the end-users in mind. Strive for simplicity, intuitive navigation, and clear value proposition. Conduct user testing and gather feedback to refine your UX. This will enhance usability and increase the likelihood of adoption and engagement",
+        content7:"Embrace an agile approach and plan for rapid iterations. Build your MVP in small increments, release early, and gather user feedback. Use this feedback to iterate, refine, and enhance the product. Focus on learning and leveraging insights to make informed decisions about future development. By embracing rapid iteration and learning, you can adapt and improve your MVP based on real-world feedback",
+        cardImg: blogImg11,
+        thumbImg: thumbImg1,
+        date: "Sep 26th,2024",
+        category: "MVP",
+        authorName: "Enoverlab",
+    },
+    {
+        id: 12,
+        title: "Saying No: A Product Manager's Essential Skill",
+        content1:"As a product manager, your ability to say 'no' is often as crucial as your ability to say 'yes.' While it might seem counterintuitive, a well-timed 'no' can be a powerful tool for driving product success, maintaining team focus, and delivering high-quality results.",
+        contenthead1: "Why is Saying No So Important?",
+        contenthead2: "How to Say No Gracefully",
+        content4:"Saying 'no' allows your team to stay focused on their core objectives, avoiding unnecessary distractions. It helps you prioritise effectively, determining what's truly important and allocating resources accordingly. A clear 'no' can also establish boundaries with stakeholders, managing expectations and avoiding overcommitting. By saying 'no' to additional tasks, you can help your team deliver a high-quality product on time, preventing burnout and decreased product quality.",
+        content5:"When saying 'no,' be clear and concise, explaining your reasons directly. If possible, offer alternative solutions or compromises. Focus on the bigger picture, explaining how saying 'no' will benefit the product in the long run. Be assertive but respectful, standing firm in your decision while maintaining a courteous demeanour.Remember, Saying 'no' doesn't mean you're being difficult or uncooperative. It's a sign of good product management.By using the power of 'no' wisely, you can ensure that your team delivers exceptional products that meet the needs of your customers and stakeholders.",
+        cardImg: blogImg12,
+        thumbImg: thumbImg1,
+        date: "Sep 29th,2024",
+        category: "Tech",
         authorName: "Enoverlab",
     },
 ]
