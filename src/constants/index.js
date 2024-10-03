@@ -219,6 +219,20 @@ export const OnsiteProgram = [
   "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
 ]
 
+export const OnsiteProgramWeekday = [
+  "6 weeks Intensive training and mentorship ONSITE",
+  "8 weeks internship placement",
+  "A small class for only 10 persons",
+  "International certification accredited by the American Council of Training and Development (ACTD)",
+  "Lifetime access to Product management resources",
+  "Access to a supportive community of over 1,000 product managers across the globe",
+  "Opportunity to physically connect with incredible people on the same Product Manager journey",
+  "CV review and optimization for a Product Manager role",
+  "Product Manager interview and assessment guide",
+  "Job recommendations when they are available ",
+  "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
+]
+
 export const PrivateCoaching = [
   "One-on-one coaching and mentorship ONLINE for 6 weeks or less",
   "Flexible class time schedule",

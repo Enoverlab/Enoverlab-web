@@ -9,7 +9,8 @@ import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks18 from "../../assets/icon/weeks18.png";
 import weeks20 from "../../assets/icon/20weeks.png";
 import weeks6 from "../../assets/icon/6weeks.png";
-import { OnsiteProgram, PrivateCoaching, onlineProgram } from "../../constants";
+import weeks14 from "../../assets/icon/14weeks.png";
+import { OnsiteProgram, OnsiteProgramWeekday, PrivateCoaching, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
@@ -19,27 +20,50 @@ import StandardForm from "../Enroll-Form/StandardForm";
 const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
-  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : ""})
+  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '',classType : '',})
   const [enrolModal, setEnrolModal] = useState({open : false, formtype : '', site : ''})
   useEffect(()=>{
     switch(location){
-      case "Lekki":
+      case "Lekki-Weekday":
+        setTrainingLocation({
+          place : 'Lekki-Weekday',
+          location : 'Roc Workspace, Gateview Plaza, Plot 11, Admiralty way, Lekki Phase 1',
+          trainingDay : "Every Tuesday & Friday",
+          classType : 'weekday',
+          trainingTime : '1pm - 4pm',
+          tuition : '300,000',
+          weeks : "10",
+          weekIcon : weeks14,
+          link : 'https://forms.gle/RubzGLnYfKgShe4N7',
+          mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.644401811104!2d3.453612374484845!3d6.439691993551541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e0!3m2!1sen!2sng!4v1721039921603!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+          startDate : "Oct 15, 2024"
+        })
+        break;
+      case "Lekki-Weekend":
         setTrainingLocation({
           place : 'Lekki',
           location : 'Roc Workspace, Gateview Plaza, Plot 11, Admiralty way, Lekki Phase 1',
+          trainingDay : "Every Saturday",
+          classType : 'weekend',
+          trainingTime : "2pm -5pm",
           tuition : '300,000',
           weeks : "10",
+          weekIcon : weeks20,
           link : 'https://forms.gle/RubzGLnYfKgShe4N7',
           mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.644401811104!2d3.453612374484845!3d6.439691993551541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e0!3m2!1sen!2sng!4v1721039921603!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-          startDate : "Oct 10, 2024"
+          startDate : "Jan 10, 2025"
         })
         break;
       case "Ibadan":
         setTrainingLocation({
           place : 'Ibadan',
           location : 'Cafe One, Palms Mall, Ring Road, Ibadan',
+          trainingDay : "Every Saturday",
+          classType : 'weekend',
+          trainingTime : "10am - 1pm",
           tuition : '250,000',
           weeks : "10",
+          weekIcon : weeks20,
           link :  "https://forms.gle/CsYYXENLZNmjnsfK6",
           mapIframe : <iframe title="Ibadan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9143544673657!2d3.8634040744943348!3d7.3634969926456275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398decfa59eb47%3A0x97b5292d9159b2d8!2sCaf%C3%A9%20One%2C%20The%20Palms%20Mall%2C%20Ring%20Road%2C%20Ibadan!5e0!3m2!1sen!2sng!4v1721039815052!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
           startDate : "Sept 21, 2024"
@@ -49,8 +73,12 @@ const StandardProgram = () => {
           setTrainingLocation({
             place : 'Anambra',
             location : 'Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka,Anambra',
+            trainingDay : "Every Saturday",
+            classType : 'weekend',
+            trainingTime : "10am - 1pm",
             tuition : '250,000',
             weeks : "10",
+            weekIcon : weeks20,
             link :  "https://forms.gle/YWw8jFN42sDoPQiT8",
             mapIframe : <iframe title="Anambra" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3051337147767!2d7.053362574482788!3d6.223437493764614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104379af706c6619%3A0x2598afc465c51641!2sKodex%20Africa!5e0!3m2!1sen!2sng!4v1721040675268!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
             startDate : "Jan 25, 2025"
@@ -60,7 +88,11 @@ const StandardProgram = () => {
         setTrainingLocation({
           place : 'Abuja',
           weeks : "10",
-          location : 'Savvy Instant Offices, No 22, Kumasi Cres, Wuse 2, Abuja',
+          weekIcon : weeks20,
+          location : 'Savvy Instant Offices, No 22, Kumasi Cres, Wuse 2,Abuja',
+          trainingDay : "Every Saturday",
+          classType : 'weekend',
+          trainingTime : "10am - 1pm",
           tuition : '300,000',
           link : "https://forms.gle/Gp7G4tN6QsxaPnds7",
           mapIframe : <iframe title="Abuja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.7928300264903!2d7.476952574515317!3d9.082628890980839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0af7b326c723%3A0xd8be18bcf35b950b!2s22%20Kumasi%20Cres%2C%20Wuse%2C%20Abuja%20904101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1721039639625!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
@@ -71,8 +103,12 @@ const StandardProgram = () => {
           setTrainingLocation({
             place : 'Ikeja',
             location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
+            trainingDay : "Every Saturday",
+            classType : 'weekend',
+            trainingTime : "2pm -5pm",
             tuition : '300,000',
             weeks : "10",
+            weekIcon : weeks20,
             link : 'https://forms.gle/p1FhbPHk5muJGpdK6',
             mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
             startDate : "Jan 11, 2025"
@@ -82,9 +118,13 @@ const StandardProgram = () => {
         setTrainingLocation({
           location : 'Select Location to see address',
           tuition : '300,000',
+          trainingDay : "Select Location",
+          trainingTime : 'Select Location',
+          classType : 'weekend',
           link : '',
           mapIframe : '',
           weeks : "10",
+          weekIcon : weeks20,
           startDate : "N/A"
         })
         break;
@@ -250,7 +290,7 @@ const StandardProgram = () => {
                   <H4 mdfs="2.3vw" fw="700" >
                     On-site Training
                   </H4>
-                  <img src={weeks20} alt="20 weeks" />
+                  <img src={trainingLocation.weekIcon} alt="20 weeks" />
                 </div>
                 <form onSubmit={handleSubmit}  action={trainingLocation.link} target="_blank" className="cover2">
                   <main>
@@ -260,7 +300,7 @@ const StandardProgram = () => {
                           Training day
                         </H4>
                         <H2 mdfs="1.587vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                          Every Saturday
+                          {trainingLocation.trainingDay}
                         </H2>
                       </div>
                       <div>
@@ -268,13 +308,14 @@ const StandardProgram = () => {
                           Class Times
                         </H4>
                         <H2 mdfs="1.58vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                          {(trainingLocation.place === "Lekki" || trainingLocation.place === "Ikeja") ? "2pm -5pm" : "10am - 1pm"}
+                          {trainingLocation.trainingTime}
                         </H2>
                       </div>
                       <div className="selectOption">
                         <select title="location" name="locale" id="locale"  value={location} onChange={handleLocationChange} onBlur={handleBlur}>
                           <option id="item" value="">Select Location</option>
-                          <option value="Lekki">LEKKI</option>
+                          <option value="Lekki-Weekday">LEKKI-Weekday</option>
+                          <option value="Lekki-Weekend">LEKKI-Weekend</option>
                           <option value="Ibadan">IBADAN</option>
                           <option value="Abuja">ABUJA</option>
                           <option value="Ikeja">IKEJA</option>
@@ -341,7 +382,7 @@ const StandardProgram = () => {
                   Here Are The Benefits You Get
                 </H4>
                 <div className="list">
-                  {OnsiteProgram.map((pg) => (
+                  {(trainingLocation.classType === "weekend" ? OnsiteProgram : OnsiteProgramWeekday).map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
                       <P fs="3.6vw" mdfs="1.23vw" color="var(--Body-Text)">
