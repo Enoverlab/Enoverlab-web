@@ -13,6 +13,7 @@ import blogImg9 from '../../assets/blog/blogImage9.jpg'
 import blogImg10 from '../../assets/blog/blogImage10.jpg'
 import blogImg11 from '../../assets/blog/blogImage11.jpg'
 import blogImg12 from '../../assets/blog/blogImage12.jpg'
+import blogImg13 from '../../assets/blog/blogImage13.jpg'
 
 export const Article = [
     {
@@ -268,8 +269,23 @@ export const Article = [
         content5:"When saying 'no,' be clear and concise, explaining your reasons directly. If possible, offer alternative solutions or compromises. Focus on the bigger picture, explaining how saying 'no' will benefit the product in the long run. Be assertive but respectful, standing firm in your decision while maintaining a courteous demeanour.Remember, Saying 'no' doesn't mean you're being difficult or uncooperative. It's a sign of good product management.By using the power of 'no' wisely, you can ensure that your team delivers exceptional products that meet the needs of your customers and stakeholders.",
         cardImg: blogImg12,
         thumbImg: thumbImg1,
-        date: "Sep 29th,2024",
+        date: "Sep 31st,2024",
         category: "Tech",
+        authorName: "Enoverlab",
+    },
+    {
+        id: 13,
+        title: "LET'S TALK ABOUT FEEDBACK LOOP",
+        content1:"In the dynamic world of product development, effective communication is the cornerstone of success. One of the most powerful tools for fostering collaboration, innovation, and continuous improvement is the feedback loop. By establishing open and transparent channels for feedback, product teams can gain valuable insights, adapt quickly to change, and ultimately deliver products that truly resonate with their users.",
+        contenthead1: "The Importance of Feedback",
+        contenthead2: "Building Effective Feedback Loops",
+        content4:"Feedback is more than just an afterthought, it's an essential component of the product development process. It provides a window into the minds of users, revealing their thoughts, feelings, and preferences.Actively seeking feedback allows for early detection of issues, enabling teams to address problems before they escalate and impact the product's success. Moreover, feedback fosters a culture of continuous learning and growth, encouraging teams to adapt and innovate.",
+        content5:"To maximise the benefits of feedback, product teams should establish open and accessible channels for communication.This might include surveys, interviews, user testing, or social media monitoring. It's essential to encourage regular feedback, seeking input at various stages of the product development process. ",
+        content6:"Additionally, teams should demonstrate that feedback is valued by acting on it promptly and transparently. Creating a culture where feedback is encouraged and appreciated without fear of judgement is crucial for building effective feedback loops..",
+        cardImg: blogImg13,
+        thumbImg: thumbImg1,
+        date: "Oct 4th,2024",
+        category: "Job",
         authorName: "Enoverlab",
     },
 ]
