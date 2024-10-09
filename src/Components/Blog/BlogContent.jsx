@@ -14,6 +14,7 @@ import blogImg10 from '../../assets/blog/blogImage10.jpg'
 import blogImg11 from '../../assets/blog/blogImage11.jpg'
 import blogImg12 from '../../assets/blog/blogImage12.jpg'
 import blogImg13 from '../../assets/blog/blogImage13.jpg'
+import blogImg14 from '../../assets/blog/blogImage14.jpg'
 
 export const Article = [
     {
@@ -285,6 +286,48 @@ export const Article = [
         cardImg: blogImg13,
         thumbImg: thumbImg1,
         date: "Oct 4th,2024",
+        category: "Job",
+        authorName: "Enoverlab",
+    },
+    {
+        id: 14,
+        title: "THE 4WS AND H OF A PRODUCT REQUIREMENT DOCUMENT (PRD)",
+        content1:"A Product Requirement Document (PRD) is a crucial document in the product development process. It serves as a blueprint, outlining the vision, goals, and specific requirements for a product. To create a comprehensive and effective PRD, it's essential to address the following questions:",
+        contenthead1: "What is the product?",
+        contenthead2: "Where will the product be used or accessed?",
+        contenthead3: "Why is the product needed?",
+        contenthead4: "Who are the target users or audience?",
+        contenthead5: "How will the product function and what are the key features?",
+        content4:"Clearly define the product and its purpose. This includes describing what the product does, how it works, and the problem it solves. For example, a product might be a mobile app that helps users track their daily fitness activities.",
+        content5:"Specify the geographic scope and distribution channels for the product. Will it be available globally, regionally, or locally? Will it be accessible through a website, mobile app, or other platforms? For instance, a fitness app might be available for download on iOS and Android devices worldwide.",
+        content6:"Explain the problem that the product solves and the benefits it will provide to users. This will help justify the product's existence and guide development efforts. A fitness app, for example, might be needed to provide users with a convenient way to monitor their exercise routines and set fitness goals.",
+        content7:"Identify the specific group of people who will benefit from using the product. This information will help tailor the product's features and design to meet their needs and preferences. In the case of a fitness app, the target audience might include individuals who are interested in maintaining a healthy lifestyle and tracking their fitness activities.",
+        content8:"Describe the product's functionality and key features in detail. This will provide a clear understanding of how the product will work and guide the development team in building it effectively. A fitness app might include features like activity logging, goal setting, progress tracking, and personalised workout recommendations.",
+        content9:"By focusing on these five essential questions, you can create a comprehensive PRD that provides a solid foundation for product development.",
+        cardImg: blogImg14,
+        thumbImg: thumbImg1,
+        date: "Oct 6th,2024",
+        category: "Job",
+        authorName: "Enoverlab",
+    },
+    {
+        id: 14,
+        title: "THE 4WS AND H OF A PRODUCT REQUIREMENT DOCUMENT (PRD)",
+        content1:"A Product Requirement Document (PRD) is a crucial document in the product development process. It serves as a blueprint, outlining the vision, goals, and specific requirements for a product. To create a comprehensive and effective PRD, it's essential to address the following questions:",
+        contenthead1: "What is the product?",
+        contenthead2: "Where will the product be used or accessed?",
+        contenthead3: "Why is the product needed?",
+        contenthead4: "Who are the target users or audience?",
+        contenthead5: "How will the product function and what are the key features?",
+        content4:"Clearly define the product and its purpose. This includes describing what the product does, how it works, and the problem it solves. For example, a product might be a mobile app that helps users track their daily fitness activities.",
+        content5:"Specify the geographic scope and distribution channels for the product. Will it be available globally, regionally, or locally? Will it be accessible through a website, mobile app, or other platforms? For instance, a fitness app might be available for download on iOS and Android devices worldwide.",
+        content6:"Explain the problem that the product solves and the benefits it will provide to users. This will help justify the product's existence and guide development efforts. A fitness app, for example, might be needed to provide users with a convenient way to monitor their exercise routines and set fitness goals.",
+        content7:"Identify the specific group of people who will benefit from using the product. This information will help tailor the product's features and design to meet their needs and preferences. In the case of a fitness app, the target audience might include individuals who are interested in maintaining a healthy lifestyle and tracking their fitness activities.",
+        content8:"Describe the product's functionality and key features in detail. This will provide a clear understanding of how the product will work and guide the development team in building it effectively. A fitness app might include features like activity logging, goal setting, progress tracking, and personalised workout recommendations.",
+        content9:"By focusing on these five essential questions, you can create a comprehensive PRD that provides a solid foundation for product development.",
+        cardImg: blogImg14,
+        thumbImg: thumbImg1,
+        date: "Oct 6th,2024",
         category: "Job",
         authorName: "Enoverlab",
     },
