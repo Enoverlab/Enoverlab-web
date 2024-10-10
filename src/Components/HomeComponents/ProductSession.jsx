@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import speaker from "../../assets/icon/speaker.png";
+import speaker from "../../assets/icon/speaker.jpg";
 import calendar from "../../assets/icon/calender.png";
 import clock from "../../assets/icon/time.png";
 import { SecondaryButtonA } from "../../Utils/styled/Buttons";
@@ -14,9 +14,9 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Matthew Hans-Bello</h3>
-                  <h4>(Product/Operation Manager)
-                    <h5>(TASCK)</h5>
+                  <h3>AbdulSamad AbdulJaleel</h3>
+                  <h4>(AI Product Manager)
+                    <h5>(AFRIPAY)</h5>
                   </h4>
             </div>
           </SpeakerImage>
@@ -24,22 +24,22 @@ const ProductSession = () => {
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Matthew Hans-Bello</h3>
-                  <h4>(Product/Operation Manager) <h5>
-                  (TASCK)
+                  <h3>AbdulSamad AbdulJaleel</h3>
+                  <h4>(AI Product Manager) <h5>
+                  (AFRIPAY)
                     </h5></h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                Leveraging Product Portfolio and Case Studies
+                Optimizing User Feedback In Building <br/> Data-Driven Products
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                September 21th, 2024
+                OCtober 12th, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
