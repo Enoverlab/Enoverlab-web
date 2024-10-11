@@ -232,7 +232,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Oct 11, 2024
+                          Nov 9, 2024
                         </H2>
                       </div>
                       <div>
