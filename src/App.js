@@ -38,8 +38,11 @@ import Career from "./Pages/Career";
 import ContactUs from "./Pages/ContactUs";
 function App() {
   useEffect(() => {
-    AOS.init();
-  });
+    AOS.init({
+    duration: 1000, // Global animation duration
+    once: false, // Only once animation
+    });
+  }, []);
   const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap');
 

@@ -15,6 +15,8 @@ import blogImg11 from '../../assets/blog/blogImage11.jpg'
 import blogImg12 from '../../assets/blog/blogImage12.jpg'
 import blogImg13 from '../../assets/blog/blogImage13.jpg'
 import blogImg14 from '../../assets/blog/blogImage14.jpg'
+import blogImg15 from '../../assets/blog/blogImage15.jpg'
+import thumbnail9 from '../../assets/blog/thumbnail9.jpg'
 
 export const Article = [
     {
@@ -307,28 +309,34 @@ export const Article = [
         cardImg: blogImg14,
         thumbImg: thumbImg1,
         date: "Oct 6th,2024",
-        category: "Job",
+        category: "product",
         authorName: "Enoverlab",
     },
     {
-        id: 14,
-        title: "THE 4WS AND H OF A PRODUCT REQUIREMENT DOCUMENT (PRD)",
-        content1:"A Product Requirement Document (PRD) is a crucial document in the product development process. It serves as a blueprint, outlining the vision, goals, and specific requirements for a product. To create a comprehensive and effective PRD, it's essential to address the following questions:",
-        contenthead1: "What is the product?",
-        contenthead2: "Where will the product be used or accessed?",
-        contenthead3: "Why is the product needed?",
-        contenthead4: "Who are the target users or audience?",
-        contenthead5: "How will the product function and what are the key features?",
-        content4:"Clearly define the product and its purpose. This includes describing what the product does, how it works, and the problem it solves. For example, a product might be a mobile app that helps users track their daily fitness activities.",
-        content5:"Specify the geographic scope and distribution channels for the product. Will it be available globally, regionally, or locally? Will it be accessible through a website, mobile app, or other platforms? For instance, a fitness app might be available for download on iOS and Android devices worldwide.",
-        content6:"Explain the problem that the product solves and the benefits it will provide to users. This will help justify the product's existence and guide development efforts. A fitness app, for example, might be needed to provide users with a convenient way to monitor their exercise routines and set fitness goals.",
-        content7:"Identify the specific group of people who will benefit from using the product. This information will help tailor the product's features and design to meet their needs and preferences. In the case of a fitness app, the target audience might include individuals who are interested in maintaining a healthy lifestyle and tracking their fitness activities.",
-        content8:"Describe the product's functionality and key features in detail. This will provide a clear understanding of how the product will work and guide the development team in building it effectively. A fitness app might include features like activity logging, goal setting, progress tracking, and personalised workout recommendations.",
-        content9:"By focusing on these five essential questions, you can create a comprehensive PRD that provides a solid foundation for product development.",
-        cardImg: blogImg14,
-        thumbImg: thumbImg1,
-        date: "Oct 6th,2024",
-        category: "Job",
+        id: 15,
+        title: "THE ULTIMATE GUIDE TO A PORTFOLIO THAT BANGS!",
+        content1:"So, you're a product manager on a mission to land that dream job. You've polished your resume, aced the cover letter, and now it's time to craft out a solid portfolio. How do you make it stand out from the crowd? How do you create a portfolio that screams success and convinces employers you're the product mastermind they need? Don't worry, we've got your back! Here's your roadmap to crafting a product manager portfolio that bangs:",
+        contenthead1: "Highlight Your Achievements",
+        contenthead2: "Diversity is Key",
+        contenthead3: "Unleash Your Process",
+        contenthead4: "Visual Appeal",
+        contenthead5: "Building Trust",
+        contenthead6: 'Leadership Prowess',
+        contenthead7: 'Never Stop Learning',
+        contenthead8: 'Tailored Perfection',
+        content4:"Forget generic descriptions. Showcase your most impactful projects, focusing on quantifiable results. Did you increase user engagement by 20%? Streamline the onboarding process, leading to a 15% conversion rate boost? Let the numbers speak volumes!",
+        content5:"Don't be a one-trick pony! Include a variety of projects to demonstrate your versatility and ability to adapt.  Think: e-commerce app, internal tool development, even a personal side hustle. This shows you can thrive in different environments.",
+        content6:"Don't just list projects, give hiring managers a sneak peek into your product management brain.  Explain your problem-solving approach, the strategies you implemented, and the rationale behind your decisions. This showcases your critical thinking and analytical skills.",
+        content7:"Make your portfolio engaging and easy to digest with compelling visuals. Charts, graphs, and well-chosen images can break up text and highlight key points. Remember, a picture is worth a thousand words!",
+        content8:"Testimonials are gold! Feature positive feedback from colleagues, stakeholders, or even clients. This social proof adds a layer of credibility and reinforces your value as a product manager.",
+        contentextra9 : "Highlight instances where you led the charge! Did you spearhead a team through product development? Or were you instrumental in driving the project's successful completion? Showcase your leadership qualities!",
+        contentextra10 : " In today's dynamic world, continuous learning is crucial.  Show employers you're committed to growth. List any relevant certifications you've obtained or workshops or courses you've taken to sharpen your product management skills.",
+        contentextra11 : "Remember, a one-size-fits-all approach doesn't cut it. Customize your portfolio to match the specific requirements of the company and role you're applying for. Research their needs and tailor your project selection and emphasis accordingly.",
+        content9:"By incorporating these pro tips, your product manager portfolio will be a game-changer, transforming you from applicant to top contender! Want to delve deeper? Head over to our YouTube channel https://youtube.com/@enoverlab?si=JyIiRpcxG3MOOWpt and search for a session dedicated to crafting the perfect product manager portfolio. Now go forth and conquer that job market!",
+        cardImg: blogImg15,
+        thumbImg: thumbnail9,
+        date: "Oct 15th,2024",
+        category: "Guide",
         authorName: "Enoverlab",
     },
 ]

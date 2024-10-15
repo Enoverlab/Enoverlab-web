@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const BlogCard = ({cardImg, thumbImg, category, contentTitle, contentText, authorName, imgSrc, date, id}) => {
   return (
     <StyledBlogCard>
-       <div className="blog-card-container"
+       <div className="blog-card-container" 
        >
         <Link to={`${id}`}>
        
@@ -110,6 +110,10 @@ const StyledBlogCard = styled.div`
 
       .blog-title{
         padding-bottom: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
       }
 
       .blog-text{
