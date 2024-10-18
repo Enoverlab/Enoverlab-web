@@ -18,7 +18,7 @@ const CloseIcon = ({...props})=> (
 )
 
 
-const StandardForm = ({handleCloseModal, modalDetails}) => {
+const StandardForm = ({handleCloseModal, modalDetails, startDate}) => {
   const [loading, setLoading] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
@@ -277,7 +277,7 @@ const StandardForm = ({handleCloseModal, modalDetails}) => {
                     <ErrorMessage name='knowAbout' component="div" className='erroMsg'/>
                   </label>
                   <p className="note">
-                    NB: Next Cohort Starts by October 11, 2024
+                    NB: Next Cohort Starts by November 9, 2024
                   </p>
                 </main>
                 <div className="cta">
