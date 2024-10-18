@@ -79,7 +79,22 @@ const BlogContentPage = () => {
             fs="1.125rem"
             color="#4B4B4B"
             lineHeight="1.9rem"
-            ><span>{item.contentHeading}</span> {item.content}</LI>
+            key={idx}
+            ><span>{item.contentHeading}</span> {item?.content}
+            <ul>
+              {
+                item.list &&
+                item.list.map((sub, idx)=> (
+                  <li>
+                    <span>
+                      {sub?.topic}
+                    </span>
+                      {sub?.content}
+                  </li>
+                ))
+              }
+            </ul>
+            </LI>
           ))}
         </ul>
       </div>
@@ -271,7 +286,15 @@ const StyledBlogContent = styled.div`
       margin-left: 1.5rem;
       li {
         margin-bottom: 1rem;
+        ul{
+          list-style: disc;
+          margin-top : 1rem;
+          span{
+            margin-right : 1rem;
+          }
+        }
       }
+      
     }
   }
   .share-container{

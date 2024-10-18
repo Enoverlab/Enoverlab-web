@@ -17,6 +17,7 @@ import blogImg13 from '../../assets/blog/blogImage13.jpg'
 import blogImg14 from '../../assets/blog/blogImage14.jpg'
 import blogImg15 from '../../assets/blog/blogImage15.jpg'
 import thumbnail9 from '../../assets/blog/thumbnail9.jpg'
+import blogImg16 from '../../assets/blog/blogImage16.jpg'
 
 export const Article = [
     {
@@ -332,11 +333,71 @@ export const Article = [
         contentextra9 : "Highlight instances where you led the charge! Did you spearhead a team through product development? Or were you instrumental in driving the project's successful completion? Showcase your leadership qualities!",
         contentextra10 : " In today's dynamic world, continuous learning is crucial.  Show employers you're committed to growth. List any relevant certifications you've obtained or workshops or courses you've taken to sharpen your product management skills.",
         contentextra11 : "Remember, a one-size-fits-all approach doesn't cut it. Customize your portfolio to match the specific requirements of the company and role you're applying for. Research their needs and tailor your project selection and emphasis accordingly.",
-        content9:"By incorporating these pro tips, your product manager portfolio will be a game-changer, transforming you from applicant to top contender! Want to delve deeper? Head over to our YouTube channel https://youtube.com/@enoverlab?si=JyIiRpcxG3MOOWpt and search for a session dedicated to crafting the perfect product manager portfolio. Now go forth and conquer that job market!",
+        content9:"By incorporating these pro tips, your product manager portfolio will be a game-changer, transforming you from applicant to top contender! Want to delve deeper? Head over to our YouTube channel and search for a session dedicated to crafting the perfect product manager portfolio. Now go forth and conquer that job market!",
         cardImg: blogImg15,
         thumbImg: thumbnail9,
         date: "Oct 15th,2024",
         category: "Guide",
-        authorName: "Enoverlab",
+        authorName: "Oluwafunmilayo",
+    },
+    {
+        id: 16,
+        title: "3 MUST-HAVE SKILLS TO ACE A PM INTERVIEW",
+        content1: "A well-structured product roadmap is a cornerstone for aligning teams and stakeholders, ensuring everyone is marching towards the same product vision. It serves as a strategic compass, preventing teams from veering off course and ensuring project success. While creating a roadmap might seem daunting, especially for new product managers, adhering to these key steps can help you develop a compelling plan that resonates with your audience.",
+        contentList:[
+        {
+            contentHeading : "Communication:",
+            list : [
+                {
+                    topic : 'Storytelling',
+                    content : 'Your ability to weave compelling user stories is a key indicator of your empathy and understanding of the user experience.'
+                },
+                {
+                    topic : 'Clarity',
+                    content : 'A clear and concise communication style is essential for effectively conveying your product vision, requirements, and expectations to your team.'
+                },
+                {
+                    topic : 'Visualization',
+                    content : 'The ability to bring your ideas to life through visuals, such as user flows, helps stakeholders understand your product\'s journey and potential impact.'
+                }
+            ]
+        },
+        {
+            contentHeading : "Inquisitiveness:",
+            list : [
+                {
+                    topic : 'Questioning:',
+                    content : 'A curious mind is a product manager\'s greatest asset. Asking insightful questions demonstrates your thirst for knowledge and your commitment to understanding'
+                },
+                {
+                    topic : 'Problem-Solving:',
+                    content : 'A clear and concise communication style is essential for effectively conveying your product vision, requirements, and expectations to your team.'
+                },
+                {
+                    topic : 'Opportunity Thinking:',
+                    content : 'Approach challenges as opportunities for growth and innovation. A positive outlook can inspire your team and drive creative solutions.'
+                }
+            ]
+        },
+        {
+            contentHeading : "Creativity:",
+            list : [
+                {
+                    topic : 'Innovative Thinking:',
+                    content : 'The ability to think outside the box and come up with creative solutions sets you apart. Be prepared to demonstrate your problem-solving skills and your capacity for original ideas.'
+                },
+                {
+                    topic : 'Knowledge Expansion:',
+                    content : 'A product manager must continuously expand their knowledge base. Stay curious and explore new trends and technologies to fuel your creativity.'
+                },
+            ]        
+        },
+        ],
+        content9:"Remember, these skills are often assessed in written tests before the interview. So, when you receive your test questions or tasks, keep these three key areas in mind and demonstrate your expertise. And even if you make it to the next stage, don't let these skills slip from your mind. They will be crucial throughout the interview process. By mastering these three skills, you'll be well on your way to acing the product manager interview and securing your dream job. Good luck!",
+        cardImg: blogImg16,
+        thumbImg: thumbnail9,
+        date: "Oct 18,2024",
+        category: "Interview",
+        authorName: "Oluwafunmilayo",
     },
 ]
