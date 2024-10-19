@@ -15,8 +15,8 @@ const ProductSession = () => {
             <div>
                   <h2>Guest Speaker:</h2>
                   <h3>Ifiok Ukosen</h3>
-                  <h4>(AI Product Manager)
-                    <h5>(AFRIPAY)</h5>
+                  <h4>(Product Manager)
+                    <h5>(Axiom Intel)</h5>
                   </h4>
             </div>
           </SpeakerImage>
@@ -25,8 +25,8 @@ const ProductSession = () => {
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
                   <h3>Ifiok Ukosen</h3>
-                  <h4>(AI Product Manager) <h5>
-                  (AFRIPAY)
+                  <h4>(Product Manager) <h5>
+                  (Axiom Intel)
                     </h5></h4>
               </StyledSpeakerDetails>
               <DetailsSession>
