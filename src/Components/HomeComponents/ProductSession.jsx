@@ -14,7 +14,7 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>AbdulSamad AbdulJaleel</h3>
+                  <h3>Ifiok Ukosen</h3>
                   <h4>(AI Product Manager)
                     <h5>(AFRIPAY)</h5>
                   </h4>
@@ -24,7 +24,7 @@ const ProductSession = () => {
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>AbdulSamad AbdulJaleel</h3>
+                  <h3>Ifiok Ukosen</h3>
                   <h4>(AI Product Manager) <h5>
                   (AFRIPAY)
                     </h5></h4>
