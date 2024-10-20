@@ -419,6 +419,6 @@ export const Article = [
         thumbImg: thumbnail10,
         date: "Oct 21th,2024",
         category: "Guide",
-        authorName: "Oluwafunmilayo",
+        authorName: "Oladimeji",
     },
 ]
