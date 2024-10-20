@@ -6,8 +6,11 @@ import { OnsiteProgram } from '../../constants'
 import weeks20 from "../../assets/icon/20weeks.png"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
+import { useContext } from 'react'
+import { CenterContext } from '../../context/CenterContext'
 
 const ProgramDetails = () => {
+  const IbadanDetails = useContext(CenterContext).Ibadan
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
@@ -19,7 +22,7 @@ const ProgramDetails = () => {
                   <img src={weeks20} alt="20 weeks" />
                 </div>
                 <div className="cover2">
-                  <form action="https://forms.gle/CsYYXENLZNmjnsfK6" target="_blank">
+                  <form action={IbadanDetails.link} target="_blank">
                   <main>
                     <div className="item">
                       <div >
@@ -32,7 +35,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Saturday
+                          {IbadanDetails.trainingDay}
                         </H2>
                       </div>
                       <div>
@@ -45,7 +48,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          10am - 1pm
+                          {IbadanDetails.trainingTime}
                         </H2>
                       </div>
                       <div className='locale'>
@@ -71,7 +74,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Sept 21, 2024
+                          {IbadanDetails.startDate}
                         </H2>
                       </div>
                       <div>
@@ -84,7 +87,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦250,000
+                          {IbadanDetails.tuition}
                         </H2>
                       </div>
                     </div>

@@ -148,7 +148,7 @@ const centerDetails = {
         tuition : '300,000',
         link : "https://forms.gle/Gp7G4tN6QsxaPnds7",
         mapIframe : <iframe title="Abuja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.7928300264903!2d7.476952574515317!3d9.082628890980839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0af7b326c723%3A0xd8be18bcf35b950b!2s22%20Kumasi%20Cres%2C%20Wuse%2C%20Abuja%20904101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1721039639625!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Oct 5, 2024"
+        startDate : "Jan 25, 2024"
     },
     Ikeja : {
         place : 'Ikeja',

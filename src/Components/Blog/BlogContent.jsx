@@ -18,6 +18,8 @@ import blogImg14 from '../../assets/blog/blogImage14.jpg'
 import blogImg15 from '../../assets/blog/blogImage15.jpg'
 import thumbnail9 from '../../assets/blog/thumbnail9.jpg'
 import blogImg16 from '../../assets/blog/blogImage16.jpg'
+import thumbnail10 from '../../assets/blog/thumbnail10.jpg'
+import blogImg17 from '../../assets/blog/blogImage17.jpg'
 
 export const Article = [
     {
@@ -398,6 +400,25 @@ export const Article = [
         thumbImg: thumbnail9,
         date: "Oct 18,2024",
         category: "Interview",
+        authorName: "Oluwafunmilayo",
+    },
+    {
+        id: 17,
+        title: "DEBUNKING MYTHS ABOUT PRODUCT MANAGERS",
+        content1:"Product managers often find themselves caught in a series of misconceptions and stereotypes. Let's debunk some of the most common myths and shed light on the reality of the product manager role.",
+        contenthead1: "Myth: Product Managers Are Mini CEOs",
+        contenthead2: "Myth: Product Managers Must Be Tech Savvy",
+        contenthead3: "Myth: Product Managers Are Idea Machines",
+        contenthead4: "Myth: Product Managers Are Politicians",
+        content4:"While product managers do play a pivotal role in driving product success, they are not mini CEOs. They influence decisions without wielding direct authority. Their power lies in their ability to rally teams, iterate ideas, and turn visions into reality through collaboration and effective communication.",
+        content5:"Contrary to popular belief, product managers don't need to be coding wizards or tech gurus. Their focus is on understanding the product vision, defining requirements, and ensuring the product meets user needs. When faced with technical questions, they can rely on their development teams for expertise.",
+        content6:"It's a common misconception that product managers are solely responsible for generating ideas. In reality, ideation should be a collaborative effort involving the entire team. Product managers play a vital role in facilitating brainstorming sessions, encouraging diverse perspectives, and ensuring that ideas align with the product vision.",
+        content7:"It's a common misconception that product managers are solely responsible for generating ideas. In reality, ideation should be a collaborative effort involving the entire team. Product managers play a vital role in facilitating brainstorming sessions, encouraging diverse perspectives, and ensuring that ideas align with the product vision.",
+        content8:"So, the next time you hear someone perpetuate these myths about product managers, be sure to set the record straight. The reality is that product managers are strategic thinkers, effective communicators, and collaborative leaders who play a crucial role in driving product success.",
+        cardImg: blogImg17,
+        thumbImg: thumbnail10,
+        date: "Oct 21th,2024",
+        category: "Guide",
         authorName: "Oluwafunmilayo",
     },
 ]
