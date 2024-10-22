@@ -14,9 +14,9 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Ifiok Ukosen</h3>
+                  <h3>Bassey Archibong</h3>
                   <h4>(Product Manager)
-                    <h5>(Axiom Intel)</h5>
+                    <h5>(Cicada)</h5>
                   </h4>
             </div>
           </SpeakerImage>
@@ -24,22 +24,22 @@ const ProductSession = () => {
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Ifiok Ukosen</h3>
+                  <h3>Bassey Archibong</h3>
                   <h4>(Product Manager) <h5>
-                  (Axiom Intel)
+                  (Cicada)
                     </h5></h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                  CV to Career:  Acing your job interview
+                  Networking of Job Opportunities as a<br /> Product Manager
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                OCtober 19th, 2024
+                OCtober 26th, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
