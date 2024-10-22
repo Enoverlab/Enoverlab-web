@@ -39,7 +39,7 @@ const ProductSession = () => {
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                OCtober 26th, 2024
+                October 26th, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
