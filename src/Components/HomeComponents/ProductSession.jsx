@@ -32,7 +32,7 @@ const ProductSession = () => {
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                  Networking of Job Opportunities as a<br /> Product Manager
+                  Networking as a Tool for Unlocking Job<br /> Opportunities for Product Manager
                 </h3>
               </DetailsSession>
             </div>
