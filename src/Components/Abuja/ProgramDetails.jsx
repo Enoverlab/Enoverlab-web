@@ -89,6 +89,15 @@ const ProgramDetails = () => {
                         >
                           {AbujaDetails.tuition}
                         </H2>
+                        <H2
+                          mdfs="1.2vw"
+                          fs="2.6vw"
+                          fw="600"
+                          className="strikeThrough"
+                          color="var(--Body-Text)"
+                        >
+                          ₦{AbujaDetails.discount}
+                        </H2>
                       </div>
                     </div>
                   </main>
@@ -188,6 +197,9 @@ const StyledProgramDetail = styled.div`
       border-bottom: 4px solid rgba(0, 70, 255, 0.44);
       margin-bottom:4rem;
     }
+    .strikeThrough{
+    text-decoration: line-through;
+  }
     @media (min-width: 700px) {
       .cta {
         padding-right: 7rem;
