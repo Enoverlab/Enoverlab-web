@@ -20,6 +20,8 @@ import thumbnail9 from '../../assets/blog/thumbnail9.jpg'
 import blogImg16 from '../../assets/blog/blogImage16.jpg'
 import thumbnail10 from '../../assets/blog/thumbnail10.jpg'
 import blogImg17 from '../../assets/blog/blogImage17.jpg'
+import blogImg18 from '../../assets/blog/blogImage18.jpg'
+import blogImg19 from '../../assets/blog/blogImage19.jpg'
 
 export const Article = [
     {
@@ -420,5 +422,152 @@ export const Article = [
         date: "Oct 21th,2024",
         category: "Guide",
         authorName: "Oladimeji",
+    },
+    {
+        id: 18,
+        title: "Product Managers Are  Not Just for Tech Companies!",
+        content1: "When you think of product managers, tech companies like Google, Apple, and Amazon might come to mind. However, the truth is that product managers are needed in a wide range of industries, from consumer goods to healthcare. Let's explore some of the diverse sectors where product managers play a crucial role:",
+        contentList:[
+        {
+            contentHeading : "Consumer Goods:",
+            list : [
+                {
+                    topic : 'Physical Products:',
+                    content : 'Product managers in consumer goods companies oversee the development of tangible products, from toys to appliances. They work closely with design teams, engineers, and supply chain professionals to ensure products meet customer expectations and are delivered on time and within budget.'
+                },
+            ]
+        },
+        {
+            contentHeading : "Financial Services (Fintech)",
+            list : [
+                {
+                    topic : 'Innovative Products:',
+                    content : 'Financial services companies, including traditional banks and fintech startups, rely on product managers to develop innovative products and services. These can range from mobile banking apps to investment management tools.'
+                },
+            ]
+        },
+        {
+            contentHeading : "Healthcare",
+            list : [
+                {
+                    topic : 'Life-Changing Products:',
+                    content : ' In the healthcare industry, product managers help bring new medical devices, pharmaceuticals, and healthcare software to market. They work closely with doctors, researchers, and regulatory bodies to ensure products meet patient needs and comply with industry standards.'
+                },
+            ]        
+        },
+        {
+            contentHeading : "Retail and E-commerce",
+            list : [
+                {
+                    topic : 'Customer-Centric Products:',
+                    content : ' Retail and e-commerce companies need product managers to understand customer needs, identify market opportunities, and develop products that drive sales and customer satisfaction.'
+                },
+            ]        
+        },
+        ],
+        content8:"Product managers can also be found in industries such as education, entertainment, and even government. Their skills and expertise are valuable in any organisation that seeks to develop and deliver successful products and services.",
+        content9 : 'So, if you\'re passionate about product development and want to make a meaningful impact, consider exploring opportunities beyond the tech industry. The possibilities are endless!',
+        cardImg: blogImg18,
+        thumbImg: thumbnail9,
+        date: "Oct 26,2024",
+        category: "Interview",
+        authorName: "Oluwafunmilayo",
+    },
+    {
+        id: 19,
+        title: "ESSENTIAL TOOLS TO LEARN AS A PRODUCT MANAGER",
+        content1: "As a product manager, having the right tools in your arsenal is essential for success. These tools empower you to collaborate effectively, manage projects efficiently, gather valuable insights, and ultimately deliver exceptional products. Let's explore some of the most indispensable tools for product managers:",
+        contentList:[
+        {
+            contentHeading : "Figma",
+            list : [
+                {
+                    topic : 'Design Collaboration:',
+                    content : 'Figma is a powerful cloud-based design tool that facilitates seamless collaboration between designers, developers, and product managers. It allows for real-time editing, prototyping, and commenting, making it ideal for creating and iterating on product designs.'
+                },
+                {
+                    topic : 'Component Libraries:',
+                    content : 'Figma\'s component libraries enable you to create reusable design elements, ensuring consistency and efficiency in your design process.'
+                },
+                {
+                    topic : 'Design System Integration:',
+                    content : 'Integrate your design system with Figma to maintain a unified look and feel across your products.'
+                },
+                {
+                    topic : 'User Testing:',
+                    content : 'Figma\'s prototyping capabilities enable you to create interactive prototypes that can be tested with users to gather feedback and validate design decisions.'
+                },
+            ]
+        },
+        {
+            contentHeading : "Trello",
+            list : [
+                {
+                    topic : 'Project Management:',
+                    content : 'Trello is a visual project management tool that uses boards, lists, and cards to organise tasks and track progress. It\'s a simple yet effective tool for managing product backlogs, assigning tasks, and monitoring project timelines.'
+                },
+                {
+                    topic : 'Kanban Boards:',
+                    content : 'Trello\'s Kanban board functionality provides a visual representation of the product development process, allowing you to easily visualise the workflow and identify bottlenecks.'
+                },
+                {
+                    topic : 'Power-Ups:',
+                    content : 'Enhance Trello\'s functionality with power-ups like calendar integration, voting, and timers to streamline your workflow and improve collaboration.'
+                },
+                {
+                    topic : 'Customizations:',
+                    content : 'Customise Trello boards and cards to fit your specific needs and preferences.'
+                },
+            ]
+        },
+        {
+            contentHeading : "Jira Software",
+            list : [
+                {
+                    topic : 'Issue Tracking:',
+                    content : 'Jira is a comprehensive issue tracking and project management tool that is widely used in software development. It helps product managers track bugs, feature requests, and other issues throughout the product lifecycle'
+                },
+                {
+                    topic : 'Agile Development:',
+                    content : 'Jira supports agile methodologies like Scrum and Kanban, providing features for sprint planning, task estimation, and burndown charts.'
+                },
+                {
+                    topic : 'Custom Workflows:',
+                    content : 'Create custom workflows to tailor Jira to your team\'s specific processes and needs.'
+                },
+                {
+                    topic : 'Integrations:',
+                    content : 'Integrate Jira with other tools like GitHub, GitLab, and Slack to streamline your workflow and improve collaboration.'
+                },
+            ]        
+        },
+        {
+            contentHeading : "Google Analytics",
+            list : [
+                {
+                    topic : 'Data-Driven Decisions:',
+                    content : ' Google Analytics is a powerful web analytics tool that provides valuable insights into user behavior, website traffic, and conversion rates. Product managers can use this data to make informed decisions about product features, marketing campaigns, and user experience improvements.'
+                },
+                {
+                    topic : 'Customer Insights:',
+                    content : ' By analyzing Google Analytics data, you can identify user pain points, understand customer preferences, and track key performance indicators (KPIs) to measure product success.'
+                },
+                {
+                    topic : 'Custom Reports:',
+                    content : 'Create custom reports to visualise specific data points and gain deeper insights into your product\'s performance.'
+                },
+                {
+                    topic : 'Data Integration:',
+                    content : ' Integrate Google Analytics with other tools like Google Ads and BigQuery to get a more comprehensive view of your marketing and product performance.'
+                },
+            ]        
+        },
+        ],
+        content8:"By mastering these essential tools and exploring their advanced features, you'll be equipped to streamline your product management workflow, collaborate effectively with your team, and deliver exceptional products that meet user needs",
+        cardImg: blogImg19,
+        thumbImg: thumbnail9,
+        date: "Oct 30,2024",
+        category: "Interview",
+        authorName: "Oluwafunmilayo",
     },
 ]
