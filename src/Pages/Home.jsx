@@ -28,23 +28,23 @@ const Home = () => {
         <Hero />
         <ProductSession />
         <motion.div
-        initial={{opacity : 0.5, scale : 0.5 }}
+        initial={{opacity : 0.5, scale : 0.7 }}
         whileInView={{opacity : 1, scale : 1}}
-        transition={{duration : 0.5, staggerChildren : 0.3}}
+        transition={{duration : 0.3}}
         >
           <ProductSection />
         </motion.div>
         <motion.div
-        initial={{opacity : 0.5, scale : 0.5 }}
+        initial={{opacity : 0.5, scale : 0.7 }}
         whileInView={{opacity : 1, scale : 1}}
-        transition={{duration : 0.5, staggerChildren : 0.3}}
+        transition={{duration : 0.3}}
         >
           <EnoverSpecial />
         </motion.div>
         <motion.div
-        initial={{opacity : 0.5, scale : 0.5 }}
+        initial={{opacity : 0.5, scale : 0.7 }}
         whileInView={{opacity : 1, scale : 1}}
-        transition={{duration : 0.5, staggerChildren : 0.3}}
+        transition={{duration : 0.3}}
         >
           <Partners />
         </motion.div>
@@ -52,7 +52,7 @@ const Home = () => {
         <motion.div
         initial={{opacity : 0.5, scale : 0.5 }}
         whileInView={{opacity : 1, scale : 1}}
-        transition={{duration : 0.7, staggerChildren : 0.3}}
+        transition={{duration : 0.7}}
         >
           <SuccessStories />
         </motion.div>

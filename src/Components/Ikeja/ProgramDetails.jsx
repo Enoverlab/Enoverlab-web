@@ -10,7 +10,7 @@ import { useContext } from 'react'
 import { CenterContext } from '../../context/CenterContext'
 
 const ProgramDetails = () => {
-  const IkejaDetails = useContext(CenterContext).Ikeja
+  const IkejaDetails = useContext(CenterContext)['Ikeja-Weekend']
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >

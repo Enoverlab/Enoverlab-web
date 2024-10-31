@@ -15,6 +15,7 @@ import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
 import Guarantee from '../Components/Pricing/Guarantee'
 import Companies from '../Components/Pricing/Companies'
+import PopupNotif from '../Components/popup-notif/PopupNotif'
 const Pricing = () => {
   const [loading, setLoading] = useState(true)
   useEffect(()=>{
@@ -26,6 +27,7 @@ const Pricing = () => {
    {loading ? <LoadingScreen2/> : <div>
    <Header bg="#FFFDF7"/>
     <StyledPricing>
+      <PopupNotif/>
         <PriceHero/>
         <StandardProgram/>
         {/* <ClassTools/> */}

@@ -22,7 +22,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
-  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '',classType : '',})
+  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '',classType : '',discount : ''})
   const [enrolModal, setEnrolModal] = useState({open : false, formtype : '', site : ''})
   useEffect(()=>{
     switch(location){
@@ -41,13 +41,17 @@ const StandardProgram = () => {
       case "Abuja":
         setTrainingLocation(centerDetails.Abuja)
         break;
-        case "Ikeja":
-          setTrainingLocation(centerDetails.Ikeja)
-          break;
+      case "Ikeja-Weekday":
+        setTrainingLocation(centerDetails['Ikeja-Weekday'])
+        break;
+      case "Ikeja-Weekend":
+      setTrainingLocation(centerDetails['Ikeja-Weekend'])
+      break;
       default:
         setTrainingLocation({
           location : 'Select Location to see address',
           tuition : '300,000',
+          discount : '350,000',
           trainingDay : "Select Location",
           trainingTime : 'Select Location',
           classType : 'weekend',
@@ -177,6 +181,15 @@ const StandardProgram = () => {
                         >
                           ₦200,000
                         </H2>
+                        <H2
+                          mdfs="1.2vw"
+                          fs="2.6vw"
+                          fw="600"
+                          className="strikeThrough"
+                          color="var(--Body-Text)"
+                        >
+                          ₦250,000
+                        </H2>
                       </div>
                     </div>
                     
@@ -248,7 +261,8 @@ const StandardProgram = () => {
                           <option value="Lekki-Weekend">LEKKI-Weekend</option>
                           <option value="Ibadan">IBADAN</option>
                           <option value="Abuja">ABUJA</option>
-                          <option value="Ikeja">IKEJA</option>
+                          <option value="Ikeja-Weekday">IKEJA-Weekday</option>
+                          <option value="Ikeja-Weekend">IKEJA-Weekend</option>
                           <option value="Anambra">ANAMBRA</option>
                         </select>
                         {isError && <p className="err">Please select Your Preferred Location</p>}
@@ -273,6 +287,7 @@ const StandardProgram = () => {
                         <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" >
                           {trainingLocation.startDate}
                         </H2>
+                        
                       </div>
                       <div>
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
@@ -285,6 +300,15 @@ const StandardProgram = () => {
                           color="var(--Body-Text)"
                         >
                           ₦{trainingLocation.tuition}
+                        </H2>
+                        <H2
+                          mdfs="1.2vw"
+                          fs="2.6vw"
+                          fw="600"
+                          className="strikeThrough"
+                          color="var(--Body-Text)"
+                        >
+                          ₦{trainingLocation.discount}
                         </H2>
                       </div>
                     </div>
@@ -580,6 +604,9 @@ const StyledProgram = styled.div`
   }
   .mapLaptopIframe{
     display: none;
+  }
+  .strikeThrough{
+    text-decoration: line-through;
   }
   @media (min-width: 1024px) {
     padding: 110px 9.6rem;
