@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+
 import Home from "./Pages/Home";
 import Pricing from "./Pages/Pricing";
 import About from "./Pages/About";
