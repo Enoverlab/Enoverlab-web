@@ -278,7 +278,7 @@ const StandardForm = ({handleCloseModal, modalDetails, startDate}) => {
                     <ErrorMessage name='knowAbout' component="div" className='erroMsg'/>
                   </label>
                   <p className="note">
-                    NB: Next Cohort Starts by November 9, 2024
+                    NB: Next Cohort Starts by January 13, 2025
                   </p>
                 </main>
                 <div className="cta">
