@@ -22,6 +22,7 @@ import thumbnail10 from '../../assets/blog/thumbnail10.jpg'
 import blogImg17 from '../../assets/blog/blogImage17.jpg'
 import blogImg18 from '../../assets/blog/blogImage18.jpg'
 import blogImg19 from '../../assets/blog/blogImage19.jpg'
+import blogImg20 from '../../assets/blog/blogImage20.png'
 
 export const Article = [
     {
@@ -621,7 +622,7 @@ export const Article = [
         },
         ],
         content8:"Ready to transform your career? Join Enoverlab, Africa’s best product management training institute, and become part of a growing community of innovators shaping the future of tech in Africa.",
-        cardImg: blogImg19,
+        cardImg: blogImg20,
         thumbImg: thumbnail9,
         date: "Nov 20,2024",
         category: "Interview",
