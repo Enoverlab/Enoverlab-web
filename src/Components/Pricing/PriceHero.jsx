@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { H1, H4,P } from "../../Utils/styled/Typograpyhy";
-import HeroVidCover from "../../assets/icon/programsCover.svg";
+import HeroVidCover from "../../assets/icon/programsCover.png";
 import { AiOutlineShrink as Shrink } from "react-icons/ai";
 import { FaExpandAlt as Expand } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,13 +30,13 @@ const PriceHero = () => {
   const handleClicked = () => {
     setIsClicked(!isClicked);
     if (isClicked === true){
-      const iframeWindow = iframeRef.current.contentWindow;
-      iframeWindow.document.getElementById('video').play();
-      const mobileIframeWindow = mobileIframe.current.contentWindow;
-      mobileIframeWindow.document.getElementById('video').play();
+      const iframeWindow = iframeRef.current
+      iframeWindow.play();
+      const mobileIframeWindow = mobileIframe.current
+      mobileIframeWindow.play();
     }else{
-      const iframeWindow = iframeRef.current.contentWindow;
-      iframeWindow.document.getElementById('video').pause();
+      const iframeWindow = iframeRef.current
+      iframeWindow.pause();
     }
   }
  return (
@@ -70,7 +70,7 @@ const PriceHero = () => {
           {
             isClicked ? (
               <>
-                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/FgDC-w0zXcA?si=h3qjeJu-sujPjwDS" 
+                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/rio-ntLkhSU" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -167,7 +167,7 @@ const PriceHero = () => {
           {
             isClicked ? (
               <>
-                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/FgDC-w0zXcA?si=h3qjeJu-sujPjwDS" 
+                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/rio-ntLkhSU" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -207,35 +207,35 @@ const PriceHero = () => {
           <SwiperSlide>
             <Flex mdgap="1.4vw" gap="7.7px">
             {
-              data.programLocale1.map(image => <img src={image} key="image" alt="Lekki"/>)
+              data.programLocale1.map((image, idx) => <img src={image} key={`set0ne${idx}`} alt="Lekki"/>)
             }
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex mdgap="1.25vw" gap="7.7px">
             {
-              data.programLocale2.map(image => <img src={image} key="image" alt="Lekki"/>)
+              data.programLocale2.map((image,idx) => <img src={image} key={`set0${idx}`} alt="Lekki"/>)
             }
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex mdgap="1.25vw" gap="7.7px">
             {
-              data.programLocale3.map(image => <img src={image} key="image" alt="Lekki"/>)
+              data.programLocale3.map((image, idx) => <img src={image} key={`set1${idx}`} alt="Lekki"/>)
             }
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex mdgap="1.25vw" gap="7.7px">
             {
-              data.programLocale4.map(image => <img src={image} key="image" alt="Lekki"/>)
+              data.programLocale4.map((image,idx) => <img src={image} key={`set2${idx}`} alt="Lekki"/>)
             }
             </Flex>
           </SwiperSlide>
           <SwiperSlide>
             <Flex mdgap="1.25vw" gap="7.7px">
             {
-              data.programLocale5.map(image => <img src={image} key="image" alt="Lekki"/>)
+              data.programLocale5.map((image, idx) => <img src={image} key={`set3${idx}`} alt="Lekki"/>)
             }
             </Flex>
           </SwiperSlide>

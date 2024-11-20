@@ -570,4 +570,61 @@ export const Article = [
         category: "Interview",
         authorName: "Oluwafunmilayo",
     },
+    {
+        id: 20,
+        title: "ESSENTIAL TOOLS TO LEARN AS A PRODUCT MANAGER",
+        content1: "Have you been searching for where to learn product management? Have you been thinking of how to begin your product management journey? Have you been looking to start or advance your career in product management? You don’t have to look any further. Let me introduce you to the best in the industry, Enoverlab.",
+        content2 : "Enoverlab is a training institute accredited by the American Council of Training and Development (ACTD) to provide product management trainings to individuals and corporate organisations.Enoverlab is Nigeria’s top choice for comprehensive, hands-on product management training designed to equip you with the skills you need to excel in the product management career path.",
+        subtopic : 'Why is Enoverlab top choice?',
+        contentList:[
+        {
+            contentHeading : "Comprehensive Training Program",
+            content : 'Enoverlab offers in-depth standard product management training that is globally relevant. Accredited by the American Council of Training and Development (ACTD),  Enoverlab’s training will equip you with all the key product skills you need to function effectively in the product manager role anywhere in the world. Enoverlab alumnis work for some of the best companies locally and internationally like Microsoft, PWC, Cambridge University, BorderlessHR, Interswitch, GTBank, SeamlessHR, Access Bank, Moniepoint, Opay, and many others.',
+        },
+        {
+            contentHeading : "Simple and Practical Training Delivery",
+            content : 'One thing many Enoverlab Alumni always commend Enoverlab for is the simplicity and practical delivery of its training by its instructors. The instructors are passionate, clearly communicate the knowledge they share in clear terms with relatable examples, and they carry every trainee along. Literally anyone, regardless of their background, can learn product management skills at Enoverlab. Over 80% of Enoverlab alumni have no tech or computer science background, yet more than 60% of them are now working in product roles for different organisations across the globe.'
+        },
+        {
+            contentHeading : "Instructor-Led Online Training and Onsite Training ",
+            content : 'Enoverlab offers flexible learning options to meet your needs. Whether you prefer the dynamic environment of an onsite class or the convenience of online learning, Enoverlab have you covered. Its online training is instructor-led training provides a live, interactive experience where you can engage directly with expert instructors and mentors, ask questions, and collaborate with peers in real-time. While its onsite trainings are even more interactive and enriching, giving trainees a close guided learning experience that builds their capacity and enable them become truly skilled in product management.Whether you learn online or onsite at Enoverlab, you get a fully immersive learning experience. '     
+        },
+        {
+            contentHeading : "Expert Instructors and Mentors",
+            content : 'Enoverlab instructors and mentors are experienced product managers with a total of 24 years working product management experience. They bring a cumulative wealth of experience that shapes the syllabus, the training delivery, mentorship approach, guidance, and support that Enoverlab provides to its trainees. They provide thorough hands-on projects, practical insights, and real-world knowledge that will build your product skills and empower you to be an Exceptional Product Manager who can build and manage impactful products for today, tomorrow, and the future.'      
+        },
+        {
+            contentHeading : "Expert Instructors and Mentors",
+            content : 'Alongside the standard product management training, Enoverlab offers a range of specialised courses that cater to the needs of product managers looking to go deeper into the diversed yet specialised world of product management. They offer product trainings such as:',
+            list : [
+                {
+                    topic : 'Technical Product Management:',
+                    content : 'To gain deeper insights into the technical aspects of product development.'
+                },
+                {
+                    topic : 'Growth Product Management:',
+                    content : 'To learn effective strategies for driving user acquisition, activation, retention, referral, and revenue for a product.'
+                },
+                {
+                    topic : 'AI Product Management: ',
+                    content : 'To master the skills required to manage Artificial Intelligence (AI) products and services'
+                },
+            ]    
+        },
+        {
+            contentHeading : "Proven Success and Global Reach",
+            content : 'With over 800+ trained product managers and 70% of alumni working across 20 countries, Enoverlab has a proven track record. Its alumni are currently working at top companies like Microsoft, PWC, Cambridge University, BorderlessHR, Interswitch, GTBank, SeamlessHR, Access Bank, Moniepoint, Opay, and many others.'      
+        },
+        {
+            contentHeading : "A Vibrant Community of 20,000+ Members",
+            content : 'Join a thriving network of 20,000+ community members who access free resources, webinars, and networking opportunities. It’s a great way to stay engaged, learn continuously, and connect with fellow product enthusiasts.'      
+        },
+        ],
+        content8:"Ready to transform your career? Join Enoverlab, Africa’s best product management training institute, and become part of a growing community of innovators shaping the future of tech in Africa.",
+        cardImg: blogImg19,
+        thumbImg: thumbnail9,
+        date: "Nov 20,2024",
+        category: "Interview",
+        authorName: "Oluwafunmilayo",
+    },
 ]

@@ -40,7 +40,7 @@ const PopupNotif = () => {
         gap : '3rem'
         },
         overlay: {
-          zIndex : 200,
+          zIndex : 20000,
           display: 'flex',
           justifyContent : 'center',
           alignItems : 'center',

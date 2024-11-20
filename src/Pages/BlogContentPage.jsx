@@ -71,6 +71,7 @@ const BlogContentPage = () => {
       <P textAlign="left" fontSize="1.125rem" color="#4B4B4B" lineHeight="1.9rem">
         {article[0]?.content2}
       </P>
+      <H4 textAlign="left" color="#0F2A65">{article[0]?.subtopic}</H4>
       <div className="contentList">
         <ul>
           {article[0]?.contentList?.map((item, idx) => (
@@ -80,7 +81,7 @@ const BlogContentPage = () => {
             color="#4B4B4B"
             lineHeight="1.9rem"
             key={idx}
-            ><span>{item.contentHeading}</span> {item?.content}
+            ><span>{item.contentHeading}</span> <p>{item?.content}</p>
             <ul>
               {
                 item.list &&
@@ -98,6 +99,7 @@ const BlogContentPage = () => {
           ))}
         </ul>
       </div>
+      
       <P
         textAlign="left"
         fontSize="1.125rem"
