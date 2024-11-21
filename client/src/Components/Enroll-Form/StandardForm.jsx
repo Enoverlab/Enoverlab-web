@@ -283,7 +283,7 @@ const StandardForm = ({handleCloseModal, modalDetails, startDate}) => {
                 </main>
                 <div className="cta">
                   <SubmitButton Text="Submit" disabled={!(isValid && dirty)}/>
-                  <Link>Pay Now, Instead</Link>
+                  <Link to='https://paystack.com/pay/enoverlabstandardprogram'>Pay Now, Instead</Link>
                 </div>
                 </>)
               }
