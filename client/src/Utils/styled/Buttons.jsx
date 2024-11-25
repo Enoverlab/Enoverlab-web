@@ -41,6 +41,9 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
     width: 2.4rem;
     fill: #00f;
   }
+  p{
+    margin: 0;
+  }
   &:disabled{
     background: #848488;
     border : 0;
