@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { H1, H4,P } from "../../Utils/styled/Typograpyhy";
 import HeroVidCover from "../../assets/icon/programsCover.png";
 import { AiOutlineShrink as Shrink } from "react-icons/ai";
@@ -268,6 +268,15 @@ const StyledSwiper = styled.div`
   }
 `
 
+export const breathing = keyframes`
+  0%,100%{
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(1.1);
+  }
+`
+
 const StyledPriceHero = styled.div`
   position: relative;
   /* margin-bottom: 10%; */
@@ -343,6 +352,7 @@ const StyledPriceHero = styled.div`
           display: flex;
           align-items: center;
           justify-content: center;
+          animation: ${breathing} 1.5s ease-in-out infinite;
           .play-triangle {
             width: 100px;
             height: 100px;
@@ -354,6 +364,7 @@ const StyledPriceHero = styled.div`
             .play-icon {
               font-size: 40px;
               color: #0046ff;
+              
               
             }
           }
@@ -646,6 +657,7 @@ const StyledPriceHero = styled.div`
           display: flex;
           align-items: center;
           justify-content: center;
+          animation: ${breathing} 1.5s ease-in-out infinite;
           .play-triangle {
             width: 100px;
             height: 100px;
