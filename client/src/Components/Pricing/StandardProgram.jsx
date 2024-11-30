@@ -294,7 +294,7 @@ const StandardProgram = () => {
                           TUITION FEES
                         </H4>
                         <H2
-                          mdfs="2.38vw"
+                          mdfs="2.4vw"
                           fs="3.6vw"
                           fw="600"
                           color="var(--Body-Text)"
@@ -302,8 +302,8 @@ const StandardProgram = () => {
                           ₦{trainingLocation.tuition}
                         </H2>
                         <H2
-                          mdfs="1.2vw"
-                          fs="2.6vw"
+                          mdfs="1.4vw"
+                          fs="2.8vw"
                           fw="600"
                           className="strikeThrough"
                           color="var(--Body-Text)"
