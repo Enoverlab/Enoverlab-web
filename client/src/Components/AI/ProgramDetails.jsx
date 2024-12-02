@@ -88,15 +88,6 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦250,000
-                        </H2>
-                        <H2
-                          mdfs="1.38vw"
-                          fs="2.27vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                          className='strike'
-                        >
                           ₦400,000
                         </H2>
                       </div>
