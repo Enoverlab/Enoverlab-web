@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import speaker from "../../assets/icon/speaker.jpg";
+import speaker from "../../assets/banjiNew.jpg";
 import calendar from "../../assets/icon/calender.png";
 import clock from "../../assets/icon/time.png";
 import { SecondaryButtonA } from "../../Utils/styled/Buttons";
@@ -14,9 +14,9 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Bassey Archibong</h3>
-                  <h4>(Product Manager)
-                    <h5>(Cicada)</h5>
+                  <h3>Olabanji Ewenla</h3>
+                  <h4>(Lead Product Manager)
+                    <h5>(Dashout)</h5>
                   </h4>
             </div>
           </SpeakerImage>
@@ -24,22 +24,22 @@ const ProductSession = () => {
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Bassey Archibong</h3>
-                  <h4>(Product Manager) <h5>
-                  (Cicada)
+                  <h3>Olabanji Ewenla</h3>
+                  <h4>(Lead Product Manager) <h5>
+                  (Dashout)
                     </h5></h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                  Networking as a Tool for Unlocking Job<br /> Opportunities for Product Manager
+                How to maximise your Product Management skills <br /> beyond just getting a job in 2025
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                October 26th, 2024
+                December 7th, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
