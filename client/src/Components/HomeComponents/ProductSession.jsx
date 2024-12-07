@@ -195,12 +195,18 @@ export const DetailsSession = styled.div`
     font-size: 14px;
     font-weight: 700;
   }
+    br{
+    display : none;
+    }
   @media (min-width: 1024px) {
     h2,h3{
       font-size: clamp(1.5rem,1.388vw,2.2rem);
     }
     h3 {
       line-height: 30px;
+    }
+    br{
+     display : block;
     }
   }
 `;
