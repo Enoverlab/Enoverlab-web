@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef } from "react"
 import { FramerSidebar, FramerSidebarPanel, SideBarBabies, StyledHeader, Toggleview, TopNavbabies } from "../Utils/styled/header/header.styled";
-import enoverLogo from '../assets/enovLogo.svg'
+import enoverLogo from '../assets/hatc.png'
 import { GiHamburgerMenu as MenuIcon } from "react-icons/gi";
 import { AnimatePresence, motion } from "framer-motion";
 import { useClickAway } from "@uidotdev/usehooks";

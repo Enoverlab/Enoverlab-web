@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import dbg from "../assets/icon/Dbg.png"
 import {useState, useEffect} from "react"
-import enovlogo from "../assets/enovLogo.svg"
+import enovlogo from "../assets/hatc.png"
 
 const LoadingScreen2 = () => {
   const [text, setText] = useState("")
@@ -63,6 +63,9 @@ div{
   justify-content: center;
 
 }
+img{
+   width: 12rem;
+}
 h2{
   font-weight: 700;
   font-size: 1.8rem;
@@ -82,6 +85,9 @@ p{
     height:  30rem;
     border-radius: 15px;
     padding: 10px;
+  }
+  img{
+     width : 16rem;
   }
   h2{
     font-weight: 700;
