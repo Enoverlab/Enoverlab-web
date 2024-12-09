@@ -32,14 +32,14 @@ const ProductSession = () => {
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                How to maximise your Product Management skills <br /> beyond just getting a job in 2025
+                The mindset you need to have to do well <br /> in Product Management in 2025
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                December 7th, 2024
+                December 14th, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
