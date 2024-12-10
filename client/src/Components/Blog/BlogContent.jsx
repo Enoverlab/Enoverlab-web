@@ -573,7 +573,7 @@ export const Article = [
     },
     {
         id: 20,
-        title: "ESSENTIAL TOOLS TO LEARN AS A PRODUCT MANAGER",
+        title: "The Best Product Management Training Institute In Africa ",
         content1: "Have you been searching for where to learn product management? Have you been thinking of how to begin your product management journey? Have you been looking to start or advance your career in product management? You don’t have to look any further. Let me introduce you to the best in the industry, Enoverlab.",
         content2 : "Enoverlab is a training institute accredited by the American Council of Training and Development (ACTD) to provide product management trainings to individuals and corporate organisations.Enoverlab is Nigeria’s top choice for comprehensive, hands-on product management training designed to equip you with the skills you need to excel in the product management career path.",
         subtopic : 'Why is Enoverlab top choice?',
