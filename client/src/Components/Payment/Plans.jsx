@@ -28,10 +28,10 @@ const Plans = () => {
                     Payment For Online Classes
                 </h4>
                 <p>
-                    ₦200,000
+                    ₦311,800
                 </p>
                 <div className="cta">
-                    <SecondaryButton Text='Pay Now' />
+                    <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/ve2k2y9sst" target='_blank' />
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@ const Plans = () => {
                     Two Times Payment For Online Classes
                     </h4>
                     <p>
-                        ₦100,000
+                    ₦155,950
                         <span>Initial deposit</span>
                     </p>
                 </div>
@@ -93,7 +93,7 @@ const Plans = () => {
                     Three Times Payment For Online Classes
                     </h4>
                     <p>
-                        ₦100,000
+                        ₦104,000
                         <span>Initial deposit</span>
                     </p>
                 </div>
