@@ -13,7 +13,7 @@ import Alumni from '../Components/HomeComponents/Alumni'
 import { useState } from 'react'
 import LoadingScreen2 from '../Components/LoadingScreen2'
 import {motion} from "framer-motion"
-// import ProductSession from '../Components/HomeComponents/ProductSession'
+import ProductSession from '../Components/HomeComponents/ProductSession'
 // import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
   {isLoading ? <LoadingScreen2 /> : <div>
        <Header />
         <Hero />
-        {/* <ProductSession />  */}
+        <ProductSession /> 
         <motion.div
         initial={{opacity : 0.5, scale : 0.7 }}
         whileInView={{opacity : 1, scale : 1}}
