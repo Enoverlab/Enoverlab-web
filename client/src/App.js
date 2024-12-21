@@ -35,6 +35,7 @@ import Growth from "./Pages/Growth";
 import Technical from "./Pages/Technical";
 import Career from "./Pages/Career";
 import ContactUs from "./Pages/ContactUs";
+import Payment from "./Pages/Payment";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -70,6 +71,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog/:id" element={<BlogContentPage />} />
+        <Route path="/payments" element={<Payment />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/corporate" element={<Corporate />} />
         <Route path="/executive" element={<Executive/>} />
