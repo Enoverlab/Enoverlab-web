@@ -22,7 +22,9 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
-  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '',classType : '',discount : ''})
+
+  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
+  
   const [enrolModal, setEnrolModal] = useState({open : false, formtype : '', site : ''})
   useEffect(()=>{
     switch(location){

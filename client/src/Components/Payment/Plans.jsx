@@ -1,11 +1,121 @@
 import styled from "styled-components"
 import { SecondaryButton } from "../../Utils/styled/Buttons"
+import {useContext, useState, useEffect} from "react"
+import { CenterContext } from "../../context/CenterContext";
 
 const Plans = () => {
+    const [location, setLocation] = useState('')
+    const [locationDetails, setLocationDetails] = useState({paystackSubLinks : {
+        oneTime : {
+            link : '',
+            price : '',
+        },
+        twoTimes : {
+            link : '',
+            price : '',
+        } ,
+        threeTimes : {
+            link : '',
+            price : ''
+        } 
+    }})
+    const [installmentLocation, setInstallmentLocation] = useState('')
+    const [installmentLocationDetails, setInstallmentLocationDetails] = useState({
+        paystackSubLinks : {
+            oneTime : {
+                link : '',
+                price : '',
+            },
+            twoTimes : {
+                link : '',
+                price : '',
+            } ,
+            threeTimes : {
+                link : '',
+                price : ''
+            } 
+        }
+    })
+    const centerDetails = useContext(CenterContext)
+
+    useEffect(()=>{
+        switch(location){
+            case "Lekki-Weekend":
+            setLocationDetails(centerDetails['Lekki-Weekend'])
+            break;
+            default:
+            setLocationDetails({
+                paystackSubLinks : {
+                    oneTime : {
+                        link : '',
+                        price : '',
+                    },
+                    twoTimes : {
+                        link : '',
+                        price : '',
+                    } ,
+                    threeTimes : {
+                        link : '',
+                        price : ''
+                    } 
+                },
+            })
+        }
+    },[location, centerDetails])
+
+    useEffect(()=>{
+        switch(installmentLocation){
+            case "Lekki-Weekend":
+            setInstallmentLocationDetails(centerDetails['Lekki-Weekend'])
+            break;
+            default:
+            setInstallmentLocationDetails({
+                paystackSubLinks : {
+                    oneTime : {
+                        link : '',
+                        price : '',
+                    },
+                    twoTimes : {
+                        link : '',
+                        price : '',
+                    } ,
+                    threeTimes : {
+                        link : '',
+                        price : ''
+                    } 
+                },
+            })
+        }
+    },[installmentLocation, centerDetails])
+
+    const [isError,setIsError] = useState(false)
+
+    function handleLocationChange(e){
+        setLocation(e.target.value)
+        if(location){
+            setIsError(false)
+        }
+    }
+
+    function handleInstallmentLocationChange(e){
+        setInstallmentLocation(e.target.value)
+        if(location){
+            setIsError(false)
+        }
+    }
+
+    function handleBlur(){
+        if(!location){
+          setIsError(true)
+          return
+        }
+        setIsError(false)
+    }
+
   return (
     <StyledPlans>
       <header>
-      Payment Plans
+        Payment Plans
       </header>
       <section className="oneTime">
         <h2>
@@ -17,10 +127,23 @@ const Plans = () => {
                     Payment For Physical Classes
                 </h4>
                 <p>
-                    ₦200,000
+                    {locationDetails?.paystackSubLinks?.oneTime?.price ||'Select a location'}
                 </p>
+                <select name="" id="" onChange={handleLocationChange} value={location} onBlur={handleBlur}>
+                    <option id="item" value="">Select a Location</option>
+                    <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
+
+                    {
+                        /* <option value="Ibadan">IBADAN</option>
+                        <option value="Abuja">ABUJA</option>
+                        <option value="Ikeja-Weekend">IKEJA-WEEKEND</option>
+                        <option value="Anambra">ANAMBRA</option> */
+                    }
+
+                </select>
+                    {isError && <h6 className="err">Please select Your Preferred Location</h6>}
                 <div className="cta">
-                    <SecondaryButton Text='Pay Now' />
+                    <SecondaryButton Text='Pay Now' to={locationDetails?.paystackSubLinks?.oneTime?.link} disabled={!locationDetails?.paystackSubLinks?.oneTime?.price} />
                 </div>
             </div>
             <div className="online">
@@ -47,12 +170,11 @@ const Plans = () => {
                     Two Times Payment For Physical Classes
                     </h4>
                     <p>
-                        ₦100,000
-                        <span>Initial deposit</span>
+                        {installmentLocationDetails.paystackSubLinks.twoTimes.price || 'Select a Location'}
                     </p>
                 </div>
                 <div className="cta">
-                    <SecondaryButton Text='Pay Now' />
+                    <SecondaryButton Text='Pay Now' to={installmentLocationDetails.paystackSubLinks.threeTimes.link} disabled={!installmentLocationDetails.paystackSubLinks.threeTimes.price}/>
                 </div>
             </div>
             <hr />
@@ -62,14 +184,28 @@ const Plans = () => {
                     Three Times Payment For Physical Classes
                     </h4>
                     <p>
-                        ₦100,000
-                        <span>Initial deposit</span>
+                    {installmentLocationDetails.paystackSubLinks.threeTimes.price || 'Select a Location'}
                     </p>
                 </div>
                 <div className="cta">
-                    <SecondaryButton Text='Pay Now' />
+                    <SecondaryButton Text='Pay Now' to={installmentLocationDetails.paystackSubLinks.threeTimes.link} disabled={!installmentLocationDetails.paystackSubLinks.threeTimes.price} />
                 </div>
             </div>
+
+            
+            <select name="" id="" onChange={handleInstallmentLocationChange} value={installmentLocation} onBlur={handleBlur}>
+
+                <option id="item" value="">Select a Location</option>
+                <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
+                
+                {
+                    /* <option value="Ibadan">IBADAN</option>
+                    <option value="Abuja">ABUJA</option>
+                    <option value="Ikeja-Weekend">IKEJA-WEEKEND</option>
+                    <option value="Anambra">ANAMBRA</option> */
+                }
+
+            </select>
         </div>
         <div className="online secondOption">
             <div className="details">
@@ -83,7 +219,7 @@ const Plans = () => {
                     </p>
                 </div>
                 <div className="cta">
-                    <SecondaryButton Text='Pay Now' />
+                    <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/rtszcd4qwq" target='_blank' />
                 </div>
             </div>
             <hr />
@@ -98,7 +234,7 @@ const Plans = () => {
                     </p>
                 </div>
                 <div className="cta">
-                    <SecondaryButton Text='Pay Now' />
+                    <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/odioim9y0n" target='_blank' />
                 </div>
             </div>
         </div>
@@ -131,6 +267,21 @@ const StyledPlans = styled.div`
             font-size: 24px;
             margin-bottom: 1.4rem;
         }
+    }
+    select{
+        padding: 1rem;
+        outline: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        background-color: #E3F5F8;
+        border: 1px solid #BAEAFA;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+    h6.err{
+        font-size: 1.2rem;
+        color: #c05555;
+        font-style: italic;
     }
     .oneTime{
         color: #373737;
@@ -206,6 +357,9 @@ const StyledPlans = styled.div`
             h2{
                 margin-bottom: 3.9rem;
             }
+        }
+        select{
+            font-size: 2rem;
         }
         .oneTime{
             .items{

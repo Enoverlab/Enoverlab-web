@@ -118,10 +118,10 @@ export const StyledSecondaryButton = styled(StyledPrimaryButton)`
   }
 `;
 
-export const SecondaryButton = ({target, to="#", Text, w, arrowDown}) => {
+export const SecondaryButton = ({target, to="#", Text, w, arrowDown, disabled}) => {
   return (
     <HashLink to={to} target={target}  >
-      <StyledSecondaryButton w={w}>
+      <StyledSecondaryButton w={w} disabled={disabled}>
         <h5>{Text}</h5>
         {
           arrowDown ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
