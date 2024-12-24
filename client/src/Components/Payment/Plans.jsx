@@ -74,13 +74,13 @@ const Plans = () => {
         <h2>
         Online Training Payment
         </h2>
-        <div className=" Option">
-            <div className="details">
+        <div className="Option" data-aos='fade-right'>
+            <div className="details" data-aos='fade-right'>
                 <h4>
                     One-Time Payment For Online Classes
                 </h4>
                 <p>
-                    ₦250,000
+                    ₦310,000
                     <span>Full Payment</span>
                 </p>
                 
@@ -91,12 +91,12 @@ const Plans = () => {
             <div className="hr">
                 <hr />
             </div>
-            <div className="details">
+            <div className="details" data-aos='fade-up'>
                 <h4>
                 Two Times Payment For Online Classes
                 </h4>
                 <p>
-                    ₦130,000
+                    ₦155,000
                     <span>Initial deposit</span>
                 </p>
                 <div className="cta">
@@ -106,12 +106,12 @@ const Plans = () => {
             <div className="hr">
                 <hr />
             </div>
-            <div className="details">
+            <div className="details" data-aos='fade-down'>
                 <h4>
                     Three Times Payment For Online Classes
                 </h4>
                 <p>
-                    ₦86,000
+                    ₦103,333
                     <span>Initial deposit</span>
                 </p>
                 <div className="cta">
@@ -125,7 +125,7 @@ const Plans = () => {
         On-site Training Payment
         </h2>
         <div className=" Option">
-            <div className="details">
+            <div className="details" data-aos='fade-right'>
                 <h4>
                     One-Time Payment For Online Classes
                 </h4>
@@ -135,7 +135,6 @@ const Plans = () => {
                     <span>Initial deposit</span>
                     </p>) : (<p>Select a Location</p>)
                 }
-                
                 <div className="cta">
                     <SecondaryButton Text='Pay Now' disabled={!location} to={locationDetails.paystackSubLinks.oneTime.link} target='_blank' />
                 </div>
@@ -143,7 +142,7 @@ const Plans = () => {
             <div className="hr">
                 <hr />
             </div>
-            <div className="details">
+            <div className="details" data-aos='fade-up'>
                 <h4>
                 Two Times Payment For Online Classes
                 </h4>
@@ -160,7 +159,7 @@ const Plans = () => {
             <div className="hr">
                 <hr />
             </div>
-            <div className="details">
+            <div className="details" data-aos='fade-down'>
                 <h4>
                     Three Times Payment For Online Classes
                 </h4>
@@ -180,7 +179,7 @@ const Plans = () => {
                 <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
             </select>
 
-            {isError && <p className="err">Please select Your Preferred Location</p>}
+            {isError && <h6 className="err">Please select Your Preferred Location</h6>}
 
         </div>
       </section>
