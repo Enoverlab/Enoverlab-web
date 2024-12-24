@@ -19,23 +19,7 @@ const Plans = () => {
             price : ''
         } 
     }})
-    const [installmentLocation, setInstallmentLocation] = useState('')
-    const [installmentLocationDetails, setInstallmentLocationDetails] = useState({
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        }
-    })
+
     const centerDetails = useContext(CenterContext)
 
     useEffect(()=>{
@@ -63,42 +47,11 @@ const Plans = () => {
         }
     },[location, centerDetails])
 
-    useEffect(()=>{
-        switch(installmentLocation){
-            case "Lekki-Weekend":
-            setInstallmentLocationDetails(centerDetails['Lekki-Weekend'])
-            break;
-            default:
-            setInstallmentLocationDetails({
-                paystackSubLinks : {
-                    oneTime : {
-                        link : '',
-                        price : '',
-                    },
-                    twoTimes : {
-                        link : '',
-                        price : '',
-                    } ,
-                    threeTimes : {
-                        link : '',
-                        price : ''
-                    } 
-                },
-            })
-        }
-    },[installmentLocation, centerDetails])
 
     const [isError,setIsError] = useState(false)
 
     function handleLocationChange(e){
         setLocation(e.target.value)
-        if(location){
-            setIsError(false)
-        }
-    }
-
-    function handleInstallmentLocationChange(e){
-        setInstallmentLocation(e.target.value)
         if(location){
             setIsError(false)
         }
@@ -117,126 +70,118 @@ const Plans = () => {
       <header>
         Payment Plans
       </header>
-      <section className="oneTime">
+      <section className="online">
         <h2>
-        One-Time Payment
+        Online Training Payment
         </h2>
-        <div className="items">
-            <div className="physical">
+        <div className=" Option">
+            <div className="details">
                 <h4>
-                    Payment For Physical Classes
+                    One-Time Payment For Online Classes
                 </h4>
                 <p>
-                    {locationDetails?.paystackSubLinks?.oneTime?.price ||'Select a location'}
+                    ₦250,000
+                    <span>Full Payment</span>
                 </p>
-                <select name="" id="" onChange={handleLocationChange} value={location} onBlur={handleBlur}>
-                    <option id="item" value="">Select a Location</option>
-                    <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
-
-                    {
-                        /* <option value="Ibadan">IBADAN</option>
-                        <option value="Abuja">ABUJA</option>
-                        <option value="Ikeja-Weekend">IKEJA-WEEKEND</option>
-                        <option value="Anambra">ANAMBRA</option> */
-                    }
-
-                </select>
-                    {isError && <h6 className="err">Please select Your Preferred Location</h6>}
-                <div className="cta">
-                    <SecondaryButton Text='Pay Now' to={locationDetails?.paystackSubLinks?.oneTime?.link} disabled={!locationDetails?.paystackSubLinks?.oneTime?.price} />
-                </div>
-            </div>
-            <div className="online">
-                <h4>
-                    Payment For Online Classes
-                </h4>
-                <p>
-                    ₦311,800
-                </p>
-                <div className="cta">
-                    <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/ve2k2y9sst" target='_blank' />
-                </div>
-            </div>
-        </div>
-      </section>
-      <section className="installment">
-        <h2>
-        Instalment Payment
-        </h2>
-        <div className="physical secondOption">
-            <div className="details">
-                <div className="deposit">
-                    <h4>
-                    Two Times Payment For Physical Classes
-                    </h4>
-                    <p>
-                        {installmentLocationDetails.paystackSubLinks.twoTimes.price || 'Select a Location'}
-                    </p>
-                </div>
-                <div className="cta">
-                    <SecondaryButton Text='Pay Now' to={installmentLocationDetails.paystackSubLinks.threeTimes.link} disabled={!installmentLocationDetails.paystackSubLinks.threeTimes.price}/>
-                </div>
-            </div>
-            <hr />
-            <div className="details">
-                <div className="deposit">
-                    <h4>
-                    Three Times Payment For Physical Classes
-                    </h4>
-                    <p>
-                    {installmentLocationDetails.paystackSubLinks.threeTimes.price || 'Select a Location'}
-                    </p>
-                </div>
-                <div className="cta">
-                    <SecondaryButton Text='Pay Now' to={installmentLocationDetails.paystackSubLinks.threeTimes.link} disabled={!installmentLocationDetails.paystackSubLinks.threeTimes.price} />
-                </div>
-            </div>
-
-            
-            <select name="" id="" onChange={handleInstallmentLocationChange} value={installmentLocation} onBlur={handleBlur}>
-
-                <option id="item" value="">Select a Location</option>
-                <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
                 
-                {
-                    /* <option value="Ibadan">IBADAN</option>
-                    <option value="Abuja">ABUJA</option>
-                    <option value="Ikeja-Weekend">IKEJA-WEEKEND</option>
-                    <option value="Anambra">ANAMBRA</option> */
-                }
-
-            </select>
-        </div>
-        <div className="online secondOption">
-            <div className="details">
-                <div className="deposit">
-                    <h4>
-                    Two Times Payment For Online Classes
-                    </h4>
-                    <p>
-                    ₦155,950
-                        <span>Initial deposit</span>
-                    </p>
-                </div>
                 <div className="cta">
                     <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/rtszcd4qwq" target='_blank' />
                 </div>
             </div>
-            <hr />
+            <div className="hr">
+                <hr />
+            </div>
             <div className="details">
-                <div className="deposit">
-                    <h4>
-                    Three Times Payment For Online Classes
-                    </h4>
-                    <p>
-                        ₦104,000
-                        <span>Initial deposit</span>
-                    </p>
+                <h4>
+                Two Times Payment For Online Classes
+                </h4>
+                <p>
+                    ₦130,000
+                    <span>Initial deposit</span>
+                </p>
+                <div className="cta">
+                    <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/rtszcd4qwq" target='_blank' />
                 </div>
+            </div>
+            <div className="hr">
+                <hr />
+            </div>
+            <div className="details">
+                <h4>
+                    Three Times Payment For Online Classes
+                </h4>
+                <p>
+                    ₦86,000
+                    <span>Initial deposit</span>
+                </p>
                 <div className="cta">
                     <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/odioim9y0n" target='_blank' />
                 </div>
             </div>
+        </div>
+      </section>
+      <section className="physical">
+        <h2>
+        On-site Training Payment
+        </h2>
+        <div className=" Option">
+            <div className="details">
+                <h4>
+                    One-Time Payment For Online Classes
+                </h4>
+                {
+                    location ? (<p>
+                    {locationDetails.paystackSubLinks.oneTime.price}
+                    <span>Initial deposit</span>
+                    </p>) : (<p>Select a Location</p>)
+                }
+                
+                <div className="cta">
+                    <SecondaryButton Text='Pay Now' disabled={!location} to={locationDetails.paystackSubLinks.oneTime.link} target='_blank' />
+                </div>
+            </div>
+            <div className="hr">
+                <hr />
+            </div>
+            <div className="details">
+                <h4>
+                Two Times Payment For Online Classes
+                </h4>
+                {
+                    location ? (<p>
+                    {locationDetails.paystackSubLinks.twoTimes.price}
+                    <span>Initial deposit</span>
+                    </p>) : (<p>Select a Location</p>)
+                }
+                <div className="cta">
+                    <SecondaryButton Text='Pay Now' disabled={!location} to={locationDetails.paystackSubLinks.twoTimes.link} target='_blank' />
+                </div>
+            </div>
+            <div className="hr">
+                <hr />
+            </div>
+            <div className="details">
+                <h4>
+                    Three Times Payment For Online Classes
+                </h4>
+                {
+                    location ? (<p>
+                    {locationDetails.paystackSubLinks.threeTimes.price}
+                    <span>Initial deposit</span>
+                    </p>) : (<p>Select a Location</p>)
+                }
+                <div className="cta">
+                    <SecondaryButton Text='Pay Now' disabled={!location} to={locationDetails.paystackSubLinks.threeTimes.link} target='_blank' />
+                </div>
+            </div>
+
+            <select name="" id="" onChange={handleLocationChange} value={location} onBlur={handleBlur}>
+                <option value="">Select a Location</option>
+                <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
+            </select>
+
+            {isError && <p className="err">Please select Your Preferred Location</p>}
+
         </div>
       </section>
     </StyledPlans>
@@ -273,6 +218,7 @@ const StyledPlans = styled.div`
         outline: none;
         cursor: pointer;
         font-size: 1.2rem;
+        margin-top: 2rem;
         background-color: #E3F5F8;
         border: 1px solid #BAEAFA;
         border-radius: 8px;
@@ -283,25 +229,37 @@ const StyledPlans = styled.div`
         color: #c05555;
         font-style: italic;
     }
-    .oneTime{
-        color: #373737;
-        h4{
-            font-size: 1.6rem;
+    .physical{
+        border: 1px solid #1A1A1A;
+        margin: 6.4rem 0;
+    }
+
+    .online .Option{
+        padding: 2rem;
+        border-radius: 4px;
+        background: #E3F5F8;
+    }
+    
+    .physical .Option{
+        padding: 2rem;
+        border-radius: 4px;
+        background: #BAEAFA;
+    }
+    .Option{
+        .details{
+            display: grid;
+            color : #373737;
+            p{
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            span{
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
         }
-        p{
-            font-size: 2rem;
-            font-weight: 700;
-        }
-        .physical{
-            padding: 2rem;
-            border-radius: 4px;
-            background: #E3F5F8;
-        }
-        .online{
-            margin-top: 2rem;
-            padding: 2rem;
-            border-radius: 4px;
-            background: #BAEAFA;
+        hr{
+            margin: 2rem 0;
         }
     }
     .cta{
@@ -310,41 +268,7 @@ const StyledPlans = styled.div`
         align-items: center;
         margin-top: 2.4rem;
     }
-    .installment{
-        border: 1px solid #1A1A1A;
-        background: #FAFAFA;
-        margin-top: 6.4rem;
-        margin-bottom: 10rem;
-        .secondOption{
-            padding: 2rem;
-            h4{
-                font-size: 1.6rem;
-                margin-bottom: 0.8rem;
-            }
-            hr{
-                border : 2px solid #1A1A1A;
-                margin: 2.4rem 0;
-            }
-            p{
-                font-size: 2rem;
-                font-weight: 700;
-                margin-bottom: 2.4rem;
-                span{
-                    font-size: 1.4rem;
-                    font-weight: 400;
-                }
-            }
-        }
-        .physical{
-            border-radius: 4px;
-            background: #E3F5F8;
-        }
-        .online{
-            border-radius: 4px;
-            margin-top: 2rem;
-            background: #BAEAFA;
-        }
-    }
+    
     @media (min-width: 1024px) {
         padding: 0rem 6.32vw;
         header{
@@ -361,72 +285,51 @@ const StyledPlans = styled.div`
         select{
             font-size: 2rem;
         }
-        .oneTime{
-            .items{
-                display: flex;
-                justify-content: space-between;
-                gap: 2rem;
-            }
-            h4{
-                font-size: 2.4rem;
-                margin-bottom: 3.4rem;
-            }
-            p{
+        .online .Option{
+            border-radius: 4px;
+            padding: 5.3rem 2.5rem;
+            background: #E3F5F8;
+        }
+        .physical{
+            margin : 5.6rem 0;
+        }
+
+        .physical .Option{
+            border-radius: 4px;
+            padding: 5.3rem 2.5rem;
+        }
+        .Option{
+            .details{
+                display: grid;
+                grid-template-columns: repeat(3,auto);
+                align-items: center;
+                h4{
+                    font-size: 2.4rem;
+                }
+                h5{
+                    font-size: 2rem;
+                }
+                p{
                 font-size: 3.6rem;
+                font-weight: 700;
+                }
+                span{
+                    font-size: 2rem;
+                    font-weight: 400;
+                }
             }
-            h5{
-                font-size: 2rem;
+            .hr{
+                padding: 0 5rem;
             }
-            .physical{
-                padding: 3.8rem 2.5rem;
-                width: 50%;
-            }
-            .online{
-                margin-top: 0rem;
-                padding: 3.8rem 2.5rem;
-                width: 50%;
+            hr{ 
+                padding: 0rem 5rem;
+                margin: 3.5rem 0;
+                border: 2px solid #1A1A1A;
             }
         }
         .cta{
             margin-top: 0.55rem;
             justify-content: end;
-        }  
-        .installment{
-            margin-top: 5.6rem;
-            .secondOption{
-                padding: 4rem;
-                h4{
-                    font-size: 1.587vw;
-                    margin: 0;
-                }
-                hr{
-                    margin: 2.4rem;
-                }
-                p{
-                    font-size: 2.38vw;
-                    margin: 0;
-                    span{
-                        font-size: 2rem;
-                    }
-                }
-                h5{
-                    font-size: 2rem;
-                }
-                .details{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .deposit {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: baseline;
-                    width: 75%;
-                }
-            }
-            .online{
-                margin-top: 5rem;
-            }
-        }
+        } 
     }
 `
