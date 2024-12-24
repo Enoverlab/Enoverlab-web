@@ -77,15 +77,14 @@ const Plans = () => {
         <div className="Option" data-aos='fade-right'>
             <div className="details" data-aos='fade-right'>
                 <h4>
-                    One-Time Payment For Online Classes
+                    One-Time Payment Of
                 </h4>
                 <p>
                     ₦310,000
-                    <span>Full Payment</span>
+                    <span> Full Payment</span>
                 </p>
-                
                 <div className="cta">
-                    <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/rtszcd4qwq" target='_blank' />
+                    <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/ve2k2y9sst" target='_blank' />
                 </div>
             </div>
             <div className="hr">
@@ -93,11 +92,11 @@ const Plans = () => {
             </div>
             <div className="details" data-aos='fade-up'>
                 <h4>
-                Two Times Payment For Online Classes
+                Two Times Payment Of
                 </h4>
                 <p>
                     ₦155,000
-                    <span>Initial deposit</span>
+                    <span> each</span>
                 </p>
                 <div className="cta">
                     <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/rtszcd4qwq" target='_blank' />
@@ -108,11 +107,11 @@ const Plans = () => {
             </div>
             <div className="details" data-aos='fade-down'>
                 <h4>
-                    Three Times Payment For Online Classes
+                    Three Times Payment Of
                 </h4>
                 <p>
                     ₦103,333
-                    <span>Initial deposit</span>
+                    <span> each</span>
                 </p>
                 <div className="cta">
                     <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/odioim9y0n" target='_blank' />
@@ -125,14 +124,21 @@ const Plans = () => {
         On-site Training Payment
         </h2>
         <div className=" Option">
+
+            <select name="" id="" onChange={handleLocationChange} value={location} onBlur={handleBlur}>
+                <option value="">Select a Location</option>
+                <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
+            </select>
+            {isError && <h6 className="err">Please select Your Preferred Location</h6>}
+
             <div className="details" data-aos='fade-right'>
                 <h4>
-                    One-Time Payment For Online Classes
+                    One-Time Payment Of
                 </h4>
                 {
                     location ? (<p>
                     {locationDetails.paystackSubLinks.oneTime.price}
-                    <span>Initial deposit</span>
+                    <span> full payment</span>
                     </p>) : (<p>Select a Location</p>)
                 }
                 <div className="cta">
@@ -144,12 +150,12 @@ const Plans = () => {
             </div>
             <div className="details" data-aos='fade-up'>
                 <h4>
-                Two Times Payment For Online Classes
+                Two Times Payment Of
                 </h4>
                 {
                     location ? (<p>
                     {locationDetails.paystackSubLinks.twoTimes.price}
-                    <span>Initial deposit</span>
+                    <span className="each"> each</span>
                     </p>) : (<p>Select a Location</p>)
                 }
                 <div className="cta">
@@ -161,25 +167,18 @@ const Plans = () => {
             </div>
             <div className="details" data-aos='fade-down'>
                 <h4>
-                    Three Times Payment For Online Classes
+                    Three Times Payment Of
                 </h4>
                 {
                     location ? (<p>
                     {locationDetails.paystackSubLinks.threeTimes.price}
-                    <span>Initial deposit</span>
+                    <span> each</span>
                     </p>) : (<p>Select a Location</p>)
                 }
                 <div className="cta">
                     <SecondaryButton Text='Pay Now' disabled={!location} to={locationDetails.paystackSubLinks.threeTimes.link} target='_blank' />
                 </div>
-            </div>
-
-            <select name="" id="" onChange={handleLocationChange} value={location} onBlur={handleBlur}>
-                <option value="">Select a Location</option>
-                <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
-            </select>
-
-            {isError && <h6 className="err">Please select Your Preferred Location</h6>}
+            </div>            
 
         </div>
       </section>
@@ -217,7 +216,7 @@ const StyledPlans = styled.div`
         outline: none;
         cursor: pointer;
         font-size: 1.2rem;
-        margin-top: 2rem;
+        margin-bottom: 2rem;
         background-color: #E3F5F8;
         border: 1px solid #BAEAFA;
         border-radius: 8px;
@@ -301,6 +300,7 @@ const StyledPlans = styled.div`
             .details{
                 display: grid;
                 grid-template-columns: repeat(3,auto);
+                justify-content: space-evenly;
                 align-items: center;
                 h4{
                     font-size: 2.4rem;
