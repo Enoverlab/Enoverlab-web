@@ -273,7 +273,7 @@ const centerDetails = {
             threeTimes : ''
         },
         mapIframe : <iframe title="Ibadan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9143544673657!2d3.8634040744943348!3d7.3634969926456275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398decfa59eb47%3A0x97b5292d9159b2d8!2sCaf%C3%A9%20One%2C%20The%20Palms%20Mall%2C%20Ring%20Road%2C%20Ibadan!5e0!3m2!1sen!2sng!4v1721039815052!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Jan 18, 2025",
+        startDate : "Feb 1, 2025",
     },
     Anambra : {
         place : 'Anambra',
@@ -291,7 +291,7 @@ const centerDetails = {
             threeTimes : ''
         },
         mapIframe : <iframe title="Anambra" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3051337147767!2d7.053362574482788!3d6.223437493764614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104379af706c6619%3A0x2598afc465c51641!2sKodex%20Africa!5e0!3m2!1sen!2sng!4v1721040675268!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Jan 25, 2025",
+        startDate : "Feb 1, 2025",
     },
     Abuja : {
         place : 'Abuja',
@@ -309,7 +309,7 @@ const centerDetails = {
             threeTimes : ''
         },
         mapIframe : <iframe title="Abuja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.7928300264903!2d7.476952574515317!3d9.082628890980839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0af7b326c723%3A0xd8be18bcf35b950b!2s22%20Kumasi%20Cres%2C%20Wuse%2C%20Abuja%20904101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1721039639625!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Jan 25, 2024",
+        startDate : "Feb 1, 2025",
     },
     'Ikeja-Weekday' : {
         place : 'Ikeja-Weekday',
