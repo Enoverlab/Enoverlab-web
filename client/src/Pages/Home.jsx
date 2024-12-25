@@ -28,7 +28,7 @@ const Home = () => {
   useEffect(() => {
     document.body.classList.remove('bodyStiff')
     const container = containerRef.current;
-    const numFlakes = 100;
+    const numFlakes = 50;
     const createFlake = () => {
       const flake = document.createElement("div");
       const flakeClass = "flake flake" + gsap.utils.random(1, 4, 1);
@@ -41,9 +41,9 @@ const Home = () => {
       const width = window.innerWidth;
       const height = document.body.scrollHeight;
       const scaleFactor = Power3.easeIn(Math.random());
-      let scale = gsap.utils.interpolate(0.3,1,scaleFactor)
+      let scale = gsap.utils.interpolate(0.3,0.8,scaleFactor)
       let opacity = gsap.utils.interpolate(0.5,1, scaleFactor)
-      const duration = gsap.utils.interpolate(5,(0.03 * height), 1-scaleFactor )
+      const duration = gsap.utils.interpolate(5,(0.04 * height), 1-scaleFactor )
 
       gsap.set(flake, { y: -200, x: gsap.utils.random(0, width), scale, opacity });
       gsap.to(flake, {
@@ -52,7 +52,6 @@ const Home = () => {
         delay : "random(0,4)",
         rotation : "random(-60, 120)",
         ease : 'none',
-        x : "random(0,200)",
         onComplete: animateFlake,
         onCompleteParams: [flake],
       });
