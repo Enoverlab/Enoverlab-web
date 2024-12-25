@@ -28,7 +28,7 @@ const Home = () => {
   useEffect(() => {
     document.body.classList.remove('bodyStiff')
     const container = containerRef.current;
-    const numFlakes = 50;
+    const numFlakes = 70;
     const createFlake = () => {
       const flake = document.createElement("div");
       const flakeClass = "flake flake" + gsap.utils.random(1, 4, 1);
