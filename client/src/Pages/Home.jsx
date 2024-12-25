@@ -52,7 +52,7 @@ const Home = () => {
         delay : "random(0,4)",
         rotation : "random(-60, 120)",
         ease : 'none',
-        x : "+=200",
+        x : "random(0,200)",
         onComplete: animateFlake,
         onCompleteParams: [flake],
       });
