@@ -181,15 +181,6 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦200,000
-                        </H2>
-                        <H2
-                          mdfs="1.4vw"
-                          fs="2.8vw"
-                          fw="600"
-                          className="strikeThrough"
-                          color="var(--Body-Text)"
-                        >
                           ₦300,000
                         </H2>
                       </div>
@@ -303,15 +294,6 @@ const StandardProgram = () => {
                         >
                           ₦{trainingLocation.tuition}
                         </H2>
-                        <H2
-                          mdfs="1.4vw"
-                          fs="2.8vw"
-                          fw="600"
-                          className="strikeThrough"
-                          color="var(--Body-Text)"
-                        >
-                          ₦{trainingLocation.discount}
-                        </H2>
                       </div>
                     </div>
                   </main>
@@ -411,7 +393,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦799,000 / $599
+                          ₦800,000
                         </H2>
                       </div>
                     </div>
