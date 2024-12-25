@@ -9,6 +9,13 @@
   scroll-behavior: smooth;
 }
 
+
+
 .bodyStiff {
 	margin: 0; height: 100%; overflow: hidden
-  }
+}
+.bodyStiff2 {
+overflow-x: hidden
+}
+
+

@@ -22,7 +22,9 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
-  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '',classType : '',discount : ''})
+
+  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
+  
   const [enrolModal, setEnrolModal] = useState({open : false, formtype : '', site : ''})
   useEffect(()=>{
     switch(location){
@@ -179,15 +181,6 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦200,000
-                        </H2>
-                        <H2
-                          mdfs="1.4vw"
-                          fs="2.8vw"
-                          fw="600"
-                          className="strikeThrough"
-                          color="var(--Body-Text)"
-                        >
                           ₦300,000
                         </H2>
                       </div>
@@ -301,15 +294,6 @@ const StandardProgram = () => {
                         >
                           ₦{trainingLocation.tuition}
                         </H2>
-                        <H2
-                          mdfs="1.4vw"
-                          fs="2.8vw"
-                          fw="600"
-                          className="strikeThrough"
-                          color="var(--Body-Text)"
-                        >
-                          ₦{trainingLocation.discount}
-                        </H2>
                       </div>
                     </div>
                   </main>
@@ -409,7 +393,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦799,000 / $599
+                          ₦800,000
                         </H2>
                       </div>
                     </div>

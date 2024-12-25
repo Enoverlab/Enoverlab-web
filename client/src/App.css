@@ -18,6 +18,30 @@ section img.dk {
   justify-content: center;
 }
 
+.flake{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  top: 0;
+}
+
+.flake1{
+  background-image: url('./assets/flakes/snowflake1.svg');
+}
+
+.flake2{
+  background-image: url('./assets/flakes/snowflake2.svg');
+}
+
+.flake3{
+  background-image: url('./assets/flakes/snowflake3.svg');
+}
+
+.flake4{
+  background-image: url('./assets/flakes/snowflake3.svg');
+}
+
 @media (min-width: 1024px) {
   .cardImg {
     width: 465px;

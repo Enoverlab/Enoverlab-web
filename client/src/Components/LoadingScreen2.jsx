@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled, { keyframes } from 'styled-components'
 import dbg from "../assets/icon/Dbg.png"
 import {useState, useEffect} from "react"
@@ -6,6 +6,10 @@ import enovlogo from "../assets/hatc.png"
 
 const LoadingScreen2 = () => {
   const [text, setText] = useState("")
+  const containerRef = useRef()
+  document.body.classList.add('bodyStiff')
+  document.body.classList.add('bodyStiff2')
+  
   useEffect(()=>{
     let knows = ["Enoverlab is accredited by the American Council of Training and Development?", "A skilled Product Manager can increase a company's profit by 34.2%", "The focus of product management is to deliver value to customers. The end result of product management is to drive up business value for organisations.", 'Our mission at Enoverlab is to "Build impactful product talents like you for today, tomorrow, and the future"', 'Enoverlab vision is to "Transform Africa One Talent at a time"', 'You can earn between N20,000,000 - N50,000,000 in base salary over the next 36 months as a Skilled Product Manager'
   ]
@@ -14,17 +18,17 @@ const LoadingScreen2 = () => {
   setText(knows[randomValue])
   },[])
   return (
-    <StyledLoadingScreen>
-    <div>
-      <img src={enovlogo } alt="" />
+    <div className="docu" id='docu' ref={containerRef}>
+      <StyledLoadingScreen>
 
-
-  <h2>Did you know...</h2>
-
-  <p>{text}</p>
+        <div className='content'>
+          <img src={enovlogo } alt="" />
+          <h2>Did you know...</h2>
+          <p>{text}</p>
+        </div>
+      </StyledLoadingScreen>
     </div>
 
-  </StyledLoadingScreen>
   )
 }
 
@@ -42,15 +46,16 @@ const bounce = keyframes`
   `
 
 const StyledLoadingScreen = styled.div`
-display: flex;
+ display: flex;
 flex-direction: column;
+
 background-image: url(${dbg});
 align-items: center;
 justify-content: center;
 height: 100vh;
 width: 100%;
 background-color:rgba(82, 222, 229,0.1);
-div{
+.content{
   background-color: white;
   width: 85.710vw;
   height: 25rem;
@@ -80,7 +85,7 @@ p{
 } */
 
 @media(min-width: 1024px) {
-  div{
+  .content{
     width: 44.51vw;
     height:  30rem;
     border-radius: 15px;
