@@ -19,7 +19,7 @@ const SuccessStories = ({ bgColor }) => {
   };
 
   return (
-    <StyledSuccessStories id="success" bgColor={bgColor}>
+    <StyledSuccessStories id="success" bgColor={bgColor} data-aos="fade-up">
       <div className="success-stories-container">
         <div className="success-stories-cards">
           {SuccessData.map((data, index) => {

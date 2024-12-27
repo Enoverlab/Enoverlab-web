@@ -18,8 +18,8 @@ import { Link } from "react-router-dom";
 
 const ProductSection = () => {
   return (
-    <StyledProductSection>
-      <header id="programs">
+    <StyledProductSection >
+      <header id="programs" data-aos="fade-down">
         <H2
           color="var(--Title-Text)"
           pdmb="7.2rem"
@@ -32,7 +32,7 @@ const ProductSection = () => {
         </H2>
       </header>
 
-      <Flex display="block" mdalign="start" >
+      <Flex display="block" mdalign="start" data-aos="fade-right" >
         <section className="hides">
           <section className="hide"></section>
           <img src={pathline} alt="" className="dk" />

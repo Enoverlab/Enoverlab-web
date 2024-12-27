@@ -12,8 +12,7 @@ import Partners from '../Components/HomeComponents/Partners'
 import Alumni from '../Components/HomeComponents/Alumni'
 import { useState } from 'react'
 import LoadingScreen2 from '../Components/LoadingScreen2'
-import {motion} from "framer-motion"
-import ProductSession from '../Components/HomeComponents/ProductSession'
+// import ProductSession from '../Components/HomeComponents/ProductSession'
 // import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
 import gsap, {Power3} from 'gsap';
@@ -28,7 +27,7 @@ const Home = () => {
   useEffect(() => {
     document.body.classList.remove('bodyStiff')
     const container = containerRef.current;
-    const numFlakes = 70;
+    const numFlakes = gsap.utils.random(50, 80, 1);
     const createFlake = () => {
       const flake = document.createElement("div");
       const flakeClass = "flake flake" + gsap.utils.random(1, 4, 1);
@@ -75,36 +74,12 @@ const Home = () => {
   {isLoading ? <LoadingScreen2 /> :<div >
        <Header />
         <Hero />
-        <ProductSession /> 
-        <motion.div
-        initial={{opacity : 0.5, scale : 0.7 }}
-        whileInView={{opacity : 1, scale : 1}}
-        transition={{duration : 0.3}}
-        >
-          <ProductSection />
-        </motion.div>
-        <motion.div
-        initial={{opacity : 0.5, scale : 0.7 }}
-        whileInView={{opacity : 1, scale : 1}}
-        transition={{duration : 0.3}}
-        >
-          <EnoverSpecial />
-        </motion.div>
-        <motion.div
-        initial={{opacity : 0.5, scale : 0.7 }}
-        whileInView={{opacity : 1, scale : 1}}
-        transition={{duration : 0.3}}
-        >
+        {/* <ProductSession />  */}
+        <ProductSection />
+        <EnoverSpecial />
           <Partners />
-        </motion.div>
         <Testimonials />
-        <motion.div
-        initial={{opacity : 0.5, scale : 0.5 }}
-        whileInView={{opacity : 1, scale : 1}}
-        transition={{duration : 0.7}}
-        >
-          <SuccessStories />
-        </motion.div>
+        <SuccessStories />
         <Alumni />
         <Started />
         <Footer p="5rem 9.6rem 0 9.6rem"/>

@@ -3,7 +3,7 @@ import { partners } from "../../constants";
 
 const Partners = () => {
   return (
-    <StylePartners>
+    <StylePartners data-aos="fade-left">
       <header>Our Partners</header>
       <main>
         <div>{partners.map((partner, index)=>{

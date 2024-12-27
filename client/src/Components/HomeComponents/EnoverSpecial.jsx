@@ -7,8 +7,8 @@ import "../../App.css";
 import ScrollToElement from "../../helper/ScrollToElement";
 const EnoverSpecial = () => {
   return (
-    <Styledspecial>
-      <section className="top" >
+    <Styledspecial data-aos="fade-up">
+      <section className="top">
         <div className="topSect">
         <header>
         What makes Enoverlab special?
