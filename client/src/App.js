@@ -37,9 +37,7 @@ import Technical from "./Pages/Technical";
 import Career from "./Pages/Career";
 import ContactUs from "./Pages/ContactUs";
 import Payment from "./Pages/Payment";
-import { useLocation } from "react-router-dom";
 function App() {
-  const location = useLocation()
   useEffect(() => {
     AOS.init({
     duration: 1000, // Global animation duration
@@ -49,7 +47,8 @@ function App() {
   }, []);
   useEffect(()=>{
     document.body.classList.remove('bodyStiff')
-  },[location])
+  },[])
+
   const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap');
 

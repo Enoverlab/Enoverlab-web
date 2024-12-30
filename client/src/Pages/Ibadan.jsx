@@ -19,6 +19,9 @@ const Ibadan = () => {
       setLoading(false)
     },4000)
   },[])
+  useEffect(()=>{
+    document.body.classList.remove('bodyStiff')
+  },[loading])
   return (
     <div>
         {loading ? <LoadingScreen2/> :

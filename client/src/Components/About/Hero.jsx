@@ -3,7 +3,12 @@ import styled from 'styled-components'
 import metric1 from "../../assets/icon/metric1.svg"
 import metric2 from "../../assets/icon/metric2.svg"
 import metric3 from "../../assets/icon/metric3.svg"
+import { useEffect, useRef } from 'react'
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
+gsap.registerPlugin(useGSAP);
 const Hero = () => {
   return (
     <StyledHero>
@@ -21,17 +26,23 @@ const Hero = () => {
       <div className='metrics'>
         <div className="part part1">
           <img src={metric1} alt="" />
-          <h4>700+</h4>
+          <div>
+            <AnimatedNumber endValue={800} symbol='+' />
+          </div>
           <p>Product Managers trained</p>
         </div>
         <div className="part part2">
           <img src={metric2} alt="" />
-          <h4>20,000+</h4>
+          <div>
+          <AnimatedNumber endValue={20000} symbol='+' />
+          </div>
           <p>Community Members</p>
         </div>
         <div className="part part3">
           <img src={metric3} alt="" />
-          <h4>70%</h4>
+          <div>
+          <AnimatedNumber endValue={70} symbol='%' />
+          </div>
           <p>Alumni working in 20 countries</p>
         </div>
       </div>
@@ -83,11 +94,6 @@ const StyledHero = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      h4{
-        color: #003AD4;
-        font-size: 2.8rem;
-        font-weight: 700;
-      }
       p{
         color: #3D3D3D;
         font-size: 1.6rem;
@@ -121,5 +127,56 @@ const StyledHero = styled.div`
       right: 20%;
       bottom: -250px;
     }
+  }
+`
+
+const AnimatedNumber = ({endValue, symbol})=>{
+  const numberRef = useRef(null)
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const element = numberRef.current;
+    const animateNumber = () => {
+      gsap.fromTo(
+        element,
+        { innerText: 0 },
+        {
+          innerText: endValue,
+          duration: 2,
+          ease: "power3.out",
+          snap: { innerText: 1 },
+          onUpdate: function () {
+            let value = Math.round(element.innerText)
+            element.innerHTML = value.toLocaleString();
+          },
+        }
+      );
+    };
+    ScrollTrigger.create({
+      trigger: element,
+      start: "top bottom",
+      onEnter: animateNumber,
+      onEnterBack: animateNumber,
+    });
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, [endValue]);
+  return(<StyledAnimated>
+    <h4 ref={numberRef}>
+      0
+    </h4>
+    <span>
+      {symbol}
+    </span>
+  </StyledAnimated>)
+}
+
+const StyledAnimated =styled.div`
+  h4,span{
+    display: inline-flex;
+    color: #003AD4;
+    font-size: 2.8rem;
+    font-weight: 700;
   }
 `

@@ -4,6 +4,8 @@ import circle2 from "../../assets/icon/about/circle2.png"
 import deskcircle2 from "../../assets/icon/about/deskcircle2.png"
 import circles from "../../assets/icon/circles.png"
 const Empowering = () => {
+
+
   return (
     <StyledEmpowering>
       <section className="toppy">
@@ -64,9 +66,10 @@ const StyledEmpowering = styled.div`
           align-items: center;
           justify-content: center;
           width: 100%;
-          font-size: 4.8rem;
+          
           h4{
             width: 49rem;
+            font-size: 4.8rem;
           }
         }
       }
