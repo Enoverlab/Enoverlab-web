@@ -42,7 +42,8 @@ function App() {
     AOS.init({
     duration: 1000, // Global animation duration
     once: false, // Only once animation
-    });
+    })
+    document.body.classList.remove('bodyStiff')
   }, []);
   const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap');
