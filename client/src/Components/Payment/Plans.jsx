@@ -27,6 +27,21 @@ const Plans = () => {
             case "Lekki-Weekend":
             setLocationDetails(centerDetails['Lekki-Weekend'])
             break;
+            case "Lekki-Weekday":
+            setLocationDetails(centerDetails['Lekki-Weekday'])
+            break;
+            case "Ikeja-Weekend":
+            setLocationDetails(centerDetails['Ikeja-Weekend'])
+            break;
+            case "Ikeja-Weekday":
+            setLocationDetails(centerDetails['Ikeja-Weekday'])
+            break;
+            case "Abuja":
+            setLocationDetails(centerDetails['Abuja'])
+            break;
+            case "Ibadan":
+            setLocationDetails(centerDetails['Ibadan'])
+            break;
             default:
             setLocationDetails({
                 paystackSubLinks : {
@@ -128,6 +143,11 @@ const Plans = () => {
             <select name="" id="" onChange={handleLocationChange} value={location} onBlur={handleBlur}>
                 <option value="">Select a Location</option>
                 <option value="Lekki-Weekend">LEKKI-WEEKEND</option>
+                <option value="Lekki-Weekday">LEKKI-WEEKDAY</option>
+                <option value="Ibadan">IBADAN</option>
+                <option value="Abuja">ABUJA</option>
+                <option value="Ikeja-Weekday">IKEJA-WEEKDAY</option>
+                <option value="Ikeja-Weekend">IKEJA-WEEKEND</option>
             </select>
             {isError && <h6 className="err">Please select Your Preferred Location</h6>}
 

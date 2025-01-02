@@ -129,7 +129,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks18} alt="18 weeks" />
                 </div>
-                <form className="cover" onSubmit={(e)=>{e.preventDefault()}}>
+                <form className="cover" method="get" action="/payments">
                   <main>
                     <div  className="item">
                       <div >
@@ -188,9 +188,7 @@ const StandardProgram = () => {
                     
                   </main>
                   <div className="cta">
-                      <SubmitButton Text="Enroll Now"  handleClick={()=>{
-                        handleOpenEnrolModal('Online Instructor Led')
-                      }}/>
+                      <SubmitButton Text="Enroll Now" />
                       <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
@@ -228,7 +226,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={trainingLocation.weekIcon} alt="20 weeks" />
                 </div>
-                <form onSubmit={handleSubmit}  action={trainingLocation.link} target="_blank" className="cover2">
+                <form onSubmit={handleSubmit}  action='/payments' className="cover2">
                   <main>
                     <div className="item">
                       <div>
