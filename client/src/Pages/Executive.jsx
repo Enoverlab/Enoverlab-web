@@ -14,6 +14,9 @@ import LoadingScreen2 from '../Components/LoadingScreen2'
 const Executive = () => {
   const [loading, setLoading] = useState(true)
   useEffect(()=>{
+    document.body.classList.remove('bodyStiff')
+  },[loading])
+  useEffect(()=>{
     setTimeout(()=>{
       setLoading(false)
     },4000)
