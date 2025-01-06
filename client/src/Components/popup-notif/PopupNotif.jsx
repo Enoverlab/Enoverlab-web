@@ -61,10 +61,7 @@ const PopupNotif = () => {
             </header>
             <main>
                 <p>
-                Due to the increase in operational cost of delivering an incredible learning experience to you, the price of all our programs will be increased by <span>January 1, 2025</span>.
-                </p>
-                <p>
-                If you want to sign up for the classes in January, we advise that you make payment on or before <span>December 31, 2024</span>, so you can pay based on the current price.
+                Due to the increase in operational cost of delivering an incredible learning experience to you, the price of all our programs has been increased by <span>January 1, 2025</span>.
                 </p>
                 <p>
                 Thank you for your understanding!
