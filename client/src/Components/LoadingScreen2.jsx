@@ -1,15 +1,10 @@
-import React, { useRef } from 'react'
 import styled, { keyframes } from 'styled-components'
 import dbg from "../assets/icon/Dbg.png"
 import {useState, useEffect} from "react"
-import enovlogo from "../assets/hatc.png"
+import enovlogo from "../assets/enovLogo.png"
 
 const LoadingScreen2 = () => {
   const [text, setText] = useState("")
-  const containerRef = useRef()
-  document.body.classList.add('bodyStiff')
-  document.body.classList.add('bodyStiff2')
-  
   useEffect(()=>{
     let knows = ["Enoverlab is accredited by the American Council of Training and Development?", "A skilled Product Manager can increase a company's profit by 34.2%", "The focus of product management is to deliver value to customers. The end result of product management is to drive up business value for organisations.", 'Our mission at Enoverlab is to "Build impactful product talents like you for today, tomorrow, and the future"', 'Enoverlab vision is to "Transform Africa One Talent at a time"', 'You can earn between N20,000,000 - N50,000,000 in base salary over the next 36 months as a Skilled Product Manager'
   ]
@@ -18,7 +13,7 @@ const LoadingScreen2 = () => {
   setText(knows[randomValue])
   },[])
   return (
-    <div className="docu" id='docu' ref={containerRef}>
+    <div className="docu" id='docu'>
       <StyledLoadingScreen>
 
         <div className='content'>
