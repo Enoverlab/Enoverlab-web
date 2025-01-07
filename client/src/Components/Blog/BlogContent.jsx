@@ -23,6 +23,7 @@ import blogImg17 from '../../assets/blog/blogImage17.jpg'
 import blogImg18 from '../../assets/blog/blogImage18.jpg'
 import blogImg19 from '../../assets/blog/blogImage19.jpg'
 import blogImg20 from '../../assets/blog/blogImage20.png'
+import blogImg21 from '../../assets/blog/blogImage21.jpg'
 
 export const Article = [
     {
@@ -627,5 +628,19 @@ export const Article = [
         date: "Nov 20,2024",
         category: "Interview",
         authorName: "Oluwafunmilayo",
+    },
+    {
+        id: 21,
+        title: "2025 Salary Expectations for Product Managers in Nigeria",
+        content1:"As we look ahead to 2025, the role of Product Managers in Nigeria continues to evolve, offering rewarding career opportunities. However, compensation varies widely depending on factors such as experience, skills, and the organization itself. For those just starting out, entry-level Product Managers (with less than a year of experience) typically earn between ₦100,000 and ₦300,000 per month. These salaries can increase as professionals gain experience and expertise.",
+        content4:"Mid-level Product Managers, who have between one and four years of experience, usually earn between ₦300,000 and ₦600,000 per month. The increase in salary is reflective of the skills and responsibilities acquired over time, as well as the ability to manage more complex products or teams.",
+        content5:"For Senior-level Product Managers with over five years of experience, monthly salaries generally start at ₦700,000 and can exceed ₦900,000, depending on the company and the individual’s track record. Senior professionals typically manage larger, more strategic initiatives and bring significant experience to the table, which is reflected in their compensation.",
+        content6:"These salary figures represent averages and do not include additional benefits, such as allowances for work equipment, internet, health insurance (HMO), paid leave, stock options, or equity, which are often part of the compensation package. Several factors influence salary ranges, including individual skills, successful product launches, and negotiation abilities. The size and financial health of the company also play an important role in determining pay.",
+        content7:"It’s important to note that while some entry-level Product Managers may earn above ₦300,000 and mid-level professionals can make over ₦600,000, Senior Product Managers with over five years of experience are often compensated above ₦900,000. These variations emphasize the importance of experience, expertise, and the specifics of each role and organization. The figures provided are based on companies operating in Nigeria and may differ for international organizations.",
+        cardImg: blogImg21,
+        thumbImg: thumbnail10,
+        date: "Jan 6th,2025",
+        category: "Salary",
+        authorName: "Oladimeji",
     },
 ]

@@ -130,11 +130,12 @@ const StyledPaginated = styled.div`
     font-size: 1.6rem;
     font-weight: 600;
     color: #0000FF;
+    border-radius: 10px;
   }
   .active{
     border: 0.1rem solid blue;
     border-radius: 10px;
-    padding: 0 6px;
+    padding: 0px;
   }
   .disabledbutton{
     font-weight : 400;
