@@ -8,11 +8,14 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   scroll-behavior: smooth;
 }
+body,html{
+  overflow-x: hidden
+}
 
 
 
 .bodyStiff {
-	margin: 0; height: 100%; overflow: hidden
+	margin: 0; height: 100%; overflow: hidden;
 }
 .bodyStiff2 {
 overflow-x: hidden
