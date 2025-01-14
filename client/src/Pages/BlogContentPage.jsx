@@ -98,6 +98,16 @@ const BlogContentPage = () => {
             </LI>
           ))}
         </ul>
+        <ul className="briefList">
+          {
+            article[0]?.briefList.map(item => (<li>
+              <span>
+                {item?.topic}
+              </span>
+                {item?.content}
+            </li>))
+          }
+        </ul>
       </div>
       
       <P
@@ -296,7 +306,15 @@ const StyledBlogContent = styled.div`
           }
         }
       }
-      
+    }
+    .briefList {
+      list-style: disc;
+      @media (min-width: 1024px) {
+        font-size: 1.4rem;
+        span{
+          font-size: 1.6rem;
+        }
+      }
     }
   }
   .share-container{

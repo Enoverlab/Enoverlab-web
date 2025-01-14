@@ -643,4 +643,44 @@ export const Article = [
         category: "Salary",
         authorName: "Oladimeji",
     },
+    {
+        id: 22,
+        title: "Where to learn Product Management Physically / Onsite",
+        content1: "Enoverlab is the only professional Product Management Institute in Nigeria where you can learn product management onsite or in-person.",
+        content2 : "With training centres across major cities in Nigeria and in Nairobi, Kenya, Enoverlab brings the learning and development close to you.",
+        subtopic : 'Here are Enoverlab’s physical learning centers across Nigeria and Africa;',
+        briefList:[
+            {
+                topic : 'Lekki, Lagos, Nigeria: ',
+                content : 'Our headquarters, equipped with state-of-the-art facilities, offers a vibrant learning environment.'
+            },
+            {
+                topic : 'Ikeja, Lagos, Nigeria: ',
+                content : 'Centrally located, this centre caters to students seeking a convenient Lagos location.'
+            },
+            {
+                topic : 'Ibadan, Oyo State, Nigeria: ',
+                content : 'A key training hub for students in southwestern Nigeria.'
+            },
+            {
+                topic : 'Wuse 2, Abuja, Nigeria: ',
+                content : 'Providing high-quality training for students in the northern and central regions of Nigeria.'
+            },
+            {
+                topic : 'Awka, Anambra, Nigeria: ',
+                content : 'Serving the southeastern region, it is ideal for students from nearby states.'
+            },
+            {
+                topic : 'Nairobi, Kenya: ',
+                content : 'Our East African centre, offering world-class training to aspiring product managers.'
+            },
+        ],
+        content8:"Ready to Transform Your Career? Join Enoverlab Today! Enrol now at enoverlab.com and take the first step towards becoming a skilled product manager. Learn, connect, and grow with Enoverlab—where we empower talents to transform Africa, one product manager at a time.",
+        cardImg: blogImg20,
+        thumbImg: thumbnail9,
+        date: "Jan 14th,2024",
+        category: "Learning",
+        authorName: "Oluwafunmilayo",
+    },
+
 ]
