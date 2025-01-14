@@ -24,6 +24,7 @@ import blogImg18 from '../../assets/blog/blogImage18.jpg'
 import blogImg19 from '../../assets/blog/blogImage19.jpg'
 import blogImg20 from '../../assets/blog/blogImage20.png'
 import blogImg21 from '../../assets/blog/blogImage21.jpg'
+import blogImg22 from '../../assets/blog/blogImage22.jpg'
 
 export const Article = [
     {
@@ -676,7 +677,7 @@ export const Article = [
             },
         ],
         content8:"Ready to Transform Your Career? Join Enoverlab Today! Enrol now at enoverlab.com and take the first step towards becoming a skilled product manager. Learn, connect, and grow with Enoverlab—where we empower talents to transform Africa, one product manager at a time.",
-        cardImg: blogImg20,
+        cardImg: blogImg22,
         thumbImg: thumbnail9,
         date: "Jan 14th,2024",
         category: "Learning",
