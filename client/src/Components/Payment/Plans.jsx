@@ -42,6 +42,9 @@ const Plans = () => {
             case "Ibadan":
             setLocationDetails(centerDetails['Ibadan'])
             break;
+            case "Anambra":
+            setLocationDetails(centerDetails['Anambra'])
+            break;
             default:
             setLocationDetails({
                 paystackSubLinks : {
@@ -146,6 +149,7 @@ const Plans = () => {
                 <option value="Lekki-Weekday">LEKKI-WEEKDAY</option>
                 <option value="Ibadan">IBADAN</option>
                 <option value="Abuja">ABUJA</option>
+                <option value="Anambra">ANAMBRA</option>
                 <option value="Ikeja-Weekday">IKEJA-WEEKDAY</option>
                 <option value="Ikeja-Weekend">IKEJA-WEEKEND</option>
             </select>
