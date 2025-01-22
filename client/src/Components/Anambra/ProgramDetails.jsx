@@ -10,7 +10,7 @@ import { useContext } from 'react'
 import { CenterContext } from '../../context/CenterContext'
 
 const ProgramDetails = () => {
-  const AnambraDetails = useContext(CenterContext).Abuja
+  const AnambraDetails = useContext(CenterContext).Anambra
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
