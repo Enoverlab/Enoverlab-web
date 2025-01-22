@@ -100,6 +100,7 @@ const BlogContentPage = () => {
         </ul>
         <ul className="briefList">
           {
+            article[0].briefList &&
             article[0]?.briefList.map(item => (<li>
               <span>
                 {item?.topic}
