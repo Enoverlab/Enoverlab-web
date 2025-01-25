@@ -16,7 +16,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Executive from "./Pages/Executive";
 import Sales from "./Pages/Sales";
-import Exclusive from "./Pages/Exclusive";
 import ProgramsAd from './Pages/ProgramsAd'
 import Upskill from './Pages/Upskill'
 import PMP from './Pages/PMP'
@@ -96,7 +95,6 @@ function App() {
         <Route path='/contactus' element={<ContactUs/>} />
         <Route path='/temp/careerfair' element={<Career/>} />
         <Route path="/technicalpm" element={<Technical/>} />
-        <Route path="/exclusive" element={<Exclusive/>} />
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />
         <Route path="/projectmanagement" element={<PMP/>} />
