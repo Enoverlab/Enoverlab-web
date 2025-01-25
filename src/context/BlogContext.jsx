@@ -27,10 +27,9 @@ export const BlogContextProvider = ({children})=>{
             setLoading(true);
             try {
             const response = await axios.get(
-                `api/v1/getallblogs?search=${query}&page=${pageNumber}&limit=${10}`
+              `api/v1/getallblogs?search=${query}&page=${pageNumber}&limit=${10}`
             );
             const data = await response.data;
-            console.log(data)
             setBlogData(data.blogs);
             setTotalPages(data.pagination.totalPages);
             } catch (error) {
