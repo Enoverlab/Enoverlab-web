@@ -7,13 +7,15 @@ permissions:
   checks: write
   contents: read
   pull-requests: write
+env:
+  REACT_APP_APIBASE_URL : ${{ secrets.REACT_APP_APIBASE_URL }}
 jobs:
   build_and_preview:
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cd client && yarn --frozen-lockfile && yarn build
+      - run: yarn --frozen-lockfile && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
