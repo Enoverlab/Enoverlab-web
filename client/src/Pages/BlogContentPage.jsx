@@ -1,7 +1,6 @@
-import React from "react";
-import { Article } from "../Components/Blog/BlogContent";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { P, H4, H1, LI } from "../Utils/styled/Typograpyhy";
+import { P, H1 } from "../Utils/styled/Typograpyhy";
 import styled from "styled-components";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
@@ -20,12 +19,24 @@ import {
   LinkedinShareButton,
   LinkedinIcon,
 } from 'react-share'
+import axios from "axios";
 const BlogContentPage = () => {
   const { id } = useParams();
   const shareUrl = `https://www.enoverlab.com/blog/${id}`;
-  // display content
-  const article = Article.filter((item) => item.id === parseInt(id));
-  console.log(article);
+  const [details, setDetails] = useState({})
+  useEffect(()=>{
+    const getDetails = async()=>{
+      try {
+        const response = await axios.get(`/api/v1/getblogDetails?blogId=${id}`)
+        setDetails(response.data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    getDetails()
+    
+  },[id])
+
   return (
     <>
     <Header  bgColor="#FFFFFF" bgColorMobile="#F5FCFF"/>
@@ -36,12 +47,6 @@ const BlogContentPage = () => {
       <div className="icon-container">
       <BsArrowLeftCircle className="icon"/>
       </div>
-   
-    {/* <div className="text">
-      <p>
-        Back
-      </p>
-    </div> */}
     </div>
     </Link>
     </BackIcon>
@@ -49,7 +54,7 @@ const BlogContentPage = () => {
    
     <ImageContainer>
       <div className="img-container">
-        <img src={article[0]?.cardImg} alt="blog page" />
+        <img src={details?.image} alt="blog page" />
       </div>
     </ImageContainer>
     <StyledBlogContent>
@@ -61,179 +66,12 @@ const BlogContentPage = () => {
         lineHeight="3.881875rem"
         mobileFontSize="2rem"
       >
-        {article[0]?.title}{" "}
+        {details?.title}{" "}
       </H1>
      </div>
-     
-      <P textAlign="left" fontSize="1.125rem" color="#4B4B4B" lineHeight="1.9rem">
-        {article[0]?.content1}
-      </P>
-      <P textAlign="left" fontSize="1.125rem" color="#4B4B4B" lineHeight="1.9rem">
-        {article[0]?.content2}
-      </P>
-      <H4 textAlign="left" color="#0F2A65">{article[0]?.subtopic}</H4>
-      <div className="contentList">
-        <ul>
-          {article[0]?.contentList?.map((item, idx) => (
-            <LI
-            tA="left"
-            fs="1.125rem"
-            color="#4B4B4B"
-            lineHeight="1.9rem"
-            key={idx}
-            ><span>{item.contentHeading}</span> <p>{item?.content}</p>
-            <ul>
-              {
-                item.list &&
-                item.list.map((sub, idx)=> (
-                  <li>
-                    <span>
-                      {sub?.topic}
-                    </span>
-                      {sub?.content}
-                  </li>
-                ))
-              }
-            </ul>
-            </LI>
-          ))}
-        </ul>
-        <ul className="briefList">
-          {
-            article[0].briefList &&
-            article[0]?.briefList.map(item => (<li>
-              <span>
-                {item?.topic}
-              </span>
-                {item?.content}
-            </li>))
-          }
-        </ul>
-      </div>
-      
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight={"1.6875em"}
-      
-      >
-        {article[0]?.content3}
-      </P>
-      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead1}</H4>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight="1.9rem"
-       
-      >
-        <span>
-          {article[0]?.contentbold1}
-        </span>
-        {article[0]?.content4}
-      </P>
-      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead2}</H4>
-      <P
-        textAlign="left"
-        fs="1.125rem"
-        color="#4B4B4B"
-        lineHeight="1.9rem"
-      >
-        <span>
-          {article[0]?.contentbold2}
-        </span>
-        {article[0]?.content5}
-      </P>
-      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead3}</H4>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight="1.9rem"
-        
-      >
-        <span>
-          {article[0]?.contentbold3}
-        </span>
-        {article[0]?.content6}
-      </P>
-      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead4}</H4>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight="1.9rem"
-      
-      >
-        <span>
-          {article[0]?.contentbold4}
-        </span>
-        {article[0]?.content7}
-      </P>
-      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead5}</H4>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight={"1.9rem"}
-      >
-        <span>
-          {article[0]?.contentbold5}
-        </span>
-        {article[0]?.content8}
-      </P>
-      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead6}</H4>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight={"1.9rem"}
-      >
-        <span>
-          {article[0]?.contentbold6}
-        </span>
-        {article[0]?.contentextra9}
-      </P>
-      <H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead7}</H4>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight={"1.9rem"}
-      >
-        <span>
-          {article[0]?.contentbold7}
-        </span>
-        {article[0]?.contentextra10}
-      </P><H4 textAlign="left" color="#0F2A65">{article[0]?.contenthead8}</H4>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight={"1.9rem"}
-      >
-        <span>
-          {article[0]?.contentbold8}
-        </span>
-        {article[0]?.contentextra11}
-      </P>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight={"1.9rem"}
-      >
-        {article[0]?.content9}
-      </P>
-      <P
-        textAlign="left"
-        fontSize="1.125rem"
-        color="#4B4B4B"
-        lineHeight={"1.9rem"}
-      >
-        {article[0]?.content10}
-      </P>
+     <div dangerouslySetInnerHTML={ {__html: details?.content}}>
+
+     </div>
       
       
       <P
@@ -248,19 +86,19 @@ const BlogContentPage = () => {
       </P>
 
       <div className="share-container">
-      <FacebookShareButton url={shareUrl} quote={article[0]?.title}>
+      <FacebookShareButton url={shareUrl} quote={details.title}>
         <FacebookIcon size={32} round={true} />
       </FacebookShareButton>
-      <TwitterShareButton url={shareUrl} title={article[0]?.title}>
+      <TwitterShareButton url={shareUrl} title={details.title}>
         <TwitterIcon size={32} round={true} />
       </TwitterShareButton>
-      <WhatsappShareButton url={shareUrl} title={article[0]?.title}>
+      <WhatsappShareButton url={shareUrl} title={details.title}>
         <WhatsappIcon size={32} round={true} />
       </WhatsappShareButton>
-      <EmailShareButton url={shareUrl} subject={article[0]?.title}>
+      <EmailShareButton url={shareUrl} subject={details.title}>
         <EmailIcon size={32} round={true} />
       </EmailShareButton>
-      <LinkedinShareButton url={shareUrl} title={article[0]?.title}>
+      <LinkedinShareButton url={shareUrl} title={details.title}>
         <LinkedinIcon size={32} round={true} />
       </LinkedinShareButton>
      </div>
@@ -291,32 +129,6 @@ const StyledBlogContent = styled.div`
   }
   span{
     font-weight: 800;
-  }
-  .contentList {
-    margin-bottom: 1.75rem;
-    ul {
-      list-style: number;
-      margin-left: 1.5rem;
-      li {
-        margin-bottom: 1rem;
-        ul{
-          list-style: disc;
-          margin-top : 1rem;
-          span{
-            margin-right : 1rem;
-          }
-        }
-      }
-    }
-    .briefList {
-      list-style: disc;
-      @media (min-width: 1024px) {
-        font-size: 1.4rem;
-        span{
-          font-size: 1.6rem;
-        }
-      }
-    }
   }
   .share-container{
     display: flex;

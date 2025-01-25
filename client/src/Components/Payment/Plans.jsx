@@ -206,6 +206,21 @@ const Plans = () => {
 
         </div>
       </section>
+      <section className="otherOptions">
+        <h2>
+        Manual Payment Option
+        </h2>
+        <div className="breakdown">
+            <p className="heading">
+            Transfer the training fee to the account below and send a screenshot of the receipt to enoverlab@gmail.com.
+            </p>
+            <div className="details">
+                <p>Account Name: <span>Enoverlab Limited</span></p>
+                <p>Account Number: <span>6103976307</span></p>
+                <p>Bank: <span>Wema Bank</span></p>
+            </div>
+        </div>
+      </section>
     </StyledPlans>
   )
 }
@@ -290,6 +305,24 @@ const StyledPlans = styled.div`
         align-items: center;
         margin-top: 2.4rem;
     }
+    .otherOptions {
+        color: #3D3D3D;
+        margin-bottom: 2rem;
+        div.breakdown {
+            background-color: #E3F5F9;
+            padding: 1rem;
+            border-radius : 0.7rem;
+            font-size: 3.72vw;
+            p.heading {
+                line-height: 7vw;
+                margin-bottom: 3rem;
+            }
+            span {
+                font-weight: 700;
+            }
+
+        }
+    }
     
     @media (min-width: 1024px) {
         padding: 0rem 6.32vw;
@@ -353,6 +386,24 @@ const StyledPlans = styled.div`
         .cta{
             margin-top: 0.55rem;
             justify-content: end;
-        } 
+        }
+        .otherOptions {
+        h2{
+            font-size: 3.9rem;
+        }
+        div.breakdown {
+            font-size: 1.65vw;
+            padding: 3rem 10rem;
+            p.heading {
+                line-height: 3vw;
+                margin-bottom: 3rem;
+            }
+            span {
+                font-weight: 700;
+            }
+
+        }
+    }
+        
     }
 `
