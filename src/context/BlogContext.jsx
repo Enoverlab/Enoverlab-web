@@ -2,16 +2,16 @@ import { createContext, useContext, useEffect, useState } from "react";
 import axios from 'axios'
 
 const blogType = [
-    {
-        title : '',
-        content : '',
-        image : '',
-        tag : '',
-        author : {
-            name : '',
-            image : ''
-        }
+  {
+    title : '',
+    content : '',
+    image : '',
+    tag : '',
+    author : {
+        name : '',
+        image : ''
     }
+  }
 ]
 export const BlogContext = createContext({}) 
 
@@ -23,22 +23,22 @@ export const BlogContextProvider = ({children})=>{
     const [loading, setLoading] = useState(false)
 
     useEffect(()=>{
-        const getBlogs = async(pageNumber)=>{
-            setLoading(true);
-            try {
-            const response = await axios.get(
-              `api/v1/getallblogs?search=${query}&page=${pageNumber}&limit=${10}`
-            );
-            const data = await response.data;
-            setBlogData(data.blogs);
-            setTotalPages(data.pagination.totalPages);
-            } catch (error) {
-            console.error('Failed to fetch blogs:', error);
-            } finally {
-            setLoading(false);
-            }
-        }
-        getBlogs(currentPage)
+      const getBlogs = async(pageNumber)=>{
+          setLoading(true);
+          try {
+          const response = await axios.get(
+            `api/v1/getallblogs?search=${query}&page=${pageNumber}&limit=${10}`
+          );
+          const data = await response.data;
+          setBlogData(data.blogs);
+          setTotalPages(data.pagination.totalPages);
+          } catch (error) {
+          console.error('Failed to fetch blogs:', error);
+          } finally {
+          setLoading(false);
+          }
+      }
+      getBlogs(currentPage)
     },[currentPage, query])
     
 
