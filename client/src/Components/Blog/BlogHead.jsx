@@ -4,8 +4,10 @@ import {theme} from '../../Utils/Theme'
 import blogHead from '../../assets/blogHeaderBg.svg'
 import { H1 } from '../../Utils/styled/Typograpyhy'
 import { FiSearch } from 'react-icons/fi'
+import { useBlog } from '../../context/BlogContext'
 
 const BlogHead = () => {
+    const tools = useBlog()
   return (
     <StyledBlogHead>
              <div className="blog-head-container">
@@ -24,7 +26,9 @@ const BlogHead = () => {
                  <div className="searchbar-container">
                  <div className="searchbar">
                         <FiSearch className="search-icon"/>
-                        <input type="text" placeholder="Search"/>
+                        <input type="text" placeholder="Search" value={tools.query} onChange={(e)=>{
+                            tools.setQuery(e.target.value)
+                        }}/>
                     </div>
                  </div>
                 </div>

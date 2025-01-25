@@ -37,6 +37,8 @@ import Technical from "./Pages/Technical";
 import Career from "./Pages/Career";
 import ContactUs from "./Pages/ContactUs";
 import Payment from "./Pages/Payment";
+import axios from "axios";
+axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 function App() {
   useEffect(() => {
     AOS.init({
