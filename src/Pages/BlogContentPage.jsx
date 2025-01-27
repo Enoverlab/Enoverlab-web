@@ -69,7 +69,7 @@ const BlogContentPage = () => {
         {details?.title}{" "}
       </H1>
      </div>
-     <div dangerouslySetInnerHTML={ {__html: details?.content}}>
+     <div className="mainContent" dangerouslySetInnerHTML={ {__html: details?.content}}>
 
      </div>
       
@@ -115,6 +115,15 @@ const StyledBlogContent = styled.div`
   
   @media (max-width: 768px) {
     padding: 2rem 10%;
+  }
+  .mainContent{
+    font-size: 3.7vw;
+    @media (min-width: 700px) {
+      font-size: 2.2vw;
+    }
+    @media (min-width: 1024px) {
+      font-size: 1.5vw;
+    }
   }
   .head-container {
     margin-bottom: 2.375rem;
