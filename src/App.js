@@ -37,6 +37,8 @@ import Career from "./Pages/Career";
 import ContactUs from "./Pages/ContactUs";
 import Payment from "./Pages/Payment";
 import axios from "axios";
+import { BlogContextProvider } from "./context/BlogContext";
+import { ToastContainer } from "react-toastify";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 function App() {
   useEffect(() => {
@@ -45,7 +47,7 @@ function App() {
     once: false, // Only once animation
     })
     document.body.classList.remove('bodyStiff')
-  }, []);
+  },[]);
   useEffect(()=>{
     document.body.classList.remove('bodyStiff')
   },[])
@@ -70,12 +72,17 @@ function App() {
   return (
     <ChakraProvider>
     <ThemeProvider theme={theme}>
+    <ToastContainer/>
       <GlobalStyle />
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/programs" element={<Pricing />} />
         <Route path="/aipmp" element={<AI/>} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog" element={
+          <BlogContextProvider>
+            <Blog />
+          </BlogContextProvider>
+        }/>
         <Route path="/about" element={<About />} />
         <Route path="/blog/:id" element={<BlogContentPage />} />
         <Route path="/payments" element={<Payment />} />

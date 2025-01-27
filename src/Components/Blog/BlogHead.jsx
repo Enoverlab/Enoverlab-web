@@ -10,29 +10,29 @@ const BlogHead = () => {
     const tools = useBlog()
   return (
     <StyledBlogHead>
-             <div className="blog-head-container">
-                <div className="blog-head-container-back">
-                </div>
-                <div className="blog-head-container-front">
-                    <div className="blog-head-container-front-text">
-                    <H1 
-                    mobileFontSize="2.5rem"
-                    fontSize="4rem"
-                    fontWeight={300}>
-                            Product Blog
-                    </H1>
-                    </div>
-
-                 <div className="searchbar-container">
-                 <div className="searchbar">
-                        <FiSearch className="search-icon"/>
-                        <input type="text" placeholder="Search" value={tools.query} onChange={(e)=>{
-                            tools.setQuery(e.target.value)
-                        }}/>
-                    </div>
-                 </div>
-                </div>
+        <div className="blog-head-container">
+        <div className="blog-head-container-back">
+        </div>
+        <div className="blog-head-container-front">
+            <div className="blog-head-container-front-text">
+            <H1 
+            mobileFontSize="2.5rem"
+            fontSize="4rem"
+            fontWeight={300}>
+                Product Blog
+            </H1>
             </div>
+
+            <div className="searchbar-container">
+            <div className="searchbar">
+                <FiSearch className="search-icon"/>
+                <input type="text" placeholder="Search" value={tools.query} onChange={(e)=>{
+                    tools.setQuery(e.target.value)
+                }}/>
+            </div>
+            </div>
+        </div>
+        </div>
     </StyledBlogHead>
   )
 }

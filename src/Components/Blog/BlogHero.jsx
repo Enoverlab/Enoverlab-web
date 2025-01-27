@@ -5,10 +5,10 @@ import { useBlog } from '../../context/BlogContext'
 
 const BlogHero = ({articles}) => {
   return (
-    <StyledBlogHero>
+    <StyledBlogHero >
       <div className="blog-hero-container">
         <div className="blog-card-grid">
-          {articles &&
+          {(articles.length > 0) &&
             articles.map((item) => {
               return (
                 <BlogCard
@@ -25,7 +25,10 @@ const BlogHero = ({articles}) => {
               )
             })
           }
-        </div> 
+        </div>
+        {articles.length === 0 && <div className='noResult'>
+          <p>No Blogs Found</p>
+        </div>}
       </div>
     </StyledBlogHero>
   )
@@ -53,6 +56,15 @@ const StyledBlogHero = styled.div`
 
     }
   }
+  .noResult {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    p{
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
 
 `
 
@@ -60,10 +72,10 @@ export function PaginatedItems() {
   const tools = useBlog()
   return (
     <StyledPaginated>
-      <BlogHero articles={tools.blogData} />
-      <div className='mainy'>
-        {tools.renderPagination()}
-      </div>
+      <BlogHero articles={tools.blogData}/>
+        <div className='mainy'>
+          {tools.renderPagination()}
+        </div>
     </StyledPaginated>
   );
 }

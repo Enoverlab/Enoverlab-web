@@ -1,22 +1,23 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import axios from 'axios'
+import { toast } from "react-toastify";
 
-const blogType = [
-  {
-    title : '',
-    content : '',
-    image : '',
-    tag : '',
-    author : {
-        name : '',
-        image : ''
-    }
-  }
-]
+// const blogType = [
+//   {
+//     title : '',
+//     content : '',
+//     image : '',
+//     tag : '',
+//     author : {
+//         name : '',
+//         image : ''
+//     }
+//   }
+// ]
 export const BlogContext = createContext({}) 
 
 export const BlogContextProvider = ({children})=>{
-    const [blogData, setBlogData] = useState(blogType)
+    const [blogData, setBlogData] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
     const [totalPages, setTotalPages] = useState(0)
     const [query, setQuery] = useState('')
@@ -34,8 +35,12 @@ export const BlogContextProvider = ({children})=>{
           setTotalPages(data.pagination.totalPages);
           } catch (error) {
           console.error('Failed to fetch blogs:', error);
+          toast.error('A network error occurred, try again later')
           } finally {
-          setLoading(false);
+            setTimeout(()=>{
+              setLoading(false);
+            },2000)
+          
           }
       }
       getBlogs(currentPage)
