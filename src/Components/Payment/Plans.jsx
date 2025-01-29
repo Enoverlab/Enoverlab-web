@@ -212,7 +212,7 @@ const Plans = () => {
         </h2>
         <div className="breakdown">
             <p className="heading">
-            Transfer the training fee to the account below and send a screenshot of the receipt to enoverlab@gmail.com.
+            Transfer your tuition fee to the account below and send the receipt of payment to enoverlab@gmail.com with your full name, gmail, WhatsApp no, and class you are signing up for.
             </p>
             <div className="details">
                 <p>Account Name: <span>Enoverlab Limited</span></p>
