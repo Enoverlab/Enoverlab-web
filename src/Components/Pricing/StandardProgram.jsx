@@ -129,7 +129,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks18} alt="18 weeks" />
                 </div>
-                <form className="cover" method="get" action="/payments">
+                <form className="cover" method="get" action="/payments/online">
                   <main>
                     <div  className="item">
                       <div >
@@ -226,7 +226,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={trainingLocation.weekIcon} alt="20 weeks" />
                 </div>
-                <form onSubmit={handleSubmit}  action='/payments' className="cover2">
+                <form onSubmit={handleSubmit}  action={`/payments/${location}`} className="cover2">
                   <main>
                     <div className="item">
                       <div>

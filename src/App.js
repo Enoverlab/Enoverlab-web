@@ -39,6 +39,7 @@ import Payment from "./Pages/Payment";
 import axios from "axios";
 import { BlogContextProvider } from "./context/BlogContext";
 import { ToastContainer } from "react-toastify";
+import RespectivePayment from "./Pages/RespectivePayments";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 function App() {
   useEffect(() => {
@@ -86,6 +87,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog/:id" element={<BlogContentPage />} />
         <Route path="/payments" element={<Payment />} />
+        <Route path="/payments/:id" element={<RespectivePayment />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/corporate" element={<Corporate />} />
         <Route path="/executive" element={<Executive/>} />

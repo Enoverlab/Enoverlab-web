@@ -198,6 +198,34 @@ export const CenterContext = createContext({
         mapIframe : '',
         startDate : "",
         discount : ''
+    },
+    Online : {
+        place : '',
+        location : '',
+        trainingDay : "",
+        classType : '',
+        trainingTime : "",
+        tuition : '',
+        weeks : "",
+        weekIcon : '',
+        link :  "",
+        paystackSubLinks : {
+            oneTime : {
+                link : '',
+                price : '',
+            },
+            twoTimes : {
+                link : '',
+                price : '',
+            } ,
+            threeTimes : {
+                link : '',
+                price : ''
+            } 
+        },
+        mapIframe : '',
+        startDate : "",
+        discount : ''
     }
 
 })
@@ -392,6 +420,22 @@ const centerDetails = {
         },
         mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
         startDate : "Feb 8, 2025",
+    },
+    Online : {
+        paystackSubLinks : {
+            oneTime : {
+                link : 'https://paystack.com/pay/ve2k2y9sst',
+                price : '₦310,000',
+            },
+            twoTimes : {
+                link : 'https://paystack.com/pay/rtszcd4qwq',
+                price : '₦155,000',
+            } ,
+            threeTimes : {
+                link : 'https://paystack.com/pay/odioim9y0n',
+                price : '₦103,333'
+            } 
+        },
     }
 }
 
