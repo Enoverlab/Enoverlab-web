@@ -40,10 +40,7 @@ const Guarantee = () => {
             <motion.li variants={listItem}> <img src={bullet} alt="" />Following the instructions of your trainers</motion.li>
           </motion.ul>
           <p>
-          You will get a Product Manager
-          job that will pay you between
-          <span> N200,000  - N500,000</span> within
-          the next 6 months. GUARANTEED!
+          You will definitely get a Product Manager job anywhere in the world, <span>regardless of your background</span>, education, or degree.
           </p>
         </section>
       </main>

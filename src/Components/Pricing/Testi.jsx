@@ -10,7 +10,7 @@ const Testimonials = () => {
         <div className="testimonials-container">
             <div className="testimonials-text-container">
                 <H3 mdfs="2.38vw" fs="5.60vw" mb="1rem" mdmb="4rem" color="var(--Body-Text)" tA="center" fw={700}>
-                What Our Alumni Say About Enoverlab
+                Hear what people like to say <br />about the training
                 </H3>
             </div>
          <>
