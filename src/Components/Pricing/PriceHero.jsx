@@ -51,7 +51,7 @@ const PriceHero = () => {
       <div className="price-hero-container">
         <div className="left-container">
           <section className="textContainer">
-          <H1
+          {/* <H1
             color="#131313"
             textAlign="left"
             mdfs="4rem"
@@ -61,16 +61,33 @@ const PriceHero = () => {
             pb="1rem"
           >
             Learn Product Management Skills in the next 3 months 
+          </H1> */}
+          <H1
+            color="#131313"
+            textAlign="left"
+            mdfs="3.5rem"
+            fs="5vw"
+            mdlh="5.8rem"
+            lh="3rem"
+            pb="1rem"
+          >
+            In 2024, our alumni's earned an average of N312,500 monthly 
           </H1>
           <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
-          Start earning between N200,000 - N500,000 within the next 6 months regardless of your educational background, technical know-how, <br /> or what you currently do.
+          Our top alumni's earned an average of N700,000+ monthly
+          </H4>
+          <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
+          Our International alumni's earned an average of $6,500 monthly
+          </H4>
+          <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
+          You can also earn this too if you start learning with Enoverlab today.
           </H4>
           </section>
           <div className="video-box">
           {
             isClicked ? (
               <>
-                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/rio-ntLkhSU" 
+                <iframe width="100%" height="696px" src="https://www.youtube.com/embed/BGUOtO0yLJM" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -301,6 +318,9 @@ const StyledPriceHero = styled.div`
       .textContainer{
         br{
           display: none;
+        }
+        h4{
+          margin-top: 1rem;
         }
       }
       @media (max-width: 768px) {
