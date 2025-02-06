@@ -66,8 +66,8 @@ const PriceHero = () => {
             color="#131313"
             textAlign="left"
             mdfs="3.5rem"
-            fs="5vw"
-            mdlh="5.8rem"
+            fs="5.3vw"
+            mdlh="5.9rem"
             lh="3rem"
             pb="1rem"
           >
