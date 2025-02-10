@@ -157,6 +157,10 @@ const standard = [
     linkName : 'Onsite Product Management',
     linkto : '/programs#onsite',
   },
+  {
+    linkName : 'Executive Coaching',
+    linkto : '/programs#executive',
+  },
 ]
 
 const advanced = [

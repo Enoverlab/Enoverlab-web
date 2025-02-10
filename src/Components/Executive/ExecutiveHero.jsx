@@ -14,9 +14,9 @@ const ExecutiveHero = () => {
                 <H4>Executive Coaching</H4>
                 {/* <img src={kenyanFlag} alt="Kenya's FLag" /> */}
             </div>
-            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Learn Advanced Product Management Skills in 10 days!
+            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Learn Advanced Product Management Skills in 4 weeks!
 </H1>
-            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Save 80 days of precious time and scale your career/business to the next level</H3>
+            <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Save 8 weeks of precious time and scale your career/business to the next level</H3>
             <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
         </section>
         <section className='rightContainer'>

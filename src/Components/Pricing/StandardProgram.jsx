@@ -8,10 +8,10 @@ import { Flex } from "../HomeComponents/ProductSection";
 import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks18 from "../../assets/icon/weeks18.png";
 import weeks20 from "../../assets/icon/20weeks.png";
-import weeks6 from "../../assets/icon/6weeks.png";
-import { OnsiteProgram, OnsiteProgramWeekday, PrivateCoaching, onlineProgram } from "../../constants";
+import weeks4 from "../../assets/icon/weeks4.svg";
+import { OnsiteProgram, OnsiteProgramWeekday, executiveProgram, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
-import { SubmitButton } from "../../Utils/styled/Buttons";
+import { SecondaryButtonA, SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
 import {useState, useEffect} from "react";
 import StandardForm from "../Enroll-Form/StandardForm";
@@ -70,9 +70,6 @@ const StandardProgram = () => {
     setLocation(e.target.value)
   }
 
-  function handleOpenEnrolModal(formtype , site = ''){
-    setEnrolModal({...enrolModal, open : true, formtype, site})
-  }
   function handleCloseEnrolModal(){
     setEnrolModal({...enrolModal, open : false})
   }
@@ -338,11 +335,11 @@ const StandardProgram = () => {
           <SwiperSlide>
             <Flex mdgap="5.9rem" display="block" mdalign="stretch">
               <div className="program">
-                <div className="heading" id="online">
+                <div className="heading" id="executive">
                   <H4 mdfs="2.3vw" fw="700">
-                    Private Coaching
+                    Executive Coaching
                   </H4>
-                  <img src={weeks6} alt="6weeks" />
+                  <img src={weeks4} alt="4weeks" />
                 </div>
                 <form className="cover" onSubmit={(e)=>{e.preventDefault()}}>
                   <main>
@@ -357,7 +354,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Any Day You <br /> Choose
+                          Monday - Friday
                         </H2>
                        </div>
                        <div>
@@ -370,7 +367,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Any Time You <br />Choose
+                          2 hours daily
                         </H2>
                        </div>
                         <div>
@@ -378,7 +375,7 @@ const StandardProgram = () => {
                           Duration
                         </H4>
                         <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                          6 weeks or less
+                          4 weeks
                         </H2>
                         </div>
                         <div>
@@ -391,17 +388,15 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦800,000
+                          ₦ 600,000
                         </H2>
                       </div>
                     </div>
                   </main>
                   <div className="cta">
-                      <SubmitButton Text="Enroll Now"  handleClick={()=>{
-                        handleOpenEnrolModal('Online Instructor Led')
-                      }}/>
-                      <Link to="/PrivateSyllabus.pdf" target="_blank" download='PrivateSyllabus.pdf' className="syll">
-                      Download Syllabus
+                    <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
+                    <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
+                    Download Syllabus
                     </Link>
                   </div>
                 </form>
@@ -411,7 +406,7 @@ const StandardProgram = () => {
                   Here Are The Benefits You Get
                 </H4>
                 <div className="list2">
-                  {PrivateCoaching.map((pg) => (
+                  {executiveProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
                       <P fs="3.6vw" mdfs="1.33vw" color="var(--Body-Text)">
@@ -421,7 +416,7 @@ const StandardProgram = () => {
                   ))}
                 </div>
                 <div className="but">
-                <Link to="/PrivateSyllabus.pdf" target="_blank" download='PrivateSyllabus.pdf' className="syll">
+                <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                   Download Syllabus
                 </Link>
                 </div>
@@ -550,7 +545,7 @@ const StyledProgram = styled.div`
       font-size: 1.2rem;
     }
     .programtext2::before {
-      content: "Private Coaching";
+      content: "Executive Coaching";
       font-size: 1.2rem;
     }
   }
@@ -680,7 +675,7 @@ const StyledProgram = styled.div`
       font-size: 1.6rem;
     }
     .programtext2::before {
-      content: "Private Coaching";
+      content: "Executive Coaching";
       font-size: 1.6rem;
     }
     }

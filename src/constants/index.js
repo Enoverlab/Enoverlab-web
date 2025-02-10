@@ -180,17 +180,14 @@ export const onlineProgram = [
 ];
 
 export const executiveProgram = [
-  "Introduction to Product management",
-  "Product Thinking",
-  "Conducting User Research",
-  "Understanding Product Life Cycle",
-  "User Segmentation & Personas",
-  "Writing User Stories",
-  "Creating Userflows, Prototypes & Wireframes",
-  "Agile Product Development",
-  "Minimum Viable Product",
-  "Product Roadmap",
-  "And so much more..."
+  "One-on-one coaching and mentorship ONLINE for 4 weeks",
+  "Flexible class time schedule",
+  `Guaranteed Product Manager Job recommendations`,
+  "Close support and guidance till you land a Product Manager role",
+  "International certification accredited by the American Council of Training and Development (ACTD)",
+  "Lifetime access to Product management resources",
+  "You get The Blood Money in Tech ebook for FREE",
+  "Personal recommendation from our CEO for job offers and VISA application "
 ];
 export const businessProgram = [
   "Product Thinking",

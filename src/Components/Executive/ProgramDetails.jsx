@@ -3,7 +3,7 @@ import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import {  executiveProgram} from '../../constants'
-import day10 from "../../assets/icon/day10.svg"
+import weeks4 from "../../assets/icon/weeks4.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
@@ -16,7 +16,7 @@ const ProgramDetails = () => {
                   <H4 mdfs="2.38vw" fw="700">
                   Executive Coaching
                   </H4>
-                  <img src={day10} alt="10 days" />
+                  <img src={weeks4} alt="10 days" />
                 </div>
                 <div className="cover2">
                   <main>
@@ -76,7 +76,7 @@ const ProgramDetails = () => {
                           mb="1rem"
                           color="var(--Body-Text)"
                         >
-                          10 days
+                          4 weeks
                         </H2>
                         </div>
                         <div>
@@ -89,7 +89,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦ 400,000
+                          ₦ 600,000
                         </H2>
                       </div>
                       </div>
