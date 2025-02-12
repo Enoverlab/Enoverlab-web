@@ -71,13 +71,13 @@ const PriceHero = () => {
             lh="3rem"
             pb="1rem"
           >
-            In 2024, our top alumni’s earned an average of N700,000 monthly 
+            In 2024, our top alumni’s earned an average of ₦700,000 - ₦1,500,000 monthly 
           </H1>
           <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
-          Our decent alumni’s earned an average of N312,500 monthly
+          Our decent alumni’s earned an average of ₦300,000 - ₦500,000 monthly
           </H4>
           <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
-          Our International alumni’s earned an average of $6,500 monthly
+          Our International alumni’s earned an average of $3,000 - $7,000 monthly
           </H4>
           <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
           You can also earn like this too if you start learning with Enoverlab today
