@@ -32,7 +32,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Monday - Friday
+                          Flexible
                         </H2>
                        </div>
                        <div>
@@ -45,7 +45,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          2 hours daily
+                          Flexible
                         </H2>
                        </div>
                       </div>
