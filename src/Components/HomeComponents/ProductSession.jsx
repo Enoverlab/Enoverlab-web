@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import speaker from "../../assets/banjiNew.jpg";
+import speaker from "../../assets/icon/speaker.jpg";
 import calendar from "../../assets/icon/calender.png";
 import clock from "../../assets/icon/time.png";
 import { SecondaryButtonA } from "../../Utils/styled/Buttons";
@@ -14,9 +14,9 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Olabanji Ewenla</h3>
-                  <h4>(Lead Product Manager)
-                    <h5>(Dashout)</h5>
+                  <h3>Segun Sobodu</h3>
+                  <h4>(Product Quality Assurance Manager)
+                    <h5>(Opera Software)</h5>
                   </h4>
             </div>
           </SpeakerImage>
@@ -24,22 +24,22 @@ const ProductSession = () => {
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Olabanji Ewenla</h3>
-                  <h4>(Lead Product Manager) <h5>
-                  (Dashout)
-                    </h5></h4>
+                  <h3>Segun Sobodu</h3>
+                  <h4>(Product Quality Assurance Manager) 
+                    <h5>(Opera Software)</h5>
+                  </h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                How to Become a Successful Product Manager <br /> in 2025
+                  How to stand out as a product manager <br /> on LinkedIn to attract potential employers.
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                December 21st, 2024
+                February 15th, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />

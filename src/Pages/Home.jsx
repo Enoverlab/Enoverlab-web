@@ -12,6 +12,7 @@ import Partners from '../Components/HomeComponents/Partners'
 import Alumni from '../Components/HomeComponents/Alumni'
 import { useState } from 'react'
 import LoadingScreen2 from '../Components/LoadingScreen2'
+import ProductSession from '../Components/HomeComponents/ProductSession'
 // import ProductSession from '../Components/HomeComponents/ProductSession'
 // import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
@@ -26,7 +27,7 @@ const Home = () => {
   {isLoading ? <LoadingScreen2 /> :<div >
        <Header />
         <Hero />
-        {/* <ProductSession />  */}
+        <ProductSession /> 
         <ProductSection />
         <EnoverSpecial />
           <Partners />

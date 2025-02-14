@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="part part1">
           <img src={metric1} alt="" />
           <div>
-            <AnimatedNumber endValue={800} symbol='+' />
+            <AnimatedNumber endValue={1000} symbol='+' />
           </div>
           <p>Product Managers trained</p>
         </div>

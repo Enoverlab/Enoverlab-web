@@ -11,7 +11,7 @@ import weeks20 from "../../assets/icon/20weeks.png";
 import weeks4 from "../../assets/icon/weeks4.svg";
 import { OnsiteProgram, OnsiteProgramWeekday, executiveProgram, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
-import { SecondaryButtonA, SubmitButton } from "../../Utils/styled/Buttons";
+import { SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
 import {useState, useEffect} from "react";
 import StandardForm from "../Enroll-Form/StandardForm";
@@ -165,7 +165,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Feb 11, 2025
+                          Feb 18, 2025
                         </H2>
                       </div>
                       <div>
@@ -341,7 +341,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks4} alt="4weeks" />
                 </div>
-                <form className="cover" onSubmit={(e)=>{e.preventDefault()}}>
+                <form className="cover" method="get" action="https://paystack.com/pay/enoverlabexecutive">
                   <main>
                   <div  className="item">
                        <div >
@@ -394,7 +394,7 @@ const StandardProgram = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
+                    <SubmitButton Text="Enroll Now" />
                     <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                     Download Syllabus
                     </Link>
