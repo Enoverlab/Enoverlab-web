@@ -55,7 +55,7 @@ export const BlogContextProvider = ({children})=>{
 
     const renderPagination = () => {
         const pageNumbers = [];
-        const maxPageButtons = 5; // Max page numbers to display at once
+        const maxPageButtons = 5;
         const startPage = Math.max(
           1,
           Math.min(
