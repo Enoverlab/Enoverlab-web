@@ -14,9 +14,9 @@ const ProductSession = () => {
             <img src={speaker} alt="Speakers" />
             <div>
                   <h2>Guest Speaker:</h2>
-                  <h3>Segun Sobodu</h3>
-                  <h4>(Product Quality Assurance Manager)
-                    <h5>(Opera Software)</h5>
+                  <h3>Oluwaseun Adekanbi</h3>
+                  <h4>(Growth & Product Leader)
+                    {/* <h5>(Opera Software)</h5> */}
                   </h4>
             </div>
           </SpeakerImage>
@@ -24,22 +24,22 @@ const ProductSession = () => {
             <div className="conti">
               <StyledSpeakerDetails>
                   <h2>Guest Speaker:</h2>
-                  <h3>Segun Sobodu</h3>
-                  <h4>(Product Quality Assurance Manager) 
-                    <h5>(Opera Software)</h5>
+                  <h3>Oluwaseun Adekanbi</h3>
+                  <h4>(Growth & Product Leader) 
+                    {/* <h5>(Opera Software)</h5> */}
                   </h4>
               </StyledSpeakerDetails>
               <DetailsSession>
                 <h2>Topic:</h2>
                 <h3>
-                  How to stand out as a product manager <br /> on LinkedIn to attract potential employers.
+                Beyond the First Launch: How Innovation and <br /> Iteration Drive Product Success
                 </h3>
               </DetailsSession>
             </div>
             <TimeContent>
               <Timing>
                 <img src={calendar} alt="calendar" />
-                February 15th, 2024
+                February 22nd, 2024
               </Timing>
               <Timing>
                 <img src={clock} alt="clock" />
