@@ -74,10 +74,10 @@ const PriceHero = () => {
             In 2024, our top alumni’s earned from ₦700,000 - ₦1,500,000 monthly 
           </H1>
           <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
-          Our decent alumni’s earned from ₦300,000 - ₦500,000 monthly
+          Our International alumni’s earned from $3,000 - $7,000 monthly
           </H4>
           <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
-          Our International alumni’s earned from $3,000 - $7,000 monthly
+          Our decent alumni’s earned from ₦300,000 - ₦500,000 monthly
           </H4>
           <H4 color="var(--Body-Text)" mdlh="3rem" lh="2.5rem" fs="1.8rem" mdfs="2.3rem" mdwidth="85%">
           You can also earn like this too if you start learning with Enoverlab today
