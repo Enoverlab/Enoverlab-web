@@ -41,6 +41,7 @@ import { BlogContextProvider } from "./context/BlogContext";
 import { ToastContainer } from "react-toastify";
 import RespectivePayment from "./Pages/RespectivePayments";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
+
 function App() {
   useEffect(() => {
     AOS.init({
