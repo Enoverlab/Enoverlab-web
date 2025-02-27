@@ -152,6 +152,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
+                          
                           8pm - 10pm
                         </H2>
                       </div>
