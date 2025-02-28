@@ -154,7 +154,7 @@ const PriceHero = () => {
               </div>
          
               <P className="sub-1">
-              Many companies hiring product managers gibe them  opportunity to work remotely or hybrid. Becoming a PM will make it easy to get remote or hybrid work, both locally and internationally.
+              Many companies hiring product managers give them  opportunity to work remotely or hybrid. Becoming a PM will make it easy to get remote or hybrid work, both locally and internationally.
               </P>
             </div>
             <div
