@@ -173,7 +173,7 @@ const PriceHero = () => {
               </div>
             
               <P className="sub-1">
-              A skilled product manager will earn an average of ₦500,000 or $5,000 per month. More experienced product managers will earn even much more.
+              A skilled Product Manager earns an average of N500,000 - N1,000,000 monthly or $2,000 - $5,000 monthly.<br/> The more experience you have, the more money you will earn. <br/> There are Product Managers who earn N3,000,000 monthly  - $10,000 monthly.
               </P>
             </div>
           </div>
