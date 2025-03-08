@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import heroImg from '../../../assets/assessment/hero.png'
 
-const Hero = () => {
+const Hero = ({handleSwitch}) => {
   return (
     <StyledHero>
-      <div>
+      <div className='img'>
         <img src={heroImg} alt="assessment img" />
       </div>
       <div>
@@ -19,7 +19,7 @@ const Hero = () => {
             <ListItem content={'Gain insights to stay ahead in the industry.'} bgcolor={'#FFF2F2'}/>
         </section>
         <div className="button">
-            <button>
+            <button onClick={handleSwitch}>
                 Begin Assessment
             </button>
         </div>
@@ -43,6 +43,9 @@ const ListItem = ({content, bgcolor})=>{
 
 const StyledHero = styled.div`
     padding: 2.4rem 0 7.4rem 0;
+    .img{
+        box-shadow: 12px -12px 2px 1px rgba(209,220,248,0.75);
+    }
     header{
         margin-top: 4.8rem;
         color: #1C1C1C;
