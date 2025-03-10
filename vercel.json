@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      {
+        "source": "https://enoverlab.com/:path*",
+        "destination": "https://www.enoverlab.com/:path*",
+        "permanent": true
+      }
+    ]
+  }
