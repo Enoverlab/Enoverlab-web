@@ -41,6 +41,7 @@ import { BlogContextProvider } from "./context/BlogContext";
 import { ToastContainer } from "react-toastify";
 import RespectivePayment from "./Pages/RespectivePayments";
 import AssessmentLanding from "./Pages/AssessmentLanding";
+import Assessment from "./Pages/Assessment";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
         <Route path="/payments" element={<Payment />} />
         <Route path="/payments/:id" element={<RespectivePayment />} />
         <Route path="/assessment/about" element={<AssessmentLanding />} />
+        <Route path="/assessment/:user" element={<Assessment />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/corporate" element={<Corporate />} />
         <Route path="/executive" element={<Executive/>} />

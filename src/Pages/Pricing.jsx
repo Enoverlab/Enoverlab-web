@@ -15,6 +15,7 @@ import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
 import Guarantee from '../Components/Pricing/Guarantee'
 import Companies from '../Components/Pricing/Companies'
+import AccessModal from '../Components/Assessment/Landing/AccessModal'
 const Pricing = () => {
   const [loading, setLoading] = useState(true)
   useEffect(()=>{
@@ -35,6 +36,7 @@ const Pricing = () => {
       <Testimonials/>
       <Testimonies/>
       <Explore/>
+      <AccessModal/>
       <FaqSection/>
     </StyledPricing>
     <Footer p="5rem 9.6rem"/>
