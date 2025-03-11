@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 // import axios from 'axios'
 // import { toast } from "react-toastify";
 import { useCallback } from "react";
+import { useNavigate, useParams } from "react-router";
 
 const data = [
     { id: 1, question: "What is 2 + 1?", questionType : 'text', options: ["2", "3", "4", "5"], correct: "3", section : 'User Research', multipleAnswer : false },
@@ -15,6 +16,8 @@ const data = [
 export const TestContext = createContext({}) 
 
 export const TestContextProvider = ({children})=>{
+    const navigate = useNavigate()
+    const {user} = useParams
     const [testData] = useState([...data])
     const [userAnswers, setUserAnswers] = useState({})
     const [questionIdx, setQuestionIdx] = useState(0)
@@ -24,7 +27,9 @@ export const TestContextProvider = ({children})=>{
 
     const handleNextQuestion = async(newAnswers)=>{
         setUserAnswers((prev)=>({...prev, ...newAnswers}))
-        if(questionIdx === questionsLength){
+        if(questionIdx === questionsLength -1){
+            setQuestionIdx((prev)=> prev - (questionsLength - 1))
+            navigate(`/assessment/result/${user}`)
             return
         }
         setQuestionIdx(questionIdx + 1)

@@ -13,8 +13,9 @@ const singleSelectValidationSchema = Yup.object({
     selectedOption: Yup.string().required("Please select an option"),
 });
 
-const TestComponent = ({headlineImage,questionType = 'text',multipleAnswer}) => {
-    const testTools = useTest()
+const TestComponent = ({headlineImage}) => {
+  const testTools = useTest()
+  const {questionData} = testTools
   return (
     <StyledTestComponent>
       <div className="headlineImage">
@@ -30,12 +31,12 @@ const TestComponent = ({headlineImage,questionType = 'text',multipleAnswer}) => 
         </h3>
         <div className="question">
           {
-            questionType === 'text' ? (<div dangerouslySetInnerHTML={{__html: testTools.questionData.question}}></div>) :(<img src={testTools.questionData.question} alt="questionImg" />)
+            questionData.questionType ? (<div dangerouslySetInnerHTML={{__html:questionData.question}}></div>) :(<img src={questionData.question} alt="questionImg" />)
           }
         </div>
 
         {
-          multipleAnswer ? <MultiSelect /> : <SingleSelect/>
+          questionData.multipleAnswer ? <MultiSelect /> : <SingleSelect/>
         }
         
       </main>
@@ -118,7 +119,6 @@ main{
 const SingleSelect = () => {
   const testTools = useTest()
   const {handleNextQuestion, questionData, handlePreviousQuestion, userAnswers,questionsLength,questionIdx} = testTools
-  console.log(userAnswers[questionData.id])
 return (
   <Formik
   initialValues={{ selectedOption: userAnswers[questionData.id] ?? "" }}
@@ -141,7 +141,7 @@ return (
         <ErrorMessage name="selectedOption" component="div" style={{ color: "red" }} />
         <div className="ctas">
           {questionIdx > 0 && <div className="previous" onClick={handlePreviousQuestion}>Previous</div>}
-          <button disabled={!(isValid || dirty)} type="submit">{questionIdx < questionsLength ? 'Save and Continue': "Submit"}</button>
+          <button disabled={!(isValid || dirty)} type="submit">{questionIdx < questionsLength - 1 ? 'Save and Continue': "Submit"}</button>
         </div>
         
       </StyledForm>
@@ -153,34 +153,36 @@ return (
   
   
 const MultiSelect = () => {
+  const testTools = useTest()
+  const {handleNextQuestion, questionData, handlePreviousQuestion, userAnswers,questionsLength,questionIdx} = testTools
+  console.log(userAnswers[questionData.id])
     return (
       <Formik
-        initialValues={{ selectedOptions: [] }}
+        initialValues={{ selectedOption: userAnswers[questionData.id] ?? [] }}
+        enableReinitialize 
         validationSchema={multipleSelectValidationSchema}
-        onSubmit={(values) => alert(`You selected: ${values.selectedOptions.join(", ")}`)}
+        onSubmit={(values) =>{
+          handleNextQuestion({[questionData.id]: values.selectedOption})
+        }}
       >
-        {() => (
+        {({isValid, dirty}) => (
           <Form>
-            <label>
-              <Field type="checkbox" name="selectedOptions" value="2" />
-              2
-            </label>
-            <label>
-              <Field type="checkbox" name="selectedOptions" value="3" />
-              3
-            </label>
-            <label>
-              <Field type="checkbox" name="selectedOptions" value="5" />
-              5
-            </label>
-            <label>
-              <Field type="checkbox" name="selectedOptions" value="6" />
-              6
-            </label>
-  
-            <ErrorMessage name="selectedOptions" component="div" style={{ color: "red" }} />
-  
-            <button type="submit">Submit</button>
+            <StyledForm>
+            {
+              questionData.options.map((item,idx)=><label key={idx}>
+              <Field type="checkbox" name='selectedOption' value={item} />
+              {item}
+              </label>)
+            }
+
+            <ErrorMessage name="selectedOption" component="div" style={{ color: "red" }} />
+            <p className="multiNotice">*Select all answers that apply</p>
+            <div className="ctas">
+              {questionIdx > 0 && <div className="previous" onClick={handlePreviousQuestion}>Previous</div>}
+              <button disabled={!(isValid || dirty)} type="submit">{questionIdx < questionsLength - 1 ? 'Save and Continue': "Submit"}</button>
+            </div>
+        
+            </StyledForm>
           </Form>
         )}
       </Formik>
@@ -202,9 +204,13 @@ const StyledForm = styled.div`
     border-bottom: 1px  solid #D9D9D9;
     font-weight: 400;
   }
-  input[type="radio"]{
+  input{
     transform: scale(1.5);
     cursor: pointer;
+  }
+  .multiNotice{
+    font-style: italic;
+    font-size: 1.3rem;
   }
   .ctas{
     margin-top: 4rem;
