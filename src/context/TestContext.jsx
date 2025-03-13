@@ -24,7 +24,7 @@ export const TestContextProvider = ({children})=>{
     const [dataId, setDataId] = useState()
     const [userAnswers, setUserAnswers] = useState({})
     const [questionIdx, setQuestionIdx] = useState(0)
-    const [questionData, setQuestionData] = useState(testData[questionIdx])
+    const [questionData, setQuestionData] = useState(testData[questionIdx] ?? '')
     const [loading] = useState(false)
     const questionsLength = testData.length
 
