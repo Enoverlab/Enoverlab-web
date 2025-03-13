@@ -14,6 +14,8 @@ import opay from "../../assets/icon/opay.jpeg"
 import renmoney from "../../assets/icon/renmoney.png"
 import ulospaces from "../../assets/icon/ulospaces.svg"
 import gtbank from "../../assets/icon/gtbank.jpeg"
+import mtn from "../../assets/icon/mtnlogo.jpg"
+import moniepoint from "../../assets/icon/moniepoint.png"
 
 const Companies = () => {
   return (
@@ -26,7 +28,8 @@ const Companies = () => {
         <img src={access} alt="unidroit_logo" />
         <img src={opay} alt="unidroit_logo" />
         <img src={renmoney} alt="renmoney_logo"/>
-        <img src={ulospaces} alt="renmoney_logo"/>
+        <img src={ulospaces} alt="ulospaces_logo"/>
+        <img src={mtn} alt="mtn_logo"/>
       </Marquee>
       <Marquee className="marquee">
         <img src={fidelity} alt="" />
@@ -36,6 +39,7 @@ const Companies = () => {
         <img src={gtbank} alt="" />
         <img src={sterling} alt="" />
         <img src={etranzact} alt="" />
+        <img src={moniepoint} alt="moniepoint_logo"/>
       </Marquee>
     </StyledCompanies>
   )
@@ -69,8 +73,8 @@ const StyledCompanies = styled.div`
       padding-bottom: 2.8rem;
     }
     img {
-        margin: 0 5rem;
-        width: 11.24vw;
+      margin: 0 5rem;
+      width: 11.24vw;
     }
   }
     
