@@ -17,6 +17,9 @@ body,html{
 .bodyStiff {
 	margin: 0; height: 100%; overflow: hidden;
 }
+.popupStiff{
+  margin: 0; height: 100%; overflow-y: hidden;
+}
 .bodyStiff2 {
 overflow-x: hidden
 }

@@ -40,6 +40,10 @@ import axios from "axios";
 import { BlogContextProvider } from "./context/BlogContext";
 import { ToastContainer } from "react-toastify";
 import RespectivePayment from "./Pages/RespectivePayments";
+import AssessmentLanding from "./Pages/AssessmentLanding";
+import Assessment from "./Pages/Assessment";
+import { TestContextProvider } from "./context/TestContext";
+import Result from "./Pages/Result";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
 function App() {
@@ -48,11 +52,7 @@ function App() {
     duration: 1000, // Global animation duration
     once: false, // Only once animation
     })
-    document.body.classList.remove('bodyStiff')
   },[]);
-  useEffect(()=>{
-    document.body.classList.remove('bodyStiff')
-  },[])
 
   const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap');
@@ -89,6 +89,16 @@ function App() {
         <Route path="/blog/:id" element={<BlogContentPage />} />
         <Route path="/payments" element={<Payment />} />
         <Route path="/payments/:id" element={<RespectivePayment />} />
+        <Route path="/assessment/about" element={<AssessmentLanding />} />
+        <Route
+          path="/assessment/:user"
+          element={
+            <TestContextProvider>
+              <Assessment />
+            </TestContextProvider>
+          }
+        />
+        <Route path="/assessment_result/:user" element={<Result />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/corporate" element={<Corporate />} />
         <Route path="/executive" element={<Executive/>} />
