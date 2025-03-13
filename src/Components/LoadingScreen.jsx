@@ -20,6 +20,7 @@ position: fixed;
 width: 100%;
 z-index: 10;
 cursor: pointer;
+top: 0;
 height: 100%;
 background-color: rgba(0,0,0,0.7);
 display: flex;

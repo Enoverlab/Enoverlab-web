@@ -4,6 +4,7 @@ import questionMark from "../../../assets/assessment/questionMark.svg"
 import { ErrorMessage, Field, Form, Formik } from "formik"
 import * as Yup from "yup"
 import { useTest } from "../../../context/TestContext"
+import NotFound from "../../NotFound"
 
 const multipleSelectValidationSchema = Yup.object({
     selectedOptions: Yup.array().min(1, "Select at least one option"),
@@ -16,6 +17,7 @@ const singleSelectValidationSchema = Yup.object({
 const TestComponent = ({headlineImage}) => {
   const testTools = useTest()
   const {questionData} = testTools
+  if(!questionData) return(<NotFound headline={'No Assessment Found'} />)
   return (
     <StyledTestComponent>
       <div className="headlineImage">
@@ -31,12 +33,12 @@ const TestComponent = ({headlineImage}) => {
         </h3>
         <div className="question">
           {
-            questionData.questionType ? (<div dangerouslySetInnerHTML={{__html:questionData.question}}></div>) :(<img src={questionData.question} alt="questionImg" />)
+            <div dangerouslySetInnerHTML={{__html:questionData?.question}}></div>
           }
         </div>
 
         {
-          questionData.multipleAnswer ? <MultiSelect /> : <SingleSelect/>
+          questionData?.multipleAnswers ? <MultiSelect /> : <SingleSelect/>
         }
         
       </main>
@@ -99,6 +101,7 @@ main{
       font-size: 2.2vw;
     }
     .question{
+      border-radius: 1rem;
       font-family: inter;
       font-size: 1.52vw;
     }
@@ -121,18 +124,18 @@ const SingleSelect = () => {
   const {handleNextQuestion, questionData, handlePreviousQuestion, userAnswers,questionsLength,questionIdx} = testTools
 return (
   <Formik
-  initialValues={{ selectedOption: userAnswers[questionData.id] ?? "" }}
+  initialValues={{ selectedOption: userAnswers[questionData?._id] ?? "" }}
   enableReinitialize 
   validationSchema={singleSelectValidationSchema}
   onSubmit={(values, { resetForm }) =>{
-    handleNextQuestion({[questionData.id]: values.selectedOption})
+    handleNextQuestion({[questionData?._id]: values.selectedOption})
   }}
   >
   {({dirty,isValid}) => (
     <Form>
       <StyledForm>
         {
-          questionData.options.map((item,idx)=><label key={idx}>
+          questionData?.options.map((item,idx)=><label key={idx}>
           <Field type="radio" name='selectedOption' value={item} />
           {item}
           </label>)
@@ -155,14 +158,13 @@ return (
 const MultiSelect = () => {
   const testTools = useTest()
   const {handleNextQuestion, questionData, handlePreviousQuestion, userAnswers,questionsLength,questionIdx} = testTools
-  console.log(userAnswers[questionData.id])
     return (
       <Formik
-        initialValues={{ selectedOption: userAnswers[questionData.id] ?? [] }}
+        initialValues={{ selectedOption: userAnswers[questionData._id] ?? [] }}
         enableReinitialize 
         validationSchema={multipleSelectValidationSchema}
         onSubmit={(values) =>{
-          handleNextQuestion({[questionData.id]: values.selectedOption})
+          handleNextQuestion({[questionData?._id]: values.selectedOption})
         }}
       >
         {({isValid, dirty}) => (

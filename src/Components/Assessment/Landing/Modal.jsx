@@ -5,10 +5,14 @@ import { ErrorMessage, Field, Form, Formik } from "formik"
 import biodata from "../../../assets/assessment/biodata.png"
 import * as Yup from "yup"
 import cancelModal from '../../../assets/icon/cancelModal.svg'
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router';
 
 Modal.setAppElement('#root');
 const UserDataPop = ({open,requestClose}) => {
-    const [loading] = useState(false)
+    const [loading,setLoading] = useState(false)
+    const navigate = useNavigate()
     useEffect(()=>{
         if(open){
             document.body.style.overflow = "hidden";
@@ -53,15 +57,31 @@ const UserDataPop = ({open,requestClose}) => {
                 <header>
                     Biodata
                 </header>
-                <Formik initialValues={{name : '', email : '', phnNo : '',checkCondition : false}} validationSchema={Yup.object({
+                <Formik initialValues={{name : '', email : '', phone_number : '',checkCondition : false}} validationSchema={Yup.object({
                 name : Yup.string().required('Your fullname is required to continue'),
                 email : Yup.string().email('Must be a valid email address').required('Email address is required'),
-                phnNo : Yup.number().required('A valid phone number is required'),
+                phone_number : Yup.number().required('A valid phone number is required'),
                 checkCondition : Yup.boolean()
                 .required("The terms and conditions must be accepted.")
                 .oneOf([true], "The terms and conditions must be accepted."),
                 })} 
-                onSubmit={()=>{}}>
+                onSubmit={async(values)=>{
+                    try {
+                        const {email, name, phone_number} = values
+                        setLoading(true)
+                        const response = await axios.post('/web-assessment/onboarding',{email,name,phone_number})
+                        toast.warning('Redirecting to Assessment Page')
+                        setTimeout(()=>{
+                            navigate(`/assessment/${response.data}`)
+                        },2000)
+                    } catch (error) {
+                        toast.error('An error occured, please try again')
+                    }finally{
+                        setTimeout(()=>{
+                            setLoading(false)
+                        },2000)
+                    }
+                }}>
                     {
                         ({setFieldValue,dirty,isValid})=>(<Form className='form'>
                             <label htmlFor="name">
@@ -82,10 +102,10 @@ const UserDataPop = ({open,requestClose}) => {
                                 }
                                 </ErrorMessage>
                             </label>
-                            <label htmlFor="phnNo">
+                            <label htmlFor="phone_number">
                                 Phone Number
-                                <Field name='phnNo'/>
-                                <ErrorMessage name='phnNo'>
+                                <Field name='phone_number'/>
+                                <ErrorMessage name='phone_number'>
                                 {
                                     msg => <div style={{ color: 'red' }}>{msg}</div>
                                 }
@@ -105,8 +125,8 @@ const UserDataPop = ({open,requestClose}) => {
                                 </ErrorMessage>
 
                             </label>
-                            <button disabled={!(isValid && dirty) || loading }>
-                                Continue
+                            <button type='submit' disabled={!(isValid && dirty) || loading }>
+                                {loading ? 'Loading..' : 'Continue'}
                             </button>
                         </Form>)
                     }

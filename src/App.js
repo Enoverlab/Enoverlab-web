@@ -43,7 +43,7 @@ import RespectivePayment from "./Pages/RespectivePayments";
 import AssessmentLanding from "./Pages/AssessmentLanding";
 import Assessment from "./Pages/Assessment";
 import { TestContextProvider } from "./context/TestContext";
-import Result from "./Components/Assessment/Testarea/Result";
+import Result from "./Pages/Result";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
 function App() {
@@ -91,16 +91,14 @@ function App() {
         <Route path="/payments/:id" element={<RespectivePayment />} />
         <Route path="/assessment/about" element={<AssessmentLanding />} />
         <Route
-          path="/assessment/*"
+          path="/assessment/:user"
           element={
             <TestContextProvider>
-              <Routes>
-                <Route path=":user" element={<Assessment />} />
-                <Route path="result/:user" element={<Result />} />
-              </Routes>
+              <Assessment />
             </TestContextProvider>
           }
         />
+        <Route path="/assessment_result/:user" element={<Result />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/corporate" element={<Corporate />} />
         <Route path="/executive" element={<Executive/>} />
