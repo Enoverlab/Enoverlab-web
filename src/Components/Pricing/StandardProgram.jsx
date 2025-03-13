@@ -22,6 +22,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
+  const admissionClosed = ['Lekki-Weekday','Lekki-Weekend','Ikeja-Weekday','Ibadan','Abuja']
 
   const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
   
@@ -272,7 +273,7 @@ const StandardProgram = () => {
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Start Date
                         </H4>
-                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" >
+                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" className={location} >
                           {trainingLocation.startDate}
                         </H2>
                         
@@ -293,7 +294,7 @@ const StandardProgram = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SubmitButton Text="Enroll Now"  />
+                    <SubmitButton Text="Enroll Now" disabled={admissionClosed.includes(location)}  />
                     <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
@@ -584,6 +585,9 @@ const StyledProgram = styled.div`
   }
   .strikeThrough{
     text-decoration: line-through;
+  }
+  .Ikeja-Weekday,.Abuja,.Ibadan,.Lekki-Weekend,.Lekki-Weekday{
+    color: red;
   }
   @media (min-width: 1024px) {
     padding: 110px 9.6rem;
