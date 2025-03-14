@@ -17,9 +17,12 @@ const singleSelectValidationSchema = Yup.object({
 const TestComponent = ({headlineImage}) => {
   const testTools = useTest()
   const {questionData} = testTools
+  console.log(questionData)
   if(!questionData) return(<NotFound headline={'No Assessment Found'} />)
   return (
-    <StyledTestComponent>
+    <>
+    {
+      questionData && <StyledTestComponent>
       <div className="headlineImage">
         <img src={headlineImage ?? headImage} alt="assessment headimage" />
       </div>
@@ -44,6 +47,8 @@ const TestComponent = ({headlineImage}) => {
       </main>
 
     </StyledTestComponent>
+    }
+    </>
   )
 }
 
@@ -122,6 +127,7 @@ main{
 const SingleSelect = () => {
   const testTools = useTest()
   const {handleNextQuestion, questionData, handlePreviousQuestion, userAnswers,questionsLength,questionIdx} = testTools
+  if(!questionData) return 
 return (
   <Formik
   initialValues={{ selectedOption: userAnswers[questionData?._id] ?? "" }}
@@ -158,37 +164,38 @@ return (
 const MultiSelect = () => {
   const testTools = useTest()
   const {handleNextQuestion, questionData, handlePreviousQuestion, userAnswers,questionsLength,questionIdx} = testTools
-    return (
-      <Formik
-        initialValues={{ selectedOption: userAnswers[questionData._id] ?? [] }}
-        enableReinitialize 
-        validationSchema={multipleSelectValidationSchema}
-        onSubmit={(values) =>{
-          handleNextQuestion({[questionData?._id]: values.selectedOption})
-        }}
-      >
-        {({isValid, dirty}) => (
-          <Form>
-            <StyledForm>
-            {
-              questionData.options.map((item,idx)=><label key={idx}>
-              <Field type="checkbox" name='selectedOption' value={item} />
-              {item}
-              </label>)
-            }
+  if(!questionData) return
+  return (
+    <Formik
+      initialValues={{ selectedOption: userAnswers[questionData?._id] ?? [] }}
+      enableReinitialize 
+      validationSchema={multipleSelectValidationSchema}
+      onSubmit={(values) =>{
+        handleNextQuestion({[questionData?._id]: values.selectedOption})
+      }}
+    >
+      {({isValid, dirty}) => (
+        <Form>
+          <StyledForm>
+          {
+            questionData?.options.map((item,idx)=><label key={idx}>
+            <Field type="checkbox" name='selectedOption' value={item} />
+            {item}
+            </label>)
+          }
 
-            <ErrorMessage name="selectedOption" component="div" style={{ color: "red" }} />
-            <p className="multiNotice">*Select all answers that apply</p>
-            <div className="ctas">
-              {questionIdx > 0 && <div className="previous" onClick={handlePreviousQuestion}>Previous</div>}
-              <button disabled={!(isValid || dirty)} type="submit">{questionIdx < questionsLength - 1 ? 'Save and Continue': "Submit"}</button>
-            </div>
-        
-            </StyledForm>
-          </Form>
-        )}
-      </Formik>
-    );
+          <ErrorMessage name="selectedOption" component="div" style={{ color: "red" }} />
+          <p className="multiNotice">*Select all answers that apply</p>
+          <div className="ctas">
+            {questionIdx > 0 && <div className="previous" onClick={handlePreviousQuestion}>Previous</div>}
+            <button disabled={!(isValid || dirty)} type="submit">{questionIdx < questionsLength - 1 ? 'Save and Continue': "Submit"}</button>
+          </div>
+      
+          </StyledForm>
+        </Form>
+      )}
+    </Formik>
+  );
 };
 
 const StyledForm = styled.div`
