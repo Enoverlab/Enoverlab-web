@@ -24,9 +24,9 @@ export const TestContextProvider = ({children})=>{
     const [dataId, setDataId] = useState()
     const [userAnswers, setUserAnswers] = useState({})
     const [questionIdx, setQuestionIdx] = useState(0)
-    const [questionData, setQuestionData] = useState([])
+    const [questionData, setQuestionData] = useState()
     const [loading] = useState(false)
-    const questionsLength = testData.length
+    const questionsLength = testData && testData.length
 
     useEffect(()=>{
         const getQuestions = async()=>{
@@ -65,6 +65,7 @@ export const TestContextProvider = ({children})=>{
     }
 
     const getQuestionData = useCallback(() => {
+        if(!testData) return
         return testData[questionIdx];
     }, [testData, questionIdx]);
 
