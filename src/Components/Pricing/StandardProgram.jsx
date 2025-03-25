@@ -140,7 +140,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Wednesday <br /> & Saturday
+                          Every Monday <br /> & Thursday
                         </H2>
                       </div>
                       <div>
@@ -166,7 +166,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Mar 15, 2025
+                          Apr 14, 2025
                         </H2>
                       </div>
                       <div>
@@ -389,7 +389,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦ 600,000
+                          ₦ 800,000
                         </H2>
                       </div>
                     </div>
