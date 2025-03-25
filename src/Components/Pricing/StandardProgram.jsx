@@ -586,7 +586,7 @@ const StyledProgram = styled.div`
   .strikeThrough{
     text-decoration: line-through;
   }
-  .Ikeja-Weekday,.Abuja,.Ibadan,.Lekki-Weekend,.Lekki-Weekday{
+  .Ikeja-Weekday,.Abuja,.Ibadan,.Lekki-Weekend{
     color: red;
   }
   @media (min-width: 1024px) {
