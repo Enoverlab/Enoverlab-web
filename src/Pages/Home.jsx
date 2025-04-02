@@ -8,10 +8,11 @@ import Footer from '../Components/Footer'
 import ProductSection from '../Components/HomeComponents/ProductSection'
 import EnoverSpecial from '../Components/HomeComponents/EnoverSpecial'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
-import Partners from '../Components/HomeComponents/Partners'
+// import Partners from '../Components/HomeComponents/Partners'
 import Alumni from '../Components/HomeComponents/Alumni'
 import { useState } from 'react'
 import LoadingScreen2 from '../Components/LoadingScreen2'
+import Companies from '../Components/Pricing/Companies'
 // import ProductSession from '../Components/HomeComponents/ProductSession'
 // import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
@@ -29,7 +30,7 @@ const Home = () => {
       {/* <ProductSession />  */}
       <ProductSection />
       <EnoverSpecial />
-        <Partners />
+      <Companies/>
       <Testimonials />
       <SuccessStories />
       <Alumni />

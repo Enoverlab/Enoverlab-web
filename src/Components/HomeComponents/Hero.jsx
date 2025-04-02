@@ -16,7 +16,7 @@ const Hero = () => {
     <div>
       <StyledHeroHeader>
         <h1>
-          Empowering You To Be An <span>EXCEPTIONAL</span> Product Manager
+          Empowering Ordinary People to Become <span>EXCEPTIONAL</span> Product Managers
         </h1>
         <SecondaryButton Text="Explore Our Programs" to="#programs" arrowDown={true} />
       </StyledHeroHeader>

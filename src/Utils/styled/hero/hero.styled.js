@@ -30,7 +30,7 @@ export const StyledHeroHeader = styled.div`
     text-align: left;
     padding: 64px 0px 40px 96px;
     h1 {
-      font-size: clamp(5rem,4.44vw,6.4rem);
+      font-size: clamp(5rem,4vw,6.4rem);
       font-style: normal;
       font-weight: 700;
       line-height: 86px; /* 134.375% */
