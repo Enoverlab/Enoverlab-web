@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {H3} from '../../Utils/styled/Typograpyhy'
-import TestiVideo from './TestiVideo'
+import TestiVideo from '../Pricing/TestiVideo'
 
 
 const Testimonials = () => {
