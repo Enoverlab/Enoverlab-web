@@ -22,7 +22,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
-  const admissionClosed = ['Lekki-Weekday','Lekki-Weekend','Ikeja-Weekday','Ibadan','Abuja']
+  const admissionClosed = ['Ikeja-Weekday']
 
   const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
   
@@ -586,7 +586,7 @@ const StyledProgram = styled.div`
   .strikeThrough{
     text-decoration: line-through;
   }
-  .Ikeja-Weekday,.Abuja,.Ibadan,.Lekki-Weekend{
+  .Ikeja-Weekday{
     color: red;
   }
   @media (min-width: 1024px) {
