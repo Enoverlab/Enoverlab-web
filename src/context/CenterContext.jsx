@@ -236,7 +236,7 @@ const centerDetails = {
         location : 'Roc Workspace, Gateview Plaza, Plot 11, Admiralty way, Lekki Phase 1',
         trainingDay : "Every Tuesday & Friday",
         classType : 'weekday',
-        trainingTime : '10am - 1pm',
+        trainingTime : '1pm - 4pm',
         tuition : '400,000',
         weeks : "10",
         weekIcon : weeks14,
