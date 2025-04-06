@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
 const ProgramDetails = () => {
+  const admissionClosed = true
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
@@ -89,7 +90,9 @@ const ProgramDetails = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButtonA Text="Enroll Now" to='https://forms.gle/T7KmwAbgGemt6JiTA' />
+                    {
+                      admissionClosed ? <p style={{color : 'red', fontSize : '19px', fontWeight : 'medium'}}>Admission Closed</p> : (<SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabtpmp' />)
+                    }
                     <Link to="/TPMBrochure.pdf" target="_blank" download='TPM Brochure.pdf' className="syll">
                       Download Syllabus
                     </Link>
@@ -132,7 +135,7 @@ const ProgramDetails = () => {
 export default ProgramDetails
 
 const StyledProgramDetail = styled.div`
-    padding: 33px 20px 3.2rem 15px;
+    padding: 33px 15px 3.2rem 15px;
   .program {
     position: relative;
     width: 100%;
