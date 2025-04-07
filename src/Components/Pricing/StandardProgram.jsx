@@ -22,7 +22,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
-  const admissionClosed = ['Ikeja-Weekday']
+  const admissionClosed = ['']
 
   const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
   
@@ -273,7 +273,7 @@ const StandardProgram = () => {
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Start Date
                         </H4>
-                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" className={location} >
+                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" className={`${admissionClosed.includes(location) && '.adclosed'}`} >
                           {trainingLocation.startDate}
                         </H2>
                         
@@ -586,7 +586,7 @@ const StyledProgram = styled.div`
   .strikeThrough{
     text-decoration: line-through;
   }
-  .Ikeja-Weekday{
+  .adclosed{
     color: red;
   }
   @media (min-width: 1024px) {
