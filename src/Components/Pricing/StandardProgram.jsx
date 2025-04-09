@@ -389,7 +389,7 @@ const StandardProgram = () => {
                         fw="600"
                         color="var(--Body-Text)"
                       >
-                        ₦ 500,000
+                        ₦ 600,000
                       </H2>
                       </div>
                     </div>
