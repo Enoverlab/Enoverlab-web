@@ -230,17 +230,16 @@ export const OnsiteProgramWeekday = [
   "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
 ]
 
-export const PrivateCoaching = [
-  "One-on-one coaching and mentorship ONLINE for 6 weeks or less",
+export const privteCoaching = [
+  "One-on-one coaching and mentorship ONLINE for 4 weeks",
   "Flexible class time schedule",
-  `Guaranteed Product Manager Job recommendations`,
+  `Best for busy professionals & Nigerians in Diaspora`,
   "Close support and guidance till you land a Product Manager role",
   "International certification accredited by the American Council of Training and Development (ACTD)",
   "Lifetime access to Product management resources",
   "You get The Blood Money in Tech ebook for FREE",
   "Personal recommendation from our CEO for job offers and VISA application "
-
-]
+];
 
 export const AiProgram = [
    'Key definitions - introduction to AI and different forms of AI ',
