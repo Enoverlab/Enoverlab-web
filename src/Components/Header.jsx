@@ -158,8 +158,8 @@ const standard = [
     linkto : '/programs#onsite',
   },
   {
-    linkName : 'Executive Coaching',
-    linkto : '/programs#executive',
+    linkName : 'Private Coaching',
+    linkto : '/programs#private',
   },
 ]
 

@@ -230,8 +230,8 @@ export const OnsiteProgramWeekday = [
   "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
 ]
 
-export const privteCoaching = [
-  "One-on-one coaching and mentorship ONLINE for 4 weeks",
+export const privateCoaching = [
+  "One-on-one coaching and mentorship ONLINE for 6 weeks",
   "Flexible class time schedule",
   `Best for busy professionals & Nigerians in Diaspora`,
   "Close support and guidance till you land a Product Manager role",

@@ -9,7 +9,7 @@ import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks18 from "../../assets/icon/weeks18.png";
 import weeks20 from "../../assets/icon/20weeks.png";
 import weeks6 from "../../assets/icon/6weeks.png";
-import { OnsiteProgram, OnsiteProgramWeekday, executiveProgram, onlineProgram } from "../../constants";
+import { OnsiteProgram, OnsiteProgramWeekday, onlineProgram, privateCoaching } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
@@ -336,7 +336,7 @@ const StandardProgram = () => {
           <SwiperSlide>
             <Flex mdgap="5.9rem" display="block" mdalign="stretch">
               <div className="program">
-                <div className="heading" id="executive">
+                <div className="heading" id="private">
                   <H4 mdfs="2.3vw" fw="700">
                     Private Coaching
                   </H4>
@@ -407,7 +407,7 @@ const StandardProgram = () => {
                   Here Are The Benefits You Get
                 </H4>
                 <div className="list2">
-                  {executiveProgram.map((pg) => (
+                  {privateCoaching.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
                       <P fs="3.6vw" mdfs="1.33vw" color="var(--Body-Text)">
