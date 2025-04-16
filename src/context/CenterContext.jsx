@@ -369,7 +369,7 @@ const centerDetails = {
     },
     'Ikeja-Weekday' : {
         place : 'Ikeja-Weekday',
-        location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
+        location : 'Ikeja Town Square, Obafemi Awolowo Way, Ikeja, 101233, Lagos',
         trainingDay : "Every Tuesday & Thursday",
         classType : 'weekday',
         trainingTime : "1pm -4pm",
@@ -396,7 +396,7 @@ const centerDetails = {
     },
     'Ikeja-Weekend' : {
         place : 'Ikeja-Weekend',
-        location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
+        location : 'Ikeja Town Square, Obafemi Awolowo Way, Ikeja, 101233, Lagos',
         trainingDay : "Every Saturday",
         classType : 'weekend',
         trainingTime : "2pm - 5pm",
