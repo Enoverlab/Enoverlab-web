@@ -105,7 +105,7 @@ const StyledPerks = styled.div`
           display: flex;
           align-items: center;
           gap: 2.2rem;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           line-height: 2.8rem;
           margin: 0.6rem 0;
         }
