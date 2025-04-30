@@ -20,7 +20,7 @@ const Technicalprogram = () => {
         </H4>
         <SecondaryButton Text="Enroll Now" to="#technicalEnrol" arrowDown={true} />
       </div>
-      <div className="writeup">
+      {/* <div className="writeup">
         <H2 color="rgba(1,1,91,0.82)" fs='2.4rem' mdfs="4rem">
         About Program
         </H2>
@@ -37,7 +37,7 @@ const Technicalprogram = () => {
             </H4>
           </section>
         </main>
-      </div>
+      </div> */}
     </StyledTechnicalprogram>
   );
 };

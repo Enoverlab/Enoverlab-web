@@ -1,6 +1,6 @@
 import TechnicalHero from "../Components/Technical/TechnicalHero"
-import Technicalprogram from "../Components/Technical/Technicalprogram"
-import Formi from "../Components/Growth/Form"
+// import Technicalprogram from "../Components/Technical/Technicalprogram"
+// import Formi from "../Components/Growth/Form"
 import ProgramDetails from "../Components/Technical/ProgramDetails"
 import Footer from "../Components/Footer"
 import Header from "../Components/Header"
@@ -8,6 +8,7 @@ import Header from "../Components/Header"
 // import { FaqSection } from "../Components/Growth/FaqSection"
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
+import Perks from "../Components/Technical/Perks"
 
 const Technical = () => {
   const [loading, setLoading] = useState(true)
@@ -25,9 +26,10 @@ const Technical = () => {
       <div>
         <Header/>
       <TechnicalHero/>
-      <Technicalprogram/>
+      <Perks/>
+      {/* <Technicalprogram/> */}
       <ProgramDetails/>
-      <Formi/>
+      {/* <Formi/> */}
       {/* <FaqSection/> */}
       {/* <Started/> */}
       <Footer p="5rem 9.6rem 0 9.6rem"/>

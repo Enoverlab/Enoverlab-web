@@ -8,125 +8,125 @@ import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
 const ProgramDetails = () => {
-  const admissionClosed = true
+  const admissionClosed = false
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
-              <div className="program" id='technicalEnrol'>
-                <div className="heading" id="onsite" >
-                  <H4 mdfs="2.38vw" fs="1.8rem" fw="700">
-                  Technical Product<br /> Management Program
+      <div className="program" id='technicalEnrol'>
+        <div className="heading" id="onsite" >
+          <H4 mdfs="2.38vw" fs="1.8rem" fw="700">
+          Technical Product<br /> Management Program
+          </H4>
+          <img src={weeks8} alt="weeks 8" />
+        </div>
+        <div className="cover2">
+          <main>
+            <div className="item">
+                <div >
+                  <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
+                    Training day
                   </H4>
-                  <img src={weeks8} alt="weeks 8" />
+                  <H2
+                    mdfs="1.587vw"
+                    fs="3.6vw"
+                    fw="600"
+                    color="var(--Body-Text)"
+                  >
+                    Every Saturday
+                  </H2>
                 </div>
-                <div className="cover2">
-                  <main>
-                    <div className="item">
-                       <div >
-                          <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
-                            Training day
-                          </H4>
-                          <H2
-                            mdfs="1.587vw"
-                            fs="3.6vw"
-                            fw="600"
-                            color="var(--Body-Text)"
-                          >
-                            Every Saturday
-                          </H2>
-                       </div>
-                       <div>
-                       <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
-                          Class Times
-                        </H4>
-                        <H2
-                          mdfs="1.58vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          10am - 2pm
-                        </H2>
-                       </div>
-                        <div className='locale'>
-                        <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
-                          Location
-                        </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          Online Training
-                        </H2>
-                        </div>
-                        <div>
-                        <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
-                          Duration
-                        </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          8 weeks
-                        </H2>
-                        </div>
-                        <div>
-                        <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
-                          TUITION FEES
-                        </H4>
-                        <H2
-                          mdfs="2.38vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          ₦300,000
-                        </H2>
-                      </div>
-                    </div>
-                  </main>
-                  <div className="cta">
-                    {
-                      admissionClosed ? <p style={{color : 'red', fontSize : '19px', fontWeight : 'medium'}}>Admission Closed</p> : (<SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabtpmp' />)
-                    }
-                    <Link to="/TPMBrochure.pdf" target="_blank" download='TPM Brochure.pdf' className="syll">
-                      Download Syllabus
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="breakdown">
-                <H4
+                <div>
+                <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
+                  Class Times
+                </H4>
+                <H2
                   mdfs="1.58vw"
-                  fw="700"
-                  pt="25px"
-                  pb="25px"
-                  mdpb="28px"
+                  fs="3.6vw"
+                  fw="600"
                   color="var(--Body-Text)"
                 >
-                  Training Details
+                  10am - 1pm
+                </H2>
+                </div>
+                <div className='locale'>
+                <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
+                  Location
                 </H4>
-                <div className="list">
-                  {TechnicalProgram.map((pg) => (
-                    <Flex gap="10px">
-                      <img src={check} alt="checkMark" />
-                      <P fs="3.6vw" mdfs="1.23vw" color="var(--Body-Text)">
-                        {pg}
-                      </P>
-                    </Flex>
-                  ))}
+                <H2
+                  mdfs="1.587vw"
+                  fs="3.6vw"
+                  fw="600"
+                  color="var(--Body-Text)"
+                >
+                  Online Training
+                </H2>
                 </div>
-                <div className="but">
-                <Link to="/TPMBrochure.pdf" target="_blank" download='TPM Brochure.pdf' className="syll">
-                      Download Syllabus
-                    </Link>
+                <div>
+                <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
+                  Duration
+                </H4>
+                <H2
+                  mdfs="1.587vw"
+                  fs="3.6vw"
+                  fw="600"
+                  color="var(--Body-Text)"
+                >
+                  8 weeks
+                </H2>
                 </div>
+                <div>
+                <H4 mdfs="1.058vw" fs="3.2vw" color="var(--Body-Text)">
+                  TUITION FEES
+                </H4>
+                <H2
+                  mdfs="2.38vw"
+                  fs="3.6vw"
+                  fw="600"
+                  color="var(--Body-Text)"
+                >
+                  ₦300,000
+                </H2>
               </div>
+            </div>
+          </main>
+          <div className="cta">
+            {
+              admissionClosed ? <p style={{color : 'red', fontSize : '19px', fontWeight : 'medium'}}>Admission Closed</p> : (<SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabtpmp' />)
+            }
+            <Link to="/TPMBrochure.pdf" target="_blank" download='TPM Brochure.pdf' className="syll">
+              Download Syllabus
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="breakdown">
+        <H4
+          mdfs="1.58vw"
+          fw="700"
+          pt="25px"
+          pb="25px"
+          mdpb="28px"
+          color="var(--Body-Text)"
+        >
+          Training Details
+        </H4>
+        <div className="list">
+          {TechnicalProgram.map((pg) => (
+            <Flex gap="10px">
+              <img src={check} alt="checkMark" />
+              <P fs="3.6vw" mdfs="1.23vw" color="var(--Body-Text)">
+                {pg}
+              </P>
             </Flex>
+          ))}
+        </div>
+        <div className="but">
+        <Link to="/TPMBrochure.pdf" target="_blank" download='TPM Brochure.pdf' className="syll">
+              Download Syllabus
+            </Link>
+        </div>
+      </div>
+    </Flex>
       
     </StyledProgramDetail>
   )
