@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import checksvg from "../../assets/icon/markcheck.svg"
 import bullet2 from "../../assets/icon/bullet2.svg"
 import {motion} from "framer-motion"
 
@@ -22,10 +21,6 @@ const Perks = () => {
     <motion.div>
       <StyledPerks>
       <main>
-        <header>
-          <img src={checksvg} alt="" />
-          <h1>Perks!</h1>
-        </header>
         <section className="card">
           <h2>
           Why You Need This Technical PM Knowledge
@@ -91,6 +86,7 @@ const StyledPerks = styled.div`
       padding: 2.9rem 1.8rem 3.0rem 1.8rem;
       h2{
         font-size: 1.8rem;
+        font-weight : 600;
         line-height: 4.1rem;
       }
       hr{
@@ -106,6 +102,9 @@ const StyledPerks = styled.div`
           font-size: 1.4rem;
           line-height: 2.8rem;
           margin: 0.6rem 0;
+          h2{
+            margin-top : 2rem;
+          }
         }
         li:nth-child(6){
           line-height: 2.8rem;
@@ -115,9 +114,7 @@ const StyledPerks = styled.div`
         margin-top: 2.2rem;
         font-size: 1.6rem;
         line-height: 2.9rem;
-        span{
-          font-weight: 700;
-        }
+        font-weight: 700;
       }
       div.smally{
         position: absolute;

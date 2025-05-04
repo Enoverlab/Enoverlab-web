@@ -10,7 +10,7 @@ const TechnicalHero = () => {
   return (
     <StyledTechnicalHero>
       <H1 tA="left"  mdlh="7.6rem" color='#1A1A1A' mdfs="clamp(4.5rem,3.703vw,5.8rem)">
-      Scale your PM Career with <span>Technical</span> Product Management skills
+      Scale your Career with <span>Technical</span> Product Management skills
       </H1>
       <H3 mdfs="clamp(1.6rem,1.522vw,2rem)" fs="3.9vw">Lack of technical skills is costing you more than you can imagine - it is costing you more impact, faster promotions, better job offers, and most importantly, more money</H3>
       <img src={mobtechnical} alt="Enoverlab Hero" srcSet={src} sizes={sizes} className='heroImg' />
