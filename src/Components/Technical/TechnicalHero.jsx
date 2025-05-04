@@ -12,7 +12,7 @@ const TechnicalHero = () => {
       <H1 tA="left"  mdlh="7.6rem" color='#1A1A1A' mdfs="clamp(4.5rem,3.703vw,5.8rem)">
       Scale your PM Career with <span>Technical</span> Product Management skills
       </H1>
-      <H3 mdfs="clamp(1.6rem,1.522vw,2rem)" fs="3.5vw">Lack of technical skills is costing you more than you can imagine - it is costing you more impact, faster promotions, better job offers, and most importantly, more money</H3>
+      <H3 mdfs="clamp(1.6rem,1.522vw,2rem)" fs="3.9vw">Lack of technical skills is costing you more than you can imagine - it is costing you more impact, faster promotions, better job offers, and most importantly, more money</H3>
       <img src={mobtechnical} alt="Enoverlab Hero" srcSet={src} sizes={sizes} className='heroImg' />
     </StyledTechnicalHero>
   )
@@ -23,7 +23,7 @@ export default TechnicalHero
 const StyledTechnicalHero = styled.div`
   h1{
     padding: 0 1rem;
-    margin-top: 5.6rem;
+    margin-top: 3.6rem;
     font-size: 3rem;
     br{
       display: block;
@@ -31,7 +31,8 @@ const StyledTechnicalHero = styled.div`
   }
   h3{
     padding: 0 1rem;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
+    font-family: 'inter';
     color: var(--Body-Text);
   }
   .heroImg{

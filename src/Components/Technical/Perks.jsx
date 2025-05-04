@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import checksvg from "../../assets/icon/markcheck.svg"
-import bullet from "../../assets/icon/bullet.svg"
+import bullet2 from "../../assets/icon/bullet2.svg"
 import {motion} from "framer-motion"
 
 const Perks = () => {
@@ -32,16 +32,16 @@ const Perks = () => {
           </h2>
           <hr />
           <motion.ul variants={container} initial="hidden" whileInView="show" >
-            <motion.li variants={listItem}> <img src={bullet} alt="" />You are confused and lost during technical discussions</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />You want to learn how to collaborate better with engineering teams</motion.li>
-            <motion.li variants={listItem}><img src={bullet} alt="" />You have lost job opportunities due to lack of technical skills</motion.li>
-            <motion.li variants={listItem}><img src={bullet} alt="" />You want to earn more money with your skills</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />You want to grow your PM career faster</motion.li>
+            <motion.li variants={listItem}> <img src={bullet2} alt="" />You are confused and lost during technical discussions</motion.li>
+            <motion.li variants={listItem}> <img src={bullet2} alt="" />You want to learn how to collaborate better with engineering teams</motion.li>
+            <motion.li variants={listItem}><img src={bullet2} alt="" />You have lost job opportunities due to lack of technical skills</motion.li>
+            <motion.li variants={listItem}><img src={bullet2} alt="" />You want to earn more money with your skills</motion.li>
+            <motion.li variants={listItem}> <img src={bullet2} alt="" />You want to grow your PM career faster</motion.li>
             <motion.li variants={listItem}> <h2>This Progam is Perfect For</h2></motion.li>
             <motion.li variants={listItem}></motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />Product Managers with 1+ year experience</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />Non-technical founders managing dev teams</motion.li>
-            <motion.li variants={listItem}><img src={bullet} alt="" />Non-technical talents looking to collaborate better with engineers</motion.li>
+            <motion.li variants={listItem}> <img src={bullet2} alt="" />Product Managers with 1+ year experience</motion.li>
+            <motion.li variants={listItem}> <img src={bullet2} alt="" />Non-technical founders managing dev teams</motion.li>
+            <motion.li variants={listItem}><img src={bullet2} alt="" />Non-technical talents looking to collaborate better with engineers</motion.li>
           </motion.ul>
           <p>
           At the end of this program, you will <span> Speak Tech, Collaborate Better</span>, Implement Faster, Grow Bigger & Become Richer!!!
@@ -88,9 +88,7 @@ const StyledPerks = styled.div`
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
       box-shadow: 0px 20px 0px -10px #80A2FF;
-      padding: 2.9rem 2.8rem 3.0rem 2.8rem;
-      background: #003AD4;
-      color: white;
+      padding: 2.9rem 1.8rem 3.0rem 1.8rem;
       h2{
         font-size: 1.8rem;
         line-height: 4.1rem;
