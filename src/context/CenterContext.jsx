@@ -256,7 +256,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.644401811104!2d3.453612374484845!3d6.439691993551541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e0!3m2!1sen!2sng!4v1721039921603!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "May 13, 2025",
+        startDate : "Admission Closed",
     },
     "Lekki-Weekend" : {
         place : 'Lekki',
@@ -284,7 +284,7 @@ const centerDetails = {
 
         },
         mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.644401811104!2d3.453612374484845!3d6.439691993551541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e0!3m2!1sen!2sng!4v1721039921603!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "May 10, 2025",
+        startDate : "July 12, 2025",
     },
     Ibadan : {
         place : 'Ibadan',
@@ -419,7 +419,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="ikeja cafe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2834057797636!2d3.3533708!3d6.611666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9349480e610d%3A0x151dbb19335e7eb2!2sCaf%C3%A9%20One%20Ikeja!5e0!3m2!1sen!2sng!4v1744808252160!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Admission Closed",
+        startDate : "July 12",
     },
     Online : {
         paystackSubLinks : {
