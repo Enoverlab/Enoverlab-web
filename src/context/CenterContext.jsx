@@ -344,7 +344,7 @@ const centerDetails = {
         place : 'Abuja',
         weeks : "10",
         weekIcon : weeks20,
-        location : 'Savvy Instant Offices, No 22, Kumasi Cres, Wuse 2,Abuja',
+        location : 'Novare Shared Office, Zone 5 Dalaba St, Wuse, Abuja',
         trainingDay : "Every Saturday",
         classType : 'weekend',
         trainingTime : "10am - 1pm",
@@ -364,7 +364,7 @@ const centerDetails = {
                 price : '₦103,333'
             } 
         },
-        mapIframe : <iframe title="Abuja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.7928300264903!2d7.476952574515317!3d9.082628890980839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0af7b326c723%3A0xd8be18bcf35b950b!2s22%20Kumasi%20Cres%2C%20Wuse%2C%20Abuja%20904101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1721039639625!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+        mapIframe : <iframe title="Abuja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.994307502363!2d7.455678374485262!3d9.064281990998463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0be926ae002f%3A0xe1ee5fbb305e0b36!2sNovare%20Shared%20Office!5e0!3m2!1sen!2sng!4v1748264325538!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> ,
         startDate : "June 7, 2025",
     },
     'Ikeja-Weekday' : {
