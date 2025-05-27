@@ -687,6 +687,7 @@ const StyledProgram = styled.div`
     #locale{
     width: 19rem;
     font-size: 18px;
+    
   }
   .mapMobileIframe{
     display: none;
