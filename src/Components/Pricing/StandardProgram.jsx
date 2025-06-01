@@ -273,7 +273,7 @@ const StandardProgram = () => {
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                           Start Date
                         </H4>
-                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" className={`${admissionClosed.includes(location) && '.adclosed'}`} >
+                        <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" className={`${admissionClosed.includes(location) && 'adclosed'}`} >
                           {trainingLocation.startDate}
                         </H2>
                         

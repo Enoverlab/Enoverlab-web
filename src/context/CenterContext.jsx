@@ -263,7 +263,7 @@ const centerDetails = {
         location : 'Roc Workspace, Gateview Plaza, Plot 11, Admiralty way, Lekki Phase 1',
         trainingDay : "Every Saturday",
         classType : 'weekend',
-        trainingTime : "10am - 1pm",
+        trainingTime : "2pm - 5pm",
         tuition : '400,000',
         weeks : "10",
         weekIcon : weeks20,
@@ -311,7 +311,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="ibadan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9685499825955!2d3.8717742000000004!3d7.357421999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398def589da5ad%3A0x6b54bd3bcc977a03!2sSunrise%20Supermarket%20Ring%20Road%20Ibadan!5e0!3m2!1sen!2sng!4v1743766375767!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "June 7, 2025",
+        startDate : "June 14, 2025",
     },
     Anambra : {
         place : 'Anambra',
@@ -338,7 +338,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Anambra" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3051337147767!2d7.053362574482788!3d6.223437493764614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104379af706c6619%3A0x2598afc465c51641!2sKodex%20Africa!5e0!3m2!1sen!2sng!4v1721040675268!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "June 7, 2025",
+        startDate : "June 14, 2025",
     },
     Abuja : {
         place : 'Abuja',
@@ -399,7 +399,7 @@ const centerDetails = {
         location : 'Ikeja Town Square, Obafemi Awolowo Way, Ikeja, 101233, Lagos',
         trainingDay : "Every Saturday",
         classType : 'weekend',
-        trainingTime : "2pm - 5pm",
+        trainingTime : "10am - 1pm",
         tuition : '400,000',
         weeks : "10",
         weekIcon : weeks20,
