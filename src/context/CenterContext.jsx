@@ -369,7 +369,7 @@ const centerDetails = {
     },
     'Ikeja-Weekday' : {
         place : 'Ikeja-Weekday',
-        location : 'Ikeja Town Square, Obafemi Awolowo Way, Ikeja, 101233, Lagos',
+        location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
         trainingDay : "Every Tuesday & Thursday",
         classType : 'weekday',
         trainingTime : "1pm - 4pm",
@@ -391,12 +391,12 @@ const centerDetails = {
                 price : '₦136,666'
             } 
         },
-        mapIframe : <iframe title="ikeja cafe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2834057797636!2d3.3533708!3d6.611666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9349480e610d%3A0x151dbb19335e7eb2!2sCaf%C3%A9%20One%20Ikeja!5e0!3m2!1sen!2sng!4v1744808252160!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+        mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
         startDate : "June 10, 2025",
     },
     'Ikeja-Weekend' : {
         place : 'Ikeja-Weekend',
-        location : 'Ikeja Town Square, Obafemi Awolowo Way, Ikeja, 101233, Lagos',
+        location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
         trainingDay : "Every Saturday",
         classType : 'weekend',
         trainingTime : "10am - 1pm",
@@ -418,8 +418,8 @@ const centerDetails = {
                 price : '₦136,666'
             } 
         },
-        mapIframe : <iframe title="ikeja cafe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2834057797636!2d3.3533708!3d6.611666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9349480e610d%3A0x151dbb19335e7eb2!2sCaf%C3%A9%20One%20Ikeja!5e0!3m2!1sen!2sng!4v1744808252160!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "July 12",
+        mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+        startDate : "July 12, 2025",
     },
     Online : {
         paystackSubLinks : {
