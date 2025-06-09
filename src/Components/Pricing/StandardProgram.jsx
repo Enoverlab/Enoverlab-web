@@ -166,7 +166,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          June 11, 2025
+                          June 18, 2025
                         </H2>
                       </div>
                       <div>
