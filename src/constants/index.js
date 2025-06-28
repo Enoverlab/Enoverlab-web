@@ -183,6 +183,7 @@ export const executiveProgram = [
   "One-on-one coaching ONLINE for 4 weeks",
   "Flexible class time schedule",
   "Close support and guidance till you land a Product Manager role",
+  "Access to international job platforms",
   "International certification accredited by the American Council of Training and Development (ACTD)",
   "Lifetime access to Product management resources",
   "You get The Blood Money in Tech ebook for FREE",
