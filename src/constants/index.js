@@ -360,7 +360,7 @@ export const accessData = [
 ]
 
 export const executiveData = [
-  "Indepth Coaching", "Personalised learning", "Small Class", "Global Certificate",
+  "Indepth Coaching", "Personalised learning", "Flexible Schedule", "Global Certificate",
 ]
 
 export const countries = [
