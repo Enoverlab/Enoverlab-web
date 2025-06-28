@@ -180,7 +180,7 @@ export const onlineProgram = [
 ];
 
 export const executiveProgram = [
-  "One-on-one coaching and mentorship ONLINE for 4 weeks",
+  "One-on-one coaching ONLINE for 4 weeks",
   "Flexible class time schedule",
   "Close support and guidance till you land a Product Manager role",
   "International certification accredited by the American Council of Training and Development (ACTD)",

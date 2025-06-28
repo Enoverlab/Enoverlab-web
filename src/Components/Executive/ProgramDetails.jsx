@@ -112,7 +112,7 @@ const ProgramDetails = () => {
                   mdpb="28px"
                   color="var(--Body-Text)"
                 >
-                  Training Details
+                  Here are the benefits
                 </H4>
                 <div className="list">
                   {executiveProgram.map((pg) => (
