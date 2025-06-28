@@ -96,7 +96,7 @@ const ProgramDetails = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
+                    <SecondaryButtonA Text="Enroll Now" to='https://paystack.shop/pay/-hl1a72e6u'/>
                     <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
