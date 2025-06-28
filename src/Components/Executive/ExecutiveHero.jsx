@@ -14,7 +14,7 @@ const ExecutiveHero = () => {
                 <H4>Executive Coaching</H4>
                 {/* <img src={kenyanFlag} alt="Kenya's FLag" /> */}
             </div>
-            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Become a Strategic Product Manager in 4 weeks instead of 12 weeks</H1>
+            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Become a Product Manager in 4 weeks instead of 12 weeks</H1>
             <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Don’t waste 12 weeks of your precious time - learn the most important product management skills and start making impact in your organisation immediately.</H3>
             <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
         </section>
