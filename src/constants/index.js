@@ -182,7 +182,6 @@ export const onlineProgram = [
 export const executiveProgram = [
   "One-on-one coaching and mentorship ONLINE for 4 weeks",
   "Flexible class time schedule",
-  `Guaranteed Product Manager Job recommendations`,
   "Close support and guidance till you land a Product Manager role",
   "International certification accredited by the American Council of Training and Development (ACTD)",
   "Lifetime access to Product management resources",
