@@ -16,7 +16,7 @@ const ExecutiveHero = () => {
             </div>
             <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Become a Skilled Product Manager in 4 weeks</H1>
             <H3 mdfs="clamp(1.6rem,2vw,3rem)" fs="4.5vw">Learn advanced product management skills and take your career / business to the next level</H3>
-            <SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabexecutive'/>
+            <SecondaryButtonA Text="Enroll Now" to='https://paystack.shop/pay/-hl1a72e6u'/>
         </section>
         <section className='rightContainer'>
             <div>
