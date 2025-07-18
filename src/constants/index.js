@@ -179,6 +179,18 @@ export const onlineProgram = [
   "Access to a supportive community of over 1,000 product managers across the globe"
 ];
 
+export const associateProgram = [
+  "4 weeks Intensive training and mentorship",
+  "International certification accredited by the American Council of Training and Development (ACTD)",
+  "Lifetime access to Product management resources ",
+  "Opportunity to learn from anywhere you are in the world",
+  "Avenue to meet people from across the globe",
+  "CV review and optimization for a Product Manager role",
+  "Product Manager interview and assessment guide",
+  "Job recommendations when they are available ",
+  "Access to a supportive community of over 1,000 product managers across the globe"
+];
+
 export const executiveProgram = [
   "One-on-one coaching ONLINE for 4 weeks",
   "Flexible class time schedule",
