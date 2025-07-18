@@ -131,7 +131,7 @@ const StandardProgram = () => {
               <SwiperSlide>
                 <Flex mdgap="5.9rem" display="block" mdalign="stretch">
                   <div className="program">
-                    <div className="heading" id="private">
+                    <div className="heading" id="associate">
                       <H4 mdfs="2.3vw" fw="700">
                         Associate Training
                       </H4>
@@ -456,7 +456,7 @@ export default StandardProgram;
 const StyledProgram = styled.div`
   padding: 3.2rem 0 4.2rem 0.5rem;
   .my-swiper .swiper-pagination {
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 40px; /* Adjust as needed */
     position: relative; /* Let it flow naturally */
     text-align: center;
   }
@@ -613,6 +613,11 @@ const StyledProgram = styled.div`
   }
   @media (min-width: 1024px) {
     padding: 110px 9.6rem;
+    .my-swiper .swiper-pagination {
+      margin-top: 20px; /* Adjust as needed */
+      position: relative; /* Let it flow naturally */
+      text-align: center;
+    }
     header {
       padding-bottom: 5.6rem;
       color: #0000ff;
