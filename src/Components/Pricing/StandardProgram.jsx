@@ -150,7 +150,7 @@ const StandardProgram = () => {
                               fw="600"
                               color="var(--Body-Text)"
                             >
-                              Flexible
+                              Every Monday <br /> & Thursday
                             </H2>
                           </div>
                           <div>
@@ -163,7 +163,7 @@ const StandardProgram = () => {
                             fw="600"
                             color="var(--Body-Text)"
                           >
-                            Flexible
+                            8pm - 10pm
                           </H2>
                           </div>
                           <div>
@@ -434,11 +434,14 @@ const StandardProgram = () => {
                   </div>
                 </Flex>
               </SwiperSlide>
+              <SwiperSlide className="lastPrivateSlide">
+                <PrivateProgram/>
+              </SwiperSlide>
               <div className="swiper-pagination-progressbar-fill"></div>
             </Swiper>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="privateSlide">
           <PrivateProgram/>
         </SwiperSlide>
       </Swiper>
@@ -455,7 +458,7 @@ export default StandardProgram;
 
 const StyledProgram = styled.div`
   padding: 3.2rem 0 4.2rem 0.5rem;
-  .my-swiper .swiper-pagination {
+  .head-swiper .swiper-pagination {
     margin-top: 40px; /* Adjust as needed */
     position: relative; /* Let it flow naturally */
     text-align: center;
@@ -575,7 +578,7 @@ const StyledProgram = styled.div`
   .contain{
       border-bottom: 4px solid rgba(0, 70, 255, 0.44);
       margin-bottom:4rem;
-    }
+  }
   #locale{
     outline: none;
     padding: 0.5rem 0;
@@ -611,9 +614,15 @@ const StyledProgram = styled.div`
   .adclosed{
     color: red;
   }
+  .privateSlide {
+    display : block;
+  }
+  .lastPrivateSlide{
+    display : none;
+  }
   @media (min-width: 1024px) {
     padding: 110px 9.6rem;
-    .my-swiper .swiper-pagination {
+    .head-swiper .swiper-pagination {
       margin-top: 20px; /* Adjust as needed */
       position: relative; /* Let it flow naturally */
       text-align: center;
@@ -709,6 +718,10 @@ const StyledProgram = styled.div`
       content: "On-site Training";
       font-size: 1.6rem;
     }
+    .programtext3::before {
+      content: "Private Coaching";
+      font-size: 1.6rem;
+    }
     }
     #locale{
     width: 19rem;
@@ -721,6 +734,13 @@ const StyledProgram = styled.div`
   .mapLaptopIframe{
     display: block;
     padding: 30px 0px;
+  }
+
+  .privateSlide {
+    display : none;
+  }
+  .lastPrivateSlide{
+    display : block;
   }
 
   }
