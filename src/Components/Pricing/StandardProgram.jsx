@@ -94,7 +94,7 @@ const StandardProgram = () => {
     setIsError(false)
   }
   return (
-    <StyledProgram>
+    <StyledProgram id="onsite">
       <header>Standard Programs</header>
       <Swiper
       modules={[Pagination,Autoplay]}
@@ -106,7 +106,7 @@ const StandardProgram = () => {
       >
         <SwiperSlide>
           <div className="swipepgContainer">
-            <section className="contain">
+            <section className="contain" id="online">
               <div className="swiperPagination"></div>
             </section>    
             <Swiper
@@ -199,7 +199,7 @@ const StandardProgram = () => {
                   </div>
                   <div className="breakdown">
                     <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
-                      Here Are The Benefits You Get
+                      What this training entails:
                     </H4>
                     <div className="list2">
                       {associateProgram.map((pg) => (
@@ -222,7 +222,7 @@ const StandardProgram = () => {
               <SwiperSlide>
                 <Flex mdgap="5.9rem" display="block" mdalign="stretch">
                   <div className="program">
-                    <div className="heading" id="online">
+                    <div className="heading" >
                       <H4 mdfs="2.3vw" fw="700">
                         Online Training
                       </H4>
@@ -296,7 +296,7 @@ const StandardProgram = () => {
                   </div>
                   <div className="breakdown">
                     <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
-                      Here Are The Benefits You Get
+                      What this training entails:
                     </H4>
                     <div className="list2">
                       {onlineProgram.map((pg) => (
@@ -319,7 +319,7 @@ const StandardProgram = () => {
               <SwiperSlide>
                 <Flex mdgap="5.9rem" display="block" mdalign="stretch">
                     <div className="program">
-                    <div className="heading" id="onsite">
+                    <div className="heading" >
                       <H4 mdfs="2.3vw" fw="700" >
                         On-site Training
                       </H4>
@@ -414,7 +414,7 @@ const StandardProgram = () => {
                       mdpb="28px"
                       color="var(--Body-Text)"
                     >
-                      Here Are The Benefits You Get
+                      What this training entails:
                     </H4>
                     <div className="list">
                       {(trainingLocation.classType === "weekend" ? OnsiteProgram : OnsiteProgramWeekday).map((pg) => (

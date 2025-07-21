@@ -79,7 +79,7 @@ const PrivateProgram = () => {
               </div>
               <div className="breakdown">
                 <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
-                  Here Are The Benefits You Get
+                  What this training entails:
                 </H4>
                 <div className="list2">
                   {privateCoaching.map((pg) => (

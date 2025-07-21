@@ -167,28 +167,28 @@ export const programLocale4 = [berger1, lk2, lk3, lk4];
 export const programLocale5 = [ib1, lk2, lk3, lk4];
 
 export const onlineProgram = [
-  "10 weeks Intensive training and mentorship",
-  '8 weeks internship placement ',
-  "International certification accredited by the American Council of Training and Development (ACTD)",
-  "Lifetime access to Product management resources ",
-  "Opportunity to learn from anywhere you are in the world",
-  "Avenue to meet people from across the globe",
-  "CV review and optimization for a Product Manager role",
-  "Product Manager interview and assessment guide",
-  "Job recommendations when they are available ",
-  "Access to a supportive community of over 1,000 product managers across the globe"
+  "This training is for anyone who wants to become a full professional Product Manager",
+  'It covers everything you need to learn in product management',
+  "It is a live online instructor-led training",
+  "10 weeks intensive training and mentorship",
+  "8 weeks internship placement",
+  "Lifetime access to product management resources",
+  "Lifetime access to our robust community of Product Managers",
+  "You will get an international certificate accredited by American Council of Training and Development (ACTD) at the end of the training",
+  "CV review and optimisation ",
+  "Interview prep and assessment guide",
+  "Job recommendations when they are available"
 ];
 
 export const associateProgram = [
-  "4 weeks Intensive training and mentorship",
-  "International certification accredited by the American Council of Training and Development (ACTD)",
-  "Lifetime access to Product management resources ",
-  "Opportunity to learn from anywhere you are in the world",
-  "Avenue to meet people from across the globe",
-  "CV review and optimization for a Product Manager role",
-  "Product Manager interview and assessment guide",
-  "Job recommendations when they are available ",
-  "Access to a supportive community of over 1,000 product managers across the globe"
+  "This training is for undergraduates, graduates, youth corpers, and anyone who is still trying to decide if product management is the right career for them ",
+  "The training covers the fundamentals of product management",
+  "⁠It is a live online instructor-led training",
+  "Lifetime access to product management resources",
+  "⁠Lifetime access to our robust community of Product Managers",
+  "You will get a Certificate of Completion at the end of the training ",
+  "Opportunity to meet other learners from across the globe",
+  "With the knowledge from this training, you can become an Associate or Junior Product Manager in any organisation across the globe"
 ];
 
 export const executiveProgram = [
@@ -243,14 +243,18 @@ export const OnsiteProgramWeekday = [
 ]
 
 export const privateCoaching = [
-  "One-on-one coaching and mentorship ONLINE for 6 weeks",
-  "Flexible class time schedule",
-  `Best for busy professionals & Nigerians in Diaspora`,
-  "Close support and guidance till you land a Product Manager role",
-  "International certification accredited by the American Council of Training and Development (ACTD)",
-  "Lifetime access to Product management resources",
-  "You get The Blood Money in Tech ebook for FREE",
-  "Personal recommendation from our CEO for job offers and VISA application "
+  "This training is for busy people, senior level professionals, and Nigerians in diaspora",
+  "It covers everything you need to learn in product management",
+  `It is a One-on-One online instructor-led training`,
+  "6 weeks intensive coaching with flexible learning schedule",
+  "Personalised career coaching and guidance",
+  "8 weeks internship placement (OPTIONAL)",
+  "Lifetime access to product management resources",
+  "Lifetime access to our robust community of Product Managers",
+  "International certificate accredited by American Council of Training and Development (ACTD) at the end of the training",
+  "CV review and optimisation",
+  "Interview prep and assessment guide",
+  "High Priority ⁠⁠Job recommendations when available"
 ];
 
 export const AiProgram = [
