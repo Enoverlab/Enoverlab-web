@@ -150,7 +150,7 @@ const StandardProgram = () => {
                               fw="600"
                               color="var(--Body-Text)"
                             >
-                              Every Monday <br /> & Thursday
+                              Every Tuesday <br /> & Friday
                             </H2>
                           </div>
                           <div>
@@ -168,10 +168,10 @@ const StandardProgram = () => {
                           </div>
                           <div>
                           <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
-                            Duration
+                            Start Date
                           </H4>
                           <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                            4 weeks
+                            Augusr 12, 2025
                           </H2>
                           </div>
                           <div>
@@ -241,7 +241,7 @@ const StandardProgram = () => {
                               fw="600"
                               color="var(--Body-Text)"
                             >
-                              Every Monday <br /> & Thursday
+                              Every Tuesday <br /> & Friday
                             </H2>
                           </div>
                           <div>
@@ -267,7 +267,7 @@ const StandardProgram = () => {
                               fw="600"
                               color="var(--Body-Text)"
                             >
-                              July 14, 2025
+                              August 12, 2025
                             </H2>
                           </div>
                           <div>
