@@ -85,7 +85,7 @@ const PrivateProgram = () => {
                   {privateCoaching.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
-                      <P fs="3.6vw" mdfs="1.33vw" color="var(--Body-Text)">
+                      <P fs="3.8vw" mdfs="1.33vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>

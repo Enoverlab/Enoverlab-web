@@ -99,7 +99,7 @@ const StandardProgram = () => {
       <Swiper
       modules={[Pagination,Autoplay]}
       pagination={{ clickable: true }}
-      autoplay={{ delay: 5000, disableOnInteraction: false,pauseOnMouseEnter : true }}
+      autoplay={{ delay: 10000, disableOnInteraction: true,pauseOnMouseEnter : true, }}
       spaceBetween={50}
       slidesPerView={1}
       className="head-swiper"
@@ -205,7 +205,7 @@ const StandardProgram = () => {
                       {associateProgram.map((pg) => (
                         <Flex gap="10px">
                           <img src={check} alt="checkMark" />
-                          <P fs="3.6vw" mdfs="1.33vw" color="var(--Body-Text)">
+                          <P fs="3.8vw" mdfs="1.33vw" color="var(--Body-Text)">
                             {pg}
                           </P>
                         </Flex>
@@ -302,7 +302,7 @@ const StandardProgram = () => {
                       {onlineProgram.map((pg) => (
                         <Flex gap="10px">
                           <img src={check} alt="checkMark" />
-                          <P fs="3.6vw" mdfs="1.33vw" color="var(--Body-Text)">
+                          <P fs="3.8vw" mdfs="1.33vw" color="var(--Body-Text)">
                             {pg}
                           </P>
                         </Flex>
@@ -420,7 +420,7 @@ const StandardProgram = () => {
                       {(trainingLocation.classType === "weekend" ? OnsiteProgram : OnsiteProgramWeekday).map((pg) => (
                         <Flex gap="10px">
                           <img src={check} alt="checkMark" />
-                          <P fs="3.6vw" mdfs="1.23vw" color="var(--Body-Text)">
+                          <P fs="3.8vw" mdfs="1.23vw" color="var(--Body-Text)">
                             {pg}
                           </P>
                         </Flex>
