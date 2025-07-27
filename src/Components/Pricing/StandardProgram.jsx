@@ -23,7 +23,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
-  const admissionClosed = ['Anambra']
+  const admissionClosed = ['Anambra','Abuja']
 
   const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
   
