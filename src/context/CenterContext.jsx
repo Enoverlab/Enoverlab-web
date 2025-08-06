@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import weeks20 from "../assets/icon/20weeks.png";
-import weeks14 from "../assets/icon/14weeks.png";
+import weeks15 from "../assets/icon/week15.svg";
 
 export const CenterContext = createContext({
     'Lekki-Weekday' : {
@@ -239,7 +239,7 @@ const centerDetails = {
         trainingTime : '1pm - 4pm',
         tuition : '400,000',
         weeks : "10",
-        weekIcon : weeks14,
+        weekIcon : weeks15,
         link : 'https://enoverlab.com/payments',
         paystackSubLinks : {
             oneTime : {
@@ -263,7 +263,7 @@ const centerDetails = {
         location : 'Roc Workspace, Gateview Plaza, Plot 11, Admiralty way, Lekki Phase 1',
         trainingDay : "Every Saturday",
         classType : 'weekend',
-        trainingTime : "2pm - 5pm",
+        trainingTime : "10am - 1pm",
         tuition : '400,000',
         weeks : "10",
         weekIcon : weeks20,
@@ -284,7 +284,7 @@ const centerDetails = {
 
         },
         mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.644401811104!2d3.453612374484845!3d6.439691993551541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e0!3m2!1sen!2sng!4v1721039921603!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "July 26, 2025",
+        startDate : "September 13, 2025",
     },
     Ibadan : {
         place : 'Ibadan',
@@ -311,7 +311,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="ibadan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9685499825955!2d3.8717742000000004!3d7.357421999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398def589da5ad%3A0x6b54bd3bcc977a03!2sSunrise%20Supermarket%20Ring%20Road%20Ibadan!5e0!3m2!1sen!2sng!4v1743766375767!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "August 23, 2025",
+        startDate : "September 6, 2025",
     },
     Anambra : {
         place : 'Anambra',
@@ -375,7 +375,7 @@ const centerDetails = {
         trainingTime : "1pm - 4pm",
         tuition : '400,000',
         weeks : "10",
-        weekIcon : weeks14,
+        weekIcon : weeks15,
         link : 'https://enoverlab.com/payments',
         paystackSubLinks : {
             oneTime : {

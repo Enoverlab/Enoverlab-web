@@ -229,7 +229,7 @@ export const OnsiteProgram = [
 ]
 
 export const OnsiteProgramWeekday = [
-  "6 weeks Intensive training and mentorship ONSITE",
+  "7 weeks Intensive training and mentorship ONSITE",
   "8 weeks internship placement",
   "A small class for only 10 persons",
   "International certification accredited by the American Council of Training and Development (ACTD)",
