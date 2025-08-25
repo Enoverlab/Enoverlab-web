@@ -23,7 +23,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
-  const admissionClosed = ['Anambra','Abuja',"Lekki-Weekday"]
+  const admissionClosed = ['Anambra','Abuja',"Lekki-Weekday","Ikeja-Weekday"]
 
   const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
   
@@ -50,6 +50,9 @@ const StandardProgram = () => {
         break;
       case "Ikeja-Weekend":
       setTrainingLocation(centerDetails['Ikeja-Weekend'])
+      break;
+      case "Yaba-Weekday":
+      setTrainingLocation(centerDetails['Yaba-Weekday'])
       break;
       default:
         setTrainingLocation({
@@ -171,7 +174,7 @@ const StandardProgram = () => {
                             Start Date
                           </H4>
                           <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                            Augusr 12, 2025
+                            September 13, 2025
                           </H2>
                           </div>
                           <div>
@@ -267,7 +270,7 @@ const StandardProgram = () => {
                               fw="600"
                               color="var(--Body-Text)"
                             >
-                              August 12, 2025
+                              September 13, 2025
                             </H2>
                           </div>
                           <div>
@@ -353,6 +356,7 @@ const StandardProgram = () => {
                               <option value="Abuja">ABUJA</option>
                               <option value="Ikeja-Weekday">IKEJA-Weekday</option>
                               <option value="Ikeja-Weekend">IKEJA-Weekend</option>
+                              <option value="Yaba-Weekday">Yaba-Weekday</option>
                               <option value="Anambra">ANAMBRA</option>
                             </select>
                             {isError && <p className="err">Please select Your Preferred Location</p>}

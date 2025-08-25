@@ -244,7 +244,7 @@ const centerDetails = {
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/lqxlwzoyi1',
-                price : '₦410,000',
+                price : '₦405,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/wzgm-e6dgx',
@@ -272,7 +272,7 @@ const centerDetails = {
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/lqxlwzoyi1',
-                price : '₦410,000',
+                price : '₦405,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/wzgm-e6dgx',
@@ -300,7 +300,7 @@ const centerDetails = {
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/dekyy51qhn',
-                price : '₦310,000',
+                price : '₦305,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/fd89f6xax8',
@@ -354,7 +354,7 @@ const centerDetails = {
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/i-1jvotnch',
-                price : '₦310,000',
+                price : '₦305,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/a6u0vgjz8b',
@@ -381,7 +381,7 @@ const centerDetails = {
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/4nctjeq3or',
-                price : '₦410,000',
+                price : '₦405,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/nctqraqiiw',
@@ -393,14 +393,14 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "August 19, 2025",
+        startDate : "Admission Closed",
     },
     'Ikeja-Weekend' : {
         place : 'Ikeja-Weekend',
         location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
         trainingDay : "Every Saturday",
         classType : 'weekend',
-        trainingTime : "2am - 5pm",
+        trainingTime : "2pm - 5pm",
         tuition : '400,000',
         weeks : "10",
         weekIcon : weeks20,
@@ -420,7 +420,34 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "August 23, 2025",
+        startDate : "September 13, 2025",
+    },
+    'Yaba-Weekday' : {
+        place : 'Yaba-Weekday',
+        location : 'Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba',
+        trainingDay : "Every Wednesday & Friday",
+        classType : 'weekend',
+        trainingTime : "12pm - 3pm",
+        tuition : '400,000',
+        weeks : "10",
+        weekIcon : weeks15,
+        link : 'https://enoverlab.com/payments',
+        paystackSubLinks : {
+            oneTime : {
+                link : 'https://paystack.com/pay/4nctjeq3or',
+                price : '₦405,000',
+            },
+            twoTimes : {
+                link : 'https://paystack.com/pay/nctqraqiiw',
+                price : '₦205,000',
+            } ,
+            threeTimes : {
+                link : 'https://paystack.com/pay/4euo-rt5yz',
+                price : '₦136,666'
+            } 
+        },
+        mapIframe : <iframe title="Yaba Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+        startDate : "September 10, 2025",
     },
     Online : {
         paystackSubLinks : {
