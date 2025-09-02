@@ -216,8 +216,8 @@ const Plans = () => {
             </p>
             <div className="details">
                 <p>Account Name: <span>Enoverlab Limited</span></p>
-                <p>Account Number: <span>6103976307</span></p>
-                <p>Bank: <span>Wema Bank</span></p>
+                <p>Account Number: <span>1311450991</span></p>
+                <p>Bank: <span>Zenith Bank</span></p>
             </div>
         </div>
       </section>

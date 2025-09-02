@@ -51,8 +51,8 @@ const StandardProgram = () => {
       case "Ikeja-Weekend":
       setTrainingLocation(centerDetails['Ikeja-Weekend'])
       break;
-      case "Yaba-Weekday":
-      setTrainingLocation(centerDetails['Yaba-Weekday'])
+      case "Yaba-Weekend":
+      setTrainingLocation(centerDetails['Yaba-Weekend'])
       break;
       default:
         setTrainingLocation({
@@ -356,7 +356,7 @@ const StandardProgram = () => {
                               <option value="Abuja">ABUJA</option>
                               <option value="Ikeja-Weekday">IKEJA-Weekday</option>
                               <option value="Ikeja-Weekend">IKEJA-Weekend</option>
-                              <option value="Yaba-Weekday">Yaba-Weekday</option>
+                              <option value="Yaba-Weekend">Yaba-Weekend</option>
                               <option value="Anambra">ANAMBRA</option>
                             </select>
                             {isError && <p className="err">Please select Your Preferred Location</p>}
