@@ -234,9 +234,9 @@ const centerDetails = {
     'Lekki-Weekday': {
         place : 'Lekki-Weekday',
         location : 'Perxels Office, Triangle Mall, Osapa London, Lekki',
-        trainingDay : "Every Tuesday & Friday",
+        trainingDay : "Every Mondy & Friday",
         classType : 'weekday',
-        trainingTime : '1pm - 4pm',
+        trainingTime : '12pm - 3pm',
         tuition : '400,000',
         weeks : "10",
         weekIcon : weeks15,
@@ -257,7 +257,7 @@ const centerDetails = {
         },
         
         mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1267180488376!2d3.6027612744555024!3d6.505639393486641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b853e4de644bf%3A0x35c235a02245814f!2sPerxels!5e0!3m2!1sen!2sng!4v1755422139785!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Admission Closed",
+        startDate : "October 13, 2025",
     },
     "Lekki-Weekend" : {
         place : 'Lekki',
@@ -373,7 +373,7 @@ const centerDetails = {
         location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
         trainingDay : "Every Tuesday & Thursday",
         classType : 'weekday',
-        trainingTime : "1pm - 4pm",
+        trainingTime : "12pm - 3pm",
         tuition : '400,000',
         weeks : "10",
         weekIcon : weeks15,
