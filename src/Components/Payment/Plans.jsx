@@ -98,7 +98,7 @@ const Plans = () => {
                     One-Time Payment Of
                 </h4>
                 <p>
-                    ₦310,000
+                    ₦305,000
                     <span> Full Payment</span>
                 </p>
                 <div className="cta">
@@ -204,6 +204,55 @@ const Plans = () => {
                 </div>
             </div>            
 
+        </div>
+      </section>
+      <section className="online">
+        <h2>
+        Technical PM Training Payment
+        </h2>
+        <div className="Option" data-aos='fade-right'>
+            <div className="details" data-aos='fade-right'>
+                <h4>
+                    One-Time Payment Of
+                </h4>
+                <p>
+                    ₦300,000
+                    <span> Full Payment</span>
+                </p>
+                <div className="cta">
+                    <SecondaryButton Text='Pay Now' to="https://paystack.shop/pay/enoverlabtpmp" target='_blank' />
+                </div>
+            </div>
+            <div className="hr">
+                <hr />
+            </div>
+            <div className="details" data-aos='fade-up'>
+                <h4>
+                Two Times Payment Of
+                </h4>
+                <p>
+                    ₦150,000
+                    <span> each</span>
+                </p>
+                <div className="cta">
+                    <SecondaryButton Text='Pay Now' to="https://paystack.shop/pay/b39taabyi5" target='_blank' />
+                </div>
+            </div>
+            {/* <div className="hr">
+                <hr />
+            </div>
+            <div className="details" data-aos='fade-down'>
+                <h4>
+                    Three Times Payment Of
+                </h4>
+                <p>
+                    ₦103,333
+                    <span> each</span>
+                </p>
+                <div className="cta">
+                    <SecondaryButton Text='Pay Now' to="https://paystack.com/pay/odioim9y0n" target='_blank' />
+                </div>
+            </div> */}
         </div>
       </section>
       <section className="otherOptions">
