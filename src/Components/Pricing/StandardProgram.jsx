@@ -8,7 +8,7 @@ import { Flex } from "../HomeComponents/ProductSection";
 import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks18 from "../../assets/icon/weeks18.png";
 import weeks20 from "../../assets/icon/20weeks.png";
-import week4 from "../../assets/icon/weeks4.svg"
+// import week4 from "../../assets/icon/weeks4.svg"
 import { OnsiteProgram, OnsiteProgramWeekday, associateProgram, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
@@ -136,9 +136,9 @@ const StandardProgram = () => {
                   <div className="program">
                     <div className="heading" id="associate">
                       <H4 mdfs="2.3vw" fw="700">
-                        Associate Training
+                        Self-Paced Training
                       </H4>
-                      <img src={week4} alt="4weeks" />
+                      {/* <img src={week4} alt="4weeks" /> */}
                     </div>
                     <form className="cover" method="get" action="https://paystack.shop/pay/c8pvuc0n8j">
                       <main>
@@ -153,7 +153,8 @@ const StandardProgram = () => {
                               fw="600"
                               color="var(--Body-Text)"
                             >
-                              Every Wednesday <br /> & Saturday
+                              Anyday
+                              {/* Every Wednesday <br /> & Saturday */}
                             </H2>
                           </div>
                           <div>
@@ -166,7 +167,8 @@ const StandardProgram = () => {
                             fw="600"
                             color="var(--Body-Text)"
                           >
-                            8pm - 10pm
+                            Anytime
+                            {/* 8pm - 10pm */}
                           </H2>
                           </div>
                           <div>
@@ -174,7 +176,8 @@ const StandardProgram = () => {
                             Start Date
                           </H4>
                           <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                            September 13, 2025
+                            AnyTime
+                            {/* September 13, 2025 */}
                           </H2>
                           </div>
                           <div>
