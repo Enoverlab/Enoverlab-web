@@ -9,7 +9,7 @@ import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks18 from "../../assets/icon/weeks18.png";
 import weeks20 from "../../assets/icon/20weeks.png";
 // import week4 from "../../assets/icon/weeks4.svg"
-import { OnsiteProgram, OnsiteProgramWeekday, associateProgram, onlineProgram, selfPacedProgram } from "../../constants";
+import { OnsiteProgram, OnsiteProgramWeekday, onlineProgram, selfPacedProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
