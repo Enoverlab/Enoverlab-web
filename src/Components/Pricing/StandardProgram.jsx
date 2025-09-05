@@ -136,7 +136,7 @@ const StandardProgram = () => {
                   <div className="program">
                     <div className="heading" id="associate">
                       <H4 mdfs="2.3vw" fw="700">
-                        Self-Paced Training
+                        Self Paced Training
                       </H4>
                       {/* <img src={week4} alt="4weeks" /> */}
                     </div>
@@ -570,7 +570,7 @@ const StyledProgram = styled.div`
       color: #fff;
     }
     .programtext0::before {
-      content: "Associate Training";
+      content: "Self Paced Training";
       font-size: 1.2rem;
     }
     .programtext1::before {
@@ -714,7 +714,7 @@ const StyledProgram = styled.div`
     height: 75px;
     }
     .programtext0::before {
-      content: "Associate Training";
+      content: "Self Paced Training";
       font-size: 1.6rem;
     }
     .programtext1::before {
