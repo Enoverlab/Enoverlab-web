@@ -140,7 +140,7 @@ const StandardProgram = () => {
                       </H4>
                       {/* <img src={week4} alt="4weeks" /> */}
                     </div>
-                    <form className="cover" method="get" action="https://paystack.shop/pay/c8pvuc0n8j">
+                    <form className="cover" method="get" action="https://paystack.shop/pay/i1tpk9f0tr">
                       <main>
                         <div  className="item">
                           <div >
