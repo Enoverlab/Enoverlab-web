@@ -234,7 +234,7 @@ const centerDetails = {
     'Lekki-Weekday': {
         place : 'Lekki-Weekday',
         location : 'Perxels Office, Triangle Mall, Osapa London, Lekki',
-        trainingDay : "Every Mondy & Friday",
+        trainingDay : "Every Mondy & Thursday",
         classType : 'weekday',
         trainingTime : '12pm - 3pm',
         tuition : '400,000',
