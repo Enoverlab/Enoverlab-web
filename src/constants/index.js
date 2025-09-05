@@ -180,12 +180,21 @@ export const onlineProgram = [
   "Job recommendations when they are available"
 ];
 
+export const selfPacedProgram = [
+  "Learn everything in product management at your own pace, in your own schedule, and at your own time",
+  "Lifetime access to product management resources",
+  "Lifetime access to our robust community of Product Managers",
+  "You will get a Certificate of Completion at the end of the training ",
+  "Opportunity to meet other learners from across the globe",
+  "With the knowledge from this training, you can become an Associate or Junior Product Manager in any organisation across the globe"
+];
+
 export const associateProgram = [
   "This training is for undergraduates, graduates, youth corpers, and anyone who is still trying to decide if product management is the right career for them ",
   "The training covers the fundamentals of product management",
-  "⁠It is a live online instructor-led training",
+  "It is a live online instructor-led training",
   "Lifetime access to product management resources",
-  "⁠Lifetime access to our robust community of Product Managers",
+  "Lifetime access to our robust community of Product Managers",
   "You will get a Certificate of Completion at the end of the training ",
   "Opportunity to meet other learners from across the globe",
   "With the knowledge from this training, you can become an Associate or Junior Product Manager in any organisation across the globe"

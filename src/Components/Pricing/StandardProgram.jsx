@@ -9,7 +9,7 @@ import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks18 from "../../assets/icon/weeks18.png";
 import weeks20 from "../../assets/icon/20weeks.png";
 // import week4 from "../../assets/icon/weeks4.svg"
-import { OnsiteProgram, OnsiteProgramWeekday, associateProgram, onlineProgram } from "../../constants";
+import { OnsiteProgram, OnsiteProgramWeekday, associateProgram, onlineProgram, selfPacedProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
@@ -23,7 +23,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState('')
   const [isError,setIsError] = useState(false)
   const centerDetails = useContext(CenterContext)
-  const admissionClosed = ['Anambra','Abuja']
+  const admissionClosed = ['Anambra',]
 
   const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
   
@@ -208,7 +208,7 @@ const StandardProgram = () => {
                       What this training entails:
                     </H4>
                     <div className="list2">
-                      {associateProgram.map((pg) => (
+                      {selfPacedProgram.map((pg) => (
                         <Flex gap="10px">
                           <img src={check} alt="checkMark" />
                           <P fs="3.8vw" mdfs="1.33vw" color="var(--Body-Text)">
@@ -273,7 +273,7 @@ const StandardProgram = () => {
                               fw="600"
                               color="var(--Body-Text)"
                             >
-                              September 13, 2025
+                              September 17, 2025
                             </H2>
                           </div>
                           <div>
