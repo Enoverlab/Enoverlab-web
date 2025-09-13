@@ -171,7 +171,6 @@ export const onlineProgram = [
   'It covers everything you need to learn in product management',
   "It is a live online instructor-led training",
   "10 weeks intensive training and mentorship",
-  "8 weeks internship placement",
   "Lifetime access to product management resources",
   "Lifetime access to our robust community of Product Managers",
   "You will get an international certificate accredited by American Council of Training and Development (ACTD) at the end of the training",
@@ -225,7 +224,6 @@ export const businessProgram = [
 
 export const OnsiteProgram = [
   "12 weeks Intensive training and mentorship ONSITE",
-  "8 weeks internship placement",
   "A small class for only 10 persons",
   "International certification accredited by the American Council of Training and Development (ACTD)",
   "Lifetime access to Product management resources",
@@ -239,7 +237,6 @@ export const OnsiteProgram = [
 
 export const OnsiteProgramWeekday = [
   "7 weeks Intensive training and mentorship ONSITE",
-  "8 weeks internship placement",
   "A small class for only 10 persons",
   "International certification accredited by the American Council of Training and Development (ACTD)",
   "Lifetime access to Product management resources",
@@ -257,7 +254,6 @@ export const privateCoaching = [
   `It is a One-on-One online instructor-led training`,
   "6 weeks intensive coaching with flexible learning schedule",
   "Personalised career coaching and guidance",
-  "8 weeks internship placement (OPTIONAL)",
   "Lifetime access to product management resources",
   "Lifetime access to our robust community of Product Managers",
   "International certificate accredited by American Council of Training and Development (ACTD) at the end of the training",
@@ -382,7 +378,7 @@ export const alumni = [
 ]
 
 export const accessData = [
-  "Intensive training", "Project based learning", "Internship placement", "Global Certificate",
+  "Intensive training", "Project based learning", "Global Certificate",
 ]
 
 export const executiveData = [
