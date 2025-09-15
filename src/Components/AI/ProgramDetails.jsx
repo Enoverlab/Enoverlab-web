@@ -1,7 +1,7 @@
 import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButtonA } from '../../Utils/styled/Buttons'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { AiProgram } from '../../constants'
 import weeks4 from "../../assets/icon/weeks4.svg"
 import styled from 'styled-components';
@@ -99,10 +99,11 @@ const ProgramDetails = () => {
                     {
                       admissionClosed ? <p style={{color : 'red', fontSize : '19px', fontWeight : 'medium'}}>Admission Closed</p> : (<SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/w94wd4f14d' />)
                     }
+                    <></>
                     
-                    <Link to="/AISyllabus.pdf" target="_blank" download='AISyllabus.pdf' className="syll">
+                    {/* <Link to="/AISyllabus.pdf" target="_blank" download='AISyllabus.pdf' className="syll">
                       Download Syllabus
-                </Link>
+                </Link> */}
                   </div>
                 </div>
               </div>
@@ -127,11 +128,11 @@ const ProgramDetails = () => {
                     </Flex>
                   ))}
                 </div>
-                <div className="but">
+                {/* <div className="but">
                 <Link to="/AISyllabus.pdf" target="_blank" download='AISyllabus.pdf' className="syll">
                       Download Syllabus
                 </Link>
-                </div>
+                </div> */}
               </div>
             </Flex>
       

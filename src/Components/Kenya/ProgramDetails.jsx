@@ -78,14 +78,14 @@ const ProgramDetails = () => {
                         >
                           12 weeks training
                         </H2>
-                        <H2
+                        {/* <H2
                           mdfs="1.587vw"
                           fs="3.9vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
                           8 weeks training
-                        </H2>
+                        </H2> */}
                         </div>
                         <div>
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">

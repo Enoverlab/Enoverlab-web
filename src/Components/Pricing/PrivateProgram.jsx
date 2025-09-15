@@ -1,6 +1,6 @@
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SubmitButton } from '../../Utils/styled/Buttons'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { Flex } from '../HomeComponents/ProductSection'
 import weeks6 from "../../assets/icon/6weeks.png"
 import { privateCoaching } from '../../constants'
@@ -71,9 +71,10 @@ const PrivateProgram = () => {
                   </main>
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
-                    <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
+                    <></>
+                    {/* <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                     Download Syllabus
-                    </Link>
+                    </Link> */}
                   </div>
                 </form>
               </div>
@@ -92,9 +93,9 @@ const PrivateProgram = () => {
                   ))}
                 </div>
                 <div className="but">
-                <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
+                {/* <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                   Download Syllabus
-                </Link>
+                </Link> */}
                 </div>
               </div>
             </Flex>

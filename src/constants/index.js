@@ -170,13 +170,11 @@ export const onlineProgram = [
   "This training is for anyone who wants to become a full professional Product Manager",
   'It covers everything you need to learn in product management',
   "It is a live online instructor-led training",
-  "10 weeks intensive training and mentorship",
+  "12 weeks intensive training and mentorship",
   "Lifetime access to product management resources",
   "Lifetime access to our robust community of Product Managers",
   "You will get an international certificate accredited by American Council of Training and Development (ACTD) at the end of the training",
-  "CV review and optimisation ",
-  "Interview prep and assessment guide",
-  "Job recommendations when they are available"
+  "6 hours class on “How to get a Product Manager job” including CV review, LinkedIn Profile Optimization, Interview Prep, websites to apply for jobs, assessment guide, etc"
 ];
 
 export const selfPacedProgram = [

@@ -12,7 +12,7 @@ import weeks20 from "../../assets/icon/20weeks.png";
 import { OnsiteProgram, OnsiteProgramWeekday, onlineProgram, selfPacedProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import {useState, useEffect} from "react";
 import StandardForm from "../Enroll-Form/StandardForm";
 import { useContext } from "react";
@@ -197,9 +197,10 @@ const StandardProgram = () => {
                       </main>
                       <div className="cta">
                         <SubmitButton Text="Enroll Now" />
-                        <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
+                        <></>
+                        {/* <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                         Download Syllabus
-                        </Link>
+                        </Link> */}
                       </div>
                     </form>
                   </div>
@@ -217,11 +218,11 @@ const StandardProgram = () => {
                         </Flex>
                       ))}
                     </div>
-                    <div className="but">
+                    {/* <div className="but">
                     <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
                       Download Syllabus
                     </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </Flex>
               </SwiperSlide>
@@ -293,10 +294,11 @@ const StandardProgram = () => {
                         
                       </main>
                       <div className="cta">
-                          <SubmitButton Text="Enroll Now" />
-                          <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                        <SubmitButton Text="Enroll Now" />
+                        <></>
+                          {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                           Download Syllabus
-                        </Link>
+                        </Link> */}
                       </div>
                     </form>
                   </div>
@@ -314,11 +316,11 @@ const StandardProgram = () => {
                         </Flex>
                       ))}
                     </div>
-                    <div className="but">
+                    {/* <div className="but">
                     <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                           Download Syllabus
                     </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </Flex>
               </SwiperSlide>
@@ -403,9 +405,10 @@ const StandardProgram = () => {
                       </main>
                       <div className="cta">
                         <SubmitButton Text="Enroll Now" disabled={admissionClosed.includes(location)}  />
-                        <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                        <></>
+                        {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                           Download Syllabus
-                        </Link>
+                        </Link> */}
                       </div>
                     </form>
                     </div>
@@ -433,11 +436,11 @@ const StandardProgram = () => {
                         </Flex>
                       ))}
                     </div>
-                    <div className="but">
+                    {/* <div className="but">
                     <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                           Download Syllabus
                     </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </Flex>
               </SwiperSlide>

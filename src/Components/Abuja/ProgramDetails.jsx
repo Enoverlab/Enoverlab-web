@@ -1,7 +1,7 @@
 import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SubmitButton } from '../../Utils/styled/Buttons'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { OnsiteProgram } from '../../constants'
 import weeks20 from "../../assets/icon/20weeks.png"
 import styled from 'styled-components';
@@ -103,9 +103,10 @@ const ProgramDetails = () => {
                   </main>
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
-                    <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                    <></>
+                    {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
-                </Link>
+                    </Link> */}
                   </div>
                   </form>
                   
