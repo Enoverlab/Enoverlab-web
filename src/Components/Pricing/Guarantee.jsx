@@ -36,7 +36,6 @@ const Guarantee = () => {
             <motion.li variants={listItem}> <img src={bullet} alt="" />Doing the assignments</motion.li>
             <motion.li variants={listItem}><img src={bullet} alt="" />Participating in the group work</motion.li>
             <motion.li variants={listItem}><img src={bullet} alt="" />Working on the capstone project</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />Engaging in the internship</motion.li>
             <motion.li variants={listItem}> <img src={bullet} alt="" />Following the instructions of your trainers</motion.li>
           </motion.ul>
           <p>

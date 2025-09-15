@@ -1,6 +1,7 @@
 import { createContext } from "react";
 import weeks20 from "../assets/icon/20weeks.png";
 import weeks15 from "../assets/icon/week15.svg";
+// import weeks12 from "../../assets/icon/weeks12.svg"
 
 export const CenterContext = createContext({
     'Lekki-Weekday' : {
@@ -238,7 +239,7 @@ const centerDetails = {
         classType : 'weekday',
         trainingTime : '12pm - 3pm',
         tuition : '400,000',
-        weeks : "10",
+        weeks : "12",
         weekIcon : weeks15,
         link : 'https://enoverlab.com/payments',
         paystackSubLinks : {

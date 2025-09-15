@@ -3,7 +3,7 @@ import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SubmitButton } from '../../Utils/styled/Buttons'
 // import { Link } from 'react-router-dom'
 import { OnsiteProgram } from '../../constants'
-import weeks20 from "../../assets/icon/20weeks.png"
+import weeks12 from "../../assets/icon/weeks12.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 import { useContext } from 'react'
@@ -19,7 +19,7 @@ const ProgramDetails = () => {
                   <H4 mdfs="2.38vw" fw="700">
                   Ibadan Centre Info
                   </H4>
-                  <img src={weeks20} alt="20 weeks" />
+                  <img src={weeks12} alt="20 weeks" />
                 </div>
                 <div className="cover2">
                   <form action={IbadanDetails.link} target="_blank">
