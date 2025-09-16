@@ -1,7 +1,7 @@
 import { createContext } from "react";
-import weeks20 from "../assets/icon/20weeks.png";
-import weeks15 from "../assets/icon/week15.svg";
-// import weeks12 from "../../assets/icon/weeks12.svg"
+// import weeks20 from "../assets/icon/20weeks.png";
+import weeks7 from "../assets/icon/week7.svg";
+import weeks12 from "../../assets/icon/weeks12.svg"
 
 export const CenterContext = createContext({
     'Lekki-Weekday' : {
@@ -239,8 +239,8 @@ const centerDetails = {
         classType : 'weekday',
         trainingTime : '12pm - 3pm',
         tuition : '400,000',
-        weeks : "12",
-        weekIcon : weeks15,
+        weeks : "7",
+        weekIcon : weeks7,
         link : 'https://enoverlab.com/payments',
         paystackSubLinks : {
             oneTime : {
@@ -267,8 +267,8 @@ const centerDetails = {
         classType : 'weekend',
         trainingTime : "10am - 1pm",
         tuition : '400,000',
-        weeks : "10",
-        weekIcon : weeks20,
+        weeks : "12",
+        weekIcon : weeks12,
         link : 'https://enoverlab.com/payments',
         paystackSubLinks : {
             oneTime : {
@@ -295,8 +295,8 @@ const centerDetails = {
         classType : 'weekend',
         trainingTime : "9am - 12pm",
         tuition : '300,000',
-        weeks : "10",
-        weekIcon : weeks20,
+        weeks : "12",
+        weekIcon : weeks12,
         link :  "https://enoverlab.com/payments",
         paystackSubLinks : {
             oneTime : {
@@ -322,8 +322,8 @@ const centerDetails = {
         classType : 'weekend',
         trainingTime : "10am - 1pm",
         tuition : '250,000',
-        weeks : "10",
-        weekIcon : weeks20,
+        weeks : "12",
+        weekIcon : weeks12,
         link :  "https://enoverlab.com/payments",
         paystackSubLinks : {
             oneTime : {
@@ -344,8 +344,8 @@ const centerDetails = {
     },
     Abuja : {
         place : 'Abuja',
-        weeks : "10",
-        weekIcon : weeks20,
+        weeks : "12",
+        weekIcon : weeks12,
         location : 'Novare Shared Office, Zone 5 Dalaba St, Wuse, Abuja',
         trainingDay : "Every Saturday",
         classType : 'weekend',
@@ -376,8 +376,8 @@ const centerDetails = {
         classType : 'weekday',
         trainingTime : "12pm - 3pm",
         tuition : '400,000',
-        weeks : "10",
-        weekIcon : weeks15,
+        weeks : "7",
+        weekIcon : weeks7,
         link : 'https://enoverlab.com/payments',
         paystackSubLinks : {
             oneTime : {
@@ -403,8 +403,8 @@ const centerDetails = {
         classType : 'weekend',
         trainingTime : "2pm - 5pm",
         tuition : '400,000',
-        weeks : "10",
-        weekIcon : weeks20,
+        weeks : "12",
+        weekIcon : weeks12,
         link : 'https://enoverlab.com/payments',
         paystackSubLinks : {
             oneTime : {
@@ -430,8 +430,8 @@ const centerDetails = {
         classType : 'weekend',
         trainingTime : "10am - 1pm",
         tuition : '400,000',
-        weeks : "10",
-        weekIcon : weeks20,
+        weeks : "12",
+        weekIcon : weeks12,
         link : 'https://enoverlab.com/payments',
         paystackSubLinks : {
             oneTime : {
