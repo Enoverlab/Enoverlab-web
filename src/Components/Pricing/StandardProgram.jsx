@@ -65,8 +65,8 @@ const StandardProgram = () => {
           classType : 'weekend',
           link : '',
           mapIframe : '',
-          weeks : "10",
-          weekIcon : weeks20,
+          weeks : "12",
+          weekIcon : weeks12,
           startDate : "N/A"
         })
         break;

@@ -1,7 +1,7 @@
 import { createContext } from "react";
 // import weeks20 from "../assets/icon/20weeks.png";
 import weeks7 from "../assets/icon/week7.svg";
-import weeks12 from "../../assets/icon/weeks12.svg"
+import weeks12 from "../assets/icon/weeks12.svg"
 
 export const CenterContext = createContext({
     'Lekki-Weekday' : {
