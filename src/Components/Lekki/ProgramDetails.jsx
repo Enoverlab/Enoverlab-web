@@ -61,7 +61,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Roc Workspace, Gateview Plaza, Plot 11,<br />Admiralty way, Lekki Phase 1
+                          {LekkiDetails.location}
                         </H2>
                         </div>
                       <div>

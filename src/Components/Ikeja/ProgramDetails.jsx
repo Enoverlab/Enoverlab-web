@@ -61,7 +61,8 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          EridanSpace, Oluwalogbon House, Plot A Obafemi <br /> Awolowo Way, Alausa, Ikeja
+                          
+                          {IkejaDetails.location}
                         </H2>
                         </div>
                       <div>
