@@ -61,7 +61,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Cafe One, Palms Mall, Ring Road, <br /> Ibadan
+                          {IbadanDetails.location}
                         </H2>
                         </div>
                       <div>

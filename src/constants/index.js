@@ -227,9 +227,7 @@ export const OnsiteProgram = [
   "Lifetime access to Product management resources",
   "Access to a supportive community of over 1,000 product managers across the globe",
   "Opportunity to physically connect with incredible people on the same Product Manager journey",
-  "CV review and optimization for a Product Manager role",
-  "Product Manager interview and assessment guide",
-  "Job recommendations when they are available ",
+  "6 hours class on “How to get a Product Manager job” including CV review, LinkedIn Profile Optimization, Interview Prep, websites to apply for jobs, assessment guide, etc",
   "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
 ]
 
@@ -240,9 +238,7 @@ export const OnsiteProgramWeekday = [
   "Lifetime access to Product management resources",
   "Access to a supportive community of over 1,000 product managers across the globe",
   "Opportunity to physically connect with incredible people on the same Product Manager journey",
-  "CV review and optimization for a Product Manager role",
-  "Product Manager interview and assessment guide",
-  "Job recommendations when they are available ",
+  "6 hours class on “How to get a Product Manager job” including CV review, LinkedIn Profile Optimization, Interview Prep, websites to apply for jobs, assessment guide, etc",
   "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
 ]
 
