@@ -40,7 +40,9 @@ const Guarantee = () => {
             <motion.li variants={listItem}> <img src={bullet} alt="" />You can become a better C-level executive</motion.li>
           </motion.ul>
           <p>
-          You will definitely get a Product Manager job anywhere in the world, <span>regardless of your background</span>, education, or degree.
+
+          Learning product management skills will significantly <span>transform your life, </span> career, and business.
+
           </p>
         </section>
       </main>
@@ -71,9 +73,9 @@ const StyledGuarantee = styled.div`
         }
       h1{
         color: #3D3D3D;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         font-weight: 700;
-        line-height: 5rem;
+        line-height: 3rem;
       }
     }
     section.card{
@@ -83,11 +85,11 @@ const StyledGuarantee = styled.div`
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
       box-shadow: 0px 20px 0px -10px #80A2FF;
-      padding: 2.9rem 2.8rem 3.0rem 2.8rem;
+      padding: 2.9rem 1.8rem 3.0rem 1.8rem;
       background: #003AD4;
       color: white;
       h2{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 4.1rem;
       }
       hr{
@@ -98,10 +100,10 @@ const StyledGuarantee = styled.div`
         list-style: none;
         li{
           display: flex;
-          align-items: center;
+          /* align-items: center; */
           gap: 2.2rem;
-          font-size: 1.6rem;
-          line-height: 5rem;
+          font-size: 1.4rem;
+          line-height: 3rem;
           margin: 0.6rem 0;
         }
         li:nth-child(6){
