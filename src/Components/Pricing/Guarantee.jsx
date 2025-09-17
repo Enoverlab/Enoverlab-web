@@ -24,7 +24,7 @@ const Guarantee = () => {
       <main>
         <header>
           <img src={checksvg} alt="" />
-          <h1>100% JOB GUARANTEE!</h1>
+          <h1>What you can do with Product Management skills</h1>
         </header>
         <section className="card">
           <h2>
@@ -32,11 +32,12 @@ const Guarantee = () => {
           </h2>
           <hr />
           <motion.ul variants={container} initial="hidden" whileInView="show" >
-            <motion.li variants={listItem}> <img src={bullet} alt="" />Attending all classes</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />Doing the assignments</motion.li>
-            <motion.li variants={listItem}><img src={bullet} alt="" />Participating in the group work</motion.li>
-            <motion.li variants={listItem}><img src={bullet} alt="" />Working on the capstone project</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />Following the instructions of your trainers</motion.li>
+            <motion.li variants={listItem}> <img src={bullet} alt="" />You can get a Product Manager job anywhere in the world</motion.li>
+            <motion.li variants={listItem}> <img src={bullet} alt="" />You can build, manage, and grow any business successfully</motion.li>
+            <motion.li variants={listItem}><img src={bullet} alt="" />You can manage and lead teams better</motion.li>
+            <motion.li variants={listItem}><img src={bullet} alt="" />You can help companies make more money</motion.li>
+            <motion.li variants={listItem}> <img src={bullet} alt="" />You can become a product consultant for companies</motion.li>
+            <motion.li variants={listItem}> <img src={bullet} alt="" />You can become a better C-level executive</motion.li>
           </motion.ul>
           <p>
           You will definitely get a Product Manager job anywhere in the world, <span>regardless of your background</span>, education, or degree.
