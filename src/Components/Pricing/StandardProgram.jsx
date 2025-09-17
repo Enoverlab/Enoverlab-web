@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination,Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
@@ -9,109 +9,135 @@ import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks12 from "../../assets/icon/weeks12.svg";
 import weeks20 from "../../assets/icon/20weeks.png";
 // import week4 from "../../assets/icon/weeks4.svg"
-import { OnsiteProgram, OnsiteProgramWeekday, onlineProgram, selfPacedProgram } from "../../constants";
+import {
+  OnsiteProgram,
+  OnsiteProgramWeekday,
+  onlineProgram,
+  selfPacedProgram,
+} from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
 // import { Link } from "react-router-dom";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import StandardForm from "../Enroll-Form/StandardForm";
 import { useContext } from "react";
 import { CenterContext } from "../../context/CenterContext";
 import PrivateProgram from "./PrivateProgram";
 
 const StandardProgram = () => {
-  const [location, setLocation] = useState('')
-  const [isError,setIsError] = useState(false)
-  const centerDetails = useContext(CenterContext)
-  const admissionClosed = ['Anambra',]
+  const [location, setLocation] = useState("");
+  const [isError, setIsError] = useState(false);
+  const centerDetails = useContext(CenterContext);
+  const admissionClosed = ["Anambra"];
 
-  const [trainingLocation, setTrainingLocation] = useState({place : '',location : "Select Location to see address", tuition : '300,000', link : '', mapIframe : '', weeks : "", startDate : "", weekIcon : weeks20,trainingDay : "", trainingTime : '', classType : '', discount : ''})
-  
-  const [enrolModal, setEnrolModal] = useState({open : false, formtype : '', site : ''})
-  useEffect(()=>{
-    switch(location){
+  const [trainingLocation, setTrainingLocation] = useState({
+    place: "",
+    location: "Select Location to see address",
+    tuition: "300,000",
+    link: "",
+    mapIframe: "",
+    weeks: "",
+    startDate: "",
+    weekIcon: weeks20,
+    trainingDay: "",
+    trainingTime: "",
+    classType: "",
+    discount: "",
+  });
+
+  const [enrolModal, setEnrolModal] = useState({
+    open: false,
+    formtype: "",
+    site: "",
+  });
+  useEffect(() => {
+    switch (location) {
       case "Lekki-Weekday":
-        setTrainingLocation(centerDetails['Lekki-Weekday'])
+        setTrainingLocation(centerDetails["Lekki-Weekday"]);
         break;
       case "Lekki-Weekend":
-        setTrainingLocation(centerDetails["Lekki-Weekend"])
+        setTrainingLocation(centerDetails["Lekki-Weekend"]);
         break;
       case "Ibadan":
-        setTrainingLocation(centerDetails.Ibadan)
+        setTrainingLocation(centerDetails.Ibadan);
         break;
-        case "Anambra":
-          setTrainingLocation(centerDetails.Anambra)
-          break;
+      case "Anambra":
+        setTrainingLocation(centerDetails.Anambra);
+        break;
       case "Abuja":
-        setTrainingLocation(centerDetails.Abuja)
+        setTrainingLocation(centerDetails.Abuja);
         break;
       case "Ikeja-Weekday":
-        setTrainingLocation(centerDetails['Ikeja-Weekday'])
+        setTrainingLocation(centerDetails["Ikeja-Weekday"]);
         break;
       case "Ikeja-Weekend":
-      setTrainingLocation(centerDetails['Ikeja-Weekend'])
-      break;
+        setTrainingLocation(centerDetails["Ikeja-Weekend"]);
+        break;
       case "Yaba-Weekend":
-      setTrainingLocation(centerDetails['Yaba-Weekend'])
-      break;
+        setTrainingLocation(centerDetails["Yaba-Weekend"]);
+        break;
       default:
         setTrainingLocation({
-          location : 'Select Location to see address',
-          tuition : '300,000',
-          discount : '350,000',
-          trainingDay : "Select Location",
-          trainingTime : 'Select Location',
-          classType : 'weekend',
-          link : '',
-          mapIframe : '',
-          weeks : "12",
-          weekIcon : weeks12,
-          startDate : "N/A"
-        })
+          location: "Select Location to see address",
+          tuition: "300,000",
+          discount: "350,000",
+          trainingDay: "Select Location",
+          trainingTime: "Select Location",
+          classType: "weekend",
+          link: "",
+          mapIframe: "",
+          weeks: "12",
+          weekIcon: weeks12,
+          startDate: "N/A",
+        });
         break;
     }
-  },[location,centerDetails])
-  function handleLocationChange(e){
-    setLocation(e.target.value)
+  }, [location, centerDetails]);
+  function handleLocationChange(e) {
+    setLocation(e.target.value);
   }
 
-  function handleCloseEnrolModal(){
-    setEnrolModal({...enrolModal, open : false})
+  function handleCloseEnrolModal() {
+    setEnrolModal({ ...enrolModal, open: false });
   }
 
-  function handleSubmit(e){
-    if(!trainingLocation.link){
-      console.log(trainingLocation)
-      e.preventDefault()
-      setIsError(true)
-      return
+  function handleSubmit(e) {
+    if (!trainingLocation.link) {
+      console.log(trainingLocation);
+      e.preventDefault();
+      setIsError(true);
+      return;
     }
-    console.log(trainingLocation)
-    setIsError(false)
+    console.log(trainingLocation);
+    setIsError(false);
   }
-  function handleBlur(){
-    if(!trainingLocation.link){
-      setIsError(true)
-      return
+  function handleBlur() {
+    if (!trainingLocation.link) {
+      setIsError(true);
+      return;
     }
-    setIsError(false)
+    setIsError(false);
   }
   return (
     <StyledProgram id="onsite">
       <header>Standard Programs</header>
       <Swiper
-      modules={[Pagination,Autoplay]}
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 10000, disableOnInteraction: true,pauseOnMouseEnter : true, }}
-      spaceBetween={50}
-      slidesPerView={1}
-      className="head-swiper"
+        modules={[Pagination, Autoplay]}
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
+        }}
+        spaceBetween={50}
+        slidesPerView={1}
+        className="head-swiper"
       >
         <SwiperSlide>
           <div className="swipepgContainer">
             <section className="contain" id="online">
               <div className="swiperPagination"></div>
-            </section>    
+            </section>
             <Swiper
               modules={[Pagination]}
               spaceBetween={50}
@@ -140,11 +166,20 @@ const StandardProgram = () => {
                       </H4>
                       {/* <img src={week4} alt="4weeks" /> */}
                     </div>
-                    <form className="cover" method="get" action="https://paystack.shop/pay/i1tpk9f0tr">
+                    <form
+                      className="cover"
+                      method="get"
+                      action="https://paystack.shop/pay/i1tpk9f0tr"
+                    >
                       <main>
-                        <div  className="item">
-                          <div >
-                            <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                        <div className="item">
+                          <div>
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               Training day
                             </H4>
                             <H2
@@ -158,40 +193,61 @@ const StandardProgram = () => {
                             </H2>
                           </div>
                           <div>
-                          <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
-                            Class Times
-                          </H4>
-                          <H2
-                            mdfs="1.58vw"
-                            fs="3.6vw"
-                            fw="600"
-                            color="var(--Body-Text)"
-                          >
-                            Anytime
-                            {/* 8pm - 10pm */}
-                          </H2>
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
+                              Class Times
+                            </H4>
+                            <H2
+                              mdfs="1.58vw"
+                              fs="3.6vw"
+                              fw="600"
+                              color="var(--Body-Text)"
+                            >
+                              Anytime
+                              {/* 8pm - 10pm */}
+                            </H2>
                           </div>
                           <div>
-                          <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
-                            Start Date
-                          </H4>
-                          <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)">
-                            AnyTime
-                            {/* September 13, 2025 */}
-                          </H2>
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
+                              Start Date
+                            </H4>
+                            <H2
+                              mdfs="1.587vw"
+                              mb="1rem"
+                              fs="3.6vw"
+                              fw="600"
+                              color="var(--Body-Text)"
+                            >
+                              AnyTime
+                              {/* September 13, 2025 */}
+                            </H2>
                           </div>
                           <div>
-                          <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
-                            TUITION FEES
-                          </H4>
-                          <H2
-                            mdfs="2vw"
-                            fs="3.6vw"
-                            fw="600"
-                            color="var(--Body-Text)"
-                          >
-                            ₦ 100,000
-                          </H2>
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
+                              TUITION FEES
+                            </H4>
+                            <H2
+                              mdfs="2vw"
+                              fs="3.6vw"
+                              fw="600"
+                              color="var(--Body-Text)"
+                            >
+                              ₦ 100,000
+                            </H2>
                           </div>
                         </div>
                       </main>
@@ -205,7 +261,14 @@ const StandardProgram = () => {
                     </form>
                   </div>
                   <div className="breakdown">
-                    <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
+                    <H4
+                      mdfs="1.58vw"
+                      fw="700"
+                      pt="25px"
+                      pb="25px"
+                      mdpb="28px"
+                      color="var(--Body-Text)"
+                    >
                       What this training entails:
                     </H4>
                     <div className="list2">
@@ -229,17 +292,26 @@ const StandardProgram = () => {
               <SwiperSlide>
                 <Flex mdgap="5.9rem" display="block" mdalign="stretch">
                   <div className="program">
-                    <div className="heading" >
+                    <div className="heading">
                       <H4 mdfs="2.3vw" fw="700">
                         Online Training
                       </H4>
                       <img src={weeks12} alt="18 weeks" />
                     </div>
-                    <form className="cover" method="get" action="/payments/online">
+                    <form
+                      className="cover"
+                      method="get"
+                      action="/payments/online"
+                    >
                       <main>
-                        <div  className="item">
-                          <div >
-                            <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                        <div className="item">
+                          <div>
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               Training day
                             </H4>
                             <H2
@@ -252,7 +324,12 @@ const StandardProgram = () => {
                             </H2>
                           </div>
                           <div>
-                            <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               Class Times
                             </H4>
                             <H2
@@ -265,7 +342,12 @@ const StandardProgram = () => {
                             </H2>
                           </div>
                           <div>
-                            <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               Start Date
                             </H4>
                             <H2
@@ -278,7 +360,12 @@ const StandardProgram = () => {
                             </H2>
                           </div>
                           <div>
-                            <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               TUITION FEES
                             </H4>
                             <H2
@@ -291,19 +378,25 @@ const StandardProgram = () => {
                             </H2>
                           </div>
                         </div>
-                        
                       </main>
                       <div className="cta">
                         <SubmitButton Text="Enroll Now" />
                         <></>
-                          {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                        {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                           Download Syllabus
                         </Link> */}
                       </div>
                     </form>
                   </div>
                   <div className="breakdown">
-                    <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
+                    <H4
+                      mdfs="1.58vw"
+                      fw="700"
+                      pt="25px"
+                      pb="25px"
+                      mdpb="28px"
+                      color="var(--Body-Text)"
+                    >
                       What this training entails:
                     </H4>
                     <div className="list2">
@@ -326,48 +419,98 @@ const StandardProgram = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Flex mdgap="5.9rem" display="block" mdalign="stretch">
-                    <div className="program">
-                    <div className="heading" >
-                      <H4 mdfs="2.3vw" fw="700" >
+                  <div className="program">
+                    <div className="heading">
+                      <H4 mdfs="2.3vw" fw="700">
                         On-site Training
                       </H4>
                       <img src={trainingLocation.weekIcon} alt="20 weeks" />
                     </div>
-                    <form onSubmit={handleSubmit}  action={`/payments/${location}`} className="cover2">
+                    <form
+                      onSubmit={handleSubmit}
+                      action={`/payments/${location}`}
+                      className="cover2"
+                    >
                       <main>
                         <div className="item">
                           <div>
-                          <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               Training day
                             </H4>
-                            <H2 mdfs="1.587vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
+                            <H2
+                              mdfs="1.587vw"
+                              fs="3.6vw"
+                              fw="600"
+                              color="var(--Body-Text)"
+                            >
                               {trainingLocation.trainingDay}
                             </H2>
                           </div>
                           <div>
-                          <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               Class Times
                             </H4>
-                            <H2 mdfs="1.58vw" fs="3.6vw" fw="600" color="var(--Body-Text)">
+                            <H2
+                              mdfs="1.58vw"
+                              fs="3.6vw"
+                              fw="600"
+                              color="var(--Body-Text)"
+                            >
                               {trainingLocation.trainingTime}
                             </H2>
                           </div>
                           <div className="selectOption">
-                            <select title="location" name="locale" id="locale"  value={location} onChange={handleLocationChange} onBlur={handleBlur}>
-                              <option id="item" value="">Select Location</option>
-                              <option value="Lekki-Weekday">LEKKI-Weekday</option>
-                              <option value="Lekki-Weekend">LEKKI-Weekend</option>
+                            <select
+                              title="location"
+                              name="locale"
+                              id="locale"
+                              value={location}
+                              onChange={handleLocationChange}
+                              onBlur={handleBlur}
+                            >
+                              <option id="item" value="">
+                                Select Location
+                              </option>
+                              <option value="Lekki-Weekday">
+                                LEKKI-Weekday
+                              </option>
+                              <option value="Lekki-Weekend">
+                                LEKKI-Weekend
+                              </option>
                               <option value="Ibadan">IBADAN</option>
                               <option value="Abuja">ABUJA</option>
-                              <option value="Ikeja-Weekday">IKEJA-Weekday</option>
-                              <option value="Ikeja-Weekend">IKEJA-Weekend</option>
+                              <option value="Ikeja-Weekday">
+                                IKEJA-Weekday
+                              </option>
+                              <option value="Ikeja-Weekend">
+                                IKEJA-Weekend
+                              </option>
                               <option value="Yaba-Weekend">Yaba-Weekend</option>
                               <option value="Anambra">ANAMBRA</option>
                             </select>
-                            {isError && <p className="err">Please select Your Preferred Location</p>}
+                            {isError && (
+                              <p className="err">
+                                Please select Your Preferred Location
+                              </p>
+                            )}
                           </div>
                           <div className="selectLocale">
-                            <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               Location
                             </H4>
                             <H2
@@ -380,16 +523,34 @@ const StandardProgram = () => {
                             </H2>
                           </div>
                           <div>
-                            <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               Start Date
                             </H4>
-                            <H2 mdfs="1.587vw" mb="1rem" fs="3.6vw" fw="600" color="var(--Body-Text)" className={`${admissionClosed.includes(location) && 'adclosed'}`} >
+                            <H2
+                              mdfs="1.587vw"
+                              mb="1rem"
+                              fs="3.6vw"
+                              fw="600"
+                              color="var(--Body-Text)"
+                              className={`${
+                                admissionClosed.includes(location) && "adclosed"
+                              }`}
+                            >
                               {trainingLocation.startDate}
                             </H2>
-                            
                           </div>
                           <div>
-                            <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
+                            <H4
+                              mdfs="1.058vw"
+                              mb="1rem"
+                              fs="3.2vw"
+                              color="var(--Body-Text)"
+                            >
                               TUITION FEES
                             </H4>
                             <H2
@@ -404,17 +565,20 @@ const StandardProgram = () => {
                         </div>
                       </main>
                       <div className="cta">
-                        <SubmitButton Text="Enroll Now" disabled={admissionClosed.includes(location)}  />
+                        <SubmitButton
+                          Text="Enroll Now"
+                          disabled={admissionClosed.includes(location)}
+                        />
                         <></>
                         {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                           Download Syllabus
                         </Link> */}
                       </div>
                     </form>
-                    </div>
-                    <div className="mapMobileIframe">
+                  </div>
+                  <div className="mapMobileIframe">
                     {trainingLocation.mapIframe}
-                    </div>
+                  </div>
                   <div className="breakdown">
                     <H4
                       mdfs="1.58vw"
@@ -427,7 +591,10 @@ const StandardProgram = () => {
                       What this training entails:
                     </H4>
                     <div className="list">
-                      {(trainingLocation.classType === "weekend" ? OnsiteProgram : OnsiteProgramWeekday).map((pg) => (
+                      {(trainingLocation.classType === "weekend"
+                        ? OnsiteProgram
+                        : OnsiteProgramWeekday
+                      ).map((pg) => (
                         <Flex gap="10px">
                           <img src={check} alt="checkMark" />
                           <P fs="3.8vw" mdfs="1.23vw" color="var(--Body-Text)">
@@ -445,21 +612,22 @@ const StandardProgram = () => {
                 </Flex>
               </SwiperSlide>
               <SwiperSlide className="lastPrivateSlide">
-                <PrivateProgram/>
+                <PrivateProgram />
               </SwiperSlide>
               <div className="swiper-pagination-progressbar-fill"></div>
             </Swiper>
           </div>
         </SwiperSlide>
         <SwiperSlide className="privateSlide">
-          <PrivateProgram/>
+          <PrivateProgram />
         </SwiperSlide>
       </Swiper>
-      
-      <StandardForm handleCloseModal={handleCloseEnrolModal} modalDetails={enrolModal}/>
-      <div className="mapLaptopIframe">
-      {trainingLocation.mapIframe}
-      </div>
+
+      <StandardForm
+        handleCloseModal={handleCloseEnrolModal}
+        modalDetails={enrolModal}
+      />
+      <div className="mapLaptopIframe">{trainingLocation.mapIframe}</div>
     </StyledProgram>
   );
 };
@@ -500,29 +668,31 @@ const StyledProgram = styled.div`
     padding: 4.4rem 0 2.5rem 0;
     padding-left: 3.5rem;
   }
-  .cover2{
+  .cover2 {
     background: rgba(186, 234, 250, 0.4);
     padding: 4.4rem 0 3.5rem 0;
     padding-left: 3.5rem;
   }
-  .breakdown{
+  .breakdown {
     padding: 0 1.2rem;
   }
   main {
     display: flex;
   }
-  .item{
+  .item {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, auto);
     column-gap: 100px;
     row-gap: 30px;
   }
-  .selectLocale, .selectOption{
+  .selectLocale,
+  .selectOption {
     grid-column: span 2 / span 2;
   }
 
-  .list, .list2{
+  .list,
+  .list2 {
     display: flex;
     flex-direction: column;
     gap: 26px;
@@ -538,11 +708,11 @@ const StyledProgram = styled.div`
     }
   }
 
-  .but{
+  .but {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-    .syll{
+    .syll {
       color: #175afe;
       font-size: 16px;
     }
@@ -560,11 +730,11 @@ const StyledProgram = styled.div`
       width: 140px;
       margin: 0;
       border-radius: 3.103px 3.103px 0px 0px;
-      border: 0.388px solid rgba(139, 139, 139, 0.40);
+      border: 0.388px solid rgba(139, 139, 139, 0.4);
       font-size: 14px;
       text-align: center;
       height: 42px;
-      background-color: #FFFDF7;
+      background-color: #fffdf7;
       opacity: 100%;
       z-index: 20;
     }
@@ -585,11 +755,11 @@ const StyledProgram = styled.div`
       font-size: 1.2rem;
     }
   }
-  .contain{
-      border-bottom: 4px solid rgba(0, 70, 255, 0.44);
-      margin-bottom:4rem;
+  .contain {
+    border-bottom: 4px solid rgba(0, 70, 255, 0.44);
+    margin-bottom: 4rem;
   }
-  #locale{
+  #locale {
     outline: none;
     padding: 0.5rem 0;
     width: 13rem;
@@ -599,36 +769,36 @@ const StyledProgram = styled.div`
     font-weight: 400;
     border-radius: 3.257px;
     background-color: inherit;
-    border: 0.714px solid #B0B0B0;
+    border: 0.714px solid #b0b0b0;
     cursor: pointer;
   }
-  option{
-    background-color: #FFFDF7;
+  option {
+    background-color: #fffdf7;
   }
-  .err{
+  .err {
     color: red;
     font-style: italic;
     font-size: 1.2rem;
     margin: 0.5rem 0;
   }
-  .mapMobileIframe{
+  .mapMobileIframe {
     display: block;
-    padding: 30px 20px 30px 5px ;
+    padding: 30px 20px 30px 5px;
   }
-  .mapLaptopIframe{
+  .mapLaptopIframe {
     display: none;
   }
-  .strikeThrough{
+  .strikeThrough {
     text-decoration: line-through;
   }
-  .adclosed{
+  .adclosed {
     color: red;
   }
   .privateSlide {
-    display : block;
+    display: block;
   }
-  .lastPrivateSlide{
-    display : none;
+  .lastPrivateSlide {
+    display: none;
   }
   @media (min-width: 1024px) {
     padding: 110px 9.6rem;
@@ -652,7 +822,7 @@ const StyledProgram = styled.div`
         right: -13px;
       }
     }
-    .breakdown{
+    .breakdown {
       width: calc(100vw - 62vw);
       padding-top: 2rem;
     }
@@ -663,12 +833,13 @@ const StyledProgram = styled.div`
       align-items: center;
       gap: 14.48vw;
     }
-    .list, .list2{
+    .list,
+    .list2 {
       display: flex;
       flex-direction: column;
       gap: 25px;
     }
-    .list2{
+    .list2 {
       gap: 18px;
     }
     .cover {
@@ -681,13 +852,13 @@ const StyledProgram = styled.div`
       padding: 7.2rem 0 7rem 0;
       padding-left: 9.6rem;
     }
-    .item{
-    column-gap: 165px;
-    row-gap: 65px;
-  }
+    .item {
+      column-gap: 165px;
+      row-gap: 65px;
+    }
     .cta {
       display: grid;
-      grid-template-columns: repeat(2,auto);
+      grid-template-columns: repeat(2, auto);
       justify-content: flex-start;
       gap: 200px;
       padding-top: 6.1rem;
@@ -698,60 +869,58 @@ const StyledProgram = styled.div`
       }
     }
 
-    .note{
-    padding-top: 50px;
-    font-size: 16px;
-    display: flex;
-    gap: 10px;
-  }
-    .but{
+    .note {
+      padding-top: 50px;
+      font-size: 16px;
+      display: flex;
+      gap: 10px;
+    }
+    .but {
       display: none;
     }
-    .swiperPagination{
+    .swiperPagination {
       width: 100%;
-    .swiper-pagination-bullet{
-    font-size: 2rem;
-    padding: 1rem 2.9rem;
-    border-radius: 16px 16px 0px 0px;
-    width: 220px;
-    height: 75px;
+      .swiper-pagination-bullet {
+        font-size: 2rem;
+        padding: 1rem 2.9rem;
+        border-radius: 16px 16px 0px 0px;
+        width: 220px;
+        height: 75px;
+      }
+      .programtext0::before {
+        content: "Self Paced Training";
+        font-size: 1.6rem;
+      }
+      .programtext1::before {
+        content: "Online Training";
+        font-size: 1.6rem;
+      }
+      .programtext2::before {
+        content: "On-site Training";
+        font-size: 1.6rem;
+      }
+      .programtext3::before {
+        content: "Private Coaching";
+        font-size: 1.6rem;
+      }
     }
-    .programtext0::before {
-      content: "Self Paced Training";
-      font-size: 1.6rem;
+    #locale {
+      width: 19rem;
+      font-size: 18px;
     }
-    .programtext1::before {
-      content: "Online Training";
-      font-size: 1.6rem;
+    .mapMobileIframe {
+      display: none;
     }
-    .programtext2::before {
-      content: "On-site Training";
-      font-size: 1.6rem;
+    .mapLaptopIframe {
+      display: block;
+      padding: 30px 0px;
     }
-    .programtext3::before {
-      content: "Private Coaching";
-      font-size: 1.6rem;
-    }
-    }
-    #locale{
-    width: 19rem;
-    font-size: 18px;
-    
-  }
-  .mapMobileIframe{
-    display: none;
-  }
-  .mapLaptopIframe{
-    display: block;
-    padding: 30px 0px;
-  }
 
-  .privateSlide {
-    display : none;
-  }
-  .lastPrivateSlide{
-    display : block;
-  }
-
+    .privateSlide {
+      display: none;
+    }
+    .lastPrivateSlide {
+      display: block;
+    }
   }
 `;

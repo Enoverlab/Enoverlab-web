@@ -24,12 +24,12 @@ const News = () => {
                   slidesPerView : 2.5,
               },
               1024: {
-                  slidesPerView : 2.2,
-                  spaceBetween: 15,
+                  slidesPerView : 2.5,
+                  spaceBetween: 5,
               },
               1440 : {
-                slidesPerView : 2.2,
-                  spaceBetween: 10,
+                slidesPerView : 2.5,
+                  spaceBetween: 5,
               }
           }
         }
@@ -46,6 +46,8 @@ const News = () => {
                     <NewsCard key={content.newsImg} newsImg={content.newsImg} newsLink={content.newsLink} newsTopic={content.newsTopic} />
                 </SwiperSlide>)
             }
+
+            <div className="swiper_Pagination" style={{display:"flex", justifyContent : "center", marginTop : "30px"}}></div>
         </Swiper>
       
     </StyledNews>
@@ -112,15 +114,15 @@ const StyledNewsCard = styled.div`
     }
     @media (min-width: 1024px) {
         padding: 11px 12px 42px 12px;
-        height: 64.5rem;
-        width: 39.4vw;
+        height: 63rem;
+        width: 35vw;
         max-width: 59.7rem;
         border-radius: 22px;
         border: 1px solid #C1C1C1;
         h4{
             color: #3D3D3D;
             margin: 2rem 0;
-            font-size: 2.8rem;
+            font-size: 2.4rem;
             font-weight: 700;
             line-height: 3.8rem;
         }

@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
 const ProgramDetails = () => {
+  const admissionClosed = true
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
@@ -104,7 +105,7 @@ const ProgramDetails = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButtonA Text="Enroll Now" to='https://forms.gle/QdUwUQZgdUzkeBk78' />
+                    <SecondaryButtonA Text={admissionClosed ? "Admission Closed" : "Enroll Now"} to='https://forms.gle/QdUwUQZgdUzkeBk78' disabled={admissionClosed} />
                     <Link to="#" className="syll">
                       Download Syllabus
                     </Link>
@@ -231,11 +232,13 @@ const StyledProgramDetail = styled.div`
       padding-left: 9.6rem;
     }
     .cta {
-      padding-top: 6.1rem;
+      display: grid;
+      grid-template-columns: repeat(2,auto);
       justify-content: flex-start;
+      gap: 200px;
+      padding-top: 6.1rem;
       .syll {
         display: block;
-        padding-left: 17.01vw;
         color: #175afe;
         font-size: 20px;
       }

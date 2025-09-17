@@ -47,6 +47,7 @@ import speaker4 from "../assets/icon/careerfair/speaker4.png"
 import newsImg1 from "../assets/icon/about/newsImg1.png"
 import newsImg2 from "../assets/icon/about/newsImg2.png"
 import newsImg3 from "../assets/icon/about/newsImg3.png"
+import newsImg4 from "../assets/icon/about/newImg4.jpg"
 
 export const standardPrograms = [
   {
@@ -762,5 +763,10 @@ export const newsContent = [
     newsImg : newsImg3, 
     newsTopic : 'Charting your paths in a digital world', 
     newsLink : 'www.linkedin.com/feed/update/urn:li:activity:7228830982689157120/'
+  },
+  {
+    newsImg : newsImg4, 
+    newsTopic : "Enoverlab Marks Four Years of Transforming Africa's Tech Talent Landscape", 
+    newsLink : 'https://www.thisdaylive.com/2025/09/05/enoverlab-marks-four-years-of-transforming-africas-tech-talent-landscape/'
   }
 ]

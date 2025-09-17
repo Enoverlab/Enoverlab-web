@@ -15,7 +15,7 @@ const WhoWeAre = () => {
             Enoverlab is a training institute that provides Product Management training, mentorship, and internship to individuals and corporate organizations. Enoverlab is accredited by the American Council of Training and Development (ACTD).
         </p>
         <p className="margin">
-            We have trained over 700 African talents to become Product Managers. Our Alumni’s work for some of the best organizations across Africa and the globe. We have alumni working at PWC (UK), Cambridge University Press & Assessment (UK), BorderlessHR (Canada), UNIDROIT (Italy), Code for Africa (South Africa), Access Bank, Opay, Renmoney, God is Good (GIG) group, GTbank, Kuda Bank, CreditDirect, Healthstack, SeamlessHR, Ulospaces, Drinks.ng, among others.
+            We have trained over 1000 African talents to become Product Managers. Our Alumni’s work for some of the best organizations across Africa and the globe. We have alumni working at PWC (UK), Cambridge University Press & Assessment (UK), BorderlessHR (Canada), UNIDROIT (Italy), Code for Africa (South Africa), Access Bank, Opay, Renmoney, God is Good (GIG) group, GTbank, Kuda Bank, CreditDirect, Healthstack, SeamlessHR, Ulospaces, Drinks.ng, among others.
         </p>
         <p className="margin">
             Our trained product managers have been involved in creating products with a cumulative market value of over $100,000,000 in Africa.

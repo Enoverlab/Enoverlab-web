@@ -161,10 +161,10 @@ export const ScrollButton = ({target, to="#", Text, handleClick, w, arrowDown}) 
 };
 
 
-export const SecondaryButtonA = ({target, to="#", Text, handleClick, w, arrowDown}) => {
+export const SecondaryButtonA = ({target, to="#", Text, handleClick, w, arrowDown, disabled}) => {
   return (
-    <a href={to} target={target}  onClick={handleClick} >
-      <StyledSecondaryButton w={w}>
+    <a href={to} target={target} onClick={handleClick} className={`${disabled ? "disabled" : ""}`} >
+      <StyledSecondaryButton w={w} disabled={disabled}>
         <h5>{Text}</h5>
         {
           arrowDown ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
