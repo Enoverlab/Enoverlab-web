@@ -16,6 +16,18 @@ import ulospaces from "../../assets/icon/ulospaces.svg"
 import gtbank from "../../assets/icon/gtbank.jpeg"
 import mtn from "../../assets/icon/mtnlogo.jpg"
 import moniepoint from "../../assets/icon/moniepoint.png"
+import wakanow from "../../assets/icon/wakanow.png"
+import mainstack from "../../assets/icon/mainstack.jpg"
+import microsoft from "../../assets/icon/microsoft.png"
+import palmpay from "../../assets/icon/palmpay.png"
+import opera from "../../assets/icon/opera.png"
+import bob from "../../assets/icon/bob.png"
+import tek_experts from "../../assets/icon/tek-experts.png"
+import breet from "../../assets/icon/breet.png"
+import nomba from "../../assets/icon/nomba.png"
+import altschool from "../../assets/icon/altschool.gif"
+import jci from "../../assets/icon/JCI.png"
+import arise from "../../assets/icon/arise.png"
 
 const Companies = () => {
   return (
@@ -40,6 +52,22 @@ const Companies = () => {
         <img src={sterling} alt="" />
         <img src={etranzact} alt="" />
         <img src={moniepoint} alt="moniepoint_logo"/>
+      </Marquee>
+      <Marquee className="marquee">
+        <img src={wakanow} alt="" />
+        <img src={mainstack} alt="" />
+        <img src={microsoft} alt="" />
+        <img src={palmpay} alt="" />
+        <img src={bob} alt="" />
+        <img src={jci} alt="" />
+      </Marquee>
+      <Marquee className="marquee">
+        <img src={opera} alt="" />
+        <img src={tek_experts} alt="" />
+        <img src={breet} alt="" />
+        <img src={nomba} alt="" />
+        <img src={altschool} alt="" />
+        <img src={arise} alt="" />
       </Marquee>
     </StyledCompanies>
   )
