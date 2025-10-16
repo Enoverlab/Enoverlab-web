@@ -72,6 +72,9 @@ const StandardProgram = () => {
       case "Ikeja-Weekend":
         setTrainingLocation(centerDetails["Ikeja-Weekend"]);
         break;
+      case "Yaba-Weekday":
+        setTrainingLocation(centerDetails["Yaba-Weekday"]);
+        break;
       case "Yaba-Weekend":
         setTrainingLocation(centerDetails["Yaba-Weekend"]);
         break;
@@ -349,6 +352,7 @@ const StandardProgram = () => {
                           <option value="Ikeja-Weekend">
                             IKEJA-Weekend
                           </option>
+                          <option value="Yaba-Weekday">Yaba-Weekday</option>
                           <option value="Yaba-Weekend">Yaba-Weekend</option>
                           <option value="Anambra">ANAMBRA</option>
                         </select>
