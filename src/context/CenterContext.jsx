@@ -423,6 +423,33 @@ const centerDetails = {
         mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
         startDate : "October 11, 2025",
     },
+    'Yaba-Weekday' : {
+        place : 'Yaba-Weekday',
+        location : 'Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba',
+        trainingDay : "Every Wednesday & Friday",
+        classType : 'weekday',
+        trainingTime : "12pm - 3pm",
+        tuition : '400,000',
+        weeks : "7",
+        weekIcon : weeks7,
+        link : 'https://enoverlab.com/payments',
+        paystackSubLinks : {
+            oneTime : {
+                link : 'https://paystack.com/pay/4nctjeq3or',
+                price : '₦405,000',
+            },
+            twoTimes : {
+                link : 'https://paystack.com/pay/nctqraqiiw',
+                price : '₦205,000',
+            } ,
+            threeTimes : {
+                link : 'https://paystack.com/pay/4euo-rt5yz',
+                price : '₦136,666'
+            } 
+        },
+        mapIframe : <iframe title="Yaba Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+        startDate : "November 5, 2025",
+    },
     'Yaba-Weekend' : {
         place : 'Yaba-Weekday',
         location : 'Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba',
