@@ -593,15 +593,15 @@ const StyledProgram = styled.div`
       color: #fff;
     }
     .programtext0::before {
-      content: "Self Paced Training";
-      font-size: 1.2rem;
-    }
-    .programtext1::before {
       content: "Online Training";
       font-size: 1.2rem;
     }
-    .programtext2::before {
+    .programtext1::before {
       content: "Onsite Training";
+      font-size: 1.2rem;
+    }
+    .programtext2::before {
+      content: "Private Training";
       font-size: 1.2rem;
     }
   }
