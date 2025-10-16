@@ -27,7 +27,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState("");
   const [isError, setIsError] = useState(false);
   const centerDetails = useContext(CenterContext);
-  const admissionClosed = ["Anambra"];
+  const admissionClosed = ["Anambra", "Ikeja-Weekday"];
 
   const [trainingLocation, setTrainingLocation] = useState({
     place: "",
