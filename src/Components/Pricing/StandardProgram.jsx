@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
@@ -13,7 +13,6 @@ import {
   OnsiteProgram,
   OnsiteProgramWeekday,
   onlineProgram,
-  selfPacedProgram,
 } from "../../constants";
 import check from "../../assets/icon/check.svg";
 import { SubmitButton } from "../../Utils/styled/Buttons";
@@ -121,507 +120,358 @@ const StandardProgram = () => {
   return (
     <StyledProgram id="onsite">
       <header>Standard Programs</header>
-      <Swiper
-        modules={[Pagination, Autoplay]}
-        pagination={{ clickable: true }}
-        autoplay={{
-          delay: 10000,
-          disableOnInteraction: true,
-          pauseOnMouseEnter: true,
-        }}
-        spaceBetween={50}
-        slidesPerView={1}
-        className="head-swiper"
-      >
-        <SwiperSlide>
-          <div className="swipepgContainer">
-            <section className="contain" id="online">
-              <div className="swiperPagination"></div>
-            </section>
-            <Swiper
-              modules={[Pagination]}
-              spaceBetween={50}
-              slidesPerView={1}
-              pagination={{
-                el: ".swiperPagination",
-                clickable: true,
-                renderBullet: (index, name) => {
-                  return (
-                    '<p class="' +
-                    name +
-                    '"> <span class="programtext' +
-                    index +
-                    '"></span> </p>'
-                  );
-                },
-              }}
-              autoHeight={true}
-            >
-              <SwiperSlide>
-                <Flex mdgap="5.9rem" display="block" mdalign="stretch">
-                  <div className="program">
-                    <div className="heading" id="associate">
-                      <H4 mdfs="2.3vw" fw="700">
-                        Self Paced Training
-                      </H4>
-                      {/* <img src={week4} alt="4weeks" /> */}
-                    </div>
-                    <form
-                      className="cover"
-                      method="get"
-                      action="https://paystack.shop/pay/i1tpk9f0tr"
-                    >
-                      <main>
-                        <div className="item">
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Training day
-                            </H4>
-                            <H2
-                              mdfs="1.587vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              Anyday
-                              {/* Every Wednesday <br /> & Saturday */}
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Class Times
-                            </H4>
-                            <H2
-                              mdfs="1.58vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              Anytime
-                              {/* 8pm - 10pm */}
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Start Date
-                            </H4>
-                            <H2
-                              mdfs="1.587vw"
-                              mb="1rem"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              AnyTime
-                              {/* September 13, 2025 */}
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              TUITION FEES
-                            </H4>
-                            <H2
-                              mdfs="2vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              ₦ 100,000
-                            </H2>
-                          </div>
-                        </div>
-                      </main>
-                      <div className="cta">
-                        <SubmitButton Text="Enroll Now" />
-                        <></>
-                        {/* <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
-                        Download Syllabus
-                        </Link> */}
+      <div className="swipepgContainer">
+        <section className="contain" id="online">
+          <div className="swiperPagination"></div>
+        </section>
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={50}
+          slidesPerView={1}
+          pagination={{
+            el: ".swiperPagination",
+            clickable: true,
+            renderBullet: (index, name) => {
+              return (
+                '<p class="' +
+                name +
+                '"> <span class="programtext' +
+                index +
+                '"></span> </p>'
+              );
+            },
+          }}
+          autoHeight={true}
+        >
+          <SwiperSlide>
+            <Flex mdgap="5.9rem" display="block" mdalign="stretch">
+              <div className="program">
+                <div className="heading">
+                  <H4 mdfs="2.3vw" fw="700">
+                    Online Training
+                  </H4>
+                  <img src={weeks12} alt="18 weeks" />
+                </div>
+                <form
+                  className="cover"
+                  method="get"
+                  action="/payments/online"
+                >
+                  <main>
+                    <div className="item">
+                      <div>
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          Training day
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          Every Wednesday <br /> & Saturday
+                        </H2>
                       </div>
-                    </form>
-                  </div>
-                  <div className="breakdown">
-                    <H4
-                      mdfs="1.58vw"
-                      fw="700"
-                      pt="25px"
-                      pb="25px"
-                      mdpb="28px"
-                      color="var(--Body-Text)"
-                    >
-                      What this training entails:
-                    </H4>
-                    <div className="list2">
-                      {selfPacedProgram.map((pg) => (
-                        <Flex gap="10px">
-                          <img src={check} alt="checkMark" />
-                          <P fs="3.8vw" mdfs="1.33vw" color="var(--Body-Text)">
-                            {pg}
-                          </P>
-                        </Flex>
-                      ))}
+                      <div>
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          Class Times
+                        </H4>
+                        <H2
+                          mdfs="1.58vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          8pm - 10pm
+                        </H2>
+                      </div>
+                      <div>
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          Start Date
+                        </H4>
+                        <H2
+                          mdfs="2.38vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          September 17, 2025
+                        </H2>
+                      </div>
+                      <div>
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          TUITION FEES
+                        </H4>
+                        <H2
+                          mdfs="2.38vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          ₦300,000
+                        </H2>
+                      </div>
                     </div>
-                    {/* <div className="but">
-                    <Link to="/ProgramSyllabus.pdf" target="_blank" download='ProgramSyllabus.pdf' className="syll">
+                  </main>
+                  <div className="cta">
+                    <SubmitButton Text="Enroll Now" />
+                    <></>
+                    {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
                       Download Syllabus
-                    </Link>
-                    </div> */}
+                    </Link> */}
                   </div>
-                </Flex>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Flex mdgap="5.9rem" display="block" mdalign="stretch">
-                  <div className="program">
-                    <div className="heading">
-                      <H4 mdfs="2.3vw" fw="700">
-                        Online Training
-                      </H4>
-                      <img src={weeks12} alt="18 weeks" />
-                    </div>
-                    <form
-                      className="cover"
-                      method="get"
-                      action="/payments/online"
-                    >
-                      <main>
-                        <div className="item">
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Training day
-                            </H4>
-                            <H2
-                              mdfs="1.587vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              Every Wednesday <br /> & Saturday
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Class Times
-                            </H4>
-                            <H2
-                              mdfs="1.58vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              8pm - 10pm
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Start Date
-                            </H4>
-                            <H2
-                              mdfs="2.38vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              September 17, 2025
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              TUITION FEES
-                            </H4>
-                            <H2
-                              mdfs="2.38vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              ₦300,000
-                            </H2>
-                          </div>
-                        </div>
-                      </main>
-                      <div className="cta">
-                        <SubmitButton Text="Enroll Now" />
-                        <></>
-                        {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
-                          Download Syllabus
-                        </Link> */}
+                </form>
+              </div>
+              <div className="breakdown">
+                <H4
+                  mdfs="1.58vw"
+                  fw="700"
+                  pt="25px"
+                  pb="25px"
+                  mdpb="28px"
+                  color="var(--Body-Text)"
+                >
+                  What this training entails:
+                </H4>
+                <div className="list2">
+                  {onlineProgram.map((pg) => (
+                    <Flex gap="10px">
+                      <img src={check} alt="checkMark" />
+                      <P fs="3.8vw" mdfs="1.33vw" color="var(--Body-Text)">
+                        {pg}
+                      </P>
+                    </Flex>
+                  ))}
+                </div>
+                {/* <div className="but">
+                <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      Download Syllabus
+                </Link>
+                </div> */}
+              </div>
+            </Flex>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Flex mdgap="5.9rem" display="block" mdalign="stretch">
+              <div className="program">
+                <div className="heading">
+                  <H4 mdfs="2.3vw" fw="700">
+                    On-site Training
+                  </H4>
+                  <img src={trainingLocation.weekIcon} alt="20 weeks" />
+                </div>
+                <form
+                  onSubmit={handleSubmit}
+                  action={`/payments/${location}`}
+                  className="cover2"
+                >
+                  <main>
+                    <div className="item">
+                      <div>
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          Training day
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          {trainingLocation.trainingDay}
+                        </H2>
                       </div>
-                    </form>
-                  </div>
-                  <div className="breakdown">
-                    <H4
-                      mdfs="1.58vw"
-                      fw="700"
-                      pt="25px"
-                      pb="25px"
-                      mdpb="28px"
-                      color="var(--Body-Text)"
-                    >
-                      What this training entails:
-                    </H4>
-                    <div className="list2">
-                      {onlineProgram.map((pg) => (
-                        <Flex gap="10px">
-                          <img src={check} alt="checkMark" />
-                          <P fs="3.8vw" mdfs="1.33vw" color="var(--Body-Text)">
-                            {pg}
-                          </P>
-                        </Flex>
-                      ))}
-                    </div>
-                    {/* <div className="but">
-                    <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
-                          Download Syllabus
-                    </Link>
-                    </div> */}
-                  </div>
-                </Flex>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Flex mdgap="5.9rem" display="block" mdalign="stretch">
-                  <div className="program">
-                    <div className="heading">
-                      <H4 mdfs="2.3vw" fw="700">
-                        On-site Training
-                      </H4>
-                      <img src={trainingLocation.weekIcon} alt="20 weeks" />
-                    </div>
-                    <form
-                      onSubmit={handleSubmit}
-                      action={`/payments/${location}`}
-                      className="cover2"
-                    >
-                      <main>
-                        <div className="item">
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Training day
-                            </H4>
-                            <H2
-                              mdfs="1.587vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              {trainingLocation.trainingDay}
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Class Times
-                            </H4>
-                            <H2
-                              mdfs="1.58vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              {trainingLocation.trainingTime}
-                            </H2>
-                          </div>
-                          <div className="selectOption">
-                            <select
-                              title="location"
-                              name="locale"
-                              id="locale"
-                              value={location}
-                              onChange={handleLocationChange}
-                              onBlur={handleBlur}
-                            >
-                              <option id="item" value="">
-                                Select Location
-                              </option>
-                              <option value="Lekki-Weekday">
-                                LEKKI-Weekday
-                              </option>
-                              <option value="Lekki-Weekend">
-                                LEKKI-Weekend
-                              </option>
-                              <option value="Ibadan">IBADAN</option>
-                              <option value="Abuja">ABUJA</option>
-                              <option value="Ikeja-Weekday">
-                                IKEJA-Weekday
-                              </option>
-                              <option value="Ikeja-Weekend">
-                                IKEJA-Weekend
-                              </option>
-                              <option value="Yaba-Weekend">Yaba-Weekend</option>
-                              <option value="Anambra">ANAMBRA</option>
-                            </select>
-                            {isError && (
-                              <p className="err">
-                                Please select Your Preferred Location
-                              </p>
-                            )}
-                          </div>
-                          <div className="selectLocale">
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Location
-                            </H4>
-                            <H2
-                              mdfs="1.587vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              {trainingLocation.location}
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              Start Date
-                            </H4>
-                            <H2
-                              mdfs="1.587vw"
-                              mb="1rem"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                              className={`${
-                                admissionClosed.includes(location) && "adclosed"
-                              }`}
-                            >
-                              {trainingLocation.startDate}
-                            </H2>
-                          </div>
-                          <div>
-                            <H4
-                              mdfs="1.058vw"
-                              mb="1rem"
-                              fs="3.2vw"
-                              color="var(--Body-Text)"
-                            >
-                              TUITION FEES
-                            </H4>
-                            <H2
-                              mdfs="2.4vw"
-                              fs="3.6vw"
-                              fw="600"
-                              color="var(--Body-Text)"
-                            >
-                              ₦{trainingLocation.tuition}
-                            </H2>
-                          </div>
-                        </div>
-                      </main>
-                      <div className="cta">
-                        <SubmitButton
-                          Text="Enroll Now"
-                          disabled={admissionClosed.includes(location)}
-                        />
-                        <></>
-                        {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
-                          Download Syllabus
-                        </Link> */}
+                      <div>
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          Class Times
+                        </H4>
+                        <H2
+                          mdfs="1.58vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          {trainingLocation.trainingTime}
+                        </H2>
                       </div>
-                    </form>
-                  </div>
-                  <div className="mapMobileIframe">
-                    {trainingLocation.mapIframe}
-                  </div>
-                  <div className="breakdown">
-                    <H4
-                      mdfs="1.58vw"
-                      fw="700"
-                      pt="25px"
-                      pb="25px"
-                      mdpb="28px"
-                      color="var(--Body-Text)"
-                    >
-                      What this training entails:
-                    </H4>
-                    <div className="list">
-                      {(trainingLocation.classType === "weekend"
-                        ? OnsiteProgram
-                        : OnsiteProgramWeekday
-                      ).map((pg) => (
-                        <Flex gap="10px">
-                          <img src={check} alt="checkMark" />
-                          <P fs="3.8vw" mdfs="1.23vw" color="var(--Body-Text)">
-                            {pg}
-                          </P>
-                        </Flex>
-                      ))}
+                      <div className="selectOption">
+                        <select
+                          title="location"
+                          name="locale"
+                          id="locale"
+                          value={location}
+                          onChange={handleLocationChange}
+                          onBlur={handleBlur}
+                        >
+                          <option id="item" value="">
+                            Select Location
+                          </option>
+                          <option value="Lekki-Weekday">
+                            LEKKI-Weekday
+                          </option>
+                          <option value="Lekki-Weekend">
+                            LEKKI-Weekend
+                          </option>
+                          <option value="Ibadan">IBADAN</option>
+                          <option value="Abuja">ABUJA</option>
+                          <option value="Ikeja-Weekday">
+                            IKEJA-Weekday
+                          </option>
+                          <option value="Ikeja-Weekend">
+                            IKEJA-Weekend
+                          </option>
+                          <option value="Yaba-Weekend">Yaba-Weekend</option>
+                          <option value="Anambra">ANAMBRA</option>
+                        </select>
+                        {isError && (
+                          <p className="err">
+                            Please select Your Preferred Location
+                          </p>
+                        )}
+                      </div>
+                      <div className="selectLocale">
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          Location
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          {trainingLocation.location}
+                        </H2>
+                      </div>
+                      <div>
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          Start Date
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          mb="1rem"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                          className={`${
+                            admissionClosed.includes(location) && "adclosed"
+                          }`}
+                        >
+                          {trainingLocation.startDate}
+                        </H2>
+                      </div>
+                      <div>
+                        <H4
+                          mdfs="1.058vw"
+                          mb="1rem"
+                          fs="3.2vw"
+                          color="var(--Body-Text)"
+                        >
+                          TUITION FEES
+                        </H4>
+                        <H2
+                          mdfs="2.4vw"
+                          fs="3.6vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          ₦{trainingLocation.tuition}
+                        </H2>
+                      </div>
                     </div>
-                    {/* <div className="but">
-                    <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
-                          Download Syllabus
-                    </Link>
-                    </div> */}
+                  </main>
+                  <div className="cta">
+                    <SubmitButton
+                      Text="Enroll Now"
+                      disabled={admissionClosed.includes(location)}
+                    />
+                    <></>
+                    {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      Download Syllabus
+                    </Link> */}
                   </div>
-                </Flex>
-              </SwiperSlide>
-              <SwiperSlide className="lastPrivateSlide">
-                <PrivateProgram />
-              </SwiperSlide>
-              <div className="swiper-pagination-progressbar-fill"></div>
-            </Swiper>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="privateSlide">
-          <PrivateProgram />
-        </SwiperSlide>
-      </Swiper>
+                </form>
+              </div>
+              <div className="mapMobileIframe">
+                {trainingLocation.mapIframe}
+              </div>
+              <div className="breakdown">
+                <H4
+                  mdfs="1.58vw"
+                  fw="700"
+                  pt="25px"
+                  pb="25px"
+                  mdpb="28px"
+                  color="var(--Body-Text)"
+                >
+                  What this training entails:
+                </H4>
+                <div className="list">
+                  {(trainingLocation.classType === "weekend"
+                    ? OnsiteProgram
+                    : OnsiteProgramWeekday
+                  ).map((pg) => (
+                    <Flex gap="10px">
+                      <img src={check} alt="checkMark" />
+                      <P fs="3.8vw" mdfs="1.23vw" color="var(--Body-Text)">
+                        {pg}
+                      </P>
+                    </Flex>
+                  ))}
+                </div>
+                {/* <div className="but">
+                <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                      Download Syllabus
+                </Link>
+                </div> */}
+              </div>
+            </Flex>
+          </SwiperSlide>
+          <SwiperSlide >
+            <PrivateProgram />
+          </SwiperSlide>
+          <div className="swiper-pagination-progressbar-fill"></div>
+        </Swiper>
+      </div>
+
 
       <StandardForm
         handleCloseModal={handleCloseEnrolModal}
@@ -888,18 +738,14 @@ const StyledProgram = styled.div`
         height: 75px;
       }
       .programtext0::before {
-        content: "Self Paced Training";
-        font-size: 1.6rem;
-      }
-      .programtext1::before {
         content: "Online Training";
         font-size: 1.6rem;
       }
-      .programtext2::before {
+      .programtext1::before {
         content: "On-site Training";
         font-size: 1.6rem;
       }
-      .programtext3::before {
+      .programtext2::before {
         content: "Private Coaching";
         font-size: 1.6rem;
       }
