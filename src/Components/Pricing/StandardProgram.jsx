@@ -177,7 +177,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Wednesday <br /> & Saturday
+                          Every Tuesday <br /> & Friday
                         </H2>
                       </div>
                       <div>
