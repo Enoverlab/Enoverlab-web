@@ -44,6 +44,7 @@ import AssessmentLanding from "./Pages/AssessmentLanding";
 import Assessment from "./Pages/Assessment";
 import { TestContextProvider } from "./context/TestContext";
 import Result from "./Pages/Result";
+import { ChatbotContainer } from "./Components/chatbot/ChatbotContainer";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
 function App() {
@@ -122,6 +123,7 @@ function App() {
         <Route path="/physical" element={<Physical/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
+      <ChatbotContainer/>
     </ThemeProvider>
     </ChakraProvider>
   );
