@@ -246,8 +246,8 @@ export const OnsiteProgramWeekday = [
 export const privateCoaching = [
   "This training is for busy people, senior level professionals, and Nigerians in diaspora",
   "It covers everything you need to learn in product management",
-  `It is a One-on-One online instructor-led training`,
-  "6 weeks intensive coaching with flexible learning schedule",
+  `One-on-One Coaching Online`,
+  "⁠Guaranteed Job Placement",
   "Personalised career coaching and guidance",
   "Lifetime access to product management resources",
   "Lifetime access to our robust community of Product Managers",

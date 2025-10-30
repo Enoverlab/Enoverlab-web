@@ -64,7 +64,7 @@ const PrivateProgram = () => {
                         fw="600"
                         color="var(--Body-Text)"
                       >
-                        ₦ 600,000
+                        ₦ 800,000
                       </H2>
                       </div>
                     </div>
