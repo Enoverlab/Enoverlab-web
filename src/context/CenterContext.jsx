@@ -238,6 +238,7 @@ const centerDetails = {
         trainingDay : "Every Monday & Thursday",
         classType : 'weekday',
         trainingTime : '12pm - 3pm',
+        discount : '200,000',
         tuition : '400,000',
         weeks : "7",
         weekIcon : weeks7,
@@ -350,6 +351,7 @@ const centerDetails = {
         trainingDay : "Every Saturday",
         classType : 'weekend',
         trainingTime : "10am - 1pm",
+        discount : '150,000',
         tuition : '300,000',
         link : "https://enoverlab.com/payments",
         paystackSubLinks : {
@@ -429,6 +431,7 @@ const centerDetails = {
         trainingDay : "Every Wednesday & Friday",
         classType : 'weekday',
         trainingTime : "12pm - 3pm",
+        discount : '200,000',
         tuition : '400,000',
         weeks : "7",
         weekIcon : weeks7,

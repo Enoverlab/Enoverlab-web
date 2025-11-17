@@ -82,7 +82,7 @@ const StandardProgram = () => {
         setTrainingLocation({
           location: "Select Location to see address",
           tuition: "300,000",
-          discount: "350,000",
+          discount: "",
           trainingDay: "Select Location",
           trainingTime: "Select Location",
           classType: "weekend",
@@ -225,14 +225,28 @@ const StandardProgram = () => {
                         >
                           TUITION FEES
                         </H4>
-                        <H2
-                          mdfs="2.38vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          ₦300,000
+                        <div>
+                          <H2
+                              mdfs="1.2vw"
+                              fs="3vw"
+                              fw="500"
+                              color="var(--Body-Text)"
+                              // color="#888"
+                              className="strikeThrough"
+                              style={{ marginBottom: "8px" }}
+                            >
+                              ₦150,000
+                            </H2>
+                          <H2
+                            mdfs="2.38vw"
+                            fs="3.6vw"
+                            fw="600"
+                            color="var(--Body-Text)"
+                          >
+                            ₦300,000
                         </H2>
+                        </div>
+                        
                       </div>
                     </div>
                   </main>
@@ -371,14 +385,20 @@ const StandardProgram = () => {
                         >
                           Location
                         </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          {trainingLocation.location}
-                        </H2>
+                        <div>
+
+                          
+
+                          <H2
+                            mdfs="1.587vw"
+                            fs="3.6vw"
+                            fw="600"
+                            color="var(--Body-Text)"
+                          >
+                            {trainingLocation.location}
+                          </H2>
+                        </div>
+                        
                       </div>
                       <div>
                         <H4
@@ -411,14 +431,28 @@ const StandardProgram = () => {
                         >
                           TUITION FEES
                         </H4>
-                        <H2
-                          mdfs="2.4vw"
-                          fs="3.6vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          ₦{trainingLocation.tuition}
-                        </H2>
+                        <div>
+                          {trainingLocation.discount && (
+                            <H2
+                              mdfs="1.8vw"
+                              fs="3vw"
+                              fw="500"
+                              color="var(--Body-Text)"
+                              className="strikeThrough"
+                              style={{ marginBottom: "8px" }}
+                            >
+                              ₦{trainingLocation.discount}
+                            </H2>
+                          )}
+                          <H2
+                            mdfs="2.4vw"
+                            fs="3.6vw"
+                            fw="600"
+                            color="var(--Body-Text)"
+                          >
+                            ₦{trainingLocation.tuition}
+                          </H2>
+                        </div>
                       </div>
                     </div>
                   </main>
