@@ -235,7 +235,7 @@ const StandardProgram = () => {
                               className="strikeThrough"
                               style={{ marginBottom: "8px" }}
                             >
-                              ₦150,000
+                              ₦300,000
                             </H2>
                           <H2
                             mdfs="2.38vw"
@@ -243,7 +243,7 @@ const StandardProgram = () => {
                             fw="600"
                             color="var(--Body-Text)"
                           >
-                            ₦300,000
+                            ₦150,000
                         </H2>
                         </div>
                         
@@ -434,23 +434,23 @@ const StandardProgram = () => {
                         <div>
                           {trainingLocation.discount && (
                             <H2
-                              mdfs="1.8vw"
+                              mdfs="1.6vw"
                               fs="3vw"
                               fw="500"
+                              className={trainingLocation.discount ? "strikeThrough" : ""}
                               color="var(--Body-Text)"
-                              className="strikeThrough"
-                              style={{ marginBottom: "8px" }}
                             >
-                              ₦{trainingLocation.discount}
+                              ₦{trainingLocation.tuition}
                             </H2>
-                          )}
+                            )}
+                          
                           <H2
                             mdfs="2.4vw"
-                            fs="3.6vw"
+                              fs="3.6vw"
                             fw="600"
                             color="var(--Body-Text)"
                           >
-                            ₦{trainingLocation.tuition}
+                            ₦{trainingLocation.discount || trainingLocation.tuition}
                           </H2>
                         </div>
                       </div>
