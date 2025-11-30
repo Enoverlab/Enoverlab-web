@@ -45,6 +45,7 @@ import Assessment from "./Pages/Assessment";
 import { TestContextProvider } from "./context/TestContext";
 import Result from "./Pages/Result";
 import { ChatbotContainer } from "./Components/chatbot/ChatbotContainer";
+import ScholarshipPage from "./Pages/ScholarshipPage";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
 function App() {
@@ -102,6 +103,7 @@ function App() {
         <Route path="/assessment_result/:user" element={<Result />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/corporate" element={<Corporate />} />
+        <Route path="/scholarship" element={<ScholarshipPage />} />
         <Route path="/executive" element={<Executive/>} />
         <Route path="/business" element={<Business/>} />
         <Route path="/sales" element={<Sales/>} />
