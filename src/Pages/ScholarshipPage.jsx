@@ -118,7 +118,7 @@ const DescriptionDesktop = styled.div`
   }
 `;
 
-const ApplyButton = styled.button`
+const ApplyButton = styled.a`
   background: #003ad4;
   border: none;
   border-radius: 9px;
@@ -475,7 +475,7 @@ const BottomApplySection = styled.section`
   }
 `;
 
-const BottomApplyButton = styled.button`
+const BottomApplyButton = styled.a`
   background: #003ad4;
   border: none;
   border-radius: 9px;
@@ -587,9 +587,9 @@ export default function ScholarshipPage() {
 
   const [isLoading, setIsLoading] = useState(true)
   
-    setTimeout(()=>{
-      setIsLoading(false)
-    },8000)
+  setTimeout(()=>{
+    setIsLoading(false)
+  },8000)
   return (
     <div>
       {isLoading ? <LoadingScreen2 />  : 
@@ -617,7 +617,7 @@ export default function ScholarshipPage() {
                     <p>become a Product Manager even as an undergraduates</p>
                   </DescriptionDesktop>
                 </HeroText>
-                <ApplyButton>Apply Here</ApplyButton>
+                <ApplyButton href='https://forms.gle/h9kiVru3yZdf6fnH6'>Apply Here</ApplyButton>
               </HeroContent>
 
               <HeroImageWrapper>
@@ -711,7 +711,7 @@ export default function ScholarshipPage() {
           </SponsorsSection>
 
           <BottomApplySection>
-            <BottomApplyButton>Apply For the Scholarship Here</BottomApplyButton>
+            <BottomApplyButton href='https://forms.gle/h9kiVru3yZdf6fnH6' target='_blank'>Apply For the Scholarship Here</BottomApplyButton>
           </BottomApplySection>
 
           <ShareSection>
