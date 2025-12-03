@@ -9,6 +9,7 @@ import svgPaths from "../Components/imports/svg-bsrpxiziyw"
 import { useState } from 'react';
 import LoadingScreen2 from '../Components/LoadingScreen2';
 import Header from '../Components/Header';
+import Marquee from 'react-fast-marquee';
 
 const PageContainer = styled.div`
   background: #fff;
@@ -207,7 +208,7 @@ const PoweredBySection = styled.section`
   margin-top: -46px;
 
   @media (min-width: 768px) {
-    background: #fff;
+    background: #68658b;
     border-radius: 20px;
     padding: 36px 20px;
     margin-top: -280px;
@@ -228,6 +229,9 @@ const PoweredByText = styled.p`
   text-align: center;
   margin: 0;
   max-width: 359px;
+  opacity : 0;
+  transform: translateX(-40px);
+  animation: slideIn 0.8s ease-out forwards;
 
   @media (min-width: 768px) {
     font-weight: 600;
@@ -235,6 +239,13 @@ const PoweredByText = styled.p`
     line-height: normal;
     color: #080069;
     max-width: 100%;
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 `;
 
@@ -607,14 +618,14 @@ export default function ScholarshipPage() {
               <HeroContent>
                 <HeroText>
                   <Title>
-                    <TitleHighlight>50% Scholarship</TitleHighlight> for Nigerian Undergraduates
+                    <TitleHighlight>50% Scholarship</TitleHighlight> for Nigerian Undergraduates and Youth Corpers
                   </Title>
                   <DescriptionMobile>
-                    To learn Product Management skills professionally and become a Product Manager even as an undergraduates
+                    To learn Product Management skills professionally and become a globally recognised Product Manager.
                   </DescriptionMobile>
                   <DescriptionDesktop>
                     <p>To learn Product Management skills professionally and</p>
-                    <p>become a Product Manager even as an undergraduates</p>
+                    <p>become a globally recognised Product Manager.</p>
                   </DescriptionDesktop>
                 </HeroText>
                 <ApplyButton href='https://forms.gle/h9kiVru3yZdf6fnH6'>Apply Here</ApplyButton>
@@ -631,7 +642,10 @@ export default function ScholarshipPage() {
 
           <PoweredBySection>
             <PoweredByText>
-              This initiative is powered by Loba Foundation in partnership with Enoverlab
+              <Marquee>
+                This initiative is powered by Loba Foundation in partnership with Enoverlab
+              </Marquee>
+              
             </PoweredByText>
           </PoweredBySection>
 
