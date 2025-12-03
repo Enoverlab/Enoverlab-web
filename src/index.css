@@ -28,4 +28,21 @@ a.disabled {
 pointer-events: none;
 }
 
+.slick-slide > div {
+  height: 100%;
+}
+
+.slikc {
+  position: relative;
+  left: 0;
+  top: 72px;
+  width: 521px;
+  height: 347px;
+  object-fit: cover;
+  left: -6px;
+    top: 0;
+    width: 1206px;
+    height: 804px;
+}
+
 

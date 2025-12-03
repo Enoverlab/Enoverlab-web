@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import bg from "../assets/icon/bg.png";
-import groupSmiling from "../assets/icon/group-smiling.png"
+import smiling1 from "../assets/icon/smiling1.png"
+import smiling2 from "../assets/icon/smiling2.png"
 import gradRight from "../assets/icon/grad-right.png"
 import gradLeft  from "../assets/icon/grad-left.png"
 import sponsor from "../assets/icon/sponsor.png"
 import criteria from "../assets/icon/criteria.png"
 import svgPaths from "../Components/imports/svg-bsrpxiziyw"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import LoadingScreen2 from '../Components/LoadingScreen2';
 import Header from '../Components/Header';
 import Marquee from 'react-fast-marquee';
@@ -182,6 +183,21 @@ const BackgroundImage = styled.img`
   }
 `;
 
+const SliderContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+`;
+
+const SlideWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: ${props => props.isActive ? 1 : 0};
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: ${props => props.isActive ? 'auto' : 'none'};
+`;
+
 const StudentsImage = styled.img`
   position: absolute;
   left: 0;
@@ -208,7 +224,7 @@ const PoweredBySection = styled.section`
   margin-top: -46px;
 
   @media (min-width: 768px) {
-    background: #68658b;
+    background: #060043;
     border-radius: 20px;
     padding: 36px 20px;
     margin-top: -280px;
@@ -237,7 +253,7 @@ const PoweredByText = styled.p`
     font-weight: 600;
     font-size: 28px;
     line-height: normal;
-    color: #080069;
+    color: #fff;
     max-width: 100%;
   }
 
@@ -597,10 +613,26 @@ const DecorativeHat2 = styled.img`
 export default function ScholarshipPage() {
 
   const [isLoading, setIsLoading] = useState(true)
+  const [currentSlide, setCurrentSlide] = useState(0);
   
   setTimeout(()=>{
     setIsLoading(false)
   },8000)
+
+  // Array of student images - add your second image here
+  const studentImages = [
+    smiling1,
+    smiling2, // Replace with your second image
+  ];
+
+  // Auto-advance slides
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % studentImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [studentImages.length]);
   return (
     <div>
       {isLoading ? <LoadingScreen2 />  : 
@@ -634,7 +666,13 @@ export default function ScholarshipPage() {
               <HeroImageWrapper>
                 <HeroImageContainer>
                   <BackgroundImage src={bg} alt="" />
-                  <StudentsImage src={groupSmiling} alt="" />
+                  <SliderContainer>
+                    {studentImages.map((image, index) => (
+                      <SlideWrapper key={index} isActive={currentSlide === index}>
+                        <StudentsImage src={image} alt={`Students ${index + 1}`} />
+                      </SlideWrapper>
+                    ))}
+                  </SliderContainer>
                 </HeroImageContainer>
               </HeroImageWrapper>
             </HeroSection>

@@ -67,3 +67,7 @@ section img.dk {
     left: 45.92vw;
   }
 }
+
+.slick-slide > div {
+  height: 100%;
+}

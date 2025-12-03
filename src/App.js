@@ -46,6 +46,8 @@ import { TestContextProvider } from "./context/TestContext";
 import Result from "./Pages/Result";
 import { ChatbotContainer } from "./Components/chatbot/ChatbotContainer";
 import ScholarshipPage from "./Pages/ScholarshipPage";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
 function App() {
