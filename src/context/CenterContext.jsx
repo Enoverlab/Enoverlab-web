@@ -259,7 +259,7 @@ const centerDetails = {
         },
         
         mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1267180488376!2d3.6027612744555024!3d6.505639393486641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b853e4de644bf%3A0x35c235a02245814f!2sPerxels!5e0!3m2!1sen!2sng!4v1755422139785!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "November 3, 2025",
+        startDate : "Janurary 19, 2026",
     },
     "Lekki-Weekend" : {
         place : 'Lekki',
@@ -287,7 +287,7 @@ const centerDetails = {
 
         },
         mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1267180488376!2d3.6027612744555024!3d6.505639393486641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b853e4de644bf%3A0x35c235a02245814f!2sPerxels!5e0!3m2!1sen!2sng!4v1755422139785!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "January 17, 2025",
+        startDate : "January 17, 2026",
     },
     Ibadan : {
         place : 'Ibadan',
@@ -341,7 +341,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Anambra" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3051337147767!2d7.053362574482788!3d6.223437493764614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104379af706c6619%3A0x2598afc465c51641!2sKodex%20Africa!5e0!3m2!1sen!2sng!4v1721040675268!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "February 7, 2026",
+        startDate : "Admission Closed",
     },
     Abuja : {
         place : 'Abuja',
@@ -369,7 +369,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Abuja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.994307502363!2d7.455678374485262!3d9.064281990998463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0be926ae002f%3A0xe1ee5fbb305e0b36!2sNovare%20Shared%20Office!5e0!3m2!1sen!2sng!4v1748264325538!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> ,
-        startDate : "October 25, 2025",
+        startDate : "February 14, 2026",
     },
     'Ikeja-Weekday' : {
         place : 'Ikeja-Weekday',
@@ -396,7 +396,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Admission Closed",
+        startDate : "January 20, 2026",
     },
     'Ikeja-Weekend' : {
         place : 'Ikeja-Weekend',
@@ -423,7 +423,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "January 17, 2025",
+        startDate : "January 10, 2026",
     },
     'Yaba-Weekday' : {
         place : 'Yaba-Weekday',
@@ -451,7 +451,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Yaba Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "November 5, 2025",
+        startDate : "Admission Closed",
     },
     'Yaba-Weekend' : {
         place : 'Yaba-Weekday',
@@ -478,7 +478,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Yaba Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "January 24, 2026",
+        startDate : "Admission Closed",
     },
     Online : {
         paystackSubLinks : {

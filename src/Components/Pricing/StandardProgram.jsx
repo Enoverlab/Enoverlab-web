@@ -27,7 +27,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState("");
   const [isError, setIsError] = useState(false);
   const centerDetails = useContext(CenterContext);
-  const admissionClosed = ["Anambra", "Ikeja-Weekday"];
+  const admissionClosed = ["Anambra", "Yaba-Weekday","Yaba-Weekend"];
 
   const [trainingLocation, setTrainingLocation] = useState({
     place: "",
@@ -177,7 +177,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Tuesday <br /> & Friday
+                          Every Monday <br /> & Thursday
                         </H2>
                       </div>
                       <div>
@@ -213,7 +213,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          November 11, 2025
+                          January 12, 2026
                         </H2>
                       </div>
                       <div>
