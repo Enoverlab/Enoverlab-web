@@ -227,23 +227,12 @@ const StandardProgram = () => {
                         </H4>
                         <div>
                           <H2
-                              mdfs="1.2vw"
-                              fs="3vw"
-                              fw="500"
-                              color="var(--Body-Text)"
-                              // color="#888"
-                              className="strikeThrough"
-                              style={{ marginBottom: "8px" }}
-                            >
-                              ₦300,000
-                            </H2>
-                          <H2
                             mdfs="2.38vw"
                             fs="3.6vw"
                             fw="600"
                             color="var(--Body-Text)"
                           >
-                            ₦150,000
+                            ₦300,000
                         </H2>
                         </div>
                         
@@ -432,25 +421,13 @@ const StandardProgram = () => {
                           TUITION FEES
                         </H4>
                         <div>
-                          {trainingLocation.discount && (
-                            <H2
-                              mdfs="1.6vw"
-                              fs="3vw"
-                              fw="500"
-                              className={trainingLocation.discount ? "strikeThrough" : ""}
-                              color="var(--Body-Text)"
-                            >
-                              ₦{trainingLocation.tuition}
-                            </H2>
-                            )}
-                          
                           <H2
                             mdfs="2.4vw"
                               fs="3.6vw"
                             fw="600"
                             color="var(--Body-Text)"
                           >
-                            ₦{trainingLocation.discount || trainingLocation.tuition}
+                            ₦{trainingLocation.tuition}
                           </H2>
                         </div>
                       </div>
