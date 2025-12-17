@@ -403,7 +403,7 @@ const centerDetails = {
         location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
         trainingDay : "Every Saturday",
         classType : 'weekend',
-        trainingTime : "10am - 1pm",
+        trainingTime : "2pm - 5pm",
         tuition : '400,000',
         weeks : "12",
         weekIcon : weeks12,
