@@ -234,7 +234,7 @@ export const CenterContext = createContext({
 const centerDetails = {
     'Lekki-Weekday': {
         place : 'Lekki-Weekday',
-        location : 'Perxels Office, Triangle Mall, Osapa London, Lekki',
+        location : 'Gateview Plaza, Plot 11, Admiralty Way, Lekki Phase I',
         trainingDay : "Every Monday & Thursday",
         classType : 'weekday',
         trainingTime : '12pm - 3pm',
@@ -257,13 +257,12 @@ const centerDetails = {
                 price : '₦136,666'
             } 
         },
-        
-        mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1267180488376!2d3.6027612744555024!3d6.505639393486641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b853e4de644bf%3A0x35c235a02245814f!2sPerxels!5e0!3m2!1sen!2sng!4v1755422139785!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+        mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.686825521908!2d3.4561873!3d6.439692000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e1!3m2!1sen!2sng!4v1767856871057!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
         startDate : "Janurary 19, 2026",
     },
     "Lekki-Weekend" : {
         place : 'Lekki',
-        location : 'Perxels Office, Triangle Mall, Osapa London, Lekki',
+        location : 'Gateview Plaza, Plot 11, Admiralty Way, Lekki Phase I',
         trainingDay : "Every Saturday",
         classType : 'weekend',
         trainingTime : "10am - 1pm",
@@ -286,7 +285,7 @@ const centerDetails = {
             } 
 
         },
-        mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1267180488376!2d3.6027612744555024!3d6.505639393486641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b853e4de644bf%3A0x35c235a02245814f!2sPerxels!5e0!3m2!1sen!2sng!4v1755422139785!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+        mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.686825521908!2d3.4561873!3d6.439692000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e1!3m2!1sen!2sng!4v1767856871057!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
         startDate : "January 17, 2026",
     },
     Ibadan : {

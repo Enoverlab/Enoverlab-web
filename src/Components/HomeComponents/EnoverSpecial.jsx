@@ -61,7 +61,7 @@ const EnoverSpecial = () => {
         </div>
         <div className="card4">
           <main>
-          <h2>Internship placement</h2>
+          <h2>Indepth Career Coaching</h2>
           <TertiaryButton Text="Learn More"/>
           </main>
         </div>

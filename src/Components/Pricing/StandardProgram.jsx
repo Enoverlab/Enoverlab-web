@@ -22,6 +22,7 @@ import StandardForm from "../Enroll-Form/StandardForm";
 import { useContext } from "react";
 import { CenterContext } from "../../context/CenterContext";
 import PrivateProgram from "./PrivateProgram";
+import { Link } from "react-router-dom";
 
 const StandardProgram = () => {
   const [location, setLocation] = useState("");
@@ -242,9 +243,9 @@ const StandardProgram = () => {
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
                     <></>
-                    {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                    <Link to="/standard-syllabus.pdf" target="_blank" download='standard-syllabus.pdf' className="syll">
                       Download Syllabus
-                    </Link> */}
+                    </Link>
                   </div>
                 </form>
               </div>
@@ -269,11 +270,11 @@ const StandardProgram = () => {
                     </Flex>
                   ))}
                 </div>
-                {/* <div className="but">
-                <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
-                      Download Syllabus
+                <div className="but">
+                <Link to="/standard-syllabus.pdf" target="_blank" download='standard-syllabus.pdf' className="syll">
+                  Download Syllabus
                 </Link>
-                </div> */}
+                </div>
               </div>
             </Flex>
           </SwiperSlide>
@@ -439,9 +440,9 @@ const StandardProgram = () => {
                       disabled={admissionClosed.includes(location)}
                     />
                     <></>
-                    {/* <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                    <Link to="/standard-syllabus.pdf" target="_blank" download='standard-syllabus.pdf' className="syll">
                       Download Syllabus
-                    </Link> */}
+                    </Link>
                   </div>
                 </form>
               </div>
@@ -472,11 +473,11 @@ const StandardProgram = () => {
                     </Flex>
                   ))}
                 </div>
-                {/* <div className="but">
-                <Link to="/StandardSyllabus.pdf" target="_blank" download='StandardSyllabus.pdf' className="syll">
+                <div className="but">
+                <Link to="/standard-syllabus.pdf" target="_blank" download='standard-syllabus.pdf' className="syll">
                       Download Syllabus
                 </Link>
-                </div> */}
+                </div>
               </div>
             </Flex>
           </SwiperSlide>
