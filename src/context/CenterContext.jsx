@@ -286,7 +286,7 @@ const centerDetails = {
 
         },
         mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.686825521908!2d3.4561873!3d6.439692000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e1!3m2!1sen!2sng!4v1767856871057!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "January 24, 2026",
+        startDate : "February 7, 2026",
     },
     Ibadan : {
         place : 'Ibadan',
