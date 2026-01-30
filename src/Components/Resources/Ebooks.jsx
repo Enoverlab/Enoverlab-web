@@ -32,6 +32,7 @@ const Ebooks = () => {
                   imgUrl={book.imgUrl}
                   key={index}
                   bookUrl={book.bookUrl}
+                  form={book.form}
                 />
               );
             })

@@ -176,7 +176,7 @@ const StyledSignupModal = styled.div`
   }
 `;
 
-const BookCard = ({ imgUrl, maxWidth, maxHeight }) => {
+const BookCard = ({ imgUrl, maxWidth, maxHeight, form }) => {
   const [active, setActive] = React.useState(false);
   // const [showModal, setShowModal] = useState(false);
   return (
@@ -191,7 +191,7 @@ const BookCard = ({ imgUrl, maxWidth, maxHeight }) => {
       >
         {/* <a href={bookUrl} download> */}
         {/* <img src={imgUrl} alt="" onClick={() => setShowModal(!showModal)} /> */}
-        <a href="https://birdsend.page/forms/6444/va9wSykY3B" target="_blank" rel="noreferrer">
+        <a href={form} target="_blank" rel="noreferrer">
         <img src={imgUrl} alt="" />
         {active ? (
           <div
