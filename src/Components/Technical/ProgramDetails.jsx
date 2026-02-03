@@ -45,7 +45,7 @@ const ProgramDetails = () => {
                   fw="600"
                   color="var(--Body-Text)"
                 >
-                  11am - 2pm
+                  10am - 1pm
                 </H2>
                 </div>
                 <div className='locale'>
