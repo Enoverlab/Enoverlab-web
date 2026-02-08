@@ -290,7 +290,7 @@ const centerDetails = {
     },
     Ibadan : {
         place : 'Ibadan',
-        location : 'Perxels Hub, Sunrise Mall, Ring Road, Ibadan',
+        location : 'TheBunker, Ibadan',
         trainingDay : "Every Saturday",
         classType : 'weekend',
         trainingTime : "9am - 12pm",
@@ -312,7 +312,7 @@ const centerDetails = {
                 price : '₦103,333'
             } 
         },
-        mapIframe : <iframe title="ibadan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9685499825955!2d3.8717742000000004!3d7.357421999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398def589da5ad%3A0x6b54bd3bcc977a03!2sSunrise%20Supermarket%20Ring%20Road%20Ibadan!5e0!3m2!1sen!2sng!4v1743766375767!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
+        mapIframe : <iframe title="ibadan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9997740771046!2d3.874975999999999!3d7.3539197000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d00717f2a1f%3A0x1560da891e2f9f67!2sTheBunker%2C%20Ibadan!5e0!3m2!1sen!2sng!4v1770530940586!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
         startDate : "February 14, 2026",
     },
     Anambra : {
