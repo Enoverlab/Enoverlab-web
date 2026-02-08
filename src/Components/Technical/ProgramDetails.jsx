@@ -91,7 +91,7 @@ const ProgramDetails = () => {
           </main>
           <div className="cta">
             {
-              admissionClosed ? <p style={{color : 'red', fontSize : '19px', fontWeight : 'medium'}}>Admission Closed</p> : (<SecondaryButtonA Text="Enroll Now" to='https://paystack.com/pay/enoverlabtpmp' />)
+              admissionClosed ? <p style={{color : 'red', fontSize : '19px', fontWeight : 'medium'}}>Admission Closed</p> : (<SecondaryButtonA Text="Enroll Now" to='payments/tpm' />)
             }
             <></>
             {/* <Link to="/TPMBrochure.pdf" target="_blank" download='TPM Brochure.pdf' className="syll">

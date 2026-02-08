@@ -48,6 +48,7 @@ import { ChatbotContainer } from "./Components/chatbot/ChatbotContainer";
 import ScholarshipPage from "./Pages/ScholarshipPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import TpmPaymentPage from "./Pages/TpmPaymentPage";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
 function App() {
@@ -92,6 +93,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog/:id" element={<BlogContentPage />} />
         <Route path="/payments" element={<Payment />} />
+        <Route path="/payments/tpm" element={<TpmPaymentPage />} />
         <Route path="/payments/:id" element={<RespectivePayment />} />
         <Route path="/assessment/about" element={<AssessmentLanding />} />
         <Route
