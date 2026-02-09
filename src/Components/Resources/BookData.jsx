@@ -5,7 +5,7 @@ import keys from "../../assets/resources/keys.png";
 import job from "../../assets/resources/job.png";
 import earn from "../../assets/resources/earn.png"
 import playbook from "../../assets/resources/tech.png"
-import abc from "../../assets/resources/abc.jpg"
+import abc from "../../assets/resources/abc.png"
 
 export const BookData = [
     {
