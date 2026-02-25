@@ -3,13 +3,10 @@ import styled from "styled-components";
 const SectionThirteen = () => {
   return (
     <StyledSectionThirteen>
-        <div className="section-head">
-          <h3>
-            What are the benefits of learning from Enoverlab? (You may ask)
-          </h3>
-        </div>
+      <div className="section-head">
+        <h3>What are the benefits of learning from Enoverlab? (You may ask)</h3>
+      </div>
       <div className="section-thirteen-container">
-        
         <div className="list-container">
           <div className="list">
             <ul>
@@ -34,7 +31,8 @@ const SectionThirteen = () => {
               <li>Understand the Product roadmap</li>
               <li>Understand Product strategy</li>
               <li>
-                You'll get access to product management resources for <span>life</span>
+                You'll get access to product management resources for{" "}
+                <span>life</span>
               </li>
             </ul>
           </div>
@@ -45,8 +43,7 @@ const SectionThirteen = () => {
               <li>How to land PM roles across the world</li>
               <li>
                 <span>
-                You'll get access to 6-7 weeks Internship placement to get
-                real-life experience
+                  {/* You'll get access to 6-7 weeks Internship placement to get */}
                 </span>
               </li>
               <li>You'll learn the advanced product management tools</li>
@@ -62,30 +59,29 @@ const SectionThirteen = () => {
 export default SectionThirteen;
 
 const StyledSectionThirteen = styled.div`
-.section-head {
-      padding: 2rem 0;
-      display: flex;
-      justify-content: center;
-      h3 {
-        font-size: 2.5rem;
-        line-height: 3.6875rem;
-        color: #0046ff;
-        text-align: center;
-        max-width: 45%;
+  .section-head {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    h3 {
+      font-size: 2.5rem;
+      line-height: 3.6875rem;
+      color: #0046ff;
+      text-align: center;
+      max-width: 45%;
 
-        @media (max-width: 768px) {
-            font-size: 1.5rem;
-            line-height: 2.1875rem;
-            max-width: 100%;
-        }
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+        line-height: 2.1875rem;
+        max-width: 100%;
       }
     }
+  }
   .section-thirteen-container {
     width: 100%;
     padding: 2rem 5%;
     background: #202020;
 
-    
     .list-container {
       display: flex;
       justify-content: space-between;

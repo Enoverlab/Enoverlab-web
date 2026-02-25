@@ -35,9 +35,8 @@ export const SectionFourteen = () => {
                 cohort.
               </p>
             </li>
-            <li>
-              You get access to a special 6-7 weeks Internship placement 
-              <p>
+            {/* You get access to a special 6-7 weeks Internship placement 
+            <p>
                 {" "}
                 We've created this specially for you so that you can get
                 real-life experience that will{" "}
@@ -51,9 +50,7 @@ export const SectionFourteen = () => {
                 {" "}
                 We're doing this to give <span>each</span> of you the{" "}
                 <span>right attention</span> needed to succeed.
-              </p>
-            </li>
-
+              </p> */}
             <li>
               You get to join a community of connected Product Managers who have
               a similar mindset as yours and are willing to grow beyond.
@@ -113,8 +110,6 @@ export const SectionFourteen = () => {
     </>
   );
 };
-
-
 
 const StyledSectionFourteen = styled.div`
   .section-fourteen-container {

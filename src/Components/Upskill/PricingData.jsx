@@ -33,7 +33,7 @@ export const BasicData = [
 
 export const AdvancedData = [
   {
-    listText: "Everything in the basic program"
+    listText: "Everything in the basic program",
   },
   {
     listText: "Introduction to Product Management",
@@ -88,9 +88,7 @@ export const AdvancedData = [
   {
     listText: "Certificate of Completion",
   },
-  {
-    listText: "8 weeks Internship placement",
-  },
+  // { listText: "8 weeks Internship placement", }
 ];
 
 export const Onsite = [
@@ -119,135 +117,126 @@ export const Onsite = [
     listText:
       " After training support; interview prep, CV review and job recommendations**",
   },
+  // {
+  //   listText:
+  //     "Internship placement to get real-life product management experience",
+  // },
+];
+
+export const ExecutiveData = [
   {
-    listText:
-      "Internship placement to get real-life product management experience",
+    listText: "Product Management Fundamentals",
+  },
+  {
+    listText: "Understanding different types of products",
+  },
+
+  {
+    listText: "Market leading strategy",
+  },
+  {
+    listText: "Building platform products",
+  },
+  {
+    listText: "Understanding network effects",
+  },
+  {
+    listText: "Product defensibility",
+  },
+  {
+    listText: " Leading product teams ",
+  },
+  {
+    listText: "Using partnership & collaboration to drive growth",
+  },
+  {
+    listText: "Scaling products from local to international markets",
+  },
+  {
+    listText: "Continuous product innovation for long term sustainability",
+  },
+  {
+    listText: "Product Executive Certification",
   },
 ];
 
-
-export const ExecutiveData = [
-    {
-        listText:
-          "Product Management Fundamentals",
-      },
-    {
-    listText:
-      "Understanding different types of products",
-  },
- 
-  {
-    listText:
-      "Market leading strategy",
-  },
-  {
-    listText:
-      "Building platform products",
-  },
-  {
-    listText: "Understanding network effects"
-  },
-  {
-    listText:
-      "Product defensibility",
-  },
-  {
-    listText:
-      " Leading product teams ",
-  },
-  {
-    listText:
-      "Using partnership & collaboration to drive growth",
-  },
-  {
-    listText:
-      "Scaling products from local to international markets",
-  },
-  {
-    listText:
-      "Continuous product innovation for long term sustainability"
-  },
-  {
-    listText:
-      "Product Executive Certification",
-  },
-]
-
-
 export const TPMData = [
   {
-    listText: "Introduction to Technical Product Management"
+    listText: "Introduction to Technical Product Management",
   },
   {
-    listText: "Fundamentals of APIs"
+    listText: "Fundamentals of APIs",
   },
   {
-    listText: "API Management and Strategy"
+    listText: "API Management and Strategy",
   },
   {
-    listText: "Building Effective Support Systems"
+    listText: "Building Effective Support Systems",
   },
   {
-    listText: "Support Tools and Metrics"
+    listText: "Support Tools and Metrics",
   },
   {
-    listText: "Using Postman and Azure to test APIs"
+    listText: "Using Postman and Azure to test APIs",
   },
   {
-    listText: "Integration Approaches and Patterns"
+    listText: "Integration Approaches and Patterns",
   },
   {
-    listText: "Integration Tools and Platforms"
+    listText: "Integration Tools and Platforms",
   },
   {
-    listText: "Deployment and deployment environments"
+    listText: "Deployment and deployment environments",
   },
   {
-    listText: "Product Analytics"
+    listText: "Product Analytics",
   },
   {
-    listText: "Advanced Topics and Case Studies"
-  }
-]
+    listText: "Advanced Topics and Case Studies",
+  },
+];
 
 export const GrowthData = [
   {
-    listText: "Introduction to Product Growth"
+    listText: "Introduction to Product Growth",
   },
   {
-    listText: "Different types of Growth"
+    listText: "Different types of Growth",
   },
   {
-    listText: "Understanding Growth Terms - Gamification, Time-to-Value, Economies of Scale, Network Effects, Personalisation, Habit Forming, etc"
+    listText:
+      "Understanding Growth Terms - Gamification, Time-to-Value, Economies of Scale, Network Effects, Personalisation, Habit Forming, etc",
   },
   {
-    listText: "Achieving Product Market Fit (PMF)"
+    listText: "Achieving Product Market Fit (PMF)",
   },
   {
-    listText: "Growing from product market fit"
+    listText: "Growing from product market fit",
   },
   {
-    listText: "Product Metrics AARRR (Acquisition, Activation, Retention, Referral, Revenue)"
+    listText:
+      "Product Metrics AARRR (Acquisition, Activation, Retention, Referral, Revenue)",
   },
   {
-    listText: "Tracking Data with Amplitude & Mixpanel"
+    listText: "Tracking Data with Amplitude & Mixpanel",
   },
   {
-    listText: "Rapid Testing &  Experimentation; A/B Testing & Usability Testing"
+    listText:
+      "Rapid Testing &  Experimentation; A/B Testing & Usability Testing",
   },
   {
-    listText: "Product Strategy"
+    listText: "Product Strategy",
   },
   {
-    listText: "Product Led Growth"
+    listText: "Product Led Growth",
   },
   {
-    listText: "Collaborating with the Marketing Team"
+    listText: "Collaborating with the Marketing Team",
   },
   {
-    listText: "Creating & Implementing Growth Plans"
+    listText: "Creating & Implementing Growth Plans",
   },
   {
-    listText: "Analysing Different Growth Strategies of Major Tech Companies"
-  }
-]
+    listText: "Analysing Different Growth Strategies of Major Tech Companies",
+  },
+];
