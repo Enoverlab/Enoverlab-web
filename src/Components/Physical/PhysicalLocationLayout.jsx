@@ -17,7 +17,7 @@ export const PhysicalLocationLayout = () => {
     >
     <PhysicalCard bgImage={Enov1}  location={"Online"}
                 locationLink={"/programs"} />
-    <PhysicalCard bgImage={Enov2}  location={"On-Site"}
+    <PhysicalCard bgImage={Enov2}  location={"Hybrid"}
                 locationLink={"/programs"} />
     </Flex> 
     {/* <Flex mb={["2.5rem","6.125rem"]}>

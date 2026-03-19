@@ -20,7 +20,7 @@ import PricingList from "./PricingList";
 import {
   BasicData,
   AdvancedData,
-  Onsite,
+  Hybrid,
   ExecutiveData,
   TPMData,
   GrowthData,
@@ -198,7 +198,7 @@ export const AdvancedCard = () => {
   );
 };
 
-export const OnsiteCard = () => {
+export const HybridCard = () => {
   const [tab, setTab] = useState("tabActive");
 
   const handleChange = (tabValue) => {
@@ -209,7 +209,7 @@ export const OnsiteCard = () => {
     <CardStyle>
       <PricingCard
         // backgroundColor={theme.color.primary} add comment
-        cardTitle={"Advanced Program (ON-SITE)"}
+        cardTitle={"Advanced Program (Hybrid)"}
         textColor={theme.color.dark}
         cardText={
           "This is for professionals who prefers physical training to learn the required skills to become a Product Manager"
@@ -224,7 +224,7 @@ export const OnsiteCard = () => {
         
         // discountPrice={tab === "active" ? "" : "₦200,000" }
       >
-        {Onsite.map((item, index) => {
+        {Hybrid.map((item, index) => {
           return (
             <PricingList
               key={index}

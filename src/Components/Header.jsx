@@ -154,8 +154,8 @@ const standard = [
     linkto : '/programs#online',
   },
   {
-    linkName : 'Onsite Product Management',
-    linkto : '/programs#onsite',
+    linkName : 'Hybrid Product Management',
+    linkto : '/programs#Hybrid',
   },
   {
     linkName : 'Private Coaching',

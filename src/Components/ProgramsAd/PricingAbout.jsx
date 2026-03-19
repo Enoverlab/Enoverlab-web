@@ -30,7 +30,7 @@ const aboutList = [
       "We have weekday & weekend class for the online training; you can choose any class that works best for you",
   },
   {
-    listText: "Onsite training holds only on Saturdays",
+    listText: "Hybrid training holds only on Saturdays",
   },
 ];
 

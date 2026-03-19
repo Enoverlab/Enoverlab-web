@@ -20,7 +20,7 @@ Is it an Online training?</span> Yes it's an online training where you have an I
  </li>
 <li>
     <span>
-Do you have onsite training?</span> Yes, our training center is at Lekki phase 1
+Do you have Hybrid training?</span> Yes, our training center is at Lekki phase 1
 </li>
 <li>
     <span>

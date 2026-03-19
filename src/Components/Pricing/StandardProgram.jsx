@@ -10,8 +10,8 @@ import weeks12 from "../../assets/icon/weeks12.svg";
 import weeks20 from "../../assets/icon/20weeks.png";
 // import week4 from "../../assets/icon/weeks4.svg"
 import {
-  OnsiteProgram,
-  OnsiteProgramWeekday,
+  HybridProgram,
+  HybridProgramWeekday,
   onlineProgram,
 } from "../../constants";
 import check from "../../assets/icon/check.svg";
@@ -122,7 +122,7 @@ const StandardProgram = () => {
     setIsError(false);
   }
   return (
-    <StyledProgram id="onsite">
+    <StyledProgram id="Hybrid">
       <header>Standard Programs</header>
       <div className="swipepgContainer">
         <section className="contain" id="online">
@@ -283,7 +283,7 @@ const StandardProgram = () => {
               <div className="program">
                 <div className="heading">
                   <H4 mdfs="2.3vw" fw="700">
-                    On-site Training
+                    Hybrid Training
                   </H4>
                   <img src={trainingLocation.weekIcon} alt="20 weeks" />
                 </div>
@@ -462,8 +462,8 @@ const StandardProgram = () => {
                 </H4>
                 <div className="list">
                   {(trainingLocation.classType === "weekend"
-                    ? OnsiteProgram
-                    : OnsiteProgramWeekday
+                    ? HybridProgram
+                    : HybridProgramWeekday
                   ).map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
@@ -613,7 +613,7 @@ const StyledProgram = styled.div`
       font-size: 1.2rem;
     }
     .programtext1::before {
-      content: "Onsite Training";
+      content: "Hybrid Training";
       font-size: 1.2rem;
     }
     .programtext2::before {
@@ -758,7 +758,7 @@ const StyledProgram = styled.div`
         font-size: 1.6rem;
       }
       .programtext1::before {
-        content: "On-site Training";
+        content: "Hybrid Training";
         font-size: 1.6rem;
       }
       .programtext2::before {

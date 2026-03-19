@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { H1, P } from "../../Utils/styled/Typograpyhy";
-import { AdvancedCard,OnsiteCard } from "./ProgramCards";
+import { AdvancedCard,HybridCard } from "./ProgramCards";
 import BookCard from "../Resources/BookCard";
 // import Timer from "./Timer";
 import abc from "../../assets/resources/abc.jpg"
@@ -85,8 +85,8 @@ const PriceHero = () => {
           <BasicCard/>
           </div> */}
 
-          <div id="onsite">
-          <OnsiteCard/>
+          <div id="Hybrid">
+          <HybridCard/>
           </div>
 
           <div>
@@ -157,8 +157,8 @@ const PriceHero = () => {
           </div>
           <div className="mobile-view">
         
-          <div id="onsite">
-          <OnsiteCard/>
+          <div id="Hybrid">
+          <HybridCard/>
           </div>
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/iPMxwnmj7sk?si=IIoJGezZSvZXKOUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           {/* <div  id="advanced">

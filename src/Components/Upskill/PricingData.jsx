@@ -91,7 +91,7 @@ export const AdvancedData = [
   // { listText: "8 weeks Internship placement", }
 ];
 
-export const Onsite = [
+export const Hybrid = [
   {
     listText: "  Everything in the advanced program online",
   },

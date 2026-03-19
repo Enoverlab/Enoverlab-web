@@ -21,10 +21,10 @@ const Perks = () => {
           <img src={number1} alt="" />
           <div>
             <h4>
-            Onsite Job Profiling
+            Hybrid Job Profiling
             </h4>
             <p>
-            Showcase your talents and land your dream product role through our dedicated onsite job profiling sessions. Successful candidates will have the opportunity to be recruited on the spot.
+            Showcase your talents and land your dream product role through our dedicated Hybrid job profiling sessions. Successful candidates will have the opportunity to be recruited on the spot.
             </p>
           </div>
         </div>

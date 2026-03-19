@@ -589,8 +589,8 @@ export const Article = [
             content : 'One thing many Enoverlab Alumni always commend Enoverlab for is the simplicity and practical delivery of its training by its instructors. The instructors are passionate, clearly communicate the knowledge they share in clear terms with relatable examples, and they carry every trainee along. Literally anyone, regardless of their background, can learn product management skills at Enoverlab. Over 80% of Enoverlab alumni have no tech or computer science background, yet more than 60% of them are now working in product roles for different organisations across the globe.'
         },
         {
-            contentHeading : "Instructor-Led Online Training and Onsite Training ",
-            content : 'Enoverlab offers flexible learning options to meet your needs. Whether you prefer the dynamic environment of an onsite class or the convenience of online learning, Enoverlab have you covered. Its online training is instructor-led training provides a live, interactive experience where you can engage directly with expert instructors and mentors, ask questions, and collaborate with peers in real-time. While its onsite trainings are even more interactive and enriching, giving trainees a close guided learning experience that builds their capacity and enable them become truly skilled in product management.Whether you learn online or onsite at Enoverlab, you get a fully immersive learning experience. '     
+            contentHeading : "Instructor-Led Online Training and Hybrid Training ",
+            content : 'Enoverlab offers flexible learning options to meet your needs. Whether you prefer the dynamic environment of an Hybrid class or the convenience of online learning, Enoverlab have you covered. Its online training is instructor-led training provides a live, interactive experience where you can engage directly with expert instructors and mentors, ask questions, and collaborate with peers in real-time. While its Hybrid trainings are even more interactive and enriching, giving trainees a close guided learning experience that builds their capacity and enable them become truly skilled in product management.Whether you learn online or Hybrid at Enoverlab, you get a fully immersive learning experience. '     
         },
         {
             contentHeading : "Expert Instructors and Mentors",
@@ -646,8 +646,8 @@ export const Article = [
     },
     {
         id: 22,
-        title: "Where to learn Product Management Physically / Onsite",
-        content1: "Enoverlab is the only professional Product Management Institute in Nigeria where you can learn product management onsite or in-person.",
+        title: "Where to learn Product Management Physically / Hybrid",
+        content1: "Enoverlab is the only professional Product Management Institute in Nigeria where you can learn product management Hybrid or in-person.",
         content2 : "With training centres across major cities in Nigeria and in Nairobi, Kenya, Enoverlab brings the learning and development close to you.",
         subtopic : 'Here are Enoverlab’s physical learning centers across Nigeria and Africa;',
         briefList:[

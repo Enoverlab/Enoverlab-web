@@ -12,7 +12,7 @@ const ProgramDetails = () => {
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
-                <div className="heading" id="onsite">
+                <div className="heading" id="Hybrid">
                   <H4 mdfs="2.38vw" fs="1.3rem" fw="700">
                   Business Growth Coaching 
                   </H4>
@@ -60,7 +60,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Online or Onsite
+                          Online or Hybrid
                         </H2>
                         </div>
                       </div>

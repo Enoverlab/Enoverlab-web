@@ -58,7 +58,7 @@ export const standardPrograms = [
   },
   {
     img: sp2,
-    headText: "On-Site Training",
+    headText: "Hybrid Training",
     subText: "For Newbies in Product Management ",
     link : "/programs"
   },
@@ -221,8 +221,8 @@ export const businessProgram = [
   "And so much more..."
 ];
 
-export const OnsiteProgram = [
-  "12 weeks Intensive training and mentorship ONSITE",
+export const HybridProgram = [
+  "12 weeks Intensive training and mentorship Hybrid",
   "A small class for only 10 persons",
   "International certification accredited by the American Council of Training and Development (ACTD)",
   "Lifetime access to Product management resources",
@@ -232,8 +232,8 @@ export const OnsiteProgram = [
   "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
 ]
 
-export const OnsiteProgramWeekday = [
-  "7 weeks Intensive training and mentorship ONSITE",
+export const HybridProgramWeekday = [
+  "7 weeks Intensive training and mentorship Hybrid",
   "A small class for only 10 persons",
   "International certification accredited by the American Council of Training and Development (ACTD)",
   "Lifetime access to Product management resources",

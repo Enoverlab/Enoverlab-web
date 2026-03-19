@@ -239,7 +239,7 @@ const Footer = ({p}) => {
               </P>
             </HashLink>
 
-            <HashLink to="/programs#onsite">
+            <HashLink to="/programs#Hybrid">
               <P
                 color="var(--Body-Text)"
                 fs="3vw"
@@ -247,7 +247,7 @@ const Footer = ({p}) => {
                 lh="28px"
                 fw="400"
               >
-                Onsite Training
+                Hybrid Training
               </P>
             </HashLink>
             <Link to="/executive">

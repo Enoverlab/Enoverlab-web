@@ -14,7 +14,7 @@ const KenyanHero = () => {
                 <H4>Hujambo Kenya</H4>
                 <img src={kenyanFlag} alt="Kenya's FLag" />
             </div>
-            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Learn Product Management onsite in Nairobi, Kenya</H1>
+            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Learn Product Management Hybrid in Nairobi, Kenya</H1>
             <H3 mdfs="clamp(1.6rem,1.322vw,2rem)" fs="3.5vw">Enjoy the richer, deeper experiences that comes with learning in-person at our incredible Nairobi centre</H3>
             <SecondaryButton Text="Enroll Now"/>
         </section>

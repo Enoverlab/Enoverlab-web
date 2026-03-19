@@ -16,7 +16,7 @@ const IkejaHero = () => {
             </div>
             <div className='direction'>
                 <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)" fs="clamp(2.7rem,7vw,4rem)">
-                    Learn Product <br /> Management onsite <br /> in Ikeja, Lagos
+                    Learn Product <br /> Management Hybrid <br /> in Ikeja, Lagos
                 </H1>
                 
                     <img src={direction} alt="" />

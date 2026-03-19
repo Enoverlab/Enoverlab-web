@@ -13,7 +13,7 @@ import { theme } from "../../Utils/Theme";
 import {  H4} from "../../Utils/styled/Typograpyhy";
 import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
-import { BasicData, AdvancedData, Onsite, ExecutiveData, TPMData, GrowthData } from "./PricingData";
+import { BasicData, AdvancedData, Hybrid, ExecutiveData, TPMData, GrowthData } from "./PricingData";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 export const BasicCard = () => {
@@ -134,7 +134,7 @@ export const AdvancedCard = () => {
   );
 };
 
-export const OnsiteCard = () => {
+export const HybridCard = () => {
   const [tab, setTab] = useState("tabActive")
 
   const handleChange = (tabValue) => {
@@ -151,7 +151,7 @@ export const OnsiteCard = () => {
     <CardStyle> 
       <PricingCard
         // backgroundColor={theme.color.primary} add comment
-        cardTitle={"Advanced Program (ON-SITE)"}
+        cardTitle={"Advanced Program (Hybrid)"}
         textColor={theme.color.dark}
         cardText={
           "This is for professionals who prefers physical training to learn the required skills to become a Product Manager"
@@ -165,7 +165,7 @@ export const OnsiteCard = () => {
         switchTab={handleChange}
         // discountPrice={tab === "active" ? "" : "₦200,000" }
       >
-        {Onsite.map((item, index) => {
+        {Hybrid.map((item, index) => {
           return (
             <PricingList
               key={index}

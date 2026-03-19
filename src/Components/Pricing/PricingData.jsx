@@ -93,7 +93,7 @@ export const AdvancedData = [
   // },
 ];
 
-export const Onsite = [
+export const Hybrid = [
   {
     listText: "  Everything in the advanced program online",
   },

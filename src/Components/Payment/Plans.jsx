@@ -139,7 +139,7 @@ const Plans = () => {
       </section>
       <section className="physical">
         <h2>
-        On-site Training Payment
+        Hybrid Training Payment
         </h2>
         <div className=" Option">
 

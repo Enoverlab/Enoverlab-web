@@ -12,7 +12,7 @@ const ProgramDetails = () => {
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
-                <div className="heading" id="onsite">
+                <div className="heading" id="Hybrid">
                   <H4 mdfs="2.38vw" fw="700">
                   Executive Coaching
                   </H4>

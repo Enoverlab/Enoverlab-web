@@ -13,7 +13,7 @@ const ProgramDetails = () => {
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program" id='growthEnrol'>
-                <div className="heading" id="onsite">
+                <div className="heading" id="Hybrid">
                   <H4 mdfs="2.38vw" fs="3.3vw" fw="700">
                   Growth Product Management<br /> Program
                   </H4>
