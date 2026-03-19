@@ -9,7 +9,7 @@ const trainingList = [
     listText: "Custom product management training to suit your company's needs",
   },
   {
-    listText: "Remote,hybrid or Hybrid training",
+    listText: "Remote or hybrid training",
   },
   {
     listText:

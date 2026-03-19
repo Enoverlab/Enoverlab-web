@@ -5,7 +5,7 @@ import AboutList from './AboutList'
 import laptop from '../../assets/corporate/laptop.png'
 const ListData = [
     {
-        listText: "Remote,hybrid or Hybrid training"
+        listText: "Remote or hybrid training"
     },
     {
         listText: "Training your product team with specific skill set to take your products to the next level"

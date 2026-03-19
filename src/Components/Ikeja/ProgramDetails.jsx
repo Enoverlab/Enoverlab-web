@@ -15,7 +15,7 @@ const ProgramDetails = () => {
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
-                <div className="heading" id="Hybrid">
+                <div className="heading" id="hybrid">
                   <H4 mdfs="2.38vw" fw="700">
                   Ikeja Centre Info
                   </H4>

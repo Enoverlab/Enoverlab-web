@@ -85,7 +85,7 @@ const PriceHero = () => {
           <BasicCard/>
           </div>
 
-          {/* <div id="Hybrid">
+          {/* <div id="hybrid">
           <HybridCard/>
           </div> */}
          
@@ -153,7 +153,7 @@ const PriceHero = () => {
           </div>
           <div className="mobile-view">
         
-          <div id="Hybrid">
+          <div id="hybrid">
           {/* <HybridCard/> */}
           </div>
 

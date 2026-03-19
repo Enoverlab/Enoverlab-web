@@ -28,7 +28,7 @@ const StandardProgram = () => {
   const [location, setLocation] = useState("");
   const [isError, setIsError] = useState(false);
   const centerDetails = useContext(CenterContext);
-  const admissionClosed = ["Anambra", "Yaba-Weekday","Yaba-Weekend","Lekki-Weekend"];
+  const admissionClosed = ["Anambra", "Yaba-Weekday","Yaba-Weekend","Lekki-Weekend","Ibadan"];
 
   const [trainingLocation, setTrainingLocation] = useState({
     place: "",
@@ -122,7 +122,7 @@ const StandardProgram = () => {
     setIsError(false);
   }
   return (
-    <StyledProgram id="Hybrid">
+    <StyledProgram id="hybrid">
       <header>Standard Programs</header>
       <div className="swipepgContainer">
         <section className="contain" id="online">

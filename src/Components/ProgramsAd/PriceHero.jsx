@@ -85,7 +85,7 @@ const PriceHero = () => {
           <BasicCard/>
           </div> */}
 
-          <div id="Hybrid">
+          <div id="hybrid">
           <HybridCard/>
           </div>
 
@@ -157,7 +157,7 @@ const PriceHero = () => {
           </div>
           <div className="mobile-view">
         
-          <div id="Hybrid">
+          <div id="hybrid">
           <HybridCard/>
           </div>
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/iPMxwnmj7sk?si=IIoJGezZSvZXKOUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

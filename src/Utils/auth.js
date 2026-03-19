@@ -64,12 +64,12 @@ export async function sendQuestion(
       response: `We offer Product Management training for beginners in tech.
 It is a 12-week program consisting of in-depth training, mentorship, and career coaching.
 
-We have self-paced, online & Hybrid training.
-Which of the training would you like to sign up for - self-paced, online, or Hybrid?`,
+We have self-paced, online & hybrid training.
+Which of the training would you like to sign up for - self-paced, online, or hybrid?`,
       followUps: [
         "What are the requirements to take the training?",
         "How much is the training tuition fees?",
-        "What is the difference between self-paced, online, and Hybrid?",
+        "What is the difference between self-paced, online, and hybrid?",
       ],
     },
 
@@ -81,8 +81,8 @@ Which of the training would you like to sign up for - self-paced, online, or Hyb
 •  The training tuition fee`,
       followUps: [
         "How much is the training tuition fees?",
-        "Where are your Hybrid learning centres?",
-        "What is the difference between self-paced, online, and Hybrid?",
+        "Where are your hybrid learning centres?",
+        "What is the difference between self-paced, online, and hybrid?",
       ],
     },
 
@@ -94,21 +94,21 @@ Online - N300,000
 Hybrid (Yaba, Ibadan, Abuja, Anambra) - N300,000 
 Hybrid (Lekki, Ikeja) - N400,000
 
-You can split the payment for online and Hybrid in two or three payments.`,
+You can split the payment for online and hybrid in two or three payments.`,
       followUps: [
         "How much is the training tuition fees?",
-        "Where are your Hybrid learning centres?",
-        "What is the difference between self-paced, online, and Hybrid?",
+        "Where are your hybrid learning centres?",
+        "What is the difference between self-paced, online, and hybrid?",
       ],
     },
 
-    "What is the difference between self-paced, online, and Hybrid?": {
+    "What is the difference between self-paced, online, and hybrid?": {
       response: `•  Self paced is for anyone who wants to learn with pre-recorded videos at their own pace, schedule, and time online.
 •  Online is for anyone who wants to learn in a live online instructor-led class
 •  Hybrid is for anyone who wants to learn at any of our in-person learning centres across Nigeria.`,
       followUps: [
-        "Where are your Hybrid learning centres?",
-        "What is the difference between self-paced, online, and Hybrid?",
+        "Where are your hybrid learning centres?",
+        "What is the difference between self-paced, online, and hybrid?",
         "What are the benefits of learning at Enoverlab?",
       ],
     },
@@ -123,14 +123,14 @@ You can split the payment for online and Hybrid in two or three payments.`,
 •  Access to product management resources for life
 •  A fun, empowering, and memorable learning experience`,
       followUps: [
-        "Where are your Hybrid learning centres?",
+        "Where are your hybrid learning centres?",
         "What are the benefits of learning at Enoverlab?",
         "How much is the training tuition fees?",
       ],
     },
 
-    "Where are your Hybrid learning centres?": {
-      response: `Our Hybrid learning centres are located in:
+    "Where are your hybrid learning centres?": {
+      response: `Our hybrid learning centres are located in:
 
 • Yaba, Lagos
 • Lekki, Lagos
@@ -142,7 +142,7 @@ You can split the payment for online and Hybrid in two or three payments.`,
 You can choose the location most convenient for you!`,
       followUps: [
         "How much is the training tuition fees?",
-        "What is the difference between self-paced, online, and Hybrid?",
+        "What is the difference between self-paced, online, and hybrid?",
         "What are the benefits of learning at Enoverlab?",
       ],
     },

@@ -155,7 +155,7 @@ const standard = [
   },
   {
     linkName : 'Hybrid Product Management',
-    linkto : '/programs#Hybrid',
+    linkto : '/programs#hybrid',
   },
   {
     linkName : 'Private Coaching',

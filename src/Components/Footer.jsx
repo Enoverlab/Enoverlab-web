@@ -239,7 +239,7 @@ const Footer = ({p}) => {
               </P>
             </HashLink>
 
-            <HashLink to="/programs#Hybrid">
+            <HashLink to="/programs#hybrid">
               <P
                 color="var(--Body-Text)"
                 fs="3vw"

@@ -590,7 +590,7 @@ export const Article = [
         },
         {
             contentHeading : "Instructor-Led Online Training and Hybrid Training ",
-            content : 'Enoverlab offers flexible learning options to meet your needs. Whether you prefer the dynamic environment of an Hybrid class or the convenience of online learning, Enoverlab have you covered. Its online training is instructor-led training provides a live, interactive experience where you can engage directly with expert instructors and mentors, ask questions, and collaborate with peers in real-time. While its Hybrid trainings are even more interactive and enriching, giving trainees a close guided learning experience that builds their capacity and enable them become truly skilled in product management.Whether you learn online or Hybrid at Enoverlab, you get a fully immersive learning experience. '     
+            content : 'Enoverlab offers flexible learning options to meet your needs. Whether you prefer the dynamic environment of a hybrid class or the convenience of online learning, Enoverlab have you covered. Its online training is instructor-led training provides a live, interactive experience where you can engage directly with expert instructors and mentors, ask questions, and collaborate with peers in real-time. While its hybrid trainings are even more interactive and enriching, giving trainees a close guided learning experience that builds their capacity and enable them become truly skilled in product management.Whether you learn online or hybrid at Enoverlab, you get a fully immersive learning experience. '     
         },
         {
             contentHeading : "Expert Instructors and Mentors",
@@ -647,7 +647,7 @@ export const Article = [
     {
         id: 22,
         title: "Where to learn Product Management Physically / Hybrid",
-        content1: "Enoverlab is the only professional Product Management Institute in Nigeria where you can learn product management Hybrid or in-person.",
+        content1: "Enoverlab is the only professional Product Management Institute in Nigeria where you can learn product management in a hybrid format or in-person.",
         content2 : "With training centres across major cities in Nigeria and in Nairobi, Kenya, Enoverlab brings the learning and development close to you.",
         subtopic : 'Here are Enoverlab’s physical learning centers across Nigeria and Africa;',
         briefList:[
