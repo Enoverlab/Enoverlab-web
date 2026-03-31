@@ -294,14 +294,14 @@ const centerDetails = {
         trainingDay : "Every Saturday",
         classType : 'weekend',
         trainingTime : "9am - 12pm",
-        tuition : '300,000',
+        tuition : '400,000',
         weeks : "12",
         weekIcon : weeks12,
         link :  "https://enoverlab.com/payments",
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/dekyy51qhn',
-                price : '₦305,000',
+                price : '₦405,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/fd89f6xax8',
@@ -351,12 +351,12 @@ const centerDetails = {
         classType : 'weekend',
         trainingTime : "10am - 1pm",
         discount : '150,000',
-        tuition : '300,000',
+        tuition : '400,000',
         link : "https://enoverlab.com/payments",
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/i-1jvotnch',
-                price : '₦305,000',
+                price : '₦405,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/a6u0vgjz8b',
