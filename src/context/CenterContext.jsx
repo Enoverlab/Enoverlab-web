@@ -294,14 +294,14 @@ const centerDetails = {
         trainingDay : "Every Saturday",
         classType : 'weekend',
         trainingTime : "9am - 12pm",
-        tuition : '300,000',
+        tuition : '400,000',
         weeks : "12",
         weekIcon : weeks12,
         link :  "https://enoverlab.com/payments",
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/dekyy51qhn',
-                price : '₦305,000',
+                price : '₦405,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/fd89f6xax8',
@@ -351,12 +351,12 @@ const centerDetails = {
         classType : 'weekend',
         trainingTime : "10am - 1pm",
         discount : '150,000',
-        tuition : '300,000',
+        tuition : '400,000',
         link : "https://enoverlab.com/payments",
         paystackSubLinks : {
             oneTime : {
                 link : 'https://paystack.com/pay/i-1jvotnch',
-                price : '₦305,000',
+                price : '₦405,000',
             },
             twoTimes : {
                 link : 'https://paystack.com/pay/a6u0vgjz8b',
@@ -395,7 +395,7 @@ const centerDetails = {
             } 
         },
         mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "March 14, 2026",
+        startDate : "Admission Closed",
     },
     'Ikeja-Weekend' : {
         place : 'Ikeja-Weekend',
