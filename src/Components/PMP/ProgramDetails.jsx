@@ -2,7 +2,7 @@ import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 // import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
-import { HybridProgram } from '../../constants'
+import { PMPProgram } from '../../constants'
 import weeks7 from "../../assets/icon/week7.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
@@ -33,7 +33,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Saturday
+                          Every Wednesday <br /> & Saturday
                         </H2>
                        </div>
                        <div>
@@ -46,14 +46,14 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          10am - 1pm
+                          8pm - 10pm
                         </H2>
                        </div>
                       </div>
                       <div className="item2">
                         <div>
                         <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
-                          Location
+                          Start Date
                         </H4>
                         <H2
                           mdfs="1.587vw"
@@ -61,7 +61,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Lagos, Nigeria
+                          May 16, 2026
                         </H2>
                         </div>
                       </div>
@@ -124,7 +124,7 @@ const ProgramDetails = () => {
                   Training Details
                 </H4>
                 <div className="list">
-                  {HybridProgram.map((pg) => (
+                  {PMPProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
                       <P fs="3.9vw" mdfs="1.23vw" color="var(--Body-Text)">

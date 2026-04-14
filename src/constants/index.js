@@ -232,6 +232,19 @@ export const HybridProgram = [
   "Enoverlab branded flask, notepad, stickers, and personal note from the CEO "
 ]
 
+export const PMPProgram = [
+  "Introduction to Product Management",
+  "Key Project Management Terminologies",
+  "Stakeholder, Team Performance & Planning Performance Domain",
+  "Project Lifecycle",
+  "Software Development Lifecycle (SDLC)",
+  "Agile vs Waterfall in Tech Projects",
+  "Scrum Basics: Sprints, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective, Backlog, Roles",
+  "Risk, Quality & Communication Management",
+  "Project Closure & Documentation",
+  "Career Coaching; How to get a Project Manager Job"
+]
+
 export const HybridProgramWeekday = [
   "7 weeks Intensive training and mentorship Hybrid",
   "A small class for only 10 persons",
@@ -374,6 +387,10 @@ export const alumni = [
 
 export const accessData = [
   "Intensive training", "Project based learning", "Global Certificate",
+]
+
+export const pmpAccessData = [
+  "Intensive training", "Online instructor led", "Project based learning", "Global Certificate",
 ]
 
 export const executiveData = [

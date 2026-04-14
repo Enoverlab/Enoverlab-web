@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { H2, H3, H4, P } from '../../Utils/styled/Typograpyhy'
 import learningHub from "../../assets/icon/learnHub.png"
-import { accessData } from '../../constants'
+import { pmpAccessData as accessData } from '../../constants'
 import tick from "../../assets/icon/tick.png"
 
 const Access = () => {

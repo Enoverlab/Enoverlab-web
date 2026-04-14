@@ -31,14 +31,14 @@ const PMP = () => {
         <PMPHero/>
         <Access/>
         <ProgramDetails/>
-        <Guarantee/>
+        {/* <Guarantee/> */}
         <Companies/>
-        <ClassTools/>
+        {/* <ClassTools/>
         <div>
         <H2 mt="4rem" tA="center" color='var(--TItle-Text)'>What Our Alumni Say</H2>
         <SuccessStories/>
         </div>
-        <Formi/>
+        <Formi/> */}
         <FaqSection/>
         <Footer p="5rem 9.6rem 0 9.6rem"/>
         </div>}

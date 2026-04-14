@@ -14,8 +14,8 @@ const PMPHero = () => {
                 <H4>Lagos, Nigeria</H4>
                 <img src={kenyanFlag} alt="Kenya's FLag" />
             </div>
-            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Learn Product Management in a Hybrid Format in Lagos, Nigeria</H1>
-            <H3 mdfs="clamp(1.6rem,1.322vw,2rem)" fs="3.5vw">Enjoy the richer, deeper experiences that comes with learning in-person at our Lagos centre</H3>
+            <H1 mdfs="clamp(4.5rem,3.703vw,5.8rem)">Become an Agile Project Manager</H1>
+            <H3 mdfs="clamp(1.6rem,1.322vw,2rem)" fs="3.5vw">Learn global project management skills, frameworks, systems, processes, and tools</H3>
             <SecondaryButton Text="Enroll Now"/>
         </section>
         <section className='rightContainer'>
