@@ -1,16 +1,16 @@
 import PMPHero from '../Components/PMP/PMPHero'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import { ClassTools } from '../Components/Pricing/ClassTools'
+// import { ClassTools } from '../Components/Pricing/ClassTools'
 import Access from '../Components/PMP/Access'
 import ProgramDetails from '../Components/PMP/ProgramDetails'
-import SuccessStories from '../Components/HomeComponents/SuccessStories'
+// import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import { FaqSection } from "../Components/Pricing/FaqSection"
-import { H2 } from '../Utils/styled/Typograpyhy'
-import Formi from '../Components/Kenya/Form'
+// import { H2 } from '../Utils/styled/Typograpyhy'
+// import Formi from '../Components/Kenya/Form'
 import {useState, useEffect} from "react"
 import LoadingScreen2 from '../Components/LoadingScreen2'
-import Guarantee from '../Components/Pricing/Guarantee'
+// import Guarantee from '../Components/Pricing/Guarantee'
 import Companies from '../Components/Pricing/Companies'
 
 const PMP = () => {
