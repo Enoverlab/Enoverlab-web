@@ -1,6 +1,6 @@
 import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
-// import { SecondaryButtonA } from '../../Utils/styled/Buttons'
+import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import { PMPProgram } from '../../constants'
 import weeks7 from "../../assets/icon/week7.svg"
