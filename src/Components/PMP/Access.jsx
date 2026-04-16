@@ -9,10 +9,10 @@ const Access = () => {
     <StyledAccess>
         <section>
         <H4>
-        Brought to you in Lagos,
+        Online Training,
         </H4>
-        <H2>Closer Access, Better Learning!</H2>
-        <P>Get the knowledge, skills, and tools you need to become an Exceptional Product Manager right in your vicinity.</P>
+        <H2>Join from anywhere in the world!</H2>
+        <P>Get the knowledge, skills, and tools you need to become an Exceptional Product Manager.</P>
         <div className='dataList'>
             {accessData.map(data => {
                 return(<div className='data'>
