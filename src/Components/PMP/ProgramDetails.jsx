@@ -81,7 +81,7 @@ const ProgramDetails = () => {
             </div>
           </main>
           <div className="cta">
-            {/* <SecondaryButtonA Text={admissionClosed ? "Admission Closed" : "Enroll Now"} to='https://forms.gle/QdUwUQZgdUzkeBk78' disabled={admissionClosed} /> */}
+            <SecondaryButtonA Text={admissionClosed ? "Admission Closed" : "Enroll Now"} to='https://paystack.shop/pay/enoverlabpmp' disabled={admissionClosed} />
             <Link to="#" className="syll">
               Download Syllabus
             </Link>
