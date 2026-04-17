@@ -49,6 +49,8 @@ import ScholarshipPage from "./Pages/ScholarshipPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TpmPaymentPage from "./Pages/TpmPaymentPage";
+import AgenticAi from "./Pages/agenticai";
+import AgenticPaymentPage from "./Pages/AgenticPayment";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
 function App() {
@@ -94,6 +96,7 @@ function App() {
         <Route path="/blog/:id" element={<BlogContentPage />} />
         <Route path="/payments" element={<Payment />} />
         <Route path="/payments/tpm" element={<TpmPaymentPage />} />
+        <Route path="/payments/agenticai" element={<AgenticPaymentPage />} />
         <Route path="/payments/:id" element={<RespectivePayment />} />
         <Route path="/assessment/about" element={<AssessmentLanding />} />
         <Route
@@ -124,6 +127,7 @@ function App() {
         <Route path="/programsad" element={<ProgramsAd/>} />
         <Route path="/upskill" element={<Upskill/>} />
         <Route path="/projectmanagement" element={<PMP/>} />
+        <Route path="/agenticai" element={<AgenticAi/>} />
         <Route path="/international" element={<Diaspora/>} />
         <Route path="/policy" element={<Policy/>} />
         <Route path="/physical" element={<Physical/>} />
