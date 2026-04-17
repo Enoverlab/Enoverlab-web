@@ -12,10 +12,10 @@ const AgenticHero = () => {
       <div className="hero-shell">
         <img src={circlesBg} alt="" className="circles-bg" />
         <div className="hero-content">
-          <H1 fs="4.6rem" mdfs="4.1vw" mdlh="6.8rem" color="#ffffff">
+          <H1 fs="9vw" mdfs="4.1vw" mdlh="6.8rem" color="#ffffff">
             {agenticHero.title}
           </H1>
-          <H3 fs="2.8rem" mdfs="2.2vw" fw="500" color="#ffffff" className="subtitle" mb="2.4rem">
+          <H3 fs="2.4rem" mdfs="2.2vw" fw="500" color="#ffffff" className="subtitle" mb="2.4rem">
             {agenticHero.subtitle}
           </H3>
           <H4 fs="1.6rem" mdfs="1.8rem" fw="500" color="#ffffff">
@@ -79,6 +79,10 @@ const StyledAgenticHero = styled.section`
   .hero-image {
     width: min(100%, 52rem);
     height: auto;
+  }
+  h3.subtitle {
+      margin: 2.6rem 0;
+      
   }
 
   @media (min-width: 1024px) {
