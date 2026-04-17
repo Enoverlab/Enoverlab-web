@@ -1,6 +1,6 @@
 import { Flex } from '../HomeComponents/ProductSection'
 import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
-// import { SecondaryButtonA } from '../../Utils/styled/Buttons'
+import { SecondaryButtonA } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import { PMPProgram } from '../../constants'
 import weeks7 from "../../assets/icon/week7.svg"
@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
 const ProgramDetails = () => {
-  // const admissionClosed = true
+  const admissionClosed = false
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
@@ -81,7 +81,7 @@ const ProgramDetails = () => {
             </div>
           </main>
           <div className="cta">
-            {/* <SecondaryButtonA Text={admissionClosed ? "Admission Closed" : "Enroll Now"} to='https://forms.gle/QdUwUQZgdUzkeBk78' disabled={admissionClosed} /> */}
+            <SecondaryButtonA Text={admissionClosed ? "Admission Closed" : "Enroll Now"} to='https://paystack.shop/pay/enoverlabpmp' disabled={admissionClosed} />
             <Link to="#" className="syll">
               Download Syllabus
             </Link>
