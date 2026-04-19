@@ -104,5 +104,12 @@ const StyledInstructors = styled.section`
     .card img {
       width: 100%;
     }
+
+    .text-wrap p {
+      margin: 0;
+      color: #3d3d3d;
+      font-size: 1.8rem;
+      line-height: 1.8;
+    }
   }
 `;

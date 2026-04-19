@@ -73,6 +73,7 @@ const StyledTools = styled.section`
 
   @media (min-width: 1024px) {
     padding: 6.4rem 9.6rem;
+    margin : 2rem 0;
 
     .tool-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));

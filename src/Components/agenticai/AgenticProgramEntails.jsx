@@ -74,7 +74,7 @@ const StyledEntails = styled.section`
   }
 
   .side-image-wrap {
-    display: flex;
+    display: none;
     justify-content: center;
   }
 
@@ -168,8 +168,13 @@ const StyledEntails = styled.section`
     }
     .module-card li {
       color: #3d3d3d;
-      font-size: clamp(1.4rem, 1.1vw, 1.8rem);
+      font-size: clamp(1.4rem, 1.3vw, 1.8rem);
       line-height: 1.6;
+    }
+
+    .side-image-wrap {
+      display: flex;
+      justify-content: center;
     }
 
   }

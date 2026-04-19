@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 import Access from '../Components/PMP/Access'
 import ProgramDetails from '../Components/PMP/ProgramDetails'
 // import SuccessStories from '../Components/HomeComponents/SuccessStories'
-import { FaqSection } from "../Components/Pricing/FaqSection"
+// import { FaqSection } from "../Components/Pricing/FaqSection"
 // import { H2 } from '../Utils/styled/Typograpyhy'
 // import Formi from '../Components/Kenya/Form'
 import {useState, useEffect} from "react"
@@ -39,7 +39,7 @@ const PMP = () => {
         <SuccessStories/>
         </div>
         <Formi/> */}
-        <FaqSection/>
+        {/* <FaqSection/> */}
         <Footer p="5rem 9.6rem 0 9.6rem"/>
         </div>}
     </div>

@@ -89,5 +89,12 @@ const StyledGoals = styled.section`
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 2rem;
     }
+
+    .goal-item p {
+      margin: 0;
+      color: #3d3d3d;
+      font-size: 1.8rem;
+      line-height: 1.55;
+    }
   }
 `;

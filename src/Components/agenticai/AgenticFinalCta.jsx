@@ -26,6 +26,8 @@ const StyledFinalCta = styled.section`
   font-family: 'Inter', sans-serif;
   background: #003ad4;
   padding: 6rem 2.4rem;
+  margin : 0rem 2.4rem;
+  border-radius: 2.4rem 2.4rem 0 0;
 
   .content {
     max-width: 72rem;
@@ -37,6 +39,7 @@ const StyledFinalCta = styled.section`
   h2 {
     margin: 0;
     font-size: clamp(3rem, 6vw, 4.8rem);
+    font-weight: 700;
     line-height: 1.2;
   }
 
@@ -70,5 +73,10 @@ const StyledFinalCta = styled.section`
     margin-top: 2.4rem;
     font-size: 1.6rem;
     line-height: 1.8;
+  }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: clamp(3rem, 6vw, 5.8rem);
+    }
   }
 `;
