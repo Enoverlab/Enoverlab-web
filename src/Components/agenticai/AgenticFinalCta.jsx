@@ -26,7 +26,7 @@ const StyledFinalCta = styled.section`
   font-family: 'Inter', sans-serif;
   background: #003ad4;
   padding: 6rem 2.4rem;
-  margin : 3.4rem;
+  margin : 3.4rem 0;
   border-radius : 2.4rem;
 
   .content {
