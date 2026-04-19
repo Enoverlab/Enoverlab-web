@@ -44,7 +44,7 @@ const AgenticProgramEntails = () => {
 export default AgenticProgramEntails;
 
 const StyledEntails = styled.section`
-  background: #eefcfc;
+  font-family: 'Inter', sans-serif;
   padding: 5rem 2.4rem;
 
   .heading-wrap {
@@ -56,6 +56,7 @@ const StyledEntails = styled.section`
     margin: 0;
     color: #3d3d3d;
     font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 700;
     line-height: 1.25;
   }
 
@@ -90,22 +91,29 @@ const StyledEntails = styled.section`
 
   .module-card {
     background: #ffffff;
-    border: 1px solid #d4e3e3;
-    border-radius: 1.2rem;
+    border: none;
+    border-radius: 0;
     padding: 2.2rem 2rem;
+  }
+
+  .module1-wrap .module-card {
+    background: #eefcfc;
+    border-radius: 20px;
   }
 
   .module-card h3 {
     margin: 0;
-    color: #3d3d3d;
+    color: #3D3D3D;
     font-size: 2.2rem;
+    font-weight: 700;
     line-height: 1.2;
   }
 
   .module-card h4 {
     margin: 1rem 0 1.6rem;
-    color: #3d3d3d;
+    color: #3D3D3D;
     font-size: 1.6rem;
+    font-weight: 600;
     line-height: 1.5;
   }
 
@@ -122,8 +130,17 @@ const StyledEntails = styled.section`
     line-height: 1.6;
   }
 
+  .module-card li::marker {
+    color: #0f00b6;
+  }
+
   @media (min-width: 1024px) {
-    padding: 7rem 9.6rem;
+    padding: 0 9.6rem;
+
+    .heading-wrap {
+      text-align: center;
+      margin-bottom: 7.2rem;
+    }
 
     .module1-wrap {
       grid-template-columns: 1.35fr 1fr;
@@ -141,5 +158,19 @@ const StyledEntails = styled.section`
       padding: 2.6rem;
       min-height: 100%;
     }
+
+    .module-card h3 {
+      font-size: clamp(1.8rem, 1.6vw, 2.4rem);
+      line-height: 1.2;
+    }
+    .module-card h4 {
+      font-size: clamp(1.4rem, 1.1vw, 1.8rem);
+    }
+    .module-card li {
+      color: #3d3d3d;
+      font-size: clamp(1.4rem, 1.1vw, 1.8rem);
+      line-height: 1.6;
+    }
+
   }
 `;

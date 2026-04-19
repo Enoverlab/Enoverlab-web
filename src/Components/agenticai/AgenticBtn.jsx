@@ -15,6 +15,7 @@ const AgenticBtn = ({ to, text, bg = "#ffffff", color = "#3d3d3d" }) => (
 export default AgenticBtn;
 
 const StyledAgenticBtn = styled(HashLink)`
+  font-family: 'Inter', sans-serif;
   display: inline-flex;
   align-items: center;
   justify-content: center;

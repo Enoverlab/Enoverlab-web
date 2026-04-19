@@ -29,6 +29,7 @@ const AgenticHighlights = () => {
 export default AgenticHighlights;
 
 const StyledHighlights = styled.section`
+  font-family: 'Inter', sans-serif;
   padding: 0 1.2rem 0;
 
   .wrap {
@@ -93,10 +94,10 @@ const StyledHighlights = styled.section`
       height: 2.5rem;
     }
     p {
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 0;
+      color: #ffffff;
+      font-size: clamp(1.5rem, 1.3vw, 2rem);
+      line-height: 1.5;
+      margin: 0;
     }
   }
 `;

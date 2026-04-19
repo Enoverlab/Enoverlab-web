@@ -25,6 +25,7 @@ const AgenticProgramGoals = () => {
 export default AgenticProgramGoals;
 
 const StyledGoals = styled.section`
+  font-family: 'Inter', sans-serif;
   padding: 6rem 2.4rem;
   background: #eefcfc;
 

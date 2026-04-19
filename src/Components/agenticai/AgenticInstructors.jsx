@@ -31,6 +31,7 @@ const AgenticInstructors = () => {
 export default AgenticInstructors;
 
 const StyledInstructors = styled.section`
+  font-family: 'Inter', sans-serif;
   padding: 6rem 2.4rem;
   background: #ffffff;
 

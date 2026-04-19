@@ -36,6 +36,7 @@ const AgenticHero = () => {
 export default AgenticHero;
 
 const StyledAgenticHero = styled.section`
+  font-family: 'Inter', sans-serif;
   padding: 1.2rem 1.2rem 0;
 
   .hero-shell {

@@ -24,6 +24,7 @@ const AgenticTools = () => {
 export default AgenticTools;
 
 const StyledTools = styled.section`
+  font-family: 'Inter', sans-serif;
   background: #02073a;
   padding: 5rem 2.4rem;
 

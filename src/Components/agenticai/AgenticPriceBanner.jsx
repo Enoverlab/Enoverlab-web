@@ -22,6 +22,7 @@ const AgenticPriceBanner = () => {
 export default AgenticPriceBanner;
 
 const StyledPriceBanner = styled.section`
+  font-family: 'Inter', sans-serif;
   background: #1037b8;
   margin-top: 1.2rem;
   padding: 3.2rem 2.4rem;
@@ -60,6 +61,7 @@ const StyledPriceBanner = styled.section`
 
   @media (min-width: 1024px) {
     padding: 4.4rem 5.5rem;
+    margin: 7.7rem 0;
 
     .inner {
       flex-direction: row;
