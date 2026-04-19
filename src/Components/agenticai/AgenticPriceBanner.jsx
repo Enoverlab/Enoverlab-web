@@ -24,7 +24,7 @@ export default AgenticPriceBanner;
 const StyledPriceBanner = styled.section`
   font-family: 'Inter', sans-serif;
   background: #1037b8;
-  margin-top: 1.2rem;
+  margin: 2rem 0;
   padding: 3.2rem 2.4rem;
 
   .inner {
