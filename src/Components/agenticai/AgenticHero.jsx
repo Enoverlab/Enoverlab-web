@@ -82,7 +82,8 @@ const StyledAgenticHero = styled.section`
     height: auto;
   }
   h3.subtitle {
-      margin: 2.6rem 0;
+    margin: 2.6rem 0;
+    width :66vw;
       
   }
 
@@ -114,6 +115,7 @@ const StyledAgenticHero = styled.section`
 
     h3.subtitle {
         margin: 2.6rem 0;
+        width : 100%;
         
     }
   }
