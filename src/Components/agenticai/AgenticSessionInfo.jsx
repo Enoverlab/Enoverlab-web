@@ -14,7 +14,7 @@ const AgenticSessionInfo = () => {
         <span className="divider" aria-hidden="true" />
 
         <div className="info-block time-block">
-          <p className="label">Time:</p>
+          <p className="label">Day & Time:</p>
           <p className="time">Every Tuesday 8pm-10pm</p>
           <p className="time">Every Saturday 12pm-2pm</p>
         </div>
