@@ -37,7 +37,7 @@ export default AgenticSessionInfo;
 
 const StyledSessionInfo = styled.section`
   font-family: 'Inter', sans-serif;
-  padding: 0 2.4rem 5rem;
+  padding: 2.4rem 2.4rem 5rem;
 
   .inner-card {
     max-width: 124rem;
@@ -60,21 +60,22 @@ const StyledSessionInfo = styled.section`
 
   .label {
     margin: 0;
-    font-size: clamp(2rem, 3.6vw, 2.4rem);
+    font-size: clamp(1.6rem, 4.5vw, 2rem);
     line-height: 1.4;
     font-weight: 400;
   }
 
   h3 {
     margin: 1.2rem 0 0;
-    font-size: clamp(4rem, 8vw, 5rem);
+    font-size: clamp(2.4rem, 7.2vw, 3.2rem);
     line-height: 1.1;
     font-weight: 700;
   }
 
   .time {
+    text-align: left;
     margin: 1rem 0 0;
-    font-size: clamp(2.3rem, 5.5vw, 3.9rem);
+    font-size: clamp(1.8rem, 5.4vw, 2.4rem);
     line-height: 1.2;
     font-weight: 500;
     white-space: nowrap;
