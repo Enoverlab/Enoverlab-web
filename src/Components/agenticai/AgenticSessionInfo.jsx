@@ -110,7 +110,7 @@ const StyledSessionInfo = styled.section`
   }
 
   @media (min-width: 1024px) {
-    padding: 0 9.6rem;
+    padding: 0 9.6rem 2.4rem 9.6rem;
 
     .inner-card {
       padding: 4.5rem 7.5rem;
