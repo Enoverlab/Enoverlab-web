@@ -5,6 +5,7 @@ import LoadingScreen2 from "../Components/LoadingScreen2";
 import AgenticHero from "../Components/agenticai/AgenticHero";
 import AgenticHighlights from "../Components/agenticai/AgenticHighlights";
 import AgenticPriceBanner from "../Components/agenticai/AgenticPriceBanner";
+import AgenticSessionInfo from "../Components/agenticai/AgenticSessionInfo";
 import AgenticProgramEntails from "../Components/agenticai/AgenticProgramEntails";
 import AgenticTools from "../Components/agenticai/AgenticTools";
 import AgenticInstructors from "../Components/agenticai/AgenticInstructors";
@@ -36,6 +37,7 @@ const AgenticAi = () => {
           <AgenticHero />
           <AgenticHighlights />
           <AgenticPriceBanner />
+          <AgenticSessionInfo />
           <AgenticProgramEntails />
           <AgenticTools />
           <AgenticInstructors />
