@@ -98,7 +98,7 @@ const StyledSessionInfo = styled.section`
 
   .venue-text {
     margin: 0;
-    font-size: clamp(3.4rem, 7vw, 4.4rem);
+    font-size: clamp(2.4rem, 6vw, 3.5rem);
     line-height: 1.1;
     font-weight: 600;
     white-space: nowrap;
