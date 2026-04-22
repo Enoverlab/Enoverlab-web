@@ -15,8 +15,9 @@ const AgenticSessionInfo = () => {
 
         <div className="info-block time-block">
           <p className="label">Day & Time:</p>
-          <p className="time">Every Tuesday 8pm-10pm</p>
-          <p className="time">Every Saturday 12pm-2pm</p>
+          <p className="time">Every Tuesday; 8pm-10pm</p>
+          <p className="time">Every Saturday; 12pm-2pm</p>
+          <p className="time">(GMT +1)</p>
         </div>
 
         <span className="divider" aria-hidden="true" />
