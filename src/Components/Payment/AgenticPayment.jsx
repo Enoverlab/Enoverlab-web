@@ -25,6 +25,21 @@ const AgenticPayment = () => {
             <hr />
           </div>
 
+          <div className="details" data-aos="fade-right">
+            <h4>Full USD Payment</h4>
+            <p>
+              $599
+              <span> Full Payment</span>
+            </p>
+            <div className="cta">
+              <SecondaryButton Text="Pay Now" to="https://paystack.shop/pay/agenticai-usd" target="_blank" />
+            </div>
+          </div>
+
+          <div className="hr">
+            <hr />
+          </div>
+
           <div className="details" data-aos="fade-up">
             <h4>First Payment Of</h4>
             <p>
