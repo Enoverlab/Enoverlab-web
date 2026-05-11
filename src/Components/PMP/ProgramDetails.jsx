@@ -61,7 +61,7 @@ const ProgramDetails = () => {
                   fw="600"
                   color="var(--Body-Text)"
                 >
-                  May 16, 2026
+                  June 6, 2026
                 </H2>
                 </div>
                 <div>
