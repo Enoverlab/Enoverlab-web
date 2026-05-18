@@ -8,7 +8,7 @@ const AgenticSessionInfo = () => {
       <div className="inner-card">
         <div className="info-block start-date-block">
           <p className="label">Start date:</p>
-          <h3>May 16th</h3>
+          <h3>June 6th</h3>
         </div>
 
         <span className="divider" aria-hidden="true" />
