@@ -22,8 +22,7 @@ const ProgramDetails = () => {
         <div className="cover2">
           <main>
             <div className="item">
-              <div className='item1'>
-                <div >
+                <div>
                 <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                   Training day
                 </H4>
@@ -49,8 +48,6 @@ const ProgramDetails = () => {
                   8pm - 10pm
                 </H2>
                 </div>
-              </div>
-              <div className="item2">
                 <div>
                 <H4 mdfs="1.058vw" mb="1rem" fs="3.2vw" color="var(--Body-Text)">
                   Start Date
@@ -76,8 +73,7 @@ const ProgramDetails = () => {
                 >
                   NGN 300,000
                 </H2>
-              </div>
-              </div>
+                </div>
             </div>
           </main>
           <div className="cta">
@@ -142,18 +138,10 @@ const StyledProgramDetail = styled.div`
     padding-left: 3.5rem;
   }
   .item{
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
-  }
-  .item1,.item2, .item3 {
-    display: flex;
-  }
-  .item1{
-    gap:21.164vw;
-  }
-  .item3{
-    gap: 19.841vw;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 100px;
+    row-gap: 30px;
   }
   .list {
     display: flex;
@@ -195,8 +183,8 @@ const StyledProgramDetail = styled.div`
       gap: 14.48vw;
     }
     .item{
-    gap: 65px;
-  }
+      gap: 65px;
+    }
     .list {
       display: flex;
       flex-direction: column;
