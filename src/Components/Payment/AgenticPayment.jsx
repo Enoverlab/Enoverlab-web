@@ -13,7 +13,7 @@ const AgenticPayment = () => {
           <div className="details" data-aos="fade-right">
             <h4>One-Time Payment Of</h4>
             <p>
-              ₦800,000
+              ₦600,000
               <span> Full Payment</span>
             </p>
             <div className="cta">
@@ -28,7 +28,7 @@ const AgenticPayment = () => {
           <div className="details" data-aos="fade-right">
             <h4>Full USD Payment</h4>
             <p>
-              $599
+              $440
               <span> Full Payment</span>
             </p>
             <div className="cta">
@@ -43,7 +43,7 @@ const AgenticPayment = () => {
           <div className="details" data-aos="fade-up">
             <h4>First Payment Of</h4>
             <p>
-              ₦500,000
+              ₦400,000
               <span> Initial Payment</span>
             </p>
             <div className="cta">
@@ -58,7 +58,7 @@ const AgenticPayment = () => {
           <div className="details" data-aos="fade-down">
             <h4>Second Payment Of</h4>
             <p>
-              ₦300,000
+              ₦200,000
               <span> Final Payment</span>
             </p>
             <div className="cta">
