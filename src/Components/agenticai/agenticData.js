@@ -1,6 +1,6 @@
 export const agenticHero = {
   title: "Agentic AI Skill Development Program",
-  subtitle: "A 6-Weeks Advanced AI Training",
+  subtitle: "A 7-Weeks Advanced AI Training",
   note: "FOR EXPERIENCED TECH PROFESSIONALS!",
   ctaText: "Register now",
   ctaLink: "/payments/agenticai",
@@ -16,8 +16,8 @@ export const agenticHighlights = [
 ];
 
 export const agenticPrice = {
-  amount: "$599",
-  crossed: "N800,000",
+  amount: "$440",
+  crossed: "N600,000",
   label: "INTRODUCTORY FEE",
   ctaText: "Enrol Now",
   ctaLink: "/payments/agenticai",

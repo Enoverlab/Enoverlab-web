@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
 const ProgramDetails = () => {
-  const admissionClosed = false
+  const admissionClosed = true
   return (
     <StyledProgramDetail>
     <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
