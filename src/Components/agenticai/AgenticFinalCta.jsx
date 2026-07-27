@@ -8,7 +8,7 @@ const AgenticFinalCta = () => {
     <StyledFinalCta>
       <div className="content">
         <h2>{agenticHero.title}</h2>
-        <h3>A 6 weeks Advanced AI Training</h3>
+        <h3>A 7 weeks Advanced AI Training</h3>
         <h4>
           {agenticPrice.amount} <span>({agenticPrice.crossed})</span>
         </h4>
