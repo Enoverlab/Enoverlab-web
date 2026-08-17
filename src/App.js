@@ -19,7 +19,6 @@ import Sales from "./Pages/Sales";
 import ProgramsAd from './Pages/ProgramsAd'
 import Upskill from './Pages/Upskill'
 import PMP from './Pages/PMP'
-import Diaspora from './Pages/Diaspora'
 import Policy from './Pages/Policy'
 import Physical from './Pages/Physical'
 import {ChakraProvider} from '@chakra-ui/react'
