@@ -28,7 +28,14 @@ const StandardProgram = () => {
   const [location, setLocation] = useState("");
   const [isError, setIsError] = useState(false);
   const centerDetails = useContext(CenterContext);
-  const admissionClosed = ["Anambra", "Yaba-Weekday","Yaba-Weekend","Lekki-Weekday","Lekki-Weekend", "Ikeja-Weekday"];
+  const admissionClosed = [
+    "Anambra",
+    "Yaba-Weekday",
+    "Yaba-Weekend",
+    // "Lekki-Weekday",
+    "Lekki-Weekend",
+    "Ikeja-Weekday",
+  ];
 
   const [trainingLocation, setTrainingLocation] = useState({
     place: "",
@@ -156,11 +163,7 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks12} alt="18 weeks" />
                 </div>
-                <form
-                  className="cover"
-                  method="get"
-                  action="/payments/online"
-                >
+                <form className="cover" method="get" action="/payments/online">
                   <main>
                     <div className="item">
                       <div>
@@ -214,7 +217,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          August 17, 2026
+                          August 31, 2026
                         </H2>
                       </div>
                       <div>
@@ -234,16 +237,20 @@ const StandardProgram = () => {
                             color="var(--Body-Text)"
                           >
                             ₦300,000
-                        </H2>
+                          </H2>
                         </div>
-                        
                       </div>
                     </div>
                   </main>
                   <div className="cta">
                     <SubmitButton Text="Enroll Now" />
                     <></>
-                    <Link to="/standard-syllabus.pdf" target="_blank" download='standard-syllabus.pdf' className="syll">
+                    <Link
+                      to="/standard-syllabus.pdf"
+                      target="_blank"
+                      download="standard-syllabus.pdf"
+                      className="syll"
+                    >
                       Download Syllabus
                     </Link>
                   </div>
@@ -271,9 +278,14 @@ const StandardProgram = () => {
                   ))}
                 </div>
                 <div className="but">
-                <Link to="/standard-syllabus.pdf" target="_blank" download='standard-syllabus.pdf' className="syll">
-                  Download Syllabus
-                </Link>
+                  <Link
+                    to="/standard-syllabus.pdf"
+                    target="_blank"
+                    download="standard-syllabus.pdf"
+                    className="syll"
+                  >
+                    Download Syllabus
+                  </Link>
                 </div>
               </div>
             </Flex>
@@ -342,20 +354,12 @@ const StandardProgram = () => {
                           <option id="item" value="">
                             Select Location
                           </option>
-                          <option value="Lekki-Weekday">
-                            LEKKI-Weekday
-                          </option>
-                          <option value="Lekki-Weekend">
-                            LEKKI-Weekend
-                          </option>
+                          <option value="Lekki-Weekday">LEKKI-Weekday</option>
+                          <option value="Lekki-Weekend">LEKKI-Weekend</option>
                           <option value="Ibadan">IBADAN</option>
                           <option value="Abuja">ABUJA</option>
-                          <option value="Ikeja-Weekday">
-                            IKEJA-Weekday
-                          </option>
-                          <option value="Ikeja-Weekend">
-                            IKEJA-Weekend
-                          </option>
+                          <option value="Ikeja-Weekday">IKEJA-Weekday</option>
+                          <option value="Ikeja-Weekend">IKEJA-Weekend</option>
                           <option value="Yaba-Weekday">Yaba-Weekday</option>
                           <option value="Yaba-Weekend">Yaba-Weekend</option>
                           <option value="Anambra">ANAMBRA</option>
@@ -376,9 +380,6 @@ const StandardProgram = () => {
                           Location
                         </H4>
                         <div>
-
-                          
-
                           <H2
                             mdfs="1.587vw"
                             fs="3.6vw"
@@ -388,7 +389,6 @@ const StandardProgram = () => {
                             {trainingLocation.location}
                           </H2>
                         </div>
-                        
                       </div>
                       <div>
                         <H4
@@ -424,7 +424,7 @@ const StandardProgram = () => {
                         <div>
                           <H2
                             mdfs="2.4vw"
-                              fs="3.6vw"
+                            fs="3.6vw"
                             fw="600"
                             color="var(--Body-Text)"
                           >
@@ -440,7 +440,12 @@ const StandardProgram = () => {
                       disabled={admissionClosed.includes(location)}
                     />
                     <></>
-                    <Link to="/standard-syllabus.pdf" target="_blank" download='standard-syllabus.pdf' className="syll">
+                    <Link
+                      to="/standard-syllabus.pdf"
+                      target="_blank"
+                      download="standard-syllabus.pdf"
+                      className="syll"
+                    >
                       Download Syllabus
                     </Link>
                   </div>
@@ -474,20 +479,24 @@ const StandardProgram = () => {
                   ))}
                 </div>
                 <div className="but">
-                <Link to="/standard-syllabus.pdf" target="_blank" download='standard-syllabus.pdf' className="syll">
-                      Download Syllabus
-                </Link>
+                  <Link
+                    to="/standard-syllabus.pdf"
+                    target="_blank"
+                    download="standard-syllabus.pdf"
+                    className="syll"
+                  >
+                    Download Syllabus
+                  </Link>
                 </div>
               </div>
             </Flex>
           </SwiperSlide>
-          <SwiperSlide >
+          <SwiperSlide>
             <PrivateProgram />
           </SwiperSlide>
           <div className="swiper-pagination-progressbar-fill"></div>
         </Swiper>
       </div>
-
 
       <StandardForm
         handleCloseModal={handleCloseEnrolModal}

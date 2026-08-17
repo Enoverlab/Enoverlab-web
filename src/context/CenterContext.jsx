@@ -1,505 +1,609 @@
 import { createContext } from "react";
 // import weeks20 from "../assets/icon/20weeks.png";
 import weeks7 from "../assets/icon/week7.svg";
-import weeks12 from "../assets/icon/weeks12.svg"
+import weeks12 from "../assets/icon/weeks12.svg";
 
 export const CenterContext = createContext({
-    'Lekki-Weekday' : {
-        place : '',
-        location : '',
-        trainingDay : "",
-        classType : '',
-        trainingTime : "",
-        tuition : '',
-        weeks : "",
-        weekIcon : '',
-        link :  "",
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        },
-        mapIframe : '',
-        startDate : "",
-        discount : ''
+  "Lekki-Weekday": {
+    place: "",
+    location: "",
+    trainingDay: "",
+    classType: "",
+    trainingTime: "",
+    tuition: "",
+    weeks: "",
+    weekIcon: "",
+    link: "",
+    paystackSubLinks: {
+      oneTime: {
+        link: "",
+        price: "",
+      },
+      twoTimes: {
+        link: "",
+        price: "",
+      },
+      threeTimes: {
+        link: "",
+        price: "",
+      },
     },
-    "Lekki-Weekend" : {
-        place : '',
-        location : '',
-        trainingDay : "",
-        classType : '',
-        trainingTime : "",
-        tuition : '',
-        weeks : "",
-        weekIcon : '',
-        link :  "",
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        },
-        mapIframe : '',
-        startDate : "",
-        discount : ''
+    mapIframe: "",
+    startDate: "",
+    discount: "",
+  },
+  "Lekki-Weekend": {
+    place: "",
+    location: "",
+    trainingDay: "",
+    classType: "",
+    trainingTime: "",
+    tuition: "",
+    weeks: "",
+    weekIcon: "",
+    link: "",
+    paystackSubLinks: {
+      oneTime: {
+        link: "",
+        price: "",
+      },
+      twoTimes: {
+        link: "",
+        price: "",
+      },
+      threeTimes: {
+        link: "",
+        price: "",
+      },
     },
-    Ibadan : {
-        place : '',
-        location : '',
-        trainingDay : "",
-        classType : '',
-        trainingTime : "",
-        tuition : '',
-        weeks : "",
-        weekIcon : '',
-        link :  "",
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        },
-        mapIframe : '',
-        startDate : "",
-        discount : ''
+    mapIframe: "",
+    startDate: "",
+    discount: "",
+  },
+  Ibadan: {
+    place: "",
+    location: "",
+    trainingDay: "",
+    classType: "",
+    trainingTime: "",
+    tuition: "",
+    weeks: "",
+    weekIcon: "",
+    link: "",
+    paystackSubLinks: {
+      oneTime: {
+        link: "",
+        price: "",
+      },
+      twoTimes: {
+        link: "",
+        price: "",
+      },
+      threeTimes: {
+        link: "",
+        price: "",
+      },
     },
-    Anambra : {
-        place : '',
-        location : '',
-        trainingDay : "",
-        classType : '',
-        trainingTime : "",
-        tuition : '',
-        weeks : "",
-        weekIcon : '',
-        link :  "",
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        },
-        mapIframe : '',
-        startDate : "",
-        discount : ''
+    mapIframe: "",
+    startDate: "",
+    discount: "",
+  },
+  Anambra: {
+    place: "",
+    location: "",
+    trainingDay: "",
+    classType: "",
+    trainingTime: "",
+    tuition: "",
+    weeks: "",
+    weekIcon: "",
+    link: "",
+    paystackSubLinks: {
+      oneTime: {
+        link: "",
+        price: "",
+      },
+      twoTimes: {
+        link: "",
+        price: "",
+      },
+      threeTimes: {
+        link: "",
+        price: "",
+      },
     },
-    Abuja : {
-        place : '',
-        location : '',
-        trainingDay : "",
-        classType : '',
-        trainingTime : "",
-        tuition : '',
-        weeks : "",
-        weekIcon : '',
-        link :  "",
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        },
-        mapIframe : '',
-        startDate : "",
-        discount : ''
+    mapIframe: "",
+    startDate: "",
+    discount: "",
+  },
+  Abuja: {
+    place: "",
+    location: "",
+    trainingDay: "",
+    classType: "",
+    trainingTime: "",
+    tuition: "",
+    weeks: "",
+    weekIcon: "",
+    link: "",
+    paystackSubLinks: {
+      oneTime: {
+        link: "",
+        price: "",
+      },
+      twoTimes: {
+        link: "",
+        price: "",
+      },
+      threeTimes: {
+        link: "",
+        price: "",
+      },
     },
-    'Ikeja-Weekday' : {
-        place : '',
-        location : '',
-        trainingDay : "",
-        classType : '',
-        trainingTime : "",
-        tuition : '',
-        weeks : "",
-        weekIcon : '',
-        link :  "",
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        },
-        mapIframe : '',
-        startDate : "",
-        discount : ''
+    mapIframe: "",
+    startDate: "",
+    discount: "",
+  },
+  "Ikeja-Weekday": {
+    place: "",
+    location: "",
+    trainingDay: "",
+    classType: "",
+    trainingTime: "",
+    tuition: "",
+    weeks: "",
+    weekIcon: "",
+    link: "",
+    paystackSubLinks: {
+      oneTime: {
+        link: "",
+        price: "",
+      },
+      twoTimes: {
+        link: "",
+        price: "",
+      },
+      threeTimes: {
+        link: "",
+        price: "",
+      },
     },
-    'Ikeja-Weekend' : {
-        place : '',
-        location : '',
-        trainingDay : "",
-        classType : '',
-        trainingTime : "",
-        tuition : '',
-        weeks : "",
-        weekIcon : '',
-        link :  "",
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        },
-        mapIframe : '',
-        startDate : "",
-        discount : ''
+    mapIframe: "",
+    startDate: "",
+    discount: "",
+  },
+  "Ikeja-Weekend": {
+    place: "",
+    location: "",
+    trainingDay: "",
+    classType: "",
+    trainingTime: "",
+    tuition: "",
+    weeks: "",
+    weekIcon: "",
+    link: "",
+    paystackSubLinks: {
+      oneTime: {
+        link: "",
+        price: "",
+      },
+      twoTimes: {
+        link: "",
+        price: "",
+      },
+      threeTimes: {
+        link: "",
+        price: "",
+      },
     },
-    Online : {
-        place : '',
-        location : '',
-        trainingDay : "",
-        classType : '',
-        trainingTime : "",
-        tuition : '',
-        weeks : "",
-        weekIcon : '',
-        link :  "",
-        paystackSubLinks : {
-            oneTime : {
-                link : '',
-                price : '',
-            },
-            twoTimes : {
-                link : '',
-                price : '',
-            } ,
-            threeTimes : {
-                link : '',
-                price : ''
-            } 
-        },
-        mapIframe : '',
-        startDate : "",
-        discount : ''
-    }
-
-})
+    mapIframe: "",
+    startDate: "",
+    discount: "",
+  },
+  Online: {
+    place: "",
+    location: "",
+    trainingDay: "",
+    classType: "",
+    trainingTime: "",
+    tuition: "",
+    weeks: "",
+    weekIcon: "",
+    link: "",
+    paystackSubLinks: {
+      oneTime: {
+        link: "",
+        price: "",
+      },
+      twoTimes: {
+        link: "",
+        price: "",
+      },
+      threeTimes: {
+        link: "",
+        price: "",
+      },
+    },
+    mapIframe: "",
+    startDate: "",
+    discount: "",
+  },
+});
 
 const centerDetails = {
-    'Lekki-Weekday': {
-        place : 'Lekki-Weekday',
-        location : 'Gateview Plaza, Plot 11, Admiralty Way, Lekki Phase I',
-        trainingDay : "Every Monday & Thursday",
-        classType : 'weekday',
-        trainingTime : '12pm - 3pm',
-        discount : '200,000',
-        tuition : '400,000',
-        weeks : "7",
-        weekIcon : weeks7,
-        link : 'https://enoverlab.com/payments',
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/lqxlwzoyi1',
-                price : '₦405,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/wzgm-e6dgx',
-                price : '₦205,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/fvxag45f7j',
-                price : '₦136,666'
-            } 
-        },
-        mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.686825521908!2d3.4561873!3d6.439692000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e1!3m2!1sen!2sng!4v1767856871057!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Admission Closed",
+  "Lekki-Weekday": {
+    place: "Lekki-Weekday",
+    location: "Gateview Plaza, Plot 11, Admiralty Way, Lekki Phase I",
+    trainingDay: "Every Monday & Thursday",
+    classType: "weekday",
+    trainingTime: "12pm - 3pm",
+    discount: "200,000",
+    tuition: "400,000",
+    weeks: "7",
+    weekIcon: weeks7,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/lqxlwzoyi1",
+        price: "₦405,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/wzgm-e6dgx",
+        price: "₦205,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/fvxag45f7j",
+        price: "₦136,666",
+      },
     },
-    "Lekki-Weekend" : {
-        place : 'Lekki',
-        location : 'Gateview Plaza, Plot 11, Admiralty Way, Lekki Phase I',
-        trainingDay : "Every Saturday",
-        classType : 'weekend',
-        trainingTime : "10am - 1pm",
-        tuition : '400,000',
-        weeks : "12",
-        weekIcon : weeks12,
-        link : 'https://enoverlab.com/payments',
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/lqxlwzoyi1',
-                price : '₦405,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/wzgm-e6dgx',
-                price : '₦205,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/fvxag45f7j',
-                price : '₦136,666'
-            } 
+    mapIframe: (
+      <iframe
+        title="Lekki"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.686825521908!2d3.4561873!3d6.439692000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e1!3m2!1sen!2sng!4v1767856871057!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "September 14, 2026",
+  },
+  "Lekki-Weekend": {
+    place: "Lekki",
+    location: "Gateview Plaza, Plot 11, Admiralty Way, Lekki Phase I",
+    trainingDay: "Every Saturday",
+    classType: "weekend",
+    trainingTime: "10am - 1pm",
+    tuition: "400,000",
+    weeks: "12",
+    weekIcon: weeks12,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/lqxlwzoyi1",
+        price: "₦405,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/wzgm-e6dgx",
+        price: "₦205,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/fvxag45f7j",
+        price: "₦136,666",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="Lekki"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.686825521908!2d3.4561873!3d6.439692000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e1!3m2!1sen!2sng!4v1767856871057!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    // startDate : "July 4, 2026",
+    startDate: "Admission Closed",
+  },
+  Ibadan: {
+    place: "Ibadan",
+    location: "TheBunker, Ibadan",
+    trainingDay: "Every Saturday",
+    classType: "weekend",
+    trainingTime: "10am - 1pm",
+    tuition: "400,000",
+    weeks: "12",
+    weekIcon: weeks12,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/dekyy51qhn",
+        price: "₦405,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/fd89f6xax8",
+        price: "₦155,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/8b2r1y62zj",
+        price: "₦103,333",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="ibadan"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9997740771046!2d3.874975999999999!3d7.3539197000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d00717f2a1f%3A0x1560da891e2f9f67!2sTheBunker%2C%20Ibadan!5e0!3m2!1sen!2sng!4v1770530940586!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "September 19, 2026",
+  },
+  Anambra: {
+    place: "Anambra",
+    location:
+      "Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka,Anambra",
+    trainingDay: "Every Saturday",
+    classType: "weekend",
+    trainingTime: "10am - 1pm",
+    tuition: "250,000",
+    weeks: "12",
+    weekIcon: weeks12,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/zu0g8u0gny",
+        price: "₦260,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/hvdlh6xiug",
+        price: "₦130,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/e0tlgg9dzt",
+        price: "₦86,666",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="Anambra"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3051337147767!2d7.053362574482788!3d6.223437493764614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104379af706c6619%3A0x2598afc465c51641!2sKodex%20Africa!5e0!3m2!1sen!2sng!4v1721040675268!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "Admission Closed",
+  },
+  Abuja: {
+    place: "Abuja",
+    weeks: "12",
+    weekIcon: weeks12,
+    location: "Novare Shared Office, Zone 5 Dalaba St, Wuse, Abuja",
+    trainingDay: "Every Saturday",
+    classType: "weekend",
+    trainingTime: "10am - 1pm",
+    discount: "150,000",
+    tuition: "400,000",
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/i-1jvotnch",
+        price: "₦405,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/a6u0vgjz8b",
+        price: "₦155,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/7-tan6kbku",
+        price: "₦103,333",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="Abuja"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.994307502363!2d7.455678374485262!3d9.064281990998463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0be926ae002f%3A0xe1ee5fbb305e0b36!2sNovare%20Shared%20Office!5e0!3m2!1sen!2sng!4v1748264325538!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "September 5, 2026",
+  },
+  "Ikeja-Weekday": {
+    place: "Ikeja-Weekday",
+    location:
+      "EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja",
+    trainingDay: "Every Tuesday & Friday",
+    classType: "weekday",
+    trainingTime: "12pm - 3pm",
+    tuition: "400,000",
+    weeks: "7",
+    weekIcon: weeks7,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/4nctjeq3or",
+        price: "₦405,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/nctqraqiiw",
+        price: "₦205,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/4euo-rt5yz",
+        price: "₦136,666",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="Ikeja Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "Admission Closed",
+  },
+  "Ikeja-Weekend": {
+    place: "Ikeja-Weekend",
+    location:
+      "EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja",
+    trainingDay: "Every Saturday",
+    classType: "weekend",
+    trainingTime: "2pm - 5pm",
+    tuition: "400,000",
+    weeks: "12",
+    weekIcon: weeks12,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/4nctjeq3or",
+        price: "₦410,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/nctqraqiiw",
+        price: "₦205,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/4euo-rt5yz",
+        price: "₦136,666",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="Ikeja Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "September 12, 2026",
+  },
+  "Yaba-Weekday": {
+    place: "Yaba-Weekday",
+    location:
+      "Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba",
+    trainingDay: "Every Wednesday & Friday",
+    classType: "weekday",
+    trainingTime: "12pm - 3pm",
+    discount: "200,000",
+    tuition: "400,000",
+    weeks: "7",
+    weekIcon: weeks7,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/4nctjeq3or",
+        price: "₦405,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/nctqraqiiw",
+        price: "₦205,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/4euo-rt5yz",
+        price: "₦136,666",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="Yaba Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "Admission Closed",
+  },
+  "Yaba-Weekend": {
+    place: "Yaba-Weekday",
+    location:
+      "Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba",
+    trainingDay: "Every Saturday",
+    classType: "weekend",
+    trainingTime: "10am - 1pm",
+    tuition: "400,000",
+    weeks: "12",
+    weekIcon: weeks12,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/4nctjeq3or",
+        price: "₦405,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/nctqraqiiw",
+        price: "₦205,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/4euo-rt5yz",
+        price: "₦136,666",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="Yaba Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "Admission Closed",
+  },
+  Online: {
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/ve2k2y9sst",
+        price: "₦310,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/rtszcd4qwq",
+        price: "₦155,000",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/odioim9y0n",
+        price: "₦103,333",
+      },
+    },
+  },
+};
 
-        },
-        mapIframe : <iframe title="Lekki" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.686825521908!2d3.4561873!3d6.439692000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf59eb8a97233%3A0x32b5defb8f41b624!2sGateview%20Plaza!5e1!3m2!1sen!2sng!4v1767856871057!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        // startDate : "July 4, 2026",
-        startDate : "Admission Closed",
-    },
-    Ibadan : {
-        place : 'Ibadan',
-        location : 'TheBunker, Ibadan',
-        trainingDay : "Every Saturday",
-        classType : 'weekend',
-        trainingTime : "10am - 1pm",
-        tuition : '400,000',
-        weeks : "12",
-        weekIcon : weeks12,
-        link :  "https://enoverlab.com/payments",
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/dekyy51qhn',
-                price : '₦405,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/fd89f6xax8',
-                price : '₦155,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/8b2r1y62zj',
-                price : '₦103,333'
-            } 
-        },
-        mapIframe : <iframe title="ibadan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9997740771046!2d3.874975999999999!3d7.3539197000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d00717f2a1f%3A0x1560da891e2f9f67!2sTheBunker%2C%20Ibadan!5e0!3m2!1sen!2sng!4v1770530940586!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "September 5, 2026",
-    },
-    Anambra : {
-        place : 'Anambra',
-        location : 'Kodex Africa, Plot No. A/127, Iyiagu Housing Estate, Awka,Anambra',
-        trainingDay : "Every Saturday",
-        classType : 'weekend',
-        trainingTime : "10am - 1pm",
-        tuition : '250,000',
-        weeks : "12",
-        weekIcon : weeks12,
-        link :  "https://enoverlab.com/payments",
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/zu0g8u0gny',
-                price : '₦260,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/hvdlh6xiug',
-                price : '₦130,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/e0tlgg9dzt',
-                price : '₦86,666'
-            } 
-        },
-        mapIframe : <iframe title="Anambra" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3051337147767!2d7.053362574482788!3d6.223437493764614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104379af706c6619%3A0x2598afc465c51641!2sKodex%20Africa!5e0!3m2!1sen!2sng!4v1721040675268!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Admission Closed",
-    },
-    Abuja : {
-        place : 'Abuja',
-        weeks : "12",
-        weekIcon : weeks12,
-        location : 'Novare Shared Office, Zone 5 Dalaba St, Wuse, Abuja',
-        trainingDay : "Every Saturday",
-        classType : 'weekend',
-        trainingTime : "10am - 1pm",
-        discount : '150,000',
-        tuition : '400,000',
-        link : "https://enoverlab.com/payments",
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/i-1jvotnch',
-                price : '₦405,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/a6u0vgjz8b',
-                price : '₦155,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/7-tan6kbku',
-                price : '₦103,333'
-            } 
-        },
-        mapIframe : <iframe title="Abuja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.994307502363!2d7.455678374485262!3d9.064281990998463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0be926ae002f%3A0xe1ee5fbb305e0b36!2sNovare%20Shared%20Office!5e0!3m2!1sen!2sng!4v1748264325538!5m2!1sen!2sng" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> ,
-        startDate : "August 22, 2026",
-    },
-    'Ikeja-Weekday' : {
-        place : 'Ikeja-Weekday',
-        location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
-        trainingDay : "Every Tuesday & Friday",
-        classType : 'weekday',
-        trainingTime : "12pm - 3pm",
-        tuition : '400,000',
-        weeks : "7",
-        weekIcon : weeks7,
-        link : 'https://enoverlab.com/payments',
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/4nctjeq3or',
-                price : '₦405,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/nctqraqiiw',
-                price : '₦205,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/4euo-rt5yz',
-                price : '₦136,666'
-            } 
-        },
-        mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Admission Closed",
-    },
-    'Ikeja-Weekend' : {
-        place : 'Ikeja-Weekend',
-        location : 'EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja',
-        trainingDay : "Every Saturday",
-        classType : 'weekend',
-        trainingTime : "2pm - 5pm",
-        tuition : '400,000',
-        weeks : "12",
-        weekIcon : weeks12,
-        link : 'https://enoverlab.com/payments',
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/4nctjeq3or',
-                price : '₦410,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/nctqraqiiw',
-                price : '₦205,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/4euo-rt5yz',
-                price : '₦136,666'
-            } 
-        },
-        mapIframe : <iframe title="Ikeja Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "August 22, 2026",
-    },
-    'Yaba-Weekday' : {
-        place : 'Yaba-Weekday',
-        location : 'Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba',
-        trainingDay : "Every Wednesday & Friday",
-        classType : 'weekday',
-        trainingTime : "12pm - 3pm",
-        discount : '200,000',
-        tuition : '400,000',
-        weeks : "7",
-        weekIcon : weeks7,
-        link : 'https://enoverlab.com/payments',
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/4nctjeq3or',
-                price : '₦405,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/nctqraqiiw',
-                price : '₦205,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/4euo-rt5yz',
-                price : '₦136,666'
-            } 
-        },
-        mapIframe : <iframe title="Yaba Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Admission Closed",
-    },
-    'Yaba-Weekend' : {
-        place : 'Yaba-Weekday',
-        location : 'Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba',
-        trainingDay : "Every Saturday",
-        classType : 'weekend',
-        trainingTime : "10am - 1pm",
-        tuition : '400,000',
-        weeks : "12",
-        weekIcon : weeks12,
-        link : 'https://enoverlab.com/payments',
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/4nctjeq3or',
-                price : '₦405,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/nctqraqiiw',
-                price : '₦205,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/4euo-rt5yz',
-                price : '₦136,666'
-            } 
-        },
-        mapIframe : <iframe title="Yaba Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng" width="100%" height="450" style={{border : 0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        startDate : "Admission Closed",
-    },
-    Online : {
-        paystackSubLinks : {
-            oneTime : {
-                link : 'https://paystack.com/pay/ve2k2y9sst',
-                price : '₦310,000',
-            },
-            twoTimes : {
-                link : 'https://paystack.com/pay/rtszcd4qwq',
-                price : '₦155,000',
-            } ,
-            threeTimes : {
-                link : 'https://paystack.com/pay/odioim9y0n',
-                price : '₦103,333'
-            } 
-        },
-    }
-}
-
-export const CenterContextProvider = ({children})=>{
-    return(<CenterContext.Provider value={centerDetails}>
-        {children}
-    </CenterContext.Provider>)
-}
+export const CenterContextProvider = ({ children }) => {
+  return (
+    <CenterContext.Provider value={centerDetails}>
+      {children}
+    </CenterContext.Provider>
+  );
+};

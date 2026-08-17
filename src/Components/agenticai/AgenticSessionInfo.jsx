@@ -8,7 +8,7 @@ const AgenticSessionInfo = () => {
       <div className="inner-card">
         <div className="info-block start-date-block">
           <p className="label">Start date:</p>
-          <h3>September 5th</h3>
+          <h3>September 12th</h3>
         </div>
 
         <span className="divider" aria-hidden="true" />
@@ -37,13 +37,13 @@ const AgenticSessionInfo = () => {
 export default AgenticSessionInfo;
 
 const StyledSessionInfo = styled.section`
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 2.4rem 2.4rem 5rem;
 
   .inner-card {
     max-width: 124rem;
     margin: 0 auto;
-    border: 1px solid #A6A6A6;
+    border: 1px solid #a6a6a6;
     border-radius: 20px;
     background: #ffffff;
     padding: 2.8rem 2.2rem;
@@ -120,7 +120,7 @@ const StyledSessionInfo = styled.section`
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap : 0;
+      gap: 0;
     }
 
     .divider {
