@@ -397,34 +397,21 @@ const centerDetails = {
     discount: "150,000",
     tuition: "400,000",
     link: "https://enoverlab.com/payments",
-    // paystackSubLinks: {
-    //   oneTime: {
-    //     link: "https://paystack.com/pay/i-1jvotnch",
-    //     price: "₦405,000",
-    //   },
-    //   twoTimes: {
-    //     link: "https://paystack.com/pay/a6u0vgjz8b",
-    //     price: "₦205,000",
-    //   },
-    //   threeTimes: {
-    //     link: "https://paystack.com/pay/7-tan6kbku",
-    //     price: "₦136,666",
-    //   },
-    // }, Old links
     paystackSubLinks: {
       oneTime: {
-        link: "https://paystack.com/pay/lqxlwzoyi1",
+        link: "https://paystack.com/pay/i-1jvotnch",
         price: "₦405,000",
       },
       twoTimes: {
-        link: "https://paystack.com/pay/wzgm-e6dgx",
+        link: "https://paystack.com/pay/a6u0vgjz8b",
         price: "₦205,000",
       },
       threeTimes: {
-        link: "https://paystack.com/pay/fvxag45f7j",
+        link: "https://paystack.com/pay/7-tan6kbku",
         price: "₦136,666",
       },
     },
+    
     mapIframe: (
       <iframe
         title="Abuja"
