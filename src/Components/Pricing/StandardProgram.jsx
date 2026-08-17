@@ -30,8 +30,8 @@ const StandardProgram = () => {
   const centerDetails = useContext(CenterContext);
   const admissionClosed = [
     "Anambra",
-    "Yaba-Weekday",
-    "Yaba-Weekend",
+    // "Yaba-Weekday",
+    // "Yaba-Weekend",
     // "Lekki-Weekday",
     "Lekki-Weekend",
     "Ikeja-Weekday",
