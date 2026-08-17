@@ -326,11 +326,11 @@ const centerDetails = {
       },
       twoTimes: {
         link: "https://paystack.com/pay/fd89f6xax8",
-        price: "₦155,000",
+        price: "₦205,000",
       },
       threeTimes: {
         link: "https://paystack.com/pay/8b2r1y62zj",
-        price: "₦103,333",
+        price: "₦136,666",
       },
     },
     mapIframe: (
@@ -397,18 +397,32 @@ const centerDetails = {
     discount: "150,000",
     tuition: "400,000",
     link: "https://enoverlab.com/payments",
+    // paystackSubLinks: {
+    //   oneTime: {
+    //     link: "https://paystack.com/pay/i-1jvotnch",
+    //     price: "₦405,000",
+    //   },
+    //   twoTimes: {
+    //     link: "https://paystack.com/pay/a6u0vgjz8b",
+    //     price: "₦205,000",
+    //   },
+    //   threeTimes: {
+    //     link: "https://paystack.com/pay/7-tan6kbku",
+    //     price: "₦136,666",
+    //   },
+    // }, Old links
     paystackSubLinks: {
       oneTime: {
-        link: "https://paystack.com/pay/i-1jvotnch",
+        link: "https://paystack.com/pay/lqxlwzoyi1",
         price: "₦405,000",
       },
       twoTimes: {
-        link: "https://paystack.com/pay/a6u0vgjz8b",
-        price: "₦155,000",
+        link: "https://paystack.com/pay/wzgm-e6dgx",
+        price: "₦205,000",
       },
       threeTimes: {
-        link: "https://paystack.com/pay/7-tan6kbku",
-        price: "₦103,333",
+        link: "https://paystack.com/pay/fvxag45f7j",
+        price: "₦136,666",
       },
     },
     mapIframe: (
@@ -503,85 +517,85 @@ const centerDetails = {
     ),
     startDate: "September 12, 2026",
   },
-  "Yaba-Weekday": {
-    place: "Yaba-Weekday",
-    location:
-      "Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba",
-    trainingDay: "Every Wednesday & Friday",
-    classType: "weekday",
-    trainingTime: "12pm - 3pm",
-    discount: "200,000",
-    tuition: "400,000",
-    weeks: "7",
-    weekIcon: weeks7,
-    link: "https://enoverlab.com/payments",
-    paystackSubLinks: {
-      oneTime: {
-        link: "https://paystack.com/pay/4nctjeq3or",
-        price: "₦405,000",
-      },
-      twoTimes: {
-        link: "https://paystack.com/pay/nctqraqiiw",
-        price: "₦205,000",
-      },
-      threeTimes: {
-        link: "https://paystack.com/pay/4euo-rt5yz",
-        price: "₦136,666",
-      },
-    },
-    mapIframe: (
-      <iframe
-        title="Yaba Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng"
-        width="100%"
-        height="450"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    ),
-    startDate: "Admission Closed",
-  },
-  "Yaba-Weekend": {
-    place: "Yaba-Weekday",
-    location:
-      "Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba",
-    trainingDay: "Every Saturday",
-    classType: "weekend",
-    trainingTime: "10am - 1pm",
-    tuition: "400,000",
-    weeks: "12",
-    weekIcon: weeks12,
-    link: "https://enoverlab.com/payments",
-    paystackSubLinks: {
-      oneTime: {
-        link: "https://paystack.com/pay/4nctjeq3or",
-        price: "₦405,000",
-      },
-      twoTimes: {
-        link: "https://paystack.com/pay/nctqraqiiw",
-        price: "₦205,000",
-      },
-      threeTimes: {
-        link: "https://paystack.com/pay/4euo-rt5yz",
-        price: "₦136,666",
-      },
-    },
-    mapIframe: (
-      <iframe
-        title="Yaba Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng"
-        width="100%"
-        height="450"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    ),
-    startDate: "Admission Closed",
-  },
+  // "Yaba-Weekday": {
+  //   place: "Yaba-Weekday",
+  //   location:
+  //     "Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba",
+  //   trainingDay: "Every Wednesday & Friday",
+  //   classType: "weekday",
+  //   trainingTime: "12pm - 3pm",
+  //   discount: "200,000",
+  //   tuition: "400,000",
+  //   weeks: "7",
+  //   weekIcon: weeks7,
+  //   link: "https://enoverlab.com/payments",
+  //   paystackSubLinks: {
+  //     oneTime: {
+  //       link: "https://paystack.com/pay/4nctjeq3or",
+  //       price: "₦405,000",
+  //     },
+  //     twoTimes: {
+  //       link: "https://paystack.com/pay/nctqraqiiw",
+  //       price: "₦205,000",
+  //     },
+  //     threeTimes: {
+  //       link: "https://paystack.com/pay/4euo-rt5yz",
+  //       price: "₦136,666",
+  //     },
+  //   },
+  //   mapIframe: (
+  //     <iframe
+  //       title="Yaba Map"
+  //       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng"
+  //       width="100%"
+  //       height="450"
+  //       style={{ border: 0 }}
+  //       allowFullScreen=""
+  //       loading="lazy"
+  //       referrerpolicy="no-referrer-when-downgrade"
+  //     ></iframe>
+  //   ),
+  //   startDate: "Admission Closed",
+  // },
+  // "Yaba-Weekend": {
+  //   place: "Yaba-Weekday",
+  //   location:
+  //     "Perxels Office, Cashcraft Building, 270 Muritala Muhammed Way, Alagomeji, Yaba",
+  //   trainingDay: "Every Saturday",
+  //   classType: "weekend",
+  //   trainingTime: "10am - 1pm",
+  //   tuition: "400,000",
+  //   weeks: "12",
+  //   weekIcon: weeks12,
+  //   link: "https://enoverlab.com/payments",
+  //   paystackSubLinks: {
+  //     oneTime: {
+  //       link: "https://paystack.com/pay/4nctjeq3or",
+  //       price: "₦405,000",
+  //     },
+  //     twoTimes: {
+  //       link: "https://paystack.com/pay/nctqraqiiw",
+  //       price: "₦205,000",
+  //     },
+  //     threeTimes: {
+  //       link: "https://paystack.com/pay/4euo-rt5yz",
+  //       price: "₦136,666",
+  //     },
+  //   },
+  //   mapIframe: (
+  //     <iframe
+  //       title="Yaba Map"
+  //       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.312790606939!2d3.3721810891269794!3d6.501876823961306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d3f66c020f%3A0x9190e3acdccf508d!2sCashcraft%20Asset%20Management%20Ltd!5e0!3m2!1sen!2sng!4v1756114702737!5m2!1sen!2sng"
+  //       width="100%"
+  //       height="450"
+  //       style={{ border: 0 }}
+  //       allowFullScreen=""
+  //       loading="lazy"
+  //       referrerpolicy="no-referrer-when-downgrade"
+  //     ></iframe>
+  //   ),
+  //   startDate: "Admission Closed",
+  // },
   Online: {
     paystackSubLinks: {
       oneTime: {

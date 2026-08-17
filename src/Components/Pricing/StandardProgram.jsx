@@ -80,12 +80,12 @@ const StandardProgram = () => {
       case "Ikeja-Weekend":
         setTrainingLocation(centerDetails["Ikeja-Weekend"]);
         break;
-      case "Yaba-Weekday":
-        setTrainingLocation(centerDetails["Yaba-Weekday"]);
-        break;
-      case "Yaba-Weekend":
-        setTrainingLocation(centerDetails["Yaba-Weekend"]);
-        break;
+      // case "Yaba-Weekday":
+      //   setTrainingLocation(centerDetails["Yaba-Weekday"]);
+      //   break;
+      // case "Yaba-Weekend":
+      //   setTrainingLocation(centerDetails["Yaba-Weekend"]);
+      //   break;
       default:
         setTrainingLocation({
           location: "Select Location to see address",
@@ -360,8 +360,8 @@ const StandardProgram = () => {
                           <option value="Abuja">ABUJA</option>
                           <option value="Ikeja-Weekday">IKEJA-Weekday</option>
                           <option value="Ikeja-Weekend">IKEJA-Weekend</option>
-                          <option value="Yaba-Weekday">Yaba-Weekday</option>
-                          <option value="Yaba-Weekend">Yaba-Weekend</option>
+                          {/* <option value="Yaba-Weekday">Yaba-Weekday</option> */}
+                          {/* <option value="Yaba-Weekend">Yaba-Weekend</option> */}
                           <option value="Anambra">ANAMBRA</option>
                         </select>
                         {isError && (

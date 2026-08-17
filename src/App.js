@@ -132,7 +132,7 @@ function App() {
         <Route path="/agenticai" element={<AgenticAi/>} />
         <Route path="/hire" element={<Hire />} />
         <Route path="/mentorship" element={<Mentorship />} />
-        <Route path="/international" element={<Diaspora/>} />
+        {/* <Route path="/international" element={<Diaspora/>} /> */}
         <Route path="/policy" element={<Policy/>} />
         <Route path="/physical" element={<Physical/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />

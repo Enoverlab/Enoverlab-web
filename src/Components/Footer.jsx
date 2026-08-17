@@ -261,17 +261,7 @@ const Footer = ({p}) => {
                 Executive Coaching
               </P>
             </Link>
-            <Link to="/international">
-              <P
-                color="var(--Body-Text)"
-                fs="3vw"
-                mdfs="1.058vw"
-                lh="28px"
-                fw="400"
-              >
-                International Program
-              </P>
-            </Link>
+            
             <Link to="/corporate">
               <P
                 color="var(--Body-Text)"
@@ -314,6 +304,17 @@ const Footer = ({p}) => {
                 fw="400"
               >
                 AI PM Program
+              </P>
+            </Link>
+            <Link to="/agenticai">
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                AgenticAI Program
               </P>
             </Link>
           </div>
@@ -391,9 +392,20 @@ const Footer = ({p}) => {
                 lh="28px"
                 fw="400"
               >
-                Kenya
+                Kenya (Coming Soon)
               </P>
             </Link>
+            {/* <Link to="/Rwanda"> */}
+              <P
+                color="var(--Body-Text)"
+                fs="3vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Rwanda (Coming Soon)
+              </P>
+            {/* </Link> */}
           </div>
           <div className="container-left-2">
             <H4
@@ -509,7 +521,7 @@ const Footer = ({p}) => {
                 Reviews
               </P>
             </HashLink>
-            <a href="https://chat.whatsapp.com/J0jWx8V7joE3Y0ridmgAZ5">
+            <a href="https://chat.whatsapp.com/EzY79Sj2cDtLffrjBsdmjk">
               <P
                 color="var(--Body-Text)"
                 fs="3vw"
