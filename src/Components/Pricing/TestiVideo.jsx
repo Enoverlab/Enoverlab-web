@@ -1,72 +1,56 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import Slick from "react-slick";
-import testiImage1 from "../../assets/icon/shalom.png";
-import testiImage2 from "../..//assets/icon/adebola.png";
-import testiImage3 from "../../assets/icon/chinelo.png";
-import testiImage4 from "../../assets/icon/chika.png"
-import testiImage5 from "../../assets/icon/elizabeth.jpg"
+import testiImage1 from "../../assets/icon/testi-samuel.png";
+import testiImage2 from "../..//assets/icon/testi-ayisat.png";
+import testiImage3 from "../../assets/icon/testi-barakat.png";
+import testiImage4 from "../../assets/icon/testi-dami.png";
+import testiImage5 from "../../assets/icon/testi-chukwu.png";
 import TestiCard from "./TestiCard";
 
 const TestiData = [
   {
     imgLink: testiImage1,
-    name: "Shalom",
+    name: "Samuel",
     role: "Product Manager",
-    vidUrl: "https://www.youtube.com/embed/jXR2CYoci_4",
+    vidUrl: "https://www.youtube.com/embed/yxK3dD3ITiY",
   },
   {
     imgLink: testiImage2,
-    name: " Adebola ",
+    name: " Ayisat",
     role: "Lead Product Manager",
-    vidUrl: "https://www.youtube.com/embed/CnlDAo2EHVU",
+    vidUrl: "https://www.youtube.com/embed/ALiyiqn-Kig",
   },
   {
     imgLink: testiImage3,
-    name: "Chinelo",
+    name: "Barakat",
     role: "Product Manager",
-    vidUrl: "https://www.youtube.com/embed/iPMxwnmj7sk",
+    vidUrl: "https://www.youtube.com/embed/npol1WfmbxM",
   },
   {
     imgLink: testiImage4,
-    name: "Chika Ibobo",
+    name: "Damilola",
     role: "Product Manager",
-    vidUrl: "https://www.youtube.com/embed/BGUOtO0yLJM",
+    vidUrl: "https://www.youtube.com/embed/u4nRBdgrYLU",
   },
   {
     imgLink: testiImage5,
-    name: "Elizabeth",
+    name: "Chukwuemeka",
     role: "Product Manager",
-    vidUrl: "https://www.youtube.com/embed/0V6SionngKM",
+    vidUrl: "https://www.youtube.com/embed/3jC-0S7R7U4",
   },
 ];
 
 const TestiVideo = () => {
   const slideRef = useRef();
   const [slideIndex, setSlideIndex] = useState(0);
-  const [slideIndex1, setSlideIndex1] = useState(1);
-  const [slideIndex2, setSlideIndex2] = useState(2);
-  const [slideIndex3, setSlideIndex3] = useState(3);
-  const [slideIndex4, setSlideIndex4] = useState(4);
-  console.log(slideIndex3)
-  console.log(slideIndex4)
+
+  const total = TestiData.length;
+  const prevIndex = (slideIndex - 1 + total) % total;
+  const nextIndex = (slideIndex + 1) % total;
 
   const handleCarousel = (index) => {
-    if (index === 0) {
-      setSlideIndex(0);
-      setSlideIndex1(1);
-      setSlideIndex2(2);
-      setSlideIndex3(3);
-      setSlideIndex4(4);
-    } else if (index === 1) {
-      setSlideIndex(1);
-      setSlideIndex1(2);
-      setSlideIndex2(0);
-    } else if (index === 2) {
-      setSlideIndex(2);
-      setSlideIndex1(0);
-      setSlideIndex2(1);
-    }
+    setSlideIndex(index);
   };
 
   const settings = {
@@ -116,12 +100,12 @@ const TestiVideo = () => {
           {/* box1 */}
           <div
             className="slideboxInactive"
-            onClick={() => handleCarousel(slideIndex1)}
+            onClick={() => handleCarousel(prevIndex)}
           >
             <TestiCard
-              testImg={TestiData[slideIndex1].imgLink}
-              testName={TestiData[slideIndex1].name}
-              testRole={TestiData[slideIndex1].role}
+              testImg={TestiData[prevIndex].imgLink}
+              testName={TestiData[prevIndex].name}
+              testRole={TestiData[prevIndex].role}
               nameFontSize={"0.8rem"}
               nameMobileFontSize={"0.8rem"}
               roleFontSize="0.55rem"
@@ -149,12 +133,12 @@ const TestiVideo = () => {
           {/* box3 */}
           <div
             className="slideboxInactive"
-            onClick={() => handleCarousel(slideIndex2)}
+            onClick={() => handleCarousel(nextIndex)}
           >
             <TestiCard
-              testImg={TestiData[slideIndex2].imgLink}
-              testName={TestiData[slideIndex2].name}
-              testRole={TestiData[slideIndex2].role}
+              testImg={TestiData[nextIndex].imgLink}
+              testName={TestiData[nextIndex].name}
+              testRole={TestiData[nextIndex].role}
               nameFontSize={"0.8rem"}
               nameMobileFontSize={"0.8rem"}
               roleFontSize="0.55rem"

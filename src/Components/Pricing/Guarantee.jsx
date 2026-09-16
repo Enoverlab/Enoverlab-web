@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import checksvg from "../../assets/icon/markcheck.svg"
-import bullet from "../../assets/icon/bullet.svg"
-import {motion} from "framer-motion"
+import styled from "styled-components";
+import checksvg from "../../assets/icon/markcheck.svg";
+import bullet from "../../assets/icon/bullet.svg";
+import { motion } from "framer-motion";
 
 const Guarantee = () => {
   const container = {
@@ -9,154 +9,182 @@ const Guarantee = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.7
-      }
-    }
+        staggerChildren: 0.3,
+      },
+    },
   };
 
   const listItem = {
     hidden: { opacity: 0 },
-    show: { opacity: 1 }
+    show: { opacity: 1 },
   };
   return (
     <motion.div>
       <StyledGuarantee>
-      <main>
-        <header>
-          <img src={checksvg} alt="" />
-          <h1>What you can do with Product Management skills</h1>
-        </header>
-        <section className="card">
-          <h2>
+        <main>
+          <header>
+            <img src={checksvg} alt="" />
+            <h1>What you can do with Product Management skills</h1>
+          </header>
+          <section className="card">
+            {/* <h2>
           If you go through this program effectively for the next 3 months; 
-          </h2>
-          <hr />
-          <motion.ul variants={container} initial="hidden" whileInView="show" >
-            <motion.li variants={listItem}> <img src={bullet} alt="" />You can get a Product Manager job anywhere in the world</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />You can build, manage, and grow any business successfully</motion.li>
-            <motion.li variants={listItem}><img src={bullet} alt="" />You can manage and lead teams better</motion.li>
-            <motion.li variants={listItem}><img src={bullet} alt="" />You can help companies make more money</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />You can become a product consultant for companies</motion.li>
-            <motion.li variants={listItem}> <img src={bullet} alt="" />You can become a better C-level executive</motion.li>
-          </motion.ul>
-          <p>
-
-          Learning product management skills will significantly <span>transform your life, </span> career, and business.
-
-          </p>
-        </section>
-      </main>
-    </StyledGuarantee>
+          </h2> */}
+            <hr />
+            <motion.ul variants={container} initial="hidden" whileInView="show">
+              <motion.li variants={listItem}>
+                {" "}
+                <img src={bullet} alt="" />
+                You can get a Product Manager job anywhere in the world
+              </motion.li>
+              <motion.li variants={listItem}>
+                {" "}
+                <img src={bullet} alt="" />
+                You can build, manage, and grow any business successfully
+              </motion.li>
+              <motion.li variants={listItem}>
+                <img src={bullet} alt="" />
+                You can manage and lead teams better
+              </motion.li>
+              <motion.li variants={listItem}>
+                <img src={bullet} alt="" />
+                You can help companies make more money
+              </motion.li>
+              <motion.li variants={listItem}>
+                {" "}
+                <img src={bullet} alt="" />
+                You can become a product consultant for companies
+              </motion.li>
+              <motion.li variants={listItem}>
+                {" "}
+                <img src={bullet} alt="" />
+                You can become a better C-level executive
+              </motion.li>
+            </motion.ul>
+            <p>
+              Learning product management skills will significantly{" "}
+              <span>transform your life, </span> career, and business.
+            </p>
+          </section>
+        </main>
+      </StyledGuarantee>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Guarantee
-
+export default Guarantee;
 
 const StyledGuarantee = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  main {
+    width: 92%;
+    max-width: 1000px;
+  }
+  header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom:4rem;
-    main{
-      width: 92%;
-      max-width: 1000px;
-    }
-    header{
-      display: flex;
-      align-items: center;
-      gap: 1.9rem;
-      margin-bottom: 1.3rem;
-      img{
-          width: 2.5rem;
-        }
-      h1{
-        color: #3D3D3D;
-        font-size: 2.2rem;
-        font-weight: 700;
-        line-height: 3rem;
-      }
-    }
-    section.card{
-      border-radius: 1rem;
-      position: relative;
-      z-index: 1000;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      box-shadow: 0px 20px 0px -10px #80A2FF;
-      padding: 2.9rem 1.8rem 3.0rem 1.8rem;
-      background: #003AD4;
-      color: white;
-      h2{
-        font-size: 1.6rem;
-        line-height: 4.1rem;
-      }
-      hr{
-        margin: 1.7rem 0;
-        border-color: #4175FF;
-      }
-      ul{
-        list-style: none;
-        li{
-          display: flex;
-          /* align-items: center; */
-          gap: 2.2rem;
-          font-size: 1.4rem;
-          line-height: 3rem;
-          margin: 0.6rem 0;
-        }
-        li:nth-child(6){
-          line-height: 2.8rem;
-        }
-      }
-      p{
-        margin-top: 2.2rem;
-        font-size: 1.6rem;
-        line-height: 2.9rem;
-        span{
-          font-weight: 700;
-        }
-      }
-      div.smally{
-        position: absolute;
-        width: 90%;
-        bottom: -200rem;
-        z-index: -100;
-      }
-    }
 
-    @media (min-width: 1024px) {
-      header{
-        margin-bottom: 2.9rem;
-        img{
-          width: initial;
-        }
-        h1{
-           font-size: 3.5rem;
+    gap: 1.9rem;
+    margin-bottom: 1.3rem;
+    img {
+      width: 2.5rem;
+    }
+    h1 {
+      color: #3d3d3d;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 3rem;
+    }
+  }
+  section.card {
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 20px 0px -10px #80a2ff;
+    padding: 2.9rem 1.8rem 3rem 1.8rem;
+    background: #003ad4;
+    color: white;
+    h2 {
+      font-size: 1.6rem;
+      line-height: 4.1rem;
+    }
+    hr {
+      margin: 1.7rem 0;
+      border-color: #4175ff;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      li {
+        display: flex;
+        /* align-items: center; */
+        gap: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        // margin: 0.8rem 0;
+        img {
+          margin-left: -1rem;
+          margin-top: 0.2rem;
         }
       }
-      section.card{
-        border-radius: 2.6rem;
-        padding: 5.4rem 11.5rem;
-        box-shadow: 0px 30px 0px -10px #80A2FF;
-        h2{
+      li:nth-child(6) {
+        line-height: 2.8rem;
+      }
+    }
+    p {
+      margin-top: 2.2rem;
+      font-size: 1.6rem;
+      line-height: 2.9rem;
+      span {
+        font-weight: 700;
+      }
+    }
+    div.smally {
+      position: absolute;
+      width: 90%;
+      bottom: -200rem;
+      z-index: -100;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    header {
+      margin-bottom: 2.9rem;
+      img {
+        width: initial;
+      }
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+    section.card {
+      border-radius: 2.6rem;
+      padding: 5.4rem 11.5rem;
+      box-shadow: 0px 30px 0px -10px #80a2ff;
+      h2 {
+        font-size: 2.3855rem;
+        line-height: 5rem;
+      }
+      ul {
+        li {
           font-size: 2.3855rem;
           line-height: 5rem;
         }
-        ul{
-          li{
-            font-size: 2.3855rem;
-            line-height: 5rem;
-          }
-          li:nth-child(6){
-            line-height: 5rem;
-          }
-        }
-        p{
-          font-size: 2.3855rem;
-          line-height: 4rem;
+        li:nth-child(6) {
+          line-height: 5rem;
         }
       }
+      p {
+        font-size: 2.3855rem;
+        line-height: 4rem;
+      }
     }
-`
+  }
+`;
