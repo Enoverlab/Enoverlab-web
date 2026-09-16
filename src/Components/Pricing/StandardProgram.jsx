@@ -627,7 +627,7 @@ const StyledProgram = styled.div`
       font-size: 1.2rem;
     }
     .programtext2::before {
-      content: "Private Training";
+      content: "Private Coaching";
       font-size: 1.2rem;
     }
   }
