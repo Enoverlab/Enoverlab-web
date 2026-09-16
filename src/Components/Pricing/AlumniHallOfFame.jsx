@@ -53,11 +53,12 @@ const hallOfFameImages = [
 
 const AlumniHallOfFame = () => (
   <AlumniMarquee
-    title="Alumni Hall of Fame"
+    title="See Happiness in the Frames"
     images={hallOfFameImages}
     altPrefix="Enoverlab alumni"
     mobileHeight="18rem"
     height="26rem"
+    mobileOnlyTitle
   />
 );
 

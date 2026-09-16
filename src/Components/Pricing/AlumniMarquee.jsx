@@ -12,9 +12,14 @@ const AlumniMarquee = ({
   mobileHeight,
   direction = "right",
   speed = 40,
+  mobileOnlyTitle,
 }) => {
   return (
-    <StyledAlumniMarquee $height={height} $mobileHeight={mobileHeight}>
+    <StyledAlumniMarquee
+      $height={height}
+      $mobileHeight={mobileHeight}
+      $mobileOnlyTitle={mobileOnlyTitle}
+    >
       <header>{title}</header>
       <Marquee
         direction={direction}
@@ -59,6 +64,7 @@ const StyledAlumniMarquee = styled.section`
   @media (min-width: 1024px) {
     padding: 5.4rem 0;
     header {
+      display: ${(props) => (props.$mobileOnlyTitle ? "none" : "block")};
       padding: 0 9.6rem 2.8rem 9.6rem;
       font-size: 3rem;
     }

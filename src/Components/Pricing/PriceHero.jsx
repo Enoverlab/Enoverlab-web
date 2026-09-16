@@ -17,42 +17,54 @@ import AlumniHallOfFame from "./AlumniHallOfFame";
 const PriceHero = () => {
   return (
     <StyledPriceHero>
-      <div className="price-hero-container">
-        <div className="left-container">
-          <section className="textContainer">
-            {/* <H1
-            color="#131313"
-            textAlign="left"
-            mdfs="4rem"
-            fs="6vw"
-            mdlh="5.8rem"
-            lh="3.3rem"
-            pb="1rem"
-          >
-            Learn Product Management Skills in the next 3 months 
-          </H1> */}
-            <H1
-              color="#131313"
-              textAlign="left"
-              mdfs="3.5rem"
-              fs="5.3vw"
-              mdlh="5.9rem"
-              lh="3rem"
-              pb="1rem"
-            >
-              In 2026, over 60 Alumni's have landed Product Manager jobs
-            </H1>
-            <H4
-              color="var(--Body-Text)"
-              mdlh="3rem"
-              lh="2.5rem"
-              fs="1.8rem"
-              mdfs="2.3rem"
-              mdwidth="85%"
-            >
-              In 2025, over 120 Alumni's landed Product Manager jobs
-            </H4>
-            {/* <H4
+      <div className="hallCont">
+        <div className="price-hero-container">
+          <div className="left-container">
+            <section className="textContainer">
+              <H1
+                color="#131313"
+                textAlign="left"
+                mdfs="3.4rem"
+                fs="5.3vw"
+                mdlh="5.9rem"
+                lh="3.2rem"
+                pb="1rem"
+              >
+                Welcome to the Happiest Place to Learn Product Management in the
+                World<span>🥳</span>
+              </H1>
+              <H4
+                color="var(--Body-Text)"
+                mdlh="3rem"
+                lh="2.5rem"
+                fs="1.8rem"
+                mdfs="2.3rem"
+                mdwidth="85%"
+              >
+                Life is already hard<span>🥹</span>
+              </H4>
+              <H4
+                color="var(--Body-Text)"
+                mdlh="3rem"
+                lh="2.5rem"
+                fs="1.8rem"
+                mdfs="2.3rem"
+                mdwidth="85%"
+              >
+                Learning should not be hard, too<span>😂</span>
+              </H4>
+              <H4
+                color="var(--Body-Text)"
+                mdlh="3rem"
+                lh="2.8rem"
+                fs="1.8rem"
+                mdfs="2.3rem"
+                mdwidth="85%"
+              >
+                Imagine you becoming an Exceptional Product Manager while having
+                fun and enjoying the process at the same time<span>🤭</span>
+              </H4>
+              {/* <H4
              color="var(--Body-Text)"
              mdlh="3rem"
              lh="2.5rem"
@@ -63,11 +75,13 @@ const PriceHero = () => {
              This can also be you if you dedicate yourself to our learning
              experience and put in the work.
            </H4> */}
-          </section>
+            </section>
+          </div>
         </div>
+        <AlumniHallOfFame />
       </div>
+
       <AlumniEarnings />
-      <AlumniHallOfFame />
       <StyledSwiper>
         <H4 color="rgba(75, 75, 75, 0.89)" mdfs="2.4rem" fw="500">
           Physical Locations
@@ -147,6 +161,23 @@ const StyledPriceHero = styled.div`
   position: relative;
   /* margin-bottom: 10%; */
   background-color: #fffdf7;
+  .hallCont {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    /* Grid items default to min-width: auto, which lets the marquee's very wide
+       content push the column past 1fr and overflow the page. */
+    > * {
+      min-width: 0;
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 4rem;
+      padding-top: 8.2rem;
+      padding-bottom: 2.2rem;
+    }
+  }
   .price-hero-container {
     padding: 0 9.6rem;
     padding-top: 8.2rem;
@@ -161,6 +192,12 @@ const StyledPriceHero = styled.div`
       justify-content: flex-start;
       row-gap: 3rem;
     }
+    /* Top padding moves to .hallCont so both grid columns share it, and the
+       right gutter goes so the marquee can run to the page edge. */
+    @media (min-width: 1024px) {
+      padding-top: 0;
+      padding-right: 0;
+    }
 
     .left-container {
       width: 100%;
@@ -169,8 +206,19 @@ const StyledPriceHero = styled.div`
         br {
           display: none;
         }
+        h1 {
+          font-style: italic;
+          span {
+            font-style: normal;
+          }
+        }
         h4 {
+          font-size: 1.65rem;
+          font-style: italic;
           margin-top: 1rem;
+          span {
+            font-style: normal;
+          }
         }
       }
       @media (max-width: 768px) {

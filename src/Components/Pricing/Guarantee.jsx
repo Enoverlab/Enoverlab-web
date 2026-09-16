@@ -94,7 +94,7 @@ const StyledGuarantee = styled.div`
     }
     h1 {
       color: #3d3d3d;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       line-height: 3rem;
     }
@@ -126,7 +126,7 @@ const StyledGuarantee = styled.div`
         display: flex;
         /* align-items: center; */
         gap: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         line-height: 1.6rem;
         // margin: 0.8rem 0;
         img {
