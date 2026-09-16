@@ -33,8 +33,8 @@ const StandardProgram = () => {
     // "Yaba-Weekday",
     // "Yaba-Weekend",
     // "Lekki-Weekday",
-    "Lekki-Weekend",
-    "Ikeja-Weekday",
+    // "Lekki-Weekend",
+    "Ikeja-Weekend",
   ];
 
   const [trainingLocation, setTrainingLocation] = useState({
@@ -181,7 +181,8 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Monday <br /> & Thursday
+                          {/* Every Saturday <br /> & Thursday */}
+                          Every Saturday
                         </H2>
                       </div>
                       <div>
@@ -199,7 +200,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          8pm - 10pm
+                          12pm - 2pm
                         </H2>
                       </div>
                       <div>
@@ -217,7 +218,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          August 31, 2026
+                          October 17, 2026
                         </H2>
                       </div>
                       <div>

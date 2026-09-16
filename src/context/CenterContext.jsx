@@ -238,22 +238,22 @@ const centerDetails = {
     classType: "weekday",
     trainingTime: "12pm - 3pm",
     discount: "200,000",
-    tuition: "400,000",
+    tuition: "450,000",
     weeks: "7",
     weekIcon: weeks7,
     link: "https://enoverlab.com/payments",
     paystackSubLinks: {
       oneTime: {
         link: "https://paystack.com/pay/lqxlwzoyi1",
-        price: "₦405,000",
+        price: "₦455,000",
       },
       twoTimes: {
         link: "https://paystack.com/pay/wzgm-e6dgx",
-        price: "₦205,000",
+        price: "₦227,500",
       },
       threeTimes: {
         link: "https://paystack.com/pay/fvxag45f7j",
-        price: "₦136,666",
+        price: "₦152,500",
       },
     },
     mapIframe: (
@@ -268,7 +268,7 @@ const centerDetails = {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "September 14, 2026",
+    startDate: "October 5, 2026",
   },
   "Lekki-Weekend": {
     place: "Lekki",
@@ -276,22 +276,22 @@ const centerDetails = {
     trainingDay: "Every Saturday",
     classType: "weekend",
     trainingTime: "10am - 1pm",
-    tuition: "400,000",
+    tuition: "450,000",
     weeks: "12",
     weekIcon: weeks12,
     link: "https://enoverlab.com/payments",
     paystackSubLinks: {
       oneTime: {
         link: "https://paystack.com/pay/lqxlwzoyi1",
-        price: "₦405,000",
+        price: "₦455,000",
       },
       twoTimes: {
         link: "https://paystack.com/pay/wzgm-e6dgx",
-        price: "₦205,000",
+        price: "₦227,500",
       },
       threeTimes: {
         link: "https://paystack.com/pay/fvxag45f7j",
-        price: "₦136,666",
+        price: "₦152,500",
       },
     },
     mapIframe: (
@@ -306,8 +306,8 @@ const centerDetails = {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    // startDate : "July 4, 2026",
-    startDate: "Admission Closed",
+    startDate: "October 10, 2026",
+    // startDate: "Admission Closed",
   },
   Ibadan: {
     place: "Ibadan",
@@ -345,7 +345,7 @@ const centerDetails = {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "September 19, 2026",
+    startDate: "October 10, 2026",
   },
   Anambra: {
     place: "Anambra",
@@ -411,7 +411,7 @@ const centerDetails = {
         price: "₦136,666",
       },
     },
-    
+
     mapIframe: (
       <iframe
         title="Abuja"
@@ -424,7 +424,7 @@ const centerDetails = {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "September 5, 2026",
+    startDate: "October 10, 2026",
   },
   "Ikeja-Weekday": {
     place: "Ikeja-Weekday",
@@ -433,22 +433,62 @@ const centerDetails = {
     trainingDay: "Every Tuesday & Friday",
     classType: "weekday",
     trainingTime: "12pm - 3pm",
-    tuition: "400,000",
+    tuition: "450,000",
     weeks: "7",
     weekIcon: weeks7,
     link: "https://enoverlab.com/payments",
     paystackSubLinks: {
       oneTime: {
         link: "https://paystack.com/pay/4nctjeq3or",
-        price: "₦405,000",
+        price: "₦455,000",
       },
       twoTimes: {
         link: "https://paystack.com/pay/nctqraqiiw",
-        price: "₦205,000",
+        price: "₦227,500",
       },
       threeTimes: {
         link: "https://paystack.com/pay/4euo-rt5yz",
-        price: "₦136,666",
+        price: "₦152,500",
+      },
+    },
+    mapIframe: (
+      <iframe
+        title="Ikeja Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    ),
+    startDate: "October 13, 2026",
+    // startDate: "Admission Closed",
+  },
+  "Ikeja-Weekend": {
+    place: "Ikeja-Weekend",
+    location:
+      "EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja",
+    trainingDay: "Every Saturday",
+    classType: "weekend",
+    trainingTime: "2pm - 5pm",
+    tuition: "450,000",
+    weeks: "12",
+    weekIcon: weeks12,
+    link: "https://enoverlab.com/payments",
+    paystackSubLinks: {
+      oneTime: {
+        link: "https://paystack.com/pay/4nctjeq3or",
+        price: "₦455,000",
+      },
+      twoTimes: {
+        link: "https://paystack.com/pay/nctqraqiiw",
+        price: "₦227,500",
+      },
+      threeTimes: {
+        link: "https://paystack.com/pay/4euo-rt5yz",
+        price: "₦152,500",
       },
     },
     mapIframe: (
@@ -464,45 +504,7 @@ const centerDetails = {
       ></iframe>
     ),
     startDate: "Admission Closed",
-  },
-  "Ikeja-Weekend": {
-    place: "Ikeja-Weekend",
-    location:
-      "EridanSpace, Oluwalogbon House, Plot A Obafemi Awolowo Way, Alausa, Ikeja",
-    trainingDay: "Every Saturday",
-    classType: "weekend",
-    trainingTime: "2pm - 5pm",
-    tuition: "400,000",
-    weeks: "12",
-    weekIcon: weeks12,
-    link: "https://enoverlab.com/payments",
-    paystackSubLinks: {
-      oneTime: {
-        link: "https://paystack.com/pay/4nctjeq3or",
-        price: "₦410,000",
-      },
-      twoTimes: {
-        link: "https://paystack.com/pay/nctqraqiiw",
-        price: "₦205,000",
-      },
-      threeTimes: {
-        link: "https://paystack.com/pay/4euo-rt5yz",
-        price: "₦136,666",
-      },
-    },
-    mapIframe: (
-      <iframe
-        title="Ikeja Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.270366461118!2d3.3545898!3d6.613292100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b934641e6428f%3A0x2131b57bcd1266a0!2sEridanSpace%20Ikeja%20Lagos!5e0!3m2!1sen!2sng!4v1721037913886!5m2!1sen!2sng"
-        width="100%"
-        height="450"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    ),
-    startDate: "September 12, 2026",
+    // startDate: "September 12, 2026",
   },
   // "Yaba-Weekday": {
   //   place: "Yaba-Weekday",
