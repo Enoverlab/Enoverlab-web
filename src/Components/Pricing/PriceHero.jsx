@@ -26,7 +26,7 @@ const PriceHero = () => {
                 textAlign="left"
                 mdfs="3.4rem"
                 fs="5.3vw"
-                mdlh="5.9rem"
+                mdlh="1.7"
                 lh="3.2rem"
                 pb="1rem"
               >
@@ -35,30 +35,30 @@ const PriceHero = () => {
               </H1>
               <H4
                 color="var(--Body-Text)"
-                mdlh="3rem"
-                lh="2.5rem"
-                fs="1.8rem"
-                mdfs="2.3rem"
+                mdlh="1.5"
+                lh="1.3"
+                fs="1.9rem"
+                mdfs="2.8rem"
                 mdwidth="85%"
               >
                 Life is already hard<span>🥹</span>
               </H4>
               <H4
                 color="var(--Body-Text)"
-                mdlh="3rem"
-                lh="2.5rem"
-                fs="1.8rem"
-                mdfs="2.3rem"
+                mdlh="1.5"
+                lh="1.3"
+                fs="1.9rem"
+                mdfs="2.8rem"
                 mdwidth="85%"
               >
                 Learning should not be hard, too<span>😂</span>
               </H4>
               <H4
                 color="var(--Body-Text)"
-                mdlh="3rem"
-                lh="2.8rem"
-                fs="1.8rem"
-                mdfs="2.3rem"
+                mdlh="1.5"
+                lh="1.6"
+                fs="1.9rem"
+                mdfs="2.8rem"
                 mdwidth="85%"
               >
                 Imagine you becoming an Exceptional Product Manager while having
@@ -84,7 +84,7 @@ const PriceHero = () => {
       <AlumniEarnings />
       <StyledSwiper>
         <H4 color="rgba(75, 75, 75, 0.89)" mdfs="2.4rem" fw="500">
-          Physical Locations
+          Learning Centres
         </H4>
         <Swiper
           modules={[Autoplay]}
@@ -203,6 +203,9 @@ const StyledPriceHero = styled.div`
       width: 100%;
       max-width: 72rem;
       .textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
         br {
           display: none;
         }
@@ -213,7 +216,6 @@ const StyledPriceHero = styled.div`
           }
         }
         h4 {
-          font-size: 1.65rem;
           font-style: italic;
           margin-top: 1rem;
           span {

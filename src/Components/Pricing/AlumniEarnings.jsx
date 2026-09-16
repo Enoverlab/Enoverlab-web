@@ -27,7 +27,7 @@ const earningsImages = [
 
 const AlumniEarnings = () => (
   <AlumniMarquee
-    title="The Results of Happiness"
+    title="The Result of Happy Learning"
     images={earningsImages}
     altPrefix="Alumni earnings"
     mobileHeight="22rem"

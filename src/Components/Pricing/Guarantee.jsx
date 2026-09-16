@@ -121,13 +121,13 @@ const StyledGuarantee = styled.div`
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 2.5rem;
       li {
         display: flex;
         /* align-items: center; */
         gap: 2rem;
         font-size: 1.6rem;
-        line-height: 1.6rem;
+        line-height: 1.3;
         // margin: 0.8rem 0;
         img {
           margin-left: -1rem;
