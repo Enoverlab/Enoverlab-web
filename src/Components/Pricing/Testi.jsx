@@ -18,7 +18,9 @@ const Testimonials = () => {
             fw={700}
           >
             {/* Hear What Our Alumni Are Saying */}
-            Hear the exciting experience they had
+            Hear the exciting experience
+            <br />
+            they had
           </H3>
         </div>
         <>

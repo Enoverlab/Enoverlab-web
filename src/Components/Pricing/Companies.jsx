@@ -32,7 +32,7 @@ import arise from "../../assets/icon/arise.png";
 const Companies = () => {
   return (
     <StyledCompanies>
-      <header>Where Our Happy Alumni Work</header>
+      <header>Where Our Alumni Work</header>
       <Marquee>
         <img src={borderlesshr} alt="borderlesshr_logo" />
         <img src={cambridge} alt="cambridge_logo" />

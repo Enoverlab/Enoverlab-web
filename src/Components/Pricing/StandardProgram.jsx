@@ -40,7 +40,7 @@ const StandardProgram = () => {
   const [trainingLocation, setTrainingLocation] = useState({
     place: "",
     location: "Select Location to see address",
-    tuition: "300,000",
+    tuition: "400,000",
     link: "",
     mapIframe: "",
     weeks: "",
@@ -89,7 +89,7 @@ const StandardProgram = () => {
       default:
         setTrainingLocation({
           location: "Select Location to see address",
-          tuition: "300,000",
+          tuition: "400,000",
           discount: "",
           trainingDay: "Select Location",
           trainingTime: "Select Location",
