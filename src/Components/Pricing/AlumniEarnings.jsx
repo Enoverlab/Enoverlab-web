@@ -30,8 +30,8 @@ const AlumniEarnings = () => (
     title="The Result of Happy Learning"
     images={earningsImages}
     altPrefix="Alumni earnings"
-    mobileHeight="22rem"
-    height="30rem"
+    mobileHeight="30rem"
+    height="40rem"
   />
 );
 

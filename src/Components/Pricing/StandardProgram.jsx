@@ -130,7 +130,7 @@ const StandardProgram = () => {
   }
   return (
     <StyledProgram id="hybrid">
-      <header>Standard Programs</header>
+      <header>Our Standard Programs</header>
       <div className="swipepgContainer">
         <section className="contain" id="online">
           <div className="swiperPagination"></div>

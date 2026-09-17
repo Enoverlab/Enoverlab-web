@@ -56,8 +56,8 @@ const AlumniHallOfFame = () => (
     title="See Happiness in the Frames"
     images={hallOfFameImages}
     altPrefix="Enoverlab alumni"
-    mobileHeight="18rem"
-    height="26rem"
+    mobileHeight="28rem"
+    height="36rem"
     mobileOnlyTitle
   />
 );

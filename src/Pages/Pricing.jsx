@@ -15,6 +15,7 @@ import { useState, useEffect } from "react";
 import LoadingScreen2 from "../Components/LoadingScreen2";
 import Guarantee from "../Components/Pricing/Guarantee";
 import Companies from "../Components/Pricing/Companies";
+import LearningCentres from "../Components/Pricing/LearningCentres";
 // import AccessModal from '../Components/Assessment/Landing/AccessModal'
 const Pricing = () => {
   const [loading, setLoading] = useState(true);
@@ -32,12 +33,13 @@ const Pricing = () => {
           <Header bg="#FFFDF7" />
           <StyledPricing>
             <PriceHero />
+            <Companies />
+            <Testimonials />
             <StandardProgram />
             {/* <ClassTools/> */}
             <Guarantee />
-            <Companies />
+            <LearningCentres />
             {/* <StandardOptions/> */}
-            <Testimonials />
             {/* <Testimonies/> */}
             <Explore />
             {/* <AccessModal/> */}

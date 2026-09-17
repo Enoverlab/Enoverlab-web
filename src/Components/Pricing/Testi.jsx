@@ -17,7 +17,8 @@ const Testimonials = () => {
             tA="center"
             fw={700}
           >
-            Hear What Our Alumni Are Saying
+            {/* Hear What Our Alumni Are Saying */}
+            Hear the exciting experience they had
           </H3>
         </div>
         <>
