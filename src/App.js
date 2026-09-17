@@ -43,7 +43,7 @@ import AssessmentLanding from "./Pages/AssessmentLanding";
 import Assessment from "./Pages/Assessment";
 import { TestContextProvider } from "./context/TestContext";
 import Result from "./Pages/Result";
-import { ChatbotContainer } from "./Components/chatbot/ChatbotContainer";
+// import { ChatbotContainer } from "./Components/chatbot/ChatbotContainer";
 import ScholarshipPage from "./Pages/ScholarshipPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -136,7 +136,7 @@ function App() {
         <Route path="/physical" element={<Physical/>} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
-      <ChatbotContainer/>
+      {/* <ChatbotContainer/> */}
     </ThemeProvider>
     </ChakraProvider>
   );
