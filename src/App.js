@@ -51,6 +51,7 @@ import TpmPaymentPage from "./Pages/TpmPaymentPage";
 import AgenticAi from "./Pages/agenticai";
 import Hire from "./Pages/Hire";
 import Mentorship from "./Pages/Mentorship";
+import Flex from "./Pages/Flex";
 import AgenticPaymentPage from "./Pages/AgenticPayment";
 axios.defaults.baseURL = process.env.REACT_APP_APIBASE_URL
 
@@ -131,6 +132,7 @@ function App() {
         <Route path="/agenticai" element={<AgenticAi/>} />
         <Route path="/hire" element={<Hire />} />
         <Route path="/mentorship" element={<Mentorship />} />
+        <Route path="/flex" element={<Flex />} />
         {/* <Route path="/international" element={<Diaspora/>} /> */}
         <Route path="/policy" element={<Policy/>} />
         <Route path="/physical" element={<Physical/>} />

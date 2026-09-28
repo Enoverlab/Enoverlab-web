@@ -18,7 +18,7 @@ export const agenticHighlights = [
 export const agenticPrice = {
   amount: "$440",
   crossed: "N600,000",
-  label: "INTRODUCTORY FEE",
+  label: "Payment can be splitted twice!",
   ctaText: "Enrol Now",
   ctaLink: "/payments/agenticai",
 };
