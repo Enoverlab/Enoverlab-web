@@ -17,7 +17,7 @@ const FlexCenterSelect = ({
   labelId,
   value: selectedId,
   onChange,
-  placeholder = "Select Center",
+  placeholder = "Select Centre",
 }) => {
   const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);

@@ -44,6 +44,9 @@ const FlexStartDates = () => {
                   Date: <strong>{online.date}</strong>
                 </span>
                 <span>
+                  Day: <strong>{online.day}</strong>
+                </span>
+                <span>
                   Time: <strong>{online.time}</strong>
                 </span>
               </p>
@@ -77,9 +80,9 @@ const FlexStartDates = () => {
                     <span>
                       Date: <strong>{selectedCenter.date}</strong>
                     </span>
-                    <span>
+                    {/* <span>
                       Time: <strong>{selectedCenter.time}</strong>
-                    </span>
+                    </span> */}
                   </p>
                 )}
               </div>
@@ -211,16 +214,16 @@ const StyledStartDates = styled.section`
     }
 
     .track-title {
-      margin-top: 1.8rem;
+      margin-top: 1rem;
     }
 
     .track-title--hybrid {
       margin-top: 0;
     }
-    .track-meta {
-      flex-direction: row;
-      gap: 1.6rem;
-    }
+    // .track-meta {
+    //   flex-direction: row;
+    //   gap: 1.6rem;
+    // }
 
     .track-meta--enter {
       animation: ${metaIn} 280ms ${flexEase};

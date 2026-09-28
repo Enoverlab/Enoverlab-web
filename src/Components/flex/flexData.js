@@ -77,7 +77,8 @@ export const flexPricing = {
   // null hides both "View Syllabus" buttons. TODO(flex): set to the syllabus URL/PDF once available.
   // syllabusLink: null,
   // syllabusLink: "/FlexSyllabus.pdf",
-  syllabusLink: "/StandardSyllabus.pdf",
+  // syllabusLink: "/StandardSyllabus.pdf",
+  syllabusLink: "/standard-syllabus.pdf",
 
   plans: [
     {
@@ -106,7 +107,7 @@ export const flexPricing = {
       name: "Hybrid Flex",
       description:
         "Blended format with remote live learning plus hands-on in-person hubs.",
-      price: "₦85,000",
+      price: "₦80,000",
       period: "/ month",
       features: [
         "In-Person Saturday Hub Sessions",
@@ -128,6 +129,7 @@ export const flexStartDates = {
   online: {
     title: "Online Flex:",
     date: "November 14th",
+    day: "Every Saturday",
     time: "11:00am - 1:00 pm",
     Icon: FiVideo,
   },
@@ -140,20 +142,20 @@ export const flexStartDates = {
       {
         id: "lekki",
         name: "Lekki",
-        date: "November 20th",
-        time: "2:00 - 4:00pm",
+        date: "Admission not yet open",
+        time: "n/a",
       },
       {
         id: "ikeja",
         name: "Ikeja",
-        date: "November 20th",
-        time: "2:00 - 4:00pm",
+        date: "Admission not yet open",
+        time: "n/a",
       },
       {
         id: "anambra",
         name: "Anambra",
-        date: "November 20th",
-        time: "2:00 - 4:00pm",
+        date: "Admission not yet open",
+        time: "n/a",
       },
     ],
   },
