@@ -59,6 +59,9 @@ const StyledHow = styled.section`
 
   h2 {
     ${sectionTitle}
+    text-align: center;
+    max-width: 24.4rem;
+    margin: 0 auto;
   }
 
   .steps {
@@ -130,6 +133,9 @@ const StyledHow = styled.section`
     .steps {
       grid-template-columns: repeat(3, 1fr);
       gap: 2.4rem;
+    }
+    h2 {
+      max-width: none;
     }
     h3 {
       font-size: 2rem;

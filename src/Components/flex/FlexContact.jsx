@@ -66,7 +66,7 @@ const StyledContact = styled.section`
   }
 
   h2 {
-    font-size: clamp(1.8rem, 1.8vw, 2rem);
+    font-size: clamp(2.4rem, 1.8vw, 2.8rem);
     font-weight: 500;
     line-height: 1.8;
 
@@ -89,8 +89,8 @@ const StyledContact = styled.section`
     align-items: center;
     gap: 1rem;
     color: ${flexColors.white};
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
     text-decoration: none;
 
     &:hover {

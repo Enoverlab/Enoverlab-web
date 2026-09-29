@@ -148,6 +148,7 @@ const StyledHero = styled.section`
       display: block;
       width: 100%;
       height: auto;
+      border-radius: 2.4rem;
     }
   }
 

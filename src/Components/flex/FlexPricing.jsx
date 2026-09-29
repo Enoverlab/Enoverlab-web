@@ -128,6 +128,9 @@ const StyledPricing = styled.section`
 
   h2 {
     ${sectionTitle}
+    text-align: center;
+    max-width: 28rem;
+    margin: 0 auto;
   }
 
   .plans {
@@ -282,6 +285,9 @@ const StyledPricing = styled.section`
   }
 
   @media (min-width: 768px) {
+    h2 {
+      max-width: none;
+    }
     .plans {
       grid-template-columns: 1fr 1fr;
       gap: clamp(2.4rem, 3vw, 3.2rem);

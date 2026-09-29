@@ -11,8 +11,8 @@ import {
   FiMessageSquare,
   FiMail,
 } from "react-icons/fi";
-import heroImage from "../../assets/flex/hero-image-container.webp";
-import audienceImage from "../../assets/flex/collaboration-image-container.webp";
+import heroImage from "../../assets/flex/hero-image-container.jpg";
+import audienceImage from "../../assets/flex/collaboration-image-container.jpg";
 
 export const flexHero = {
   badge: "Flex Program",

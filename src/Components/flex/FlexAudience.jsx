@@ -71,6 +71,7 @@ const StyledAudience = styled.section`
 
   h2 {
     ${sectionTitle}
+    text-align: center;
   }
 
   .audience-grid {
@@ -84,6 +85,7 @@ const StyledAudience = styled.section`
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 2rem;
   }
 
   .audience-list {
