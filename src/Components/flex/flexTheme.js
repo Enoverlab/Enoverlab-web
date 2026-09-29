@@ -14,11 +14,19 @@ export const flexColors = {
   border: "#E5E9F2",
   card: "#FAFBFD",
   white: "#FFFFFF",
+  // Not from the Figma frames: red-600, which keeps 4.5:1 contrast on white.
+  danger: "#DC2626",
 };
 
 export const flexFont = `"Inter", "Plus Jakarta Sans", sans-serif`;
 
 // Root font-size is 10px (App.js GlobalStyle), so 1rem = 10px throughout.
+//
+// Small phones (360px–440px): the mobile Figma frame is 440px wide. Sizes that must
+// shrink with the screen (so lines break the same way at 360px) use
+//   clamp(<size at 360px>, <size at 440px ÷ 4.4>vw, <size at 440px>)
+// e.g. 4.2rem at 440px -> clamp(3.44rem, 9.55vw, 4.2rem). From 440px up it stays at
+// the max, so the 440px design and everything above it are unchanged.
 export const flexShell = css`
   width: min(100%, 144rem);
   margin: 0 auto;
@@ -53,6 +61,10 @@ export const sectionTitle = css`
 
   .accent {
     color: ${flexColors.primary};
+  }
+
+  @media (max-width: 439px) {
+    font-size: clamp(2.62rem, 7.27vw, 3.2rem);
   }
 `;
 

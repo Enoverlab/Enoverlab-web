@@ -49,7 +49,8 @@ const btnStyles = css`
   justify-content: center;
   background: ${(p) => p.$bg};
   color: ${(p) => p.$color};
-  font-size: ${(p) => (p.$size === "sm" ? "1.2rem" : "1.6rem")};
+  font-size: ${(p) =>
+    p.$size === "sm" ? "1.2rem" : "clamp(1.31rem, 3.64vw, 1.6rem)"};
   font-weight: 600;
   line-height: 1;
   padding: ${(p) => (p.$size === "sm" ? "1rem 2rem" : "1.6rem 2.8rem")};

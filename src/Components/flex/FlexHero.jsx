@@ -89,7 +89,7 @@ const StyledHero = styled.section`
 
   .badge {
     ${pillLabel}
-    font-size: 1.8rem;
+    font-size: clamp(1.47rem, 4.09vw, 1.8rem);
     padding: 0.9rem 2.4rem;
     margin-bottom: 1.6rem;
   }
@@ -149,6 +149,16 @@ const StyledHero = styled.section`
       width: 100%;
       height: auto;
       border-radius: 2.4rem;
+    }
+  }
+
+  @media (max-width: 439px) {
+    h1 {
+      font-size: clamp(3.44rem, 9.55vw, 4.2rem);
+    }
+
+    .subtitle {
+      font-size: clamp(1.23rem, 3.41vw, 1.5rem);
     }
   }
 

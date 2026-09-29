@@ -135,24 +135,28 @@ export const flexStartDates = {
     Icon: FiMapPin,
     // Flex-specific hub schedule from the design; context/CenterContext dates belong
     // to the full programme and are deliberately not reused here.
+    //
+    // Each centre is either:
+    //   { status: "closed", message: "Admission closed" }   -> message shown in red
+    //   { status: "open", date: "November 20th", day: "Every Saturday", time: "2:00 - 4:00pm" }
     centers: [
       {
         id: "lekki",
         name: "Lekki",
-        date: "Admission not yet open",
-        time: "n/a",
+        status: "closed",
+        message: "Admission not yet open",
       },
       {
         id: "ikeja",
         name: "Ikeja",
-        date: "Admission not yet open",
-        time: "n/a",
+        status: "closed",
+        message: "Admission not yet open",
       },
       {
         id: "anambra",
         name: "Anambra",
-        date: "Admission not yet open",
-        time: "n/a",
+        status: "closed",
+        message: "Admission not yet open",
       },
     ],
   },

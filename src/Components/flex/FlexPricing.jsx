@@ -125,7 +125,7 @@ const StyledPricing = styled.section`
   h2 {
     ${sectionTitle}
     text-align: center;
-    max-width: 28rem;
+    max-width: clamp(22.91rem, 63.64vw, 28rem);
     margin: 0 auto;
   }
 
@@ -140,7 +140,7 @@ const StyledPricing = styled.section`
     display: flex;
     flex-direction: column;
     // padding: clamp(2.4rem, 3vw, 4rem) clamp(2rem, 2.6vw, 3.2rem);
-    padding: 4.8rem;
+    padding: clamp(3.93rem, 10.91vw, 4.8rem);
     background: ${flexColors.white};
     border: 1px solid ${flexColors.border};
     border-radius: 1.6rem;
@@ -183,7 +183,7 @@ const StyledPricing = styled.section`
   }
 
   h3 {
-    font-size: 2.4rem;
+    font-size: clamp(1.96rem, 5.45vw, 2.4rem);
     font-weight: 800;
   }
 
@@ -194,7 +194,7 @@ const StyledPricing = styled.section`
   }
 
   .plan-desc {
-    font-size: 1.4rem;
+    font-size: clamp(1.15rem, 3.18vw, 1.4rem);
     line-height: 1.6;
     color: ${flexColors.muted};
   }
@@ -222,7 +222,7 @@ const StyledPricing = styled.section`
     }
 
     span {
-      font-size: 1.6rem;
+      font-size: clamp(1.31rem, 3.64vw, 1.6rem);
       color: ${flexColors.muted};
     }
   }
@@ -244,15 +244,15 @@ const StyledPricing = styled.section`
     li {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      font-size: 1.4rem;
+      gap: clamp(0.82rem, 2.27vw, 1rem);
+      font-size: clamp(1.15rem, 3.18vw, 1.4rem);
       line-height: 1.4;
       color: ${flexColors.body};
     }
 
     svg {
       flex-shrink: 0;
-      font-size: 1.6rem;
+      font-size: clamp(1.31rem, 3.64vw, 1.6rem);
       color: ${flexColors.primary};
     }
   }
@@ -267,6 +267,12 @@ const StyledPricing = styled.section`
   /* Pushes both CTAs to the bottom so they line up when feature lists differ in length. */
   .plan > a:last-child {
     margin-top: auto;
+  }
+
+  @media (max-width: 439px) {
+    .plan-price strong {
+      font-size: clamp(3.44rem, 9.55vw, 4.2rem);
+    }
   }
 
   @media (min-width: 768px) {

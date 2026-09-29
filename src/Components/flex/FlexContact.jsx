@@ -89,7 +89,7 @@ const StyledContact = styled.section`
     align-items: center;
     gap: 1rem;
     color: ${flexColors.white};
-    font-size: 1.8rem;
+    font-size: clamp(1.47rem, 4.09vw, 1.8rem);
     font-weight: 700;
     text-decoration: none;
 
@@ -118,6 +118,12 @@ const StyledContact = styled.section`
       translate: 0 -0.2rem;
     }
   `)}
+
+  @media (max-width: 439px) {
+    h2 {
+      font-size: clamp(1.96rem, 5.45vw, 2.4rem);
+    }
+  }
 
   @media (min-width: 768px) {
     .channels {

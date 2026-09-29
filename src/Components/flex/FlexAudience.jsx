@@ -98,8 +98,8 @@ const StyledAudience = styled.section`
   li {
     display: flex;
     align-items: center;
-    gap: 1.6rem;
-    padding: 1.8rem 2rem;
+    gap: clamp(1.31rem, 3.64vw, 1.6rem);
+    padding: 1.8rem clamp(1.64rem, 4.55vw, 2rem);
     background: ${flexColors.white};
     border: 1px solid ${flexColors.border};
     border-radius: 1.2rem;
@@ -117,14 +117,16 @@ const StyledAudience = styled.section`
     flex-shrink: 0;
     display: grid;
     place-items: center;
-    width: 3.6rem;
-    height: 3.6rem;
+    width: clamp(2.95rem, 8.18vw, 3.6rem);
+    height: clamp(2.95rem, 8.18vw, 3.6rem);
     border-radius: 0.8rem;
     font-size: 1.8rem;
   }
 
+  /* vw is a touch under 1.6/4.4 (3.64): "…learn specific" has under 2px spare at
+     440px and text doesn't shrink perfectly evenly, so 3.64vw wraps it at 360px. */
   li p {
-    font-size: 1.6rem;
+    font-size: clamp(1.29rem, 3.59vw, 1.6rem);
     line-height: 1.55;
     color: ${flexColors.title};
   }

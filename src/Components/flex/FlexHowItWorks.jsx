@@ -60,7 +60,7 @@ const StyledHow = styled.section`
   h2 {
     ${sectionTitle}
     text-align: center;
-    max-width: 24.4rem;
+    max-width: clamp(19.96rem, 55.45vw, 24.4rem);
     margin: 0 auto;
   }
 
@@ -73,7 +73,7 @@ const StyledHow = styled.section`
   }
 
   li {
-    padding: 2.4rem;
+    padding: clamp(1.96rem, 5.45vw, 2.4rem);
     background: ${flexColors.card};
     border: 1px solid ${flexColors.border};
     border-radius: 1.6rem;
@@ -110,21 +110,21 @@ const StyledHow = styled.section`
   }
 
   .number {
-    font-size: 3.2rem;
+    font-size: clamp(2.62rem, 7.27vw, 3.2rem);
     font-weight: 700;
     color: #9aa3b5;
     transition: color 220ms ${flexEase};
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: clamp(1.47rem, 4.09vw, 1.8rem);
     font-weight: 800;
     color: ${flexColors.title};
     margin-bottom: 1rem;
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: clamp(1.06rem, 2.95vw, 1.3rem);
     line-height: 1.6;
     color: ${flexColors.muted};
   }

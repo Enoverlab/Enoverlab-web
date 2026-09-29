@@ -14,6 +14,20 @@ import {
   pillLabel,
 } from "./flexTheme";
 
+const Schedule = ({ date, day, time, className = "track-meta" }) => (
+  <p className={className}>
+    <span>
+      Date: <strong>{date}</strong>
+    </span>
+    <span>
+      Day: <strong>{day}</strong>
+    </span>
+    <span>
+      Time: <strong>{time}</strong>
+    </span>
+  </p>
+);
+
 const FlexStartDates = () => {
   const { label, online, hybrid } = flexStartDates;
   const hybridLabelId = useId();
@@ -39,17 +53,7 @@ const FlexStartDates = () => {
                 </span>
                 {online.title}
               </p>
-              <p className="track-meta">
-                <span>
-                  Date: <strong>{online.date}</strong>
-                </span>
-                <span>
-                  Day: <strong>{online.day}</strong>
-                </span>
-                <span>
-                  Time: <strong>{online.time}</strong>
-                </span>
-              </p>
+              <Schedule {...online} />
             </div>
 
             <span className="divider" aria-hidden="true" />
@@ -71,18 +75,20 @@ const FlexStartDates = () => {
 
               {/* aria-live so screen readers hear the schedule when a centre is picked. */}
               <div aria-live="polite">
-                {selectedCenter && (
-                  // Keyed so switching centre replays the fade on the new schedule.
+                {/* Keyed so switching centre replays the fade on the new content. */}
+                {selectedCenter?.status === "open" && (
+                  <Schedule
+                    key={selectedCenter.id}
+                    {...selectedCenter}
+                    className="track-meta track-meta--enter"
+                  />
+                )}
+                {selectedCenter?.status === "closed" && (
                   <p
                     key={selectedCenter.id}
-                    className="track-meta track-meta--enter"
+                    className="track-status track-meta--enter"
                   >
-                    <span>
-                      Date: <strong>{selectedCenter.date}</strong>
-                    </span>
-                    {/* <span>
-                      Time: <strong>{selectedCenter.time}</strong>
-                    </span> */}
+                    {selectedCenter.message}
                   </p>
                 )}
               </div>
@@ -154,7 +160,7 @@ const StyledStartDates = styled.section`
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1.6rem;
+    font-size: clamp(1.31rem, 3.64vw, 1.6rem);
     font-weight: 500;
     color: ${flexColors.title};
   }
@@ -178,12 +184,18 @@ const StyledStartDates = styled.section`
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-    font-size: 2rem;
+    font-size: clamp(1.64rem, 4.55vw, 2rem);
     color: ${flexColors.title};
 
     strong {
       font-weight: 700;
     }
+  }
+
+  .track-status {
+    font-size: clamp(1.47rem, 4.09vw, 1.8rem);
+    font-weight: 600;
+    color: ${flexColors.danger};
   }
 
   .track-meta--enter {
