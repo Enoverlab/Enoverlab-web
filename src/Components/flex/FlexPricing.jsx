@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { FiCheck } from "react-icons/fi";
 import FlexBtn from "./FlexBtn";
-import FlexSyllabusBtn from "./FlexSyllabusBtn";
 import { flexPricing } from "./flexData";
 import useFlexReveal from "./useFlexReveal";
 import {
@@ -53,7 +52,6 @@ const PlanCard = ({ plan, index }) => {
     ctaLink,
     Icon,
     featured,
-    showSyllabus,
   } = plan;
 
   return (
@@ -69,8 +67,6 @@ const PlanCard = ({ plan, index }) => {
       <h3>{name}</h3>
       <div className="plan-intro">
         <p className="plan-desc">{description}</p>
-        {/* Desktop shows this once in the Start Dates section instead. */}
-        {showSyllabus && <FlexSyllabusBtn className="plan-syllabus" />}
       </div>
 
       <p className="plan-price">
@@ -203,10 +199,6 @@ const StyledPricing = styled.section`
     color: ${flexColors.muted};
   }
 
-  .plan-syllabus {
-    margin-top: 2rem;
-  }
-
   .plan--featured .plan-intro {
     border-color: rgba(255, 255, 255, 0.25);
   }
@@ -275,13 +267,6 @@ const StyledPricing = styled.section`
   /* Pushes both CTAs to the bottom so they line up when feature lists differ in length. */
   .plan > a:last-child {
     margin-top: auto;
-  }
-
-  /* Same breakpoint as FlexStartDates' copy, so exactly one button shows at any width. */
-  @media (min-width: 900px) {
-    .plan-syllabus {
-      display: none;
-    }
   }
 
   @media (min-width: 768px) {

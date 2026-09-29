@@ -46,8 +46,8 @@ const FlexHero = () => {
           <img
             src={flexHero.image}
             alt={flexHero.imageAlt}
-            width="1100"
-            height="967"
+            width="1024"
+            height="1024"
             fetchpriority="high"
           />
         </div>

@@ -11,8 +11,8 @@ import {
   FiMessageSquare,
   FiMail,
 } from "react-icons/fi";
-import heroImage from "../../assets/flex/hero-image-container.jpg";
-import audienceImage from "../../assets/flex/collaboration-image-container.jpg";
+import heroImage from "../../assets/flex/hero-image-container.webp";
+import audienceImage from "../../assets/flex/collaboration-image-container.webp";
 
 export const flexHero = {
   badge: "Flex Program",
@@ -73,8 +73,7 @@ export const flexSteps = [
 
 export const flexPricing = {
   label: "Simple Tuition",
-  // Shared by the mobile Online Flex card and the desktop Start Dates section.
-  // null hides both "View Syllabus" buttons. TODO(flex): set to the syllabus URL/PDF once available.
+  // Used by the Start Dates section. null hides the "View Syllabus" button. TODO(flex): set to the syllabus URL/PDF once available.
   // syllabusLink: null,
   // syllabusLink: "/FlexSyllabus.pdf",
   // syllabusLink: "/StandardSyllabus.pdf",
@@ -99,8 +98,6 @@ export const flexPricing = {
       ctaLink: "https://paystack.shop/pay/onlineflex",
       Icon: FiVideo,
       featured: false,
-      // Design: only this card carries "View Syllabus", and only on mobile.
-      showSyllabus: true,
     },
     {
       id: "hybrid",

@@ -89,7 +89,6 @@ const FlexStartDates = () => {
             </div>
           </div>
 
-          {/* Mobile shows this inside the Online Flex pricing card instead. */}
           <FlexSyllabusBtn className="dates-syllabus" />
         </div>
       </div>
@@ -140,7 +139,6 @@ const StyledStartDates = styled.section`
   }
 
   .dates-syllabus {
-    display: none;
     margin-top: 3.2rem;
   }
 
@@ -207,10 +205,6 @@ const StyledStartDates = styled.section`
       flex-direction: row;
       justify-content: space-around;
       align-items: flex-start;
-    }
-
-    .dates-syllabus {
-      display: block;
     }
 
     .track-title {

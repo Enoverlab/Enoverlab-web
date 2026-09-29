@@ -30,8 +30,8 @@ const FlexAudience = () => {
             style={{ "--i": 1 }}
             src={flexAudience.image}
             alt={flexAudience.imageAlt}
-            width="1100"
-            height="895"
+            width="1152"
+            height="928"
             loading="lazy"
             decoding="async"
           />
