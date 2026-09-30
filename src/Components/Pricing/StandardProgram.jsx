@@ -247,7 +247,7 @@ const StandardProgram = () => {
                     <SubmitButton Text="Enroll Now" />
                     <></>
                     <Link
-                      to="/standard-syllabus.pdf"
+                      to="/standard-syllabus-new.pdf"
                       target="_blank"
                       download="standard-syllabus.pdf"
                       className="syll"
@@ -280,7 +280,7 @@ const StandardProgram = () => {
                 </div>
                 <div className="but">
                   <Link
-                    to="/standard-syllabus.pdf"
+                    to="/standard-syllabus-new.pdf"
                     target="_blank"
                     download="standard-syllabus.pdf"
                     className="syll"
@@ -442,7 +442,7 @@ const StandardProgram = () => {
                     />
                     <></>
                     <Link
-                      to="/standard-syllabus.pdf"
+                      to="/standard-syllabus-new.pdf"
                       target="_blank"
                       download="standard-syllabus.pdf"
                       className="syll"
@@ -481,7 +481,7 @@ const StandardProgram = () => {
                 </div>
                 <div className="but">
                   <Link
-                    to="/standard-syllabus.pdf"
+                    to="/standard-syllabus-new.pdf"
                     target="_blank"
                     download="standard-syllabus.pdf"
                     className="syll"

@@ -77,7 +77,7 @@ export const flexPricing = {
   // syllabusLink: null,
   // syllabusLink: "/FlexSyllabus.pdf",
   // syllabusLink: "/StandardSyllabus.pdf",
-  syllabusLink: "/standard-syllabus.pdf",
+  syllabusLink: "/standard-syllabus-new.pdf",
 
   plans: [
     {
