@@ -56,6 +56,7 @@ const PlanCard = ({ plan, index }) => {
 
   return (
     <article
+      id={`plan-${plan.id}`}
       className={featured ? "plan plan--featured reveal" : "plan reveal"}
       aria-label={name}
       style={{ "--i": index }}

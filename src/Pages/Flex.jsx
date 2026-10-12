@@ -7,7 +7,14 @@ import FlexHowItWorks from "../Components/flex/FlexHowItWorks";
 import FlexPricing from "../Components/flex/FlexPricing";
 import FlexStartDates from "../Components/flex/FlexStartDates";
 import FlexContact from "../Components/flex/FlexContact";
+import PopupNotif from "../Components/popup-notif/PopupNotif";
 
+/**
+ * Flex program landing page component.
+ * Showcases the 6-month flexible product management track and features an early enrollment discount popup.
+ *
+ * @returns {JSX.Element} The rendered Flex landing page.
+ */
 const Flex = () => {
   useEffect(() => {
     document.title =
@@ -17,6 +24,24 @@ const Flex = () => {
   return (
     <>
       <Header />
+      <PopupNotif
+        delay={10000}
+        title="IMPORTANT NOTICE!!!"
+        discountAmount="₦5,000"
+        message="Get ₦5,000 discount monthly when you sign up atleast 1 month before the class begins."
+        ctas={[
+          {
+            text: "Claim Online Flex Discount",
+            to: "/flex#flex-pricing",
+            variant: "primary",
+          },
+          {
+            text: "Claim Hybrid Flex Discount",
+            to: "/flex#flex-pricing",
+            variant: "secondary",
+          },
+        ]}
+      />
       <main>
         <FlexHero />
         <FlexAudience />

@@ -182,7 +182,7 @@ const StandardProgram = () => {
                           color="var(--Body-Text)"
                         >
                           {/* Every Saturday <br /> & Thursday */}
-                          Every Saturday
+                          Every Tuesday <br />& Friday
                         </H2>
                       </div>
                       <div>
@@ -200,7 +200,8 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          12pm - 2pm
+                          {/* 12pm - 2pm */}
+                          8pm - 10pm
                         </H2>
                       </div>
                       <div>
@@ -218,7 +219,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          October 17, 2026
+                          October 27, 2026
                         </H2>
                       </div>
                       <div>

@@ -125,9 +125,9 @@ export const flexStartDates = {
   label: "Start Dates",
   online: {
     title: "Online Flex:",
-    date: "November 14th",
+    date: "November 28th",
     day: "Every Saturday",
-    time: "11:00am - 1:00 pm",
+    time: "10:00am - 12:00 pm",
     Icon: FiVideo,
   },
   hybrid: {

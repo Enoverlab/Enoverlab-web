@@ -15,17 +15,41 @@ import { useState, useEffect } from "react";
 import LoadingScreen2 from "../Components/LoadingScreen2";
 import Guarantee from "../Components/Pricing/Guarantee";
 import Companies from "../Components/Pricing/Companies";
-// import LearningCentres from "../Components/Pricing/LearningCentres";
-// import AccessModal from '../Components/Assessment/Landing/AccessModal'
+import PopupNotif from "../Components/popup-notif/PopupNotif";
+
+/**
+ * Programs and pricing page component.
+ * Displays program details, fees, testimonials, FAQs, and the early enrollment discount popup.
+ *
+ * @returns {JSX.Element} The rendered Programs & Pricing page.
+ */
 const Pricing = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => {
+    // Delay removing loading screen to match design entrance sequence
+    const loadTimer = setTimeout(() => {
       setLoading(false);
     }, 4000);
+
+    return () => {
+      clearTimeout(loadTimer);
+    };
   }, []);
   return (
     <div>
+      <PopupNotif
+        delay={10000}
+        title="IMPORTANT NOTICE!!!"
+        discountAmount="₦50,000"
+        message="Get ₦50,000 discount when you sign up atleast 1 month before the class begins."
+        ctas={[
+          {
+            text: "Get Discount Here",
+            to: "/programs#online",
+            variant: "primary",
+          },
+        ]}
+      />
       {loading ? (
         <LoadingScreen2 />
       ) : (
