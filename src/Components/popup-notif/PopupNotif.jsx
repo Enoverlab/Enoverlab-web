@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Modal from 'react-modal';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
 import notif from '../../assets/icon/notifIcon.svg';
 import cancelModal from '../../assets/icon/cancelModal.svg';
@@ -30,13 +30,13 @@ const PopupNotif = ({
   message,
   ctas = [
     {
-      text: 'Claim Online Flex Discount',
-      to: '/flex#flex-pricing',
+      text: 'Online flex Discount',
+      to: 'https://paystack.shop/pay/flex-dis-online',
       variant: 'primary',
     },
     {
-      text: 'Claim Hybrid Flex Discount',
-      to: '/flex#flex-pricing',
+      text: 'Hybrid flex Discount',
+      to: 'https://paystack.shop/pay/flex-dis-hybrid',
       variant: 'secondary',
     },
   ],
@@ -168,19 +168,39 @@ const PopupNotif = ({
           </p>
 
           <div className={`cta-container ${ctas.length === 1 ? 'cta-single' : ''}`}>
-            {ctas.map((cta, index) => (
-              <StyledCtaLink
-                key={cta.text || index}
-                to={cta.to}
-                smooth
-                onClick={() => handleCtaClick(cta.to)}
-                className={`cta-btn ${
-                  cta.variant === 'secondary' ? 'cta-secondary' : 'cta-primary'
-                }`}
-              >
-                {cta.text}
-              </StyledCtaLink>
-            ))}
+            {ctas.map((cta, index) => {
+              const isExternal = /^https?:\/\//i.test(cta.to);
+              const className = `cta-btn ${
+                cta.variant === 'secondary' ? 'cta-secondary' : 'cta-primary'
+              }`;
+
+              if (isExternal) {
+                return (
+                  <StyledCtaAnchor
+                    key={cta.text || index}
+                    href={cta.to}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={handleClose}
+                    className={className}
+                  >
+                    {cta.text}
+                  </StyledCtaAnchor>
+                );
+              }
+
+              return (
+                <StyledCtaLink
+                  key={cta.text || index}
+                  to={cta.to}
+                  smooth
+                  onClick={() => handleCtaClick(cta.to)}
+                  className={className}
+                >
+                  {cta.text}
+                </StyledCtaLink>
+              );
+            })}
           </div>
         </main>
       </StyledModalCard>
@@ -356,7 +376,7 @@ const StyledModalCard = styled.div`
   }
 `;
 
-const StyledCtaLink = styled(HashLink)`
+const ctaStyles = css`
   font-family: 'Plus Jakarta Sans', sans-serif;
   display: inline-flex;
   align-items: center;
@@ -408,6 +428,14 @@ const StyledCtaLink = styled(HashLink)`
     outline: 2px solid #ffffff;
     outline-offset: 2px;
   }
+`;
+
+const StyledCtaLink = styled(HashLink)`
+  ${ctaStyles}
+`;
+
+const StyledCtaAnchor = styled.a`
+  ${ctaStyles}
 `;
 
 const StyledCancel = styled.div`

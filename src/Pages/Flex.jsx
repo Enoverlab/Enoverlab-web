@@ -31,13 +31,13 @@ const Flex = () => {
         message="Get ₦5,000 discount monthly when you sign up atleast 1 month before the class begins."
         ctas={[
           {
-            text: "Claim Online Flex Discount",
-            to: "/flex#flex-pricing",
+            text: "Online flex Discount",
+            to: "https://paystack.shop/pay/flex-dis-online",
             variant: "primary",
           },
           {
-            text: "Claim Hybrid Flex Discount",
-            to: "/flex#flex-pricing",
+            text: "Hybrid flex Discount",
+            to: "https://paystack.shop/pay/flex-dis-hybrid",
             variant: "secondary",
           },
         ]}

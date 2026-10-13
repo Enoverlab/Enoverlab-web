@@ -44,9 +44,14 @@ const Pricing = () => {
         message="Get ₦50,000 discount when you sign up atleast 1 month before the class begins."
         ctas={[
           {
-            text: "Get Discount Here",
-            to: "/programs#online",
+            text: "Standard Discount Online",
+            to: "https://paystack.shop/pay/stan-dis-online",
             variant: "primary",
+          },
+          {
+            text: "Standard Discount Hybrid",
+            to: "https://paystack.shop/pay/stan-dis-hybrid",
+            variant: "secondary",
           },
         ]}
       />
