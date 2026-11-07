@@ -268,7 +268,7 @@ const centerDetails = {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "October 5, 2026",
+    startDate: "February 15, 2027",
   },
   "Lekki-Weekend": {
     place: "Lekki",
@@ -306,7 +306,7 @@ const centerDetails = {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "October 10, 2026",
+    startDate: "February 13, 2027",
     // startDate: "Admission Closed",
   },
   Ibadan: {
@@ -345,7 +345,7 @@ const centerDetails = {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "October 10, 2026",
+    startDate: "February 13, 2027",
   },
   Anambra: {
     place: "Anambra",
@@ -424,7 +424,7 @@ const centerDetails = {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "October 10, 2026",
+    startDate: "February 13, 2027",
   },
   "Ikeja-Weekday": {
     place: "Ikeja-Weekday",
@@ -463,7 +463,7 @@ const centerDetails = {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "October 13, 2026",
+    startDate: "February 16, 2027",
     // startDate: "Admission Closed",
   },
   "Ikeja-Weekend": {
@@ -503,8 +503,8 @@ const centerDetails = {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     ),
-    startDate: "Admission Closed",
-    // startDate: "September 12, 2026",
+    // startDate: "Admission Closed",
+    startDate: "February 6, 2027",
   },
   // "Yaba-Weekday": {
   //   place: "Yaba-Weekday",

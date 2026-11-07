@@ -34,7 +34,7 @@ const StandardProgram = () => {
     // "Yaba-Weekend",
     // "Lekki-Weekday",
     // "Lekki-Weekend",
-    "Ikeja-Weekend",
+    // "Ikeja-Weekend",
   ];
 
   const [trainingLocation, setTrainingLocation] = useState({
@@ -219,7 +219,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          October 27, 2026
+                          February 11, 2027
                         </H2>
                       </div>
                       <div>
